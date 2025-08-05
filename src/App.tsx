@@ -16,7 +16,10 @@ function App() {
       <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50">
         <div className="bg-stone-900/95 backdrop-blur-xl border border-stone-700/50 rounded-full px-8 py-4 shadow-2xl">
           <div className="flex items-center space-x-8">
-            <div className="text-xl font-black text-white tracking-wider">REBOOT</div>
+            <div className="flex items-center space-x-3">
+              <img src="/reboot-media.avif" alt="Reboot Media" className="h-8 w-auto" />
+              <div className="text-xl font-black text-white tracking-wider">REBOOT</div>
+            </div>
             <div className="hidden md:flex items-center space-x-6">
               <a href="#psychology" className="text-stone-300 hover:text-orange-400 transition-all duration-300 font-medium relative group">
                 Psychology
@@ -511,7 +514,10 @@ function App() {
       <footer className="bg-stone-950 text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-black mb-4">REBOOT MEDIA</h3>
+            <div className="flex items-center justify-center space-x-4 mb-4">
+              <img src="/reboot-media.avif" alt="Reboot Media" className="h-12 w-auto" />
+              <h3 className="text-3xl font-black">REBOOT MEDIA</h3>
+            </div>
             <p className="text-stone-400 max-w-2xl mx-auto">
               American marketing psychology expertise for Asian companies ready to break through growth plateaus
             </p>
