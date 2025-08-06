@@ -4,11 +4,15 @@ import GlobalFooter from './components/GlobalFooter';
 import { generateEmailContent, getObfuscatedEmailDisplay } from './utils/emailUtils';
 
 function App() {
+  console.log('REBOOT VERSION: 2.0.2 - Fixed Slider and Footer - Build Time:', new Date().toISOString());
   const [scrollY, setScrollY] = useState(0);
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
   const [typedWord, setTypedWord] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [activeSlide, setActiveSlide] = useState(1); // Start with middle card (GROWTH)
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
   
   // Multi-step form state
   const [formStep, setFormStep] = useState(1);
@@ -634,7 +638,23 @@ function App() {
             <div className="overflow-hidden px-4">
               <div 
                 className="flex transition-transform duration-300 ease-in-out gap-4"
-                style={{ transform: `translateX(calc(10vw - 80vw - 1rem))` }}
+                style={{ 
+                  transform: `translateX(calc(50% - ${activeSlide * 80}vw - ${activeSlide * 1}rem + 40vw + 0.5rem))` 
+                }}
+                onTouchStart={(e) => setTouchStart(e.targetTouches[0].clientX)}
+                onTouchMove={(e) => setTouchEnd(e.targetTouches[0].clientX)}
+                onTouchEnd={() => {
+                  if (!touchStart || !touchEnd) return;
+                  const distance = touchStart - touchEnd;
+                  const isLeftSwipe = distance > 50;
+                  const isRightSwipe = distance < -50;
+                  if (isLeftSwipe && activeSlide < 2) {
+                    setActiveSlide(activeSlide + 1);
+                  }
+                  if (isRightSwipe && activeSlide > 0) {
+                    setActiveSlide(activeSlide - 1);
+                  }
+                }}
               >
                 {[
                   {
@@ -744,7 +764,7 @@ function App() {
                           <div className={`text-xs ${
                             service.color === 'gray' ? 'text-gray-500' : 'text-white/70'
                           } line-through`}>{service.originalPrice}/mo</div>
-                          <div className="flex items-baseline gap-1">
+                          <div className="flex items-baseline justify-center gap-1">
                             <span className={`text-3xl font-black ${
                               service.color === 'gray' ? 'text-orange-600' : 'text-white'
                             }`}>{service.price}</span>
@@ -800,17 +820,38 @@ function App() {
               </div>
             </div>
             
-            {/* Slider Indicators */}
-            <div className="flex justify-center gap-2 mt-6">
-              {[0, 1, 2].map((index) => (
-                <button
-                  key={index}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    index === 1 ? 'bg-orange-500 w-8' : 'bg-gray-300'
-                  }`}
-                  aria-label={`Go to slide ${index + 1}`}
-                />
-              ))}
+            {/* Slider Indicators and Navigation */}
+            <div className="flex justify-center items-center gap-4 mt-6">
+              <button
+                onClick={() => setActiveSlide(Math.max(0, activeSlide - 1))}
+                className="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors"
+                disabled={activeSlide === 0}
+              >
+                <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
+                </svg>
+              </button>
+              <div className="flex gap-2">
+                {[0, 1, 2].map((index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveSlide(index)}
+                    className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                      index === activeSlide ? 'bg-orange-500 w-8' : 'bg-gray-300 hover:bg-gray-400'
+                    }`}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
+              <button
+                onClick={() => setActiveSlide(Math.min(2, activeSlide + 1))}
+                className="w-8 h-8 rounded-full bg-gray-200 hover:bg-gray-300 flex items-center justify-center transition-colors"
+                disabled={activeSlide === 2}
+              >
+                <svg className="w-4 h-4 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </button>
             </div>
           </div>
 
