@@ -18,24 +18,24 @@ function App() {
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <span className="text-2xl font-bold text-white">REBOOT <span className="text-orange-500">MEDIA</span></span>
+              <span className={`text-2xl font-bold ${scrollY > 50 ? 'text-white' : 'text-stone-900'}`}>REBOOT <span className="text-orange-500">MEDIA</span></span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#psychology" className={`${scrollY > 50 ? 'text-stone-300' : 'text-white drop-shadow-md'} hover:text-orange-400 transition-all duration-300 font-medium relative group`}>
+              <a href="#psychology" className={`${scrollY > 50 ? 'text-stone-300' : 'text-stone-700'} hover:text-orange-500 transition-all duration-300 font-medium relative group`}>
                 Psychology
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
-              <a href="#results" className={`${scrollY > 50 ? 'text-stone-300' : 'text-white drop-shadow-md'} hover:text-orange-400 transition-all duration-300 font-medium relative group`}>
+              <a href="#results" className={`${scrollY > 50 ? 'text-stone-300' : 'text-stone-700'} hover:text-orange-500 transition-all duration-300 font-medium relative group`}>
                 Results
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
-              <a href="#services" className={`${scrollY > 50 ? 'text-stone-300' : 'text-white drop-shadow-md'} hover:text-orange-400 transition-all duration-300 font-medium relative group`}>
+              <a href="#services" className={`${scrollY > 50 ? 'text-stone-300' : 'text-stone-700'} hover:text-orange-500 transition-all duration-300 font-medium relative group`}>
                 Services
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
-              <a href="#about" className={`${scrollY > 50 ? 'text-stone-300' : 'text-white drop-shadow-md'} hover:text-orange-400 transition-all duration-300 font-medium relative group`}>
+              <a href="#about" className={`${scrollY > 50 ? 'text-stone-300' : 'text-stone-700'} hover:text-orange-500 transition-all duration-300 font-medium relative group`}>
                 About
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
               </a>
             </div>
             {/* Traditional CTA Button */}
@@ -277,16 +277,16 @@ function App() {
                 <div className={`p-6 sm:p-8 rounded-3xl shadow-xl border-2 transition-all duration-500 ${
                   service.color === 'orange' 
                     ? 'bg-gradient-to-br from-orange-500 to-orange-600 text-white border-orange-400'
-                    : 'bg-white border-stone-200 hover:border-orange-300'
+                    : 'bg-white border-gray-200 hover:border-orange-300'
                 }`}>
                   <div className="mb-6">
                     <h3 className={`text-2xl font-black mb-2 ${
-                      service.color === 'orange' ? 'text-white' : 'text-stone-900'
+                      service.color === 'orange' ? 'text-white' : 'text-slate-900'
                     }`}>
                       {service.title}
                     </h3>
                     <p className={`text-sm font-medium ${
-                      service.color === 'orange' ? 'text-orange-100' : 'text-stone-600'
+                      service.color === 'orange' ? 'text-orange-100' : 'text-slate-600'
                     }`}>
                       {service.subtitle}
                     </p>
@@ -300,7 +300,7 @@ function App() {
                   <ul className="space-y-3 mb-6 sm:mb-8">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className={`flex items-center ${
-                        service.color === 'orange' ? 'text-orange-100' : 'text-stone-700'
+                        service.color === 'orange' ? 'text-orange-100' : 'text-slate-700'
                       }`}>
                         <span className={`mr-3 ${
                           service.color === 'orange' ? 'text-orange-200' : 'text-orange-500'
@@ -313,7 +313,7 @@ function App() {
                   <button className={`w-full py-3 rounded-xl font-bold transition-all duration-300 ${
                     service.color === 'orange'
                       ? 'bg-white text-orange-600 hover:bg-orange-50'
-                      : 'bg-stone-900 text-white hover:bg-stone-800'
+                      : 'bg-blue-900 text-white hover:bg-blue-800'
                   }`}>
                     Get Started
                   </button>
@@ -325,7 +325,7 @@ function App() {
       </section>
 
       {/* About Section - Ian's Background */}
-      <section id="about" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 text-white relative overflow-hidden">
+      <section id="about" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900 via-slate-800 to-blue-900 text-white relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-10 w-40 h-40 bg-orange-500/5 rounded-full blur-3xl"></div>
@@ -432,7 +432,7 @@ function App() {
       </section>
 
       {/* Contact Section with Traditional CTA */}
-      <section id="contact" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-stone-900">
+      <section id="contact" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-900">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 sm:mb-8">
             Ready to <span className="text-orange-400">Stop</span>
@@ -446,30 +446,30 @@ function App() {
           <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-2xl max-w-lg mx-auto">
             <form className="space-y-6">
               <div className="text-left">
-                <label htmlFor="name" className="block text-sm font-bold text-stone-700 mb-2">Full Name</label>
+                <label htmlFor="name" className="block text-sm font-bold text-slate-700 mb-2">Full Name</label>
                 <input 
                   type="text" 
                   id="name" 
-                  className="w-full px-4 py-3 border-2 border-stone-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300" 
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300" 
                   placeholder="Your name"
                 />
               </div>
               
               <div className="text-left">
-                <label htmlFor="email" className="block text-sm font-bold text-stone-700 mb-2">Business Email</label>
+                <label htmlFor="email" className="block text-sm font-bold text-slate-700 mb-2">Business Email</label>
                 <input 
                   type="email" 
                   id="email" 
-                  className="w-full px-4 py-3 border-2 border-stone-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300" 
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300" 
                   placeholder="your@company.com"
                 />
               </div>
               
               <div className="text-left">
-                <label htmlFor="revenue" className="block text-sm font-bold text-stone-700 mb-2">Annual Revenue</label>
+                <label htmlFor="revenue" className="block text-sm font-bold text-slate-700 mb-2">Annual Revenue</label>
                 <select 
                   id="revenue" 
-                  className="w-full px-4 py-3 border-2 border-stone-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300"
                 >
                   <option value="">Select range</option>
                   <option value="500k-1m">$500K - $1M</option>
@@ -479,11 +479,11 @@ function App() {
               </div>
               
               <div className="text-left">
-                <label htmlFor="challenge" className="block text-sm font-bold text-stone-700 mb-2">Biggest Marketing Challenge</label>
+                <label htmlFor="challenge" className="block text-sm font-bold text-slate-700 mb-2">Biggest Marketing Challenge</label>
                 <textarea 
                   id="challenge" 
                   rows={4} 
-                  className="w-full px-4 py-3 border-2 border-stone-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300" 
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300" 
                   placeholder="Describe your main marketing challenge..."
                 ></textarea>
               </div>
@@ -496,7 +496,7 @@ function App() {
                 🚀 Get My Free Psychology Audit
               </button>
               
-              <p className="text-xs text-stone-500 mt-4">
+              <p className="text-xs text-gray-500 mt-4">
                 Limited to 8 clients • Bangkok timezone • 90-day improvement guarantee
               </p>
             </form>
