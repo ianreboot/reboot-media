@@ -125,10 +125,10 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/20 to-gray-50">
       {/* Global Header */}
-      <GlobalHeader />
+      <GlobalHeader onShowForm={() => setShowDropdownForm(true)} />
 
       {/* Hero Section with Parallax Effect */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-0 pb-20 md:pb-0">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ paddingTop: 'clamp(4rem, 8vw, 0px)', paddingBottom: 'clamp(1rem, 2vw, 2rem)' }}>
         {/* Floating Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div 
@@ -169,7 +169,7 @@ function App() {
           <div className="flex justify-center">
             <button 
               onClick={() => setShowDropdownForm(true)}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center gap-3"
+              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center gap-3"
             >
               <span className="text-2xl">🔍</span>
               <span>Show Me What's Broken in My Marketing</span>
@@ -218,7 +218,7 @@ function App() {
       </section>
 
       {/* Problem Section - Customer Awareness Stage 1 */}
-      <section id="psychology" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gray-100/50">
+      <section id="psychology" className="px-4 sm:px-6 lg:px-8 bg-gray-100/50" style={{ paddingTop: 'clamp(1rem, 3vw, 2rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6 sm:mb-8">
@@ -255,7 +255,7 @@ function App() {
       </section>
 
       {/* Industry Experience Section */}
-      <section id="psychology" className="py-16 sm:py-24 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-slate-50">
+      <section id="psychology" className="px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-slate-50" style={{ paddingTop: 'clamp(4rem, 10vw, 6rem)', paddingBottom: 'clamp(4rem, 10vw, 6rem)' }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center bg-blue-500/10 backdrop-blur-sm border border-blue-400/20 rounded-full px-4 py-2 mb-4">
@@ -425,7 +425,7 @@ function App() {
 
 
       {/* Services Section with Price Anchoring Psychology */}
-      <section id="services" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-stone-50">
+      <section id="services" className="px-4 sm:px-6 lg:px-8 bg-stone-50" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6 sm:mb-8">
@@ -455,7 +455,8 @@ function App() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
+          {/* Desktop Grid / Mobile-Tablet Slider */}
+          <div className="hidden lg:grid lg:grid-cols-3 gap-6">
             {[
               {
                 title: "STARTER",
@@ -628,6 +629,191 @@ function App() {
             ))}
           </div>
 
+          {/* Mobile/Tablet Slider */}
+          <div className="lg:hidden relative mt-8">
+            <div className="overflow-hidden px-4">
+              <div 
+                className="flex transition-transform duration-300 ease-in-out gap-4"
+                style={{ transform: `translateX(calc(10vw - 80vw - 1rem))` }}
+              >
+                {[
+                  {
+                    title: "STARTER",
+                    size: "Small",
+                    subtitle: "Quick-Win Strategy",
+                    duration: "3-month minimum",
+                    originalPrice: "$12K",
+                    price: "$5K-8K",
+                    priceNote: "/month",
+                    savings: "Save $4K+/mo",
+                    features: [
+                      "🔍 Strategic market positioning",
+                      "🧠 Executive-level growth strategy",
+                      "💬 Value proposition reconstruction",
+                      "🛡️ Building customer trust and credibility",
+                      "👥 Executive team development",
+                      "📊 Comprehensive audit report"
+                    ],
+                    color: "gray",
+                    index: 0,
+                    popular: false
+                  },
+                  {
+                    title: "GROWTH",
+                    size: "Medium",
+                    subtitle: "Complete Strategy",
+                    duration: "6-month engagement",
+                    originalPrice: "$18K",
+                    price: "$8K-12K",
+                    priceNote: "/month",
+                    savings: "Save $6K+/mo",
+                    features: [
+                      "✅ Everything in Starter",
+                      "🎯 Monthly strategy sessions",
+                      "📈 Data-driven optimization strategies",
+                      "💰 Increasing customer lifetime value",
+                      "🏆 Team coaching program",
+                      "📋 Quarterly business reviews"
+                    ],
+                    color: "orange",
+                    index: 1,
+                    popular: true
+                  },
+                  {
+                    title: "ENTERPRISE",
+                    size: "Large",
+                    subtitle: "Full CMO Leadership",
+                    duration: "12-month partnership",
+                    originalPrice: "$25K",
+                    price: "$12K-18K",
+                    priceNote: "/month",
+                    savings: "Save $7K+/mo",
+                    features: [
+                      "✅ Everything in Growth",
+                      "👔 Weekly leadership participation",
+                      "🎯 Team hiring & management guidance",
+                      "📊 Board presentation preparation",
+                      "🏢 Complete marketing transformation",
+                      "🤝 Strategic partnership development"
+                    ],
+                    color: "blue",
+                    index: 2,
+                    popular: false
+                  }
+                ].map((service) => (
+                  <div 
+                    key={service.index}
+                    className="flex-shrink-0"
+                    style={{ width: '80vw', maxWidth: '350px' }}
+                  >
+                    <div className="relative">
+                      {/* Popular Badge */}
+                      {service.popular && (
+                        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+                          <div className="bg-orange-500 text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-lg">
+                            MOST POPULAR
+                          </div>
+                        </div>
+                      )}
+                      
+                      <div className={`p-6 rounded-3xl border-2 text-center ${
+                        service.color === 'orange' 
+                          ? 'bg-gradient-to-br from-orange-500 to-orange-600 text-white border-orange-400 shadow-2xl'
+                          : service.color === 'blue'
+                          ? 'bg-gradient-to-br from-blue-600 to-blue-700 text-white border-blue-400 shadow-xl'
+                          : 'bg-white border-gray-200 shadow-lg'
+                      }`}>
+                        <div className="mb-4">
+                          <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${
+                            service.color === 'orange' || service.color === 'blue' 
+                              ? 'bg-white/20 text-white'
+                              : 'bg-gray-100 text-gray-600'
+                          }`}>
+                            {service.size} Business
+                          </div>
+                          
+                          <h3 className={`text-2xl font-black mb-1 ${
+                            service.color === 'gray' ? 'text-slate-900' : 'text-white'
+                          }`}>{service.title}</h3>
+                          <p className={`text-sm ${
+                            service.color === 'gray' ? 'text-gray-600' : 'text-white/90'
+                          }`}>{service.subtitle}</p>
+                        </div>
+
+                        <div className="mb-4">
+                          <div className={`text-xs ${
+                            service.color === 'gray' ? 'text-gray-500' : 'text-white/70'
+                          } line-through`}>{service.originalPrice}/mo</div>
+                          <div className="flex items-baseline gap-1">
+                            <span className={`text-3xl font-black ${
+                              service.color === 'gray' ? 'text-orange-600' : 'text-white'
+                            }`}>{service.price}</span>
+                            <span className={`text-sm ${
+                              service.color === 'gray' ? 'text-gray-600' : 'text-white/90'
+                            }`}>{service.priceNote}</span>
+                          </div>
+                          <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mt-2 ${
+                            service.color === 'orange' || service.color === 'blue'
+                              ? 'bg-green-400/20 text-green-100'
+                              : 'bg-green-100 text-green-800'
+                          }`}>
+                            {service.savings}
+                          </div>
+                        </div>
+
+                        <div className={`text-xs mb-4 ${
+                          service.color === 'gray' ? 'text-gray-600' : 'text-white/80'
+                        }`}>{service.duration}</div>
+
+                        <ul className="space-y-2 mb-6">
+                          {service.features.map((feature, idx) => (
+                            <li key={idx} className={`text-sm ${
+                              service.color === 'orange' || service.color === 'blue' ? 'text-white/90' : 'text-slate-700'
+                            }`}>
+                              <span className="mr-2">
+                                {feature.split(' ')[0]}
+                              </span>
+                              <span>{feature.split(' ').slice(1).join(' ')}</span>
+                            </li>
+                          ))}
+                        </ul>
+                        
+                        <button className={`w-full py-3 rounded-xl font-bold transition-all duration-300 ${
+                          service.color === 'orange'
+                            ? 'bg-white text-orange-600 hover:bg-orange-50'
+                            : service.color === 'blue'
+                            ? 'bg-white text-blue-700 hover:bg-blue-50'
+                            : 'bg-blue-900 text-white hover:bg-blue-800'
+                        }`}>
+                          Get Started
+                        </button>
+
+                        <div className={`mt-4 text-center text-xs ${
+                          service.color === 'orange' || service.color === 'blue' ? 'text-white/70' : 'text-gray-500'
+                        }`}>
+                          90-day improvement guarantee
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            {/* Slider Indicators */}
+            <div className="flex justify-center gap-2 mt-6">
+              {[0, 1, 2].map((index) => (
+                <button
+                  key={index}
+                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
+                    index === 1 ? 'bg-orange-500 w-8' : 'bg-gray-300'
+                  }`}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
+
           {/* Bottom Value Proposition */}
           <div className="mt-12 text-center">
             <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-8 rounded-3xl max-w-4xl mx-auto">
@@ -660,7 +846,7 @@ function App() {
       </section>
 
       {/* About Section - Ian's Background - Light Theme */}
-      <section id="about" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50">
+      <section id="about" className="px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
@@ -750,25 +936,123 @@ function App() {
               </p>
             </div>
           </div>
+        </div>
+      </section>
 
-          {/* LinkedIn Verification */}
+      {/* Final CTA Section - For Procrastinators and Skeptics */}
+      <section className="px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-900 via-blue-950 to-black relative overflow-hidden" style={{ paddingTop: 'clamp(4rem, 10vw, 5rem)', paddingBottom: 'clamp(4rem, 10vw, 5rem)' }}>
+        {/* Background pattern */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0" style={{ 
+            backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+            backgroundSize: '40px 40px' 
+          }}></div>
+        </div>
+        
+        <div className="max-w-4xl mx-auto relative z-10">
           <div className="text-center">
-            <div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200/50 max-w-2xl mx-auto">
-              <h4 className="text-xl font-bold text-slate-900 mb-4">Verify My Background</h4>
-              <p className="text-slate-600 mb-6">
-                See my full professional background and client recommendations
-              </p>
-              <a 
-                href="https://www.linkedin.com/in/ian-ho/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-              >
-                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clipRule="evenodd" />
+            {/* For Procrastinators */}
+            <div className="mb-12">
+              <div className="inline-flex items-center bg-orange-500/20 backdrop-blur-sm border border-orange-400/30 rounded-full px-4 py-2 mb-6">
+                <svg className="w-4 h-4 text-orange-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/>
                 </svg>
-                View LinkedIn Profile
-              </a>
+                <span className="text-orange-300 text-sm font-semibold">Still Thinking About It?</span>
+              </div>
+              
+              <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+                Every Month You Wait Costs You <span className="text-orange-400">$47,000</span> in Lost Revenue
+              </h2>
+              
+              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                That's the average monthly opportunity cost for businesses operating without proper marketing strategy. 
+                Your competitors aren't waiting. <span className="text-orange-400 font-semibold">Neither should you.</span>
+              </p>
+            </div>
+
+            {/* For Skeptics */}
+            <div className="bg-white/5 backdrop-blur-md rounded-3xl p-8 md:p-10 border border-white/10 mb-10">
+              <h3 className="text-2xl font-bold text-white mb-6">
+                "I've Heard It All Before" - <span className="text-blue-400">We Get It.</span>
+              </h3>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div className="text-left">
+                  <div className="text-red-400 font-bold mb-2">❌ What Others Say:</div>
+                  <p className="text-gray-400 text-sm">"We'll grow your business" (with no specifics)</p>
+                </div>
+                <div className="text-left">
+                  <div className="text-red-400 font-bold mb-2">❌ What They Do:</div>
+                  <p className="text-gray-400 text-sm">Generic templates and hope for the best</p>
+                </div>
+                <div className="text-left">
+                  <div className="text-green-400 font-bold mb-2">✅ What We Do:</div>
+                  <p className="text-gray-300 text-sm">Show you exactly what's broken before you pay a dime</p>
+                </div>
+              </div>
+
+              <div className="bg-gradient-to-r from-blue-500/10 to-green-500/10 rounded-2xl p-6 border border-blue-400/20">
+                <h4 className="text-lg font-bold text-white mb-3">
+                  Here's Why This Analysis is Different:
+                </h4>
+                <ul className="text-left space-y-2 text-gray-300 text-sm max-w-2xl mx-auto">
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2 mt-0.5">✓</span>
+                    <span><strong>No generic advice:</strong> Specific to YOUR business, YOUR industry, YOUR competition</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2 mt-0.5">✓</span>
+                    <span><strong>No junior marketers:</strong> 20+ years C-level experience reviews your business personally</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2 mt-0.5">✓</span>
+                    <span><strong>No obligation:</strong> Get the analysis, implement it yourself if you want</span>
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-green-400 mr-2 mt-0.5">✓</span>
+                    <span><strong>No BS:</strong> If we can't help, we'll tell you straight up</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Risk Reversal */}
+            <div className="mb-10">
+              <div className="inline-flex items-center bg-green-500/20 backdrop-blur-sm border border-green-400/30 rounded-full px-6 py-3 mb-6">
+                <svg className="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
+                </svg>
+                <span className="text-green-300 font-bold">Zero Risk Guarantee</span>
+              </div>
+              
+              <h3 className="text-2xl font-bold text-white mb-4">
+                You Have Nothing to Lose (Except More Revenue)
+              </h3>
+              
+              <div className="text-gray-300 space-y-2 max-w-2xl mx-auto">
+                <p>🚫 No credit card required</p>
+                <p>🚫 No sales pressure</p>
+                <p>🚫 No spam emails</p>
+                <p>✅ Just honest insights about your marketing gaps</p>
+              </div>
+            </div>
+
+            {/* Final CTA */}
+            <div>
+              <button 
+                onClick={() => setShowDropdownForm(true)}
+                className="bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 hover:via-orange-700 hover:to-red-600 text-white px-10 sm:px-14 py-5 rounded-xl font-black text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center gap-3 group"
+              >
+                <span>Yes, Show Me What I'm Missing</span>
+                <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                </svg>
+              </button>
+              
+              <p className="text-gray-400 text-sm mt-6">
+                <span className="text-orange-400 font-semibold">While you're reading this</span>, your competitors are fixing their marketing. 
+                <span className="text-white">What are you waiting for?</span>
+              </p>
             </div>
           </div>
         </div>
@@ -866,15 +1150,14 @@ function App() {
           {/* Step 2: Revenue/Company Size Qualification */}
           {formStep === 2 && (
             <div className="text-center">
-              <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-                I Feel You. Let's <span className="text-orange-400">Identify</span>
-                <br />Your Growth Stage
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Different revenue levels need different psychology approaches
-              </p>
-              
               <div className="bg-white rounded-2xl p-6 max-w-lg mx-auto shadow-2xl">
+                <h3 className="text-2xl font-black text-slate-900 mb-4">
+                  I Feel You. Let's <span className="text-orange-500">Identify</span> Your Growth Stage
+                </h3>
+                <p className="text-gray-600 mb-6">
+                  Different revenue levels need different psychology approaches
+                </p>
+                
                 <div className="mb-6">
                   <div className="flex justify-center items-center mb-3">
                     <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white">

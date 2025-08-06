@@ -1,8 +1,13 @@
 import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-const GlobalHeader = () => {
+interface GlobalHeaderProps {
+  onShowForm?: () => void;
+}
+
+const GlobalHeader = ({ onShowForm }: GlobalHeaderProps) => {
   const [scrollY, setScrollY] = useState(0);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -12,6 +17,27 @@ const GlobalHeader = () => {
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleHashNavigation = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    
+    // If we're on the home page, just scroll to the section
+    if (window.location.pathname === '/' || window.location.pathname === '/reboot/') {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to home page first, then scroll
+      navigate('/');
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }, 100);
+    }
   };
 
   return (
@@ -32,26 +58,28 @@ const GlobalHeader = () => {
                 className="text-2xl font-black cursor-pointer hover:scale-105 transition-transform duration-300"
               >
                 <span className={`transition-colors duration-300 ${
-                  scrollY > 50 ? 'text-gray-900 dark:text-white' : 'text-white'
+                  scrollY > 50 ? 'text-gray-900 dark:text-white' : 'text-gray-900 dark:text-white'
                 }`}>
-                  REBOOT<span className="text-orange-500">.</span>
+                  REBOOT <span className="text-orange-500">MEDIA</span>
                 </span>
               </Link>
 
               {/* Navigation Links */}
               <div className="flex items-center space-x-8">
                 <a 
-                  href="/#services" 
-                  className={`font-semibold hover:text-orange-500 transition-colors duration-300 ${
-                    scrollY > 50 ? 'text-gray-700 dark:text-gray-200' : 'text-white'
+                  href="#services" 
+                  onClick={(e) => handleHashNavigation(e, 'services')}
+                  className={`font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer ${
+                    scrollY > 50 ? 'text-gray-700 dark:text-gray-200' : 'text-gray-900 dark:text-white'
                   }`}
                 >
                   Services
                 </a>
                 <a 
-                  href="/#about" 
-                  className={`font-semibold hover:text-orange-500 transition-colors duration-300 ${
-                    scrollY > 50 ? 'text-gray-700 dark:text-gray-200' : 'text-white'
+                  href="#about" 
+                  onClick={(e) => handleHashNavigation(e, 'about')}
+                  className={`font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer ${
+                    scrollY > 50 ? 'text-gray-700 dark:text-gray-200' : 'text-gray-900 dark:text-white'
                   }`}
                 >
                   About
@@ -60,17 +88,17 @@ const GlobalHeader = () => {
                   to="/contact" 
                   onClick={scrollToTop}
                   className={`font-semibold hover:text-orange-500 transition-colors duration-300 ${
-                    scrollY > 50 ? 'text-gray-700 dark:text-gray-200' : 'text-white'
+                    scrollY > 50 ? 'text-gray-700 dark:text-gray-200' : 'text-gray-900 dark:text-white'
                   }`}
                 >
                   Contact
                 </Link>
-                <a 
-                  href="/#contact"
+                <button 
+                  onClick={onShowForm}
                   className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
                 >
                   Get Started
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -93,7 +121,7 @@ const GlobalHeader = () => {
               <span className={`transition-colors duration-300 ${
                 scrollY > 30 ? 'text-gray-900 dark:text-white' : 'text-white'
               }`}>
-                REBOOT<span className="text-orange-500">.</span>
+                REBOOT <span className="text-orange-500">MEDIA</span>
               </span>
             </Link>
           </div>
@@ -105,8 +133,9 @@ const GlobalHeader = () => {
         <div className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-gray-200 dark:border-gray-700 px-2 py-2">
           <div className="flex justify-around items-center">
             <a 
-              href="/#services" 
-              className="flex flex-col items-center py-2 px-3 text-xs font-medium text-gray-600 dark:text-gray-300 hover:text-orange-500 transition-colors"
+              href="#services" 
+              onClick={(e) => handleHashNavigation(e, 'services')}
+              className="flex flex-col items-center py-2 px-3 text-xs font-medium text-gray-600 dark:text-gray-300 hover:text-orange-500 transition-colors cursor-pointer"
             >
               <div className="w-6 h-6 mb-1 bg-gray-400 rounded-full flex items-center justify-center">
                 <span className="text-xs">S</span>
@@ -114,8 +143,9 @@ const GlobalHeader = () => {
               Services
             </a>
             <a 
-              href="/#about" 
-              className="flex flex-col items-center py-2 px-3 text-xs font-medium text-gray-600 dark:text-gray-300 hover:text-orange-500 transition-colors"
+              href="#about" 
+              onClick={(e) => handleHashNavigation(e, 'about')}
+              className="flex flex-col items-center py-2 px-3 text-xs font-medium text-gray-600 dark:text-gray-300 hover:text-orange-500 transition-colors cursor-pointer"
             >
               <div className="w-6 h-6 mb-1 bg-gray-400 rounded-full flex items-center justify-center">
                 <span className="text-xs">A</span>
@@ -132,12 +162,12 @@ const GlobalHeader = () => {
               </div>
               Contact
             </Link>
-            <a 
-              href="/#contact"
+            <button 
+              onClick={onShowForm}
               className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-2 rounded-full text-xs font-semibold shadow-lg"
             >
               Get Started
-            </a>
+            </button>
           </div>
         </div>
       </nav>

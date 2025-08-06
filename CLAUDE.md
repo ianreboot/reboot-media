@@ -44,6 +44,18 @@
 4. Content strategy and copywriting
 5. SEO optimization and performance tuning
 
+## DEPLOYMENT PROTOCOL
+**🚀 SIMPLE DEPLOYMENT COMMANDS**:
+- **Deploy to Dev**: `npm run deploy:dev` → Report: "✅ Deployed to https://dev.rebootmedia.net/reboot/"
+- **Deploy to Prod**: `npm run deploy:prod` → Report: "✅ Deployed to https://www.rebootmedia.net/"
+
+**Technical Details**:
+- **Development**: Builds, copies to root, pushes to GitHub automatically
+- **Production**: Builds, then requires manual upload of dist/ folder
+- **NEVER**: Use any other deployment method
+- **Completion**: Task is "done" when successfully deployed, not just built
+- **See**: `DEPLOYMENT.md` for full details and troubleshooting
+
 ## IMPORTANT NOTES
 - Do NOT reference existing rebootmedia.net content (owner wants fresh approach)
 - Focus on professional company positioning, not sole proprietor
