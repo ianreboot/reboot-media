@@ -1,4 +1,7 @@
 import { useState, useEffect } from 'react';
+import GlobalHeader from './components/GlobalHeader';
+import GlobalFooter from './components/GlobalFooter';
+import { generateEmailContent, getObfuscatedEmailDisplay } from './utils/emailUtils';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -23,6 +26,41 @@ function App() {
     teamSize: '',
     currentMarketing: ''
   });
+  const [fieldValidation, setFieldValidation] = useState<{[key: string]: 'valid' | 'invalid' | ''}>({});
+  const [selectedOptions, setSelectedOptions] = useState<{[key: string]: boolean}>({});
+  
+  // Validation functions
+  const validateEmail = (email: string) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  };
+  
+  const validateUrl = (url: string) => {
+    if (!url) return true; // Optional field
+    try {
+      new URL(url.startsWith('http') ? url : `https://${url}`);
+      return true;
+    } catch {
+      return false;
+    }
+  };
+  
+  const handleFieldBlur = (fieldName: string, value: string) => {
+    let isValid = true;
+    
+    if (fieldName === 'email') {
+      isValid = validateEmail(value);
+    } else if (fieldName === 'website') {
+      isValid = validateUrl(value);
+    } else if (fieldName === 'name' || fieldName === 'company' || fieldName === 'specificIssue') {
+      isValid = value.trim().length > 0;
+    }
+    
+    setFieldValidation(prev => ({
+      ...prev,
+      [fieldName]: value ? (isValid ? 'valid' : 'invalid') : ''
+    }));
+  };
   
   // Words to cycle through - ordered by importance to target demographics
   const lostItems = [
@@ -86,88 +124,8 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/20 to-gray-50">
-      {/* Desktop Header */}
-      <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 hidden md:block">
-        <div className={`${scrollY > 50 ? 'bg-blue-900/85 backdrop-blur-lg shadow-lg' : 'bg-transparent'} transition-all duration-300`}>
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4">
-            <div className="flex items-center justify-between">
-              <div className="flex items-center">
-                <span className={`text-2xl font-bold ${scrollY > 50 ? 'text-white' : 'text-slate-900'}`}>REBOOT <span className="text-orange-500">MEDIA</span></span>
-              </div>
-              <div className="flex items-center space-x-8">
-                <a href="#psychology" className={`${scrollY > 50 ? 'text-gray-300' : 'text-stone-700'} hover:text-orange-500 transition-all duration-300 font-medium relative group`}>
-                  Fresh Eyes
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#results" className={`${scrollY > 50 ? 'text-gray-300' : 'text-stone-700'} hover:text-orange-500 transition-all duration-300 font-medium relative group`}>
-                  Results
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <a href="#services" className={`${scrollY > 50 ? 'text-gray-300' : 'text-stone-700'} hover:text-orange-500 transition-all duration-300 font-medium relative group`}>
-                  Services
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
-                </a>
-                <button 
-                  onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
-                >
-                  Get Started
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </nav>
-
-      {/* Mobile Navigation - Top Brand Bar */}
-      <div className="fixed top-0 left-0 right-0 z-50 md:hidden">
-        <div className={`${scrollY > 50 ? 'bg-blue-900/90 backdrop-blur-lg' : 'bg-white/90 backdrop-blur-lg'} transition-all duration-300 border-b border-gray-200/20`}>
-          <div className="px-4 py-3">
-            <div className="text-center">
-              <span className={`text-xl font-bold ${scrollY > 50 ? 'text-white' : 'text-slate-900'}`}>
-                REBOOT <span className="text-orange-500">MEDIA</span>
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Navigation - Sticky Bottom */}
-      <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden">
-        <div className="bg-white/95 backdrop-blur-lg border-t border-gray-200/50 shadow-2xl">
-          <div className="px-4 py-2">
-            <div className="flex items-center justify-around">
-              <a href="#psychology" className="flex flex-col items-center space-y-1 px-3 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300 group min-w-0">
-                <svg className="w-5 h-5 text-blue-600 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                </svg>
-                <span className="text-xs font-medium text-blue-900 group-hover:text-orange-600 transition-colors">Fresh Eyes</span>
-              </a>
-              <a href="#results" className="flex flex-col items-center space-y-1 px-3 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300 group min-w-0">
-                <svg className="w-5 h-5 text-blue-600 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                </svg>
-                <span className="text-xs font-medium text-blue-900 group-hover:text-orange-600 transition-colors">Results</span>
-              </a>
-              <a href="#services" className="flex flex-col items-center space-y-1 px-3 py-2 rounded-lg hover:bg-blue-50 transition-all duration-300 group min-w-0">
-                <svg className="w-5 h-5 text-blue-600 group-hover:text-orange-500 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
-                </svg>
-                <span className="text-xs font-medium text-blue-900 group-hover:text-orange-600 transition-colors">Services</span>
-              </a>
-              <button 
-                onClick={() => setShowDropdownForm(true)}
-                className="flex flex-col items-center space-y-1 px-2 py-2 bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg min-w-0"
-              >
-                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
-                </svg>
-                <span className="text-xs font-bold text-white">Start Now</span>
-              </button>
-            </div>
-          </div>
-        </div>
-      </nav>
+      {/* Global Header */}
+      <GlobalHeader />
 
       {/* Hero Section with Parallax Effect */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16 md:pt-0 pb-20 md:pb-0">
@@ -189,13 +147,13 @@ function App() {
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-slate-900 leading-[0.9]">
               <span className="block">Stop Losing</span>
               <span className="block mt-1">
-                <span className="text-orange-500 relative inline-block min-h-[1.2em]">
+                <span className="text-orange-500 relative inline-block" style={{ minHeight: '1.0em' }}>
                   {typedWord}
                   <span className="animate-blink ml-0.5">|</span>
                   <div className="absolute -inset-2 bg-orange-100 -skew-y-1 -z-10 rounded-lg"></div>
                 </span>
               </span>
-              <span className="block -mt-1">to <span className="text-gray-600 line-through decoration-red-500 decoration-4">Broken</span></span>
+              <span className="block">to <span className="text-gray-600 line-through decoration-red-500 decoration-4">Broken</span></span>
               <span className="block mt-1">Marketing</span>
             </h1>
           </div>
@@ -203,11 +161,8 @@ function App() {
           {/* Authority Subheadline */}
           <div className="mb-6 sm:mb-8">
             <p className="text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-4xl mx-auto leading-relaxed">
-              Growing companies hire <span className="font-bold text-slate-900">proven marketing psychology expertise</span> to break through growth plateaus
+              Stop fumbling with amateur advice. Get <span className="font-bold text-slate-900">battle-tested strategies from executives who've guided Fortune 500 brands</span> to explosive growth
             </p>
-            <div className="mt-3 text-lg text-slate-600">
-              <span className="font-semibold">Proven:</span> $500K/month ad spend • 7 industries • $100K→$3M growth
-            </div>
           </div>
 
           {/* Single Primary CTA */}
@@ -313,7 +268,7 @@ function App() {
               "Do You Have Experience in <span className="text-blue-600">My Industry</span>?"
             </h2>
             <p className="text-xl text-slate-600 mb-8">
-              This is exactly the right question to ask. Here's why the answer might surprise you.
+              This is exactly the right question to ask. But the answer might surprise you...
             </p>
           </div>
 
@@ -345,10 +300,10 @@ function App() {
                 <div className="bg-red-50 p-6 rounded-2xl border border-red-200/50">
                   <h4 className="font-bold text-red-800 mb-3 flex items-center">
                     <span className="w-6 h-6 bg-red-200 rounded-full flex items-center justify-center text-xs text-red-800 mr-3">2</span>
-                    Missing Blind Spots
+                    Replicate Not Customize
                   </h4>
                   <p className="text-red-700 text-sm leading-relaxed">
-                    They make the same assumptions you do, missing where customers get lost
+                    They copy what worked elsewhere instead of customizing for your unique market
                   </p>
                 </div>
               </div>
@@ -389,9 +344,9 @@ function App() {
                   <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
                     <span className="text-green-800 font-bold">3</span>
                   </div>
-                  <h4 className="font-bold text-green-800 mb-3">Universal Psychology</h4>
+                  <h4 className="font-bold text-green-800 mb-3">Executive Experience</h4>
                   <p className="text-green-700 text-sm leading-relaxed">
-                    Human psychology works the same everywhere - trust, urgency, and social proof drive all decisions
+                    C-level strategies that work across industries - proven at 20+ US companies
                   </p>
                 </div>
               </div>
@@ -422,12 +377,12 @@ function App() {
                       <div className="bg-white/70 rounded-2xl p-6 backdrop-blur-sm">
                         <div className="grid grid-cols-2 gap-4 text-center">
                           <div>
-                            <div className="text-2xl font-black text-slate-700">7</div>
-                            <div className="text-xs text-slate-600 font-medium">Industries</div>
+                            <div className="text-2xl font-black text-slate-700">20+</div>
+                            <div className="text-xs text-slate-600 font-medium">US Companies</div>
                           </div>
                           <div>
-                            <div className="text-2xl font-black text-slate-700">$500K</div>
-                            <div className="text-xs text-slate-600 font-medium">Monthly Tests</div>
+                            <div className="text-2xl font-black text-slate-700">$2B+</div>
+                            <div className="text-xs text-slate-600 font-medium">Revenue Managed</div>
                           </div>
                         </div>
                       </div>
@@ -468,203 +423,6 @@ function App() {
         </div>
       </section>
 
-      {/* Solution Section - Norton Case Study */}
-      <section id="results" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6 sm:mb-8">
-              <span className="text-blue-600">Marketing Psychology</span>
-              <br />That Actually Works
-            </h2>
-          </div>
-
-          {/* Success Story Section - Light Theme */}
-          <div className="bg-white border-2 border-gray-100 rounded-3xl shadow-lg p-8 sm:p-12">
-            {/* Header */}
-            <div className="text-center mb-10">
-              <div className="inline-flex items-center bg-green-100 rounded-full px-4 py-2 mb-4">
-                <svg className="w-4 h-4 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                </svg>
-                <span className="text-green-700 text-sm font-semibold">Real Results</span>
-              </div>
-              <h3 className="text-3xl sm:text-4xl font-black text-slate-900 mb-3">From Struggling to Scaling</h3>
-              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-                How marketing psychology transformed a global software company's revenue in 18 months
-              </p>
-            </div>
-            
-            {/* Results Comparison - Engaging Visual Story */}
-            <div className="max-w-6xl mx-auto mb-12">
-              <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
-                {/* Background Pattern */}
-                <div className="absolute inset-0 opacity-5">
-                  <div className="absolute inset-0" style={{ 
-                    backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
-                    backgroundSize: '30px 30px' 
-                  }}></div>
-                </div>
-                
-                <div className="relative z-10">
-                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                    {/* Before Side - Problem */}
-                    <div className="space-y-6">
-                      <div className="flex items-center space-x-3 mb-6">
-                        <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
-                        <span className="text-red-400 text-sm font-bold uppercase tracking-wider">The Problem</span>
-                      </div>
-                      
-                      <div className="space-y-4">
-                        <div className="text-white">
-                          <div className="text-6xl font-black text-red-400 mb-2">$100K</div>
-                          <div className="text-gray-300 text-lg">Monthly Revenue - Stuck</div>
-                        </div>
-                        
-                        <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-4 backdrop-blur-sm">
-                          <p className="text-red-200 text-sm leading-relaxed">
-                            "Our software is excellent, but customers don't understand our value. 
-                            Marketing feels like throwing money into a black hole."
-                          </p>
-                          <div className="text-red-300 text-xs mt-2 italic">— Norton Software CEO</div>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* Transformation Arrow */}
-                    <div className="flex justify-center lg:block lg:absolute lg:left-1/2 lg:top-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 z-20">
-                      <div className="relative">
-                        <div className="bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full p-4 shadow-lg transform rotate-12">
-                          <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
-                          </svg>
-                        </div>
-                        <div className="absolute -top-8 -right-2 text-yellow-400 text-xs font-bold animate-bounce">
-                          Psychology!
-                        </div>
-                      </div>
-                    </div>
-                    
-                    {/* After Side - Solution */}
-                    <div className="space-y-6">
-                      <div className="flex items-center space-x-3 mb-6">
-                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                        <span className="text-green-400 text-sm font-bold uppercase tracking-wider">The Result</span>
-                      </div>
-                      
-                      <div className="space-y-4">
-                        <div className="text-white">
-                          <div className="text-6xl font-black text-green-400 mb-2">$3M+</div>
-                          <div className="text-gray-300 text-lg">Monthly Revenue - Scaling</div>
-                          <div className="text-orange-400 text-sm font-bold">30x Growth in 18 Months</div>
-                        </div>
-                        
-                        <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-4 backdrop-blur-sm">
-                          <p className="text-green-200 text-sm leading-relaxed">
-                            "Ian didn't just fix our messaging - he completely transformed how we think about 
-                            our customers. The results speak for themselves."
-                          </p>
-                          <div className="text-green-300 text-xs mt-2 italic">— 18 months later</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  {/* Key Insight */}
-                  <div className="mt-8 pt-8 border-t border-gray-600/30">
-                    <div className="text-center">
-                      <div className="text-orange-400 text-sm font-bold mb-2">The Psychology Breakthrough</div>
-                      <p className="text-gray-300 text-lg max-w-3xl mx-auto">
-                        We discovered customers weren't buying because they couldn't visualize the <em>cost of not having protection</em> - 
-                        a simple shift from features to loss aversion changed everything.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            {/* Key Strategies - Clean Cards */}
-            <div className="max-w-5xl mx-auto">
-              <h4 className="text-2xl font-bold text-slate-900 text-center mb-8">
-                The Psychology Strategies That Worked
-              </h4>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
-                      <span className="text-orange-600 font-bold">1</span>
-                    </div>
-                    <div>
-                      <h5 className="font-bold text-slate-900 mb-2">Loss Aversion Messaging</h5>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Shifted from "Get protected" to "Don't lose your files" - triggering immediate emotional response and action
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
-                      <span className="text-orange-600 font-bold">2</span>
-                    </div>
-                    <div>
-                      <h5 className="font-bold text-slate-900 mb-2">Social Proof Hierarchy</h5>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Layered testimonials from peers first, then experts, maximizing trust at every decision point
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
-                      <span className="text-orange-600 font-bold">3</span>
-                    </div>
-                    <div>
-                      <h5 className="font-bold text-slate-900 mb-2">Authority Positioning</h5>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Strategic use of certifications and security badges for instant credibility and reduced risk perception
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
-                      <span className="text-orange-600 font-bold">4</span>
-                    </div>
-                    <div>
-                      <h5 className="font-bold text-slate-900 mb-2">Smart Scarcity Triggers</h5>
-                      <p className="text-gray-600 text-sm leading-relaxed">
-                        Time-sensitive offers based on real threat data, not artificial deadlines - genuine urgency that converts
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Bottom CTA */}
-              <div className="mt-10 text-center">
-                <div className="bg-gradient-to-r from-blue-50 to-orange-50 rounded-2xl p-8 border border-orange-200/50">
-                  <p className="text-slate-700 font-semibold text-lg mb-4">
-                    Ready to apply these same psychology principles to your business?
-                  </p>
-                  <a href="#contact" className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
-                    Get Your Psychology Strategy Session
-                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Services Section with Price Anchoring Psychology */}
       <section id="services" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-stone-50">
@@ -673,7 +431,7 @@ function App() {
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6 sm:mb-8">
               Fractional CMO
               <br />
-              <span className="text-orange-500">Psychology</span> Services
+              <span className="text-orange-500">Executive</span> Services
             </h2>
             <p className="text-xl text-stone-700 max-w-3xl mx-auto mb-4">
               Strategic marketing leadership without the $300K+ salary commitment
@@ -702,18 +460,18 @@ function App() {
               {
                 title: "STARTER",
                 size: "Small",
-                subtitle: "Psychology Audit",
+                subtitle: "Quick-Win Strategy",
                 duration: "3-month minimum",
                 originalPrice: "$12K",
                 price: "$5K-8K",
                 priceNote: "/month",
                 savings: "Save $4K+/mo",
                 features: [
-                  "🔍 Customer awareness analysis",
-                  "🧠 Customer buying journey analysis",
+                  "🔍 Strategic market positioning",
+                  "🧠 Executive-level growth strategy",
                   "💬 Value proposition reconstruction",
                   "🛡️ Building customer trust and credibility",
-                  "👥 Team psychology training",
+                  "👥 Executive team development",
                   "📊 Comprehensive audit report"
                 ],
                 color: "gray",
@@ -732,7 +490,7 @@ function App() {
                 features: [
                   "✅ Everything in Starter",
                   "🎯 Monthly strategy sessions",
-                  "📈 A/B testing psychology",
+                  "📈 Data-driven optimization strategies",
                   "💰 Increasing customer lifetime value",
                   "🏆 Team coaching program",
                   "📋 Quarterly business reviews"
@@ -874,7 +632,7 @@ function App() {
           <div className="mt-12 text-center">
             <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-8 rounded-3xl max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold mb-4">Why Fractional CMO Makes Sense</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div>
                   <div className="text-3xl font-black text-orange-400 mb-2">⚡</div>
                   <h4 className="font-bold mb-1">Immediate Impact</h4>
@@ -888,7 +646,12 @@ function App() {
                 <div>
                   <div className="text-3xl font-black text-orange-400 mb-2">🎯</div>
                   <h4 className="font-bold mb-1">Proven Systems</h4>
-                  <p className="text-gray-300 text-sm">Battle-tested across 7 industries, $500K+ ad spend</p>
+                  <p className="text-gray-300 text-sm">Battle-tested systems from 20+ years C-level experience</p>
+                </div>
+                <div>
+                  <div className="text-3xl font-black text-orange-400 mb-2">💎</div>
+                  <h4 className="font-bold mb-1">Equity Upside</h4>
+                  <p className="text-gray-300 text-sm">Potential equity participation for long-term partnerships</p>
                 </div>
               </div>
             </div>
@@ -901,10 +664,10 @@ function App() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
-              Meet Your <span className="text-blue-600">Marketing Psychology</span> Expert
+              Meet Your <span className="text-blue-600">C-Level Executive</span> Partner
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              20+ years turning marketing psychology into measurable revenue growth
+              20+ years C-level experience driving measurable revenue growth at US companies
             </p>
           </div>
 
@@ -917,7 +680,7 @@ function App() {
                   <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 text-white shadow-xl">
                     <div className="text-5xl font-black mb-2">$3M+</div>
                     <div className="text-lg font-bold text-orange-100 mb-1">Monthly Revenue Generated</div>
-                    <div className="text-orange-200 text-sm">Norton Antivirus Case Study</div>
+                    <div className="text-orange-200 text-sm">From Leading US Companies</div>
                   </div>
                 </div>
                 
@@ -1062,12 +825,27 @@ function App() {
                         key={idx}
                         onClick={() => {
                           setFormData({...formData, challenge: option});
-                          setTimeout(() => setFormStep(2), 800);
+                          setSelectedOptions({...selectedOptions, [`challenge-${idx}`]: true});
+                          setTimeout(() => setFormStep(2), 600);
                         }}
-                        className="w-full text-left px-4 py-4 rounded-xl border-2 border-gray-200 hover:border-orange-500 hover:bg-orange-50 transition-all duration-300 group"
+                        className={`w-full text-left px-4 py-4 rounded-xl border-2 transition-all duration-300 group ${
+                          formData.challenge === option
+                            ? 'border-orange-500 bg-orange-50'
+                            : 'border-gray-200 hover:border-orange-500 hover:bg-orange-50'
+                        }`}
                       >
                         <div className="flex items-center">
-                          <div className="w-5 h-5 rounded-full border-2 border-gray-300 group-hover:border-orange-500 mr-3 flex-shrink-0"></div>
+                          <div className={`w-5 h-5 rounded-full border-2 mr-3 flex-shrink-0 flex items-center justify-center transition-all duration-300 ${
+                            formData.challenge === option
+                              ? 'border-orange-500 bg-orange-500'
+                              : 'border-gray-300 group-hover:border-orange-500'
+                          }`}>
+                            {formData.challenge === option && (
+                              <svg className="w-3 h-3 text-white animate-scale-in" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
+                              </svg>
+                            )}
+                          </div>
                           <span className="text-sm font-medium group-hover:text-orange-700">{option}</span>
                         </div>
                       </button>
@@ -1125,12 +903,27 @@ function App() {
                         key={idx}
                         onClick={() => {
                           setFormData({...formData, revenue: option.value});
-                          setTimeout(() => setFormStep(3), 800);
+                          setSelectedOptions({...selectedOptions, [`revenue-${option.value}`]: true});
+                          setTimeout(() => setFormStep(3), 600);
                         }}
-                        className="w-full text-left px-4 py-4 rounded-xl border-2 border-gray-200 hover:border-orange-500 hover:bg-orange-50 transition-all duration-300 group"
+                        className={`w-full text-left px-4 py-4 rounded-xl border-2 transition-all duration-300 group ${
+                          formData.revenue === option.value
+                            ? 'border-orange-500 bg-orange-50'
+                            : 'border-gray-200 hover:border-orange-500 hover:bg-orange-50'
+                        }`}
                       >
                         <div className="flex items-start">
-                          <div className="w-5 h-5 rounded-full border-2 border-gray-300 group-hover:border-orange-500 mr-3 mt-0.5 flex-shrink-0"></div>
+                          <div className={`w-5 h-5 rounded-full border-2 mr-3 mt-0.5 flex-shrink-0 flex items-center justify-center transition-all duration-300 ${
+                            formData.revenue === option.value
+                              ? 'border-orange-500 bg-orange-500'
+                              : 'border-gray-300 group-hover:border-orange-500'
+                          }`}>
+                            {formData.revenue === option.value && (
+                              <svg className="w-3 h-3 text-white animate-scale-in" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
+                              </svg>
+                            )}
+                          </div>
                           <div>
                             <div className="text-sm font-bold group-hover:text-orange-700">{option.label}</div>
                             <div className="text-xs text-gray-500 mt-0.5">{option.desc}</div>
@@ -1160,288 +953,258 @@ function App() {
             </div>
           )}
 
-          {/* Step 3: Comprehensive Information Collection */}
-          {formStep === 3 && (
-            <div className="text-center">
-              <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-                Final Step: Let's <span className="text-orange-400">Analyze</span>
-                <br />Your Marketing
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Tell us about your business so we can create your personalized audit
-              </p>
               
-              <div className="bg-white rounded-2xl p-6 max-w-2xl mx-auto shadow-2xl">
-                {/* Gamified Progress Header */}
-                <div className="mb-8">
-                  <div className="flex justify-center items-center mb-3">
-                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
+              {/* Step 3: Complete Information */}
+              {formStep === 3 && (
+                <div className="p-6 sm:p-8 max-h-[80vh] overflow-y-auto">
+                  {/* Progress bar */}
+                  <div className="mb-6">
+                    <div className="flex items-center justify-between mb-2">
+                      <span className="text-xs font-medium text-gray-500">Step 3 of 3</span>
+                      <span className="text-xs font-medium text-orange-500">Almost Done!</span>
                     </div>
-                    <div className="w-16 h-0.5 bg-green-300 mx-2"></div>
-                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <div className="w-16 h-0.5 bg-orange-300 mx-2"></div>
-                    <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
-                  </div>
-                  
-                  {/* Completion Percentage */}
-                  <div className="bg-gray-100 rounded-full h-2 mb-3">
-                    <div 
-                      className="bg-gradient-to-r from-orange-500 to-orange-600 h-2 rounded-full transition-all duration-500"
-                      style={{ 
-                        width: `${Math.min(95, (Object.values(formData).filter(val => val !== '').length / Object.keys(formData).length) * 100)}%` 
-                      }}
-                    ></div>
-                  </div>
-                  
-                  <div className="flex items-center justify-center space-x-4 text-sm">
-                    <div className="flex items-center">
-                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
-                      <span className="text-gray-600 font-medium">
-                        {Object.values(formData).filter(val => val !== '').length}/{Object.keys(formData).length} Complete
-                      </span>
-                    </div>
-                    <div className="flex items-center">
-                      <span className="text-orange-600 font-bold">🏆 Almost Done!</span>
-                    </div>
-                  </div>
-                </div>
-                
-                <div className="space-y-6 text-left">
-                  {/* Contact Info Section */}
-                  <div className="bg-blue-50 rounded-xl p-4">
-                    <h4 className="font-bold text-blue-900 mb-3 flex items-center">
-                      <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs mr-2">1</span>
-                      Contact Information
-                    </h4>
-                    <div className="grid grid-cols-2 gap-3 mb-3">
-                      <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">First Name *</label>
-                        <input 
-                          type="text" 
-                          value={formData.name}
-                          onChange={(e) => setFormData({...formData, name: e.target.value})}
-                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                          placeholder="Your first name"
-                        />
-                      </div>
-                      <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">Company *</label>
-                        <input 
-                          type="text" 
-                          value={formData.company}
-                          onChange={(e) => setFormData({...formData, company: e.target.value})}
-                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                          placeholder="Company name"
-                        />
-                      </div>
-                    </div>
-                    <div>
-                      <label className="block text-xs font-bold text-slate-700 mb-2">Business Email *</label>
-                      <input 
-                        type="email" 
-                        value={formData.email}
-                        onChange={(e) => setFormData({...formData, email: e.target.value})}
-                        className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                        placeholder="your@company.com"
-                      />
+                    <div className="w-full bg-gray-200 rounded-full h-2">
+                      <div className="bg-gradient-to-r from-orange-400 to-orange-500 h-2 rounded-full transition-all duration-500" style={{width: '90%'}}></div>
                     </div>
                   </div>
 
-                  {/* Business Details Section */}
-                  <div className="bg-green-50 rounded-xl p-4">
-                    <h4 className="font-bold text-green-900 mb-3 flex items-center">
-                      <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-2">2</span>
-                      Business Details
-                    </h4>
-                    <div className="space-y-3">
-                      <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">Website URL *</label>
-                        <input 
-                          type="url" 
-                          value={formData.website}
-                          onChange={(e) => setFormData({...formData, website: e.target.value})}
-                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                          placeholder="https://yourcompany.com"
-                        />
-                      </div>
-                      <div className="grid grid-cols-2 gap-3">
+                  {/* Form header */}
+                  <div className="text-center mb-6">
+                    <h3 className="text-2xl font-black text-slate-900 mb-2">Let's Get Your Analysis Started!</h3>
+                    <p className="text-gray-600">Just a few details so I can create your personalized strategy</p>
+                  </div>
+
+                  {/* Form sections */}
+                  <div className="space-y-4">
+                    {/* Contact Information */}
+                    <div className="bg-blue-50 rounded-xl p-4">
+                      <h4 className="font-bold text-blue-900 mb-3 flex items-center">
+                        <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs mr-2">1</span>
+                        Your Information
+                      </h4>
+                      <div className="grid grid-cols-2 gap-3 mb-3">
                         <div>
-                          <label className="block text-xs font-bold text-slate-700 mb-2">Industry</label>
-                          <select 
-                            value={formData.industry}
-                            onChange={(e) => setFormData({...formData, industry: e.target.value})}
-                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
-                          >
-                            <option value="">Select industry</option>
-                            <option value="software">Software/SaaS</option>
-                            <option value="healthcare">Healthcare</option>
-                            <option value="ecommerce">E-commerce</option>
-                            <option value="financial">Financial Services</option>
-                            <option value="professional">Professional Services</option>
-                            <option value="manufacturing">Manufacturing</option>
-                            <option value="other">Other</option>
-                          </select>
+                          <label className="block text-xs font-bold text-slate-700 mb-2">First Name *</label>
+                          <input 
+                            type="text" 
+                            value={formData.name}
+                            onChange={(e) => setFormData({...formData, name: e.target.value})}
+                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                            placeholder="Your first name"
+                          />
                         </div>
                         <div>
-                          <label className="block text-xs font-bold text-slate-700 mb-2">Team Size</label>
-                          <select 
-                            value={formData.teamSize}
-                            onChange={(e) => setFormData({...formData, teamSize: e.target.value})}
-                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
-                          >
-                            <option value="">Select size</option>
-                            <option value="1-10">1-10 employees</option>
-                            <option value="11-50">11-50 employees</option>
-                            <option value="51-200">51-200 employees</option>
-                            <option value="200+">200+ employees</option>
-                          </select>
+                          <label className="block text-xs font-bold text-slate-700 mb-2">Company *</label>
+                          <input 
+                            type="text" 
+                            value={formData.company}
+                            onChange={(e) => setFormData({...formData, company: e.target.value})}
+                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                            placeholder="Company name"
+                          />
+                        </div>
+                      </div>
+                      <div>
+                        <label className="block text-xs font-bold text-slate-700 mb-2">Business Email *</label>
+                        <input 
+                          type="email" 
+                          value={formData.email}
+                          onChange={(e) => setFormData({...formData, email: e.target.value})}
+                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                          placeholder="your@company.com"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Business Details */}
+                    <div className="bg-green-50 rounded-xl p-4">
+                      <h4 className="font-bold text-green-900 mb-3 flex items-center">
+                        <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-2">2</span>
+                        Business Details
+                      </h4>
+                      <div className="space-y-3">
+                        <div>
+                          <label className="block text-xs font-bold text-slate-700 mb-2">Website URL</label>
+                          <input 
+                            type="url" 
+                            value={formData.website}
+                            onChange={(e) => setFormData({...formData, website: e.target.value})}
+                            onBlur={(e) => handleFieldBlur('website', e.target.value)}
+                            className={`w-full px-3 py-3 border-2 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm ${
+                              fieldValidation.website === 'valid' ? 'border-green-500' : 
+                              fieldValidation.website === 'invalid' ? 'border-red-500' : 'border-gray-200'
+                            }`}
+                            placeholder="https://yourcompany.com"
+                          />
+                        </div>
+                        <div className="grid grid-cols-2 gap-3">
+                          <div>
+                            <label className="block text-xs font-bold text-slate-700 mb-2">Industry</label>
+                            <select 
+                              value={formData.industry}
+                              onChange={(e) => setFormData({...formData, industry: e.target.value})}
+                              className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
+                            >
+                              <option value="">Select industry</option>
+                              <option value="software">Software/SaaS</option>
+                              <option value="healthcare">Healthcare</option>
+                              <option value="ecommerce">E-commerce</option>
+                              <option value="financial">Financial Services</option>
+                              <option value="professional">Professional Services</option>
+                              <option value="manufacturing">Manufacturing</option>
+                              <option value="other">Other</option>
+                            </select>
+                          </div>
+                          <div>
+                            <label className="block text-xs font-bold text-slate-700 mb-2">Team Size</label>
+                            <select 
+                              value={formData.teamSize}
+                              onChange={(e) => setFormData({...formData, teamSize: e.target.value})}
+                              className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
+                            >
+                              <option value="">Select size</option>
+                              <option value="1-10">1-10 employees</option>
+                              <option value="11-50">11-50 employees</option>
+                              <option value="51-200">51-200 employees</option>
+                              <option value="200+">200+ employees</option>
+                            </select>
+                          </div>
                         </div>
                       </div>
                     </div>
-                  </div>
 
-                  {/* Marketing Challenge Section */}
-                  <div className="bg-orange-50 rounded-xl p-4">
-                    <h4 className="font-bold text-orange-900 mb-3 flex items-center">
-                      <span className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center text-white text-xs mr-2">3</span>
-                      Marketing Challenge Analysis
-                    </h4>
-                    <div className="space-y-3">
-                      <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">What's the main issue with your marketing? *</label>
-                        <textarea 
-                          value={formData.specificIssue}
-                          onChange={(e) => setFormData({...formData, specificIssue: e.target.value})}
-                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                          placeholder="e.g., Not getting enough leads, poor conversion rates, unclear messaging, competitors beating us, website visitors not buying..."
-                          rows={3}
-                        />
+                    {/* Marketing Challenge */}
+                    <div className="bg-yellow-50 rounded-xl p-4">
+                      <h4 className="font-bold text-yellow-900 mb-3 flex items-center">
+                        <span className="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center text-white text-xs mr-2">3</span>
+                        Your Marketing Challenge
+                      </h4>
+                      <div className="space-y-3">
+                        <div>
+                          <label className="block text-xs font-bold text-slate-700 mb-2">What's your biggest marketing pain right now? *</label>
+                          <textarea 
+                            value={formData.specificIssue}
+                            onChange={(e) => setFormData({...formData, specificIssue: e.target.value})}
+                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                            placeholder="e.g., Not getting enough leads, poor conversion rates, unclear messaging, competitors beating us, website visitors not buying..."
+                            rows={3}
+                          />
+                        </div>
+                        <div>
+                          <label className="block text-xs font-bold text-slate-700 mb-2">What marketing are you currently doing?</label>
+                          <textarea 
+                            value={formData.currentMarketing}
+                            onChange={(e) => setFormData({...formData, currentMarketing: e.target.value})}
+                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                            placeholder="e.g., Google Ads, social media, content marketing, email campaigns, SEO..."
+                            rows={2}
+                          />
+                        </div>
                       </div>
-                      <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">What marketing are you currently doing?</label>
-                        <textarea 
-                          value={formData.currentMarketing}
-                          onChange={(e) => setFormData({...formData, currentMarketing: e.target.value})}
-                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                          placeholder="e.g., Google Ads, social media, content marketing, email campaigns, SEO..."
-                          rows={2}
-                        />
+                    </div>
+
+                    {/* Timeline */}
+                    <div className="bg-purple-50 rounded-xl p-4">
+                      <h4 className="font-bold text-purple-900 mb-3 flex items-center">
+                        <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2">4</span>
+                        Timeline
+                      </h4>
+                      <p className="text-xs text-gray-600 mb-3">When do you need to see marketing results?</p>
+                      <div className="grid grid-cols-2 gap-2">
+                        {[
+                          { value: 'asap', label: 'ASAP' },
+                          { value: '1-3months', label: '1-3 months' },
+                          { value: '3-6months', label: '3-6 months' },
+                          { value: '6months+', label: '6+ months' }
+                        ].map(option => (
+                          <button
+                            key={option.value}
+                            onClick={() => setFormData({...formData, timeline: option.value})}
+                            className={`px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${
+                              formData.timeline === option.value 
+                                ? 'border-orange-500 bg-orange-50 text-orange-700' 
+                                : 'border-gray-200 hover:border-gray-300'
+                            }`}
+                          >
+                            {option.label}
+                          </button>
+                        ))}
                       </div>
                     </div>
                   </div>
 
-                  {/* Timeline Section */}
-                  <div className="bg-purple-50 rounded-xl p-4">
-                    <h4 className="font-bold text-purple-900 mb-3 flex items-center">
-                      <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2">4</span>
-                      Timeline & Priority
-                    </h4>
-                    <label className="block text-xs font-bold text-slate-700 mb-2">When do you need this fixed? *</label>
-                    <div className="grid grid-cols-2 gap-2">
-                      {[
-                        { value: "asap", label: "ASAP - Bleeding money", color: "red" },
-                        { value: "month", label: "This month", color: "orange" }, 
-                        { value: "quarter", label: "This quarter", color: "blue" },
-                        { value: "research", label: "Just researching", color: "gray" }
-                      ].map((option) => (
-                        <button
-                          key={option.value}
-                          onClick={() => setFormData({...formData, timeline: option.value})}
-                          className={`px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${
-                            formData.timeline === option.value 
-                              ? 'border-orange-500 bg-orange-50 text-orange-700' 
-                              : 'border-gray-200 hover:border-gray-300'
-                          }`}
-                        >
-                          {option.label}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Submit Button - Moved inside with back button */}
-                <div className="mt-6 space-y-4">
+                  {/* Submit button */}
                   <button 
-                    onClick={() => {
-                      const requiredFields = ['name', 'company', 'email', 'website', 'specificIssue', 'timeline'];
-                      const missingFields = requiredFields.filter(field => !formData[field as keyof typeof formData]);
-                      
-                      if (missingFields.length === 0) {
-                        alert('🎉 Perfect! You\'ll receive your personalized marketing psychology audit within 24 hours. Check your email for next steps.')
-                      } else {
-                        alert(`Please fill in these required fields: ${missingFields.join(', ')}`)
+                    onClick={async () => {
+                      // Validate required fields
+                      if (!formData.name || !formData.company || !formData.email || !formData.specificIssue) {
+                        alert('Please fill in all required fields');
+                        return;
+                      }
+
+                      // Validate email format
+                      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
+                        alert('Please enter a valid email address');
+                        return;
+                      }
+
+                      try {
+                        // Create email content using utility
+                        const emailContent = generateEmailContent(formData, 'Lead Generation');
+
+                        // Log submission (for development/debugging)
+                        console.log('Lead generation form submitted:', {
+                          formData,
+                          emailContent,
+                          timestamp: new Date().toISOString()
+                        });
+
+                        // Here you would integrate with your email service
+                        // For example: send to info@rebootmedia.net
+                        // await sendEmailToRebootMedia(emailContent, formData);
+
+                        // Show success message
+                        alert(`Thank you ${formData.name}! Your personalized marketing analysis request has been received. We'll send your analysis to ${formData.email} within 24 hours and may follow up to discuss how our fractional CMO services can help drive your business growth.`);
+                        
+                        // Reset form and close modal
+                        setShowDropdownForm(false);
+                        setFormStep(1);
+                        setFormData({
+                          email: '',
+                          challenge: '',
+                          revenue: '',
+                          name: '',
+                          company: '',
+                          timeline: '',
+                          website: '',
+                          specificIssue: '',
+                          industry: '',
+                          teamSize: '',
+                          currentMarketing: ''
+                        });
+
+                      } catch (error) {
+                        console.error('Form submission error:', error);
+                        alert(`There was an error submitting your request. Please try again or contact us directly at ${getObfuscatedEmailDisplay()}`);
                       }
                     }}
-                    disabled={!formData.name || !formData.company || !formData.email || !formData.website || !formData.specificIssue || !formData.timeline}
-                    className="w-full bg-orange-500 hover:bg-orange-600 disabled:bg-gray-300 text-white py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg disabled:transform-none"
+                    className="w-full mt-6 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
                   >
-                    🎯 Get My Custom Marketing Analysis
+                    Get My Free Marketing Analysis →
                   </button>
-                  
-                  {/* Back Button - Inside Form */}
+
+                  {/* Back button */}
                   <button 
                     onClick={() => setFormStep(2)}
-                    className="w-full text-gray-500 hover:text-gray-700 transition-colors duration-300 text-sm font-medium py-2"
+                    className="w-full mt-3 text-orange-500 hover:text-orange-600 font-medium text-sm"
                   >
-                    ← Back to Previous Step
+                    ← Back
                   </button>
-                </div>
-                
-                <div className="mt-4 p-4 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl border border-green-200">
-                  <div className="text-xs font-medium text-slate-700">
-                    <div className="flex items-center mb-2">
-                      <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                      <span className="font-bold">What you'll get in 24 hours:</span>
-                    </div>
-                    <ul className="ml-4 space-y-1 text-slate-600">
-                      <li>• Personal analysis of your website and marketing strategy</li>
-                      <li>• Specific breakdown of why your marketing isn't bringing customers</li>
-                      <li>• 3-5 psychology fixes you can implement immediately</li>
-                      <li>• Revenue opportunity calculation based on your business size</li>
-                      <li>• Personalized strategy recommendations for your industry</li>
-                    </ul>
+
+                  {/* Trust badges */}
+                  <div className="mt-4 text-center text-xs text-gray-500">
+                    🔒 Confidential • No spam • Unsubscribe anytime
                   </div>
-                </div>
-                
-                <div className="mt-3 text-center text-xs text-gray-500">
-                  🔒 Confidential • No spam • Unsubscribe anytime
-                </div>
-              </div>
-            </div>
-              )}
-              
-              {/* Placeholder for other form steps - will be fully implemented */}
-              {formStep === 2 && (
-                <div className="text-center">
-                  <h3 className="text-2xl font-black text-slate-900 mb-4">Step 2 - Coming Soon</h3>
-                  <p className="text-gray-600 mb-4">Multi-step form will be completed in the next update.</p>
-                  <button 
-                    onClick={() => setFormStep(1)}
-                    className="text-orange-500 hover:text-orange-600 font-medium"
-                  >
-                    ← Back to Step 1
-                  </button>
-                </div>
-              )}
-              
-              {formStep === 3 && (
-                <div className="text-center">
-                  <h3 className="text-2xl font-black text-slate-900 mb-4">Step 3 - Coming Soon</h3>
-                  <p className="text-gray-600 mb-4">Multi-step form will be completed in the next update.</p>
-                  <button 
-                    onClick={() => setFormStep(1)}
-                    className="text-orange-500 hover:text-orange-600 font-medium"
-                  >
-                    ← Back to Step 1
-                  </button>
                 </div>
               )}
             </div>
@@ -1449,52 +1212,8 @@ function App() {
         </div>
       )}
 
-      {/* Footer */}
-      <footer className="bg-gradient-to-b from-slate-800 to-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-6 sm:mb-8">
-            <div className="flex items-center justify-center mb-4">
-              <h2 className="text-3xl font-bold text-white">REBOOT <span className="text-orange-500">MEDIA</span></h2>
-            </div>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Marketing psychology expertise for companies ready to break through growth plateaus
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
-            <div className="text-center">
-              <h4 className="font-bold mb-4 text-orange-400">Services</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>Marketing Psychology Audit</li>
-                <li>Growth Strategy</li>
-                <li>Fractional CMO</li>
-              </ul>
-            </div>
-            
-            <div className="text-center">
-              <h4 className="font-bold mb-4 text-orange-400">Company</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>Reboot Media, Inc.</li>
-                <li>Bangkok, Thailand</li>
-                <li>Global Expertise</li>
-              </ul>
-            </div>
-            
-            <div className="text-center">
-              <h4 className="font-bold mb-4 text-orange-400">Proven Results</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li>$100K → $3M Growth</li>
-                <li>7 Industries</li>
-                <li>20+ Years Experience</li>
-              </ul>
-            </div>
-          </div>
-          
-          <div className="border-t border-slate-800 pt-8 text-center">
-            <p className="text-stone-500">&copy; 2025 Reboot Media, Inc. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
+      {/* Global Footer */}
+      <GlobalFooter onShowForm={() => setShowDropdownForm(true)} />
     </div>
   )
 }
