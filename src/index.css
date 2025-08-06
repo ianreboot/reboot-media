@@ -1,10 +1,50 @@
 @import 'tailwindcss';
 
 @theme {
+  /* 8pt Grid System Foundation */
+  --space-1: 0.125rem;  /* 2px */
+  --space-2: 0.25rem;   /* 4px */
+  --space-4: 0.5rem;    /* 8px - base unit */
+  --space-6: 0.75rem;   /* 12px */
+  --space-8: 1rem;      /* 16px */
+  --space-12: 1.5rem;   /* 24px */
+  --space-16: 2rem;     /* 32px */
+  --space-20: 2.5rem;   /* 40px */
+  --space-24: 3rem;     /* 48px */
+  --space-32: 4rem;     /* 64px */
+  --space-40: 5rem;     /* 80px */
+  --space-48: 6rem;     /* 96px */
+  
+  /* Fluid Spacing System */
+  --space-xs: clamp(0.25rem, 1vw, 0.5rem);    /* 4px-8px */
+  --space-sm: clamp(0.5rem, 1.5vw, 0.75rem);  /* 8px-12px */
+  --space-md: clamp(0.75rem, 2vw, 1.25rem);   /* 12px-20px */
+  --space-lg: clamp(1rem, 2.5vw, 1.75rem);    /* 16px-28px */
+  --space-xl: clamp(1.25rem, 3vw, 2.5rem);    /* 20px-40px */
+  --space-2xl: clamp(2rem, 4vw, 4rem);        /* 32px-64px */
+  
+  /* Typography Scale with Fluid Sizing */
+  --text-xs: clamp(0.75rem, 0.8vw, 0.875rem);     /* 12px-14px */
+  --text-sm: clamp(0.875rem, 0.9vw, 1rem);        /* 14px-16px */
+  --text-base: clamp(1rem, 1vw, 1.125rem);        /* 16px-18px */
+  --text-lg: clamp(1.125rem, 1.2vw, 1.375rem);    /* 18px-22px */
+  --text-xl: clamp(1.25rem, 1.4vw, 1.75rem);      /* 20px-28px */
+  --text-2xl: clamp(1.5rem, 1.8vw, 2.25rem);      /* 24px-36px */
+  --text-3xl: clamp(1.875rem, 2.4vw, 3rem);       /* 30px-48px */
+  --text-4xl: clamp(2.25rem, 3vw, 4rem);          /* 36px-64px */
+  --text-5xl: clamp(3rem, 4vw, 5rem);             /* 48px-80px */
+  
+  /* Line Heights (Typography Hierarchy) */
+  --leading-tight: 1.2;      /* Headlines */
+  --leading-form: 1.3;       /* Form questions */
+  --leading-normal: 1.4;     /* Body text */
+  --leading-relaxed: 1.6;    /* Explanatory text */
+
   /* Custom fonts */
   --font-sans: 'Figtree', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   
-  /* Custom colors */
+  /* Color System (60-30-10 Psychology Rule) */
+  /* 60% - Neutral Base Colors */
   --color-stone-50: #fafaf9;
   --color-stone-100: #f5f5f4;
   --color-stone-200: #e7e5e4;
@@ -17,20 +57,22 @@
   --color-stone-900: #1c1917;
   --color-stone-950: #0c0a09;
   
+  /* 30% - Secondary Support Colors */
+  --color-electric-blue-400: #60a5fa;
+  --color-electric-blue-500: #3b82f6;
+  --color-electric-blue-600: #2563eb;
+  
+  /* 10% - Primary Action Colors (CTA Exclusive) */
   --color-orange-50: #fff7ed;
   --color-orange-100: #ffedd5;
   --color-orange-200: #fed7aa;
   --color-orange-300: #fdba74;
   --color-orange-400: #fb923c;
-  --color-orange-500: #f97316;
+  --color-orange-500: #f97316;  /* Primary CTA Color */
   --color-orange-600: #ea580c;
   --color-orange-700: #c2410c;
   --color-orange-800: #9a3412;
   --color-orange-900: #7c2d12;
-  
-  --color-electric-blue-400: #60a5fa;
-  --color-electric-blue-500: #3b82f6;
-  --color-electric-blue-600: #2563eb;
 }
 
 :root {
