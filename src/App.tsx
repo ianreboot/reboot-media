@@ -305,105 +305,94 @@ function App() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            {/* The Problem */}
-            <div className="space-y-8">
-              <div className="bg-gradient-to-br from-red-50 to-orange-50 p-8 rounded-3xl border border-red-200/50">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-red-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-red-700 mb-3">The Industry Expert Problem</h3>
-                    <p className="text-red-600 leading-relaxed">
-                      Industry experts often suffer from the <strong>"curse of knowledge"</strong> - they're so deep in 
-                      industry jargon and assumptions that they can't see what confuses their customers.
-                    </p>
-                  </div>
+          <div className="max-w-4xl mx-auto">
+            {/* Linear Reading Flow - Top to Bottom */}
+            
+            {/* Step 1: The Problem - Industry Experts */}
+            <div className="mb-12">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center bg-red-100 rounded-full px-4 py-2 mb-4">
+                  <svg className="w-4 h-4 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
+                  <span className="text-red-700 text-sm font-semibold">The Problem</span>
                 </div>
+                <h3 className="text-2xl font-bold text-red-700 mb-4">Why Industry Experts Often Fail</h3>
               </div>
-
-              <div className="bg-gradient-to-br from-gray-50 to-slate-50 p-8 rounded-3xl border border-gray-200/50">
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-gray-500/20 rounded-full flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-3.029m5.858.908a3 3 0 114.243 4.243M9.878 9.878l4.242 4.242M9.878 9.878L8.464 8.464M9.878 9.878 20.121 20.12"/>
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-700 mb-3">They Miss What You Miss</h3>
-                    <p className="text-gray-600 leading-relaxed">
-                      When marketers know your industry too well, they make the same assumptions you do. 
-                      They miss the confusion points that are <strong>losing you customers every day</strong>.
-                    </p>
-                  </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-red-50 p-6 rounded-2xl border border-red-200/50">
+                  <h4 className="font-bold text-red-800 mb-3 flex items-center">
+                    <span className="w-6 h-6 bg-red-200 rounded-full flex items-center justify-center text-xs text-red-800 mr-3">1</span>
+                    The Curse of Knowledge
+                  </h4>
+                  <p className="text-red-700 text-sm leading-relaxed">
+                    They're so deep in industry jargon they can't see what confuses customers
+                  </p>
+                </div>
+                <div className="bg-red-50 p-6 rounded-2xl border border-red-200/50">
+                  <h4 className="font-bold text-red-800 mb-3 flex items-center">
+                    <span className="w-6 h-6 bg-red-200 rounded-full flex items-center justify-center text-xs text-red-800 mr-3">2</span>
+                    Missing Blind Spots
+                  </h4>
+                  <p className="text-red-700 text-sm leading-relaxed">
+                    They make the same assumptions you do, missing where customers get lost
+                  </p>
                 </div>
               </div>
             </div>
 
-            {/* The Solution */}
-            <div>
-              <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-10 rounded-3xl shadow-2xl text-white">
-                <div className="text-center mb-8">
-                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
-                    </svg>
-                  </div>
-                  <h3 className="text-3xl font-black mb-4">The Fresh Eyes Advantage</h3>
+            {/* Step 2: The Solution - Fresh Eyes */}
+            <div className="mb-12">
+              <div className="text-center mb-8">
+                <div className="inline-flex items-center bg-green-100 rounded-full px-4 py-2 mb-4">
+                  <svg className="w-4 h-4 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                  </svg>
+                  <span className="text-green-700 text-sm font-semibold">The Solution</span>
                 </div>
-
-                <div className="space-y-6">
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white font-bold text-sm">1</span>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg mb-2">I See Through Your Customers' Eyes</h4>
-                      <p className="text-blue-100 leading-relaxed">
-                        When I don't know your industry inside-out, I ask the same questions your 
-                        prospects do. I spot exactly where they get confused and leave.
-                      </p>
-                    </div>
+                <h3 className="text-2xl font-bold text-green-800 mb-4">The Fresh Eyes Advantage</h3>
+              </div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="bg-green-50 p-6 rounded-2xl border border-green-200/50">
+                  <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
+                    <span className="text-green-800 font-bold">1</span>
                   </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white font-bold text-sm">2</span>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg mb-2">I Question Everything</h4>
-                      <p className="text-blue-100 leading-relaxed">
-                        Industry experts accept "that's how we've always done it." I ask "why?" 
-                        about everything - and find opportunities they miss.
-                      </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start space-x-4">
-                    <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                      <span className="text-white font-bold text-sm">3</span>
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-lg mb-2">Psychology Beats Industry Knowledge</h4>
-                      <p className="text-blue-100 leading-relaxed">
-                        Human psychology works the same across all industries. Trust, urgency, 
-                        social proof - these drive decisions whether you sell software or sandwiches.
-                      </p>
-                    </div>
-                  </div>
+                  <h4 className="font-bold text-green-800 mb-3">Customer Perspective</h4>
+                  <p className="text-green-700 text-sm leading-relaxed">
+                    I ask the same questions your prospects do, spotting exactly where they get confused
+                  </p>
                 </div>
-
-                <div className="mt-8 p-6 bg-white/10 rounded-2xl backdrop-blur-sm">
-                  <div className="text-center">
-                    <div className="text-4xl font-black text-orange-300 mb-2">85%</div>
-                    <p className="text-sm text-blue-100">
-                      of my best results come from questioning "industry standard" approaches
-                    </p>
+                <div className="bg-green-50 p-6 rounded-2xl border border-green-200/50">
+                  <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
+                    <span className="text-green-800 font-bold">2</span>
                   </div>
+                  <h4 className="font-bold text-green-800 mb-3">Question Everything</h4>
+                  <p className="text-green-700 text-sm leading-relaxed">
+                    While experts accept "how we've always done it," I ask "why?" and find new opportunities
+                  </p>
                 </div>
+                <div className="bg-green-50 p-6 rounded-2xl border border-green-200/50">
+                  <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
+                    <span className="text-green-800 font-bold">3</span>
+                  </div>
+                  <h4 className="font-bold text-green-800 mb-3">Universal Psychology</h4>
+                  <p className="text-green-700 text-sm leading-relaxed">
+                    Human psychology works the same everywhere - trust, urgency, and social proof drive all decisions
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 3: The Proof */}
+            <div className="text-center">
+              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border border-blue-200/50">
+                <div className="text-5xl font-black text-blue-600 mb-2">85%</div>
+                <p className="text-blue-700 font-semibold mb-4">
+                  of my best results come from questioning "industry standard" approaches
+                </p>
+                <div className="w-16 h-1 bg-orange-500 mx-auto rounded-full"></div>
               </div>
             </div>
           </div>
@@ -433,124 +422,142 @@ function App() {
             </h2>
           </div>
 
-          {/* Success Story Section */}
-          <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 p-8 sm:p-12 rounded-3xl shadow-2xl relative overflow-hidden">
-            {/* Background Elements */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/5 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-blue-500/5 rounded-full blur-3xl"></div>
-            
-            <div className="relative z-10">
-              {/* Header */}
-              <div className="text-center mb-8">
-                <div className="inline-flex items-center bg-orange-500/20 backdrop-blur-sm border border-orange-400/30 rounded-full px-4 py-2 mb-4">
-                  <svg className="w-4 h-4 text-orange-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
-                  </svg>
-                  <span className="text-orange-400 text-sm font-semibold">Success Story</span>
-                </div>
-                <h3 className="text-3xl sm:text-4xl font-black text-white mb-2">From Struggling to Scaling</h3>
-                <p className="text-gray-300 text-lg">How marketing psychology transformed a global software company's revenue</p>
+          {/* Success Story Section - Light Theme */}
+          <div className="bg-white border-2 border-gray-100 rounded-3xl shadow-lg p-8 sm:p-12">
+            {/* Header */}
+            <div className="text-center mb-10">
+              <div className="inline-flex items-center bg-green-100 rounded-full px-4 py-2 mb-4">
+                <svg className="w-4 h-4 text-green-600 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+                </svg>
+                <span className="text-green-700 text-sm font-semibold">Real Results</span>
               </div>
-              
-              {/* Results Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+              <h3 className="text-3xl sm:text-4xl font-black text-slate-900 mb-3">From Struggling to Scaling</h3>
+              <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                How marketing psychology transformed a global software company's revenue in 18 months
+              </p>
+            </div>
+            
+            {/* Results Comparison - Clean Layout */}
+            <div className="max-w-4xl mx-auto mb-12">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
                 {/* Before */}
-                <div className="bg-gradient-to-br from-red-500/10 to-red-600/10 backdrop-blur-sm border border-red-500/20 rounded-2xl p-6 text-center">
-                  <div className="w-16 h-16 bg-red-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
-                    </svg>
+                <div className="text-center">
+                  <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-6 mb-4">
+                    <div className="w-16 h-16 bg-red-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
+                      </svg>
+                    </div>
+                    <div className="text-sm text-red-600 font-semibold mb-1">BEFORE</div>
+                    <div className="text-4xl font-black text-red-700 mb-2">$100K</div>
+                    <div className="text-red-600 text-sm font-medium">Monthly Revenue</div>
                   </div>
-                  <div className="text-sm text-red-400 font-semibold mb-1">BEFORE</div>
-                  <div className="text-4xl font-black text-white mb-2">$100K</div>
-                  <div className="text-gray-400 text-sm">Monthly Revenue</div>
-                  <div className="mt-3 text-gray-300 text-xs">Flat growth, few new customers</div>
+                  <p className="text-gray-600 text-sm">Flat growth, struggling to attract new customers despite product quality</p>
                 </div>
                 
-                {/* Process */}
-                <div className="bg-gradient-to-br from-blue-500/10 to-blue-600/10 backdrop-blur-sm border border-blue-500/20 rounded-2xl p-6 text-center">
-                  <div className="w-16 h-16 bg-blue-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                {/* Arrow */}
+                <div className="flex justify-center">
+                  <div className="bg-blue-100 rounded-full p-4">
+                    <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
                     </svg>
                   </div>
-                  <div className="text-sm text-blue-400 font-semibold mb-1">TRANSFORMATION</div>
-                  <div className="text-4xl font-black text-white mb-2">30X</div>
-                  <div className="text-gray-400 text-sm">Revenue Growth</div>
-                  <div className="mt-3 text-gray-300 text-xs">Psychology-driven approach</div>
                 </div>
                 
                 {/* After */}
-                <div className="bg-gradient-to-br from-green-500/10 to-green-600/10 backdrop-blur-sm border border-green-500/20 rounded-2xl p-6 text-center">
-                  <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <svg className="w-8 h-8 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                    </svg>
+                <div className="text-center">
+                  <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-6 mb-4">
+                    <div className="w-16 h-16 bg-green-200 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                      </svg>
+                    </div>
+                    <div className="text-sm text-green-600 font-semibold mb-1">AFTER</div>
+                    <div className="text-4xl font-black text-green-700 mb-2">$3M+</div>
+                    <div className="text-green-600 text-sm font-medium">Monthly Revenue</div>
                   </div>
-                  <div className="text-sm text-green-400 font-semibold mb-1">AFTER</div>
-                  <div className="text-4xl font-black text-white mb-2">$3M+</div>
-                  <div className="text-gray-400 text-sm">Monthly Revenue</div>
-                  <div className="mt-3 text-gray-300 text-xs">Sustained growth momentum</div>
+                  <p className="text-gray-600 text-sm">30x growth through psychology-driven messaging and customer journey optimization</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Key Strategies - Clean Cards */}
+            <div className="max-w-5xl mx-auto">
+              <h4 className="text-2xl font-bold text-slate-900 text-center mb-8">
+                The Psychology Strategies That Worked
+              </h4>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                  <div className="flex items-start">
+                    <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                      <span className="text-orange-600 font-bold">1</span>
+                    </div>
+                    <div>
+                      <h5 className="font-bold text-slate-900 mb-2">Loss Aversion Messaging</h5>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Shifted from "Get protected" to "Don't lose your files" - triggering immediate emotional response and action
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                  <div className="flex items-start">
+                    <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                      <span className="text-orange-600 font-bold">2</span>
+                    </div>
+                    <div>
+                      <h5 className="font-bold text-slate-900 mb-2">Social Proof Hierarchy</h5>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Layered testimonials from peers first, then experts, maximizing trust at every decision point
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                  <div className="flex items-start">
+                    <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                      <span className="text-orange-600 font-bold">3</span>
+                    </div>
+                    <div>
+                      <h5 className="font-bold text-slate-900 mb-2">Authority Positioning</h5>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Strategic use of certifications and security badges for instant credibility and reduced risk perception
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                  <div className="flex items-start">
+                    <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
+                      <span className="text-orange-600 font-bold">4</span>
+                    </div>
+                    <div>
+                      <h5 className="font-bold text-slate-900 mb-2">Smart Scarcity Triggers</h5>
+                      <p className="text-gray-600 text-sm leading-relaxed">
+                        Time-sensitive offers based on real threat data, not artificial deadlines - genuine urgency that converts
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
               
-              {/* Key Strategies */}
-              <div className="bg-slate-800/30 backdrop-blur-sm border border-slate-700/50 rounded-2xl p-8">
-                <h4 className="text-xl font-bold mb-6 text-white flex items-center">
-                  <svg className="w-6 h-6 text-orange-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                  Psychology Strategies That Drove Results
-                </h4>
-                
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
-                      <span className="text-orange-400 font-bold">1</span>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold text-white mb-1">Loss Aversion Messaging</h5>
-                      <p className="text-gray-400 text-sm">Shifted from "Get protected" to "Don't lose your files" - triggering immediate action</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
-                      <span className="text-orange-400 font-bold">2</span>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold text-white mb-1">Social Proof Hierarchy</h5>
-                      <p className="text-gray-400 text-sm">Layered testimonials from peers first, then experts, maximizing trust building</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
-                      <span className="text-orange-400 font-bold">3</span>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold text-white mb-1">Authority Positioning</h5>
-                      <p className="text-gray-400 text-sm">Leveraged industry certifications and security badges for instant credibility</p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="w-10 h-10 bg-orange-500/20 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
-                      <span className="text-orange-400 font-bold">4</span>
-                    </div>
-                    <div>
-                      <h5 className="font-semibold text-white mb-1">Smart Scarcity Triggers</h5>
-                      <p className="text-gray-400 text-sm">Time-sensitive offers based on real threat data, not artificial deadlines</p>
-                    </div>
-                  </div>
-                </div>
-                
-                {/* Bottom CTA */}
-                <div className="mt-8 text-center">
-                  <p className="text-gray-300 mb-4">Ready to transform your marketing with proven psychology?</p>
-                  <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">
-                    Get Your Free Psychology Audit
-                  </button>
+              {/* Bottom CTA */}
+              <div className="mt-10 text-center">
+                <div className="bg-gradient-to-r from-blue-50 to-orange-50 rounded-2xl p-8 border border-orange-200/50">
+                  <p className="text-slate-700 font-semibold text-lg mb-4">
+                    Ready to apply these same psychology principles to your business?
+                  </p>
+                  <a href="#contact" className="inline-flex items-center bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+                    Get Your Psychology Strategy Session
+                    <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                    </svg>
+                  </a>
                 </div>
               </div>
             </div>
@@ -786,108 +793,116 @@ function App() {
         </div>
       </section>
 
-      {/* About Section - Ian's Background */}
-      <section id="about" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-900 via-slate-800 to-blue-900 text-white relative overflow-hidden">
-        {/* Background Elements */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-20 left-10 w-40 h-40 bg-orange-500/5 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-10 w-60 h-60 bg-orange-500/3 rounded-full blur-3xl"></div>
-        </div>
-
-        <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-4xl md:text-5xl font-black mb-6 sm:mb-8">
-              Meet Your <span className="text-orange-400">Marketing Psychology</span>
-              <br />Marketing Expert
+      {/* About Section - Ian's Background - Light Theme */}
+      <section id="about" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+              Meet Your <span className="text-blue-600">Marketing Psychology</span> Expert
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               20+ years turning marketing psychology into measurable revenue growth
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left: Ian's Story */}
-            <div className="space-y-8">
-              <div className="bg-slate-800/50 p-6 sm:p-8 rounded-2xl border border-slate-700/50">
-                <h3 className="text-2xl font-bold text-orange-400 mb-4">The \"Super Affiliate\" Background</h3>
-                <p className="text-gray-300 leading-normal mb-4">
-                  I've spent <span className="font-bold text-white">$500K/month of my own money</span> testing what actually brings in customers. Not theory - real results with real consequences.
-                </p>
-                <p className="text-gray-300 leading-normal">
-                  Now I bring those battle-tested psychology principles to help business owners communicate their value in ways that actually drive revenue.
-                </p>
-              </div>
-
-              <div className="bg-slate-800/50 p-6 sm:p-8 rounded-2xl border border-slate-700/50">
-                <h3 className="text-2xl font-bold text-orange-400 mb-4">The Bangkok Advantage</h3>
-                <p className="text-gray-300 leading-normal mb-4">
-                  Based in Bangkok, I serve companies globally who want <span className="font-bold text-white">proven marketing excellence</span> at competitive rates.
-                </p>
-                <p className="text-gray-300 leading-normal">
-                  Perfect for companies expanding to US markets or those seeking proven Western marketing psychology expertise.
-                </p>
-              </div>
-
-              <div className="bg-slate-800/50 p-6 sm:p-8 rounded-2xl border border-slate-700/50">
-                <h3 className="text-2xl font-bold text-orange-400 mb-4">Industries Proven In</h3>
-                <div className="grid grid-cols-2 gap-4 text-gray-300">
-                  <div>• Software/SaaS</div>
-                  <div>• Healthcare</div>
-                  <div>• Fashion/E-commerce</div>
-                  <div>• Financial Services</div>
-                  <div>• Fitness/Wellness</div>
-                  <div>• Legal Services</div>
-                  <div>• Food & Beverage</div>
-                  <div>• Professional Services</div>
+          {/* Main Credibility Section */}
+          <div className="mb-16">
+            <div className="bg-white border-2 border-blue-200 rounded-3xl p-8 sm:p-12 shadow-lg">
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
+                {/* Primary Stat */}
+                <div className="text-center lg:col-span-1">
+                  <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 text-white shadow-xl">
+                    <div className="text-5xl font-black mb-2">$3M+</div>
+                    <div className="text-lg font-bold text-orange-100 mb-1">Monthly Revenue Generated</div>
+                    <div className="text-orange-200 text-sm">Norton Antivirus Case Study</div>
+                  </div>
+                </div>
+                
+                {/* Supporting Stats */}
+                <div className="lg:col-span-2">
+                  <div className="grid grid-cols-2 gap-4">
+                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+                      <div className="text-3xl font-black text-blue-600 mb-1">20+</div>
+                      <div className="text-blue-700 font-medium text-sm">Years Experience</div>
+                    </div>
+                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+                      <div className="text-3xl font-black text-blue-600 mb-1">$500K</div>
+                      <div className="text-blue-700 font-medium text-sm">Monthly Ad Testing</div>
+                    </div>
+                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+                      <div className="text-3xl font-black text-blue-600 mb-1">7+</div>
+                      <div className="text-blue-700 font-medium text-sm">Industries Proven</div>
+                    </div>
+                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+                      <div className="text-3xl font-black text-blue-600 mb-1">8</div>
+                      <div className="text-blue-700 font-medium text-sm">Client Limit</div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
+          </div>
 
-            {/* Right: Stats & Credibility */}
-            <div className="space-y-8">
-              <div className="text-center p-6 sm:p-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded-3xl shadow-2xl">
-                <div className="text-6xl font-black text-white mb-4">$3M+</div>
-                <div className="text-xl font-bold text-orange-100 mb-2">Monthly Revenue Generated</div>
-                <div className="text-orange-200">Norton Antivirus Case Study</div>
+          {/* Story Section - Scannable Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
               </div>
+              <h3 className="text-lg font-bold text-slate-900 mb-3">Battle-Tested Results</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                I've spent <strong>$500K/month of my own money</strong> testing what actually brings customers. 
+                Not theory - real results with real consequences.
+              </p>
+            </div>
 
-              <div className="grid grid-cols-2 gap-4 sm:gap-6">
-                <div className="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50">
-                  <div className="text-3xl font-black text-orange-400 mb-2">20+</div>
-                  <div className="text-gray-300">Years Experience</div>
-                </div>
-                <div className="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50">
-                  <div className="text-3xl font-black text-orange-400 mb-2">7</div>
-                  <div className="text-gray-300">Industries</div>
-                </div>
-                <div className="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50">
-                  <div className="text-3xl font-black text-orange-400 mb-2">$500K</div>
-                  <div className="text-gray-300">Monthly Ad Spend</div>
-                </div>
-                <div className="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50">
-                  <div className="text-3xl font-black text-orange-400 mb-2">8</div>
-                  <div className="text-gray-300">Client Limit</div>
-                </div>
+            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
+                </svg>
               </div>
+              <h3 className="text-lg font-bold text-slate-900 mb-3">Global Reach</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Based in Bangkok, I serve companies worldwide who want <strong>proven marketing excellence</strong> 
+                at competitive rates. Perfect for US market expansion.
+              </p>
+            </div>
 
-              {/* LinkedIn Connection */}
-              <div className="bg-slate-800/50 p-6 sm:p-8 rounded-2xl border border-slate-700/50 text-center">
-                <h4 className="text-xl font-bold text-white mb-4">Connect & Verify</h4>
-                <p className="text-gray-300 mb-6">
-                  See my full background and recommendations on LinkedIn
-                </p>
-                <a 
-                  href="https://www.linkedin.com/in/ian-ho/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300"
-                >
-                  <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clipRule="evenodd" />
-                  </svg>
-                  View LinkedIn Profile
-                </a>
+            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
               </div>
+              <h3 className="text-lg font-bold text-slate-900 mb-3">Proven Across Industries</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">
+                Software, Healthcare, E-commerce, Financial Services, Professional Services, 
+                and more. <strong>Psychology works universally.</strong>
+              </p>
+            </div>
+          </div>
+
+          {/* LinkedIn Verification */}
+          <div className="text-center">
+            <div className="bg-gradient-to-r from-blue-50 to-slate-50 rounded-2xl p-8 border border-blue-200/50 max-w-2xl mx-auto">
+              <h4 className="text-xl font-bold text-slate-900 mb-4">Verify My Background</h4>
+              <p className="text-slate-600 mb-6">
+                See my full professional background and client recommendations
+              </p>
+              <a 
+                href="https://www.linkedin.com/in/ian-ho/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+              >
+                <svg className="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                  <path fillRule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clipRule="evenodd" />
+                </svg>
+                View LinkedIn Profile
+              </a>
             </div>
           </div>
         </div>
