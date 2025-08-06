@@ -181,14 +181,14 @@ function App() {
           <div className="mb-4 sm:mb-6">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-slate-900 leading-[0.9]">
               <span className="block">Stop Losing</span>
-              <span className="block mt-2">
+              <span className="block -mt-1">
                 <span className="text-orange-500 relative inline-block min-h-[1.2em]">
                   {typedWord}
                   <span className="animate-blink ml-0.5">|</span>
                   <div className="absolute -inset-2 bg-orange-100 -skew-y-1 -z-10 rounded-lg"></div>
                 </span>
               </span>
-              <span className="block mt-1">to <span className="text-gray-600 line-through decoration-red-500 decoration-4">Broken</span></span>
+              <span className="block -mt-2">to <span className="text-gray-600 line-through decoration-red-500 decoration-4">Broken</span></span>
               <span className="block mt-1">Marketing</span>
             </h1>
           </div>
@@ -216,7 +216,7 @@ function App() {
 
           {/* Benefits-Focused Proof Points */}
           <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
               <div className="flex items-start">
                 <div className="w-3 h-3 bg-orange-500 rounded-full mr-4 mt-2 flex-shrink-0"></div>
                 <div>
@@ -228,7 +228,7 @@ function App() {
               </div>
             </div>
             
-            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
               <div className="flex items-start">
                 <div className="w-3 h-3 bg-blue-500 rounded-full mr-4 mt-2 flex-shrink-0"></div>
                 <div>
@@ -240,7 +240,7 @@ function App() {
               </div>
             </div>
             
-            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300">
+            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
               <div className="flex items-start">
                 <div className="w-3 h-3 bg-green-500 rounded-full mr-4 mt-2 flex-shrink-0"></div>
                 <div>
@@ -360,7 +360,7 @@ function App() {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-green-50 p-6 rounded-2xl border border-green-200/50">
+                <div className="bg-green-50 p-6 rounded-2xl border border-green-200/50 transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
                   <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
                     <span className="text-green-800 font-bold">1</span>
                   </div>
@@ -369,7 +369,7 @@ function App() {
                     I ask the same questions your prospects do, spotting exactly where they get confused
                   </p>
                 </div>
-                <div className="bg-green-50 p-6 rounded-2xl border border-green-200/50">
+                <div className="bg-green-50 p-6 rounded-2xl border border-green-200/50 transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
                   <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
                     <span className="text-green-800 font-bold">2</span>
                   </div>
@@ -378,7 +378,7 @@ function App() {
                     While experts accept "how we've always done it," I ask "why?" and find new opportunities
                   </p>
                 </div>
-                <div className="bg-green-50 p-6 rounded-2xl border border-green-200/50">
+                <div className="bg-green-50 p-6 rounded-2xl border border-green-200/50 transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
                   <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
                     <span className="text-green-800 font-bold">3</span>
                   </div>
@@ -682,16 +682,16 @@ function App() {
                   </div>
                 )}
 
-                <div className={`p-6 sm:p-8 rounded-3xl shadow-xl border-2 transition-all duration-300 h-full ${
+                <div className={`p-6 sm:p-8 rounded-3xl border-2 transition-all duration-300 h-full ${
                   service.color === 'orange' 
-                    ? 'bg-gradient-to-br from-orange-500 to-orange-600 text-white border-orange-400 transform scale-105'
+                    ? 'bg-gradient-to-br from-orange-500 to-orange-600 text-white border-orange-400 transform scale-105 shadow-2xl'
                     : service.color === 'blue'
                     ? hoveredCard === service.index
-                      ? 'bg-gradient-to-br from-blue-700 to-blue-800 text-white border-blue-300 shadow-2xl'
-                      : 'bg-gradient-to-br from-blue-600 to-blue-700 text-white border-blue-400 hover:shadow-2xl'
+                      ? 'bg-gradient-to-br from-blue-700 to-blue-800 text-white border-blue-300 shadow-[0_20px_50px_rgba(59,130,246,0.5)]'
+                      : 'bg-gradient-to-br from-blue-600 to-blue-700 text-white border-blue-400 shadow-xl hover:shadow-[0_20px_50px_rgba(59,130,246,0.3)]'
                     : hoveredCard === service.index
-                    ? 'bg-white border-orange-400 shadow-2xl ring-2 ring-orange-200'
-                    : 'bg-white border-gray-200 hover:border-orange-300 hover:shadow-2xl'
+                    ? 'bg-white border-orange-500 border-4 shadow-[0_25px_60px_rgba(251,146,60,0.4)]'
+                    : 'bg-white border-gray-200 shadow-lg hover:border-orange-400 hover:border-3 hover:shadow-[0_20px_40px_rgba(0,0,0,0.15)]'
                 }`}>
                   <div className="mb-6">
                     {/* Size Indicator */}
@@ -852,7 +852,7 @@ function App() {
 
           {/* Story Section - Scannable Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -865,7 +865,7 @@ function App() {
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm transition-all duration-500 hover:scale-105 hover:rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
@@ -878,7 +878,7 @@ function App() {
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm">
+            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -1034,7 +1034,16 @@ function App() {
                   </div>
                 </div>
                 
-                <div className="text-center text-xs text-gray-500">
+                <div className="mt-4">
+                  <button 
+                    onClick={() => setFormStep(1)}
+                    className="w-full text-gray-500 hover:text-gray-700 transition-colors duration-300 text-sm font-medium py-2"
+                  >
+                    ← Back to Previous Step
+                  </button>
+                </div>
+                
+                <div className="text-center text-xs text-gray-500 mt-4">
                   <div className="flex items-center justify-center">
                     <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                     All information kept confidential
