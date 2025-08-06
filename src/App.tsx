@@ -7,8 +7,26 @@ function App() {
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
-  // Words to cycle through - what businesses lose
-  const lostItems = ['Revenue', 'Customers', 'Growth', 'Market Share', 'Opportunities'];
+  // Words to cycle through - ordered by importance to target demographics
+  const lostItems = [
+    'Revenue',          // Primary concern for $500K-$1.5M companies
+    'Growth',           // Hitting growth plateaus is key pain point
+    'Customers',        // Customer acquisition/retention
+    'Market Share',     // Competitive positioning
+    'Conversions',      // Psychology-driven approach focus
+    'Opportunities',    // Missing market opportunities
+    'Momentum',         // Business velocity
+    'Competitive Edge', // American marketing excellence
+    'Brand Value',      // Premium positioning
+    'Profit Margins',   // Cost efficiency
+    'Time',            // Strategic vs tactical focus
+    'Direction',       // Scattered marketing efforts
+    'Clarity',         // Curse of knowledge problem
+    'Trust',           // Customer trust signals
+    'Authority',       // Market leadership
+    'Scalability',     // Sustainable growth systems
+    'Innovation'       // Modern vs traditional approaches
+  ];
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
@@ -16,10 +34,18 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
   
-  // Typewriter effect
+  // Typewriter effect with progressive slowdown
   useEffect(() => {
     const currentWord = lostItems[wordIndex];
-    const typeSpeed = isDeleting ? 50 : 100;
+    // Progressive slowdown: faster at start, slower as we cycle through
+    const cycleCount = Math.floor(wordIndex / lostItems.length);
+    const baseTypeSpeed = isDeleting ? 50 : 100;
+    const basePauseTime = 1500;
+    
+    // Add delay based on cycle count (0ms, 500ms, 1000ms, etc.)
+    const cycleDelay = Math.min(cycleCount * 500, 2000);
+    const typeSpeed = baseTypeSpeed + (cycleCount * 20);
+    const pauseTime = basePauseTime + cycleDelay;
     
     const timer = setTimeout(() => {
       if (!isDeleting && typedWord.length < currentWord.length) {
@@ -29,8 +55,8 @@ function App() {
         // Deleting
         setTypedWord(typedWord.slice(0, -1));
       } else if (!isDeleting && typedWord.length === currentWord.length) {
-        // Pause before deleting
-        setTimeout(() => setIsDeleting(true), 1500);
+        // Pause before deleting (longer pause over time)
+        setTimeout(() => setIsDeleting(true), pauseTime);
       } else if (isDeleting && typedWord.length === 0) {
         // Move to next word
         setIsDeleting(false);
@@ -104,7 +130,7 @@ function App() {
                   <div className="absolute -inset-2 bg-orange-100 -skew-y-1 -z-10 rounded-lg"></div>
                 </span>
               </span>
-              <span className="block mt-2">to <span className="text-gray-600 line-through decoration-red-500 decoration-4">Broken</span></span>
+              <span className="block mt-1">to <span className="text-gray-600 line-through decoration-red-500 decoration-4">Broken</span></span>
               <span className="block mt-1">Marketing</span>
             </h1>
           </div>
