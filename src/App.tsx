@@ -3,15 +3,46 @@ import { useState, useEffect } from 'react';
 function App() {
   const [scrollY, setScrollY] = useState(0);
   const [hoveredCard, setHoveredCard] = useState<number | null>(null);
+  const [typedWord, setTypedWord] = useState('');
+  const [wordIndex, setWordIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  
+  // Words to cycle through - what businesses lose
+  const lostItems = ['Revenue', 'Customers', 'Growth', 'Market Share', 'Opportunities'];
 
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
+  // Typewriter effect
+  useEffect(() => {
+    const currentWord = lostItems[wordIndex];
+    const typeSpeed = isDeleting ? 50 : 100;
+    
+    const timer = setTimeout(() => {
+      if (!isDeleting && typedWord.length < currentWord.length) {
+        // Typing
+        setTypedWord(currentWord.slice(0, typedWord.length + 1));
+      } else if (isDeleting && typedWord.length > 0) {
+        // Deleting
+        setTypedWord(typedWord.slice(0, -1));
+      } else if (!isDeleting && typedWord.length === currentWord.length) {
+        // Pause before deleting
+        setTimeout(() => setIsDeleting(true), 1500);
+      } else if (isDeleting && typedWord.length === 0) {
+        // Move to next word
+        setIsDeleting(false);
+        setWordIndex((prev) => (prev + 1) % lostItems.length);
+      }
+    }, typeSpeed);
+    
+    return () => clearTimeout(timer);
+  }, [typedWord, wordIndex, isDeleting, lostItems]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50/30 to-stone-100">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/20 to-gray-50">
       {/* Transparent Fixed Header */}
       <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
         <div className={`${scrollY > 50 ? 'bg-blue-900/85 backdrop-blur-lg shadow-lg' : 'bg-transparent'} transition-all duration-300`}>
@@ -63,25 +94,27 @@ function App() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           {/* Loss Aversion Headline */}
-          <div className="mb-6 sm:mb-8">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-stone-900 mb-6 leading-tight">
-              Stop <span className="text-orange-500 relative">
-                Losing
-                <div className="absolute -inset-2 bg-orange-100 -skew-y-1 -z-10 rounded-lg"></div>
+          <div className="mb-4 sm:mb-6">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-slate-900 leading-[0.9]">
+              <span className="block">Stop Losing</span>
+              <span className="block mt-2">
+                <span className="text-orange-500 relative inline-block min-h-[1.2em]">
+                  {typedWord}
+                  <span className="animate-blink ml-0.5">|</span>
+                  <div className="absolute -inset-2 bg-orange-100 -skew-y-1 -z-10 rounded-lg"></div>
+                </span>
               </span>
-              <br />Revenue to
-              <br />
-              <span className="text-stone-600 line-through decoration-red-500 decoration-4">Broken</span>
-              <br />Marketing
+              <span className="block mt-2">to <span className="text-gray-600 line-through decoration-red-500 decoration-4">Broken</span></span>
+              <span className="block mt-1">Marketing</span>
             </h1>
           </div>
           
           {/* Authority Subheadline */}
           <div className="mb-6 sm:mb-8">
-            <p className="text-base sm:text-lg md:text-xl text-stone-700 font-medium max-w-4xl mx-auto leading-normal">
+            <p className="text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-4xl mx-auto leading-relaxed">
               Asian companies hire <span className="font-bold text-stone-900">American marketing psychology expertise</span> to break through growth plateaus
             </p>
-            <div className="mt-4 text-lg text-stone-600">
+            <div className="mt-3 text-lg text-slate-600">
               <span className="font-semibold">Proven:</span> $500K/month ad spend • 7 industries • $100K→$3M growth
             </div>
           </div>
@@ -115,7 +148,7 @@ function App() {
       </section>
 
       {/* Problem Section - Customer Awareness Stage 1 */}
-      <section id="psychology" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-stone-100/50">
+      <section id="psychology" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gray-100/50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-stone-900 mb-6 sm:mb-8">
