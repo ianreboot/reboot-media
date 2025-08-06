@@ -12,7 +12,15 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy:dev": "./scripts/deploy-dev.sh",
-    "deploy:prod": "./scripts/deploy-prod.sh"
+    "deploy:prod": "./scripts/deploy-prod.sh",
+    "devops:deploy": "node devops/deploy-agent.js deploy",
+    "devops:deploy:dev": "node devops/deploy-agent.js deploy development",
+    "devops:deploy:prod": "node devops/deploy-agent.js deploy production",
+    "devops:status": "node devops/deploy-agent.js status",
+    "devops:rollback": "node devops/deploy-agent.js rollback",
+    "monitor": "node devops/monitor.js monitor",
+    "monitor:check": "node devops/monitor.js check",
+    "monitor:summary": "node devops/monitor.js summary"
   },
   "dependencies": {
     "lucide-react": "^0.536.0",
