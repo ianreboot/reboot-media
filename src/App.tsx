@@ -181,14 +181,14 @@ function App() {
           <div className="mb-4 sm:mb-6">
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-slate-900 leading-[0.9]">
               <span className="block">Stop Losing</span>
-              <span className="block -mt-1">
+              <span className="block mt-1">
                 <span className="text-orange-500 relative inline-block min-h-[1.2em]">
                   {typedWord}
                   <span className="animate-blink ml-0.5">|</span>
                   <div className="absolute -inset-2 bg-orange-100 -skew-y-1 -z-10 rounded-lg"></div>
                 </span>
               </span>
-              <span className="block -mt-2">to <span className="text-gray-600 line-through decoration-red-500 decoration-4">Broken</span></span>
+              <span className="block -mt-1">to <span className="text-gray-600 line-through decoration-red-500 decoration-4">Broken</span></span>
               <span className="block mt-1">Marketing</span>
             </h1>
           </div>
