@@ -14,7 +14,7 @@ function App() {
     <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50/30 to-stone-100">
       {/* Transparent Fixed Header */}
       <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-        <div className={`${scrollY > 50 ? 'bg-stone-950/80 backdrop-blur-lg shadow-lg' : 'bg-transparent'} transition-all duration-300`}>
+        <div className={`${scrollY > 50 ? 'bg-blue-900/85 backdrop-blur-lg shadow-lg' : 'bg-transparent'} transition-all duration-300`}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
             <div className="flex items-center justify-between">
             <div className="flex items-center">
@@ -88,7 +88,7 @@ function App() {
 
           {/* Micro-Commitment CTAs */}
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
-            <button className="bg-stone-900 hover:bg-stone-800 text-white px-6 sm:px-8 py-3 rounded-lg font-bold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-xl w-full sm:w-auto">
+            <button className="bg-blue-900 hover:bg-blue-800 text-white px-6 sm:px-8 py-3 rounded-lg font-bold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-xl w-full sm:w-auto">
               📊 Free Psychology Audit
             </button>
             <button className="border-2 border-stone-900 hover:bg-stone-900 hover:text-white text-stone-900 px-6 sm:px-8 py-3 rounded-lg font-bold text-base sm:text-lg transition-all duration-300 w-full sm:w-auto">
@@ -162,7 +162,7 @@ function App() {
           </div>
 
           {/* Norton Case Study Card */}
-          <div className="bg-gradient-to-br from-stone-900 to-stone-800 p-6 sm:p-8 rounded-3xl shadow-2xl text-white relative overflow-hidden">
+          <div className="bg-gradient-to-br from-blue-800 to-slate-700 p-6 sm:p-8 rounded-3xl shadow-2xl text-white relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl"></div>
             <div className="relative z-10">
               <div className="flex items-center mb-6 sm:mb-8">
@@ -193,7 +193,7 @@ function App() {
                 </div>
               </div>
               
-              <div className="bg-stone-800/50 p-6 rounded-xl">
+              <div className="bg-slate-800/50 p-6 rounded-xl">
                 <h4 className="text-xl font-bold mb-4 text-orange-400">Psychology Principles Applied:</h4>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>• Loss aversion messaging</div>
@@ -346,7 +346,7 @@ function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left: Ian's Story */}
             <div className="space-y-8">
-              <div className="bg-stone-800/50 p-6 sm:p-8 rounded-2xl border border-stone-700/50">
+              <div className="bg-slate-800/50 p-6 sm:p-8 rounded-2xl border border-slate-700/50">
                 <h3 className="text-2xl font-bold text-orange-400 mb-4">The \"Super Affiliate\" Background</h3>
                 <p className="text-stone-300 leading-normal mb-4">
                   I've spent <span className="font-bold text-white">$500K/month of my own money</span> testing what actually converts customers. Not theory - real results with real consequences.
@@ -356,7 +356,7 @@ function App() {
                 </p>
               </div>
 
-              <div className="bg-stone-800/50 p-6 sm:p-8 rounded-2xl border border-stone-700/50">
+              <div className="bg-slate-800/50 p-6 sm:p-8 rounded-2xl border border-slate-700/50">
                 <h3 className="text-2xl font-bold text-orange-400 mb-4">The Bangkok Advantage</h3>
                 <p className="text-stone-300 leading-normal mb-4">
                   Based in Bangkok, I serve Asian companies who want <span className="font-bold text-white">American marketing excellence</span> at regional rates.
@@ -366,7 +366,7 @@ function App() {
                 </p>
               </div>
 
-              <div className="bg-stone-800/50 p-6 sm:p-8 rounded-2xl border border-stone-700/50">
+              <div className="bg-slate-800/50 p-6 sm:p-8 rounded-2xl border border-slate-700/50">
                 <h3 className="text-2xl font-bold text-orange-400 mb-4">Industries Proven In</h3>
                 <div className="grid grid-cols-2 gap-4 text-stone-300">
                   <div>• Software/SaaS</div>
@@ -390,26 +390,26 @@ function App() {
               </div>
 
               <div className="grid grid-cols-2 gap-4 sm:gap-6">
-                <div className="text-center p-6 bg-stone-800/50 rounded-2xl border border-stone-700/50">
+                <div className="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50">
                   <div className="text-3xl font-black text-orange-400 mb-2">20+</div>
                   <div className="text-stone-300">Years Experience</div>
                 </div>
-                <div className="text-center p-6 bg-stone-800/50 rounded-2xl border border-stone-700/50">
+                <div className="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50">
                   <div className="text-3xl font-black text-orange-400 mb-2">7</div>
                   <div className="text-stone-300">Industries</div>
                 </div>
-                <div className="text-center p-6 bg-stone-800/50 rounded-2xl border border-stone-700/50">
+                <div className="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50">
                   <div className="text-3xl font-black text-orange-400 mb-2">$500K</div>
                   <div className="text-stone-300">Monthly Ad Spend</div>
                 </div>
-                <div className="text-center p-6 bg-stone-800/50 rounded-2xl border border-stone-700/50">
+                <div className="text-center p-6 bg-slate-800/50 rounded-2xl border border-slate-700/50">
                   <div className="text-3xl font-black text-orange-400 mb-2">8</div>
                   <div className="text-stone-300">Client Limit</div>
                 </div>
               </div>
 
               {/* LinkedIn Connection */}
-              <div className="bg-stone-800/50 p-6 sm:p-8 rounded-2xl border border-stone-700/50 text-center">
+              <div className="bg-slate-800/50 p-6 sm:p-8 rounded-2xl border border-slate-700/50 text-center">
                 <h4 className="text-xl font-bold text-white mb-4">Connect & Verify</h4>
                 <p className="text-stone-300 mb-6">
                   See my full background and recommendations on LinkedIn
@@ -432,7 +432,7 @@ function App() {
       </section>
 
       {/* Contact Section with Traditional CTA */}
-      <section id="contact" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-slate-900">
+      <section id="contact" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-800 to-blue-900">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 sm:mb-8">
             Ready to <span className="text-orange-400">Stop</span>
@@ -512,7 +512,7 @@ function App() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-stone-950 text-white py-16 px-4 sm:px-6 lg:px-8">
+      <footer className="bg-gradient-to-b from-slate-800 to-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
             <div className="flex items-center justify-center mb-4">
@@ -552,7 +552,7 @@ function App() {
             </div>
           </div>
           
-          <div className="border-t border-stone-800 pt-8 text-center">
+          <div className="border-t border-slate-800 pt-8 text-center">
             <p className="text-stone-500">&copy; 2025 Reboot Media, Inc. All rights reserved.</p>
           </div>
         </div>
