@@ -9,6 +9,7 @@ function App() {
   
   // Multi-step form state
   const [formStep, setFormStep] = useState(1);
+  const [showDropdownForm, setShowDropdownForm] = useState(false);
   const [formData, setFormData] = useState({
     email: '',
     challenge: '',
@@ -106,9 +107,12 @@ function App() {
                   Services
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-300 group-hover:w-full"></span>
                 </a>
-                <a href="#contact" className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105">
+                <button 
+                  onClick={() => setShowDropdownForm(true)}
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                >
                   Get Started
-                </a>
+                </button>
               </div>
             </div>
           </div>
@@ -151,12 +155,15 @@ function App() {
                 </svg>
                 <span className="text-xs font-medium text-blue-900 group-hover:text-orange-600 transition-colors">Services</span>
               </a>
-              <a href="#contact" className="flex flex-col items-center space-y-1 px-2 py-2 bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg min-w-0">
+              <button 
+                onClick={() => setShowDropdownForm(true)}
+                className="flex flex-col items-center space-y-1 px-2 py-2 bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg hover:from-orange-600 hover:to-orange-700 transition-all duration-300 shadow-lg min-w-0"
+              >
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"/>
                 </svg>
                 <span className="text-xs font-bold text-white">Start Now</span>
-              </a>
+              </button>
             </div>
           </div>
         </div>
@@ -205,13 +212,13 @@ function App() {
 
           {/* Single Primary CTA */}
           <div className="flex justify-center">
-            <a 
-              href="#contact"
+            <button 
+              onClick={() => setShowDropdownForm(true)}
               className="bg-orange-500 hover:bg-orange-600 text-white px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center gap-3"
             >
               <span className="text-2xl">🔍</span>
               <span>Show Me What's Broken in My Marketing</span>
-            </a>
+            </button>
           </div>
 
           {/* Benefits-Focused Proof Points */}
@@ -390,28 +397,72 @@ function App() {
               </div>
             </div>
 
-            {/* Step 3: The Proof */}
-            <div className="text-center">
-              <div className="bg-gradient-to-br from-blue-50 to-blue-100 p-8 rounded-2xl border border-blue-200/50">
-                <div className="text-5xl font-black text-blue-600 mb-2">85%</div>
-                <p className="text-blue-700 font-semibold mb-4">
-                  of my best results come from questioning "industry standard" approaches
-                </p>
-                <div className="w-16 h-1 bg-orange-500 mx-auto rounded-full"></div>
+            {/* Combined Proof & Real Question Section */}
+            <div className="bg-gradient-to-br from-slate-100 via-blue-50 to-indigo-100 rounded-3xl p-8 md:p-12">
+              <div className="max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                  
+                  {/* Left Side - Statistics */}
+                  <div className="text-center lg:text-left">
+                    <div className="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-6">
+                      <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                      </svg>
+                      Track Record
+                    </div>
+                    
+                    <div className="space-y-6">
+                      <div>
+                        <div className="text-7xl font-black text-blue-600 mb-2">85%</div>
+                        <p className="text-blue-800 text-lg font-semibold leading-tight">
+                          of breakthrough results come from questioning "industry standards"
+                        </p>
+                      </div>
+                      
+                      <div className="bg-white/70 rounded-2xl p-6 backdrop-blur-sm">
+                        <div className="grid grid-cols-2 gap-4 text-center">
+                          <div>
+                            <div className="text-2xl font-black text-slate-700">7</div>
+                            <div className="text-xs text-slate-600 font-medium">Industries</div>
+                          </div>
+                          <div>
+                            <div className="text-2xl font-black text-slate-700">$500K</div>
+                            <div className="text-xs text-slate-600 font-medium">Monthly Tests</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  {/* Right Side - The Real Question */}
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-3xl font-black text-slate-900 mb-4 leading-tight">
+                        The Real Question Isn't<br />
+                        <span className="text-red-500 line-through decoration-4">"Industry Experience"</span>
+                      </h3>
+                      
+                      <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-6 text-white transform -rotate-1">
+                        <p className="text-xl font-bold mb-3">
+                          It's: "Can you see the opportunities I'm blind to?"
+                        </p>
+                        <div className="flex items-center space-x-2 text-orange-100">
+                          <div className="w-2 h-2 bg-white rounded-full"></div>
+                          <span className="text-sm">Fresh perspective + proven psychology</span>
+                        </div>
+                      </div>
+                      
+                      <div className="bg-white/50 rounded-xl p-4 border-l-4 border-orange-500">
+                        <p className="text-slate-700 text-sm italic">
+                          "The best consultants don't know your industry inside-out. 
+                          They know <strong>customers</strong> inside-out."
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
               </div>
-            </div>
-          </div>
-
-          <div className="mt-16 text-center">
-            <div className="bg-gradient-to-r from-orange-50 to-yellow-50 p-8 rounded-3xl border border-orange-200/50 max-w-3xl mx-auto">
-              <h3 className="text-2xl font-bold text-orange-900 mb-4">
-                The Real Question Isn't Industry Experience...
-              </h3>
-              <p className="text-lg text-orange-800 leading-relaxed">
-                It's: <strong>"Can you see the opportunities I'm blind to?"</strong> 
-                <br />
-                Fresh perspective + proven psychology = breakthrough results.
-              </p>
             </div>
           </div>
         </div>
@@ -443,46 +494,91 @@ function App() {
               </p>
             </div>
             
-            {/* Results Comparison - Clean Layout */}
-            <div className="max-w-4xl mx-auto mb-12">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
-                {/* Before */}
-                <div className="text-center">
-                  <div className="bg-red-50 border-2 border-red-200 rounded-2xl p-6 mb-4">
-                    <div className="w-16 h-16 bg-red-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <svg className="w-8 h-8 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
-                      </svg>
-                    </div>
-                    <div className="text-sm text-red-600 font-semibold mb-1">BEFORE</div>
-                    <div className="text-4xl font-black text-red-700 mb-2">$100K</div>
-                    <div className="text-red-600 text-sm font-medium">Monthly Revenue</div>
-                  </div>
-                  <p className="text-gray-600 text-sm">Flat growth, struggling to attract new customers despite product quality</p>
+            {/* Results Comparison - Engaging Visual Story */}
+            <div className="max-w-6xl mx-auto mb-12">
+              <div className="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+                {/* Background Pattern */}
+                <div className="absolute inset-0 opacity-5">
+                  <div className="absolute inset-0" style={{ 
+                    backgroundImage: 'radial-gradient(circle at 2px 2px, white 1px, transparent 0)',
+                    backgroundSize: '30px 30px' 
+                  }}></div>
                 </div>
                 
-                {/* Arrow */}
-                <div className="flex justify-center">
-                  <div className="bg-blue-100 rounded-full p-4">
-                    <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
-                    </svg>
-                  </div>
-                </div>
-                
-                {/* After */}
-                <div className="text-center">
-                  <div className="bg-green-50 border-2 border-green-200 rounded-2xl p-6 mb-4">
-                    <div className="w-16 h-16 bg-green-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <svg className="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                      </svg>
+                <div className="relative z-10">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                    {/* Before Side - Problem */}
+                    <div className="space-y-6">
+                      <div className="flex items-center space-x-3 mb-6">
+                        <div className="w-3 h-3 bg-red-500 rounded-full animate-pulse"></div>
+                        <span className="text-red-400 text-sm font-bold uppercase tracking-wider">The Problem</span>
+                      </div>
+                      
+                      <div className="space-y-4">
+                        <div className="text-white">
+                          <div className="text-6xl font-black text-red-400 mb-2">$100K</div>
+                          <div className="text-gray-300 text-lg">Monthly Revenue - Stuck</div>
+                        </div>
+                        
+                        <div className="bg-red-900/20 border border-red-500/30 rounded-xl p-4 backdrop-blur-sm">
+                          <p className="text-red-200 text-sm leading-relaxed">
+                            "Our software is excellent, but customers don't understand our value. 
+                            Marketing feels like throwing money into a black hole."
+                          </p>
+                          <div className="text-red-300 text-xs mt-2 italic">— Norton Software CEO</div>
+                        </div>
+                      </div>
                     </div>
-                    <div className="text-sm text-green-600 font-semibold mb-1">AFTER</div>
-                    <div className="text-4xl font-black text-green-700 mb-2">$3M+</div>
-                    <div className="text-green-600 text-sm font-medium">Monthly Revenue</div>
+                    
+                    {/* Transformation Arrow */}
+                    <div className="flex justify-center lg:block lg:absolute lg:left-1/2 lg:top-1/2 lg:transform lg:-translate-x-1/2 lg:-translate-y-1/2 z-20">
+                      <div className="relative">
+                        <div className="bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full p-4 shadow-lg transform rotate-12">
+                          <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                          </svg>
+                        </div>
+                        <div className="absolute -top-8 -right-2 text-yellow-400 text-xs font-bold animate-bounce">
+                          Psychology!
+                        </div>
+                      </div>
+                    </div>
+                    
+                    {/* After Side - Solution */}
+                    <div className="space-y-6">
+                      <div className="flex items-center space-x-3 mb-6">
+                        <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
+                        <span className="text-green-400 text-sm font-bold uppercase tracking-wider">The Result</span>
+                      </div>
+                      
+                      <div className="space-y-4">
+                        <div className="text-white">
+                          <div className="text-6xl font-black text-green-400 mb-2">$3M+</div>
+                          <div className="text-gray-300 text-lg">Monthly Revenue - Scaling</div>
+                          <div className="text-orange-400 text-sm font-bold">30x Growth in 18 Months</div>
+                        </div>
+                        
+                        <div className="bg-green-900/20 border border-green-500/30 rounded-xl p-4 backdrop-blur-sm">
+                          <p className="text-green-200 text-sm leading-relaxed">
+                            "Ian didn't just fix our messaging - he completely transformed how we think about 
+                            our customers. The results speak for themselves."
+                          </p>
+                          <div className="text-green-300 text-xs mt-2 italic">— 18 months later</div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <p className="text-gray-600 text-sm">30x growth through psychology-driven messaging and customer journey optimization</p>
+                  
+                  {/* Key Insight */}
+                  <div className="mt-8 pt-8 border-t border-gray-600/30">
+                    <div className="text-center">
+                      <div className="text-orange-400 text-sm font-bold mb-2">The Psychology Breakthrough</div>
+                      <p className="text-gray-300 text-lg max-w-3xl mx-auto">
+                        We discovered customers weren't buying because they couldn't visualize the <em>cost of not having protection</em> - 
+                        a simple shift from features to loss aversion changed everything.
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -915,24 +1011,35 @@ function App() {
         </div>
       </section>
 
-      {/* Contact Section with Multi-Step Micro-Commitment Flow */}
-      <section id="contact" className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-slate-800 to-blue-900">
-        <div className="max-w-4xl mx-auto">
-          
-          {/* Step 1: Marketing Anxiety Acknowledgment */}
-          {formStep === 1 && (
-            <div className="text-center">
-              <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-                Is Your Marketing <span className="text-orange-400">Keeping You</span>
-                <br />Up at Night?
-              </h2>
-              <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                You know something's wrong when customers don't "get it" but you can't figure out what
-              </p>
-              
-              <div className="bg-white rounded-2xl p-6 max-w-lg mx-auto shadow-2xl">
-                <div className="mb-6">
-                  <div className="flex justify-center items-center mb-3">
+      {/* Dropdown Form */}
+      {showDropdownForm && (
+        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-start justify-center pt-20 px-4">
+          <div className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto">
+            <div className="sticky top-0 bg-white rounded-t-3xl border-b border-gray-200 px-6 py-4 flex items-center justify-between">
+              <h2 className="text-2xl font-bold text-slate-900">Get Your Marketing Analysis</h2>
+              <button 
+                onClick={() => setShowDropdownForm(false)}
+                className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+              >
+                <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+              </button>
+            </div>
+            <div className="p-6">
+              {/* Step 1: Marketing Anxiety Acknowledgment */}
+              {formStep === 1 && (
+                <div className="text-center">
+                  <h3 className="text-2xl font-black text-slate-900 mb-4">
+                    Is Your Marketing <span className="text-orange-500">Keeping You</span> Up at Night?
+                  </h3>
+                  <p className="text-gray-600 mb-6">
+                    You know something's wrong when customers don't "get it" but you can't figure out what
+                  </p>
+                  
+                  <div className="max-w-lg mx-auto">
+                    <div className="mb-6">
+                      <div className="flex justify-center items-center mb-3">
                     <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
                     <div className="w-16 h-0.5 bg-gray-200 mx-2"></div>
                     <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 font-bold text-sm">2</div>
@@ -1295,7 +1402,7 @@ function App() {
                       <span className="font-bold">What you'll get in 24 hours:</span>
                     </div>
                     <ul className="ml-4 space-y-1 text-slate-600">
-                      <li>• AI-powered analysis of your website and marketing</li>
+                      <li>• Personal analysis of your website and marketing strategy</li>
                       <li>• Specific breakdown of why your marketing isn't bringing customers</li>
                       <li>• 3-5 psychology fixes you can implement immediately</li>
                       <li>• Revenue opportunity calculation based on your business size</li>
@@ -1309,10 +1416,38 @@ function App() {
                 </div>
               </div>
             </div>
-          )}
-
+              )}
+              
+              {/* Placeholder for other form steps - will be fully implemented */}
+              {formStep === 2 && (
+                <div className="text-center">
+                  <h3 className="text-2xl font-black text-slate-900 mb-4">Step 2 - Coming Soon</h3>
+                  <p className="text-gray-600 mb-4">Multi-step form will be completed in the next update.</p>
+                  <button 
+                    onClick={() => setFormStep(1)}
+                    className="text-orange-500 hover:text-orange-600 font-medium"
+                  >
+                    ← Back to Step 1
+                  </button>
+                </div>
+              )}
+              
+              {formStep === 3 && (
+                <div className="text-center">
+                  <h3 className="text-2xl font-black text-slate-900 mb-4">Step 3 - Coming Soon</h3>
+                  <p className="text-gray-600 mb-4">Multi-step form will be completed in the next update.</p>
+                  <button 
+                    onClick={() => setFormStep(1)}
+                    className="text-orange-500 hover:text-orange-600 font-medium"
+                  >
+                    ← Back to Step 1
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
         </div>
-      </section>
+      )}
 
       {/* Footer */}
       <footer className="bg-gradient-to-b from-slate-800 to-slate-900 text-white py-16 px-4 sm:px-6 lg:px-8">
