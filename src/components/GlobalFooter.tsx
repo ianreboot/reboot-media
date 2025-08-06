@@ -86,8 +86,8 @@ const GlobalFooter = ({ onShowForm }: GlobalFooterProps) => {
             
             {/* Quick Links - Desktop normal, Mobile accordions */}
             <div className="lg:col-span-3">
-              {/* Desktop View */}
-              <div className="hidden md:grid md:grid-cols-4 gap-6">
+              {/* Desktop View - Only show on large screens */}
+              <div className="hidden lg:grid lg:grid-cols-4 gap-6">
                 
                 {/* Services */}
                 <div>
@@ -192,8 +192,8 @@ const GlobalFooter = ({ onShowForm }: GlobalFooterProps) => {
                 
               </div>
               
-              {/* Mobile Accordion View */}
-              <div className="md:hidden space-y-2">
+              {/* Mobile/Tablet Accordion View - Show on medium and below */}
+              <div className="lg:hidden space-y-2">
                 
                 {/* Services Accordion */}
                 <div className="border border-white/10 rounded-lg overflow-hidden">
