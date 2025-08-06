@@ -12,27 +12,28 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50/30 to-stone-100">
-      {/* Experimental Floating Navigation */}
-      <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[calc(100%-2rem)] sm:w-auto max-w-4xl">
-        <div className="bg-stone-950 backdrop-blur-xl border border-stone-700/50 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-2xl">
-          <div className="flex items-center justify-between sm:space-x-8">
+      {/* Transparent Fixed Header */}
+      <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+        <div className={`${scrollY > 50 ? 'bg-stone-950/80 backdrop-blur-lg shadow-lg' : 'bg-transparent'} transition-all duration-300`}>
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div className="flex items-center justify-between">
             <div className="flex items-center">
-              <img src={`${import.meta.env.BASE_URL}reboot-logo-white.svg`} alt="Reboot Media" className="h-8 w-auto" />
+              <span className="text-2xl font-bold text-white">REBOOT <span className="text-orange-500">MEDIA</span></span>
             </div>
-            <div className="hidden md:flex items-center space-x-6">
-              <a href="#psychology" className="text-stone-300 hover:text-orange-400 transition-all duration-300 font-medium relative group">
+            <div className="hidden md:flex items-center space-x-8">
+              <a href="#psychology" className={`${scrollY > 50 ? 'text-stone-300' : 'text-white drop-shadow-md'} hover:text-orange-400 transition-all duration-300 font-medium relative group`}>
                 Psychology
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
-              <a href="#results" className="text-stone-300 hover:text-orange-400 transition-all duration-300 font-medium relative group">
+              <a href="#results" className={`${scrollY > 50 ? 'text-stone-300' : 'text-white drop-shadow-md'} hover:text-orange-400 transition-all duration-300 font-medium relative group`}>
                 Results
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
-              <a href="#services" className="text-stone-300 hover:text-orange-400 transition-all duration-300 font-medium relative group">
+              <a href="#services" className={`${scrollY > 50 ? 'text-stone-300' : 'text-white drop-shadow-md'} hover:text-orange-400 transition-all duration-300 font-medium relative group`}>
                 Services
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
-              <a href="#about" className="text-stone-300 hover:text-orange-400 transition-all duration-300 font-medium relative group">
+              <a href="#about" className={`${scrollY > 50 ? 'text-stone-300' : 'text-white drop-shadow-md'} hover:text-orange-400 transition-all duration-300 font-medium relative group`}>
                 About
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-400 transition-all duration-300 group-hover:w-full"></span>
               </a>
@@ -41,12 +42,13 @@ function App() {
             <a href="#contact" className="bg-orange-500 text-sm sm:text-base hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg inline-block">
               Get Results
             </a>
+            </div>
           </div>
         </div>
       </nav>
 
       {/* Hero Section with Parallax Effect */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Floating Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div 
@@ -514,7 +516,7 @@ function App() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
             <div className="flex items-center justify-center mb-4">
-              <img src={`${import.meta.env.BASE_URL}reboot-logo-white.svg`} alt="Reboot Media" className="h-12 w-auto" />
+              <h2 className="text-3xl font-bold text-white">REBOOT <span className="text-orange-500">MEDIA</span></h2>
             </div>
             <p className="text-stone-400 max-w-2xl mx-auto">
               American marketing psychology expertise for Asian companies ready to break through growth plateaus
