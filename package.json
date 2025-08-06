@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
-    "build:dev": "tsc -b && vite build --mode development",
-    "build:prod": "tsc -b && vite build --mode production",
+    "build": "echo '❌ DEPRECATED: Use build:dev or build:prod instead' && exit 1",
+    "build:dev": "cp index.dev.html index.html && tsc -b && vite build --mode development && node scripts/validate-build.js",
+    "build:prod": "cp index.prod.html index.html && tsc -b && vite build --mode production && node scripts/validate-build.js",
+    "validate": "node scripts/validate-build.js",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy:dev": "./scripts/deploy-dev.sh",
