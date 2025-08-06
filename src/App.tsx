@@ -15,7 +15,12 @@ function App() {
     revenue: '',
     name: '',
     company: '',
-    timeline: ''
+    timeline: '',
+    website: '',
+    specificIssue: '',
+    industry: '',
+    teamSize: '',
+    currentMarketing: ''
   });
   
   // Words to cycle through - ordered by importance to target demographics
@@ -489,7 +494,7 @@ function App() {
               </h4>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
                   <div className="flex items-start">
                     <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
                       <span className="text-orange-600 font-bold">1</span>
@@ -503,7 +508,7 @@ function App() {
                   </div>
                 </div>
                 
-                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
                   <div className="flex items-start">
                     <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
                       <span className="text-orange-600 font-bold">2</span>
@@ -517,7 +522,7 @@ function App() {
                   </div>
                 </div>
                 
-                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
                   <div className="flex items-start">
                     <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
                       <span className="text-orange-600 font-bold">3</span>
@@ -531,7 +536,7 @@ function App() {
                   </div>
                 </div>
                 
-                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
+                <div className="bg-gray-50 border border-gray-200 rounded-xl p-6 transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
                   <div className="flex items-start">
                     <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mr-4">
                       <span className="text-orange-600 font-bold">4</span>
@@ -664,9 +669,7 @@ function App() {
             ].map((service) => (
               <div 
                 key={service.index}
-                className={`relative group cursor-pointer transition-all duration-500 transform ${
-                  hoveredCard === service.index ? 'scale-105 -rotate-1' : 'hover:scale-102'
-                }`}
+                className="relative group cursor-pointer transition-all duration-300"
                 onMouseEnter={() => setHoveredCard(service.index)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
@@ -679,12 +682,16 @@ function App() {
                   </div>
                 )}
 
-                <div className={`p-6 sm:p-8 rounded-3xl shadow-xl border-2 transition-all duration-500 h-full ${
+                <div className={`p-6 sm:p-8 rounded-3xl shadow-xl border-2 transition-all duration-300 h-full ${
                   service.color === 'orange' 
                     ? 'bg-gradient-to-br from-orange-500 to-orange-600 text-white border-orange-400 transform scale-105'
                     : service.color === 'blue'
-                    ? 'bg-gradient-to-br from-blue-600 to-blue-700 text-white border-blue-400'
-                    : 'bg-white border-gray-200 hover:border-orange-300'
+                    ? hoveredCard === service.index
+                      ? 'bg-gradient-to-br from-blue-700 to-blue-800 text-white border-blue-300 shadow-2xl'
+                      : 'bg-gradient-to-br from-blue-600 to-blue-700 text-white border-blue-400 hover:shadow-2xl'
+                    : hoveredCard === service.index
+                    ? 'bg-white border-orange-400 shadow-2xl ring-2 ring-orange-200'
+                    : 'bg-white border-gray-200 hover:border-orange-300 hover:shadow-2xl'
                 }`}>
                   <div className="mb-6">
                     {/* Size Indicator */}
@@ -1037,19 +1044,20 @@ function App() {
             </div>
           )}
 
-          {/* Step 3: Contact Information Collection */}
+          {/* Step 3: Comprehensive Information Collection */}
           {formStep === 3 && (
             <div className="text-center">
               <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-                Perfect! Let's Get Your <span className="text-orange-400">Custom</span>
-                <br />Marketing Psychology Audit
+                Final Step: Let's <span className="text-orange-400">Analyze</span>
+                <br />Your Marketing
               </h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Just need your contact info to send your personalized breakdown
+                Tell us about your business so we can create your personalized audit
               </p>
               
-              <div className="bg-white rounded-2xl p-6 max-w-lg mx-auto shadow-2xl">
-                <div className="mb-6">
+              <div className="bg-white rounded-2xl p-6 max-w-2xl mx-auto shadow-2xl">
+                {/* Gamified Progress Header */}
+                <div className="mb-8">
                   <div className="flex justify-center items-center mb-3">
                     <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white">
                       <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -1065,53 +1073,167 @@ function App() {
                     <div className="w-16 h-0.5 bg-orange-300 mx-2"></div>
                     <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
                   </div>
-                  <p className="text-sm text-gray-600 font-medium">Step 3: Get Your Free Audit</p>
+                  
+                  {/* Completion Percentage */}
+                  <div className="bg-gray-100 rounded-full h-2 mb-3">
+                    <div 
+                      className="bg-gradient-to-r from-orange-500 to-orange-600 h-2 rounded-full transition-all duration-500"
+                      style={{ 
+                        width: `${Math.min(95, (Object.values(formData).filter(val => val !== '').length / Object.keys(formData).length) * 100)}%` 
+                      }}
+                    ></div>
+                  </div>
+                  
+                  <div className="flex items-center justify-center space-x-4 text-sm">
+                    <div className="flex items-center">
+                      <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+                      <span className="text-gray-600 font-medium">
+                        {Object.values(formData).filter(val => val !== '').length}/{Object.keys(formData).length} Complete
+                      </span>
+                    </div>
+                    <div className="flex items-center">
+                      <span className="text-orange-600 font-bold">🏆 Almost Done!</span>
+                    </div>
+                  </div>
                 </div>
                 
-                <div className="space-y-4">
-                  <div className="grid grid-cols-2 gap-3">
-                    <div className="text-left">
-                      <label className="block text-xs font-bold text-slate-700 mb-2">First Name</label>
-                      <input 
-                        type="text" 
-                        value={formData.name}
-                        onChange={(e) => setFormData({...formData, name: e.target.value})}
-                        className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                        placeholder="Your first name"
-                      />
+                <div className="space-y-6 text-left">
+                  {/* Contact Info Section */}
+                  <div className="bg-blue-50 rounded-xl p-4">
+                    <h4 className="font-bold text-blue-900 mb-3 flex items-center">
+                      <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs mr-2">1</span>
+                      Contact Information
+                    </h4>
+                    <div className="grid grid-cols-2 gap-3 mb-3">
+                      <div>
+                        <label className="block text-xs font-bold text-slate-700 mb-2">First Name *</label>
+                        <input 
+                          type="text" 
+                          value={formData.name}
+                          onChange={(e) => setFormData({...formData, name: e.target.value})}
+                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                          placeholder="Your first name"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-xs font-bold text-slate-700 mb-2">Company *</label>
+                        <input 
+                          type="text" 
+                          value={formData.company}
+                          onChange={(e) => setFormData({...formData, company: e.target.value})}
+                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                          placeholder="Company name"
+                        />
+                      </div>
                     </div>
-                    
-                    <div className="text-left">
-                      <label className="block text-xs font-bold text-slate-700 mb-2">Company</label>
+                    <div>
+                      <label className="block text-xs font-bold text-slate-700 mb-2">Business Email *</label>
                       <input 
-                        type="text" 
-                        value={formData.company}
-                        onChange={(e) => setFormData({...formData, company: e.target.value})}
+                        type="email" 
+                        value={formData.email}
+                        onChange={(e) => setFormData({...formData, email: e.target.value})}
                         className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                        placeholder="Company name"
+                        placeholder="your@company.com"
                       />
                     </div>
                   </div>
-                  
-                  <div className="text-left">
-                    <label className="block text-xs font-bold text-slate-700 mb-2">Business Email</label>
-                    <input 
-                      type="email" 
-                      value={formData.email}
-                      onChange={(e) => setFormData({...formData, email: e.target.value})}
-                      className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                      placeholder="your@company.com"
-                    />
+
+                  {/* Business Details Section */}
+                  <div className="bg-green-50 rounded-xl p-4">
+                    <h4 className="font-bold text-green-900 mb-3 flex items-center">
+                      <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-2">2</span>
+                      Business Details
+                    </h4>
+                    <div className="space-y-3">
+                      <div>
+                        <label className="block text-xs font-bold text-slate-700 mb-2">Website URL *</label>
+                        <input 
+                          type="url" 
+                          value={formData.website}
+                          onChange={(e) => setFormData({...formData, website: e.target.value})}
+                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                          placeholder="https://yourcompany.com"
+                        />
+                      </div>
+                      <div className="grid grid-cols-2 gap-3">
+                        <div>
+                          <label className="block text-xs font-bold text-slate-700 mb-2">Industry</label>
+                          <select 
+                            value={formData.industry}
+                            onChange={(e) => setFormData({...formData, industry: e.target.value})}
+                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
+                          >
+                            <option value="">Select industry</option>
+                            <option value="software">Software/SaaS</option>
+                            <option value="healthcare">Healthcare</option>
+                            <option value="ecommerce">E-commerce</option>
+                            <option value="financial">Financial Services</option>
+                            <option value="professional">Professional Services</option>
+                            <option value="manufacturing">Manufacturing</option>
+                            <option value="other">Other</option>
+                          </select>
+                        </div>
+                        <div>
+                          <label className="block text-xs font-bold text-slate-700 mb-2">Team Size</label>
+                          <select 
+                            value={formData.teamSize}
+                            onChange={(e) => setFormData({...formData, teamSize: e.target.value})}
+                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
+                          >
+                            <option value="">Select size</option>
+                            <option value="1-10">1-10 employees</option>
+                            <option value="11-50">11-50 employees</option>
+                            <option value="51-200">51-200 employees</option>
+                            <option value="200+">200+ employees</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  
-                  <div className="text-left">
-                    <label className="block text-xs font-bold text-slate-700 mb-2">When do you need this fixed?</label>
+
+                  {/* Marketing Challenge Section */}
+                  <div className="bg-orange-50 rounded-xl p-4">
+                    <h4 className="font-bold text-orange-900 mb-3 flex items-center">
+                      <span className="w-6 h-6 bg-orange-500 rounded-full flex items-center justify-center text-white text-xs mr-2">3</span>
+                      Marketing Challenge Analysis
+                    </h4>
+                    <div className="space-y-3">
+                      <div>
+                        <label className="block text-xs font-bold text-slate-700 mb-2">What's the main issue with your marketing? *</label>
+                        <textarea 
+                          value={formData.specificIssue}
+                          onChange={(e) => setFormData({...formData, specificIssue: e.target.value})}
+                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                          placeholder="e.g., Not getting enough leads, poor conversion rates, unclear messaging, competitors beating us, website visitors not buying..."
+                          rows={3}
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-xs font-bold text-slate-700 mb-2">What marketing are you currently doing?</label>
+                        <textarea 
+                          value={formData.currentMarketing}
+                          onChange={(e) => setFormData({...formData, currentMarketing: e.target.value})}
+                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                          placeholder="e.g., Google Ads, social media, content marketing, email campaigns, SEO..."
+                          rows={2}
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Timeline Section */}
+                  <div className="bg-purple-50 rounded-xl p-4">
+                    <h4 className="font-bold text-purple-900 mb-3 flex items-center">
+                      <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2">4</span>
+                      Timeline & Priority
+                    </h4>
+                    <label className="block text-xs font-bold text-slate-700 mb-2">When do you need this fixed? *</label>
                     <div className="grid grid-cols-2 gap-2">
                       {[
-                        { value: "asap", label: "ASAP - Bleeding money" },
-                        { value: "month", label: "This month" }, 
-                        { value: "quarter", label: "This quarter" },
-                        { value: "research", label: "Just researching" }
+                        { value: "asap", label: "ASAP - Bleeding money", color: "red" },
+                        { value: "month", label: "This month", color: "orange" }, 
+                        { value: "quarter", label: "This quarter", color: "blue" },
+                        { value: "research", label: "Just researching", color: "gray" }
                       ].map((option) => (
                         <button
                           key={option.value}
@@ -1129,17 +1251,33 @@ function App() {
                   </div>
                 </div>
                 
-                <button 
-                  onClick={() => {
-                    if (formData.name && formData.company && formData.email && formData.timeline) {
-                      alert('Perfect! You\'ll receive your personalized marketing psychology audit within 24 hours. Check your email for next steps.')
-                    }
-                  }}
-                  disabled={!formData.name || !formData.company || !formData.email || !formData.timeline}
-                  className="w-full bg-orange-500 hover:bg-orange-600 disabled:bg-gray-300 text-white py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg disabled:transform-none mt-6"
-                >
-                  🎯 Send Me My Marketing Breakdown
-                </button>
+                {/* Submit Button - Moved inside with back button */}
+                <div className="mt-6 space-y-4">
+                  <button 
+                    onClick={() => {
+                      const requiredFields = ['name', 'company', 'email', 'website', 'specificIssue', 'timeline'];
+                      const missingFields = requiredFields.filter(field => !formData[field as keyof typeof formData]);
+                      
+                      if (missingFields.length === 0) {
+                        alert('🎉 Perfect! You\'ll receive your personalized marketing psychology audit within 24 hours. Check your email for next steps.')
+                      } else {
+                        alert(`Please fill in these required fields: ${missingFields.join(', ')}`)
+                      }
+                    }}
+                    disabled={!formData.name || !formData.company || !formData.email || !formData.website || !formData.specificIssue || !formData.timeline}
+                    className="w-full bg-orange-500 hover:bg-orange-600 disabled:bg-gray-300 text-white py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-[1.02] shadow-lg disabled:transform-none"
+                  >
+                    🎯 Get My Custom Marketing Analysis
+                  </button>
+                  
+                  {/* Back Button - Inside Form */}
+                  <button 
+                    onClick={() => setFormStep(2)}
+                    className="w-full text-gray-500 hover:text-gray-700 transition-colors duration-300 text-sm font-medium py-2"
+                  >
+                    ← Back to Previous Step
+                  </button>
+                </div>
                 
                 <div className="mt-4 p-4 bg-gradient-to-r from-green-50 to-blue-50 rounded-xl border border-green-200">
                   <div className="text-xs font-medium text-slate-700">
@@ -1148,31 +1286,22 @@ function App() {
                       <span className="font-bold">What you'll get in 24 hours:</span>
                     </div>
                     <ul className="ml-4 space-y-1 text-slate-600">
+                      <li>• AI-powered analysis of your website and marketing</li>
                       <li>• Specific breakdown of why your marketing isn't bringing customers</li>
-                      <li>• 3 psychology fixes you can implement immediately</li>
-                      <li>• Revenue opportunity calculation based on your size</li>
+                      <li>• 3-5 psychology fixes you can implement immediately</li>
+                      <li>• Revenue opportunity calculation based on your business size</li>
+                      <li>• Personalized strategy recommendations for your industry</li>
                     </ul>
                   </div>
                 </div>
                 
                 <div className="mt-3 text-center text-xs text-gray-500">
-                  No spam • Unsubscribe anytime • Confidential
+                  🔒 Confidential • No spam • Unsubscribe anytime
                 </div>
               </div>
             </div>
           )}
 
-          {/* Back Button for Steps 2 & 3 */}
-          {formStep > 1 && (
-            <div className="text-center mt-6">
-              <button 
-                onClick={() => setFormStep(formStep - 1)}
-                className="text-gray-400 hover:text-white transition-colors duration-300 text-sm font-medium"
-              >
-                ← Back
-              </button>
-            </div>
-          )}
         </div>
       </section>
 
