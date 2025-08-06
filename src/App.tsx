@@ -13,12 +13,11 @@ function App() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-stone-50 via-amber-50/30 to-stone-100">
       {/* Experimental Floating Navigation */}
-      <nav className="fixed top-8 left-1/2 transform -translate-x-1/2 z-50">
-        <div className="bg-stone-900/95 backdrop-blur-xl border border-stone-700/50 rounded-full px-8 py-4 shadow-2xl">
-          <div className="flex items-center space-x-8">
-            <div className="flex items-center space-x-3">
-              <img src="/reboot-media.avif" alt="Reboot Media" className="h-8 w-auto" />
-              <div className="text-xl font-black text-white tracking-wider">REBOOT</div>
+      <nav className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 w-[calc(100%-2rem)] sm:w-auto max-w-4xl">
+        <div className="bg-stone-950 backdrop-blur-xl border border-stone-700/50 rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-2xl">
+          <div className="flex items-center justify-between sm:space-x-8">
+            <div className="flex items-center">
+              <img src={`${import.meta.env.BASE_URL}reboot-logo-white.svg`} alt="Reboot Media" className="h-8 w-auto" />
             </div>
             <div className="hidden md:flex items-center space-x-6">
               <a href="#psychology" className="text-stone-300 hover:text-orange-400 transition-all duration-300 font-medium relative group">
@@ -39,15 +38,15 @@ function App() {
               </a>
             </div>
             {/* Traditional CTA Button */}
-            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg">
+            <a href="#contact" className="bg-orange-500 text-sm sm:text-base hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg inline-block">
               Get Results
-            </button>
+            </a>
           </div>
         </div>
       </nav>
 
       {/* Hero Section with Parallax Effect */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         {/* Floating Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div 
@@ -62,8 +61,8 @@ function App() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           {/* Loss Aversion Headline */}
-          <div className="mb-8">
-            <h1 className="text-6xl md:text-8xl font-black text-stone-900 mb-6 leading-tight">
+          <div className="mb-6 sm:mb-8">
+            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-stone-900 mb-6 leading-tight">
               Stop <span className="text-orange-500 relative">
                 Losing
                 <div className="absolute -inset-2 bg-orange-100 -skew-y-1 -z-10 rounded-lg"></div>
@@ -76,8 +75,8 @@ function App() {
           </div>
           
           {/* Authority Subheadline */}
-          <div className="mb-12">
-            <p className="text-xl md:text-2xl text-stone-700 font-medium max-w-4xl mx-auto leading-relaxed">
+          <div className="mb-6 sm:mb-8">
+            <p className="text-base sm:text-lg md:text-xl text-stone-700 font-medium max-w-4xl mx-auto leading-normal">
               Asian companies hire <span className="font-bold text-stone-900">American marketing psychology expertise</span> to break through growth plateaus
             </p>
             <div className="mt-4 text-lg text-stone-600">
@@ -86,17 +85,17 @@ function App() {
           </div>
 
           {/* Micro-Commitment CTAs */}
-          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-            <button className="bg-stone-900 hover:bg-stone-800 text-white px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl">
+          <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
+            <button className="bg-stone-900 hover:bg-stone-800 text-white px-6 sm:px-8 py-3 rounded-lg font-bold text-base sm:text-lg transition-all duration-300 transform hover:scale-105 shadow-xl w-full sm:w-auto">
               📊 Free Psychology Audit
             </button>
-            <button className="border-2 border-stone-900 hover:bg-stone-900 hover:text-white text-stone-900 px-10 py-4 rounded-lg font-bold text-lg transition-all duration-300">
+            <button className="border-2 border-stone-900 hover:bg-stone-900 hover:text-white text-stone-900 px-6 sm:px-8 py-3 rounded-lg font-bold text-base sm:text-lg transition-all duration-300 w-full sm:w-auto">
               💡 See Case Studies
             </button>
           </div>
 
           {/* Social Proof */}
-          <div className="mt-16 flex flex-wrap justify-center items-center gap-8 text-stone-600">
+          <div className="mt-8 sm:mt-12 flex flex-wrap justify-center items-center gap-4 sm:gap-6 text-stone-600">
             <div className="text-center">
               <div className="text-2xl font-bold text-orange-500">$3M+</div>
               <div className="text-sm">Monthly Revenue Generated</div>
@@ -114,13 +113,13 @@ function App() {
       </section>
 
       {/* Problem Section - Customer Awareness Stage 1 */}
-      <section id="psychology" className="py-32 px-4 sm:px-6 lg:px-8 bg-stone-100/50">
+      <section id="psychology" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-stone-100/50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-black text-stone-900 mb-8">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-stone-900 mb-6 sm:mb-8">
               The <span className="text-red-500">$200K</span> Marketing Mistake
             </h2>
-            <p className="text-xl text-stone-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-stone-700 max-w-3xl mx-auto leading-normal">
               <span className="font-bold">73% of Asian companies</span> can't explain their value clearly to customers. They suffer from the "Curse of Knowledge" - knowing too much about their product to communicate it simply.
             </p>
           </div>
@@ -128,7 +127,7 @@ function App() {
           {/* Asymmetrical Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="bg-white p-8 rounded-2xl shadow-xl border border-stone-200 transform -rotate-1">
+              <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-xl border border-stone-200 transform -rotate-1">
                 <h3 className="text-2xl font-bold text-stone-900 mb-6">What Business Owners Say:</h3>
                 <div className="space-y-4 text-stone-700">
                   <p className="italic">"Our advanced AI-powered customer lifecycle optimization platform leverages machine learning algorithms to deliver personalized experiences..."</p>
@@ -138,7 +137,7 @@ function App() {
             </div>
             
             <div className="order-1 lg:order-2">
-              <div className="bg-orange-50 p-8 rounded-2xl shadow-xl border border-orange-200 transform rotate-1">
+              <div className="bg-orange-50 p-6 sm:p-8 rounded-2xl shadow-xl border border-orange-200 transform rotate-1">
                 <h3 className="text-2xl font-bold text-stone-900 mb-6">What Customers Hear:</h3>
                 <div className="space-y-4 text-stone-700">
                   <p className="italic">"We help you stop losing customers and make more money from the ones you have."</p>
@@ -151,20 +150,20 @@ function App() {
       </section>
 
       {/* Solution Section - Norton Case Study */}
-      <section id="results" className="py-32 px-4 sm:px-6 lg:px-8">
+      <section id="results" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-black text-stone-900 mb-8">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-stone-900 mb-6 sm:mb-8">
               <span className="text-electric-blue-500">Marketing Psychology</span>
               <br />That Actually Works
             </h2>
           </div>
 
           {/* Norton Case Study Card */}
-          <div className="bg-gradient-to-br from-stone-900 to-stone-800 p-12 rounded-3xl shadow-2xl text-white relative overflow-hidden">
+          <div className="bg-gradient-to-br from-stone-900 to-stone-800 p-6 sm:p-8 rounded-3xl shadow-2xl text-white relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-orange-500/10 rounded-full blur-3xl"></div>
             <div className="relative z-10">
-              <div className="flex items-center mb-8">
+              <div className="flex items-center mb-6 sm:mb-8">
                 <div className="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mr-6">
                   <span className="text-2xl font-black">N</span>
                 </div>
@@ -174,7 +173,7 @@ function App() {
                 </div>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
                 <div className="text-center">
                   <div className="text-4xl font-black text-red-400 mb-2">$100K</div>
                   <div className="text-stone-300">Monthly Revenue</div>
@@ -207,10 +206,10 @@ function App() {
       </section>
 
       {/* Services Section with Interactive Cards */}
-      <section id="services" className="py-32 px-4 sm:px-6 lg:px-8 bg-stone-50">
+      <section id="services" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-stone-50">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-black text-stone-900 mb-8">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-stone-900 mb-6 sm:mb-8">
               Fractional CMO
               <br />
               <span className="text-orange-500">Psychology</span> Services
@@ -220,7 +219,7 @@ function App() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 sm:gap-6">
             {[
               {
                 title: "Psychology Audit",
@@ -273,7 +272,7 @@ function App() {
                 onMouseEnter={() => setHoveredCard(service.index)}
                 onMouseLeave={() => setHoveredCard(null)}
               >
-                <div className={`p-8 rounded-3xl shadow-xl border-2 transition-all duration-500 ${
+                <div className={`p-6 sm:p-8 rounded-3xl shadow-xl border-2 transition-all duration-500 ${
                   service.color === 'orange' 
                     ? 'bg-gradient-to-br from-orange-500 to-orange-600 text-white border-orange-400'
                     : 'bg-white border-stone-200 hover:border-orange-300'
@@ -296,7 +295,7 @@ function App() {
                     </div>
                   </div>
                   
-                  <ul className="space-y-3 mb-8">
+                  <ul className="space-y-3 mb-6 sm:mb-8">
                     {service.features.map((feature, idx) => (
                       <li key={idx} className={`flex items-center ${
                         service.color === 'orange' ? 'text-orange-100' : 'text-stone-700'
@@ -324,7 +323,7 @@ function App() {
       </section>
 
       {/* About Section - Ian's Background */}
-      <section id="about" className="py-32 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 text-white relative overflow-hidden">
+      <section id="about" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-stone-900 via-stone-800 to-stone-900 text-white relative overflow-hidden">
         {/* Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-10 w-40 h-40 bg-orange-500/5 rounded-full blur-3xl"></div>
@@ -332,8 +331,8 @@ function App() {
         </div>
 
         <div className="max-w-7xl mx-auto relative z-10">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-black mb-8">
+          <div className="text-center mb-6 sm:mb-8">
+            <h2 className="text-4xl md:text-5xl font-black mb-6 sm:mb-8">
               Meet Your <span className="text-orange-400">American</span>
               <br />Marketing Expert
             </h2>
@@ -345,27 +344,27 @@ function App() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             {/* Left: Ian's Story */}
             <div className="space-y-8">
-              <div className="bg-stone-800/50 p-8 rounded-2xl border border-stone-700/50">
+              <div className="bg-stone-800/50 p-6 sm:p-8 rounded-2xl border border-stone-700/50">
                 <h3 className="text-2xl font-bold text-orange-400 mb-4">The \"Super Affiliate\" Background</h3>
-                <p className="text-stone-300 leading-relaxed mb-4">
+                <p className="text-stone-300 leading-normal mb-4">
                   I've spent <span className="font-bold text-white">$500K/month of my own money</span> testing what actually converts customers. Not theory - real results with real consequences.
                 </p>
-                <p className="text-stone-300 leading-relaxed">
+                <p className="text-stone-300 leading-normal">
                   Now I bring those battle-tested psychology principles to help business owners communicate their value in ways that actually drive revenue.
                 </p>
               </div>
 
-              <div className="bg-stone-800/50 p-8 rounded-2xl border border-stone-700/50">
+              <div className="bg-stone-800/50 p-6 sm:p-8 rounded-2xl border border-stone-700/50">
                 <h3 className="text-2xl font-bold text-orange-400 mb-4">The Bangkok Advantage</h3>
-                <p className="text-stone-300 leading-relaxed mb-4">
+                <p className="text-stone-300 leading-normal mb-4">
                   Based in Bangkok, I serve Asian companies who want <span className="font-bold text-white">American marketing excellence</span> at regional rates.
                 </p>
-                <p className="text-stone-300 leading-relaxed">
+                <p className="text-stone-300 leading-normal">
                   Perfect for companies expanding to US markets or those seeking proven Western marketing psychology expertise.
                 </p>
               </div>
 
-              <div className="bg-stone-800/50 p-8 rounded-2xl border border-stone-700/50">
+              <div className="bg-stone-800/50 p-6 sm:p-8 rounded-2xl border border-stone-700/50">
                 <h3 className="text-2xl font-bold text-orange-400 mb-4">Industries Proven In</h3>
                 <div className="grid grid-cols-2 gap-4 text-stone-300">
                   <div>• Software/SaaS</div>
@@ -382,13 +381,13 @@ function App() {
 
             {/* Right: Stats & Credibility */}
             <div className="space-y-8">
-              <div className="text-center p-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded-3xl shadow-2xl">
+              <div className="text-center p-6 sm:p-8 bg-gradient-to-br from-orange-500 to-orange-600 rounded-3xl shadow-2xl">
                 <div className="text-6xl font-black text-white mb-4">$3M+</div>
                 <div className="text-xl font-bold text-orange-100 mb-2">Monthly Revenue Generated</div>
                 <div className="text-orange-200">Norton Antivirus Case Study</div>
               </div>
 
-              <div className="grid grid-cols-2 gap-6">
+              <div className="grid grid-cols-2 gap-4 sm:gap-6">
                 <div className="text-center p-6 bg-stone-800/50 rounded-2xl border border-stone-700/50">
                   <div className="text-3xl font-black text-orange-400 mb-2">20+</div>
                   <div className="text-stone-300">Years Experience</div>
@@ -408,7 +407,7 @@ function App() {
               </div>
 
               {/* LinkedIn Connection */}
-              <div className="bg-stone-800/50 p-8 rounded-2xl border border-stone-700/50 text-center">
+              <div className="bg-stone-800/50 p-6 sm:p-8 rounded-2xl border border-stone-700/50 text-center">
                 <h4 className="text-xl font-bold text-white mb-4">Connect & Verify</h4>
                 <p className="text-stone-300 mb-6">
                   See my full background and recommendations on LinkedIn
@@ -431,18 +430,18 @@ function App() {
       </section>
 
       {/* Contact Section with Traditional CTA */}
-      <section id="contact" className="py-32 px-4 sm:px-6 lg:px-8 bg-stone-900">
+      <section id="contact" className="py-12 sm:py-20 px-4 sm:px-6 lg:px-8 bg-stone-900">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-5xl md:text-6xl font-black text-white mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-6 sm:mb-8">
             Ready to <span className="text-orange-400">Stop</span>
             <br />Losing Revenue?
           </h2>
-          <p className="text-xl text-stone-300 mb-12">
+          <p className="text-xl text-stone-300 mb-6 sm:mb-8">
             Get your free marketing psychology audit and see exactly where your messaging is broken
           </p>
           
           {/* Traditional Contact Form */}
-          <div className="bg-white p-10 rounded-3xl shadow-2xl max-w-lg mx-auto">
+          <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-2xl max-w-lg mx-auto">
             <form className="space-y-6">
               <div className="text-left">
                 <label htmlFor="name" className="block text-sm font-bold text-stone-700 mb-2">Full Name</label>
@@ -502,7 +501,7 @@ function App() {
           </div>
           
           {/* Alternative CTA */}
-          <div className="mt-12">
+          <div className="mt-8 sm:mt-12">
             <button className="bg-transparent border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-white px-8 py-3 rounded-xl font-bold transition-all duration-300">
               📅 Schedule 30-Min Strategy Call
             </button>
@@ -513,17 +512,16 @@ function App() {
       {/* Footer */}
       <footer className="bg-stone-950 text-white py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <div className="flex items-center justify-center space-x-4 mb-4">
-              <img src="/reboot-media.avif" alt="Reboot Media" className="h-12 w-auto" />
-              <h3 className="text-3xl font-black">REBOOT MEDIA</h3>
+          <div className="text-center mb-6 sm:mb-8">
+            <div className="flex items-center justify-center mb-4">
+              <img src={`${import.meta.env.BASE_URL}reboot-logo-white.svg`} alt="Reboot Media" className="h-12 w-auto" />
             </div>
             <p className="text-stone-400 max-w-2xl mx-auto">
               American marketing psychology expertise for Asian companies ready to break through growth plateaus
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-6 sm:mb-8">
             <div className="text-center">
               <h4 className="font-bold mb-4 text-orange-400">Services</h4>
               <ul className="space-y-2 text-stone-400">

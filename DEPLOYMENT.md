@@ -4,14 +4,16 @@
 
 ### Development Environment
 ```bash
-npm run build:dev
-# Upload the contents of dist/ folder to: https://dev.rebootmedia.net/reboot/
+npm run deploy:dev
+# Automatically builds, copies files to root, and pushes to GitHub
+# Site: https://dev.rebootmedia.net/reboot/
 ```
 
 ### Production Environment  
 ```bash
-npm run build:prod
-# Upload the contents of dist/ folder to: https://www.rebootmedia.net/
+npm run deploy:prod
+# Builds for production - upload dist/ folder to production server
+# Site: https://www.rebootmedia.net/
 ```
 
 ## File Structure After Build
@@ -30,13 +32,18 @@ dist/
 
 ## Important Notes
 
-1. **Deploy ONLY the contents of `dist/` folder**
-   - ❌ Don't deploy the root project files (src/, package.json, etc.)
-   - ✅ Deploy everything inside `dist/` folder
+1. **Deployment Differences**
+   - **Dev**: Files are copied to root directory and served from GitHub repository
+   - **Prod**: Deploy the contents of `dist/` folder to production server
 
 2. **Path Configuration**
    - Dev build uses `/reboot/` base path for https://dev.rebootmedia.net/reboot/
    - Prod build uses `/` base path for https://www.rebootmedia.net/
+
+3. **Dev Server Behavior**
+   - Dev server (dev.rebootmedia.net) serves directly from GitHub repository root
+   - This is why `npm run deploy:dev` copies built files to root and commits them
+   - Do NOT manually copy source files - use the deployment script
 
 3. **Server Configuration**
    - Make sure server serves `index.html` for SPA routing

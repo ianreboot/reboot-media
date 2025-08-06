@@ -9,9 +9,12 @@
     "build:dev": "tsc -b && vite build --mode development",
     "build:prod": "tsc -b && vite build --mode production",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy:dev": "./scripts/deploy-dev.sh",
+    "deploy:prod": "./scripts/deploy-prod.sh"
   },
   "dependencies": {
+    "puppeteer": "^24.15.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
