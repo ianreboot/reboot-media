@@ -842,15 +842,15 @@ function App() {
             </div>
           )}
 
-          {/* Step 3: Higher Commitment - Qualification & Schedule */}
+          {/* Step 3: Higher Commitment - Qualification & Audit Request */}
           {formStep === 3 && (
             <div className="text-center">
               <h2 className="text-4xl md:text-5xl font-black text-white mb-4">
-                Great! Let's <span className="text-orange-400">Schedule</span>
-                <br />Your Free Strategy Call
+                Perfect! Get Your <span className="text-orange-400">Custom</span>
+                <br />Psychology Audit
               </h2>
               <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-                Based on your challenge, you're a perfect fit for our psychology-driven approach
+                Based on your challenge, you're qualified for our personalized marketing psychology audit
               </p>
               
               <div className="bg-white rounded-2xl p-6 max-w-lg mx-auto shadow-2xl">
@@ -870,7 +870,7 @@ function App() {
                     <div className="w-12 h-0.5 bg-orange-300 mx-2"></div>
                     <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">3</div>
                   </div>
-                  <p className="text-sm text-gray-600 font-medium">Step 3: Schedule Strategy Call</p>
+                  <p className="text-sm text-gray-600 font-medium">Step 3: Get Custom Audit</p>
                 </div>
                 
                 <div className="space-y-4">
@@ -931,20 +931,20 @@ function App() {
                 <button 
                   onClick={() => {
                     if (formData.name && formData.company && formData.revenue && formData.timeline) {
-                      alert('Perfect! We\'ll send you calendar link and psychology audit within 2 hours.')
+                      alert('Perfect! We\'ll send your personalized marketing psychology audit within 24 hours.')
                     }
                   }}
                   disabled={!formData.name || !formData.company || !formData.revenue || !formData.timeline}
                   className="w-full bg-orange-500 hover:bg-orange-600 disabled:bg-gray-300 text-white py-3 rounded-xl font-bold transition-all duration-300 transform hover:scale-[1.02] shadow-lg disabled:transform-none mt-6"
                 >
-                  🚀 Schedule My Free Strategy Call
+                  📊 Get My Custom Psychology Audit
                 </button>
                 
                 <div className="mt-4 p-3 bg-green-50 rounded-lg">
                   <div className="text-xs text-green-700 font-medium">
-                    ✅ Free marketing psychology audit delivered within 2 hours<br/>
-                    ✅ 30-minute strategy call (no sales pitch)<br/>
-                    ✅ Limited to 8 clients per month
+                    ✅ Personalized marketing psychology audit within 24 hours<br/>
+                    ✅ Specific recommendations based on your challenge<br/>
+                    ✅ Limited to 8 custom audits per month
                   </div>
                 </div>
               </div>
