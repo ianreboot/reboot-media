@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import GlobalHeader from './components/GlobalHeader';
 import GlobalFooter from './components/GlobalFooter';
 import PricingCards from './components/PricingCards';
+import SchemaMarkup from './components/SchemaMarkup';
+import SEOHead from './components/SEOHead';
 import { generateEmailContent, getObfuscatedEmailDisplay } from './utils/emailUtils';
 
 function App() {
@@ -123,9 +125,19 @@ function App() {
   }, [typedWord, wordIndex, isDeleting, lostItems]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/20 to-gray-50">
-      {/* Global Header */}
-      <GlobalHeader onShowForm={() => setShowDropdownForm(true)} />
+    <>
+      {/* SEO and Schema Markup */}
+      <SEOHead 
+        title="Fractional CMO Services | Marketing Psychology That Converts | Reboot Media"
+        description="Break through revenue plateaus with psychology-driven fractional CMO services. Transform $500K-$1.5M companies into scalable enterprises. Proven $100K→$3M growth."
+        keywords="fractional CMO, marketing psychology, revenue growth, growth plateau solutions, marketing strategy consultant"
+        canonicalUrl="https://www.rebootmedia.net/"
+      />
+      <SchemaMarkup type="organization" />
+      
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/20 to-gray-50">
+        {/* Global Header */}
+        <GlobalHeader onShowForm={() => setShowDropdownForm(true)} />
 
       {/* Hero Section with Parallax Effect */}
       <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ paddingTop: 'clamp(4rem, 8vw, 0px)', paddingBottom: 'clamp(1rem, 2vw, 2rem)' }}>
@@ -1141,7 +1153,8 @@ function App() {
 
       {/* Global Footer */}
       <GlobalFooter onShowForm={() => setShowDropdownForm(true)} />
-    </div>
+      </div>
+    </>
   )
 }
 
