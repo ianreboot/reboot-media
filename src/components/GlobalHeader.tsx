@@ -42,8 +42,8 @@ const GlobalHeader = ({ onShowForm }: GlobalHeaderProps) => {
 
   return (
     <>
-      {/* Desktop Navigation */}
-      <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300 hidden md:block">
+      {/* Desktop and Mobile Top Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
         <div className={`transition-all duration-300 ${
           scrollY > 50 
             ? 'bg-white/75 dark:bg-slate-900/75 backdrop-blur-md shadow-lg border-b border-gray-200 dark:border-gray-700' 
@@ -130,11 +130,9 @@ const GlobalHeader = ({ onShowForm }: GlobalHeaderProps) => {
               className="flex flex-col items-center py-1 px-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 transition-all duration-200 cursor-pointer group"
               style={{ fontSize: 'clamp(0.625rem, 2.5vw, 0.75rem)' }}
             >
-              <div className="w-8 h-8 mb-1 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 rounded-xl flex items-center justify-center group-hover:from-orange-100 group-hover:to-orange-200 dark:group-hover:from-orange-900 dark:group-hover:to-orange-800 transition-all duration-200 shadow-sm">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
+              <svg className="w-5 h-5 mb-1 opacity-70 group-hover:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
               <span className="font-medium">Services</span>
             </a>
             <a 
@@ -143,11 +141,9 @@ const GlobalHeader = ({ onShowForm }: GlobalHeaderProps) => {
               className="flex flex-col items-center py-1 px-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 transition-all duration-200 cursor-pointer group"
               style={{ fontSize: 'clamp(0.625rem, 2.5vw, 0.75rem)' }}
             >
-              <div className="w-8 h-8 mb-1 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 rounded-xl flex items-center justify-center group-hover:from-orange-100 group-hover:to-orange-200 dark:group-hover:from-orange-900 dark:group-hover:to-orange-800 transition-all duration-200 shadow-sm">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-              </div>
+              <svg className="w-5 h-5 mb-1 opacity-70 group-hover:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
               <span className="font-medium">About</span>
             </a>
             <Link 
@@ -156,11 +152,9 @@ const GlobalHeader = ({ onShowForm }: GlobalHeaderProps) => {
               className="flex flex-col items-center py-1 px-2 text-gray-700 dark:text-gray-300 hover:text-orange-500 transition-all duration-200 group"
               style={{ fontSize: 'clamp(0.625rem, 2.5vw, 0.75rem)' }}
             >
-              <div className="w-8 h-8 mb-1 bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-700 dark:to-gray-800 rounded-xl flex items-center justify-center group-hover:from-orange-100 group-hover:to-orange-200 dark:group-hover:from-orange-900 dark:group-hover:to-orange-800 transition-all duration-200 shadow-sm">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                </svg>
-              </div>
+              <svg className="w-5 h-5 mb-1 opacity-70 group-hover:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
               <span className="font-medium">Contact</span>
             </Link>
             <button 

@@ -70,24 +70,17 @@ const GlobalFooter = ({ onShowForm }: GlobalFooterProps) => {
                 <p className="text-gray-400 text-sm leading-relaxed">
                   Fractional CMO services with proven C-level executive experience driving transformational growth for ambitious companies.
                 </p>
+                <p className="text-gray-500 text-xs mt-4">
+                  USA • Bangkok • Singapore • Global
+                </p>
               </div>
               
-              {/* Social Links - Hidden on mobile */}
-              <div className="hidden md:flex space-x-4">
-                <a href="https://www.linkedin.com/in/ian-ho/" target="_blank" rel="noopener noreferrer" 
-                   className="w-10 h-10 bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center hover:bg-orange-500/20 transition-all duration-300 group"
-                   aria-label="Follow us on LinkedIn">
-                  <svg className="w-5 h-5 text-gray-400 group-hover:text-orange-400 transition-colors" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                  </svg>
-                </a>
-              </div>
             </div>
             
             {/* Quick Links - Desktop normal, Mobile accordions */}
             <div className="lg:col-span-3">
               {/* Desktop View - Only show on large screens */}
-              <div className="hidden lg:grid lg:grid-cols-4 gap-6">
+              <div className="hidden lg:grid lg:grid-cols-3 gap-8">
                 
                 {/* Services */}
                 <div>
@@ -170,31 +163,6 @@ const GlobalFooter = ({ onShowForm }: GlobalFooterProps) => {
                   </ul>
                 </div>
                 
-                {/* Contact */}
-                <div>
-                  <h4 className="font-bold text-white mb-3 text-sm uppercase tracking-wider">Start Your Growth</h4>
-                  <div className="space-y-4">
-                    {onShowForm ? (
-                      <button 
-                        onClick={onShowForm}
-                        className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 transform hover:scale-105 shadow-lg"
-                      >
-                        Get Free Strategy Analysis
-                      </button>
-                    ) : (
-                      <Link 
-                        to="/contact" 
-                        onClick={scrollToTop}
-                        className="block w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 rounded-xl font-semibold text-sm transition-all duration-300 transform hover:scale-105 shadow-lg text-center"
-                      >
-                        Get Free Strategy Analysis
-                      </Link>
-                    )}
-                    <p className="text-gray-500 text-xs">
-                      USA • Bangkok • Singapore • Global
-                    </p>
-                  </div>
-                </div>
                 
               </div>
               
