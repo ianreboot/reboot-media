@@ -3,9 +3,11 @@ import { Link } from 'react-router-dom';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
-import { getObfuscatedEmailDisplay } from '../utils/emailUtils';
+import BackgroundGradient from '../components/BackgroundGradient';
+import { useLeadForm } from '../contexts/LeadFormContext';
 
 const Terms = () => {
+  const { setShowDropdownForm } = useLeadForm();
   // SEO structured data
   const termsPageStructuredData = {
     "@context": "https://schema.org",
@@ -26,7 +28,11 @@ const Terms = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+    <div className="terms-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+      {/* Sophisticated Background Gradient */}
+      <BackgroundGradient />
+      
+      <div className="relative z-10">
       {/* SEO Head */}
       <SEOHead 
         title="Terms of Service | Fractional CMO Consulting Agreement | Reboot Media"
@@ -37,14 +43,13 @@ const Terms = () => {
         ogDescription="Review the terms and conditions for Reboot Media's fractional CMO consulting services and strategic marketing leadership."
         structuredData={termsPageStructuredData}
       />
-      
-      {/* Global Header */}
-      <GlobalHeader />
+        {/* Global Header with Progress Bar */}
+        <GlobalHeader showProgressBar={true} />
 
       {/* Main Content */}
-      <div className="pt-20 pb-16">
+      <div className="pt-16 pb-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8 sm:p-12">
+          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8">
             
             <div className="text-center mb-8">
               <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -61,7 +66,7 @@ const Terms = () => {
               </p>
               
               <p>
-                Your access to and use of the Service, as well as your engagement with our <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline" onClick={() => window.scrollTo(0, 0)}>fractional CMO services</Link>, is conditioned 
+                Your access to and use of the Service, as well as your engagement with our <button onClick={() => setShowDropdownForm(true)} className="text-orange-500 hover:text-orange-600 underline">fractional CMO services</button>, is conditioned 
                 on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and clients who 
                 access or use our website and services. By accessing our website or engaging our services, you agree to be bound by these Terms.
               </p>
@@ -219,7 +224,78 @@ const Terms = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">12. Changes to Terms</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">12. Defense Against Regulatory Complaints</h2>
+                <p className="mb-4">
+                  We maintain compliance with applicable laws and regulations. If you file regulatory complaints or reports that are 
+                  determined to be unfounded, malicious, or made in bad faith, you agree to:
+                </p>
+                <ul className="list-disc list-inside space-y-2">
+                  <li><strong>Truthfulness Requirement:</strong> Only file complaints based on factual information and good faith belief of violations</li>
+                  <li><strong>Pre-Filing Notice:</strong> Provide us 30 days' written notice of concerns before filing regulatory complaints</li>
+                  <li><strong>Cost Recovery:</strong> Reimburse our reasonable costs and attorney's fees if complaints are dismissed as unfounded</li>
+                  <li><strong>Damages for Bad Faith:</strong> Pay damages of $1,000 plus costs for complaints filed in bad faith or with malicious intent</li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">13. Anti-Frivolous Litigation Provisions</h2>
+                <p className="mb-4">
+                  To protect against abusive litigation, the following provisions apply to all legal actions:
+                </p>
+                
+                <h3 className="text-xl font-semibold mb-3">Prevailing Party Attorney's Fees</h3>
+                <p className="mb-4">
+                  In any legal proceeding, the prevailing party shall be entitled to recover reasonable attorney's fees and costs 
+                  from the non-prevailing party. This applies to all disputes, including contract, tort, statutory, or constitutional claims.
+                </p>
+
+                <h3 className="text-xl font-semibold mb-3">Frivolous Claim Penalties</h3>
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li><strong>$10,000 Penalty:</strong> Claims determined to be frivolous, unreasonable, or brought primarily for harassment shall result in a $10,000 penalty plus attorney's fees</li>
+                  <li><strong>Pre-Filing Requirements:</strong> Before filing any lawsuit, you must provide 30 days' written notice of the specific claims and an opportunity to cure</li>
+                  <li><strong>Settlement Protection:</strong> Settlement offers made in good faith cannot be used as evidence of liability or wrongdoing</li>
+                </ul>
+
+                <h3 className="text-xl font-semibold mb-3">Anti-SLAPP Protection</h3>
+                <p className="mb-4">
+                  We reserve all rights under applicable anti-SLAPP (Strategic Lawsuit Against Public Participation) statutes. 
+                  Claims targeting our business communications, marketing materials, or public statements may be subject to 
+                  early dismissal with mandatory attorney's fees.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">14. Specific Legal Compliance and Safe Harbors</h2>
+                
+                <h3 className="text-xl font-semibold mb-3">New Law Grace Period</h3>
+                <p className="mb-4">
+                  For any new laws, regulations, or legal requirements that take effect after the date of these Terms, 
+                  we shall have a 90-day grace period to implement necessary compliance measures before any liability attaches.
+                </p>
+
+                <h3 className="text-xl font-semibold mb-3">Industry Standard Defense</h3>
+                <p className="mb-4">
+                  Our practices conform to industry standards for fractional executive services and marketing consulting. 
+                  Claims alleging substandard practices must demonstrate departure from accepted industry standards.
+                </p>
+
+                <h3 className="text-xl font-semibold mb-3">Accessibility Compliance</h3>
+                <p className="mb-4">
+                  We strive to maintain website accessibility. For any accessibility-related claims under the ADA or similar laws, 
+                  we shall have 90 days from written notice to implement reasonable accommodations before liability attaches.
+                </p>
+
+                <h3 className="text-xl font-semibold mb-3">Data Protection Safe Harbors</h3>
+                <ul className="list-disc list-inside space-y-2">
+                  <li><strong>BIPA Compliance:</strong> For biometric data claims, we provide a 90-day cure period from written notice</li>
+                  <li><strong>TCPA Defense:</strong> All marketing communications are based on express consent or existing business relationships</li>
+                  <li><strong>VPPA Protection:</strong> We do not collect video viewing records subject to Video Privacy Protection Act</li>
+                  <li><strong>COPPA Compliance:</strong> Our services are not directed at children under 13, and we do not knowingly collect children's data</li>
+                </ul>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">15. Changes to Terms</h2>
                 <p>
                   We may update these Terms to reflect changes in our services, legal requirements, or business practices. 
                   Material changes will be communicated with at least 30 days' notice. Continued use of our services after 
@@ -228,7 +304,7 @@ const Terms = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">13. Contact Information</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">16. Contact Information</h2>
                 <p className="mb-4">
                   If you have questions about these Terms or our services, please contact us:
                 </p>
@@ -236,8 +312,7 @@ const Terms = () => {
                   <p className="font-medium">Reboot Media, Inc.</p>
                   <p>17595 Harvard Ave C-738</p>
                   <p>Irvine, CA 92614, USA</p>
-                  <p>Email: {getObfuscatedEmailDisplay()}</p>
-                  <p>Contact Form: <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline" onClick={() => window.scrollTo(0, 0)}>Schedule consultation</Link></p>
+                  <p>Contact Form: <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline" onClick={() => window.scrollTo(0, 0)}>Submit inquiry</Link></p>
                 </div>
               </section>
 
@@ -248,6 +323,7 @@ const Terms = () => {
 
       {/* Global Footer */}
       <GlobalFooter />
+      </div>
     </div>
   );
 };

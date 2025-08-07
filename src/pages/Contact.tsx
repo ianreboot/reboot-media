@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { Mail, MapPin, Globe, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
-import { getContactEmail, getObfuscatedEmailDisplay, generateEmailContent } from '../utils/emailUtils';
+import BackgroundGradient from '../components/BackgroundGradient';
+import { generateEmailContent } from '../utils/emailUtils';
+import { useLeadForm } from '../contexts/LeadFormContext';
 
 const Contact = () => {
+  const { setShowDropdownForm } = useLeadForm();
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -59,7 +61,7 @@ const Contact = () => {
       console.log('Contact form submission:', { 
         formData, 
         emailContent,
-        destination: getContactEmail() 
+        destination: 'Contact Form Submission' 
       });
       
       // Simulate API call
@@ -78,7 +80,7 @@ const Contact = () => {
       });
     } catch (error) {
       setStatus('error');
-      setErrorMessage(`Failed to send message. Please try again or contact us directly at ${getObfuscatedEmailDisplay()}`);
+      setErrorMessage('Failed to send message. Please try again later.');
     }
   };
 
@@ -107,8 +109,12 @@ const Contact = () => {
     }
   };
 
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+    <div className="contact-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+      {/* Sophisticated Background Gradient */}
+      <BackgroundGradient />
+      
       {/* SEO Head */}
       <SEOHead 
         title="Contact Fractional CMO Services | Schedule Free Consultation | Reboot Media"
@@ -121,10 +127,11 @@ const Contact = () => {
       />
       
       {/* Global Header */}
-      <GlobalHeader />
+      <div className="relative z-10">
+        <GlobalHeader showProgressBar={true} />
 
       {/* Main Content */}
-      <div className="pt-20 pb-16">
+      <div className="pt-20 sm:pt-16 pb-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Header */}
@@ -138,12 +145,32 @@ const Contact = () => {
             </p>
           </div>
 
+          {/* Form Usage Guidance */}
+          <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-2xl p-6 mb-8">
+            <h2 className="text-lg font-semibold text-orange-900 dark:text-orange-100 mb-3">
+              Looking for Marketing Help?
+            </h2>
+            <p className="text-orange-800 dark:text-orange-200 mb-4">
+              If you're looking to improve your marketing, grow your revenue, or get a free marketing analysis, 
+              please use our Marketing Analysis form for the fastest response and personalized recommendations.
+            </p>
+            <button
+              onClick={() => setShowDropdownForm(true)}
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+            >
+              Get Your Free Marketing Analysis →
+            </button>
+          </div>
+
           <div className="grid lg:grid-cols-3 gap-8">
             
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Send Us a Message</h2>
+              <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">General Inquiries</h2>
+            <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+              Use this form for legal inquiries, privacy questions, technical support, or other non-marketing matters.
+            </p>
                 
                 {status === 'success' && (
                   <div className="mb-6 p-4 bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 rounded-lg">
@@ -328,13 +355,6 @@ const Contact = () => {
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Get in Touch</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
-                    <Mail className="w-5 h-5 text-orange-500 mr-3 mt-1" />
-                    <div>
-                      <p className="font-medium text-gray-900 dark:text-white">Email</p>
-                      <p className="text-gray-600 dark:text-gray-300">{getObfuscatedEmailDisplay()}</p>
-                    </div>
-                  </div>
-                  <div className="flex items-start">
                     <MapPin className="w-5 h-5 text-orange-500 mr-3 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900 dark:text-white">Address</p>
@@ -369,17 +389,17 @@ const Contact = () => {
 
               {/* Free Consultation CTA */}
               <div className="bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900 dark:to-indigo-900 rounded-2xl p-6">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Free Consultation</h3>
+                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Free Marketing Analysis</h3>
                 <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
-                  Ready to discuss your marketing challenges? Book a free 30-minute consultation 
-                  to explore how our fractional CMO services can help your business grow.
+                  Ready to transform your marketing? Get a personalized analysis 
+                  that shows exactly how to accelerate your business growth.
                 </p>
-                <Link 
-                  to="/#contact" 
+                <button 
+                  onClick={() => setShowDropdownForm(true)}
                   className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors"
                 >
-                  Book Free Call
-                </Link>
+                  Get Your Free Analysis
+                </button>
               </div>
 
             </div>
@@ -389,6 +409,7 @@ const Contact = () => {
 
       {/* Global Footer */}
       <GlobalFooter />
+      </div>
     </div>
   );
 };

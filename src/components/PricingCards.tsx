@@ -88,7 +88,12 @@ const PricingCard = ({ service }: { service: ServicePlan }) => {
   return (
     <div 
       className="flex flex-col w-full"
-      style={{ height: service.popular ? '100%' : 'auto', alignSelf: service.popular ? 'stretch' : 'center' }}
+      style={{ 
+        height: service.popular ? '100%' : 'auto', 
+        alignSelf: service.popular ? 'stretch' : 'center',
+        marginTop: service.popular ? '0' : '3rem',
+        marginBottom: service.popular ? '1rem' : '2rem'
+      }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -251,12 +256,12 @@ const PricingCards = () => {
           centeredSlides: false
         }
       }}
-      className="!py-8"
+      className="!py-12"
     >
       {services.map((service, index) => (
         <SwiperSlide 
           key={index} 
-          className="!flex !items-center !h-auto"
+          className="!flex !items-stretch !h-auto !pb-4"
         >
           <PricingCard service={service} />
         </SwiperSlide>

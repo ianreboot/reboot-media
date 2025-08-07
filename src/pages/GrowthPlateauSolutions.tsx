@@ -1,10 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
+import BackgroundGradient from '../components/BackgroundGradient';
+import { useLeadForm } from '../contexts/LeadFormContext';
 
 const GrowthPlateauSolutions = () => {
-  const [showForm, setShowForm] = useState(false);
+  const { setShowDropdownForm } = useLeadForm();
 
   useEffect(() => {
     document.title = "Stuck at $1M Revenue? Growth Plateau Solutions That Work | Reboot Media";
@@ -47,7 +49,7 @@ const GrowthPlateauSolutions = () => {
       "dateModified": "2025-01-01"
     });
     document.head.appendChild(script);
-    
+
     return () => {
       // Cleanup JSON-LD script
       const existingScript = document.querySelector('script[type="application/ld+json"]');
@@ -65,11 +67,15 @@ const GrowthPlateauSolutions = () => {
         canonicalUrl="https://www.rebootmedia.net/growth-plateau-solutions"
       />
 
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
-        <GlobalHeader onShowForm={() => setShowForm(true)} />
+      <div className="growth-plateau-page min-h-screen relative overflow-hidden dark:bg-gray-900">
+        {/* Sophisticated Background Gradient */}
+        <BackgroundGradient />
+        
+        <div className="relative z-10">
+          <GlobalHeader onShowForm={() => setShowDropdownForm(true)} showProgressBar={true} />
         
         {/* Hero Section */}
-        <section className="pt-24 md:pt-32 pb-16 bg-gradient-to-br from-red-900 via-red-950 to-black relative overflow-hidden">
+        <section className="pt-20 md:pt-24 pb-8 bg-gradient-to-br from-red-900 via-red-950 to-black relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(220,38,38,0.1)_0%,transparent_50%)]"></div>
           <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <div className="inline-flex items-center gap-2 bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -85,7 +91,7 @@ const GrowthPlateauSolutions = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
-                onClick={() => setShowForm(true)}
+                onClick={() => setShowDropdownForm(true)}
                 className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
                 Break Through Your Plateau
@@ -111,7 +117,7 @@ const GrowthPlateauSolutions = () => {
             <div className="grid md:grid-cols-2 gap-6 mb-12">
               
               {/* Frustrations */}
-              <div className="bg-red-50 dark:bg-red-900/10 border border-red-200 dark:border-red-800 rounded-xl p-6">
+              <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-xl shadow-xl border border-red-200/30 dark:border-red-800/30 p-6">
                 <h3 className="text-xl font-bold text-red-800 dark:text-red-300 mb-4 flex items-center">
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
                   These Sound Familiar?
@@ -141,7 +147,7 @@ const GrowthPlateauSolutions = () => {
               </div>
 
               {/* Inner Voice */}
-              <div className="bg-orange-50 dark:bg-orange-900/10 border border-orange-200 dark:border-orange-800 rounded-xl p-6">
+              <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-xl shadow-xl border border-orange-200/30 dark:border-orange-800/30 p-6">
                 <h3 className="text-xl font-bold text-orange-800 dark:text-orange-300 mb-4 flex items-center">
                   <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
                   What You're Thinking
@@ -172,7 +178,7 @@ const GrowthPlateauSolutions = () => {
             </div>
             
             {/* Strategic CTA */}
-            <div className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 border-l-4 border-red-500 p-6 rounded-r-lg">
+            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-red-500/30 dark:border-red-400/30 border-l-4 border-l-red-500 p-6">
               <h3 className="font-bold text-gray-900 dark:text-white mb-3">
                 🚨 Stop Right Here: This Plateau Costs You $47,000+ Every Month
               </h3>
@@ -180,7 +186,7 @@ const GrowthPlateauSolutions = () => {
                 While you're stuck at $1M, you should be at $1.5M+ with proper marketing psychology. That's $500K+ annual difference. Every month of delay costs you qualified opportunities competitors are capturing.
               </p>
               <button 
-                onClick={() => setShowForm(true)}
+                onClick={() => setShowDropdownForm(true)}
                 className="text-red-600 dark:text-red-400 font-semibold hover:underline"
               >
                 Get your plateau breakthrough analysis →
@@ -210,7 +216,7 @@ const GrowthPlateauSolutions = () => {
                     <p className="text-gray-700 dark:text-gray-300 mb-4">
                       You know your product so well that you've forgotten how confusing it is to newcomers. Your messaging assumes knowledge your prospects don't have.
                     </p>
-                    <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                    <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-600/20">
                       <div className="grid md:grid-cols-2 gap-4">
                         <div>
                           <p className="font-semibold text-red-600 mb-2">❌ What You Say:</p>
@@ -237,7 +243,7 @@ const GrowthPlateauSolutions = () => {
                     <p className="text-gray-700 dark:text-gray-300 mb-4">
                       You're using "buy now" messaging for people who don't even know they have a problem. Or educational content for people ready to purchase.
                     </p>
-                    <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                    <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-600/20">
                       <p className="font-semibold text-gray-900 dark:text-white mb-3">The 5 Customer Awareness Stages:</p>
                       <div className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
                         <div className="flex items-center">
@@ -278,7 +284,7 @@ const GrowthPlateauSolutions = () => {
                     <p className="text-gray-700 dark:text-gray-300 mb-4">
                       People are 2.5x more motivated to avoid loss than gain benefit. Your messaging focuses on gains while competitors use loss aversion to win deals.
                     </p>
-                    <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                    <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-600/20">
                       <div className="grid md:grid-cols-2 gap-4">
                         <div>
                           <p className="font-semibold text-blue-600 mb-2">💡 Gain-Focused (Weak):</p>
@@ -305,7 +311,7 @@ const GrowthPlateauSolutions = () => {
                     <p className="text-gray-700 dark:text-gray-300 mb-4">
                       "Trusted by thousands" means nothing. Your prospects need specific social proof from people in their exact situation with measurable results.
                     </p>
-                    <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+                    <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-600/20">
                       <div className="space-y-3">
                         <div>
                           <p className="font-semibold text-red-600 mb-1 text-sm">❌ Generic:</p>
@@ -326,7 +332,7 @@ const GrowthPlateauSolutions = () => {
 
           {/* Strategic CTA */}
           <section className="mb-16">
-            <div className="text-center bg-gradient-to-br from-red-50 to-orange-100 dark:from-red-900/20 dark:to-orange-800/20 rounded-2xl p-8">
+            <div className="text-center bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-red-500/20 dark:border-red-400/20 p-8">
               <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                 Stop Losing $47K Monthly to Plateau Psychology
               </h3>
@@ -334,7 +340,7 @@ const GrowthPlateauSolutions = () => {
                 Every month you delay fixing these psychology mistakes, competitors are capturing the growth that should be yours. Get your free plateau breakthrough analysis.
               </p>
               <button 
-                onClick={() => setShowForm(true)}
+                onClick={() => setShowDropdownForm(true)}
                 className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4"
               >
                 Get Free Plateau Analysis
@@ -359,24 +365,31 @@ const GrowthPlateauSolutions = () => {
 
             <div className="grid md:grid-cols-2 gap-8 mb-12">
               
-              {/* Step 1 */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-green-50 dark:bg-green-900/10">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">1</div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">Customer Awareness Audit</h3>
+              {/* Step 1 - Collapsible */}
+              <details className="border border-gray-200 dark:border-gray-700 rounded-xl bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm overflow-hidden">
+                <summary className="p-6 cursor-pointer hover:bg-green-100 dark:hover:bg-green-900/20 transition-colors">
+                  <div className="flex items-start gap-4">
+                    <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">1</div>
+                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">Customer Awareness Audit</h3>
+                  </div>
+                  <p className="text-gray-700 dark:text-gray-300 mt-2">
+                    Map your prospects' awareness stages and identify messaging mismatches...
+                  </p>
+                </summary>
+                <div className="px-6 pb-6 pt-0">
+                  <p className="text-gray-700 dark:text-gray-300 mb-4">
+                    Map your prospects' awareness stages and identify messaging mismatches that kill conversions.
+                  </p>
+                  <ul className="text-gray-700 dark:text-gray-300 space-y-1 text-sm">
+                    <li>• Survey existing customers about their buying journey</li>
+                    <li>• Analyze competitor messaging by awareness stage</li>
+                    <li>• Identify gaps where prospects get confused</li>
+                  </ul>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">
-                  Map your prospects' awareness stages and identify messaging mismatches that kill conversions.
-                </p>
-                <ul className="text-gray-700 dark:text-gray-300 space-y-1 text-sm">
-                  <li>• Survey existing customers about their buying journey</li>
-                  <li>• Analyze competitor messaging by awareness stage</li>
-                  <li>• Identify gaps where prospects get confused</li>
-                </ul>
-              </div>
+              </details>
 
               {/* Step 2 */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-blue-50 dark:bg-blue-900/10">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">2</div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">Loss Aversion Messaging</h3>
@@ -392,7 +405,7 @@ const GrowthPlateauSolutions = () => {
               </div>
 
               {/* Step 3 */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-orange-50 dark:bg-orange-900/10">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">3</div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">Specific Social Proof</h3>
@@ -408,7 +421,7 @@ const GrowthPlateauSolutions = () => {
               </div>
 
               {/* Step 4 */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-purple-50 dark:bg-purple-900/10">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm">
                 <div className="flex items-start gap-4 mb-4">
                   <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">4</div>
                   <h3 className="text-xl font-bold text-gray-900 dark:text-white">Systematic Testing</h3>
@@ -431,7 +444,7 @@ const GrowthPlateauSolutions = () => {
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
               Case Study: How We Broke Through a 14-Month Plateau
             </h2>
-            <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-8 bg-gradient-to-br from-green-50 to-blue-50 dark:from-green-900/10 dark:to-blue-900/10">
+            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-xl shadow-xl border border-gray-200/30 dark:border-gray-700/30 p-8">
               <div className="grid md:grid-cols-3 gap-8 mb-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-red-600 mb-2">$1.1M</div>
@@ -470,7 +483,7 @@ const GrowthPlateauSolutions = () => {
                   </div>
                 </div>
                 
-                <div className="mt-6 p-4 bg-white/50 dark:bg-gray-800/50 rounded-lg">
+                <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
                   <h4 className="font-semibold text-gray-900 dark:text-white mb-2">The Breakthrough Moment:</h4>
                   <p className="text-gray-700 dark:text-gray-300">
                     "We discovered our prospects weren't looking for a 'CRM solution'—they were desperately trying to solve 'deal leakage.' When we changed our headline from 'Advanced CRM Features' to 'Stop Losing Deals to Broken Follow-Up,' conversions jumped 340% in 30 days."
@@ -518,19 +531,13 @@ const GrowthPlateauSolutions = () => {
             <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
               The 33% who break through aren't smarter—they just understand marketing psychology. Every month you wait is another $47K+ of growth your competitors capture instead.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-6">
+            <div className="flex justify-center mb-6">
               <button 
-                onClick={() => setShowForm(true)}
-                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+                onClick={() => setShowDropdownForm(true)}
+                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
-                Break Through Your Revenue Plateau
+                Get Your Free Plateau Breakthrough Analysis →
               </button>
-              <a 
-                href="/contact" 
-                className="border-2 border-red-500 text-red-400 hover:bg-red-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
-              >
-                Schedule Breakthrough Call
-              </a>
             </div>
             <p className="text-gray-400 text-sm">
               ✅ Free plateau analysis • ✅ Psychology-driven roadmap • ✅ No obligation • ✅ 67% breakthrough rate
@@ -539,26 +546,10 @@ const GrowthPlateauSolutions = () => {
 
         </main>
 
-        <GlobalFooter onShowForm={() => setShowForm(true)} />
+        <GlobalFooter onShowForm={() => setShowDropdownForm(true)} />
+        </div>
       </div>
 
-      {/* Form Modal Placeholder */}
-      {showForm && (
-        <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-          <div className="bg-white dark:bg-gray-800 rounded-2xl p-8 max-w-md w-full">
-            <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Break Through Your Plateau</h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-6">
-              Get your free plateau analysis and discover the specific psychology mistakes keeping your revenue stuck between $500K-$1.5M.
-            </p>
-            <button 
-              onClick={() => setShowForm(false)}
-              className="w-full bg-gray-300 hover:bg-gray-400 text-gray-700 py-3 rounded-lg font-semibold transition-colors"
-            >
-              Close (Form Integration Pending)
-            </button>
-          </div>
-        </div>
-      )}
     </>
   );
 };

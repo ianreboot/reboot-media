@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
-import { getObfuscatedEmailDisplay } from '../utils/emailUtils';
+import BackgroundGradient from '../components/BackgroundGradient';
 
 const Privacy = () => {
   // SEO structured data
@@ -26,7 +26,11 @@ const Privacy = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+    <div className="privacy-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+      {/* Sophisticated Background Gradient */}
+      <BackgroundGradient />
+      
+      <div className="relative z-10">
       {/* SEO Head */}
       <SEOHead 
         title="Privacy Policy | Fractional CMO Services Data Protection | Reboot Media"
@@ -37,14 +41,13 @@ const Privacy = () => {
         ogDescription="Comprehensive privacy policy for Reboot Media's fractional CMO services. Learn about our data protection practices and your privacy rights."
         structuredData={privacyPageStructuredData}
       />
-      
-      {/* Global Header */}
-      <GlobalHeader />
+        {/* Global Header with Progress Bar */}
+        <GlobalHeader showProgressBar={true} />
 
       {/* Main Content */}
-      <div className="pt-20 pb-16">
+      <div className="pt-16 pb-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8 sm:p-12">
+          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8">
             
             <div className="text-center mb-8">
               <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 dark:text-white mb-4">
@@ -69,28 +72,35 @@ const Privacy = () => {
 
               <section>
                 <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">2. Information We Collect</h2>
-                
-                <h3 className="text-xl font-semibold mb-3">Contact and Lead Generation Information:</h3>
-                <ul className="list-disc list-inside space-y-2 mb-4">
-                  <li><strong>Contact Forms:</strong> When you submit our contact form or request a consultation, we collect your name, email address, company information, website URL, and any additional details you provide about your business needs.</li>
-                  <li><strong>Lead Qualification Data:</strong> Information about your business size, current marketing challenges, budget range, and strategic priorities to help us provide relevant fractional CMO services.</li>
-                  <li><strong>Communication Records:</strong> Records of our email exchanges, consultation calls, and meeting notes to maintain continuity in our service delivery.</li>
-                </ul>
+                <div className="space-y-4">
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3">Contact and Lead Generation Information:</h3>
+                    <ul className="list-disc list-inside space-y-2 mb-4">
+                      <li><strong>Contact Forms:</strong> When you submit our contact form or request a consultation, we collect your name, email address, company information, website URL, and any additional details you provide about your business needs.</li>
+                      <li><strong>Lead Qualification Data:</strong> Information about your business size, current marketing challenges, budget range, and strategic priorities to help us provide relevant fractional CMO services.</li>
+                      <li><strong>Communication Records:</strong> Records of our email exchanges, consultation calls, and meeting notes to maintain continuity in our service delivery.</li>
+                    </ul>
+                  </div>
 
-                <h3 className="text-xl font-semibold mb-3">Website Analytics and Technical Information:</h3>
-                <ul className="list-disc list-inside space-y-2 mb-4">
-                  <li><strong>Usage Analytics:</strong> We collect data about how visitors interact with our website, including page views, session duration, bounce rates, and conversion funnel performance using Google Analytics.</li>
-                  <li><strong>Device and Browser Information:</strong> Technical details such as IP address, browser type, device type, operating system, and screen resolution to optimize our website experience.</li>
-                  <li><strong>Marketing Attribution:</strong> Information about how you found our website (search engines, referral sites, social media, direct traffic) to measure our marketing effectiveness.</li>
-                  <li><strong>Local Storage:</strong> We may use browser storage to remember your preferences and improve your website experience.</li>
-                </ul>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3">Website Analytics and Technical Information:</h3>
+                    <ul className="list-disc list-inside space-y-2 mb-4">
+                      <li><strong>Usage Analytics:</strong> We collect data about how visitors interact with our website, including page views, session duration, bounce rates, and conversion funnel performance using Google Analytics.</li>
+                      <li><strong>Device and Browser Information:</strong> Technical details such as IP address, browser type, device type, operating system, and screen resolution to optimize our website experience.</li>
+                      <li><strong>Marketing Attribution:</strong> Information about how you found our website (search engines, referral sites, social media, direct traffic) to measure our marketing effectiveness.</li>
+                      <li><strong>Local Storage:</strong> We may use browser storage to remember your preferences and improve your website experience.</li>
+                    </ul>
+                  </div>
 
-                <h3 className="text-xl font-semibold mb-3">Business Relationship Information:</h3>
-                <ul className="list-disc list-inside space-y-2">
-                  <li><strong>Client Project Data:</strong> For active fractional CMO engagements, we collect and analyze your marketing data, campaign performance metrics, customer insights, and strategic business information necessary to deliver our services.</li>
-                  <li><strong>Calendar and Scheduling:</strong> Meeting preferences, availability, and scheduling information for consultations and ongoing strategic sessions.</li>
-                  <li><strong>Payment Information:</strong> Billing details, payment method information, and transaction records (processed securely through third-party payment processors).</li>
-                </ul>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-3">Business Relationship Information:</h3>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li><strong>Client Project Data:</strong> For active fractional CMO engagements, we collect and analyze your marketing data, campaign performance metrics, customer insights, and strategic business information necessary to deliver our services.</li>
+                      <li><strong>Calendar and Scheduling:</strong> Meeting preferences, availability, and scheduling information for consultations and ongoing strategic sessions.</li>
+                      <li><strong>Payment Information:</strong> Billing details, payment method information, and transaction records (processed securely through third-party payment processors).</li>
+                    </ul>
+                  </div>
+                </div>
               </section>
 
               <section>
@@ -130,50 +140,85 @@ const Privacy = () => {
                   <li><strong>Consent Withdrawal:</strong> You can withdraw consent for specific data processing activities where consent is the legal basis.</li>
                 </ul>
                 <p className="mt-4">
-                  To exercise these rights, please contact us at {getObfuscatedEmailDisplay()} or through our{' '}
-                  <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline" onClick={() => window.scrollTo(0, 0)}>fractional CMO contact page</Link>.
+                  To exercise these rights, please contact us through our{' '}
+                  <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline" onClick={() => window.scrollTo(0, 0)}>contact form</Link>.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">6. Regional Privacy Rights</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">6. Regional Privacy Rights and Compliance</h2>
                 
-                <h3 className="text-xl font-semibold mb-3">California Residents (CCPA/CPRA):</h3>
-                <ul className="list-disc list-inside space-y-1 mb-4">
-                  <li><strong>Right to Know:</strong> Request information about categories and specific pieces of personal information we collect</li>
-                  <li><strong>Right to Delete:</strong> Request deletion of your personal information (subject to certain exceptions)</li>
-                  <li><strong>Right to Opt-Out:</strong> We do not sell personal information, but you can opt-out of any future sales</li>
-                  <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising your privacy rights</li>
-                  <li><strong>Right to Correct:</strong> Request correction of inaccurate personal information</li>
+                <h3 className="text-xl font-semibold mb-3">California Residents (CCPA/CPRA) - Enhanced Rights:</h3>
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li><strong>Right to Know:</strong> Request detailed information about categories and specific pieces of personal information we collect, sources, business purposes, and third parties with whom we share data</li>
+                  <li><strong>Right to Delete:</strong> Request deletion of your personal information within 30 days (subject to legal retention requirements and ongoing business relationships)</li>
+                  <li><strong>Right to Opt-Out:</strong> We do not sell or share personal information for cross-context behavioral advertising. You may opt-out of any future sales</li>
+                  <li><strong>Right to Non-Discrimination:</strong> We will not discriminate against you for exercising privacy rights, including different pricing or service levels</li>
+                  <li><strong>Right to Correct:</strong> Request correction of inaccurate personal information within 30 days of verification</li>
+                  <li><strong>Right to Limit Sensitive Data:</strong> Request limitations on use of sensitive personal information beyond business purposes</li>
+                  <li><strong>Authorized Agent Requests:</strong> Designate authorized agents to make requests on your behalf with proper verification</li>
                 </ul>
 
-                <h3 className="text-xl font-semibold mb-3">EU/UK Residents (GDPR):</h3>
-                <ul className="list-disc list-inside space-y-1">
-                  <li><strong>Right to Access:</strong> Obtain confirmation of data processing and access to your personal data</li>
-                  <li><strong>Right to Rectification:</strong> Correct inaccurate or incomplete personal data</li>
-                  <li><strong>Right to Erasure:</strong> Request deletion of your personal data under certain conditions</li>
-                  <li><strong>Right to Data Portability:</strong> Receive your data in a structured, machine-readable format</li>
-                  <li><strong>Right to Object:</strong> Object to processing of your personal data for certain purposes</li>
-                  <li><strong>Right to Restrict Processing:</strong> Request limitation of processing under specific circumstances</li>
+                <h3 className="text-xl font-semibold mb-3">EU/UK Residents (GDPR) - Comprehensive Rights:</h3>
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li><strong>Right to Access:</strong> Obtain confirmation of data processing and free access to your personal data within 30 days</li>
+                  <li><strong>Right to Rectification:</strong> Correct inaccurate or incomplete personal data without undue delay</li>
+                  <li><strong>Right to Erasure ("Right to be Forgotten"):</strong> Request deletion when data is no longer necessary, consent is withdrawn, or processing is unlawful</li>
+                  <li><strong>Right to Data Portability:</strong> Receive your data in a structured, commonly-used, machine-readable format and transmit to another controller</li>
+                  <li><strong>Right to Object:</strong> Object to processing for legitimate interests, direct marketing, or research/statistical purposes</li>
+                  <li><strong>Right to Restrict Processing:</strong> Request limitation when accuracy is contested, processing is unlawful, or data is no longer needed but required for legal claims</li>
+                  <li><strong>Right to Withdraw Consent:</strong> Withdraw consent at any time for consent-based processing</li>
+                  <li><strong>Right to Lodge Complaints:</strong> File complaints with supervisory authorities if you believe GDPR has been violated</li>
+                </ul>
+
+                <h3 className="text-xl font-semibold mb-3">Response Timelines and Procedures:</h3>
+                <ul className="list-disc list-inside space-y-2">
+                  <li><strong>Standard Response:</strong> 30 days for most requests (may be extended by 60 days for complex requests)</li>
+                  <li><strong>Identity Verification:</strong> Reasonable verification procedures to protect against fraudulent requests</li>
+                  <li><strong>Free Exercise of Rights:</strong> No charge for requests unless excessive or repetitive</li>
+                  <li><strong>Request Methods:</strong> Submit requests through our contact form or written notice to our business address</li>
                 </ul>
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">7. Data Security and Retention</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">7. Enhanced Data Security and Retention</h2>
+                
+                <h3 className="text-xl font-semibold mb-3">Security Measures</h3>
                 <p className="mb-4">
-                  We implement industry-standard security measures to protect your information, including encrypted data 
-                  transmission, secure data storage, access controls, and regular security audits. However, no security 
-                  system is 100% secure, and we cannot guarantee absolute security.
+                  We implement comprehensive security measures to protect your information:
                 </p>
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li><strong>Encryption:</strong> All data transmitted to and from our servers is encrypted using industry-standard SSL/TLS protocols</li>
+                  <li><strong>Access Controls:</strong> Role-based access controls limit data access to authorized personnel only</li>
+                  <li><strong>Data Storage:</strong> Personal information is stored on secure servers with multiple layers of protection</li>
+                  <li><strong>Regular Audits:</strong> We conduct regular security assessments and vulnerability testing</li>
+                  <li><strong>Employee Training:</strong> Staff receive regular training on data protection and privacy best practices</li>
+                  <li><strong>Vendor Requirements:</strong> Third-party vendors must meet our security standards and sign data processing agreements</li>
+                </ul>
                 <p className="mb-4">
-                  <strong>Data Retention:</strong> We retain your information for as long as necessary to provide our services, 
-                  comply with legal obligations, resolve disputes, and enforce our agreements. Client project data is typically 
-                  retained for the duration of our engagement plus seven years for business records purposes.
+                  <em>Important:</em> While we implement robust security measures, no system is 100% secure. We cannot guarantee absolute security but commit to industry-leading practices.
                 </p>
-                <p>
-                  <strong>Data Breach Notification:</strong> In the unlikely event of a data breach that may compromise your 
-                  personal information, we will notify affected users and relevant authorities as required by applicable laws.
+
+                <h3 className="text-xl font-semibold mb-3">Data Retention Policies</h3>
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li><strong>Active Client Data:</strong> Retained for the duration of our engagement plus seven years for business records</li>
+                  <li><strong>Prospect Data:</strong> Retained for 36 months from last contact unless consent is withdrawn</li>
+                  <li><strong>Website Analytics:</strong> Google Analytics data retained for 26 months (industry standard)</li>
+                  <li><strong>Legal Requirements:</strong> Some data may be retained longer to comply with legal obligations</li>
+                  <li><strong>Deletion Upon Request:</strong> Data deleted within 30 days of verified deletion requests (subject to legal retention requirements)</li>
+                </ul>
+
+                <h3 className="text-xl font-semibold mb-3">Data Breach Response</h3>
+                <p className="mb-4">
+                  In the event of a data breach that may compromise your personal information, we commit to:
                 </p>
+                <ul className="list-disc list-inside space-y-2">
+                  <li><strong>72-Hour Authority Notification:</strong> Report breaches to relevant authorities within 72 hours as required by law</li>
+                  <li><strong>Prompt User Notification:</strong> Notify affected users without undue delay when high risk to rights and freedoms exists</li>
+                  <li><strong>Transparent Communication:</strong> Provide clear information about the nature of the breach, data involved, and steps taken</li>
+                  <li><strong>Remediation Actions:</strong> Implement immediate measures to contain the breach and prevent future occurrences</li>
+                  <li><strong>Cooperation:</strong> Work with law enforcement and regulatory authorities as needed</li>
+                </ul>
               </section>
 
               <section>
@@ -196,21 +241,64 @@ const Privacy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">10. Third-Party Services</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">10. Cookies and Tracking Technologies</h2>
+                
+                <h3 className="text-xl font-semibold mb-3">Types of Cookies We Use</h3>
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li><strong>Essential Cookies:</strong> Necessary for website functionality, user preferences, and session management</li>
+                  <li><strong>Analytics Cookies:</strong> Google Analytics cookies to understand website usage and improve user experience</li>
+                  <li><strong>Functional Cookies:</strong> Remember your preferences like dark/light mode and language settings</li>
+                  <li><strong>No Marketing Cookies:</strong> We do not use cookies for advertising or cross-site tracking</li>
+                </ul>
+
+                <h3 className="text-xl font-semibold mb-3">Cookie Control and Opt-Out</h3>
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li><strong>Browser Settings:</strong> You can control cookies through your browser settings</li>
+                  <li><strong>Google Analytics Opt-Out:</strong> Install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:text-orange-600 underline">Google Analytics Opt-out Browser Add-on</a></li>
+                  <li><strong>Do Not Track:</strong> We respect Do Not Track signals where technically feasible</li>
+                  <li><strong>Cookie Lifespan:</strong> Most cookies expire after 26 months of inactivity</li>
+                </ul>
+
+                <h3 className="text-xl font-semibold mb-3">Local Storage</h3>
                 <p className="mb-4">
-                  Our website and services may contain links to third-party websites or integrate with third-party services 
-                  (such as Google Analytics, calendar systems, or social media platforms). We are not responsible for the 
-                  privacy practices of these third parties. We encourage you to review their privacy policies.
-                </p>
-                <p>
-                  <strong>Google Analytics:</strong> We use Google Analytics to understand website usage patterns. Google Analytics 
-                  collects information such as how often users visit our site, what pages they visit, and referral sources. 
-                  You can opt-out of Google Analytics by installing the Google Analytics Opt-out Browser Add-on.
+                  We use browser local storage to remember your preferences (theme, language) and improve your experience. 
+                  This data stays on your device and can be cleared through browser settings.
                 </p>
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">11. Changes to This Privacy Policy</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">11. Third-Party Services and Data Sharing</h2>
+                
+                <h3 className="text-xl font-semibold mb-3">Service Providers</h3>
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li><strong>Google Analytics:</strong> Website usage analytics (data processed in US, subject to Google's privacy policy)</li>
+                  <li><strong>Hosting Providers:</strong> Website hosting and content delivery (data processed in US/EU)</li>
+                  <li><strong>Email Services:</strong> Client communication and marketing (when explicitly consented)</li>
+                  <li><strong>Calendar Systems:</strong> Appointment scheduling for consultations</li>
+                  <li><strong>Payment Processors:</strong> Secure payment processing (PCI DSS compliant)</li>
+                </ul>
+
+                <h3 className="text-xl font-semibold mb-3">Data Processing Agreements</h3>
+                <p className="mb-4">
+                  All third-party service providers are required to:
+                </p>
+                <ul className="list-disc list-inside space-y-2 mb-4">
+                  <li>Sign data processing agreements (DPAs) meeting GDPR/CCPA standards</li>
+                  <li>Implement appropriate technical and organizational measures</li>
+                  <li>Process data only for specified purposes</li>
+                  <li>Notify us of any data breaches within 24 hours</li>
+                  <li>Delete or return data upon termination of services</li>
+                </ul>
+
+                <h3 className="text-xl font-semibold mb-3">No Data Sales</h3>
+                <p>
+                  <strong>We do not sell, rent, or trade your personal information to third parties.</strong> We may share 
+                  aggregated, anonymized data for industry research or business development purposes that cannot identify individuals.
+                </p>
+              </section>
+
+              <section>
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">12. Changes to This Privacy Policy</h2>
                 <p>
                   We may update this Privacy Policy to reflect changes in our practices, legal requirements, or service 
                   functionality. We will post the updated policy on this page with a new effective date and, for material 
@@ -219,7 +307,7 @@ const Privacy = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">12. Contact Us</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 dark:text-white mb-4">13. Contact Us</h2>
                 <p className="mb-4">
                   If you have questions about this Privacy Policy, your data rights, or wish to exercise any of your privacy 
                   rights, please contact us:
@@ -228,8 +316,7 @@ const Privacy = () => {
                   <p className="font-medium">Reboot Media, Inc.</p>
                   <p>17595 Harvard Ave C-738</p>
                   <p>Irvine, CA 92614, USA</p>
-                  <p>Email: {getObfuscatedEmailDisplay()}</p>
-                  <p>Contact Form: <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline" onClick={() => window.scrollTo(0, 0)}>Schedule consultation</Link></p>
+                  <p>Contact Form: <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline" onClick={() => window.scrollTo(0, 0)}>Submit inquiry</Link></p>
                 </div>
               </section>
             </div>
@@ -239,6 +326,7 @@ const Privacy = () => {
 
       {/* Global Footer */}
       <GlobalFooter />
+      </div>
     </div>
   );
 };

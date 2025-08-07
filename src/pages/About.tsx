@@ -3,11 +3,16 @@ import { Link } from 'react-router-dom';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
+import BackgroundGradient from '../components/BackgroundGradient';
+import { useLeadForm } from '../contexts/LeadFormContext';
 
 const About = () => {
+  const { setShowDropdownForm } = useLeadForm();
+
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
 
   // SEO structured data
   const aboutPageStructuredData = {
@@ -39,7 +44,10 @@ const About = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+    <div className="about-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+      {/* Sophisticated Background Gradient */}
+      <BackgroundGradient />
+      
       {/* SEO Head */}
       <SEOHead 
         title="About Us | Fortune 500 Fractional CMO Leadership | Reboot Media"
@@ -52,25 +60,26 @@ const About = () => {
       />
       
       {/* Global Header */}
-      <GlobalHeader />
+      <div className="relative z-10">
+        <GlobalHeader showProgressBar={true} />
 
       {/* Main Content */}
-      <div className="pt-20 pb-16">
+      <div className="pt-20 sm:pt-16 pb-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Hero Section */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
               About Reboot Media
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline" onClick={scrollToTop}>Fractional CMO services</Link> with proven C-level executive experience from Fortune 500 companies. 
+              <button onClick={() => setShowDropdownForm(true)} className="text-orange-500 hover:text-orange-600 underline">Fractional CMO services</button> with proven C-level executive experience from Fortune 500 companies. 
               We don't just give advice – we deliver battle-tested strategies that drive measurable growth.
             </p>
           </div>
 
           {/* Company Story */}
-          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8 sm:p-12 mb-12">
+          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">Our Story</h2>
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div className="space-y-4 text-gray-700 dark:text-gray-300">
@@ -84,7 +93,7 @@ const About = () => {
                 </p>
                 <p>
                   We created Reboot Media to bridge this gap, providing C-level marketing expertise without the 
-                  full-time executive cost. Our <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline" onClick={scrollToTop}>fractional CMO model</Link> gives you access to Fortune 500-caliber 
+                  full-time executive cost. Our <button onClick={() => setShowDropdownForm(true)} className="text-orange-500 hover:text-orange-600 underline">fractional CMO model</button> gives you access to Fortune 500-caliber 
                   strategy and execution at a fraction of traditional consulting costs.
                 </p>
               </div>
@@ -100,7 +109,7 @@ const About = () => {
           </div>
 
           {/* Leadership */}
-          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8 sm:p-12 mb-12">
+          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">Leadership</h2>
             <div className="max-w-4xl mx-auto">
               <div className="flex flex-col lg:flex-row items-center gap-8">
@@ -162,7 +171,7 @@ const About = () => {
           </div>
 
           {/* Our Approach */}
-          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8 sm:p-12 mb-12">
+          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Our Approach</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
@@ -192,7 +201,7 @@ const About = () => {
                 </h3>
                 <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
                   Access to executive-level strategic thinking without the $300K+ annual cost. Get Fortune 500 
-                  caliber <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline" onClick={scrollToTop}>marketing leadership</Link> at a fraction of traditional consulting rates.
+                  caliber <button onClick={() => setShowDropdownForm(true)} className="text-orange-500 hover:text-orange-600 underline">marketing leadership</button> at a fraction of traditional consulting rates.
                 </p>
               </div>
               <div>
@@ -209,7 +218,7 @@ const About = () => {
           </div>
 
           {/* Values */}
-          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8 sm:p-12 mb-12">
+          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8">
             <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">Our Values</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="text-center">
@@ -237,19 +246,18 @@ const About = () => {
           </div>
 
           {/* Contact CTA */}
-          <div className="bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl shadow-xl p-8 sm:p-12 text-center">
+          <div className="bg-gradient-to-r from-orange-500 to-amber-500 rounded-2xl shadow-xl p-6 sm:p-8 text-center">
             <h2 className="text-3xl font-bold text-white mb-4">Ready to Work Together?</h2>
             <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
               Stop fumbling with amateur advice. Get battle-tested strategies from executives who've 
               guided Fortune 500 brands to measurable growth. <Link to="/privacy" className="text-orange-100 hover:text-white underline" onClick={scrollToTop}>Privacy protected</Link>.
             </p>
-            <Link 
-              to="/contact"
-              onClick={scrollToTop}
+            <button
+              onClick={() => setShowDropdownForm(true)}
               className="inline-block px-8 py-4 bg-white text-orange-600 font-semibold rounded-xl hover:bg-gray-50 transition-colors text-lg"
             >
-              Start Your Free Consultation
-            </Link>
+              Get Your Free Marketing Analysis
+            </button>
           </div>
 
         </div>
@@ -257,6 +265,7 @@ const About = () => {
 
       {/* Global Footer */}
       <GlobalFooter />
+      </div>
     </div>
   );
 };

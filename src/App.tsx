@@ -4,7 +4,8 @@ import GlobalFooter from './components/GlobalFooter';
 import PricingCards from './components/PricingCards';
 import SchemaMarkup from './components/SchemaMarkup';
 import SEOHead from './components/SEOHead';
-import { generateEmailContent, getObfuscatedEmailDisplay } from './utils/emailUtils';
+import BackgroundGradient from './components/BackgroundGradient';
+import { useLeadForm } from './contexts/LeadFormContext';
 
 function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -12,57 +13,9 @@ function App() {
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
-  // Multi-step form state
-  const [formStep, setFormStep] = useState(1);
-  const [showDropdownForm, setShowDropdownForm] = useState(false);
-  const [formData, setFormData] = useState({
-    email: '',
-    challenge: '',
-    revenue: '',
-    name: '',
-    company: '',
-    timeline: '',
-    website: '',
-    specificIssue: '',
-    industry: '',
-    teamSize: '',
-    currentMarketing: ''
-  });
-  const [fieldValidation, setFieldValidation] = useState<{[key: string]: 'valid' | 'invalid' | ''}>({});
-  const [selectedOptions, setSelectedOptions] = useState<{[key: string]: boolean}>({});
+  // Use the lead form context
+  const { setShowDropdownForm } = useLeadForm();
   
-  // Validation functions
-  const validateEmail = (email: string) => {
-    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return re.test(email);
-  };
-  
-  const validateUrl = (url: string) => {
-    if (!url) return true; // Optional field
-    try {
-      new URL(url.startsWith('http') ? url : `https://${url}`);
-      return true;
-    } catch {
-      return false;
-    }
-  };
-  
-  const handleFieldBlur = (fieldName: string, value: string) => {
-    let isValid = true;
-    
-    if (fieldName === 'email') {
-      isValid = validateEmail(value);
-    } else if (fieldName === 'website') {
-      isValid = validateUrl(value);
-    } else if (fieldName === 'name' || fieldName === 'company' || fieldName === 'specificIssue') {
-      isValid = value.trim().length > 0;
-    }
-    
-    setFieldValidation(prev => ({
-      ...prev,
-      [fieldName]: value ? (isValid ? 'valid' : 'invalid') : ''
-    }));
-  };
   
   // Words to cycle through - ordered by importance to target demographics
   const lostItems = [
@@ -135,12 +88,16 @@ function App() {
       />
       <SchemaMarkup type="organization" />
       
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50/20 to-gray-50">
+      <div className="homepage min-h-screen relative overflow-hidden">
+        {/* Sophisticated Background Gradient */}
+        <BackgroundGradient />
+        
         {/* Global Header */}
-        <GlobalHeader onShowForm={() => setShowDropdownForm(true)} />
+        <div className="relative z-10">
+          <GlobalHeader onShowForm={() => setShowDropdownForm(true)} />
 
       {/* Hero Section with Parallax Effect */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ paddingTop: 'clamp(4rem, 8vw, 0px)', paddingBottom: 'clamp(1rem, 2vw, 2rem)' }}>
+      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ paddingTop: 'clamp(5rem, 6vw, 2rem)', paddingBottom: 'clamp(1rem, 2vw, 2rem)' }}>
         {/* Floating Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div 
@@ -156,7 +113,7 @@ function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           {/* Loss Aversion Headline */}
           <div className="mb-4 sm:mb-6">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-black text-slate-900 leading-[0.9]">
+            <h1 className="text-6xl sm:text-7xl md:text-9xl font-black text-slate-900 leading-[0.9]">
               <span className="block">Stop Losing</span>
               <span className="block mt-1">
                 <span className="text-orange-500 relative inline-block" style={{ minHeight: '1.0em' }}>
@@ -173,7 +130,7 @@ function App() {
           {/* Authority Subheadline */}
           <div className="mb-6 sm:mb-8">
             <p className="text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-4xl mx-auto leading-relaxed">
-              Stop fumbling with amateur advice. Get <span className="font-bold text-slate-900">battle-tested strategies from executives who've guided Fortune 500 brands</span> to explosive growth
+              Stop fumbling with amateur advice. Get <span className="font-bold text-slate-900">battle-tested strategies proven at Fortune 500 companies</span> that drive explosive growth
             </p>
           </div>
 
@@ -206,7 +163,7 @@ function App() {
               <div className="flex items-start">
                 <div className="w-3 h-3 bg-blue-500 rounded-full mr-4 mt-2 flex-shrink-0"></div>
                 <div>
-                  <div className="text-2xl font-black text-slate-900 mb-1">Stop Bleeding</div>
+                  <div className="text-2xl font-black text-slate-900 mb-1">Stop the Bleed</div>
                   <div className="text-sm text-slate-700 font-medium leading-tight">
                     Finally understand why customers don't buy, instead of wondering why
                   </div>
@@ -230,7 +187,7 @@ function App() {
       </section>
 
       {/* Problem Section - Customer Awareness Stage 1 */}
-      <section id="psychology" className="px-4 sm:px-6 lg:px-8 bg-gray-100/50" style={{ paddingTop: 'clamp(1rem, 3vw, 2rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
+      <section id="psychology" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(0.5rem, 1.5vw, 1rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6 sm:mb-8">
@@ -254,7 +211,7 @@ function App() {
             </div>
             
             <div className="order-1 lg:order-2">
-              <div className="bg-orange-50 p-6 sm:p-8 rounded-2xl shadow-xl border border-orange-200 transform rotate-1">
+              <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-xl border border-orange-200/30 dark:border-orange-400/30 transform rotate-1">
                 <h3 className="text-2xl font-bold text-slate-900 mb-6">What Customers Hear:</h3>
                 <div className="space-y-4 text-stone-700">
                   <p className="italic">"We help you stop losing customers and make more money from the ones you have."</p>
@@ -267,7 +224,7 @@ function App() {
       </section>
 
       {/* Industry Experience Section */}
-      <section id="psychology" className="px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-slate-50" style={{ paddingTop: 'clamp(4rem, 10vw, 6rem)', paddingBottom: 'clamp(4rem, 10vw, 6rem)' }}>
+      <section id="psychology" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(4rem, 10vw, 6rem)', paddingBottom: 'clamp(4rem, 10vw, 6rem)' }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center bg-blue-500/10 backdrop-blur-sm border border-blue-400/20 rounded-full px-4 py-2 mb-4">
@@ -276,11 +233,11 @@ function App() {
               </svg>
               <span className="text-blue-600 text-sm font-semibold">Common Question</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6" style={{ marginTop: '0.25rem' }}>
               "Do You Have Experience in <span className="text-blue-600">My Industry</span>?"
             </h2>
             <p className="text-xl text-slate-600 mb-8">
-              This is exactly the right question to ask. But the answer might surprise you...
+              This is the right question to ask. But the answer might surprise you...
             </p>
           </div>
 
@@ -296,25 +253,25 @@ function App() {
                   </svg>
                   <span className="text-red-700 text-sm font-semibold">The Problem</span>
                 </div>
-                <h3 className="text-2xl font-bold text-red-700 mb-4">Why Industry Experts Often Fail</h3>
+                <h3 className="text-2xl font-bold text-red-700 mb-4" style={{ marginTop: '0.25rem' }}>Why Industry Experts Often Fail</h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-red-50 p-6 rounded-2xl border border-red-200/50">
+                <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm p-6 rounded-2xl border border-red-200/30 dark:border-red-400/30">
                   <h4 className="font-bold text-red-800 mb-3 flex items-center">
                     <span className="w-6 h-6 bg-red-200 rounded-full flex items-center justify-center text-xs text-red-800 mr-3">1</span>
                     The Curse of Knowledge
                   </h4>
-                  <p className="text-red-700 text-sm leading-relaxed">
+                  <p className="text-red-700 text-base leading-relaxed">
                     They're so deep in industry jargon they can't see what confuses customers
                   </p>
                 </div>
-                <div className="bg-red-50 p-6 rounded-2xl border border-red-200/50">
+                <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm p-6 rounded-2xl border border-red-200/30 dark:border-red-400/30">
                   <h4 className="font-bold text-red-800 mb-3 flex items-center">
                     <span className="w-6 h-6 bg-red-200 rounded-full flex items-center justify-center text-xs text-red-800 mr-3">2</span>
                     Replicate Not Customize
                   </h4>
-                  <p className="text-red-700 text-sm leading-relaxed">
+                  <p className="text-red-700 text-base leading-relaxed">
                     They copy what worked elsewhere instead of customizing for your unique market
                   </p>
                 </div>
@@ -330,34 +287,34 @@ function App() {
                   </svg>
                   <span className="text-green-700 text-sm font-semibold">The Solution</span>
                 </div>
-                <h3 className="text-2xl font-bold text-green-800 mb-4">The Fresh Eyes Advantage</h3>
+                <h3 className="text-2xl font-bold text-green-800 mb-4" style={{ marginTop: '0.25rem' }}>The Fresh Eyes Advantage</h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-green-50 p-6 rounded-2xl border border-green-200/50 transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
+                <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm p-6 rounded-2xl border border-green-200/30 dark:border-green-400/30 transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
                   <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
                     <span className="text-green-800 font-bold">1</span>
                   </div>
                   <h4 className="font-bold text-green-800 mb-3">Customer Perspective</h4>
-                  <p className="text-green-700 text-sm leading-relaxed">
+                  <p className="text-green-700 text-base leading-relaxed">
                     I ask the same questions your prospects do, spotting exactly where they get confused
                   </p>
                 </div>
-                <div className="bg-green-50 p-6 rounded-2xl border border-green-200/50 transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
+                <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm p-6 rounded-2xl border border-green-200/30 dark:border-green-400/30 transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
                   <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
                     <span className="text-green-800 font-bold">2</span>
                   </div>
                   <h4 className="font-bold text-green-800 mb-3">Question Everything</h4>
-                  <p className="text-green-700 text-sm leading-relaxed">
+                  <p className="text-green-700 text-base leading-relaxed">
                     While experts accept "how we've always done it," I ask "why?" and find new opportunities
                   </p>
                 </div>
-                <div className="bg-green-50 p-6 rounded-2xl border border-green-200/50 transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
+                <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm p-6 rounded-2xl border border-green-200/30 dark:border-green-400/30 transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
                   <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
                     <span className="text-green-800 font-bold">3</span>
                   </div>
                   <h4 className="font-bold text-green-800 mb-3">Executive Experience</h4>
-                  <p className="text-green-700 text-sm leading-relaxed">
+                  <p className="text-green-700 text-base leading-relaxed">
                     C-level strategies that work across industries - proven at 20+ US companies
                   </p>
                 </div>
@@ -437,7 +394,7 @@ function App() {
 
 
       {/* Services Section with Price Anchoring Psychology */}
-      <section id="services" className="px-4 sm:px-6 lg:px-8 bg-stone-50" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
+      <section id="services" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6 sm:mb-8">
@@ -502,7 +459,7 @@ function App() {
       </section>
 
       {/* About Section - Ian's Background - Light Theme */}
-      <section id="about" className="px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-gray-50 to-blue-50" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
+      <section id="about" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
@@ -515,7 +472,7 @@ function App() {
 
           {/* Main Credibility Section */}
           <div className="mb-16">
-            <div className="bg-white border-2 border-blue-200 rounded-3xl p-8 sm:p-12 shadow-lg">
+            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md border border-white/20 dark:border-slate-700/20 rounded-3xl p-8 sm:p-12 shadow-2xl">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 {/* Primary Stat */}
                 <div className="text-center lg:col-span-1">
@@ -529,21 +486,21 @@ function App() {
                 {/* Supporting Stats */}
                 <div className="lg:col-span-2">
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
+                    <div className="bg-gradient-to-br from-blue-50/60 to-blue-100/40 dark:from-blue-900/30 dark:to-blue-800/20 backdrop-blur-sm border border-blue-400/50 dark:border-blue-400/40 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-blue-600 mb-1">20+</div>
-                      <div className="text-blue-700 font-medium text-sm">Years Experience</div>
+                      <div className="text-blue-700 dark:text-blue-300 font-medium text-sm">Years Experience</div>
                     </div>
-                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
-                      <div className="text-3xl font-black text-blue-600 mb-1">$500K</div>
-                      <div className="text-blue-700 font-medium text-sm">Monthly Ad Testing</div>
+                    <div className="bg-gradient-to-br from-green-50/60 to-green-100/40 dark:from-green-900/30 dark:to-green-800/20 backdrop-blur-sm border border-green-400/50 dark:border-green-400/40 rounded-xl p-6 text-center shadow-lg">
+                      <div className="text-3xl font-black text-green-600 mb-1">$500K</div>
+                      <div className="text-green-700 dark:text-green-300 font-medium text-sm">Monthly Ad Testing</div>
                     </div>
-                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
-                      <div className="text-3xl font-black text-blue-600 mb-1">7+</div>
-                      <div className="text-blue-700 font-medium text-sm">Industries Proven</div>
+                    <div className="bg-gradient-to-br from-purple-50/60 to-purple-100/40 dark:from-purple-900/30 dark:to-purple-800/20 backdrop-blur-sm border border-purple-400/50 dark:border-purple-400/40 rounded-xl p-6 text-center shadow-lg">
+                      <div className="text-3xl font-black text-purple-600 mb-1">7+</div>
+                      <div className="text-purple-700 dark:text-purple-300 font-medium text-sm">Industries Proven</div>
                     </div>
-                    <div className="bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
-                      <div className="text-3xl font-black text-blue-600 mb-1">8</div>
-                      <div className="text-blue-700 font-medium text-sm">Client Limit</div>
+                    <div className="bg-gradient-to-br from-red-50/60 to-red-100/40 dark:from-red-900/30 dark:to-red-800/20 backdrop-blur-sm border border-red-400/50 dark:border-red-400/40 rounded-xl p-6 text-center shadow-lg">
+                      <div className="text-3xl font-black text-red-600 mb-1">8</div>
+                      <div className="text-red-700 dark:text-red-300 font-medium text-sm">Client Limit</div>
                     </div>
                   </div>
                 </div>
@@ -553,8 +510,8 @@ function App() {
 
           {/* Story Section - Scannable Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
-              <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-4">
+            <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-orange-200/30 dark:border-orange-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
+              <div className="w-12 h-12 bg-orange-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                 </svg>
@@ -566,8 +523,8 @@ function App() {
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm transition-all duration-500 hover:scale-105 hover:rotate-1 cursor-pointer">
-              <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+            <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-blue-200/30 dark:border-blue-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 hover:rotate-1 cursor-pointer">
+              <div className="w-12 h-12 bg-blue-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
                 </svg>
@@ -579,8 +536,8 @@ function App() {
               </p>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
-              <div className="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+            <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-green-200/30 dark:border-green-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
+              <div className="w-12 h-12 bg-green-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
@@ -616,7 +573,7 @@ function App() {
                 <span className="text-orange-300 text-sm font-semibold">Still Thinking About It?</span>
               </div>
               
-              <h2 className="text-4xl md:text-5xl font-black text-white mb-6">
+              <h2 className="text-4xl md:text-5xl font-black text-white mb-6" style={{ marginTop: '0.25rem' }}>
                 Every Month You Wait Costs You <span className="text-orange-400">$47,000</span> in Lost Revenue
               </h2>
               
@@ -681,15 +638,15 @@ function App() {
                 <span className="text-green-300 font-bold">Zero Risk Guarantee</span>
               </div>
               
-              <h3 className="text-2xl font-bold text-white mb-4">
+              <h3 className="text-2xl font-bold text-white mb-4" style={{ marginTop: '0.25rem' }}>
                 You Have Nothing to Lose (Except More Revenue)
               </h3>
               
-              <div className="text-gray-300 space-y-2 max-w-2xl mx-auto">
-                <p>🚫 No credit card required</p>
-                <p>🚫 No sales pressure</p>
-                <p>🚫 No spam emails</p>
-                <p>✅ Just honest insights about your marketing gaps</p>
+              <div className="text-gray-300 space-y-1 max-w-2xl mx-auto">
+                <p className="py-0.5">🚫 No credit card required</p>
+                <p className="py-0.5">🚫 No sales pressure</p>
+                <p className="py-0.5">🚫 No spam emails</p>
+                <p className="py-0.5">✅ Just honest insights about your marketing gaps</p>
               </div>
             </div>
 
@@ -714,445 +671,10 @@ function App() {
         </div>
       </section>
 
-      {/* Dropdown Form */}
-      {showDropdownForm && (
-        <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-start justify-center pt-20 px-4">
-          <div className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full max-h-[80vh] overflow-y-auto">
-            <div className="sticky top-0 bg-white rounded-t-3xl border-b border-gray-200 px-6 py-4 flex items-center justify-between">
-              <h2 className="text-2xl font-bold text-slate-900">Get Your Marketing Analysis</h2>
-              <button 
-                onClick={() => setShowDropdownForm(false)}
-                className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
-              >
-                <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
-                </svg>
-              </button>
-            </div>
-            <div className="p-6">
-              {/* Step 1: Marketing Anxiety Acknowledgment */}
-              {formStep === 1 && (
-                <div className="text-center">
-                  <h3 className="text-2xl font-black text-slate-900 mb-4">
-                    Is Your Marketing <span className="text-orange-500">Keeping You</span> Up at Night?
-                  </h3>
-                  <p className="text-gray-600 mb-6">
-                    You know something's wrong when customers don't "get it" but you can't figure out what
-                  </p>
-                  
-                  <div className="max-w-lg mx-auto">
-                    <div className="mb-6">
-                      <div className="flex justify-center items-center mb-3">
-                    <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">1</div>
-                    <div className="w-16 h-0.5 bg-gray-200 mx-2"></div>
-                    <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 font-bold text-sm">2</div>
-                    <div className="w-16 h-0.5 bg-gray-200 mx-2"></div>
-                    <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 font-bold text-sm">3</div>
-                  </div>
-                  <p className="text-sm text-gray-600 font-medium">Step 1: What's Your Biggest Fear?</p>
-                </div>
-                
-                <div className="text-left mb-6">
-                  <label className="block text-sm font-bold text-slate-700 mb-4">How do you feel about your current marketing?</label>
-                  <div className="space-y-3">
-                    {[
-                      "It's bleeding money and I don't know why",
-                      "Customers see it but don't take action", 
-                      "I'm throwing darts in the dark",
-                      "I know it could work better but I'm lost"
-                    ].map((option, idx) => (
-                      <button
-                        key={idx}
-                        onClick={() => {
-                          setFormData({...formData, challenge: option});
-                          setSelectedOptions({...selectedOptions, [`challenge-${idx}`]: true});
-                          setTimeout(() => setFormStep(2), 600);
-                        }}
-                        className={`w-full text-left px-4 py-4 rounded-xl border-2 transition-all duration-300 group ${
-                          formData.challenge === option
-                            ? 'border-orange-500 bg-orange-50'
-                            : 'border-gray-200 hover:border-orange-500 hover:bg-orange-50'
-                        }`}
-                      >
-                        <div className="flex items-center">
-                          <div className={`w-5 h-5 rounded-full border-2 mr-3 flex-shrink-0 flex items-center justify-center transition-all duration-300 ${
-                            formData.challenge === option
-                              ? 'border-orange-500 bg-orange-500'
-                              : 'border-gray-300 group-hover:border-orange-500'
-                          }`}>
-                            {formData.challenge === option && (
-                              <svg className="w-3 h-3 text-white animate-scale-in" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
-                              </svg>
-                            )}
-                          </div>
-                          <span className="text-sm font-medium group-hover:text-orange-700">{option}</span>
-                        </div>
-                      </button>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="text-center text-xs text-gray-500">
-                  <div className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-green-500 rounded-full mr-2"></span>
-                    Free • No spam • Takes 2 minutes
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Step 2: Revenue/Company Size Qualification */}
-          {formStep === 2 && (
-            <div className="text-center">
-              <div className="bg-white rounded-2xl p-6 max-w-lg mx-auto shadow-2xl">
-                <h3 className="text-2xl font-black text-slate-900 mb-4">
-                  I Feel You. Let's <span className="text-orange-500">Identify</span> Your Growth Stage
-                </h3>
-                <p className="text-gray-600 mb-6">
-                  Different revenue levels need different psychology approaches
-                </p>
-                
-                <div className="mb-6">
-                  <div className="flex justify-center items-center mb-3">
-                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center text-white">
-                      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-                      </svg>
-                    </div>
-                    <div className="w-16 h-0.5 bg-orange-300 mx-2"></div>
-                    <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold text-sm">2</div>
-                    <div className="w-16 h-0.5 bg-gray-200 mx-2"></div>
-                    <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-gray-400 font-bold text-sm">3</div>
-                  </div>
-                  <p className="text-sm text-gray-600 font-medium">Step 2: Your Revenue Stage</p>
-                </div>
-                
-                <div className="text-left mb-6">
-                  <label className="block text-sm font-bold text-slate-700 mb-4">What's your current annual revenue?</label>
-                  <div className="space-y-3">
-                    {[
-                      { value: "500k-1m", label: "$500K - $1M", desc: "Growing but hitting walls" },
-                      { value: "1m-3m", label: "$1M - $3M", desc: "Scaling but inconsistent" }, 
-                      { value: "3m-10m", label: "$3M - $10M", desc: "Need systematic growth" },
-                      { value: "10m+", label: "$10M+", desc: "Optimizing for efficiency" }
-                    ].map((option, idx) => (
-                      <button
-                        key={idx}
-                        onClick={() => {
-                          setFormData({...formData, revenue: option.value});
-                          setSelectedOptions({...selectedOptions, [`revenue-${option.value}`]: true});
-                          setTimeout(() => setFormStep(3), 600);
-                        }}
-                        className={`w-full text-left px-4 py-4 rounded-xl border-2 transition-all duration-300 group ${
-                          formData.revenue === option.value
-                            ? 'border-orange-500 bg-orange-50'
-                            : 'border-gray-200 hover:border-orange-500 hover:bg-orange-50'
-                        }`}
-                      >
-                        <div className="flex items-start">
-                          <div className={`w-5 h-5 rounded-full border-2 mr-3 mt-0.5 flex-shrink-0 flex items-center justify-center transition-all duration-300 ${
-                            formData.revenue === option.value
-                              ? 'border-orange-500 bg-orange-500'
-                              : 'border-gray-300 group-hover:border-orange-500'
-                          }`}>
-                            {formData.revenue === option.value && (
-                              <svg className="w-3 h-3 text-white animate-scale-in" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
-                              </svg>
-                            )}
-                          </div>
-                          <div>
-                            <div className="text-sm font-bold group-hover:text-orange-700">{option.label}</div>
-                            <div className="text-xs text-gray-500 mt-0.5">{option.desc}</div>
-                          </div>
-                        </div>
-                      </button>
-                    ))}
-                  </div>
-                </div>
-                
-                <div className="mt-4">
-                  <button 
-                    onClick={() => setFormStep(1)}
-                    className="w-full text-gray-500 hover:text-gray-700 transition-colors duration-300 text-sm font-medium py-2"
-                  >
-                    ← Back to Previous Step
-                  </button>
-                </div>
-                
-                <div className="text-center text-xs text-gray-500 mt-4">
-                  <div className="flex items-center justify-center">
-                    <span className="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
-                    All information kept confidential
-                  </div>
-                </div>
-              </div>
-            </div>
-          )}
-
-              
-              {/* Step 3: Complete Information */}
-              {formStep === 3 && (
-                <div className="p-6 sm:p-8 max-h-[80vh] overflow-y-auto">
-                  {/* Progress bar */}
-                  <div className="mb-6">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className="text-xs font-medium text-gray-500">Step 3 of 3</span>
-                      <span className="text-xs font-medium text-orange-500">Almost Done!</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2">
-                      <div className="bg-gradient-to-r from-orange-400 to-orange-500 h-2 rounded-full transition-all duration-500" style={{width: '90%'}}></div>
-                    </div>
-                  </div>
-
-                  {/* Form header */}
-                  <div className="text-center mb-6">
-                    <h3 className="text-2xl font-black text-slate-900 mb-2">Let's Get Your Analysis Started!</h3>
-                    <p className="text-gray-600">Just a few details so I can create your personalized strategy</p>
-                  </div>
-
-                  {/* Form sections */}
-                  <div className="space-y-4">
-                    {/* Contact Information */}
-                    <div className="bg-blue-50 rounded-xl p-4">
-                      <h4 className="font-bold text-blue-900 mb-3 flex items-center">
-                        <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs mr-2">1</span>
-                        Your Information
-                      </h4>
-                      <div className="grid grid-cols-2 gap-3 mb-3">
-                        <div>
-                          <label className="block text-xs font-bold text-slate-700 mb-2">First Name *</label>
-                          <input 
-                            type="text" 
-                            value={formData.name}
-                            onChange={(e) => setFormData({...formData, name: e.target.value})}
-                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                            placeholder="Your first name"
-                          />
-                        </div>
-                        <div>
-                          <label className="block text-xs font-bold text-slate-700 mb-2">Company *</label>
-                          <input 
-                            type="text" 
-                            value={formData.company}
-                            onChange={(e) => setFormData({...formData, company: e.target.value})}
-                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                            placeholder="Company name"
-                          />
-                        </div>
-                      </div>
-                      <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">Business Email *</label>
-                        <input 
-                          type="email" 
-                          value={formData.email}
-                          onChange={(e) => setFormData({...formData, email: e.target.value})}
-                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                          placeholder="your@company.com"
-                        />
-                      </div>
-                    </div>
-
-                    {/* Business Details */}
-                    <div className="bg-green-50 rounded-xl p-4">
-                      <h4 className="font-bold text-green-900 mb-3 flex items-center">
-                        <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-2">2</span>
-                        Business Details
-                      </h4>
-                      <div className="space-y-3">
-                        <div>
-                          <label className="block text-xs font-bold text-slate-700 mb-2">Website URL</label>
-                          <input 
-                            type="url" 
-                            value={formData.website}
-                            onChange={(e) => setFormData({...formData, website: e.target.value})}
-                            onBlur={(e) => handleFieldBlur('website', e.target.value)}
-                            className={`w-full px-3 py-3 border-2 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm ${
-                              fieldValidation.website === 'valid' ? 'border-green-500' : 
-                              fieldValidation.website === 'invalid' ? 'border-red-500' : 'border-gray-200'
-                            }`}
-                            placeholder="https://yourcompany.com"
-                          />
-                        </div>
-                        <div className="grid grid-cols-2 gap-3">
-                          <div>
-                            <label className="block text-xs font-bold text-slate-700 mb-2">Industry</label>
-                            <select 
-                              value={formData.industry}
-                              onChange={(e) => setFormData({...formData, industry: e.target.value})}
-                              className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
-                            >
-                              <option value="">Select industry</option>
-                              <option value="software">Software/SaaS</option>
-                              <option value="healthcare">Healthcare</option>
-                              <option value="ecommerce">E-commerce</option>
-                              <option value="financial">Financial Services</option>
-                              <option value="professional">Professional Services</option>
-                              <option value="manufacturing">Manufacturing</option>
-                              <option value="other">Other</option>
-                            </select>
-                          </div>
-                          <div>
-                            <label className="block text-xs font-bold text-slate-700 mb-2">Team Size</label>
-                            <select 
-                              value={formData.teamSize}
-                              onChange={(e) => setFormData({...formData, teamSize: e.target.value})}
-                              className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
-                            >
-                              <option value="">Select size</option>
-                              <option value="1-10">1-10 employees</option>
-                              <option value="11-50">11-50 employees</option>
-                              <option value="51-200">51-200 employees</option>
-                              <option value="200+">200+ employees</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Marketing Challenge */}
-                    <div className="bg-yellow-50 rounded-xl p-4">
-                      <h4 className="font-bold text-yellow-900 mb-3 flex items-center">
-                        <span className="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center text-white text-xs mr-2">3</span>
-                        Your Marketing Challenge
-                      </h4>
-                      <div className="space-y-3">
-                        <div>
-                          <label className="block text-xs font-bold text-slate-700 mb-2">What's your biggest marketing pain right now? *</label>
-                          <textarea 
-                            value={formData.specificIssue}
-                            onChange={(e) => setFormData({...formData, specificIssue: e.target.value})}
-                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                            placeholder="e.g., Not getting enough leads, poor conversion rates, unclear messaging, competitors beating us, website visitors not buying..."
-                            rows={3}
-                          />
-                        </div>
-                        <div>
-                          <label className="block text-xs font-bold text-slate-700 mb-2">What marketing are you currently doing?</label>
-                          <textarea 
-                            value={formData.currentMarketing}
-                            onChange={(e) => setFormData({...formData, currentMarketing: e.target.value})}
-                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
-                            placeholder="e.g., Google Ads, social media, content marketing, email campaigns, SEO..."
-                            rows={2}
-                          />
-                        </div>
-                      </div>
-                    </div>
-
-                    {/* Timeline */}
-                    <div className="bg-purple-50 rounded-xl p-4">
-                      <h4 className="font-bold text-purple-900 mb-3 flex items-center">
-                        <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2">4</span>
-                        Timeline
-                      </h4>
-                      <p className="text-xs text-gray-600 mb-3">When do you need to see marketing results?</p>
-                      <div className="grid grid-cols-2 gap-2">
-                        {[
-                          { value: 'asap', label: 'ASAP' },
-                          { value: '1-3months', label: '1-3 months' },
-                          { value: '3-6months', label: '3-6 months' },
-                          { value: '6months+', label: '6+ months' }
-                        ].map(option => (
-                          <button
-                            key={option.value}
-                            onClick={() => setFormData({...formData, timeline: option.value})}
-                            className={`px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${
-                              formData.timeline === option.value 
-                                ? 'border-orange-500 bg-orange-50 text-orange-700' 
-                                : 'border-gray-200 hover:border-gray-300'
-                            }`}
-                          >
-                            {option.label}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Submit button */}
-                  <button 
-                    onClick={async () => {
-                      // Validate required fields
-                      if (!formData.name || !formData.company || !formData.email || !formData.specificIssue) {
-                        alert('Please fill in all required fields');
-                        return;
-                      }
-
-                      // Validate email format
-                      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email)) {
-                        alert('Please enter a valid email address');
-                        return;
-                      }
-
-                      try {
-                        // Create email content using utility
-                        const emailContent = generateEmailContent(formData, 'Lead Generation');
-
-                        // Log submission (for development/debugging)
-                        console.log('Lead generation form submitted:', {
-                          formData,
-                          emailContent,
-                          timestamp: new Date().toISOString()
-                        });
-
-                        // Here you would integrate with your email service
-                        // For example: send to info@rebootmedia.net
-                        // await sendEmailToRebootMedia(emailContent, formData);
-
-                        // Show success message
-                        alert(`Thank you ${formData.name}! Your personalized marketing analysis request has been received. We'll send your analysis to ${formData.email} within 24 hours and may follow up to discuss how our fractional CMO services can help drive your business growth.`);
-                        
-                        // Reset form and close modal
-                        setShowDropdownForm(false);
-                        setFormStep(1);
-                        setFormData({
-                          email: '',
-                          challenge: '',
-                          revenue: '',
-                          name: '',
-                          company: '',
-                          timeline: '',
-                          website: '',
-                          specificIssue: '',
-                          industry: '',
-                          teamSize: '',
-                          currentMarketing: ''
-                        });
-
-                      } catch (error) {
-                        console.error('Form submission error:', error);
-                        alert(`There was an error submitting your request. Please try again or contact us directly at ${getObfuscatedEmailDisplay()}`);
-                      }
-                    }}
-                    className="w-full mt-6 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold py-4 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
-                  >
-                    Get My Free Marketing Analysis →
-                  </button>
-
-                  {/* Back button */}
-                  <button 
-                    onClick={() => setFormStep(2)}
-                    className="w-full mt-3 text-orange-500 hover:text-orange-600 font-medium text-sm"
-                  >
-                    ← Back
-                  </button>
-
-                  {/* Trust badges */}
-                  <div className="mt-4 text-center text-xs text-gray-500">
-                    🔒 Confidential • No spam • Unsubscribe anytime
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Global Footer */}
       <GlobalFooter onShowForm={() => setShowDropdownForm(true)} />
+        </div>
       </div>
     </>
   )

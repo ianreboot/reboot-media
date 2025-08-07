@@ -1,13 +1,3 @@
-// Utility to obfuscate email addresses from crawlers while maintaining functionality
-export const getContactEmail = (): string => {
-  const parts = ['info', 'rebootmedia', 'net'];
-  return `${parts[0]}@${parts[1]}.${parts[2]}`;
-};
-
-export const getObfuscatedEmailDisplay = (): string => {
-  return 'info [at] rebootmedia [dot] net';
-};
-
 // Generate email content for form submissions
 export const generateEmailContent = (formData: any, formType: string = 'Contact') => {
   const timestamp = new Date().toLocaleString();

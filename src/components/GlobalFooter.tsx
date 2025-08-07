@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import BackToTopButton from './BackToTopButton';
 
 interface GlobalFooterProps {
   onShowForm?: () => void;
@@ -325,7 +326,7 @@ const GlobalFooter = ({}: GlobalFooterProps) => {
                   onClick={() => toggleSection('company')}
                   className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors"
                 >
-                  <h4 className="font-bold text-white text-sm uppercase tracking-wider">Company Information</h4>
+                  <h4 className="font-bold text-white text-sm uppercase tracking-wider">Company</h4>
                   <svg 
                     className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedSections['company'] ? 'rotate-180' : ''}`} 
                     fill="none" 
@@ -339,14 +340,41 @@ const GlobalFooter = ({}: GlobalFooterProps) => {
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
                       <Link to="/about" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                        About Our Leadership
+                        About
                       </Link>
                     </li>
                     <li>
+                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                        Services
+                      </a>
+                    </li>
+                    <li>
                       <Link to="/contact" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                        Schedule Consultation
+                        Contact
                       </Link>
                     </li>
+                  </ul>
+                </div>
+              </div>
+              
+              {/* Legal Accordion */}
+              <div className="border border-white/10 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => toggleSection('legal')}
+                  className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors"
+                >
+                  <h4 className="font-bold text-white text-sm uppercase tracking-wider">Legal</h4>
+                  <svg 
+                    className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedSections['legal'] ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </button>
+                <div className={`transition-all duration-300 ${expandedSections['legal'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
+                  <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
                       <Link to="/privacy" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
                         Privacy Policy
@@ -354,7 +382,7 @@ const GlobalFooter = ({}: GlobalFooterProps) => {
                     </li>
                     <li>
                       <Link to="/terms" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                        Service Terms
+                        Terms of Service
                       </Link>
                     </li>
                   </ul>
@@ -379,6 +407,9 @@ const GlobalFooter = ({}: GlobalFooterProps) => {
           </div>
         </div>
       </div>
+      
+      {/* Back to Top Button */}
+      <BackToTopButton />
     </footer>
   );
 };

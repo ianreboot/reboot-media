@@ -1,0 +1,144 @@
+/**
+ * Subtle Scroll Fatigue Reduction
+ * Minor tweaks to reduce vertical space without changing design
+ */
+
+/* Slightly tighten section spacing on homepage */
+.homepage section {
+  padding-top: clamp(3rem, 5vw, 4rem); /* was likely 4-6rem */
+  padding-bottom: clamp(3rem, 5vw, 4rem);
+}
+
+/* Reduce excessive hero height */
+.homepage #home {
+  max-height: 85vh; /* cap hero section */
+}
+
+/* Tighten paragraph spacing slightly */
+p {
+  margin-bottom: 1rem; /* was likely 1.25-1.5rem */
+}
+
+/* Reduce heading margins slightly */
+h2 {
+  margin-top: 2rem; /* was likely 2.5-3rem */
+  margin-bottom: 1rem; /* was likely 1.5rem */
+}
+
+h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+/* Legal pages - tighter spacing */
+.privacy-page section,
+.terms-page section {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.privacy-page h2,
+.terms-page h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Reduce list spacing in legal pages */
+.privacy-page li,
+.terms-page li {
+  margin-bottom: 0.5rem; /* was likely 0.75-1rem */
+}
+
+/* Cards and components - tighter internal padding */
+.bg-white\/70,
+.dark\:bg-slate-800\/70 {
+  padding: 1.5rem; /* reduce from 2rem if applicable */
+}
+
+@media (min-width: 640px) {
+  .bg-white\/70,
+  .dark\:bg-slate-800\/70 {
+    padding: 2rem; /* keep desktop comfortable */
+  }
+}
+
+/* Visual hierarchy improvements */
+.homepage h1 {
+  font-size: clamp(2.5rem, 6vw, 4rem); /* 15-20% larger */
+  font-weight: 900;
+  line-height: 1.1;
+}
+
+.homepage h2 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem); /* 15% larger */
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: clamp(1.25rem, 3vw, 1.85rem); /* 10% larger */
+  font-weight: 600;
+}
+
+/* Subtle visual anchors every ~2 viewport heights */
+.homepage section:nth-of-type(3n) {
+  position: relative;
+  border-left: 3px solid rgba(251, 146, 60, 0.15);
+  padding-left: 1rem;
+  margin-left: -1rem;
+}
+
+.homepage section:nth-of-type(3n)::before {
+  content: '';
+  position: absolute;
+  left: -3px;
+  top: 2rem;
+  width: 3px;
+  height: 60px;
+  background: linear-gradient(to bottom, 
+    rgba(251, 146, 60, 0.4),
+    rgba(251, 146, 60, 0.1)
+  );
+}
+
+/* About page - subtle section separators */
+.about-page .bg-white\/70:not(:first-child),
+.about-page .dark\:bg-slate-800\/70:not(:first-child) {
+  position: relative;
+  margin-top: 3rem;
+}
+
+.about-page .bg-white\/70:not(:first-child)::before,
+.about-page .dark\:bg-slate-800\/70:not(:first-child)::before {
+  content: '';
+  position: absolute;
+  top: -1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(to right,
+    transparent,
+    rgba(251, 146, 60, 0.3),
+    transparent
+  );
+}
+
+/* Mobile optimizations - even tighter */
+@media (max-width: 768px) {
+  .homepage section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .homepage h1 {
+    margin-bottom: 1rem;
+    font-size: clamp(2rem, 8vw, 2.8rem); /* Larger on mobile too */
+  }
+  
+  .homepage h2 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+}

@@ -8,6 +8,8 @@ import MarketingPsychology from './pages/MarketingPsychology';
 import GrowthPlateauSolutions from './pages/GrowthPlateauSolutions';
 import FractionalCMOGuide from './pages/FractionalCMOGuide';
 import ScrollToTop from './components/ScrollToTop';
+import { LeadFormProvider } from './contexts/LeadFormContext';
+import LeadForm from './components/LeadForm';
 
 const Router = () => {
   // Determine base path based on environment
@@ -15,17 +17,20 @@ const Router = () => {
 
   return (
     <BrowserRouter basename={basename}>
-      <ScrollToTop />
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/privacy" element={<Privacy />} />
-        <Route path="/terms" element={<Terms />} />
-        <Route path="/marketing-psychology" element={<MarketingPsychology />} />
-        <Route path="/growth-plateau-solutions" element={<GrowthPlateauSolutions />} />
-        <Route path="/fractional-cmo-guide" element={<FractionalCMOGuide />} />
-      </Routes>
+      <LeadFormProvider>
+        <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<Privacy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/marketing-psychology" element={<MarketingPsychology />} />
+          <Route path="/growth-plateau-solutions" element={<GrowthPlateauSolutions />} />
+          <Route path="/fractional-cmo-guide" element={<FractionalCMOGuide />} />
+        </Routes>
+        <LeadForm />
+      </LeadFormProvider>
     </BrowserRouter>
   );
 };
