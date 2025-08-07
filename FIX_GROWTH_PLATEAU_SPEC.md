@@ -106,6 +106,144 @@
    - Solution: Reframe around ROI and risk reduction
    - Why it works: Value > Price when communicated properly
 
+### Market Expansion Barriers Research - 2025-08-07
+**Discovery**: Market saturation fears often mask positioning problems
+**Key Barriers**:
+
+1. **"Our Market is Tapped Out" Myth**: Assuming TAM is fixed
+   - Customer says: "Everyone in our industry already knows us"
+   - Real problem: Defined market by product category, not problem solved
+   - Solution: Reframe around jobs-to-be-done, find new use cases
+   - Why it works: Same product, different problems = new markets
+
+2. **"Geographic Expansion" Trap**: Assuming location = market
+   - Customer says: "We need to expand to new cities/regions"
+   - Real problem: Geographic thinking instead of psychographic
+   - Solution: Find similar customer types in different industries/segments
+   - Why it works: Customer psychology doesn't change with location
+
+3. **"Feature Expansion" Delusion**: More features = more markets
+   - Customer says: "We need more functionality to compete"
+   - Real problem: Feature bloat confuses core value proposition
+   - Solution: Same features, different positioning for adjacent markets
+   - Why it works: Clarity > complexity for new market penetration
+
+4. **"Big Fish, Small Pond" Comfort**: Afraid to compete broadly
+   - Customer says: "We dominate our niche, why risk it?"
+   - Real problem: Risk aversion and ego protection over growth
+   - Solution: Test adjacent markets without abandoning core
+   - Why it works: Diversification reduces risk, doesn't increase it
+
+5. **"Brand Perception Lock-In"**: Previous positioning limits expansion
+   - Customer says: "People only see us as [specific category]"
+   - Real problem: Messaging consistency over market opportunity
+   - Solution: Umbrella positioning that encompasses multiple markets
+   - Why it works: Evolution > revolution in brand perception
+
+6. **"Validation Paralysis"**: Over-researching, under-executing
+   - Customer says: "We need more market research before expanding"
+   - Real problem: Analysis paralysis disguised as diligence
+   - Solution: Small tests with existing customers in adjacent use cases
+   - Why it works: Speed to market > perfect market research
+
+7. **"Price Point Mismatch"**: Wrong pricing for new market segments
+   - Customer says: "New markets won't pay our prices"
+   - Real problem: Same value prop, different value perception by segment
+   - Solution: Value ladder with different packages for different segments
+   - Why it works: Same product, different value framing = appropriate pricing
+
+### Operational Scaling Crisis Research - 2025-08-07
+**Discovery**: What works at $500K breaks at $2M+ - operations lag behind growth
+**Key Crises**:
+
+1. **"Hero Dependency" Crisis**: Key people become bottlenecks
+   - Customer says: "Everything has to go through me or Sarah"
+   - Real problem: No documented processes, institutional knowledge in heads
+   - Solution: Document processes, create redundancy, train backup people
+   - Why it works: Systems > heroes for sustainable scaling
+
+2. **"Quality Erosion" Crisis**: Standards slip as volume increases
+   - Customer says: "Our quality isn't what it used to be"
+   - Real problem: Manual QC processes don't scale with volume
+   - Solution: Automate quality checkpoints, standardize delivery workflows
+   - Why it works: Consistent systems maintain consistent quality
+
+3. **"Customer Experience Decay"**: Personal touch becomes impossible
+   - Customer says: "Customers complain we're not responsive anymore"
+   - Real problem: Same service model for 10 customers applied to 100
+   - Solution: Tiered service levels, self-service options, automation
+   - Why it works: Right service level for right customer segment
+
+4. **"Manual Process Breakdown"**: Spreadsheets and emails fail
+   - Customer says: "We're drowning in manual work"
+   - Real problem: Startup tools used for scale-up operations
+   - Solution: Purpose-built systems for current scale, not future dreams
+   - Why it works: Right tool for right stage of growth
+
+5. **"Communication Chaos"**: Information doesn't flow properly
+   - Customer says: "The right hand doesn't know what left is doing"
+   - Real problem: Informal communication worked at 5 people, not 50
+   - Solution: Structured communication rhythms, regular updates, dashboards
+   - Why it works: Information flow = operational flow
+
+6. **"Capacity Crunch"**: Can't fulfill demand without breaking things
+   - Customer says: "We're turning away business because we can't handle more"
+   - Real problem: Linear thinking about capacity vs. exponential demand
+   - Solution: Modular capacity planning, outsourcing non-core functions
+   - Why it works: Flexibility > fixed capacity in growth phases
+
+7. **"Integration Nightmare"**: Systems don't talk to each other
+   - Customer says: "We have data everywhere but insights nowhere"
+   - Real problem: Piecemeal tool adoption without integration planning
+   - Solution: API-first tool selection, data centralization, unified dashboards
+   - Why it works: Connected systems enable data-driven decisions
+
+### Team/Culture Growth Bottlenecks Research - 2025-08-07
+**Discovery**: People challenges are the hardest to scale - culture shifts with size
+**Key Bottlenecks**:
+
+1. **"Founder Bottleneck" Crisis**: Everything still goes through the founder
+   - Customer says: "I'm still involved in every decision"
+   - Real problem: Can't delegate because no one thinks like the founder
+   - Solution: Document decision frameworks, not just decisions
+   - Why it works: Replicates thinking patterns, not just outcomes
+
+2. **"Cultural Dilution" Fear**: Afraid new hires will change company culture
+   - Customer says: "New people just don't get our culture"
+   - Real problem: Culture was never defined, just assumed
+   - Solution: Document culture explicitly, hire for cultural adds not fits
+   - Why it works: Intentional culture evolution vs. accidental drift
+
+3. **"Wrong Hiring Priorities" Trap**: Hiring for skills, not stage of growth
+   - Customer says: "These senior hires aren't working out"
+   - Real problem: Hiring for future scale, not current needs
+   - Solution: Hire for 18-month horizon, not 5-year vision
+   - Why it works: Stage-appropriate talent reduces friction and cost
+
+4. **"Communication Breakdown" Crisis**: Information hoarding and silos
+   - Customer says: "Teams don't talk to each other anymore"
+   - Real problem: No communication systems as teams grow
+   - Solution: Regular cross-team updates, shared metrics, open communication tools
+   - Why it works: Transparency reduces politics and increases efficiency
+
+5. **"No Process Documentation" Crisis**: Everything is tribal knowledge
+   - Customer says: "Only Jenny knows how to do X"
+   - Real problem: Growth outpaced process documentation
+   - Solution: Process documentation sprints, knowledge transfer sessions
+   - Why it works: Documented processes enable consistent execution
+
+6. **"Management Skills Gap"**: Individual contributors promoted to managers
+   - Customer says: "Our managers don't know how to manage"
+   - Real problem: Technical skills ≠ management skills
+   - Solution: Management training, external coaching, clear expectations
+   - Why it works: Management is a skill that must be learned, not assumed
+
+7. **"Performance Standard Drift"**: What was acceptable no longer works
+   - Customer says: "Some people aren't keeping up with growth"
+   - Real problem: Performance standards weren't raised with company expectations
+   - Solution: Regular performance recalibration, clear growth expectations
+   - Why it works: Explicit standards prevent performance drift
+
 ## ARCHITECTURE DECISIONS
 
 ### Content Structure
@@ -230,15 +368,17 @@ Phase 4: Integration & Polish
 **Achieved**: 
 - ✅ Revenue ceiling pattern research (5 plateau types with customer language)
 - ✅ Customer acquisition plateau research (7 common CAC inflation patterns)
-- ⏳ Market expansion barriers (next)
-- ⏳ Operational scaling challenges
-- ⏳ Team growth bottlenecks
+- ✅ Market expansion barriers research (7 psychological barriers)
+- ✅ Operational scaling challenges research (7 crisis points)
+- ✅ Team growth bottlenecks research (7 people/culture challenges)
 
 **Key Insights Gained**:
-- Revenue plateaus follow predictable patterns by dollar amount
-- CAC inflation has 7 common psychological traps companies fall into
-- Customer language is very specific and emotional about plateau frustration
-- Solutions require systems thinking, not just marketing tactics
+- Revenue plateaus follow predictable patterns by dollar amount ($500K, $1M, $1.5M, etc.)
+- Customer language is highly emotional and specific about plateau frustration
+- All plateau types have psychological root causes, not just tactical ones
+- Solutions follow consistent pattern: systems thinking + psychology + stage-appropriate tactics
+- Each plateau type has 5-7 distinct customer scenarios with real "customer says" language
+- Research provides 35+ real customer examples across all growth challenge areas
 
 ## SESSION HANDOFF - [To be completed]
 
