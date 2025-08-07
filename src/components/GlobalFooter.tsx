@@ -5,7 +5,7 @@ interface GlobalFooterProps {
   onShowForm?: () => void;
 }
 
-const GlobalFooter = ({ onShowForm }: GlobalFooterProps) => {
+const GlobalFooter = ({}: GlobalFooterProps) => {
   const navigate = useNavigate();
   const [expandedSections, setExpandedSections] = useState<{[key: string]: boolean}>({});
   
@@ -51,288 +51,318 @@ const GlobalFooter = ({ onShowForm }: GlobalFooterProps) => {
       </div>
       
       <div className="relative z-10">
-        {/* Main Footer Content */}
-        <div className="max-w-7xl mx-auto px-6 lg:px-8" style={{ paddingTop: 'clamp(2rem, 5vw, 3rem)', paddingBottom: 'clamp(2rem, 5vw, 3rem)' }}>
-          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-8">
+        {/* Modern Desktop Footer */}
+        <div className="hidden lg:block">
+          <div className="max-w-7xl mx-auto px-8" style={{ paddingTop: 'clamp(4rem, 6vw, 6rem)', paddingBottom: 'clamp(3rem, 4vw, 4rem)' }}>
             
-            {/* Brand Column */}
-            <div className="lg:col-span-1">
-              <div className="mb-6">
-                <Link 
-                  to="/" 
-                  onClick={scrollToTop}
-                  className="inline-block cursor-pointer hover:scale-105 transition-transform duration-300"
-                >
-                  <h3 className="text-3xl font-black mb-3">
-                    REBOOT <span className="text-orange-500">MEDIA</span>
-                  </h3>
-                </Link>
-                <p className="text-gray-400 text-sm leading-relaxed">
-                  Fractional CMO services with proven C-level executive experience driving transformational growth for ambitious companies.
+            {/* Main Brand Statement */}
+            <div className="mb-16">
+              <Link 
+                to="/" 
+                onClick={scrollToTop}
+                className="inline-block mb-8 hover:scale-105 transition-transform duration-300"
+              >
+                <h3 className="text-5xl font-black">
+                  REBOOT <span className="text-orange-500">MEDIA</span>
+                </h3>
+              </Link>
+              
+              <div className="max-w-3xl">
+                <p className="text-2xl font-light text-gray-300 leading-relaxed mb-6">
+                  Fortune 500 marketing expertise without the corporate price tag.
                 </p>
-                <p className="text-gray-500 text-xs mt-4">
-                  USA • Bangkok • Singapore • Global
+                <p className="text-lg text-gray-400 leading-relaxed">
+                  We transform ambitious companies with proven C-level strategies that actually work. 
+                  No fluff, no theory – just battle-tested approaches from managing $2B+ in revenue.
                 </p>
               </div>
-              
             </div>
             
-            {/* Quick Links - Desktop normal, Mobile accordions */}
-            <div className="lg:col-span-3">
-              {/* Desktop View - Only show on large screens */}
-              <div className="hidden lg:grid lg:grid-cols-3 gap-8">
-                
-                {/* Services */}
-                <div>
-                  <h4 className="font-bold text-white mb-3 text-sm uppercase tracking-wider">Fractional CMO Services</h4>
-                  <ul className="space-y-1.5">
+            {/* Modern Grid Layout */}
+            <div className="grid grid-cols-12 gap-8 mb-16">
+              {/* Navigation Links */}
+              <div className="col-span-8">
+                <div className="grid grid-cols-3 gap-x-8 gap-y-6">
+                  <div>
+                    <h4 className="text-sm font-medium text-gray-400 mb-4">Company</h4>
+                    <ul className="space-y-3">
+                      <li>
+                        <Link to="/about" onClick={scrollToTop} 
+                              className="text-base text-gray-300 hover:text-white transition-colors">
+                          About
+                        </Link>
+                      </li>
+                      <li>
+                        <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} 
+                           className="text-base text-gray-300 hover:text-white transition-colors cursor-pointer">
+                          Services
+                        </a>
+                      </li>
+                      <li>
+                        <Link to="/contact" onClick={scrollToTop} 
+                              className="text-base text-gray-300 hover:text-white transition-colors">
+                          Contact
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-sm font-medium text-gray-400 mb-4">Resources</h4>
+                    <ul className="space-y-3">
+                      <li>
+                        <Link to="/marketing-psychology" onClick={scrollToTop} 
+                              className="text-base text-gray-300 hover:text-white transition-colors">
+                          Marketing Psychology
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/growth-plateau-solutions" onClick={scrollToTop} 
+                              className="text-base text-gray-300 hover:text-white transition-colors">
+                          Growth Solutions
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/fractional-cmo-guide" onClick={scrollToTop} 
+                              className="text-base text-gray-300 hover:text-white transition-colors">
+                          CMO Guide
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <h4 className="text-sm font-medium text-gray-400 mb-4">Legal</h4>
+                    <ul className="space-y-3">
+                      <li>
+                        <Link to="/privacy" onClick={scrollToTop} 
+                              className="text-base text-gray-300 hover:text-white transition-colors">
+                          Privacy
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/terms" onClick={scrollToTop} 
+                              className="text-base text-gray-300 hover:text-white transition-colors">
+                          Terms
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              
+              {/* Global Presence Card */}
+              <div className="col-span-4">
+                <div className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10">
+                  <h4 className="text-sm font-medium text-gray-400 mb-4">Global Headquarters</h4>
+                  <div className="space-y-3">
+                    <p className="text-sm text-gray-300">
+                      17595 Harvard Ave C-738<br />
+                      Irvine, California 92614<br />
+                      United States of America
+                    </p>
+                    <div className="pt-3 border-t border-white/10">
+                      <p className="text-xs text-gray-400 uppercase tracking-wider mb-2">Operating Globally</p>
+                      <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                        <span className="text-sm text-gray-300">USA • Bangkok • Singapore</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+        {/* Mobile Footer - Keep existing accordion structure */}
+        <div className="lg:hidden">
+          <div className="px-6 py-8">
+            <div className="mb-6">
+              <Link 
+                to="/" 
+                onClick={scrollToTop}
+                className="inline-block cursor-pointer hover:scale-105 transition-transform duration-300"
+              >
+                <h3 className="text-3xl font-black mb-3">
+                  REBOOT <span className="text-orange-500">MEDIA</span>
+                </h3>
+              </Link>
+              <p className="text-gray-400 text-sm leading-relaxed">
+                Fractional CMO services with proven C-level executive experience driving transformational growth for ambitious companies.
+              </p>
+              <p className="text-gray-500 text-xs mt-4">
+                USA • Bangkok • Singapore • Global
+              </p>
+            </div>
+            
+            {/* Mobile Accordion Navigation */}
+            <div className="space-y-2">
+              
+              {/* Services Accordion */}
+              <div className="border border-white/10 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => toggleSection('services')}
+                  className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors"
+                >
+                  <h4 className="font-bold text-white text-sm uppercase tracking-wider">Fractional CMO Services</h4>
+                  <svg 
+                    className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedSections['services'] ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </button>
+                <div className={`transition-all duration-300 ${expandedSections['services'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
+                  <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
-                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
-                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
                         Quick-Win Strategy
                       </a>
                     </li>
                     <li>
-                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
-                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
                         Growth Strategy
                       </a>
                     </li>
                     <li>
-                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
-                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
                         Executive Leadership
                       </a>
                     </li>
                   </ul>
                 </div>
-                
-                {/* Resources */}
-                <div>
-                  <h4 className="font-bold text-white mb-3 text-sm uppercase tracking-wider">Resources & Insights</h4>
-                  <ul className="space-y-1.5">
+              </div>
+              
+              {/* Track Record Accordion */}
+              <div className="border border-white/10 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => toggleSection('track')}
+                  className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors"
+                >
+                  <h4 className="font-bold text-white text-sm uppercase tracking-wider">Proven Track Record</h4>
+                  <svg 
+                    className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedSections['track'] ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </button>
+                <div className={`transition-all duration-300 ${expandedSections['track'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
+                  <ul className="px-4 py-3 space-y-2 bg-white/5">
+                    <li className="text-gray-400 text-sm flex items-start">
+                      <span className="text-orange-500 mr-2">20+</span>
+                      Fortune 500 Companies
+                    </li>
+                    <li className="text-gray-400 text-sm flex items-start">
+                      <span className="text-orange-500 mr-2">$2B+</span>
+                      Revenue Under Management
+                    </li>
+                    <li className="text-gray-400 text-sm flex items-start">
+                      <span className="text-orange-500 mr-2">3X</span>
+                      Average Revenue Growth
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              
+              {/* Resources Accordion */}
+              <div className="border border-white/10 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => toggleSection('resources')}
+                  className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors"
+                >
+                  <h4 className="font-bold text-white text-sm uppercase tracking-wider">Resources & Insights</h4>
+                  <svg 
+                    className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedSections['resources'] ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </button>
+                <div className={`transition-all duration-300 ${expandedSections['resources'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
+                  <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
-                      <Link to="/marketing-psychology" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
-                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <Link to="/marketing-psychology" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
                         Marketing Psychology Guide
                       </Link>
                     </li>
                     <li>
-                      <Link to="/growth-plateau-solutions" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
-                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <Link to="/growth-plateau-solutions" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
                         Break Growth Plateaus
                       </Link>
                     </li>
                     <li>
-                      <Link to="/fractional-cmo-guide" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
-                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <Link to="/fractional-cmo-guide" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
                         Fractional CMO vs Agency
                       </Link>
                     </li>
                   </ul>
                 </div>
-                
-                {/* Company */}
-                <div>
-                  <h4 className="font-bold text-white mb-3 text-sm uppercase tracking-wider">Company Information</h4>
-                  <ul className="space-y-1.5">
+              </div>
+              
+              {/* Company Accordion */}
+              <div className="border border-white/10 rounded-lg overflow-hidden">
+                <button
+                  onClick={() => toggleSection('company')}
+                  className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors"
+                >
+                  <h4 className="font-bold text-white text-sm uppercase tracking-wider">Company Information</h4>
+                  <svg 
+                    className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedSections['company'] ? 'rotate-180' : ''}`} 
+                    fill="none" 
+                    stroke="currentColor" 
+                    viewBox="0 0 24 24"
+                  >
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
+                  </svg>
+                </button>
+                <div className={`transition-all duration-300 ${expandedSections['company'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
+                  <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
-                      <Link to="/about" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
-                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <Link to="/about" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
                         About Our Leadership
                       </Link>
                     </li>
                     <li>
-                      <Link to="/contact" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
-                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <Link to="/contact" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
                         Schedule Consultation
                       </Link>
                     </li>
                     <li>
-                      <Link to="/privacy" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
-                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <Link to="/privacy" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
                         Privacy Policy
                       </Link>
                     </li>
                     <li>
-                      <Link to="/terms" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
-                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                      <Link to="/terms" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
                         Service Terms
                       </Link>
                     </li>
                   </ul>
                 </div>
-                
-                
               </div>
               
-              {/* Mobile/Tablet Accordion View - Show on medium and below */}
-              <div className="lg:hidden space-y-2">
-                
-                {/* Services Accordion */}
-                <div className="border border-white/10 rounded-lg overflow-hidden">
-                  <button
-                    onClick={() => toggleSection('services')}
-                    className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors"
-                  >
-                    <h4 className="font-bold text-white text-sm uppercase tracking-wider">Fractional CMO Services</h4>
-                    <svg 
-                      className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedSections['services'] ? 'rotate-180' : ''}`} 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                  </button>
-                  <div className={`transition-all duration-300 ${expandedSections['services'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
-                    <ul className="px-4 py-3 space-y-2 bg-white/5">
-                      <li>
-                        <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                          Quick-Win Strategy
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                          Growth Strategy
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                          Executive Leadership
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                
-                {/* Track Record Accordion */}
-                <div className="border border-white/10 rounded-lg overflow-hidden">
-                  <button
-                    onClick={() => toggleSection('track')}
-                    className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors"
-                  >
-                    <h4 className="font-bold text-white text-sm uppercase tracking-wider">Proven Track Record</h4>
-                    <svg 
-                      className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedSections['track'] ? 'rotate-180' : ''}`} 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                  </button>
-                  <div className={`transition-all duration-300 ${expandedSections['track'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
-                    <ul className="px-4 py-3 space-y-2 bg-white/5">
-                      <li className="text-gray-400 text-sm flex items-start">
-                        <span className="text-orange-500 mr-2">20+</span>
-                        Fortune 500 Companies
-                      </li>
-                      <li className="text-gray-400 text-sm flex items-start">
-                        <span className="text-orange-500 mr-2">$2B+</span>
-                        Revenue Under Management
-                      </li>
-                      <li className="text-gray-400 text-sm flex items-start">
-                        <span className="text-orange-500 mr-2">3X</span>
-                        Average Revenue Growth
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                
-                {/* Resources Accordion */}
-                <div className="border border-white/10 rounded-lg overflow-hidden">
-                  <button
-                    onClick={() => toggleSection('resources')}
-                    className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors"
-                  >
-                    <h4 className="font-bold text-white text-sm uppercase tracking-wider">Resources & Insights</h4>
-                    <svg 
-                      className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedSections['resources'] ? 'rotate-180' : ''}`} 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                  </button>
-                  <div className={`transition-all duration-300 ${expandedSections['resources'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
-                    <ul className="px-4 py-3 space-y-2 bg-white/5">
-                      <li>
-                        <Link to="/marketing-psychology" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                          Marketing Psychology Guide
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/growth-plateau-solutions" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                          Break Growth Plateaus
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/fractional-cmo-guide" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                          Fractional CMO vs Agency
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                
-                {/* Company Accordion */}
-                <div className="border border-white/10 rounded-lg overflow-hidden">
-                  <button
-                    onClick={() => toggleSection('company')}
-                    className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors"
-                  >
-                    <h4 className="font-bold text-white text-sm uppercase tracking-wider">Company Information</h4>
-                    <svg 
-                      className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedSections['company'] ? 'rotate-180' : ''}`} 
-                      fill="none" 
-                      stroke="currentColor" 
-                      viewBox="0 0 24 24"
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
-                    </svg>
-                  </button>
-                  <div className={`transition-all duration-300 ${expandedSections['company'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
-                    <ul className="px-4 py-3 space-y-2 bg-white/5">
-                      <li>
-                        <Link to="/about" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                          About Our Leadership
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/contact" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                          Schedule Consultation
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/privacy" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                          Privacy Policy
-                        </Link>
-                      </li>
-                      <li>
-                        <Link to="/terms" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
-                          Service Terms
-                        </Link>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                
-              </div>
             </div>
           </div>
         </div>
         
         {/* Bottom Bar */}
         <div className="border-t border-white/10 backdrop-blur-sm">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4">
+          <div className="max-w-7xl mx-auto px-6 lg:px-8 py-6">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <div className="text-gray-500 text-sm">
                 © 2025 Reboot Media, Inc. All rights reserved.
               </div>
-              <div className="flex space-x-6 text-gray-500 text-sm">
-                <span className="text-xs md:text-sm">17595 Harvard Ave C-738, Irvine CA 92614</span>
+              <div className="flex items-center space-x-4 text-gray-500 text-sm">
+                <span>A Global Marketing Leadership Company</span>
               </div>
             </div>
           </div>
