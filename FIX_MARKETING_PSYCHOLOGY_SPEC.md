@@ -62,6 +62,31 @@
 - Loss Aversion: "Preserve competitive position" vs "Don't lose market share" - indirect vs direct framing
 **Impact**: Have complete psychological trigger toolkit adapted for Asian business cultures
 
+### Discovery: PRD Integration Complete - 2025-08-07
+**Problem**: Need to update PRD with research findings for future reference and alignment
+**Solution**: Integrated all key research findings into PRD with specific sections and concrete examples
+**Key Updates**:
+- Added Marketing Psychology Research Findings section with conversion benchmarks
+- Enhanced customer personas with research-validated pain point language
+- Updated website content strategy with concrete examples for each awareness stage  
+- Culturally-adapted psychological triggers with face-saving approaches
+**Business Impact**: PRD now serves as comprehensive guide combining business strategy with research-backed psychology insights
+**Next Phase Ready**: Have solid foundation for content creation with concrete examples and frameworks
+
+### Discovery: Authority & Scarcity/Urgency Research Complete - 2025-08-07
+**Problem**: Need final psychological triggers research to complete comprehensive toolkit
+**Solution**: Researched authority positioning and scarcity/urgency strategies adapted for Asian business cultures
+**Key Insights**:
+- Authority: 75% of B2B decision-makers trust brands with expert affiliation, 22% conversion increase possible
+- Cultural authority requires hierarchy respect, institutional credentials, process transparency
+- Scarcity/Urgency: 332% boost from limited-time offers, but requires authentic business constraints
+- Asian markets need relationship-first approach: "exclusive access" vs "limited time pressure"
+**Frameworks Developed**:
+- Authority: Institutional credentials + educational content + cultural hierarchy respect
+- Scarcity: Capacity-based limits + business cycle urgency + exclusive positioning
+- Cultural adaptations: East Asia (status-based), Southeast Asia (growth-focused), South Asia (value-optimization)
+**RESEARCH PHASE COMPLETE**: All psychological triggers researched with Asian cultural adaptations - ready for content creation
+
 ## ARCHITECTURE DECISIONS
 
 ### Content Structure
