@@ -47,7 +47,7 @@ const GlobalHeader = ({ onShowForm }: GlobalHeaderProps) => {
         <div className={`transition-all duration-300 ${
           scrollY > 50 
             ? 'bg-white/95 dark:bg-slate-900/95 backdrop-blur-md shadow-lg border-b border-gray-200 dark:border-gray-700' 
-            : 'bg-transparent'
+            : 'bg-white/80 backdrop-blur-md border-b border-white/20'
         }`}>
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="flex justify-between items-center py-4">
@@ -57,9 +57,7 @@ const GlobalHeader = ({ onShowForm }: GlobalHeaderProps) => {
                 onClick={scrollToTop}
                 className="text-2xl font-black cursor-pointer hover:scale-105 transition-transform duration-300"
               >
-                <span className={`transition-colors duration-300 ${
-                  scrollY > 50 ? 'text-gray-900 dark:text-white' : 'text-gray-900 dark:text-white'
-                }`}>
+                <span className="text-gray-900 dark:text-white">
                   REBOOT <span className="text-orange-500">MEDIA</span>
                 </span>
               </Link>
@@ -69,27 +67,21 @@ const GlobalHeader = ({ onShowForm }: GlobalHeaderProps) => {
                 <a 
                   href="#services" 
                   onClick={(e) => handleHashNavigation(e, 'services')}
-                  className={`font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer ${
-                    scrollY > 50 ? 'text-gray-700 dark:text-gray-200' : 'text-gray-900 dark:text-white'
-                  }`}
+                  className="font-semibold text-gray-700 dark:text-gray-200 hover:text-orange-500 transition-colors duration-300 cursor-pointer"
                 >
                   Services
                 </a>
                 <a 
                   href="#about" 
                   onClick={(e) => handleHashNavigation(e, 'about')}
-                  className={`font-semibold hover:text-orange-500 transition-colors duration-300 cursor-pointer ${
-                    scrollY > 50 ? 'text-gray-700 dark:text-gray-200' : 'text-gray-900 dark:text-white'
-                  }`}
+                  className="font-semibold text-gray-700 dark:text-gray-200 hover:text-orange-500 transition-colors duration-300 cursor-pointer"
                 >
                   About
                 </a>
                 <Link 
                   to="/contact" 
                   onClick={scrollToTop}
-                  className={`font-semibold hover:text-orange-500 transition-colors duration-300 ${
-                    scrollY > 50 ? 'text-gray-700 dark:text-gray-200' : 'text-gray-900 dark:text-white'
-                  }`}
+                  className="font-semibold text-gray-700 dark:text-gray-200 hover:text-orange-500 transition-colors duration-300"
                 >
                   Contact
                 </Link>
