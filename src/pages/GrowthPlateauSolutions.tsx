@@ -59,6 +59,65 @@ const GrowthPlateauSolutions = () => {
     };
   }, []);
 
+  const plateauTypes = [
+    {
+      id: 'revenue-ceiling',
+      title: 'Revenue Ceiling Breakthrough',
+      description: 'Stuck at $500K, $1M, or $1.5M for months? The problem isn\'t your product—it\'s that founder-led sales can\'t scale without documented processes.',
+      link: '/growth-plateau-solutions/revenue-ceiling-breakthrough',
+      gradient: 'from-red-500 to-red-600',
+      icon: '📊'
+    },
+    {
+      id: 'customer-acquisition',
+      title: 'Customer Acquisition Stall',
+      description: 'CAC keeps rising while conversion stays flat? You\'re competing on the same channels with the same message as everyone else.',
+      link: '/growth-plateau-solutions/customer-acquisition-stall',
+      gradient: 'from-orange-500 to-orange-600',
+      icon: '🎯'
+    },
+    {
+      id: 'market-expansion',
+      title: 'Market Expansion Barriers',
+      description: 'Core market feels saturated? The issue isn\'t market size—it\'s that you\'ve defined your market by product category instead of problems solved.',
+      link: '/growth-plateau-solutions/market-expansion-barriers',
+      gradient: 'from-yellow-500 to-yellow-600',
+      icon: '🌍'
+    },
+    {
+      id: 'operational-scaling',
+      title: 'Operational Scaling Crisis',
+      description: 'Growth feels like everything\'s breaking? Manual processes that worked at $500K fail spectacularly at $2M+ without systems.',
+      link: '/growth-plateau-solutions/operational-scaling-crisis',
+      gradient: 'from-green-500 to-green-600',
+      icon: '⚙️'
+    },
+    {
+      id: 'team-bottlenecks',
+      title: 'Team Growth Bottlenecks',
+      description: 'Can\'t hire fast enough or new people aren\'t working out? The founder bottleneck kills scaling when everything still goes through you.',
+      link: '/growth-plateau-solutions/team-growth-bottlenecks',
+      gradient: 'from-blue-500 to-blue-600',
+      icon: '👥'
+    },
+    {
+      id: 'product-market-fit',
+      title: 'Product-Market Fit Erosion',
+      description: 'What worked before isn\'t working now? Markets evolve faster than products—your messaging may be stuck in the past.',
+      link: '/growth-plateau-solutions/product-market-fit-erosion',
+      gradient: 'from-purple-500 to-purple-600',
+      icon: '🎭'
+    },
+    {
+      id: 'competitive-pressure',
+      title: 'Competitive Pressure Plateau',
+      description: 'Bigger competitors crushing you? Stop competing on their terms—unique positioning beats feature wars every time.',
+      link: '/growth-plateau-solutions/competitive-pressure-plateau',
+      gradient: 'from-pink-500 to-pink-600',
+      icon: '⚔️'
+    }
+  ];
+
   return (
     <>
       <SEOHead 
@@ -75,471 +134,209 @@ const GrowthPlateauSolutions = () => {
           <GlobalHeader onShowForm={() => setShowDropdownForm(true)} showProgressBar={true} />
         
         {/* Hero Section */}
-        <section className="pt-20 md:pt-24 pb-8 bg-gradient-to-br from-red-900 via-red-950 to-black relative overflow-hidden">
+        <section className="pt-20 md:pt-24 pb-16 bg-gradient-to-br from-red-900 via-red-950 to-black relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(220,38,38,0.1)_0%,transparent_50%)]"></div>
-          <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
+          <div className="relative max-w-6xl mx-auto px-6 lg:px-8 text-center">
             <div className="inline-flex items-center gap-2 bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
               Revenue Stalled? You're Not Alone
             </div>
-            <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
               <span className="text-red-400">67% of Companies</span> Hit the
               <span className="block text-white mt-2">$1M Revenue Wall</span>
             </h1>
-            <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Your product works. Your team works hard. But your revenue is stuck between $500K-$1.5M. The problem isn't your business model—it's your marketing psychology. Here's how the 33% break through.
+            <p className="text-xl md:text-2xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+              Your product works. Your team works hard. But revenue is stuck between $500K-$1.5M. 
+              The problem isn't your business model—it's your <span className="text-red-400 font-semibold">marketing psychology</span>. 
+              Here's how the 33% break through.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button 
                 onClick={() => setShowDropdownForm(true)}
-                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl"
               >
                 Break Through Your Plateau
               </button>
               <a 
-                href="#plateau-causes" 
-                className="border-2 border-red-500 text-red-400 hover:bg-red-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
+                href="#plateau-types" 
+                className="border-2 border-red-500 text-red-400 hover:bg-red-500 hover:text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300"
               >
-                Why This Happens
+                Diagnose Your Plateau
               </a>
             </div>
           </div>
         </section>
 
         {/* Main Content */}
-        <main className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
+        <main className="max-w-6xl mx-auto px-6 lg:px-8 py-20">
           
           {/* Problem Recognition */}
-          <section className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
-              Recognize Yourself Here?
+          <section className="mb-20 text-center">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8">
+              The Revenue Plateau Crisis
             </h2>
-            <div className="grid md:grid-cols-2 gap-6 mb-12">
-              
-              {/* Frustrations */}
-              <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-xl shadow-xl border border-red-200/30 dark:border-red-800/30 p-6">
-                <h3 className="text-xl font-bold text-red-800 dark:text-red-300 mb-4 flex items-center">
-                  <span className="w-2 h-2 bg-red-500 rounded-full mr-3"></span>
-                  These Sound Familiar?
-                </h3>
-                <ul className="text-gray-700 dark:text-gray-300 space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-red-500 mr-2 mt-1">▸</span>
-                    "Our revenue has been flat for 8+ months"
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-500 mr-2 mt-1">▸</span>
-                    "Marketing feels scattered and unfocused"
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-500 mr-2 mt-1">▸</span>
-                    "Competitors are somehow outpacing us"
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-500 mr-2 mt-1">▸</span>
-                    "Investors are asking tough questions"
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-red-500 mr-2 mt-1">▸</span>
-                    "We can't seem to break past $1M consistently"
-                  </li>
-                </ul>
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-red-200/50 dark:border-red-800/50 p-8">
+                <div className="text-4xl font-black text-red-600 mb-4">67%</div>
+                <div className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Companies Plateau</div>
+                <p className="text-gray-600 dark:text-gray-300">Between $500K-$1.5M revenue</p>
               </div>
-
-              {/* Inner Voice */}
-              <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-xl shadow-xl border border-orange-200/30 dark:border-orange-800/30 p-6">
-                <h3 className="text-xl font-bold text-orange-800 dark:text-orange-300 mb-4 flex items-center">
-                  <span className="w-2 h-2 bg-orange-500 rounded-full mr-3"></span>
-                  What You're Thinking
-                </h3>
-                <ul className="text-gray-700 dark:text-gray-300 space-y-3">
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2 mt-1">💭</span>
-                    "We need more leads, but quality is suffering"
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2 mt-1">💭</span>
-                    "Our messaging doesn't seem to resonate"
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2 mt-1">💭</span>
-                    "Should we hire an agency or CMO?"
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2 mt-1">💭</span>
-                    "Maybe our market is just saturated"
-                  </li>
-                  <li className="flex items-start">
-                    <span className="text-orange-500 mr-2 mt-1">💭</span>
-                    "Everyone says scale is hard, maybe this is normal"
-                  </li>
-                </ul>
+              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-orange-200/50 dark:border-orange-800/50 p-8">
+                <div className="text-4xl font-black text-orange-600 mb-4">14mo</div>
+                <div className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Average Stuck Time</div>
+                <p className="text-gray-600 dark:text-gray-300">Before breaking through</p>
+              </div>
+              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
+                <div className="text-4xl font-black text-green-600 mb-4">$47K</div>
+                <div className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Monthly Cost</div>
+                <p className="text-gray-600 dark:text-gray-300">Of staying plateaued</p>
               </div>
             </div>
             
-            {/* Strategic CTA */}
-            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-red-500/30 dark:border-red-400/30 border-l-4 border-l-red-500 p-6">
-              <h3 className="font-bold text-gray-900 dark:text-white mb-3">
-                🚨 Stop Right Here: This Plateau Costs You $47,000+ Every Month
+            <div className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-2xl p-8 border border-red-200/50 dark:border-red-800/50">
+              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                🚨 Every Month You Wait Costs You $47,000+
               </h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-4">
-                While you're stuck at $1M, you should be at $1.5M+ with proper marketing psychology. That's $500K+ annual difference. Every month of delay costs you qualified opportunities competitors are capturing.
+              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
+                While you're stuck at $1M, you should be at $1.5M+ with proper marketing psychology. That's $500K+ annual difference. 
+                Every month of delay costs you qualified opportunities competitors are capturing.
               </p>
               <button 
                 onClick={() => setShowDropdownForm(true)}
-                className="text-red-600 dark:text-red-400 font-semibold hover:underline"
+                className="text-red-600 dark:text-red-400 font-bold hover:underline text-lg"
               >
                 Get your plateau breakthrough analysis →
               </button>
             </div>
           </section>
 
-          {/* Root Causes */}
-          <section id="plateau-causes" className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
-              The Real Reasons You're Stuck (It's Not What You Think)
+          {/* Plateau Types Grid */}
+          <section id="plateau-types" className="mb-20">
+            <h2 className="text-3xl md:text-5xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+              7 Plateau Types (Which is Yours?)
             </h2>
-            <p className="text-gray-700 dark:text-gray-300 mb-12 text-lg">
-              After analyzing 200+ growth-stage companies, we've identified the 4 marketing psychology mistakes that create revenue plateaus. Fix these, and scaling becomes predictable.
+            <p className="text-xl text-gray-700 dark:text-gray-300 mb-16 text-center max-w-4xl mx-auto">
+              After analyzing 200+ growth-stage companies, we've identified exactly why companies get stuck. 
+              Each plateau type has specific psychology fixes that unlock the next revenue level.
             </p>
 
-            <div className="space-y-8">
-              
-              {/* Cause 1: Curse of Knowledge */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="bg-red-100 dark:bg-red-900/30 rounded-full p-3 flex-shrink-0">
-                    <span className="text-red-600 font-bold text-xl">1</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">The "Curse of Knowledge" Trap</h3>
-                    <p className="text-gray-700 dark:text-gray-300 mb-4">
-                      You know your product so well that you've forgotten how confusing it is to newcomers. Your messaging assumes knowledge your prospects don't have.
-                    </p>
-                    <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-600/20">
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <div>
-                          <p className="font-semibold text-red-600 mb-2">❌ What You Say:</p>
-                          <p className="text-gray-700 dark:text-gray-300 text-sm">"Our AI-powered solution leverages machine learning algorithms to optimize conversion funnels"</p>
-                        </div>
-                        <div>
-                          <p className="font-semibold text-green-600 mb-2">✅ What They Need to Hear:</p>
-                          <p className="text-gray-700 dark:text-gray-300 text-sm">"Get 30% more customers from your existing website traffic without changing your prices"</p>
-                        </div>
-                      </div>
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {plateauTypes.map((plateau) => (
+                <div key={plateau.id} className="group">
+                  <a 
+                    href={plateau.link}
+                    className="block bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:bg-white dark:hover:bg-slate-700/80"
+                  >
+                    <div className="text-center mb-6">
+                      <div className="text-4xl mb-4">{plateau.icon}</div>
+                      <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-red-500 group-hover:to-orange-500 transition-all duration-300">
+                        {plateau.title}
+                      </h3>
                     </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Cause 2: Wrong Awareness Stage */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="bg-orange-100 dark:bg-orange-900/30 rounded-full p-3 flex-shrink-0">
-                    <span className="text-orange-600 font-bold text-xl">2</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Targeting the Wrong Awareness Stage</h3>
-                    <p className="text-gray-700 dark:text-gray-300 mb-4">
-                      You're using "buy now" messaging for people who don't even know they have a problem. Or educational content for people ready to purchase.
+                    <p className="text-gray-700 dark:text-gray-300 text-base leading-relaxed mb-6">
+                      {plateau.description}
                     </p>
-                    <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-600/20">
-                      <p className="font-semibold text-gray-900 dark:text-white mb-3">The 5 Customer Awareness Stages:</p>
-                      <div className="space-y-2 text-sm text-gray-700 dark:text-gray-300">
-                        <div className="flex items-center">
-                          <span className="w-3 h-3 bg-red-400 rounded-full mr-3"></span>
-                          <span><strong>Unaware:</strong> Don't know they have a problem → Problem education</span>
-                        </div>
-                        <div className="flex items-center">
-                          <span className="w-3 h-3 bg-orange-400 rounded-full mr-3"></span>
-                          <span><strong>Problem-Aware:</strong> Know problem, not solutions → Solution categories</span>
-                        </div>
-                        <div className="flex items-center">
-                          <span className="w-3 h-3 bg-yellow-400 rounded-full mr-3"></span>
-                          <span><strong>Solution-Aware:</strong> Comparing options → Why you're different</span>
-                        </div>
-                        <div className="flex items-center">
-                          <span className="w-3 h-3 bg-green-400 rounded-full mr-3"></span>
-                          <span><strong>Product-Aware:</strong> Evaluating you → Objection handling</span>
-                        </div>
-                        <div className="flex items-center">
-                          <span className="w-3 h-3 bg-blue-400 rounded-full mr-3"></span>
-                          <span><strong>Most Aware:</strong> Ready to buy → Remove friction</span>
-                        </div>
-                      </div>
-                      <p className="text-red-600 font-semibold mt-3 text-sm">Most plateau companies target all stages with the same message. That's why conversions are flat.</p>
+                    <div className="flex items-center justify-center text-red-600 dark:text-red-400 font-semibold group-hover:text-red-700 dark:group-hover:text-red-300 transition-colors">
+                      See 5-7 Real Examples →
                     </div>
-                  </div>
+                  </a>
                 </div>
-              </div>
-
-              {/* Cause 3: No Loss Aversion */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="bg-yellow-100 dark:bg-yellow-900/30 rounded-full p-3 flex-shrink-0">
-                    <span className="text-yellow-600 font-bold text-xl">3</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Ignoring Loss Aversion Psychology</h3>
-                    <p className="text-gray-700 dark:text-gray-300 mb-4">
-                      People are 2.5x more motivated to avoid loss than gain benefit. Your messaging focuses on gains while competitors use loss aversion to win deals.
-                    </p>
-                    <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-600/20">
-                      <div className="grid md:grid-cols-2 gap-4">
-                        <div>
-                          <p className="font-semibold text-blue-600 mb-2">💡 Gain-Focused (Weak):</p>
-                          <p className="text-gray-700 dark:text-gray-300 text-sm">"Increase your revenue by 30%"</p>
-                        </div>
-                        <div>
-                          <p className="font-semibold text-red-600 mb-2">🔥 Loss Aversion (Powerful):</p>
-                          <p className="text-gray-700 dark:text-gray-300 text-sm">"Don't lose 30% of potential revenue to broken messaging"</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* Cause 4: Weak Social Proof */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-8 hover:shadow-lg transition-shadow">
-                <div className="flex items-start gap-4 mb-6">
-                  <div className="bg-green-100 dark:bg-green-900/30 rounded-full p-3 flex-shrink-0">
-                    <span className="text-green-600 font-bold text-xl">4</span>
-                  </div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">Generic Social Proof That Doesn't Convert</h3>
-                    <p className="text-gray-700 dark:text-gray-300 mb-4">
-                      "Trusted by thousands" means nothing. Your prospects need specific social proof from people in their exact situation with measurable results.
-                    </p>
-                    <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-600/20">
-                      <div className="space-y-3">
-                        <div>
-                          <p className="font-semibold text-red-600 mb-1 text-sm">❌ Generic:</p>
-                          <p className="text-gray-700 dark:text-gray-300 text-sm">"Trusted by 10,000+ companies"</p>
-                        </div>
-                        <div>
-                          <p className="font-semibold text-green-600 mb-1 text-sm">✅ Specific:</p>
-                          <p className="text-gray-700 dark:text-gray-300 text-sm">"How Sarah's $800K SaaS company broke through to $2.1M in 8 months using psychology-driven messaging"</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
+              ))}
             </div>
           </section>
 
-          {/* Strategic CTA */}
-          <section className="mb-16">
-            <div className="text-center bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-red-500/20 dark:border-red-400/20 p-8">
-              <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
-                Stop Losing $47K Monthly to Plateau Psychology
-              </h3>
-              <p className="text-gray-700 dark:text-gray-300 mb-6 max-w-2xl mx-auto">
-                Every month you delay fixing these psychology mistakes, competitors are capturing the growth that should be yours. Get your free plateau breakthrough analysis.
+          {/* How This Works */}
+          <section className="mb-20">
+            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-12">
+              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+                The Psychology-Driven Breakthrough Framework
+              </h2>
+              <p className="text-xl text-gray-700 dark:text-gray-300 mb-12 text-center max-w-4xl mx-auto">
+                The 33% of companies that break through plateaus use this systematic approach. 
+                It's not about working harder—it's about <span className="font-semibold text-red-600 dark:text-red-400">marketing psychology that actually converts</span>.
               </p>
-              <button 
-                onClick={() => setShowDropdownForm(true)}
-                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4"
-              >
-                Get Free Plateau Analysis
-              </button>
-              <a 
-                href="#breakthrough-framework" 
-                className="border-2 border-red-500 text-red-600 hover:bg-red-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
-              >
-                See the Solution
-              </a>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="text-center">
+                  <div className="bg-gradient-to-r from-red-500 to-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4">1</div>
+                  <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-3">Customer Says</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">Exact language your stuck customers use</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4">2</div>
+                  <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-3">Real Problem</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">Hidden psychological root cause</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4">3</div>
+                  <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-3">Solution</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">Systems + psychology fix</p>
+                </div>
+                <div className="text-center">
+                  <div className="bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4">4</div>
+                  <h3 className="font-bold text-lg text-gray-900 dark:text-white mb-3">Why It Works</h3>
+                  <p className="text-gray-600 dark:text-gray-400 text-sm">Psychology principle explained</p>
+                </div>
+              </div>
             </div>
           </section>
 
-          {/* Breakthrough Framework */}
-          <section id="breakthrough-framework" className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
-              The Psychology-Driven Breakthrough Framework
-            </h2>
-            <p className="text-gray-700 dark:text-gray-300 mb-12 text-lg">
-              The 33% of companies that break through plateaus use this systematic approach. It's not about working harder—it's about marketing psychology that actually converts.
-            </p>
-
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              
-              {/* Step 1 - Collapsible */}
-              <details className="border border-gray-200 dark:border-gray-700 rounded-xl bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm overflow-hidden">
-                <summary className="p-6 cursor-pointer hover:bg-green-100 dark:hover:bg-green-900/20 transition-colors">
-                  <div className="flex items-start gap-4">
-                    <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">1</div>
-                    <h3 className="text-xl font-bold text-gray-900 dark:text-white">Customer Awareness Audit</h3>
-                  </div>
-                  <p className="text-gray-700 dark:text-gray-300 mt-2">
-                    Map your prospects' awareness stages and identify messaging mismatches...
-                  </p>
-                </summary>
-                <div className="px-6 pb-6 pt-0">
-                  <p className="text-gray-700 dark:text-gray-300 mb-4">
-                    Map your prospects' awareness stages and identify messaging mismatches that kill conversions.
-                  </p>
-                  <ul className="text-gray-700 dark:text-gray-300 space-y-1 text-sm">
-                    <li>• Survey existing customers about their buying journey</li>
-                    <li>• Analyze competitor messaging by awareness stage</li>
-                    <li>• Identify gaps where prospects get confused</li>
-                  </ul>
-                </div>
-              </details>
-
-              {/* Step 2 */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">2</div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">Loss Aversion Messaging</h3>
-                </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">
-                  Reframe your value proposition around what prospects lose by not acting.
-                </p>
-                <ul className="text-gray-700 dark:text-gray-300 space-y-1 text-sm">
-                  <li>• Calculate the cost of inaction for your prospects</li>
-                  <li>• Rewrite headlines using loss aversion psychology</li>
-                  <li>• Test urgency without fake scarcity</li>
-                </ul>
-              </div>
-
-              {/* Step 3 */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">3</div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">Specific Social Proof</h3>
-                </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">
-                  Replace generic testimonials with specific peer success stories.
-                </p>
-                <ul className="text-gray-700 dark:text-gray-300 space-y-1 text-sm">
-                  <li>• Collect detailed customer transformation stories</li>
-                  <li>• Focus on similar company size and industry</li>
-                  <li>• Include specific metrics and timeframes</li>
-                </ul>
-              </div>
-
-              {/* Step 4 */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold">4</div>
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white">Systematic Testing</h3>
-                </div>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">
-                  Test psychological triggers systematically, not randomly.
-                </p>
-                <ul className="text-gray-700 dark:text-gray-300 space-y-1 text-sm">
-                  <li>• A/B test awareness-matched messaging</li>
-                  <li>• Measure conversion at each funnel stage</li>
-                  <li>• Scale what works, kill what doesn't</li>
-                </ul>
-              </div>
-
-            </div>
-          </section>
-
-          {/* Case Study */}
+          {/* Related Resources */}
           <section className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
-              Case Study: How We Broke Through a 14-Month Plateau
-            </h2>
-            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-xl shadow-xl border border-gray-200/30 dark:border-gray-700/30 p-8">
-              <div className="grid md:grid-cols-3 gap-8 mb-8">
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-red-600 mb-2">$1.1M</div>
-                  <p className="text-gray-600 dark:text-gray-400">Stuck Revenue (14 months)</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-green-600 mb-2">$2.8M</div>
-                  <p className="text-gray-600 dark:text-gray-400">New Revenue (8 months later)</p>
-                </div>
-                <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">154%</div>
-                  <p className="text-gray-600 dark:text-gray-400">Revenue Growth</p>
-                </div>
-              </div>
-              
-              <div className="prose prose-lg max-w-none dark:prose-invert">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">SaaS Company: The Breakthrough Process</h3>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">The Problem:</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
-                      <li>• Revenue stuck at $1.1M for 14 months</li>
-                      <li>• Marketing qualified leads were flat</li>
-                      <li>• Conversion rates declining month-over-month</li>
-                      <li>• CEO getting pressure from board</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">The Psychology Fixes:</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
-                      <li>• Mapped 85% of prospects to Problem-Aware stage</li>
-                      <li>• Switched from feature-focused to problem-amplification messaging</li>
-                      <li>• Added loss aversion: "Don't lose deals to manual processes"</li>
-                      <li>• Replaced generic testimonials with peer case studies</li>
-                    </ul>
-                  </div>
-                </div>
-                
-                <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
-                  <h4 className="font-semibold text-gray-900 dark:text-white mb-2">The Breakthrough Moment:</h4>
-                  <p className="text-gray-700 dark:text-gray-300">
-                    "We discovered our prospects weren't looking for a 'CRM solution'—they were desperately trying to solve 'deal leakage.' When we changed our headline from 'Advanced CRM Features' to 'Stop Losing Deals to Broken Follow-Up,' conversions jumped 340% in 30 days."
-                  </p>
-                  <p className="text-gray-600 dark:text-gray-400 text-sm mt-2 italic">- CEO, Midwest SaaS Company</p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Internal Linking Section */}
-          <section className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
               Master the Psychology Behind Breakthrough Growth
             </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl transition-shadow">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   <a href="/marketing-psychology" className="hover:text-red-600 transition-colors">
-                    Learn Marketing Psychology Fundamentals →
+                    Marketing Psychology Fundamentals →
                   </a>
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300">
+                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
                   Master the 5 customer awareness stages and conversion psychology principles that transform scattered marketing into predictable revenue growth.
                 </p>
+                <div className="flex items-center text-red-600 dark:text-red-400 font-semibold">
+                  <span className="mr-2">📚</span>
+                  Learn the fundamentals
+                </div>
               </div>
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+              
+              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl transition-shadow">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   <a href="/fractional-cmo-guide" className="hover:text-red-600 transition-colors">
                     Need Strategic Marketing Leadership? →
                   </a>
                 </h3>
-                <p className="text-gray-700 dark:text-gray-300">
+                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
                   Compare fractional CMO vs agency approaches and discover which delivers faster plateau breakthrough results for your specific situation.
                 </p>
+                <div className="flex items-center text-red-600 dark:text-red-400 font-semibold">
+                  <span className="mr-2">🎯</span>
+                  Find your solution
+                </div>
               </div>
             </div>
           </section>
 
           {/* Final CTA Section */}
-          <section className="text-center bg-gradient-to-br from-red-900 via-red-950 to-black text-white rounded-2xl p-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <section className="text-center bg-gradient-to-br from-red-900 via-red-950 to-black text-white rounded-2xl p-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-8">
               Stop Accepting Plateau Revenue as "Normal"
             </h2>
-            <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
-              The 33% who break through aren't smarter—they just understand marketing psychology. Every month you wait is another $47K+ of growth your competitors capture instead.
+            <p className="text-xl text-gray-300 mb-12 max-w-4xl mx-auto leading-relaxed">
+              The 33% who break through aren't smarter—they just understand marketing psychology. 
+              Every month you wait is another $47K+ of growth your competitors capture instead.
             </p>
-            <div className="flex justify-center mb-6">
+            <div className="flex justify-center mb-8">
               <button 
                 onClick={() => setShowDropdownForm(true)}
-                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-12 py-6 rounded-xl font-bold text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl"
               >
                 Get Your Free Plateau Breakthrough Analysis →
               </button>
             </div>
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-400 text-lg">
               ✅ Free plateau analysis • ✅ Psychology-driven roadmap • ✅ No obligation • ✅ 67% breakthrough rate
             </p>
           </section>

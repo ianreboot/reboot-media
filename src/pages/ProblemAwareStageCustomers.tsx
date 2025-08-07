@@ -5,28 +5,28 @@ import SEOHead from '../components/SEOHead';
 import BackgroundGradient from '../components/BackgroundGradient';
 import { useLeadForm } from '../contexts/LeadFormContext';
 
-const UnawareStageCustomers = () => {
+const ProblemAwareStageCustomers = () => {
   const { setShowDropdownForm } = useLeadForm();
 
   useEffect(() => {
-    document.title = "Unaware Stage Customers: When They Don't Know The Problem Exists | Reboot Media";
+    document.title = "Problem-Aware Stage Customers: When They Know Something's Wrong But Not What | Reboot Media";
     
     // Update meta description
     const metaDescription = document.querySelector('meta[name="description"]');
     if (metaDescription) {
-      metaDescription.setAttribute('content', 'Real examples of unaware stage customers who think everything is fine. Learn what they\'re actually thinking and how to help them recognize problems they didn\'t know they had.');
+      metaDescription.setAttribute('content', 'Real examples of problem-aware customers who know they\'re struggling but can\'t pinpoint the solution. Learn their exact pain points and how to guide them to clarity.');
     }
   }, []);
 
   return (
     <>
       <SEOHead 
-        title="Unaware Stage Customers: When They Don't Know The Problem Exists | Reboot Media"
-        description="Real examples of unaware stage customers who think everything is fine. Learn what they're actually thinking and how to help them recognize problems they didn't know they had."
-        canonicalUrl="https://www.rebootmedia.net/marketing-psychology/unaware-stage-customers"
+        title="Problem-Aware Stage Customers: When They Know Something's Wrong But Not What | Reboot Media"
+        description="Real examples of problem-aware customers who know they're struggling but can't pinpoint the solution. Learn their exact pain points and how to guide them to clarity."
+        canonicalUrl="https://www.rebootmedia.net/marketing-psychology/problem-aware-stage-customers"
       />
 
-      <div className="unaware-stage-page min-h-screen relative overflow-hidden dark:bg-gray-900">
+      <div className="problem-aware-stage-page min-h-screen relative overflow-hidden dark:bg-gray-900">
         <BackgroundGradient />
         
         <div className="relative z-10">
@@ -34,14 +34,14 @@ const UnawareStageCustomers = () => {
         
           {/* Hero Section */}
           <section className="pt-20 md:pt-24 pb-8 bg-gradient-to-br from-slate-900 via-slate-950 to-black relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,165,0,0.1)_0%,transparent_50%)]"></div>
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,165,0,0.1)_0%,transparent_50%)"></div>
             <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
               <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
-                "Everything Is Fine"
-                <span className="block text-orange-500 mt-2">When Customers Don't Know They're Bleeding Money</span>
+                "Something Isn't Working"
+                <span className="block text-orange-500 mt-2">The Frustration of Knowing You're Stuck Without Knowing Why</span>
               </h1>
               <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                These prospects think their biggest problem is getting more leads. The reality? They're solving the wrong problem entirely, and every day of confusion costs them customers.
+                These prospects know their marketing is broken. They see competitors pulling ahead. But they're throwing solutions at the wall hoping something sticks—because they haven't diagnosed the real problem yet.
               </p>
             </div>
           </section>
@@ -54,7 +54,7 @@ const UnawareStageCustomers = () => {
                   Marketing Psychology
                 </a>
                 <span className="text-gray-600">→</span>
-                <span className="text-orange-400">Unaware Stage Customers</span>
+                <span className="text-orange-400">Problem-Aware Stage Customers</span>
               </nav>
             </div>
           </section>
@@ -65,14 +65,14 @@ const UnawareStageCustomers = () => {
             {/* Introduction */}
             <section className="mb-12">
               <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
-                Unaware stage customers are the most dangerous for your business. They're convinced they're doing fine when they're actually hemorrhaging opportunities. Here are real examples of what they say and what's actually happening.
+                Problem-aware customers are dangerous to themselves. They know enough to be worried but not enough to make smart decisions. They're buying random tools, hiring random freelancers, and changing strategies every month—burning cash without understanding why nothing works.
               </p>
             </section>
 
             {/* Real Customer Examples */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
-                What Unaware Customers Actually Say (And What's Really Happening)
+                What Problem-Aware Customers Actually Say (And What They Really Need)
               </h2>
 
               <div className="space-y-8">
@@ -81,22 +81,22 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-gray-700 dark:text-gray-300 italic">"We built the best product but no one gets it"</p>
+                    <p className="text-gray-700 dark:text-gray-300 italic">"Our marketing isn't working anymore"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">You're speaking engineer, they're thinking business results. Your "advanced features" sound like expensive complications to someone trying to solve a simple problem.</p>
+                    <p className="text-gray-700 dark:text-gray-300">They're measuring the wrong things. Their marketing might be working perfectly—they just can't tell because they're looking at vanity metrics instead of revenue drivers.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">Start with the cost of their current broken process. Instead of "Our AI-powered analytics platform," try "Stop losing $3,000 monthly to decisions made on gut feeling instead of data."</p>
+                    <p className="text-gray-700 dark:text-gray-300">Help them see the measurement gap. "Most companies think their marketing is broken when really their measurement is. Let me show you the three numbers that actually predict revenue growth."</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">People buy to solve pain, not to get features. When you lead with the financial impact of their current situation, you're speaking their language: business results.</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">It reframes their problem from "everything is broken" to "we just need better visibility." This makes the solution feel achievable instead of overwhelming.</p>
                   </div>
                 </div>
 
@@ -104,22 +104,22 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-gray-700 dark:text-gray-300 italic">"We just need more traffic to our website"</p>
+                    <p className="text-gray-700 dark:text-gray-300 italic">"We're getting traffic but no one's buying"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">More traffic to a broken experience just means more people saying no. They're treating symptoms while the disease spreads.</p>
+                    <p className="text-gray-700 dark:text-gray-300">They're attracting the wrong people. High traffic from people who will never buy is worse than low traffic from qualified prospects.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">Help them see the real math. "Before sending more people to a site where 90% leave confused, let's figure out why your current visitors aren't buying. More confused people isn't the solution."</p>
+                    <p className="text-gray-700 dark:text-gray-300">Show them the quality vs quantity truth. "You don't have a traffic problem, you have a targeting problem. Would you rather have 10,000 visitors and 10 sales, or 500 visitors and 50 sales?"</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">It reframes their thinking from "more" to "better." Most businesses fail not from lack of traffic but from poor conversion of existing traffic.</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">It shifts focus from volume (which feels good but means nothing) to quality (which actually drives revenue). This insight alone can transform their business.</p>
                   </div>
                 </div>
 
@@ -127,22 +127,22 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-gray-700 dark:text-gray-300 italic">"Our prices are competitive, I don't know why we're not winning deals"</p>
+                    <p className="text-gray-700 dark:text-gray-300 italic">"Our customer acquisition cost keeps going up"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">When price becomes the conversation, you've already lost. You're being compared like a commodity because you haven't shown unique value.</p>
+                    <p className="text-gray-700 dark:text-gray-300">They're competing on the same message as everyone else. When you sound identical to competitors, the only differentiator becomes price—and costs skyrocket.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">Change the conversation from cost to outcome. "The companies beating you aren't competing on price—they're making price irrelevant by showing specific results their solution delivers."</p>
+                    <p className="text-gray-700 dark:text-gray-300">Help them find their unique angle. "CAC goes up when you're fighting for the same customers with the same message. What if we targeted a slightly different problem that only you solve well?"</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">Value-focused messaging shifts the conversation from "How much does it cost?" to "What will this accomplish?" Premium pricing becomes possible when you're solving important problems.</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">It reveals that high CAC isn't about spending more on ads—it's about having a differentiated message that converts better at any spend level.</p>
                   </div>
                 </div>
 
@@ -150,22 +150,22 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-gray-700 dark:text-gray-300 italic">"Everyone in our industry struggles with marketing"</p>
+                    <p className="text-gray-700 dark:text-gray-300 italic">"We tried content marketing and it didn't work"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">They're normalizing failure instead of recognizing opportunity. While they accept "everyone struggles," their smartest competitors are pulling ahead.</p>
+                    <p className="text-gray-700 dark:text-gray-300">They created content for themselves, not their customers. Blog posts about company updates and product features that no prospect cares about.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">Show them the exception proves the rule. "While most companies in your space do struggle, the 15% that don't are capturing disproportionate market share. Here's what they do differently."</p>
+                    <p className="text-gray-700 dark:text-gray-300">Shift to problem-focused content. "Content marketing fails when it's about you. It succeeds when it's about your customer's expensive problems. What's the #1 question prospects ask before buying?"</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">It transforms resignation into opportunity. Instead of accepting industry-wide failure, you position your solution as the differentiator that creates competitive advantage.</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">It reveals the difference between content (writing stuff) and content marketing (solving customer problems publicly). One builds traffic, the other builds revenue.</p>
                   </div>
                 </div>
 
@@ -173,22 +173,22 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-gray-700 dark:text-gray-300 italic">"Our team is too busy to focus on marketing right now"</p>
+                    <p className="text-gray-700 dark:text-gray-300 italic">"Social media isn't driving any sales"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">They're confusing activity with progress. Being "busy" often means working harder on the wrong things while competitors work smarter on the right things.</p>
+                    <p className="text-gray-700 dark:text-gray-300">They're using social media for broadcasting instead of conversation. Posting into the void and wondering why no one responds.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">Reframe busy as expensive. "The cost of your team being too busy for marketing isn't just missed opportunities—it's working twice as hard for half the results because you're invisible to your best prospects."</p>
+                    <p className="text-gray-700 dark:text-gray-300">Teach them engagement over reach. "Social media doesn't drive sales through posts—it drives sales through relationships. Are you spending more time posting or responding to ideal customers?"</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">It shows that "too busy for marketing" actually creates more work, not less. Effective marketing reduces the effort required to acquire customers, not increases it.</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">It shifts social media from a publishing platform to a relationship platform. This change alone can turn social from time-waster to revenue-driver.</p>
                   </div>
                 </div>
 
@@ -196,22 +196,45 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-gray-700 dark:text-gray-300 italic">"We've tried marketing before and it didn't work"</p>
+                    <p className="text-gray-700 dark:text-gray-300 italic">"Our sales team says leads are terrible"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">They're treating marketing like a magic button instead of a systematic process. One failed attempt makes them think the entire discipline doesn't work.</p>
+                    <p className="text-gray-700 dark:text-gray-300">Marketing and sales aren't aligned on what a "good lead" looks like. Marketing celebrates quantity while sales needs quality.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">Separate strategy from tactics. "Marketing isn't one thing that either works or doesn't. The question is: did you have the right message, to the right people, at the right time? Most 'marketing failures' are actually messaging failures."</p>
+                    <p className="text-gray-700 dark:text-gray-300">Create a shared definition of success. "The leads aren't terrible—the handoff is. What are the three things sales needs to know about a lead to have a successful first conversation?"</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">It shifts blame from "marketing doesn't work" to "we haven't found the right marketing approach yet." This opens the door to trying systematic, psychology-based approaches.</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">It stops the blame game between marketing and sales, focusing instead on creating a system where both teams win together.</p>
+                  </div>
+                </div>
+
+                {/* Example 7 */}
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
+                  <div className="mb-4">
+                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer says:</h3>
+                    <p className="text-gray-700 dark:text-gray-300 italic">"Competitors keep stealing our customers"</p>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
+                    <p className="text-gray-700 dark:text-gray-300">They're not giving customers a reason to stay. No differentiation, no relationship, no switching costs—just hoping loyalty happens by accident.</p>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
+                    <p className="text-gray-700 dark:text-gray-300">Build switching costs through value. "Competitors can't steal customers who don't want to leave. What would make leaving you so painful that customers wouldn't even consider it?"</p>
+                  </div>
+                  
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                    <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
+                    <p className="text-sm text-blue-700 dark:text-blue-300">It shifts focus from defending against competitors to creating such value that competition becomes irrelevant.</p>
                   </div>
                 </div>
 
@@ -221,15 +244,15 @@ const UnawareStageCustomers = () => {
             {/* Key Insights Section */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
-                The Pattern: What Unaware Customers Really Need
+                The Pattern: How to Help Problem-Aware Customers
               </h2>
               
               <div className="bg-orange-50 dark:bg-orange-900/20 rounded-xl p-6 mb-6">
                 <p className="text-orange-800 dark:text-orange-200 mb-4">
-                  <strong>The unaware customer's biggest enemy isn't competition—it's comfort with dysfunction.</strong>
+                  <strong>Problem-aware customers don't need more tactics—they need a diagnosis.</strong>
                 </p>
                 <p className="text-orange-700 dark:text-orange-300">
-                  They've normalized problems that are costing them thousands monthly. Your job isn't to sell them a solution; it's to help them see the problem clearly for the first time.
+                  They're drowning in symptoms without understanding the disease. Your job is to help them see the root cause clearly, so they stop wasting money on band-aid solutions.
                 </p>
               </div>
 
@@ -237,22 +260,22 @@ const UnawareStageCustomers = () => {
                 <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">What NOT to do:</h3>
                   <ul className="text-gray-700 dark:text-gray-300 space-y-2 text-sm">
-                    <li>• Lead with features or capabilities</li>
-                    <li>• Assume they understand the problem</li>
-                    <li>• Use industry jargon or technical terms</li>
-                    <li>• Push for immediate solutions</li>
-                    <li>• Compare yourself to competitors they don't know</li>
+                    <li>• Jump straight to your solution</li>
+                    <li>• Add to their confusion with more options</li>
+                    <li>• Validate their self-diagnosis (often wrong)</li>
+                    <li>• Overwhelm them with complex frameworks</li>
+                    <li>• Promise quick fixes for systematic problems</li>
                   </ul>
                 </div>
                 
                 <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
                   <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-3">What TO do:</h3>
                   <ul className="text-gray-700 dark:text-gray-300 space-y-2 text-sm">
-                    <li>• Start with the cost of their current situation</li>
-                    <li>• Use their exact language and concerns</li>
-                    <li>• Provide gentle education, not sales pressure</li>
-                    <li>• Show what success looks like for similar companies</li>
-                    <li>• Focus on business outcomes, not tools</li>
+                    <li>• Help them see the real root cause</li>
+                    <li>• Connect symptoms to underlying problems</li>
+                    <li>• Provide clarity before solutions</li>
+                    <li>• Use their language to explain complex issues</li>
+                    <li>• Show them what "good" actually looks like</li>
                   </ul>
                 </div>
               </div>
@@ -261,19 +284,19 @@ const UnawareStageCustomers = () => {
             {/* Strong CTA Section */}
             <section className="text-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white rounded-2xl p-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Are You Struggling with Customers Who Don't Even Know You Exist?
+                Tired of Throwing Money at Marketing Problems That Won't Go Away?
               </h2>
               <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
-                Stop wasting months trying to convince people who think everything is fine. Get our systematic approach to turning unaware prospects into eager customers who finally understand what they've been missing.
+                Stop guessing what's broken. Get a professional diagnosis that shows you exactly why your marketing isn't converting and the specific steps to fix it—permanently.
               </p>
               <button 
                 onClick={() => setShowDropdownForm(true)}
                 className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-xl"
               >
-                Get Your Free Marketing Psychology Analysis →
+                Get Your Free Marketing Diagnosis →
               </button>
               <p className="text-gray-400 text-sm mt-4">
-                ✅ Identify your biggest unaware prospect problems • ✅ Custom messaging strategy • ✅ No obligation
+                ✅ Find the real problem • ✅ Get a clear fix • ✅ Stop wasting budget
               </p>
             </section>
 
@@ -281,16 +304,16 @@ const UnawareStageCustomers = () => {
             <section className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
               <div className="flex justify-between items-center">
                 <a 
-                  href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`}
+                  href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/unaware-stage-customers`}
                   className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
                 >
-                  ← Back to Marketing Psychology Overview
+                  ← Previous: Unaware Stage Customers
                 </a>
                 <a 
-                  href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/problem-aware-stage-customers`}
+                  href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/solution-aware-stage-customers`}
                   className="text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors"
                 >
-                  Next: Problem-Aware Stage Customers →
+                  Next: Solution-Aware Stage Customers →
                 </a>
               </div>
             </section>
@@ -305,4 +328,4 @@ const UnawareStageCustomers = () => {
   );
 };
 
-export default UnawareStageCustomers;
+export default ProblemAwareStageCustomers;

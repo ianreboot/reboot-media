@@ -166,7 +166,7 @@ const MarketingPsychology = () => {
 
                 <div className="mt-6">
                   <a 
-                    href="/unaware-stage-customers" 
+                    href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/unaware-stage-customers`}
                     className="inline-flex items-center text-orange-600 dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors"
                   >
                     See real customer examples and what actually works →
@@ -185,27 +185,25 @@ const MarketingPsychology = () => {
                     <p className="text-gray-600 dark:text-gray-400">They know they have a problem but not the solution</p>
                   </div>
                 </div>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">What They're Thinking:</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
-                      <li>• "Our marketing isn't working"</li>
-                      <li>• "We're stuck at the same revenue"</li>
-                      <li>• "Competitors are outpacing us"</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Your Message Strategy:</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
-                      <li>• Solution categories and options</li>
-                      <li>• Problem amplification (carefully)</li>
-                      <li>• "Why this happens" explanations</li>
-                    </ul>
-                  </div>
-                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  These prospects are frustrated. They say things like "Our marketing isn't working anymore" or "CAC keeps going up but we don't know why." They're throwing solutions at the wall hoping something sticks.
+                </p>
+                
+                <p className="text-gray-700 dark:text-gray-300 mb-6">
+                  The key? They don't need more tactics—they need a diagnosis. They're treating symptoms without understanding the disease. Want to see how to guide them from confusion to clarity?
+                </p>
                 <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
                   <p className="text-sm text-gray-600 dark:text-gray-400 font-medium mb-2">Example Headline:</p>
                   <p className="text-gray-900 dark:text-white">"Why Your Marketing Feels Scattered (And the 3 Systems That Fix It)"</p>
+                </div>
+                
+                <div className="mt-6">
+                  <a 
+                    href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/problem-aware-stage-customers`}
+                    className="inline-flex items-center text-orange-600 dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors"
+                  >
+                    See real customer examples and what actually works →
+                  </a>
                 </div>
               </div>
 
@@ -220,27 +218,26 @@ const MarketingPsychology = () => {
                     <p className="text-gray-600 dark:text-gray-400">They know solutions exist and are comparing options</p>
                   </div>
                 </div>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">What They're Thinking:</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
-                      <li>• "Should we hire an agency or consultant?"</li>
-                      <li>• "What's the best approach?"</li>
-                      <li>• "Who can we trust with this?"</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Your Message Strategy:</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
-                      <li>• Comparative advantages</li>
-                      <li>• Social proof and case studies</li>
-                      <li>• "Why X vs Y" content</li>
-                    </ul>
-                  </div>
-                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  These prospects are comparison shopping. They say "Should we hire an agency or consultant?" and "Everyone looks the same." They have spreadsheets comparing options but can't figure out meaningful differences.
+                </p>
+                
+                <p className="text-gray-700 dark:text-gray-300 mb-6">
+                  The secret? They're not comparing features—they're managing risk. The winner is whoever makes success feel most certain. Want to see how to become the obvious choice?
+                </p>
+                
                 <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
                   <p className="text-sm text-gray-600 dark:text-gray-400 font-medium mb-2">Example Headline:</p>
                   <p className="text-gray-900 dark:text-white">"Marketing Agency vs Fractional CMO: Which Drives Faster Growth?"</p>
+                </div>
+                
+                <div className="mt-6">
+                  <a 
+                    href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/solution-aware-stage-customers`}
+                    className="inline-flex items-center text-orange-600 dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors"
+                  >
+                    See real customer examples and what actually works →
+                  </a>
                 </div>
               </div>
 
@@ -255,27 +252,26 @@ const MarketingPsychology = () => {
                     <p className="text-gray-600 dark:text-gray-400">They know your solution and are evaluating you specifically</p>
                   </div>
                 </div>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">What They're Thinking:</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
-                      <li>• "Can they deliver results for us?"</li>
-                      <li>• "What's their track record?"</li>
-                      <li>• "Is this worth the investment?"</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Your Message Strategy:</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
-                      <li>• Specific benefits and results</li>
-                      <li>• Objection handling</li>
-                      <li>• Risk reversal and guarantees</li>
-                    </ul>
-                  </div>
-                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  These prospects know about you specifically. They ask "Can you deliver for companies like us?" and "What if this doesn't work?" They're close to buying but need confidence.
+                </p>
+                
+                <p className="text-gray-700 dark:text-gray-300 mb-6">
+                  They don't need more features—they need reassurance. Address their hidden fears, show relevant success stories, and make saying yes feel safe. Ready to handle the real objections?
+                </p>
+                
                 <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
                   <p className="text-sm text-gray-600 dark:text-gray-400 font-medium mb-2">Example Headline:</p>
                   <p className="text-gray-900 dark:text-white">"How We Helped Norton Antivirus Grow from $100K to $3M Monthly Revenue"</p>
+                </div>
+                
+                <div className="mt-6">
+                  <a 
+                    href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/product-aware-stage-customers`}
+                    className="inline-flex items-center text-orange-600 dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors"
+                  >
+                    See real customer examples and what actually works →
+                  </a>
                 </div>
               </div>
 
@@ -290,27 +286,26 @@ const MarketingPsychology = () => {
                     <p className="text-gray-600 dark:text-gray-400">They're ready to buy and just need the final push</p>
                   </div>
                 </div>
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">What They're Thinking:</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
-                      <li>• "Let's move forward"</li>
-                      <li>• "What are the next steps?"</li>
-                      <li>• "When can we start?"</li>
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 dark:text-white mb-3">Your Message Strategy:</h4>
-                    <ul className="text-gray-700 dark:text-gray-300 space-y-1">
-                      <li>• Clear calls to action</li>
-                      <li>• Friction removal</li>
-                      <li>• Gentle urgency creation</li>
-                    </ul>
-                  </div>
-                </div>
+                <p className="text-gray-700 dark:text-gray-300 mb-4">
+                  These prospects are ready. They say "Send me the contract" or "Let me run this by my team one more time." They want to move forward but need that final nudge.
+                </p>
+                
+                <p className="text-gray-700 dark:text-gray-300 mb-6">
+                  Don't oversell—they're already sold. Remove friction, make the next step tiny, and give them control. The difference between "thinking about it" and signing today? Usually just one small fear.
+                </p>
+                
                 <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
                   <p className="text-sm text-gray-600 dark:text-gray-400 font-medium mb-2">Example Headline:</p>
                   <p className="text-gray-900 dark:text-white">"Get Your Free Marketing Analysis - Limited to 8 Clients This Quarter"</p>
+                </div>
+                
+                <div className="mt-6">
+                  <a 
+                    href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/most-aware-stage-customers`}
+                    className="inline-flex items-center text-orange-600 dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors"
+                  >
+                    See real customer examples and what actually works →
+                  </a>
                 </div>
               </div>
 
