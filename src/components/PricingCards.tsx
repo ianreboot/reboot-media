@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import type { Swiper as SwiperType } from 'swiper';
 // @ts-ignore
 import 'swiper/css';
 import '../styles/swiper-custom.css';
@@ -189,9 +190,30 @@ const PricingCard = ({ service }: { service: ServicePlan }) => {
 };
 
 const PricingCards = () => {
+  const swiperRef = useRef<SwiperType>(null);
+  useEffect(() => {
+    const handleResize = () => {
+      const newWidth = window.innerWidth;
+      
+      // Re-center on the middle card (index 1) when viewport changes
+      // Only for smaller screens where centering is enabled
+      if (swiperRef.current && newWidth < 1024) {
+        setTimeout(() => {
+          swiperRef.current?.slideTo(1, 300); // Smooth transition to middle card
+        }, 100); // Small delay to let breakpoint take effect
+      }
+    };
+    
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
   // More fluid responsive behavior - use Swiper for all sizes but adjust display
   return (
     <Swiper
+      onSwiper={(swiper) => {
+        swiperRef.current = swiper;
+      }}
       spaceBetween={24}
       slidesPerView="auto"
       centeredSlides={true}
