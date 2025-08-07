@@ -18,7 +18,7 @@ const SEOHead = ({
   canonicalUrl,
   ogTitle,
   ogDescription,
-  ogImage = "https://www.rebootmedia.net/reboot-media.avif",
+  ogImage = "https://www.rebootmedia.net/og-image.jpg",
   structuredData
 }: SEOHeadProps) => {
   useEffect(() => {

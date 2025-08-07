@@ -86,7 +86,7 @@ const PricingCard = ({ service }: { service: ServicePlan }) => {
   
   return (
     <div 
-      className="flex flex-col"
+      className="flex flex-col w-full"
       style={{ height: service.popular ? '100%' : 'auto', alignSelf: service.popular ? 'stretch' : 'center' }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -211,39 +211,23 @@ const PricingCards = () => {
     );
   }
 
-  // Mobile and tablet: simple responsive slider with fixed spacing
+  // Mobile and tablet: fluid responsive slider with consistent spacing
   return (
     <Swiper
-      spaceBetween={24}
+      spaceBetween={16}
       slidesPerView="auto"
       centeredSlides={true}
       initialSlide={1}
-      breakpoints={{
-        320: {
-          slidesPerView: 1.2,
-          spaceBetween: 16
-        },
-        480: {
-          slidesPerView: 1.3,
-          spaceBetween: 20
-        },
-        640: {
-          slidesPerView: 1.5,
-          spaceBetween: 24
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 24
-        },
-        900: {
-          slidesPerView: 2.5,
-          spaceBetween: 24
-        }
-      }}
       className="!py-8"
     >
       {services.map((service, index) => (
-        <SwiperSlide key={index} className="!flex !items-center !h-auto">
+        <SwiperSlide 
+          key={index} 
+          className="!flex !items-center !h-auto"
+          style={{ 
+            width: 'clamp(260px, 75vw, 360px)'
+          }}
+        >
           <PricingCard service={service} />
         </SwiperSlide>
       ))}
