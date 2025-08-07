@@ -19,12 +19,16 @@ npm run build:dev
 echo "📁 Copying build files to root..."
 cp dist/index.html .
 cp -r dist/assets .
-cp dist/reboot-media.avif .
-cp dist/vite.svg .
+# Copy optional files if they exist
+[ -f dist/reboot-media.avif ] && cp dist/reboot-media.avif .
+[ -f dist/vite.svg ] && cp dist/vite.svg .
 
 # Commit and push
 echo "📤 Committing and pushing to GitHub..."
-git add index.html assets/ reboot-media.avif vite.svg
+git add index.html assets/
+# Add optional files if they exist
+[ -f reboot-media.avif ] && git add reboot-media.avif
+[ -f vite.svg ] && git add vite.svg
 git commit -m "Deploy dev build - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
 git push origin master
 

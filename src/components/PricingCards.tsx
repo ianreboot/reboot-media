@@ -1,8 +1,4 @@
-import { useEffect, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-// @ts-ignore
-import 'swiper/css';
-import '../styles/swiper-custom.css';
+import { useState } from 'react';
 
 interface ServicePlan {
   title: string;
@@ -86,8 +82,7 @@ const PricingCard = ({ service }: { service: ServicePlan }) => {
   
   return (
     <div 
-      className="flex flex-col w-full"
-      style={{ height: service.popular ? '100%' : 'auto', alignSelf: service.popular ? 'stretch' : 'center' }}
+      className="flex flex-col w-full h-full"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
@@ -101,9 +96,7 @@ const PricingCard = ({ service }: { service: ServicePlan }) => {
       )}
       
       {/* Card */}
-      <div className={`rounded-3xl border-2 ${service.popular ? 'p-6' : 'p-5'} text-center flex flex-col transition-all duration-500 ${
-        service.popular ? 'flex-1' : ''
-      } ${
+      <div className={`rounded-3xl border-2 ${service.popular ? 'p-6' : 'p-5'} text-center flex flex-col transition-all duration-500 flex-1 ${
         service.color === 'orange' 
           ? `bg-gradient-to-br from-orange-500 to-orange-600 text-white border-orange-400 shadow-2xl ${hovered ? 'scale-105' : 'lg:scale-[1.02]'}`
           : service.color === 'blue'
@@ -155,7 +148,7 @@ const PricingCard = ({ service }: { service: ServicePlan }) => {
         }`}>{service.duration}</div>
 
         {/* Features */}
-        <ul className={`${service.popular ? 'space-y-2 mb-6' : 'space-y-1.5 mb-4'} text-left ${service.popular ? 'flex-1' : ''}`}>
+        <ul className={`${service.popular ? 'space-y-2 mb-6' : 'space-y-1.5 mb-4'} text-left flex-1`}>
           {service.features.map((feature, idx) => (
             <li key={idx} className={`${service.popular ? 'text-sm' : 'text-xs'} flex items-start ${
               service.color === 'orange' || service.color === 'blue' ? 'text-white/90' : 'text-slate-700'
@@ -189,49 +182,19 @@ const PricingCard = ({ service }: { service: ServicePlan }) => {
 };
 
 const PricingCards = () => {
-  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
-
-  useEffect(() => {
-    const checkScreenSize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024);
-    };
-    
-    window.addEventListener('resize', checkScreenSize);
-    return () => window.removeEventListener('resize', checkScreenSize);
-  }, []);
-
-  // On large screens (desktop), render as a grid
-  if (isLargeScreen) {
-    return (
-      <div className="grid grid-cols-3 gap-6 items-center">
-        {services.map((service, index) => (
-          <PricingCard key={index} service={service} />
-        ))}
-      </div>
-    );
-  }
-
-  // Mobile and tablet: fluid responsive slider with consistent spacing
   return (
-    <Swiper
-      spaceBetween={16}
-      slidesPerView="auto"
-      centeredSlides={true}
-      initialSlide={1}
-      className="!py-8"
+    <div 
+      className="grid gap-6 items-stretch"
+      style={{
+        gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+        maxWidth: '1200px',
+        margin: '0 auto'
+      }}
     >
       {services.map((service, index) => (
-        <SwiperSlide 
-          key={index} 
-          className="!flex !items-center !h-auto"
-          style={{ 
-            width: 'clamp(260px, 75vw, 360px)'
-          }}
-        >
-          <PricingCard service={service} />
-        </SwiperSlide>
+        <PricingCard key={index} service={service} />
       ))}
-    </Swiper>
+    </div>
   );
 };
 
