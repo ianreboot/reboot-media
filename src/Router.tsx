@@ -11,6 +11,13 @@ import SolutionAwareStageCustomers from './pages/SolutionAwareStageCustomers';
 import ProductAwareStageCustomers from './pages/ProductAwareStageCustomers';
 import MostAwareStageCustomers from './pages/MostAwareStageCustomers';
 import GrowthPlateauSolutions from './pages/GrowthPlateauSolutions';
+import RevenueCeilingBreakthrough from './pages/RevenueCeilingBreakthrough';
+import CustomerAcquisitionStall from './pages/CustomerAcquisitionStall';
+import MarketExpansionBarriers from './pages/MarketExpansionBarriers';
+import OperationalScalingCrisis from './pages/OperationalScalingCrisis';
+import TeamGrowthBottlenecks from './pages/TeamGrowthBottlenecks';
+import ProductMarketFitErosion from './pages/ProductMarketFitErosion';
+import CompetitivePressurePlateau from './pages/CompetitivePressurePlateau';
 import FractionalCMOGuide from './pages/FractionalCMOGuide';
 import ScrollToTop from './components/ScrollToTop';
 import { LeadFormProvider } from './contexts/LeadFormContext';
@@ -37,6 +44,13 @@ const Router = () => {
           <Route path="/marketing-psychology/product-aware-stage-customers" element={<ProductAwareStageCustomers />} />
           <Route path="/marketing-psychology/most-aware-stage-customers" element={<MostAwareStageCustomers />} />
           <Route path="/growth-plateau-solutions" element={<GrowthPlateauSolutions />} />
+          <Route path="/growth-plateau-solutions/revenue-ceiling-breakthrough" element={<RevenueCeilingBreakthrough />} />
+          <Route path="/growth-plateau-solutions/customer-acquisition-stall" element={<CustomerAcquisitionStall />} />
+          <Route path="/growth-plateau-solutions/market-expansion-barriers" element={<MarketExpansionBarriers />} />
+          <Route path="/growth-plateau-solutions/operational-scaling-crisis" element={<OperationalScalingCrisis />} />
+          <Route path="/growth-plateau-solutions/team-growth-bottlenecks" element={<TeamGrowthBottlenecks />} />
+          <Route path="/growth-plateau-solutions/product-market-fit-erosion" element={<ProductMarketFitErosion />} />
+          <Route path="/growth-plateau-solutions/competitive-pressure-plateau" element={<CompetitivePressurePlateau />} />
           <Route path="/fractional-cmo-guide" element={<FractionalCMOGuide />} />
         </Routes>
         <LeadForm />
