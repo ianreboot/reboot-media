@@ -272,6 +272,43 @@ const GlobalFooter = ({ onShowForm }: GlobalFooterProps) => {
                   </div>
                 </div>
                 
+                {/* Resources Accordion */}
+                <div className="border border-white/10 rounded-lg overflow-hidden">
+                  <button
+                    onClick={() => toggleSection('resources')}
+                    className="w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors"
+                  >
+                    <h4 className="font-bold text-white text-sm uppercase tracking-wider">Resources & Insights</h4>
+                    <svg 
+                      className={`w-5 h-5 text-gray-400 transition-transform duration-300 ${expandedSections['resources'] ? 'rotate-180' : ''}`} 
+                      fill="none" 
+                      stroke="currentColor" 
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                  </button>
+                  <div className={`transition-all duration-300 ${expandedSections['resources'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
+                    <ul className="px-4 py-3 space-y-2 bg-white/5">
+                      <li>
+                        <Link to="/marketing-psychology" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                          Marketing Psychology Guide
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/growth-plateau-solutions" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                          Break Growth Plateaus
+                        </Link>
+                      </li>
+                      <li>
+                        <Link to="/fractional-cmo-guide" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                          Fractional CMO vs Agency
+                        </Link>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                
                 {/* Company Accordion */}
                 <div className="border border-white/10 rounded-lg overflow-hidden">
                   <button
