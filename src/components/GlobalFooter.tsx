@@ -114,21 +114,27 @@ const GlobalFooter = ({ onShowForm }: GlobalFooterProps) => {
                   </ul>
                 </div>
                 
-                {/* Experience */}
+                {/* Resources */}
                 <div>
-                  <h4 className="font-bold text-white mb-3 text-sm uppercase tracking-wider">Proven Track Record</h4>
+                  <h4 className="font-bold text-white mb-3 text-sm uppercase tracking-wider">Resources & Insights</h4>
                   <ul className="space-y-1.5">
-                    <li className="text-gray-400 text-sm flex items-start">
-                      <span className="text-orange-500 mr-2">20+</span>
-                      Fortune 500 Companies
+                    <li>
+                      <Link to="/marketing-psychology" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
+                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                        Marketing Psychology Guide
+                      </Link>
                     </li>
-                    <li className="text-gray-400 text-sm flex items-start">
-                      <span className="text-orange-500 mr-2">$2B+</span>
-                      Revenue Under Management
+                    <li>
+                      <Link to="/growth-plateau-solutions" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
+                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                        Break Growth Plateaus
+                      </Link>
                     </li>
-                    <li className="text-gray-400 text-sm flex items-start">
-                      <span className="text-orange-500 mr-2">3X</span>
-                      Average Revenue Growth
+                    <li>
+                      <Link to="/fractional-cmo-guide" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm inline-flex items-center group">
+                        <span className="w-1 h-1 bg-orange-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                        Fractional CMO vs Agency
+                      </Link>
                     </li>
                   </ul>
                 </div>
