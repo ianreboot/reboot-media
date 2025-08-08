@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { getOrganizationUrl, getLogoUrl, getCanonicalUrl } from '../utils/urls';
 
 interface SchemaMarkupProps {
   type?: 'organization' | 'service' | 'article' | 'faq' | 'breadcrumb';
@@ -12,8 +13,8 @@ const SchemaMarkup = ({ type = 'organization', customData }: SchemaMarkupProps) 
     "@type": "Organization",
     "name": "Reboot Media, Inc.",
     "alternateName": "Reboot Media",
-    "url": "https://www.rebootmedia.net",
-    "logo": "https://www.rebootmedia.net/reboot-media.avif",
+    "url": getOrganizationUrl(),
+    "logo": getLogoUrl('reboot-media.avif'),
     "description": "Fractional CMO services providing C-level marketing leadership for growth-stage companies. Marketing psychology expertise that transforms $500K-$1.5M revenue companies into scalable enterprises.",
     "founder": {
       "@type": "Person",
@@ -150,25 +151,25 @@ const SchemaMarkup = ({ type = 'organization', customData }: SchemaMarkupProps) 
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://www.rebootmedia.net"
+        "item": getCanonicalUrl('')
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Marketing Psychology",
-        "item": "https://www.rebootmedia.net/marketing-psychology"
+        "item": getCanonicalUrl('marketing-psychology')
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": "Growth Plateau Solutions",
-        "item": "https://www.rebootmedia.net/growth-plateau-solutions"
+        "item": getCanonicalUrl('growth-plateau-solutions')
       },
       {
         "@type": "ListItem",
         "position": 4,
         "name": "Fractional CMO Guide",
-        "item": "https://www.rebootmedia.net/fractional-cmo-guide"
+        "item": getCanonicalUrl('fractional-cmo-guide')
       }
     ]
   };
@@ -177,10 +178,10 @@ const SchemaMarkup = ({ type = 'organization', customData }: SchemaMarkupProps) 
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Reboot Media, Inc.",
-    "image": "https://www.rebootmedia.net/reboot-media.avif",
+    "image": getLogoUrl('reboot-media.avif'),
     "priceRange": "$5,000 - $18,000 per month",
-    "@id": "https://www.rebootmedia.net",
-    "url": "https://www.rebootmedia.net",
+    "@id": getOrganizationUrl(),
+    "url": getOrganizationUrl(),
     "telephone": "",
     "address": {
       "@type": "PostalAddress",

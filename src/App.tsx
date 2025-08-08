@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { getCanonicalUrl } from './utils/urls';
 import GlobalHeader from './components/GlobalHeader';
 import GlobalFooter from './components/GlobalFooter';
 import PricingCards from './components/PricingCards';
@@ -8,7 +9,6 @@ import BackgroundGradient from './components/BackgroundGradient';
 import { useLeadForm } from './contexts/LeadFormContext';
 
 function App() {
-  const [scrollY, setScrollY] = useState(0);
   const [typedWord, setTypedWord] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -38,11 +38,6 @@ function App() {
     'Innovation'       // Modern vs traditional approaches
   ];
 
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
   
   // Typewriter effect with progressive slowdown
   useEffect(() => {
@@ -84,7 +79,7 @@ function App() {
         title="Fractional CMO Services | Marketing Psychology That Converts | Reboot Media"
         description="Break through revenue plateaus with psychology-driven fractional CMO services. Transform $500K-$1.5M companies into scalable enterprises. Proven $100K→$3M growth."
         keywords="fractional CMO, marketing psychology, revenue growth, growth plateau solutions, marketing strategy consultant"
-        canonicalUrl="https://www.rebootmedia.net/"
+        canonicalUrl={getCanonicalUrl('')}
       />
       <SchemaMarkup type="organization" />
       
@@ -96,49 +91,35 @@ function App() {
         <div className="relative z-10">
           <GlobalHeader onShowForm={() => setShowDropdownForm(true)} />
 
-      {/* Hero Section with Parallax Effect */}
-      <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden" style={{ paddingTop: 'clamp(5rem, 6vw, 2rem)', paddingBottom: 'clamp(1rem, 2vw, 2rem)' }}>
-        {/* Floating Elements */}
+      {/* Hero Section - Vertically Centered in Viewport */}
+      <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
+        {/* Simple Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
-          <div 
-            className="absolute top-20 left-10 w-20 h-20 bg-orange-400/20 rounded-full blur-xl"
-            style={{ transform: `translateY(${scrollY * 0.3}px) rotate(${scrollY * 0.1}deg)` }}
-          ></div>
-          <div 
-            className="absolute top-40 right-20 w-32 h-32 bg-stone-400/10 rounded-full blur-2xl"
-            style={{ transform: `translateY(${scrollY * 0.5}px) rotate(${-scrollY * 0.1}deg)` }}
-          ></div>
+          <div className="absolute top-20 left-10 w-20 h-20 bg-orange-400/20 rounded-full blur-xl"></div>
+          <div className="absolute top-40 right-20 w-32 h-32 bg-stone-400/10 rounded-full blur-2xl"></div>
         </div>
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          {/* Loss Aversion Headline */}
-          <div className="mb-4 sm:mb-6">
-            <h1 className="text-6xl sm:text-7xl md:text-9xl font-black text-slate-900 leading-[0.9]">
-              <span className="block">Stop Losing</span>
-              <span className="block mt-1">
-                <span className="text-orange-500 relative inline-block" style={{ minHeight: '1.0em' }}>
-                  {typedWord}
-                  <span className="animate-blink ml-0.5">|</span>
-                  <div className="absolute -inset-2 bg-orange-100 -skew-y-1 -z-10 rounded-lg"></div>
-                </span>
-              </span>
-              <span className="block">to <span className="text-gray-600 line-through decoration-red-500 decoration-4">Broken</span></span>
-              <span className="block mt-1">Marketing</span>
-            </h1>
-          </div>
+        <div className="w-full py-8">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          {/* Main Headline - Natural Spacing */}
+          <h1 className="heading-hero text-critical mb-6">
+            <span className="block">Stop Losing</span>
+            <span className="block text-orange-500">
+              {typedWord}<span className="animate-blink">|</span>
+            </span>
+            <span className="block">to <span className="text-optional line-through decoration-red-500 decoration-4">Broken</span> Marketing</span>
+          </h1>
           
-          {/* Authority Subheadline */}
-          <div className="mb-6 sm:mb-8">
-            <p className="text-base sm:text-lg md:text-xl text-slate-700 font-medium max-w-4xl mx-auto leading-relaxed">
-              Stop fumbling with amateur advice. Get <span className="font-bold text-slate-900">battle-tested strategies proven at Fortune 500 companies</span> that drive explosive growth
-            </p>
-          </div>
+          {/* Subheadline */}
+          <p className="text-xl text-standard max-w-4xl mx-auto mb-8">
+            Stop fumbling with amateur advice. Get <span className="font-bold text-important">battle-tested strategies proven at Fortune 500 companies</span> that drive explosive growth
+          </p>
 
           {/* Single Primary CTA */}
           <div className="flex justify-center">
             <button 
               onClick={() => setShowDropdownForm(true)}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center gap-3"
+              className="cta-primary px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center gap-3"
             >
               <span className="text-2xl">🔍</span>
               <span>Show Me What's Broken in My Marketing</span>
@@ -151,8 +132,8 @@ function App() {
               <div className="flex items-start">
                 <div className="w-3 h-3 bg-orange-500 rounded-full mr-4 mt-2 flex-shrink-0"></div>
                 <div>
-                  <div className="text-2xl font-black text-slate-900 mb-1">30X Growth</div>
-                  <div className="text-sm text-slate-700 font-medium leading-tight">
+                  <div className="text-2xl font-black text-important mb-1">30X Growth</div>
+                  <div className="text-sm text-standard font-medium leading-tight">
                     Companies see explosive revenue growth when psychology replaces guesswork
                   </div>
                 </div>
@@ -183,6 +164,7 @@ function App() {
               </div>
             </div>
           </div>
+          </div>
         </div>
       </section>
 
@@ -190,7 +172,7 @@ function App() {
       <section id="psychology" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(0.5rem, 1.5vw, 1rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
-            <h2 className="heading-xl text-slate-900 mb-6 sm:mb-8">
+            <h2 className="heading-xl text-critical mb-6 sm:mb-8">
               The <span className="text-red-500">$200K</span> Marketing Mistake
             </h2>
             <p className="text-xl text-stone-700 max-w-3xl mx-auto leading-normal">
@@ -258,7 +240,7 @@ function App() {
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm p-6 rounded-2xl border border-red-200/30 dark:border-red-400/30">
-                  <h4 className="font-bold text-red-800 mb-3 flex items-center">
+                  <h4 className="text-lg font-bold text-red-800 mb-3 flex items-center">
                     <span className="w-6 h-6 bg-red-200 rounded-full flex items-center justify-center text-xs text-red-800 mr-3">1</span>
                     The Curse of Knowledge
                   </h4>
@@ -267,7 +249,7 @@ function App() {
                   </p>
                 </div>
                 <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm p-6 rounded-2xl border border-red-200/30 dark:border-red-400/30">
-                  <h4 className="font-bold text-red-800 mb-3 flex items-center">
+                  <h4 className="text-lg font-bold text-red-800 mb-3 flex items-center">
                     <span className="w-6 h-6 bg-red-200 rounded-full flex items-center justify-center text-xs text-red-800 mr-3">2</span>
                     Replicate Not Customize
                   </h4>
@@ -295,7 +277,7 @@ function App() {
                   <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
                     <span className="text-green-800 font-bold">1</span>
                   </div>
-                  <h4 className="font-bold text-green-800 mb-3">Customer Perspective</h4>
+                  <h4 className="text-lg font-bold text-green-800 mb-3">Customer Perspective</h4>
                   <p className="text-green-700 text-base leading-relaxed">
                     I ask the same questions your prospects do, spotting exactly where they get confused
                   </p>
@@ -304,7 +286,7 @@ function App() {
                   <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
                     <span className="text-green-800 font-bold">2</span>
                   </div>
-                  <h4 className="font-bold text-green-800 mb-3">Question Everything</h4>
+                  <h4 className="text-lg font-bold text-green-800 mb-3">Question Everything</h4>
                   <p className="text-green-700 text-base leading-relaxed">
                     While experts accept "how we've always done it," I ask "why?" and find new opportunities
                   </p>
@@ -313,7 +295,7 @@ function App() {
                   <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
                     <span className="text-green-800 font-bold">3</span>
                   </div>
-                  <h4 className="font-bold text-green-800 mb-3">Executive Experience</h4>
+                  <h4 className="text-lg font-bold text-green-800 mb-3">Executive Experience</h4>
                   <p className="text-green-700 text-base leading-relaxed">
                     C-level strategies that work across industries - proven at 20+ US companies
                   </p>
@@ -573,11 +555,11 @@ function App() {
                 <span className="text-orange-300 text-sm font-semibold">Still Thinking About It?</span>
               </div>
               
-              <h2 className="heading-xl text-white mb-6" style={{ marginTop: '0.25rem' }}>
+              <h2 className="heading-xl mb-6 text-white" style={{ marginTop: '0.25rem', color: 'white' }}>
                 Every Month You Wait Costs You <span className="text-orange-400">$47,000</span> in Lost Revenue
               </h2>
               
-              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto">
+              <p className="text-xl mb-8 max-w-3xl mx-auto text-gray-300">
                 That's the average monthly opportunity cost for businesses operating without proper marketing strategy. 
                 Your competitors aren't waiting. <span className="text-orange-400 font-semibold">Neither should you.</span>
               </p>
@@ -642,11 +624,11 @@ function App() {
                 You Have Nothing to Lose (Except More Revenue)
               </h3>
               
-              <div className="text-gray-300 space-y-1 max-w-2xl mx-auto">
-                <p className="py-0.5">🚫 No credit card required</p>
-                <p className="py-0.5">🚫 No sales pressure</p>
-                <p className="py-0.5">🚫 No spam emails</p>
-                <p className="py-0.5">✅ Just honest insights about your marketing gaps</p>
+              <div className="text-gray-300 space-y-0 max-w-2xl mx-auto">
+                <p className="py-0">🚫 No credit card required</p>
+                <p className="py-0">🚫 No sales pressure</p>
+                <p className="py-0">🚫 No spam emails</p>
+                <p className="py-0">✅ Just honest insights about your marketing gaps</p>
               </div>
             </div>
 

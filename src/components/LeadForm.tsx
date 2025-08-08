@@ -46,8 +46,8 @@ const LeadForm = () => {
   if (!showDropdownForm) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[60] flex items-start justify-center pt-10 px-4">
-      <div className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full flex flex-col" style={{ maxHeight: '85vh' }}>
+    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-[60] flex items-start justify-center pt-4 md:pt-10 px-4">
+      <div className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full flex flex-col relative" style={{ maxHeight: '92vh' }}>
         <div className="absolute top-4 right-4 z-10">
           <button 
             onClick={() => {
@@ -74,7 +74,7 @@ const LeadForm = () => {
             </svg>
           </button>
         </div>
-        <div className="p-6 overflow-y-auto" style={{ scrollbarWidth: 'thin', scrollbarColor: '#CBD5E0 transparent' }}>
+        <div className="p-4 md:p-6 overflow-y-auto" style={{ scrollbarWidth: 'thin', scrollbarColor: '#CBD5E0 transparent' }}>
           {/* Step 1: Marketing Anxiety Acknowledgment */}
           {formStep === 1 && (
             <div className="text-center">
@@ -322,7 +322,7 @@ const LeadForm = () => {
                           type="text" 
                           value={formData.name}
                           onChange={(e) => setFormData({...formData, name: e.target.value})}
-                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                          className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
                           placeholder="John Smith"
                         />
                       </div>
@@ -332,7 +332,7 @@ const LeadForm = () => {
                           type="text" 
                           value={formData.company}
                           onChange={(e) => setFormData({...formData, company: e.target.value})}
-                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                          className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
                           placeholder="Acme Corp"
                         />
                       </div>
@@ -343,7 +343,7 @@ const LeadForm = () => {
                         type="email" 
                         value={formData.email}
                         onChange={(e) => setFormData({...formData, email: e.target.value})}
-                        className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                        className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
                         placeholder="your@company.com"
                       />
                     </div>
@@ -363,7 +363,7 @@ const LeadForm = () => {
                           value={formData.website}
                           onChange={(e) => setFormData({...formData, website: e.target.value})}
                           onBlur={(e) => handleFieldBlur('website', e.target.value)}
-                          className={`w-full px-3 py-3 border-2 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm ${
+                          className={`w-full px-3 py-2.5 border-2 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm ${
                             fieldValidation.website === 'valid' ? 'border-green-500' : 
                             fieldValidation.website === 'invalid' ? 'border-red-500' : 'border-gray-200'
                           }`}
@@ -376,7 +376,7 @@ const LeadForm = () => {
                           <select 
                             value={formData.industry}
                             onChange={(e) => setFormData({...formData, industry: e.target.value})}
-                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
+                            className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
                           >
                             <option value="">Select industry</option>
                             <option value="software">Software/SaaS</option>
@@ -393,7 +393,7 @@ const LeadForm = () => {
                           <select 
                             value={formData.teamSize}
                             onChange={(e) => setFormData({...formData, teamSize: e.target.value})}
-                            className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
+                            className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
                           >
                             <option value="">Select size</option>
                             <option value="1-10">1-10 employees</option>
@@ -418,7 +418,7 @@ const LeadForm = () => {
                         <textarea 
                           value={formData.specificIssue}
                           onChange={(e) => setFormData({...formData, specificIssue: e.target.value})}
-                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                          className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm placeholder:text-xs" 
                           placeholder="e.g., Not getting enough leads, poor conversion rates, unclear messaging, competitors beating us, website visitors not buying..."
                           rows={3}
                         />
@@ -428,7 +428,7 @@ const LeadForm = () => {
                         <textarea 
                           value={formData.currentMarketing}
                           onChange={(e) => setFormData({...formData, currentMarketing: e.target.value})}
-                          className="w-full px-3 py-3 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                          className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm placeholder:text-xs" 
                           placeholder="e.g., Google Ads, social media, content marketing, email campaigns, SEO..."
                           rows={2}
                         />

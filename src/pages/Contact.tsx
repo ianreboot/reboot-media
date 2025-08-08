@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Mail, MapPin, Globe, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
+import { getCanonicalUrl } from '../utils/urls';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
@@ -120,7 +121,7 @@ const Contact = () => {
         title="Contact Fractional CMO Services | Schedule Free Consultation | Reboot Media"
         description="Contact our fractional CMO consultants for executive-level marketing strategy. Schedule your free consultation with Fortune 500-experienced C-level marketing leaders. Available globally with offices in USA, Bangkok, and Singapore."
         keywords="contact fractional CMO, schedule CMO consultation, hire fractional Chief Marketing Officer, marketing executive consultant contact, C-level marketing strategy consultation, Fortune 500 marketing consultant"
-        canonicalUrl="https://www.rebootmedia.net/contact"
+        canonicalUrl={getCanonicalUrl('contact')}
         ogTitle="Contact Fractional CMO Services - Free Strategy Consultation"
         ogDescription="Schedule your free consultation with Fortune 500-experienced fractional CMO consultants. Get executive-level marketing leadership for your growing business."
         structuredData={contactPageStructuredData}
@@ -136,10 +137,10 @@ const Contact = () => {
           
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 dark:text-white mb-6">
+            <h1 className="heading-hero text-critical dark:text-white mb-6">
               Contact Us
             </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-important dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Ready to transform your marketing strategy? Let's discuss how our fractional CMO services 
               can drive measurable growth for your business.
             </p>
@@ -147,7 +148,7 @@ const Contact = () => {
 
           {/* Form Usage Guidance */}
           <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-2xl p-6 mb-8">
-            <h2 className="text-lg font-semibold text-orange-900 dark:text-orange-100 mb-3">
+            <h2 className="heading-sm text-important dark:text-orange-100 mb-3">
               Looking for Marketing Help?
             </h2>
             <p className="text-orange-800 dark:text-orange-200 mb-4">
@@ -167,8 +168,8 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">General Inquiries</h2>
-            <p className="text-gray-600 dark:text-gray-300 mb-4 text-sm">
+                <h2 className="heading-lg text-critical dark:text-white mb-6">General Inquiries</h2>
+            <p className="text-standard dark:text-gray-300 mb-4 text-sm">
               Use this form for legal inquiries, privacy questions, technical support, or other non-marketing matters.
             </p>
                 
@@ -197,7 +198,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      <label htmlFor="name" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
                         Full Name *
                       </label>
                       <input
@@ -212,7 +213,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      <label htmlFor="email" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
                         Email Address *
                       </label>
                       <input
@@ -230,7 +231,7 @@ const Contact = () => {
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      <label htmlFor="company" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
                         Company Name
                       </label>
                       <input
@@ -244,7 +245,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="website" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      <label htmlFor="website" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
                         Website URL
                       </label>
                       <input
@@ -261,7 +262,7 @@ const Contact = () => {
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      <label htmlFor="phone" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
                         Phone Number
                       </label>
                       <input
@@ -275,7 +276,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="serviceInterest" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                      <label htmlFor="serviceInterest" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
                         Service Interest
                       </label>
                       <select
@@ -296,7 +297,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    <label htmlFor="subject" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
                       Subject
                     </label>
                     <input
@@ -311,7 +312,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
                       Message *
                     </label>
                     <textarea
@@ -352,13 +353,13 @@ const Contact = () => {
               
               {/* Company Info */}
               <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">Get in Touch</h3>
+                <h3 className="heading-md text-important dark:text-white mb-4">Get in Touch</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <MapPin className="w-5 h-5 text-orange-500 mr-3 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900 dark:text-white">Address</p>
-                      <p className="text-gray-600 dark:text-gray-300">
+                      <p className="text-sm text-optional dark:text-gray-300">
                         17595 Harvard Ave C-738<br />
                         Irvine, CA 92614<br />
                         United States
@@ -369,7 +370,7 @@ const Contact = () => {
                     <Globe className="w-5 h-5 text-orange-500 mr-3 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900 dark:text-white">Service Areas</p>
-                      <p className="text-gray-600 dark:text-gray-300">
+                      <p className="text-sm text-optional dark:text-gray-300">
                         USA • Bangkok • Singapore<br />
                         Global services available
                       </p>
@@ -380,8 +381,8 @@ const Contact = () => {
 
               {/* Response Time */}
               <div className="bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900 dark:to-amber-900 rounded-2xl p-6">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Response Time</h3>
-                <p className="text-gray-700 dark:text-gray-300 text-sm">
+                <h3 className="heading-md text-important dark:text-white mb-2">Response Time</h3>
+                <p className="text-standard dark:text-gray-300 text-sm">
                   We typically respond to all inquiries within 24 hours during business days. 
                   For urgent matters, please mention it in your message subject line.
                 </p>
@@ -389,7 +390,7 @@ const Contact = () => {
 
               {/* Free Consultation CTA */}
               <div className="bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900 dark:to-indigo-900 rounded-2xl p-6">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Free Marketing Analysis</h3>
+                <h3 className="heading-md text-important dark:text-white mb-2">Free Marketing Analysis</h3>
                 <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
                   Ready to transform your marketing? Get a personalized analysis 
                   that shows exactly how to accelerate your business growth.

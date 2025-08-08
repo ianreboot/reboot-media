@@ -5,6 +5,7 @@ import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
 import BackgroundGradient from '../components/BackgroundGradient';
 import { useLeadForm } from '../contexts/LeadFormContext';
+import { getCanonicalUrl } from '../utils/urls';
 
 const FractionalCMOVsConsultant = () => {
   const { setShowDropdownForm } = useLeadForm();
@@ -118,7 +119,7 @@ const FractionalCMOVsConsultant = () => {
       <SEOHead 
         title="Fractional CMO vs Consultant: Results vs Recommendations | Reboot Media"
         description="Fractional CMO vs Consultant comparison. 7 scenarios revealing who owns results vs who gives advice. Implementation accountability matters."
-        canonicalUrl="https://www.rebootmedia.net/fractional-cmo-guide/vs-consultant"
+        canonicalUrl={getCanonicalUrl('fractional-cmo-vs-consultant')}
       />
 
       <div className="fractional-vs-consultant-page min-h-screen relative overflow-hidden dark:bg-gray-900">
@@ -146,7 +147,7 @@ const FractionalCMOVsConsultant = () => {
                   <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
                   Implementation Ownership vs Advice
                 </div>
-                <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+                <h1 className="heading-hero text-critical dark:text-white mb-6 leading-tight">
                   <span className="text-blue-400">Fractional CMO</span> vs
                   <span className="block text-purple-400 mt-2">Consultant</span>
                 </h1>
@@ -170,28 +171,28 @@ const FractionalCMOVsConsultant = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-8">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="heading-xl text-critical dark:text-white mb-6">
                   Why Great Recommendations Don't Equal Great Results
                 </h2>
-                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
                   The gap between strategy and execution is where most companies fail. Consultants deliver brilliant 100-page strategies 
                   that sit on shelves. Fractional CMOs roll up their sleeves and make things happen.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-purple-600 mb-1">87%</div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Strategies never fully implemented</p>
+                    <p className="text-sm text-optional dark:text-gray-400">Strategies never fully implemented</p>
                   </div>
                   <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-blue-600 mb-1">$75K</div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Average consulting project cost</p>
+                    <p className="text-sm text-optional dark:text-gray-400">Average consulting project cost</p>
                   </div>
                   <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">14%</div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Achieve promised ROI</p>
+                    <p className="text-sm text-optional dark:text-gray-400">Achieve promised ROI</p>
                   </div>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 font-semibold">
+                <p className="text-standard dark:text-gray-300 font-semibold">
                   The pattern: Great strategy → Poor implementation → Blame execution → Hire another consultant
                 </p>
               </div>
@@ -199,7 +200,7 @@ const FractionalCMOVsConsultant = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+              <h2 className="heading-xl text-critical dark:text-white mb-12 text-center">
                 7 Consultant vs Fractional CMO Scenarios (Which is Yours?)
               </h2>
               
@@ -209,7 +210,7 @@ const FractionalCMOVsConsultant = () => {
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="text-2xl font-bold text-white mb-2">
+                          <h3 className="heading-lg text-white mb-2">
                             {scenario.title}
                           </h3>
                           <div className="flex gap-4 text-sm text-purple-100">
@@ -229,21 +230,21 @@ const FractionalCMOVsConsultant = () => {
                         {/* Company Says */}
                         <div className="space-y-6">
                           <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500">
-                            <h4 className="font-bold text-red-800 dark:text-red-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-red-800 dark:text-red-300 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Company Says:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300 italic">
+                            <p className="text-standard dark:text-gray-300 italic">
                               "{scenario.companySays}"
                             </p>
                           </div>
                           
                           <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4 border-l-4 border-purple-500">
-                            <h4 className="font-bold text-purple-800 dark:text-purple-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-purple-800 dark:text-purple-300 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-standard dark:text-gray-300">
                               {scenario.companyThinks}
                             </p>
                           </div>
@@ -252,21 +253,21 @@ const FractionalCMOVsConsultant = () => {
                         {/* Solutions */}
                         <div className="space-y-6">
                           <div className="bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border-l-4 border-orange-500">
-                            <h4 className="font-bold text-orange-800 dark:text-orange-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-orange-800 dark:text-orange-300 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-standard dark:text-gray-300">
                               {scenario.realConsideration}
                             </p>
                           </div>
                           
                           <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border-l-4 border-blue-500">
-                            <h4 className="font-bold text-blue-800 dark:text-blue-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-blue-800 dark:text-blue-300 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-standard dark:text-gray-300">
                               {scenario.evaluationFramework}
                             </p>
                           </div>
@@ -275,11 +276,11 @@ const FractionalCMOVsConsultant = () => {
                       
                       {/* Outcome */}
                       <div className="mt-6 bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border border-green-200 dark:border-green-800">
-                        <h4 className="font-bold text-green-800 dark:text-green-300 mb-2 flex items-center">
+                        <h4 className="heading-md text-green-800 dark:text-green-300 mb-2 flex items-center">
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-gray-700 dark:text-gray-300 font-medium">
+                        <p className="text-standard dark:text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -292,10 +293,10 @@ const FractionalCMOVsConsultant = () => {
             {/* Call to Action */}
             <section className="mb-16">
               <div className="text-center bg-gradient-to-r from-purple-50 to-blue-50 dark:from-purple-900/20 dark:to-blue-900/20 rounded-2xl p-8 border border-purple-200/50 dark:border-purple-800/50">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                <h3 className="heading-lg text-critical dark:text-white mb-4">
                   🚨 Stop Paying for Advice Without Accountability
                 </h3>
-                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-standard dark:text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you implement consultant recommendations without support, you're wasting strategy investments. 
                   Get your free implementation assessment and discover whether you need advice or results ownership.
                 </p>
@@ -313,27 +314,27 @@ const FractionalCMOVsConsultant = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  <h3 className="heading-lg text-critical dark:text-white mb-3">
                     <Link to="/fractional-cmo-guide/transition-strategies" className="hover:text-purple-600 transition-colors" onClick={() => window.scrollTo(0, 0)}>
                       Stop Wasting $75K on Unimplemented Strategy →
                     </Link>
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-standard dark:text-gray-300">
                     Have great strategy but can't execute? Learn how to transition from consultant advice to fractional CMO implementation.
                   </p>
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  <h3 className="heading-lg text-critical dark:text-white mb-3">
                     <Link to="/marketing-psychology" className="hover:text-purple-600 transition-colors" onClick={() => window.scrollTo(0, 0)}>
                       Psychology That Beats Industry Tactics →
                     </Link>
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-standard dark:text-gray-300">
                     Consultants give industry tactics. Fractional CMOs apply universal psychology. Learn the principles that drive results.
                   </p>
                 </div>

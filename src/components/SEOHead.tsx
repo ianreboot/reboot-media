@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { getOgImageUrl } from '../utils/urls';
 
 interface SEOHeadProps {
   title: string;
@@ -18,7 +19,7 @@ const SEOHead = ({
   canonicalUrl,
   ogTitle,
   ogDescription,
-  ogImage = "https://www.rebootmedia.net/og-image.jpg",
+  ogImage = getOgImageUrl('og-image.jpg'),
   structuredData
 }: SEOHeadProps) => {
   useEffect(() => {

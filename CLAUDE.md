@@ -5,18 +5,42 @@
 **BUSINESS**: Fractional CMO services at https://www.rebootmedia.net/
 **COMPANY**: Reboot Media, Inc., Irvine CA (Ian Ho, LinkedIn: /in/ian-ho/)
 
-## 🚀 DEPLOYMENT COMMANDS (MANDATORY - ALWAYS USE THESE)
+## 🚀 DEPLOYMENT PROTOCOL (MANDATORY - FOLLOW EXACTLY)
 
-**STOP** - Never use git push for deployment. Use these commands:
+### STEP 1: Commit Your Changes First
+```bash
+# ALWAYS commit with meaningful message BEFORE deploying
+git add -A
+git commit -m "[Component/Feature]: What changed and why
+
+- Specific change 1
+- Specific change 2
+- Impact or fix description"
+```
+
+### STEP 2: Deploy Using Standard Commands
 - **Deploy to Dev**: `npm run deploy:dev` → Report: "✅ Deployed to https://dev.rebootmedia.net/reboot/"
 - **Deploy to Prod**: `npm run deploy:prod` → Report: "✅ Deployed to https://www.rebootmedia.net/"
 
-**Critical Notes**:
-- **Development**: Builds and pushes to GitHub automatically
-- **Production**: Builds, then requires manual upload of dist/ folder
-- **See**: `DEPLOYMENT.md` for full details and troubleshooting
+### Why This Two-Step Process:
+1. **Meaningful history**: Your commit describes the actual changes
+2. **Deploy script**: Handles the build/copy/push mechanics automatically
+3. **No forgotten steps**: Script ensures correct base paths (/reboot/ vs /)
 
-**Before marking ANY task complete**: Did you run the appropriate deploy command?
+**Example Commit Messages**:
+- "Hero: Fix H1 semantic structure for SEO compliance"
+- "Navigation: Resolve z-index conflicts on mobile breakpoints"  
+- "Forms: Add client-side validation for email fields"
+- "Performance: Implement lazy loading for below-fold images"
+
+**Critical Notes**:
+- **Development**: Uses `/reboot/` base path
+- **Production**: Uses `/` root path
+- **See**: `DEPLOYMENT.md` for troubleshooting
+
+**Before marking ANY task complete**: 
+1. Did you commit with a meaningful message?
+2. Did you run the appropriate deploy command?
 
 ## ⚠️ ACTIVE ISSUES
 

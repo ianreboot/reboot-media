@@ -14,9 +14,9 @@
   max-height: 85vh; /* cap hero section */
 }
 
-/* Tighten paragraph spacing slightly */
+/* Restore paragraph spacing */
 p {
-  margin-bottom: 1rem; /* was likely 1.25-1.5rem */
+  margin-bottom: 1rem; /* restored standard margin */
 }
 
 /* Reduce heading margins slightly */
@@ -122,6 +122,11 @@ h3 {
     rgba(251, 146, 60, 0.3),
     transparent
   );
+}
+
+/* Lead form benefits - no spacing */
+.py-0 {
+  margin-bottom: 0 !important;
 }
 
 /* Mobile optimizations - even tighter */

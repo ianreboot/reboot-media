@@ -5,6 +5,7 @@ import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
 import BackgroundGradient from '../components/BackgroundGradient';
 import { useLeadForm } from '../contexts/LeadFormContext';
+import { getCanonicalUrl } from '../utils/urls';
 
 const TransitionStrategies = () => {
   const { setShowDropdownForm } = useLeadForm();
@@ -118,7 +119,7 @@ const TransitionStrategies = () => {
       <SEOHead 
         title="Marketing Leadership Transition Strategies: When to Switch | Reboot Media"
         description="Marketing leadership transition guide. 7 transition patterns from agency to fractional, consultant to CMO, and scaling strategies that work."
-        canonicalUrl="https://www.rebootmedia.net/fractional-cmo-guide/transition-strategies"
+        canonicalUrl={getCanonicalUrl('transition-strategies')}
       />
 
       <div className="transition-strategies-page min-h-screen relative overflow-hidden dark:bg-gray-900">
@@ -146,7 +147,7 @@ const TransitionStrategies = () => {
                   <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
                   When and How to Switch Approaches
                 </div>
-                <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+                <h1 className="heading-hero text-critical dark:text-white mb-6 leading-tight">
                   <span className="text-purple-400">Marketing Leadership</span>
                   <span className="block text-pink-400 mt-2">Transition Strategies</span>
                 </h1>
@@ -170,28 +171,28 @@ const TransitionStrategies = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-8">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="heading-xl text-critical dark:text-white mb-6">
                   Why Most Marketing Transitions Fail (And How to Succeed)
                 </h2>
-                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
                   Most companies switch marketing approaches reactively—when pain becomes unbearable. Smart companies transition 
                   proactively, using growth triggers and strategic milestones to guide evolution from one model to another.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-purple-600 mb-1">82%</div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Switch reactively in crisis</p>
+                    <p className="text-sm text-optional dark:text-gray-400">Switch reactively in crisis</p>
                   </div>
                   <div className="text-center p-4 bg-pink-50 dark:bg-pink-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-pink-600 mb-1">6mo</div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Lost during transitions</p>
+                    <p className="text-sm text-optional dark:text-gray-400">Lost during transitions</p>
                   </div>
                   <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">31%</div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Have transition plan</p>
+                    <p className="text-sm text-optional dark:text-gray-400">Have transition plan</p>
                   </div>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 font-semibold">
+                <p className="text-standard dark:text-gray-300 font-semibold">
                   The pattern: Pain → Panic switch → Lost momentum → Recovery → Growth
                 </p>
               </div>
@@ -199,7 +200,7 @@ const TransitionStrategies = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+              <h2 className="heading-xl text-critical dark:text-white mb-12 text-center">
                 7 Transition Patterns (Which Stage Are You In?)
               </h2>
               
@@ -209,7 +210,7 @@ const TransitionStrategies = () => {
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="text-2xl font-bold text-white mb-2">
+                          <h3 className="heading-lg text-white mb-2">
                             {scenario.title}
                           </h3>
                           <div className="flex gap-4 text-sm text-purple-100">
@@ -229,21 +230,21 @@ const TransitionStrategies = () => {
                         {/* Company Says */}
                         <div className="space-y-6">
                           <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500">
-                            <h4 className="font-bold text-red-800 dark:text-red-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-red-800 dark:text-red-300 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Company Says:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300 italic">
+                            <p className="text-standard dark:text-gray-300 italic">
                               "{scenario.companySays}"
                             </p>
                           </div>
                           
                           <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4 border-l-4 border-purple-500">
-                            <h4 className="font-bold text-purple-800 dark:text-purple-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-purple-800 dark:text-purple-300 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-standard dark:text-gray-300">
                               {scenario.companyThinks}
                             </p>
                           </div>
@@ -252,21 +253,21 @@ const TransitionStrategies = () => {
                         {/* Solutions */}
                         <div className="space-y-6">
                           <div className="bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border-l-4 border-orange-500">
-                            <h4 className="font-bold text-orange-800 dark:text-orange-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-orange-800 dark:text-orange-300 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-standard dark:text-gray-300">
                               {scenario.realConsideration}
                             </p>
                           </div>
                           
                           <div className="bg-pink-50 dark:bg-pink-900/20 rounded-lg p-4 border-l-4 border-pink-500">
-                            <h4 className="font-bold text-pink-800 dark:text-pink-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-pink-800 dark:text-pink-300 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-standard dark:text-gray-300">
                               {scenario.evaluationFramework}
                             </p>
                           </div>
@@ -275,11 +276,11 @@ const TransitionStrategies = () => {
                       
                       {/* Outcome */}
                       <div className="mt-6 bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border border-green-200 dark:border-green-800">
-                        <h4 className="font-bold text-green-800 dark:text-green-300 mb-2 flex items-center">
+                        <h4 className="heading-md text-green-800 dark:text-green-300 mb-2 flex items-center">
                           <span className="mr-2">🎯</span>
                           Transition Strategy:
                         </h4>
-                        <p className="text-gray-700 dark:text-gray-300 font-medium">
+                        <p className="text-standard dark:text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -292,7 +293,7 @@ const TransitionStrategies = () => {
             {/* Transition Timeline */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-8">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="heading-xl text-critical dark:text-white mb-6">
                   Typical Marketing Evolution Timeline
                 </h2>
                 <div className="space-y-4">
@@ -300,35 +301,35 @@ const TransitionStrategies = () => {
                     <div className="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">1</div>
                     <div>
                       <strong className="text-gray-900 dark:text-white">$0-500K:</strong>
-                      <span className="text-gray-700 dark:text-gray-300 ml-2">Founder-led marketing or DIY approach</span>
+                      <span className="text-standard dark:text-gray-300 ml-2">Founder-led marketing or DIY approach</span>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">2</div>
                     <div>
                       <strong className="text-gray-900 dark:text-white">$500K-1M:</strong>
-                      <span className="text-gray-700 dark:text-gray-300 ml-2">First agency or consultant engagement</span>
+                      <span className="text-standard dark:text-gray-300 ml-2">First agency or consultant engagement</span>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">3</div>
                     <div>
                       <strong className="text-gray-900 dark:text-white">$1M-3M:</strong>
-                      <span className="text-gray-700 dark:text-gray-300 ml-2">Fractional CMO for strategic growth</span>
+                      <span className="text-standard dark:text-gray-300 ml-2">Fractional CMO for strategic growth</span>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">4</div>
                     <div>
                       <strong className="text-gray-900 dark:text-white">$3M-5M:</strong>
-                      <span className="text-gray-700 dark:text-gray-300 ml-2">Hybrid: Fractional CMO + internal team</span>
+                      <span className="text-standard dark:text-gray-300 ml-2">Hybrid: Fractional CMO + internal team</span>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">5</div>
                     <div>
                       <strong className="text-gray-900 dark:text-white">$5M+:</strong>
-                      <span className="text-gray-700 dark:text-gray-300 ml-2">Full-time CMO with complete team</span>
+                      <span className="text-standard dark:text-gray-300 ml-2">Full-time CMO with complete team</span>
                     </div>
                   </div>
                 </div>
@@ -338,10 +339,10 @@ const TransitionStrategies = () => {
             {/* Call to Action */}
             <section className="mb-16">
               <div className="text-center bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-2xl p-8 border border-purple-200/50 dark:border-purple-800/50">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                <h3 className="heading-lg text-critical dark:text-white mb-4">
                   🚨 Stop Losing Momentum During Transitions
                 </h3>
-                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-standard dark:text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you delay a necessary transition or switch reactively without a plan costs you growth momentum. 
                   Get your free transition roadmap and switch smoothly to the right marketing leadership model.
                 </p>
@@ -359,27 +360,27 @@ const TransitionStrategies = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
                 Related Transition Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  <h3 className="heading-lg text-critical dark:text-white mb-3">
                     <Link to="/fractional-cmo-guide/cost-roi-analysis" className="hover:text-purple-600 transition-colors" onClick={() => window.scrollTo(0, 0)}>
                       Save $200K During Transition →
                     </Link>
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-standard dark:text-gray-300">
                     Understanding the true costs and returns of switching marketing approaches. Make data-driven transition decisions.
                   </p>
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  <h3 className="heading-lg text-critical dark:text-white mb-3">
                     <Link to="/growth-plateau-solutions" className="hover:text-purple-600 transition-colors" onClick={() => window.scrollTo(0, 0)}>
                       8 Plateau Patterns Forcing Change →
                     </Link>
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-standard dark:text-gray-300">
                     Revenue plateaus often signal the need for marketing leadership transitions. Identify your plateau pattern.
                   </p>
                 </div>

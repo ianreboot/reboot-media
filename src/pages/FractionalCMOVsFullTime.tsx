@@ -5,6 +5,7 @@ import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
 import BackgroundGradient from '../components/BackgroundGradient';
 import { useLeadForm } from '../contexts/LeadFormContext';
+import { getCanonicalUrl } from '../utils/urls';
 
 const FractionalCMOVsFullTime = () => {
   const { setShowDropdownForm } = useLeadForm();
@@ -118,7 +119,7 @@ const FractionalCMOVsFullTime = () => {
       <SEOHead 
         title="Fractional vs Full-Time CMO: Cost Efficiency vs Status | Reboot Media"
         description="Fractional vs Full-Time CMO decision guide. 7 scenarios revealing when ego drives decisions vs business logic. Real cost and capability analysis."
-        canonicalUrl="https://www.rebootmedia.net/fractional-cmo-guide/vs-full-time-cmo"
+        canonicalUrl={getCanonicalUrl('fractional-cmo-vs-full-time')}
       />
 
       <div className="fractional-vs-fulltime-page min-h-screen relative overflow-hidden dark:bg-gray-900">
@@ -146,7 +147,7 @@ const FractionalCMOVsFullTime = () => {
                   <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                   Cost Efficiency vs Status Symbolism
                 </div>
-                <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+                <h1 className="heading-hero text-critical dark:text-white mb-6 leading-tight">
                   <span className="text-blue-400">Fractional</span> vs
                   <span className="block text-green-400 mt-2">Full-Time CMO</span>
                 </h1>
@@ -170,28 +171,28 @@ const FractionalCMOVsFullTime = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="heading-xl text-critical dark:text-white mb-6">
                   Why Status Decisions Cost You $200K+ Per Year
                 </h2>
-                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
                   The decision between fractional and full-time CMO is often driven by status and perception rather than workload analysis. 
                   Companies hire full-time for the title, then wonder why they're paying executive salaries for director-level work.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">71%</div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Hire for status, not workload</p>
+                    <p className="text-sm text-optional dark:text-gray-400">Hire for status, not workload</p>
                   </div>
                   <div className="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">$250K+</div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">True full-time cost</p>
+                    <p className="text-sm text-optional dark:text-gray-400">True full-time cost</p>
                   </div>
                   <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-blue-600 mb-1">40%</div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Underutilized capacity</p>
+                    <p className="text-sm text-optional dark:text-gray-400">Underutilized capacity</p>
                   </div>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 font-semibold">
+                <p className="text-standard dark:text-gray-300 font-semibold">
                   The pattern: Status decision → Overpay for role → Underutilization → Turnover
                 </p>
               </div>
@@ -199,7 +200,7 @@ const FractionalCMOVsFullTime = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+              <h2 className="heading-xl text-critical dark:text-white mb-12 text-center">
                 7 Full-Time vs Fractional Decisions (Which is Yours?)
               </h2>
               
@@ -209,7 +210,7 @@ const FractionalCMOVsFullTime = () => {
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="text-2xl font-bold text-white mb-2">
+                          <h3 className="heading-lg text-white mb-2">
                             {scenario.title}
                           </h3>
                           <div className="flex gap-4 text-sm text-green-100">
@@ -229,21 +230,21 @@ const FractionalCMOVsFullTime = () => {
                         {/* Company Says */}
                         <div className="space-y-6">
                           <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500">
-                            <h4 className="font-bold text-red-800 dark:text-red-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-red-800 dark:text-red-300 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Company Says:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300 italic">
+                            <p className="text-standard dark:text-gray-300 italic">
                               "{scenario.companySays}"
                             </p>
                           </div>
                           
                           <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border-l-4 border-green-500">
-                            <h4 className="font-bold text-green-800 dark:text-green-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-green-800 dark:text-green-300 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-standard dark:text-gray-300">
                               {scenario.companyThinks}
                             </p>
                           </div>
@@ -252,21 +253,21 @@ const FractionalCMOVsFullTime = () => {
                         {/* Solutions */}
                         <div className="space-y-6">
                           <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4 border-l-4 border-yellow-500">
-                            <h4 className="font-bold text-yellow-800 dark:text-yellow-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-yellow-800 dark:text-yellow-300 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-standard dark:text-gray-300">
                               {scenario.realConsideration}
                             </p>
                           </div>
                           
                           <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border-l-4 border-blue-500">
-                            <h4 className="font-bold text-blue-800 dark:text-blue-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-blue-800 dark:text-blue-300 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-standard dark:text-gray-300">
                               {scenario.evaluationFramework}
                             </p>
                           </div>
@@ -275,11 +276,11 @@ const FractionalCMOVsFullTime = () => {
                       
                       {/* Outcome */}
                       <div className="mt-6 bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4 border border-purple-200 dark:border-purple-800">
-                        <h4 className="font-bold text-purple-800 dark:text-purple-300 mb-2 flex items-center">
+                        <h4 className="heading-md text-purple-800 dark:text-purple-300 mb-2 flex items-center">
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-gray-700 dark:text-gray-300 font-medium">
+                        <p className="text-standard dark:text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -292,10 +293,10 @@ const FractionalCMOVsFullTime = () => {
             {/* Call to Action */}
             <section className="mb-16">
               <div className="text-center bg-gradient-to-r from-blue-50 to-green-50 dark:from-blue-900/20 dark:to-green-900/20 rounded-2xl p-8 border border-green-200/50 dark:border-green-800/50">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                <h3 className="heading-lg text-critical dark:text-white mb-4">
                   🚨 Stop Overpaying for Underutilized Talent
                 </h3>
-                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-standard dark:text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you pay for full-time when you need fractional, you're burning $10K+ on underutilized capacity. 
                   Get your free workload analysis and discover if you have $200K worth of strategic work.
                 </p>
@@ -313,27 +314,27 @@ const FractionalCMOVsFullTime = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  <h3 className="heading-lg text-critical dark:text-white mb-3">
                     <Link to="/fractional-cmo-guide/transition-strategies" className="hover:text-green-600 transition-colors" onClick={() => window.scrollTo(0, 0)}>
                       When $200K CMO Actually Makes Sense →
                     </Link>
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-standard dark:text-gray-300">
                     When and how to transition from fractional to full-time CMO. Growth triggers and transition strategies that work.
                   </p>
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  <h3 className="heading-lg text-critical dark:text-white mb-3">
                     <Link to="/growth-plateau-solutions/revenue-ceiling-breakthrough" className="hover:text-green-600 transition-colors" onClick={() => window.scrollTo(0, 0)}>
                       Break Your $1M Revenue Ceiling →
                     </Link>
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-standard dark:text-gray-300">
                     The fractional vs full-time decision often happens at revenue plateaus. Break through with the right leadership model.
                   </p>
                 </div>

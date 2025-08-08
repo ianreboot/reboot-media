@@ -86,7 +86,7 @@ const GlobalFooter = ({}: GlobalFooterProps) => {
                 <div className="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 h-full flex flex-col justify-between">
                   <div>
                     <h4 className="text-sm font-medium text-gray-400 mb-4">Global Headquarters</h4>
-                    <p className="text-sm text-gray-300 leading-relaxed">
+                    <p className="text-xs text-gray-300 leading-relaxed">
                       17595 Harvard Ave C-738<br />
                       Irvine, California 92614<br />
                       United States of America
@@ -96,7 +96,7 @@ const GlobalFooter = ({}: GlobalFooterProps) => {
                     <p className="text-xs text-gray-400 uppercase tracking-wider mb-2">Operating Globally</p>
                     <div className="flex items-center gap-2">
                       <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-                      <span className="text-sm text-gray-300">USA • Bangkok • Singapore</span>
+                      <span className="text-xs text-gray-300">USA • Bangkok • Singapore</span>
                     </div>
                   </div>
                 </div>

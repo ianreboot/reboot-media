@@ -24,9 +24,9 @@
   --space-2xl: clamp(2rem, 4vw, 4rem);        /* 32px-64px */
   
   /* Typography Scale with Fluid Sizing */
-  --text-xs: clamp(0.75rem, 0.8vw, 0.875rem);     /* 12px-14px */
-  --text-sm: clamp(0.875rem, 0.9vw, 1rem);        /* 14px-16px */
-  --text-base: clamp(1rem, 1vw, 1.125rem);        /* 16px-18px */
+  --text-xs: clamp(1rem, 1vw, 1.125rem);          /* 16px-18px */
+  --text-sm: clamp(1.125rem, 1.2vw, 1.25rem);     /* 18px-20px */
+  --text-base: clamp(1.25rem, 1.3vw, 1.375rem);   /* 20px-22px */
   --text-lg: clamp(1.125rem, 1.2vw, 1.375rem);    /* 18px-22px */
   --text-xl: clamp(1.25rem, 1.4vw, 1.75rem);      /* 20px-28px */
   --text-2xl: clamp(1.5rem, 1.8vw, 2.25rem);      /* 24px-36px */
@@ -43,7 +43,29 @@
   /* Custom fonts */
   --font-sans: 'Figtree', ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   
-  /* Color System (60-30-10 Psychology Rule) */
+  /* Subliminal Hierarchy System (Advanced Psychology) */
+  /* Black Hierarchy - Reading Priority Signals */
+  --black-critical: hsl(0, 0%, 5%);     /* Must read - main headlines */
+  --black-important: hsl(0, 0%, 15%);   /* Should read - section headers */
+  --black-standard: hsl(0, 0%, 25%);    /* Normal read - body text */
+  --black-optional: hsl(0, 0%, 35%);    /* Can skip - supporting details */
+  --black-metadata: hsl(0, 0%, 45%);    /* Skip unless needed - timestamps */
+  --black-decorative: hsl(0, 0%, 65%);  /* Ignore - borders, dividers */
+
+  /* White Hierarchy - Attention Priority Signals */
+  --white-critical: hsl(0, 0%, 100%);   /* ONLY for critical CTAs */
+  --white-primary: hsl(0, 0%, 97%);     /* Important content backgrounds */
+  --white-secondary: hsl(0, 0%, 94%);   /* Supporting content */
+  --white-tertiary: hsl(0, 0%, 91%);    /* Background elements */
+  --white-ambient: hsl(0, 0%, 98%);     /* Page background */
+
+  /* CTA Hierarchy - Action Priority Prevention */
+  --cta-primary: hsl(25, 100%, 50%);    /* Most important action */
+  --cta-secondary: hsl(25, 85%, 45%);   /* Secondary action */
+  --cta-tertiary: hsl(25, 70%, 40%);    /* Supporting action */
+  --cta-subtle: hsl(25, 50%, 35%);      /* Minimal action */
+
+  /* Color System (60-30-10 Psychology Rule) - Legacy */
   /* 60% - Neutral Base Colors */
   --color-stone-50: #fafaf9;
   --color-stone-100: #f5f5f4;
@@ -179,7 +201,7 @@ body {
 /* Semantic Heading Classes (SEO-optimized, visually consistent) */
 @layer components {
   .heading-hero {
-    font-size: clamp(3rem, 8vw, 7rem); /* Responsive hero sizing */
+    font-size: clamp(2.25rem, 4vw, 3.75rem); /* Responsive hero sizing - reduced from 7rem max */
     font-weight: 900;
     line-height: var(--leading-tight);
     letter-spacing: -0.02em;
@@ -210,6 +232,83 @@ body {
     font-size: var(--text-xl); /* 20px-28px fluid */
     font-weight: 700;
     line-height: var(--leading-form);
+  }
+
+  /* Subliminal Hierarchy Classes - Auto-adjust for dark backgrounds */
+  .text-critical { color: var(--black-critical); }
+  .text-important { color: var(--black-important); }
+  .text-standard { color: var(--black-standard); }
+  .text-optional { color: var(--black-optional); }
+  .text-metadata { color: var(--black-metadata); }
+  .text-decorative { color: var(--black-decorative); }
+  
+  /* Override for dark backgrounds ONLY in hero sections with actual dark backgrounds */
+  section[class*="bg-gradient-to-br"][class*="from-slate-9"] .text-critical,
+  section[class*="bg-black"] .text-critical,
+  .dark .text-critical {
+    color: white;
+  }
+  
+  section[class*="bg-gradient-to-br"][class*="from-slate-9"] .text-important,
+  section[class*="bg-black"] .text-important,
+  .dark .text-important {
+    color: rgba(255, 255, 255, 0.95);
+  }
+  
+  section[class*="bg-gradient-to-br"][class*="from-slate-9"] .text-standard,
+  section[class*="bg-black"] .text-standard,
+  .dark .text-standard {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  
+  section[class*="bg-gradient-to-br"][class*="from-slate-9"] .text-optional,
+  section[class*="bg-black"] .text-optional,
+  .dark .text-optional {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .bg-critical { background-color: var(--white-critical); }
+  .bg-primary { background-color: var(--white-primary); }
+  .bg-secondary { background-color: var(--white-secondary); }
+  .bg-tertiary { background-color: var(--white-tertiary); }
+  .bg-ambient { background-color: var(--white-ambient); }
+  
+  /* Transparent SEO Links - Invisible to users but functional for SEO */
+  .transparent-link {
+    color: inherit !important;
+    text-decoration: none !important;
+    border: none !important;
+    background: none !important;
+    transition: none !important;
+  }
+  
+  .transparent-link:hover {
+    color: inherit !important;
+    text-decoration: none !important;
+    background: none !important;
+    transform: none !important;
+  }
+  
+  .transparent-link:visited {
+    color: inherit !important;
+  }
+  
+  .transparent-link:focus {
+    outline: none !important;
+    color: inherit !important;
+  }
+
+  .cta-primary { 
+    background: linear-gradient(135deg, var(--cta-primary), hsl(25, 95%, 45%));
+    color: var(--white-critical);
+  }
+  .cta-secondary { 
+    background: linear-gradient(135deg, var(--cta-secondary), hsl(25, 80%, 40%));
+    color: var(--white-primary);
+  }
+  .cta-tertiary { 
+    background: linear-gradient(135deg, var(--cta-tertiary), hsl(25, 65%, 35%));
+    color: var(--white-secondary);
   }
 }
 

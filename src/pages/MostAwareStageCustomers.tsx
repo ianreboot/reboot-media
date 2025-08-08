@@ -4,6 +4,7 @@ import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
 import BackgroundGradient from '../components/BackgroundGradient';
 import { useLeadForm } from '../contexts/LeadFormContext';
+import { getCanonicalUrl } from '../utils/urls';
 
 const MostAwareStageCustomers = () => {
   const { setShowDropdownForm } = useLeadForm();
@@ -23,7 +24,7 @@ const MostAwareStageCustomers = () => {
       <SEOHead 
         title="Most Aware Stage Customers: When They're Ready to Buy | Reboot Media"
         description="Real examples of most aware customers ready to buy but needing final reassurance. Learn what actually makes them pull the trigger."
-        canonicalUrl="https://www.rebootmedia.net/marketing-psychology/most-aware-stage-customers"
+        canonicalUrl={getCanonicalUrl('most-aware-stage-customers')}
       />
 
       <div className="most-aware-stage-page min-h-screen relative overflow-hidden dark:bg-gray-900">
@@ -36,7 +37,7 @@ const MostAwareStageCustomers = () => {
           <section className="pt-20 md:pt-24 pb-8 bg-gradient-to-br from-slate-900 via-slate-950 to-black relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,165,0,0.1)_0%,transparent_50%)"></div>
             <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-              <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+              <h1 className="heading-hero text-critical dark:text-white mb-6 leading-tight">
                 "We Want to Move Forward"
                 <span className="block text-orange-500 mt-2">The Final Push That Turns Decision Into Action</span>
               </h1>
@@ -64,14 +65,14 @@ const MostAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-gray-700 dark:text-gray-300 mb-6">
+              <p className="text-lg text-important dark:text-gray-300 mb-6">
                 Most aware customers are 95% sold. They believe in your solution, trust your expertise, and have budget approval. But that last 5%? That's where deals die. These final moments require finesse, not force.
               </p>
             </section>
 
             {/* Real Customer Examples */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8">
+              <h2 className="heading-xl text-critical dark:text-white mb-8">
                 The Last-Minute Hesitations (And How to Dissolve Them)
               </h2>
 
@@ -80,22 +81,22 @@ const MostAwareStageCustomers = () => {
                 {/* Example 1 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-gray-700 dark:text-gray-300 italic">"Let me just run this by my partner/team one more time"</p>
+                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <p className="text-standard dark:text-gray-300 italic">"Let me just run this by my partner/team one more time"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What's really happening:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">They're sold but need social proof they're making the right choice. They want reassurance, not more selling.</p>
+                    <p className="text-standard dark:text-gray-300">They're sold but need social proof they're making the right choice. They want reassurance, not more selling.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">"Of course. Would it help if I provided a summary you can share? Also, happy to do a quick call with them to answer any specific concerns. Most clients find that speeds up the process."</p>
+                    <p className="text-standard dark:text-gray-300">"Of course. Would it help if I provided a summary you can share? Also, happy to do a quick call with them to answer any specific concerns. Most clients find that speeds up the process."</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
+                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 dark:text-blue-300">You're facilitating their process, not pushing against it. This supportive approach often leads to immediate signing.</p>
                   </div>
                 </div>
@@ -103,22 +104,22 @@ const MostAwareStageCustomers = () => {
                 {/* Example 2 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-gray-700 dark:text-gray-300 italic">"Can we start next month instead?"</p>
+                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <p className="text-standard dark:text-gray-300 italic">"Can we start next month instead?"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What's really happening:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">They're ready but overwhelmed. Starting feels like adding more to their plate right now.</p>
+                    <p className="text-standard dark:text-gray-300">They're ready but overwhelmed. Starting feels like adding more to their plate right now.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">"We can officially start next month, but I can begin the background research now so we hit the ground running. This actually saves you time—you won't need to be involved until you're ready."</p>
+                    <p className="text-standard dark:text-gray-300">"We can officially start next month, but I can begin the background research now so we hit the ground running. This actually saves you time—you won't need to be involved until you're ready."</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
+                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 dark:text-blue-300">You're respecting their timeline while creating value immediately. This removes the pressure while maintaining momentum.</p>
                   </div>
                 </div>
@@ -126,22 +127,22 @@ const MostAwareStageCustomers = () => {
                 {/* Example 3 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-gray-700 dark:text-gray-300 italic">"What if we need to pause or stop?"</p>
+                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <p className="text-standard dark:text-gray-300 italic">"What if we need to pause or stop?"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What's really happening:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">Fear of commitment. They want an escape route even though they don't plan to use it.</p>
+                    <p className="text-standard dark:text-gray-300">Fear of commitment. They want an escape route even though they don't plan to use it.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">"We work month-to-month after the first 90 days. You can pause or stop with 30 days notice. Everything we build is yours to keep. My goal is results that make you never want to leave."</p>
+                    <p className="text-standard dark:text-gray-300">"We work month-to-month after the first 90 days. You can pause or stop with 30 days notice. Everything we build is yours to keep. My goal is results that make you never want to leave."</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
+                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 dark:text-blue-300">Flexibility reduces fear. When leaving is easy, staying becomes a choice rather than an obligation.</p>
                   </div>
                 </div>
@@ -149,22 +150,22 @@ const MostAwareStageCustomers = () => {
                 {/* Example 4 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-gray-700 dark:text-gray-300 italic">"Send me the contract and I'll review it"</p>
+                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <p className="text-standard dark:text-gray-300 italic">"Send me the contract and I'll review it"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What's really happening:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">They're ready but want to feel in control of the timing. Sending and waiting creates dead space where doubt creeps in.</p>
+                    <p className="text-standard dark:text-gray-300">They're ready but want to feel in control of the timing. Sending and waiting creates dead space where doubt creeps in.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">"I'll send it right now. Want to do a quick screen share to walk through it together? Takes 5 minutes and you can sign right then if everything looks good. Much faster than email tag."</p>
+                    <p className="text-standard dark:text-gray-300">"I'll send it right now. Want to do a quick screen share to walk through it together? Takes 5 minutes and you can sign right then if everything looks good. Much faster than email tag."</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
+                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 dark:text-blue-300">Maintaining momentum while they're emotionally ready prevents second-guessing and accelerates the close.</p>
                   </div>
                 </div>
@@ -172,22 +173,22 @@ const MostAwareStageCustomers = () => {
                 {/* Example 5 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-gray-700 dark:text-gray-300 italic">"Is there any flexibility on the price?"</p>
+                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <p className="text-standard dark:text-gray-300 italic">"Is there any flexibility on the price?"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What's really happening:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">They're ready to buy but feel obligated to negotiate. It's not about money—it's about feeling like they got a win.</p>
+                    <p className="text-standard dark:text-gray-300">They're ready to buy but feel obligated to negotiate. It's not about money—it's about feeling like they got a win.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do:</h3>
-                    <p className="text-gray-700 dark:text-gray-300">"The price is firm, but I can include an extra strategy session in month one to accelerate results. That's a $2,000 value. Would that work better for you?"</p>
+                    <p className="text-standard dark:text-gray-300">"The price is firm, but I can include an extra strategy session in month one to accelerate results. That's a $2,000 value. Would that work better for you?"</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <h4 className="text-sm font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
+                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 dark:text-blue-300">Adding value instead of cutting price maintains your positioning while giving them the "win" they need to feel good about the decision.</p>
                   </div>
                 </div>
@@ -197,7 +198,7 @@ const MostAwareStageCustomers = () => {
 
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-6">
+              <h2 className="heading-xl text-critical dark:text-white mb-6">
                 The Secret to Closing Most Aware Customers
               </h2>
               
@@ -213,7 +214,7 @@ const MostAwareStageCustomers = () => {
 
             {/* Strong CTA Section */}
             <section className="text-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white rounded-2xl p-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <h2 className="heading-xl text-critical dark:text-white mb-6">
                 Stop Losing Deals at the Finish Line
               </h2>
               <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">

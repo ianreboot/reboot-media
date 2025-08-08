@@ -4,6 +4,7 @@ import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
 import BackgroundGradient from '../components/BackgroundGradient';
 import { useLeadForm } from '../contexts/LeadFormContext';
+import { getCanonicalUrl } from '../utils/urls';
 
 const CustomerAcquisitionStall = () => {
   const { setShowDropdownForm } = useLeadForm();
@@ -117,7 +118,7 @@ const CustomerAcquisitionStall = () => {
       <SEOHead 
         title="CAC Rising, Conversion Flat? Customer Acquisition Stall Solutions | Reboot Media"
         description="CAC inflation killing growth? 7 customer acquisition stall patterns and psychology fixes that break through the same-channel, same-message competition trap."
-        canonicalUrl="https://www.rebootmedia.net/growth-plateau-solutions/customer-acquisition-stall"
+        canonicalUrl={getCanonicalUrl('customer-acquisition-stall')}
       />
 
       <div className="customer-acquisition-page min-h-screen relative overflow-hidden dark:bg-gray-900">
@@ -145,11 +146,11 @@ const CustomerAcquisitionStall = () => {
                   <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
                   CAC Rising, Conversion Flat
                 </div>
-                <h1 className="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+                <h1 className="heading-hero text-critical dark:text-white text-4xl md:text-6xl font-black mb-6 leading-tight">
                   <span className="text-orange-400">Customer Acquisition</span>
                   <span className="block text-white mt-2">Stall Solutions</span>
                 </h1>
-                <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-important text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                   CAC keeps rising while conversion stays flat? The problem isn't your product or budget—it's that you're 
                   <span className="text-orange-400 font-semibold"> competing on the same channels with the same message</span> as everyone else.
                 </p>
@@ -169,28 +170,28 @@ const CustomerAcquisitionStall = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-orange-200/50 dark:border-orange-800/50 p-8">
-                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6">
                   Why Customer Acquisition Costs Keep Rising
                 </h2>
-                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
                   CAC inflation isn't random—it follows predictable patterns. When everyone competes on the same channels with similar messaging, 
                   costs go up and quality goes down. The solution isn't more budget; it's psychology-driven differentiation.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-orange-600 mb-1">73%</div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Experience CAC inflation</p>
+                    <p className="text-sm text-optional dark:text-gray-400">Experience CAC inflation</p>
                   </div>
                   <div className="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">156%</div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Average CAC increase</p>
+                    <p className="text-sm text-optional dark:text-gray-400">Average CAC increase</p>
                   </div>
                   <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">27%</div>
-                    <p className="text-sm text-gray-600 dark:text-gray-400">Break cycle with differentiation</p>
+                    <p className="text-sm text-optional dark:text-gray-400">Break cycle with differentiation</p>
                   </div>
                 </div>
-                <p className="text-gray-700 dark:text-gray-300 font-semibold">
+                <p className="text-important text-standard dark:text-gray-300 font-semibold">
                   The pattern: Same channels → Same message → Same prospects → Price competition
                 </p>
               </div>
@@ -198,7 +199,7 @@ const CustomerAcquisitionStall = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+              <h2 className="heading-xl text-critical dark:text-white text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
                 7 CAC Inflation Patterns (Which is Yours?)
               </h2>
               
@@ -208,7 +209,7 @@ const CustomerAcquisitionStall = () => {
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="text-2xl font-bold text-white mb-2">
+                          <h3 className="heading-lg text-important dark:text-white text-2xl font-bold text-white mb-2">
                             {scenario.title}
                           </h3>
                           <div className="flex gap-4 text-sm text-orange-100">
@@ -228,21 +229,21 @@ const CustomerAcquisitionStall = () => {
                         {/* Customer Says */}
                         <div className="space-y-6">
                           <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500">
-                            <h4 className="font-bold text-red-800 dark:text-red-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-important dark:text-white font-bold text-red-800 dark:text-red-300 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Customer Says:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300 italic">
+                            <p className="text-standard dark:text-gray-300 italic">
                               "{scenario.customerSays}"
                             </p>
                           </div>
                           
                           <div className="bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border-l-4 border-orange-500">
-                            <h4 className="font-bold text-orange-800 dark:text-orange-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-important dark:text-white font-bold text-orange-800 dark:text-orange-300 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Customer Thinks:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-standard dark:text-gray-300">
                               {scenario.customerThinks}
                             </p>
                           </div>
@@ -251,21 +252,21 @@ const CustomerAcquisitionStall = () => {
                         {/* Solutions */}
                         <div className="space-y-6">
                           <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4 border-l-4 border-yellow-500">
-                            <h4 className="font-bold text-yellow-800 dark:text-yellow-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-important dark:text-white font-bold text-yellow-800 dark:text-yellow-300 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Problem:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-standard dark:text-gray-300">
                               {scenario.realProblem}
                             </p>
                           </div>
                           
                           <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border-l-4 border-green-500">
-                            <h4 className="font-bold text-green-800 dark:text-green-300 mb-2 flex items-center">
+                            <h4 className="heading-md text-important dark:text-white font-bold text-green-800 dark:text-green-300 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-gray-700 dark:text-gray-300">
+                            <p className="text-standard dark:text-gray-300">
                               {scenario.solution}
                             </p>
                           </div>
@@ -274,11 +275,11 @@ const CustomerAcquisitionStall = () => {
                       
                       {/* Why It Works */}
                       <div className="mt-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800">
-                        <h4 className="font-bold text-blue-800 dark:text-blue-300 mb-2 flex items-center">
+                        <h4 className="heading-md text-important dark:text-white font-bold text-blue-800 dark:text-blue-300 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-gray-700 dark:text-gray-300 font-medium">
+                        <p className="text-standard dark:text-gray-300 font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -294,7 +295,7 @@ const CustomerAcquisitionStall = () => {
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   🚨 Stop Competing on Price in Saturated Channels
                 </h3>
-                <p className="text-lg text-gray-700 dark:text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you compete on the same channels with the same message, your CAC gets worse while competitors with 
                   differentiated psychology capture qualified prospects. Get your free acquisition analysis and discover which pattern is killing your efficiency.
                 </p>
@@ -315,27 +316,27 @@ const CustomerAcquisitionStall = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-critical dark:text-white text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  <h3 className="heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3">
                     <a href="/growth-plateau-solutions/revenue-ceiling-breakthrough" className="hover:text-orange-600 transition-colors">
                       Revenue Ceiling Breakthrough →
                     </a>
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-standard dark:text-gray-300">
                     Revenue stuck at $500K, $1M, or $1.5M? The problem isn't your product—founder-led sales can't scale without documented processes.
                   </p>
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  <h3 className="heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3">
                     <a href="/marketing-psychology" className="hover:text-orange-600 transition-colors">
                       Marketing Psychology Fundamentals →
                     </a>
                   </h3>
-                  <p className="text-gray-700 dark:text-gray-300">
+                  <p className="text-standard dark:text-gray-300">
                     Master the 5 customer awareness stages that break through commodity competition with psychology-driven differentiation.
                   </p>
                 </div>
