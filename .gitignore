@@ -22,3 +22,66 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# AI Assistant Files
+CLAUDE.md
+claude.md
+.claude/
+.claude*
+AGENT-*.md
+*_METHODOLOGY.md
+*_SPEC.md
+*_FRAMEWORK.md
+*_AUDIT*.md
+*_CHECKLIST.md
+SESSION_HANDOFF*.md
+PROJECT_ROADMAP.md
+PRD_*.md
+.ai/
+.assistant/
+AI_*.md
+.cursorrules
+.aider*
+.github/copilot*
+
+# Test and Debug Files
+test-*.js
+test-*.cjs
+check-*.js
+verify-*.js
+debug-*.js
+fix-*.js
+fix-*.py
+update-*.py
+analyze-*.cjs
+record-*.js
+mobile-*.js
+final-*.js
+*-test.js
+*-check.js
+scroll-audit-*.json
+
+# Screenshots and Images
+*.png
+*.jpg
+*.jpeg
+animation-stage-*.png
+*-test-*.png
+hero-*.png
+fluid-cards-*.png
+responsive-test-*.png
+homepage-*-analysis.png
+subliminal-*.png
+color-update-*.png
+final-*.png
+
+# Temporary Files
+dev-server.log
+dev.pid
+*.log
+*.pid
+
+# Unused Assets
+vite.svg
+reboot-logo-white.svg
+reboot-media.avif

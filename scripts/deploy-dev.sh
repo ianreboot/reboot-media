@@ -7,6 +7,18 @@ set -e  # Exit on error
 
 echo "🚀 Starting dev deployment..."
 
+# Check if there are uncommitted changes
+if ! git diff-index --quiet HEAD --; then
+    echo "⚠️  Uncommitted changes detected!"
+    echo "📝 Please commit your changes first with a meaningful message:"
+    echo ""
+    echo "   git add -A"
+    echo "   git commit -m \"Component: What you changed and why\""
+    echo ""
+    echo "Then run this deploy script again."
+    exit 1
+fi
+
 # Ensure we have the correct source HTML
 echo "📄 Copying source HTML..."
 cp index.dev.html index.html
