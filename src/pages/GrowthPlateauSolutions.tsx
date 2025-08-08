@@ -237,7 +237,7 @@ const GrowthPlateauSolutions = () => {
                       {plateau.description}
                     </p>
                     <div className="flex items-center justify-center text-red-600 dark:text-red-400 font-semibold group-hover:text-red-700 dark:group-hover:text-red-300 transition-colors">
-                      See 5-7 Real Examples →
+                      Discover Your Breakthrough →
                     </div>
                   </a>
                 </div>
@@ -298,7 +298,7 @@ const GrowthPlateauSolutions = () => {
                 </p>
                 <div className="flex items-center text-red-600 dark:text-red-400 font-semibold">
                   <span className="mr-2">📚</span>
-                  Learn the fundamentals
+                  Master $47K/Month Psychology
                 </div>
               </div>
               
@@ -313,7 +313,7 @@ const GrowthPlateauSolutions = () => {
                 </p>
                 <div className="flex items-center text-red-600 dark:text-red-400 font-semibold">
                   <span className="mr-2">🎯</span>
-                  Find your solution
+                  Get Your CMO vs Agency Answer
                 </div>
               </div>
             </div>

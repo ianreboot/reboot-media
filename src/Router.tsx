@@ -19,6 +19,13 @@ import TeamGrowthBottlenecks from './pages/TeamGrowthBottlenecks';
 import ProductMarketFitErosion from './pages/ProductMarketFitErosion';
 import CompetitivePressurePlateau from './pages/CompetitivePressurePlateau';
 import FractionalCMOGuide from './pages/FractionalCMOGuide';
+import FractionalCMOVsAgency from './pages/FractionalCMOVsAgency';
+import FractionalCMOVsFullTime from './pages/FractionalCMOVsFullTime';
+import FractionalCMOVsConsultant from './pages/FractionalCMOVsConsultant';
+import FractionalCMOVsInHouse from './pages/FractionalCMOVsInHouse';
+import TransitionStrategies from './pages/TransitionStrategies';
+import WhenToChooseEach from './pages/WhenToChooseEach';
+import CostROIAnalysis from './pages/CostROIAnalysis';
 import ScrollToTop from './components/ScrollToTop';
 import { LeadFormProvider } from './contexts/LeadFormContext';
 import LeadForm from './components/LeadForm';
@@ -52,6 +59,13 @@ const Router = () => {
           <Route path="/growth-plateau-solutions/product-market-fit-erosion" element={<ProductMarketFitErosion />} />
           <Route path="/growth-plateau-solutions/competitive-pressure-plateau" element={<CompetitivePressurePlateau />} />
           <Route path="/fractional-cmo-guide" element={<FractionalCMOGuide />} />
+          <Route path="/fractional-cmo-guide/vs-marketing-agency" element={<FractionalCMOVsAgency />} />
+          <Route path="/fractional-cmo-guide/vs-full-time-cmo" element={<FractionalCMOVsFullTime />} />
+          <Route path="/fractional-cmo-guide/vs-consultant" element={<FractionalCMOVsConsultant />} />
+          <Route path="/fractional-cmo-guide/vs-in-house-team" element={<FractionalCMOVsInHouse />} />
+          <Route path="/fractional-cmo-guide/transition-strategies" element={<TransitionStrategies />} />
+          <Route path="/fractional-cmo-guide/when-to-choose-each" element={<WhenToChooseEach />} />
+          <Route path="/fractional-cmo-guide/cost-roi-analysis" element={<CostROIAnalysis />} />
         </Routes>
         <LeadForm />
       </LeadFormProvider>
