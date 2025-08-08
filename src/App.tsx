@@ -190,7 +190,7 @@ function App() {
       <section id="psychology" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(0.5rem, 1.5vw, 1rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6 sm:mb-8">
+            <h2 className="heading-xl text-slate-900 mb-6 sm:mb-8">
               The <span className="text-red-500">$200K</span> Marketing Mistake
             </h2>
             <p className="text-xl text-stone-700 max-w-3xl mx-auto leading-normal">
@@ -233,7 +233,7 @@ function App() {
               </svg>
               <span className="text-blue-600 text-sm font-semibold">Common Question</span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6" style={{ marginTop: '0.25rem' }}>
+            <h2 className="heading-xl text-slate-900 mb-6" style={{ marginTop: '0.25rem' }}>
               "Do You Have Experience in <span className="text-blue-600">My Industry</span>?"
             </h2>
             <p className="text-xl text-slate-600 mb-8">
@@ -253,7 +253,7 @@ function App() {
                   </svg>
                   <span className="text-red-700 text-sm font-semibold">The Problem</span>
                 </div>
-                <h3 className="text-2xl font-bold text-red-700 mb-4" style={{ marginTop: '0.25rem' }}>Why Industry Experts Often Fail</h3>
+                <h3 className="heading-md text-red-700 mb-4" style={{ marginTop: '0.25rem' }}>Why Industry Experts Often Fail</h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -287,7 +287,7 @@ function App() {
                   </svg>
                   <span className="text-green-700 text-sm font-semibold">The Solution</span>
                 </div>
-                <h3 className="text-2xl font-bold text-green-800 mb-4" style={{ marginTop: '0.25rem' }}>The Fresh Eyes Advantage</h3>
+                <h3 className="heading-md text-green-800 mb-4" style={{ marginTop: '0.25rem' }}>The Fresh Eyes Advantage</h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -361,7 +361,7 @@ function App() {
                   {/* Right Side - The Real Question */}
                   <div className="space-y-6">
                     <div>
-                      <h3 className="text-3xl font-black text-slate-900 mb-4 leading-tight">
+                      <h3 className="heading-lg text-slate-900 mb-4 leading-tight">
                         The Real Question Isn't<br />
                         <span className="text-red-500 line-through decoration-4">"Industry Experience"</span>
                       </h3>
@@ -397,7 +397,7 @@ function App() {
       <section id="services" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-slate-900 mb-6 sm:mb-8">
+            <h2 className="heading-xl text-slate-900 mb-6 sm:mb-8">
               Fractional CMO
               <br />
               <span className="text-orange-500">Executive</span> Services
@@ -462,7 +462,7 @@ function App() {
       <section id="about" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-4xl md:text-5xl font-black text-slate-900 mb-6">
+            <h2 className="heading-xl text-slate-900 mb-6">
               Meet Your <span className="text-blue-600">C-Level Executive</span> Partner
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -573,7 +573,7 @@ function App() {
                 <span className="text-orange-300 text-sm font-semibold">Still Thinking About It?</span>
               </div>
               
-              <h2 className="text-4xl md:text-5xl font-black text-white mb-6" style={{ marginTop: '0.25rem' }}>
+              <h2 className="heading-xl text-white mb-6" style={{ marginTop: '0.25rem' }}>
                 Every Month You Wait Costs You <span className="text-orange-400">$47,000</span> in Lost Revenue
               </h2>
               

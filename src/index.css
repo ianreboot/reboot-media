@@ -176,6 +176,43 @@ body {
   animation: scale-in 0.3s ease-out;
 }
 
+/* Semantic Heading Classes (SEO-optimized, visually consistent) */
+@layer components {
+  .heading-hero {
+    font-size: clamp(3rem, 8vw, 7rem); /* Responsive hero sizing */
+    font-weight: 900;
+    line-height: var(--leading-tight);
+    letter-spacing: -0.02em;
+  }
+  
+  .heading-xl {
+    font-size: var(--text-4xl); /* 36px-64px fluid */
+    font-weight: 900;
+    line-height: var(--leading-tight);
+    letter-spacing: -0.01em;
+  }
+  
+  .heading-lg {
+    font-size: var(--text-3xl); /* 30px-48px fluid */
+    font-weight: 800;
+    line-height: var(--leading-tight);
+    letter-spacing: -0.01em;
+  }
+  
+  .heading-md {
+    font-size: var(--text-2xl); /* 24px-36px fluid */
+    font-weight: 700;
+    line-height: var(--leading-form);
+    letter-spacing: -0.005em;
+  }
+  
+  .heading-sm {
+    font-size: var(--text-xl); /* 20px-28px fluid */
+    font-weight: 700;
+    line-height: var(--leading-form);
+  }
+}
+
 /* Custom utilities */
 @layer utilities {
   .text-shadow-sm {
