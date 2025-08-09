@@ -1,5 +1,23 @@
 // Generate email content for form submissions
-export const generateEmailContent = (formData: any, formType: string = 'Contact') => {
+interface FormData {
+  name?: string;
+  company?: string;
+  email?: string;
+  phone?: string;
+  website?: string;
+  challenge?: string;
+  revenue?: string;
+  timeline?: string;
+  industry?: string;
+  teamSize?: string;
+  specificIssue?: string;
+  currentMarketing?: string;
+  serviceInterest?: string;
+  subject?: string;
+  message?: string;
+}
+
+export const generateEmailContent = (formData: FormData, formType: string = 'Contact') => {
   const timestamp = new Date().toLocaleString();
   
   return `

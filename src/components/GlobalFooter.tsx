@@ -6,7 +6,8 @@ interface GlobalFooterProps {
   onShowForm?: () => void;
 }
 
-const GlobalFooter = ({}: GlobalFooterProps) => {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const GlobalFooter = (_props: GlobalFooterProps) => {
   const navigate = useNavigate();
   const [expandedSections, setExpandedSections] = useState<{[key: string]: boolean}>({});
   

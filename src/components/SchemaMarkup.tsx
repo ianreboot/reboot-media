@@ -3,7 +3,7 @@ import { getOrganizationUrl, getLogoUrl, getCanonicalUrl } from '../utils/urls';
 
 interface SchemaMarkupProps {
   type?: 'organization' | 'service' | 'article' | 'faq' | 'breadcrumb';
-  customData?: any;
+  customData?: Record<string, unknown>;
 }
 
 const SchemaMarkup = ({ type = 'organization', customData }: SchemaMarkupProps) => {
@@ -248,6 +248,7 @@ const SchemaMarkup = ({ type = 'organization', customData }: SchemaMarkupProps) 
       const scripts = document.querySelectorAll('script[data-schema-markup]');
       scripts.forEach(script => script.remove());
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [type, customData]);
 
   return null; // This component doesn't render anything

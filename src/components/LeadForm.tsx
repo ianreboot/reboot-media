@@ -28,7 +28,7 @@ const LeadForm = () => {
 
   const handleFieldBlur = (field: string, value: string) => {
     if (field === 'website' && value) {
-      const urlPattern = /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/;
+      const urlPattern = /^(https?:\/\/)?([\da-z.-]+)\.([a-z.]{2,6})([/\w .-]*)*\/?$/;
       setFieldValidation({
         ...fieldValidation,
         [field]: urlPattern.test(value) ? 'valid' : 'invalid'

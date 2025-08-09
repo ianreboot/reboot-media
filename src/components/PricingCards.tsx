@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import type { Swiper as SwiperType } from 'swiper';
-// @ts-ignore
+// @ts-expect-error - CSS import does not have TypeScript definitions
 import 'swiper/css';
 import '../styles/swiper-custom.css';
 

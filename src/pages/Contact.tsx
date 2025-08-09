@@ -80,6 +80,7 @@ const Contact = () => {
         serviceInterest: '',
       });
     } catch (error) {
+      console.error('Contact form submission error:', error);
       setStatus('error');
       setErrorMessage('Failed to send message. Please try again later.');
     }

@@ -8,6 +8,27 @@ import SEOHead from './components/SEOHead';
 import BackgroundGradient from './components/BackgroundGradient';
 import { useLeadForm } from './contexts/LeadFormContext';
 
+// Words to cycle through - ordered by importance to target demographics
+const lostItems = [
+  'Revenue',          // Primary concern for $500K-$1.5M companies
+  'Growth',           // Hitting growth plateaus is key pain point
+  'Customers',        // Customer acquisition/retention
+  'Market Share',     // Competitive positioning
+  'Sales',           // Psychology-driven approach focus
+  'Opportunities',    // Missing market opportunities
+  'Momentum',         // Business velocity
+  'Competitive Edge', // Marketing excellence
+  'Brand Value',      // Premium positioning
+  'Profit Margins',   // Cost efficiency
+  'Time',            // Strategic vs tactical focus
+  'Direction',       // Scattered marketing efforts
+  'Clarity',         // Curse of knowledge problem
+  'Trust',           // Customer trust signals
+  'Authority',       // Market leadership
+  'Scalability',     // Sustainable growth systems
+  'Innovation'       // Modern vs traditional approaches
+];
+
 function App() {
   const [typedWord, setTypedWord] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
@@ -15,28 +36,6 @@ function App() {
   
   // Use the lead form context
   const { setShowDropdownForm } = useLeadForm();
-  
-  
-  // Words to cycle through - ordered by importance to target demographics
-  const lostItems = [
-    'Revenue',          // Primary concern for $500K-$1.5M companies
-    'Growth',           // Hitting growth plateaus is key pain point
-    'Customers',        // Customer acquisition/retention
-    'Market Share',     // Competitive positioning
-    'Sales',           // Psychology-driven approach focus
-    'Opportunities',    // Missing market opportunities
-    'Momentum',         // Business velocity
-    'Competitive Edge', // Marketing excellence
-    'Brand Value',      // Premium positioning
-    'Profit Margins',   // Cost efficiency
-    'Time',            // Strategic vs tactical focus
-    'Direction',       // Scattered marketing efforts
-    'Clarity',         // Curse of knowledge problem
-    'Trust',           // Customer trust signals
-    'Authority',       // Market leadership
-    'Scalability',     // Sustainable growth systems
-    'Innovation'       // Modern vs traditional approaches
-  ];
 
   
   // Typewriter effect with progressive slowdown
@@ -70,7 +69,7 @@ function App() {
     }, typeSpeed);
     
     return () => clearTimeout(timer);
-  }, [typedWord, wordIndex, isDeleting, lostItems]);
+  }, [typedWord, wordIndex, isDeleting]);
 
   return (
     <>
