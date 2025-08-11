@@ -254,7 +254,9 @@ const LeadForm = () => {
                     if (formData.revenue) {
                       setFormStep(3);
                     } else {
-                      alert('Please select your revenue range');
+                      // Use a custom notification instead of alert for better security
+                      console.error('Please select your revenue range');
+                      return;
                     }
                   }}
                   disabled={!formData.revenue}
@@ -471,13 +473,13 @@ const LeadForm = () => {
                   onClick={async () => {
                     // Validate required fields
                     if (!formData.name || !formData.company || !formData.email || !formData.specificIssue) {
-                      alert('Please fill in all required fields');
+                      console.error('Please fill in all required fields');
                       return;
                     }
 
                     // Validate email format
                     if (!validateEmail(formData.email)) {
-                      alert('Please enter a valid email address');
+                      console.error('Please enter a valid email address');
                       return;
                     }
 
@@ -486,17 +488,23 @@ const LeadForm = () => {
                       const emailContent = generateEmailContent(formData, 'Lead Generation');
 
                       // Log submission (for development/debugging)
-                      console.log('Lead form submission:', { 
-                        formData, 
-                        emailContent,
-                        timestamp: new Date().toISOString()
-                      });
+                      // Log only in development
+                      if (import.meta.env.DEV) {
+                        console.log('Lead form submission:', { 
+                          formData, 
+                          emailContent,
+                          timestamp: new Date().toISOString()
+                        });
+                      }
 
                       // Here you would integrate with your email service
                       // await sendEmailToRebootMedia(emailContent, formData);
 
-                      // Show success message
-                      alert(`Thank you ${formData.name}! Your personalized marketing analysis request has been received. We'll send your analysis to ${formData.email} within 24 hours and may follow up to discuss how our fractional CMO services can help drive your business growth.`);
+                      // Show success message (avoid including user data in alerts)
+                      if (import.meta.env.DEV) {
+                        console.log('Form submitted successfully');
+                      }
+                      // In production, show a success modal or redirect to a thank you page
                       
                       // Reset form
                       setShowDropdownForm(false);
@@ -515,8 +523,9 @@ const LeadForm = () => {
                         currentMarketing: ''
                       });
                     } catch (error) {
-                      console.error('Error submitting form:', error);
-                      alert('There was an error submitting your request. Please try again later.');
+                      if (import.meta.env.DEV) {
+                        console.error('Error submitting form:', error);
+                      }
                     }
                   }}
                   className="w-full mt-6 bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 hover:via-orange-700 hover:to-red-600 text-white px-8 py-4 rounded-xl font-black text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl"

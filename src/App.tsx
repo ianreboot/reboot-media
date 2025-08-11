@@ -106,12 +106,12 @@ function App() {
             <span className="block text-orange-500">
               {typedWord}<span className="animate-blink">|</span>
             </span>
-            <span className="block">to <span className="text-optional line-through decoration-red-500 decoration-4">Broken</span> Marketing</span>
+            <span className="block">to <span style={{color: '#e9dbcd'}} className="line-through decoration-red-500 decoration-4">Broken</span> Marketing</span>
           </h1>
           
           {/* Subheadline */}
           <p className="text-xl text-standard max-w-4xl mx-auto mb-8">
-            Stop fumbling with amateur advice. Get <span className="font-bold text-important">battle-tested strategies proven at Fortune 500 companies</span> that drive explosive growth
+            <span style={{color: '#e9dbcd'}}>Stop fumbling with amateur advice. Get</span> <span className="font-bold text-important">battle-tested strategies proven at Fortune 500 companies</span> <span style={{color: '#e9dbcd'}}>that drive explosive growth</span>
           </p>
 
           {/* Single Primary CTA */}
@@ -128,37 +128,28 @@ function App() {
           {/* Benefits-Focused Proof Points */}
           <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
-              <div className="flex items-start">
-                <div className="w-3 h-3 bg-orange-500 rounded-full mr-4 mt-2 flex-shrink-0"></div>
-                <div>
-                  <div className="text-2xl font-black text-important mb-1">30X Growth</div>
-                  <div className="text-sm text-standard font-medium leading-tight">
-                    Companies see explosive revenue growth when psychology replaces guesswork
-                  </div>
+              <div className="text-center">
+                <div className="text-2xl font-black text-important mb-1">30X Growth</div>
+                <div className="text-sm text-standard font-medium leading-tight">
+                  Companies see explosive revenue growth when psychology replaces guesswork
                 </div>
               </div>
             </div>
             
             <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
-              <div className="flex items-start">
-                <div className="w-3 h-3 bg-blue-500 rounded-full mr-4 mt-2 flex-shrink-0"></div>
-                <div>
-                  <div className="text-2xl font-black text-slate-900 mb-1">Stop the Bleed</div>
-                  <div className="text-sm text-slate-700 font-medium leading-tight">
-                    Finally understand why customers don't buy, instead of wondering why
-                  </div>
+              <div className="text-center">
+                <div className="text-2xl font-black text-slate-900 mb-1">Stop the Bleed</div>
+                <div className="text-sm text-slate-700 font-medium leading-tight">
+                  Finally understand why customers don't buy, instead of wondering why
                 </div>
               </div>
             </div>
             
             <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
-              <div className="flex items-start">
-                <div className="w-3 h-3 bg-green-500 rounded-full mr-4 mt-2 flex-shrink-0"></div>
-                <div>
-                  <div className="text-2xl font-black text-slate-900 mb-1">Sleep Better</div>
-                  <div className="text-sm text-slate-700 font-medium leading-tight">
-                    No more throwing money at marketing that doesn't bring customers
-                  </div>
+              <div className="text-center">
+                <div className="text-2xl font-black text-slate-900 mb-1">Sleep Better</div>
+                <div className="text-sm text-slate-700 font-medium leading-tight">
+                  No more throwing money at marketing that doesn't bring customers
                 </div>
               </div>
             </div>
@@ -175,7 +166,7 @@ function App() {
               The <span className="text-red-500">$200K</span> Marketing Mistake
             </h2>
             <p className="text-xl text-stone-700 max-w-3xl mx-auto leading-normal">
-              <span className="font-bold">73% of growing companies</span> can't explain their value clearly to customers. They suffer from the "Curse of Knowledge" - knowing too much about their product to communicate it simply.
+              <span style={{color: '#e9dbcd'}}><span className="font-bold">73% of growing companies</span> can't explain their value clearly to customers. They suffer from the "Curse of Knowledge" - knowing too much about their product to communicate it simply.</span>
             </p>
           </div>
 
@@ -193,9 +184,9 @@ function App() {
             
             <div className="order-1 lg:order-2">
               <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-xl border border-orange-200/30 dark:border-orange-400/30 transform rotate-1">
-                <h3 className="text-2xl font-bold text-slate-900 mb-6">What Customers Hear:</h3>
+                <h3 className="text-2xl font-bold mb-6" style={{color: '#f5f6fc'}}>What Customers Hear:</h3>
                 <div className="space-y-4 text-stone-700">
-                  <p className="italic">"We help you stop losing customers and make more money from the ones you have."</p>
+                  <p className="italic" style={{color: '#e9dbcd'}}>"We help you stop losing customers and make more money from the ones you have."</p>
                   <p className="text-green-600 font-semibold">✅ Clear, benefits-focused</p>
                 </div>
               </div>
@@ -218,7 +209,7 @@ function App() {
               "Do You Have Experience in <span className="text-blue-600">My Industry</span>?"
             </h2>
             <p className="text-xl text-slate-600 mb-8">
-              This is the right question to ask. But the answer might surprise you...
+              <span style={{color: '#e9dbcd'}}>This is the right question to ask. But the answer might surprise you...</span>
             </p>
           </div>
 
@@ -238,23 +229,21 @@ function App() {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm p-6 rounded-2xl border border-red-200/30 dark:border-red-400/30">
-                  <h4 className="text-lg font-bold text-red-800 mb-3 flex items-center">
-                    <span className="w-6 h-6 bg-red-200 rounded-full flex items-center justify-center text-xs text-red-800 mr-3">1</span>
-                    The Curse of Knowledge
-                  </h4>
-                  <p className="text-red-700 text-base leading-relaxed">
-                    They're so deep in industry jargon they can't see what confuses customers
-                  </p>
+                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl">
+                  <div className="text-center">
+                    <h4 className="text-lg font-bold mb-3">The Curse of Knowledge</h4>
+                    <p className="text-gray-300 text-base leading-relaxed">
+                      They're so deep in industry jargon they can't see what confuses customers
+                    </p>
+                  </div>
                 </div>
-                <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm p-6 rounded-2xl border border-red-200/30 dark:border-red-400/30">
-                  <h4 className="text-lg font-bold text-red-800 mb-3 flex items-center">
-                    <span className="w-6 h-6 bg-red-200 rounded-full flex items-center justify-center text-xs text-red-800 mr-3">2</span>
-                    Replicate Not Customize
-                  </h4>
-                  <p className="text-red-700 text-base leading-relaxed">
-                    They copy what worked elsewhere instead of customizing for your unique market
-                  </p>
+                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl">
+                  <div className="text-center">
+                    <h4 className="text-lg font-bold mb-3">Replicate Not Customize</h4>
+                    <p className="text-gray-300 text-base leading-relaxed">
+                      They copy what worked elsewhere instead of customizing for your unique market
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -272,32 +261,29 @@ function App() {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm p-6 rounded-2xl border border-green-200/30 dark:border-green-400/30 transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
-                  <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-green-800 font-bold">1</span>
+                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
+                  <div className="text-center">
+                    <h4 className="text-lg font-bold mb-3">Customer Perspective</h4>
+                    <p className="text-gray-300 text-base leading-relaxed">
+                      I ask the same questions your prospects do, spotting exactly where they get confused
+                    </p>
                   </div>
-                  <h4 className="text-lg font-bold text-green-800 mb-3">Customer Perspective</h4>
-                  <p className="text-green-700 text-base leading-relaxed">
-                    I ask the same questions your prospects do, spotting exactly where they get confused
-                  </p>
                 </div>
-                <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm p-6 rounded-2xl border border-green-200/30 dark:border-green-400/30 transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
-                  <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-green-800 font-bold">2</span>
+                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
+                  <div className="text-center">
+                    <h4 className="text-lg font-bold mb-3">Question Everything</h4>
+                    <p className="text-gray-300 text-base leading-relaxed">
+                      While experts accept "how we've always done it," I ask "why?" and find new opportunities
+                    </p>
                   </div>
-                  <h4 className="text-lg font-bold text-green-800 mb-3">Question Everything</h4>
-                  <p className="text-green-700 text-base leading-relaxed">
-                    While experts accept "how we've always done it," I ask "why?" and find new opportunities
-                  </p>
                 </div>
-                <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm p-6 rounded-2xl border border-green-200/30 dark:border-green-400/30 transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
-                  <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center mb-4">
-                    <span className="text-green-800 font-bold">3</span>
+                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
+                  <div className="text-center">
+                    <h4 className="text-lg font-bold mb-3">Executive Experience</h4>
+                    <p className="text-gray-300 text-base leading-relaxed">
+                      C-level strategies that work across industries - proven at 20+ US companies
+                    </p>
                   </div>
-                  <h4 className="text-lg font-bold text-green-800 mb-3">Executive Experience</h4>
-                  <p className="text-green-700 text-base leading-relaxed">
-                    C-level strategies that work across industries - proven at 20+ US companies
-                  </p>
                 </div>
               </div>
             </div>
@@ -352,7 +338,6 @@ function App() {
                           It's: "Can you see the opportunities I'm blind to?"
                         </p>
                         <div className="flex items-center space-x-2 text-orange-100">
-                          <div className="w-2 h-2 bg-white rounded-full"></div>
                           <span className="text-sm">Fresh perspective + proven psychology</span>
                         </div>
                       </div>
@@ -384,12 +369,12 @@ function App() {
               <span className="text-orange-500">Executive</span> Services
             </h2>
             <p className="text-xl text-stone-700 max-w-3xl mx-auto mb-4">
-              Strategic marketing leadership without the $300K+ salary commitment
+              <span style={{color: '#e9dbcd'}}>Strategic marketing leadership without the $300K+ salary commitment</span>
             </p>
             
             {/* Price Anchoring Header */}
             <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-2xl p-6 max-w-4xl mx-auto mb-8">
-              <div className="flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+              <div className="flex flex-col md:flex-row items-center justify-between text-center">
                 <div className="mb-4 md:mb-0">
                   <h3 className="text-lg font-bold text-slate-900 mb-2">Full-Time CMO Cost</h3>
                   <div className="text-3xl font-black text-red-600 line-through">$300K+</div>
@@ -447,7 +432,7 @@ function App() {
               Meet Your <span className="text-blue-600">C-Level Executive</span> Partner
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              20+ years C-level experience driving measurable revenue growth at US companies
+              <span style={{color: '#f5f6fc'}}>20+ years C-level experience driving measurable revenue growth at US companies</span>
             </p>
           </div>
 
@@ -499,8 +484,8 @@ function App() {
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Battle-Tested Results</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                I've spent <strong>$500K/month of my own money</strong> testing what actually brings customers. 
-                Not theory - real results with real consequences.
+                <span style={{color: '#f5f6fc'}}>I've spent <strong>$500K/month of my own money</strong> testing what actually brings customers. 
+                Not theory - real results with real consequences.</span>
               </p>
             </div>
 
@@ -512,8 +497,8 @@ function App() {
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Global Reach</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Based in Bangkok, I serve companies worldwide who want <strong>proven marketing excellence</strong> 
-                at competitive rates. Perfect for US market expansion.
+                <span style={{color: '#f5f6fc'}}>Based in Bangkok, I serve companies worldwide who want <strong>proven marketing excellence</strong> 
+                at competitive rates. Perfect for US market expansion.</span>
               </p>
             </div>
 
@@ -525,8 +510,8 @@ function App() {
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Proven Across Industries</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Software, Healthcare, E-commerce, Financial Services, Professional Services, 
-                and more. <strong>Psychology works universally.</strong>
+                <span style={{color: '#f5f6fc'}}>Software, Healthcare, E-commerce, Financial Services, Professional Services, 
+                and more. <strong>Psychology works universally.</strong></span>
               </p>
             </div>
           </div>

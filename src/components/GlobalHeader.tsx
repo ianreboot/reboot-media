@@ -105,7 +105,11 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                   onClick={scrollToTop}
                   className="text-xl sm:text-2xl font-black cursor-pointer hover:scale-105 transition-transform duration-300"
                 >
-                  <span className="text-gray-900 dark:text-white">
+                  <span className={`transition-colors duration-300 ${
+                    scrollY > 50 
+                      ? 'text-gray-900 dark:text-white' 
+                      : 'text-gray-800 dark:text-white'
+                  }`}>
                     REBOOT <span className="text-orange-500">MEDIA</span>
                   </span>
                 </Link>

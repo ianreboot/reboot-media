@@ -65,7 +65,7 @@ const About = () => {
         <GlobalHeader showProgressBar={true} />
 
       {/* Main Content */}
-      <div className="pt-20 sm:pt-16 pb-8">
+      <div className="pt-20 md:pt-24 pb-8">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           
           {/* Hero Section */}
@@ -173,7 +173,7 @@ const About = () => {
 
           {/* Our Approach */}
           <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8">
-            <h2 className="heading-xl text-critical dark:text-white mb-8">Our Approach</h2>
+            <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">Our Approach</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div>
                 <h3 className="heading-md text-important dark:text-white mb-4 flex items-center">
@@ -220,7 +220,7 @@ const About = () => {
 
           {/* Values */}
           <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8">
-            <h2 className="heading-xl text-critical dark:text-white mb-8">Our Values</h2>
+            <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">Our Values</h2>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
               <div className="text-center">
                 <div className="w-16 h-16 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-4">

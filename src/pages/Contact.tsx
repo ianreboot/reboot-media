@@ -59,11 +59,14 @@ const Contact = () => {
 
       // Here you would typically integrate with your email service
       // For now, we'll simulate a successful submission
-      console.log('Contact form submission:', { 
-        formData, 
-        emailContent,
-        destination: 'Contact Form Submission' 
-      });
+      // Log only in development
+      if (import.meta.env.DEV) {
+        console.log('Contact form submission:', { 
+          formData, 
+          emailContent,
+          destination: 'Contact Form Submission' 
+        });
+      }
       
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1500));
@@ -80,7 +83,9 @@ const Contact = () => {
         serviceInterest: '',
       });
     } catch (error) {
-      console.error('Contact form submission error:', error);
+      if (import.meta.env.DEV) {
+        console.error('Contact form submission error:', error);
+      }
       setStatus('error');
       setErrorMessage('Failed to send message. Please try again later.');
     }
@@ -148,7 +153,7 @@ const Contact = () => {
           </div>
 
           {/* Form Usage Guidance */}
-          <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-2xl p-6 mb-8">
+          <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-2xl p-6 mb-8 text-center">
             <h2 className="heading-sm text-important dark:text-orange-100 mb-3">
               Looking for Marketing Help?
             </h2>
