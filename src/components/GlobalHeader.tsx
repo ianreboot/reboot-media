@@ -93,8 +93,8 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
       <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
         <div className={`transition-all duration-300 ${
           scrollY > 50 
-            ? 'bg-white/75 dark:bg-slate-900/75 backdrop-blur-md shadow-lg border-b border-gray-200 dark:border-gray-700' 
-            : 'bg-white/80 backdrop-blur-md border-b border-white/20'
+            ? 'bg-white/75 dark:bg-slate-900/75 backdrop-blur-fallback-md shadow-lg border-b border-gray-200 dark:border-gray-700' 
+            : 'bg-white/80 backdrop-blur-fallback-md border-b border-white/20'
         }`}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center py-3 sm:py-4">
@@ -219,7 +219,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
 
       {/* Mobile Navigation - Sticky Ribbon (Bottom) */}
       <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden transform-gpu">
-        <div className="bg-white/85 dark:bg-slate-900/85 backdrop-blur-lg border-t border-white/20 dark:border-gray-700 shadow-[0_-4px_24px_rgba(0,0,0,0.08)]">
+        <div className="bg-white/85 dark:bg-slate-900/85 backdrop-blur-fallback-lg border-t border-white/20 dark:border-gray-700 shadow-[0_-4px_24px_rgba(0,0,0,0.08)]">
           <div className="flex justify-end items-center pr-4" style={{ padding: 'clamp(0.5rem, 2vw, 0.75rem) clamp(0.75rem, 2vw, 1rem)' }}>
             <button 
               onClick={onShowForm}

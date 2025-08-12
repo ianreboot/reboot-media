@@ -332,6 +332,37 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   }
+  
+  /* Robust backdrop blur fallbacks for browser compatibility */
+  .backdrop-blur-fallback-sm {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  
+  .backdrop-blur-fallback-md {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  .backdrop-blur-fallback-lg {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+  
+  /* Fallback for browsers that don't support backdrop-filter */
+  @supports not (backdrop-filter: blur(1px)) {
+    .backdrop-blur-fallback-sm,
+    .backdrop-blur-fallback-md,
+    .backdrop-blur-fallback-lg {
+      background: rgba(255, 255, 255, 0.85);
+    }
+    
+    .dark .backdrop-blur-fallback-sm,
+    .dark .backdrop-blur-fallback-md,
+    .dark .backdrop-blur-fallback-lg {
+      background: rgba(15, 23, 42, 0.85);
+    }
+  }
   .scale-102 {
     transform: scale(1.02);
   }
