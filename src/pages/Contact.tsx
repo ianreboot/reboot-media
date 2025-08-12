@@ -19,6 +19,7 @@ const Contact = () => {
     subject: '',
     message: '',
     serviceInterest: '',
+    honeypot: '', // Bot detection field
   });
 
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
@@ -54,22 +55,52 @@ const Contact = () => {
     setErrorMessage('');
 
     try {
-      // Create email content using utility
-      const emailContent = generateEmailContent(formData, 'Contact');
+      // Prepare data for server submission
+      const submissionData = {
+        name: formData.name.trim(),
+        email: formData.email.trim().toLowerCase(),
+        subject: formData.subject.trim() || 'Contact Form Submission',
+        message: formData.message.trim(),
+        // Include additional context in message if provided
+        ...(formData.company && { company: formData.company.trim() }),
+        ...(formData.website && { website: formData.website.trim() }),
+        ...(formData.phone && { phone: formData.phone.trim() }),
+        ...(formData.serviceInterest && { serviceInterest: formData.serviceInterest }),
+      };
 
-      // Here you would typically integrate with your email service
-      // For now, we'll simulate a successful submission
-      // Log only in development
-      if (import.meta.env.DEV) {
-        console.log('Contact form submission:', { 
-          formData, 
-          emailContent,
-          destination: 'Contact Form Submission' 
-        });
+      // Enhanced message with context
+      let enhancedMessage = submissionData.message;
+      if (formData.company) enhancedMessage += `\n\nCompany: ${formData.company}`;
+      if (formData.website) enhancedMessage += `\nWebsite: ${formData.website}`;
+      if (formData.phone) enhancedMessage += `\nPhone: ${formData.phone}`;
+      if (formData.serviceInterest) enhancedMessage += `\nService Interest: ${formData.serviceInterest}`;
+
+      // Submit to server endpoint
+      const apiUrl = import.meta.env.DEV 
+        ? 'http://localhost:3002/api/forms/contact'
+        : '/api/forms/contact';
+
+      const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: submissionData.name,
+          email: submissionData.email,
+          subject: submissionData.subject,
+          message: enhancedMessage,
+          honeypot: formData.honeypot, // Bot detection
+        }),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error?.message || 'Form submission failed');
       }
-      
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1500));
+
+      const result = await response.json();
+      console.log('Contact form submitted successfully:', result.data?.message);
       
       setStatus('success');
       setFormData({
@@ -81,13 +112,12 @@ const Contact = () => {
         subject: '',
         message: '',
         serviceInterest: '',
+        honeypot: '',
       });
     } catch (error) {
-      if (import.meta.env.DEV) {
-        console.error('Contact form submission error:', error);
-      }
+      console.error('Contact form submission error:', error);
       setStatus('error');
-      setErrorMessage('Failed to send message. Please try again later.');
+      setErrorMessage(error instanceof Error ? error.message : 'Failed to send message. Please try again later.');
     }
   };
 
@@ -330,6 +360,20 @@ const Contact = () => {
                       rows={6}
                       className="w-full px-4 py-3 bg-white/50 dark:bg-slate-700/50 border border-gray-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:text-white"
                       placeholder="Tell us about your business challenges and goals..."
+                    />
+                  </div>
+
+                  {/* Honeypot field for bot detection - hidden from users */}
+                  <div style={{ display: 'none' }}>
+                    <label htmlFor="honeypot">Leave this field empty</label>
+                    <input
+                      type="text"
+                      id="honeypot"
+                      name="honeypot"
+                      value={formData.honeypot}
+                      onChange={handleInputChange}
+                      tabIndex={-1}
+                      autoComplete="off"
                     />
                   </div>
 

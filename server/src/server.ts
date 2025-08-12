@@ -21,7 +21,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3002;
 
 // Trust proxy if behind reverse proxy
 app.set('trust proxy', 1);
@@ -73,7 +73,7 @@ const formLimiter = rateLimit({
     success: false,
     error: {
       code: 'FORM_RATE_LIMIT_EXCEEDED',
-      message: 'Too many form submissions. Please wait before submitting again.',
+      message: 'Too many form submissions. Please wait 15 minutes before submitting again.',
     },
   },
   standardHeaders: true,
@@ -82,6 +82,37 @@ const formLimiter = rateLimit({
     // Rate limit by IP for form submissions
     return req.ip;
   },
+  // Enhanced rate limit with custom handler (v7 compatible)
+  handler: (req: any, res: any, next: any, options: any) => {
+    console.warn(`Rate limit exceeded for IP: ${req.ip}`, {
+      timestamp: new Date().toISOString(),
+      ip: req.ip,
+      userAgent: req.get('User-Agent'),
+      url: req.url,
+      requestId: req.requestId,
+    });
+    
+    // Send the rate limit response
+    res.status(options.statusCode).json(options.message);
+  },
+});
+
+// Aggressive rate limiting for potential abuse
+const strictFormLimiter = rateLimit({
+  windowMs: 60 * 60 * 1000, // 1 hour
+  max: 10, // Limit each IP to 10 form submissions per hour
+  message: {
+    success: false,
+    error: {
+      code: 'HOURLY_RATE_LIMIT_EXCEEDED',
+      message: 'Too many requests from this IP. Please try again later.',
+    },
+  },
+  standardHeaders: true,
+  legacyHeaders: false,
+  keyGenerator: (req: any) => req.ip,
+  skipSuccessfulRequests: false,
+  skipFailedRequests: false,
 });
 
 app.use(generalLimiter);
@@ -131,8 +162,8 @@ app.get('/api/health', (req: any, res: express.Response) => {
   });
 });
 
-// API routes
-app.use('/api/forms', formLimiter, formRoutes);
+// API routes with layered rate limiting
+app.use('/api/forms', strictFormLimiter, formLimiter, formRoutes);
 
 // Serve static files in production
 if (process.env.NODE_ENV === 'production') {

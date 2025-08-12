@@ -46,7 +46,7 @@ const LeadForm = () => {
 
   const submitFormToServer = async (formData: typeof formData) => {
     const apiUrl = import.meta.env.DEV 
-      ? 'http://localhost:3001/api/forms/lead'
+      ? 'http://localhost:3002/api/forms/lead'
       : '/api/forms/lead';
 
     const response = await fetch(apiUrl, {
