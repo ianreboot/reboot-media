@@ -22,47 +22,99 @@ export default defineConfig(({ mode }) => {
       outDir: 'dist',
       assetsDir: 'assets',
       sourcemap: false,
+      target: 'es2020',
+      cssCodeSplit: true,
+      chunkSizeWarningLimit: 200,
+      minify: mode === 'production' ? 'esbuild' : false,
       rollupOptions: {
         output: {
-          manualChunks: {
-            vendor: ['react', 'react-dom'],
-            router: ['react-router-dom'],
-            'marketing-psychology': [
-              './src/pages/MarketingPsychology.tsx',
-              './src/pages/UnawareStageCustomers.tsx',
-              './src/pages/ProblemAwareStageCustomers.tsx',
-              './src/pages/SolutionAwareStageCustomers.tsx',
-              './src/pages/ProductAwareStageCustomers.tsx',
-              './src/pages/MostAwareStageCustomers.tsx'
-            ],
-            'growth-plateau': [
-              './src/pages/GrowthPlateauSolutions.tsx',
-              './src/pages/RevenueCeilingBreakthrough.tsx',
-              './src/pages/CustomerAcquisitionStall.tsx',
-              './src/pages/MarketExpansionBarriers.tsx',
-              './src/pages/OperationalScalingCrisis.tsx',
-              './src/pages/TeamGrowthBottlenecks.tsx',
-              './src/pages/ProductMarketFitErosion.tsx',
-              './src/pages/CompetitivePressurePlateau.tsx'
-            ],
-            'fractional-cmo': [
-              './src/pages/FractionalCMOGuide.tsx',
-              './src/pages/FractionalCMOVsAgency.tsx',
-              './src/pages/FractionalCMOVsFullTime.tsx',
-              './src/pages/FractionalCMOVsConsultant.tsx',
-              './src/pages/FractionalCMOVsInHouse.tsx',
-              './src/pages/TransitionStrategies.tsx',
-              './src/pages/WhenToChooseEach.tsx',
-              './src/pages/CostROIAnalysis.tsx'
-            ],
-            'ui-components': [
-              './src/components/LeadForm.tsx',
-              './src/components/GlobalHeader.tsx',
-              './src/components/GlobalFooter.tsx',
-              './src/components/PricingCards.tsx'
-            ]
+          experimentalMinChunkSize: 20000,
+          manualChunks: (id) => {
+            // Vendor dependencies
+            if (id.includes('node_modules')) {
+              if (id.includes('react')) {
+                return 'react-vendor';
+              }
+              if (id.includes('react-router')) {
+                return 'router-vendor';
+              }
+              if (id.includes('lucide-react')) {
+                return 'icons-vendor';
+              }
+              if (id.includes('swiper')) {
+                return 'swiper-vendor';
+              }
+              return 'vendor';
+            }
+            
+            // Page chunks by category
+            if (id.includes('/src/pages/')) {
+              if (id.includes('MarketingPsychology') || 
+                  id.includes('UnawareStage') || 
+                  id.includes('ProblemAware') || 
+                  id.includes('SolutionAware') || 
+                  id.includes('ProductAware') || 
+                  id.includes('MostAware')) {
+                return 'marketing-psychology';
+              }
+              
+              if (id.includes('GrowthPlateau') || 
+                  id.includes('RevenueCeiling') || 
+                  id.includes('CustomerAcquisition') || 
+                  id.includes('MarketExpansion') || 
+                  id.includes('OperationalScaling') || 
+                  id.includes('TeamGrowth') || 
+                  id.includes('ProductMarketFit') || 
+                  id.includes('CompetitivePressure')) {
+                return 'growth-plateau';
+              }
+              
+              if (id.includes('FractionalCMO') || 
+                  id.includes('TransitionStrategies') || 
+                  id.includes('WhenToChoose') || 
+                  id.includes('CostROI')) {
+                return 'fractional-cmo';
+              }
+              
+              if (id.includes('About') || 
+                  id.includes('Contact') || 
+                  id.includes('Privacy') || 
+                  id.includes('Terms')) {
+                return 'core-pages';
+              }
+            }
+            
+            // Component chunks
+            if (id.includes('/src/components/')) {
+              if (id.includes('LeadForm') || 
+                  id.includes('GlobalHeader') || 
+                  id.includes('GlobalFooter') || 
+                  id.includes('PricingCards')) {
+                return 'ui-components';
+              }
+              return 'components';
+            }
+            
+            // Context and utilities
+            if (id.includes('/src/contexts/') || id.includes('/src/utils/')) {
+              return 'utils';
+            }
           },
         },
+      },
+    },
+    // Performance optimizations
+    esbuild: {
+      target: 'es2020',
+      legalComments: 'none',
+      minifyIdentifiers: mode === 'production',
+      minifySyntax: mode === 'production',
+      minifyWhitespace: mode === 'production',
+    },
+    // Development server optimization
+    server: {
+      fs: {
+        allow: ['..'],
       },
     },
   }

@@ -6,6 +6,7 @@ import PricingCards from './components/PricingCards';
 import SchemaMarkup from './components/SchemaMarkup';
 import SEOHead from './components/SEOHead';
 import BackgroundGradient from './components/BackgroundGradient';
+import PerformanceMonitor from './components/PerformanceMonitor';
 import { useLeadForm } from './contexts/LeadFormContext';
 
 // Words to cycle through - ordered by importance to target demographics
@@ -640,6 +641,9 @@ function App() {
 
       {/* Global Footer */}
       <GlobalFooter onShowForm={() => setShowDropdownForm(true)} />
+      
+      {/* Performance Monitor (development only) */}
+      <PerformanceMonitor />
         </div>
       </div>
     </>
