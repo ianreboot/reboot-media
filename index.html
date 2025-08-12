@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/avif" href="/reboot-media.avif" />
-    <link rel="apple-touch-icon" href="/reboot-media.avif" />
+    <link rel="icon" type="image/avif" href="/reboot/reboot-media.avif" />
+    <link rel="apple-touch-icon" href="/reboot/reboot-media.avif" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Security Headers -->
@@ -123,8 +123,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Development script -->
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Preload critical resources -->
+    <script type="module" crossorigin src="/reboot/assets/index-De_7gxxC.js"></script>
+    <link rel="modulepreload" crossorigin href="/reboot/assets/vendor-gH-7aFTg.js">
+    <link rel="stylesheet" crossorigin href="/reboot/assets/index-CM7VgimD.css">
   </head>
   <body>
     <div id="root"></div>
