@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { useLeadForm } from '../contexts/LeadFormContext';
-import { generateEmailContent } from '../utils/emailUtils';
 
 const LeadForm = () => {
   const { showDropdownForm, setShowDropdownForm } = useLeadForm();
@@ -20,6 +19,8 @@ const LeadForm = () => {
   });
   const [fieldValidation, setFieldValidation] = useState<{[key: string]: 'valid' | 'invalid' | ''}>({});
   const [selectedOptions, setSelectedOptions] = useState<{[key: string]: boolean}>({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState<string>('');
 
   const validateEmail = (email: string) => {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -41,6 +42,27 @@ const LeadForm = () => {
       ...selectedOptions,
       [option]: !selectedOptions[option]
     });
+  };
+
+  const submitFormToServer = async (formData: typeof formData) => {
+    const apiUrl = import.meta.env.DEV 
+      ? 'http://localhost:3001/api/forms/lead'
+      : '/api/forms/lead';
+
+    const response = await fetch(apiUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (!response.ok) {
+      const errorData = await response.json();
+      throw new Error(errorData.error?.message || 'Form submission failed');
+    }
+
+    return await response.json();
   };
 
   if (!showDropdownForm) return null;
@@ -468,45 +490,40 @@ const LeadForm = () => {
                   </div>
                 </div>
 
+                {/* Error message */}
+                {submitError && (
+                  <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-4">
+                    <p className="text-sm">{submitError}</p>
+                  </div>
+                )}
+
                 {/* Submit button */}
                 <button 
                   onClick={async () => {
+                    // Clear previous error
+                    setSubmitError('');
+                    
                     // Validate required fields
                     if (!formData.name || !formData.company || !formData.email || !formData.specificIssue) {
-                      console.error('Please fill in all required fields');
+                      setSubmitError('Please fill in all required fields');
                       return;
                     }
 
                     // Validate email format
                     if (!validateEmail(formData.email)) {
-                      console.error('Please enter a valid email address');
+                      setSubmitError('Please enter a valid email address');
                       return;
                     }
 
+                    setIsSubmitting(true);
+
                     try {
-                      // Create email content using utility
-                      const emailContent = generateEmailContent(formData, 'Lead Generation');
-
-                      // Log submission (for development/debugging)
-                      // Log only in development
-                      if (import.meta.env.DEV) {
-                        console.log('Lead form submission:', { 
-                          formData, 
-                          emailContent,
-                          timestamp: new Date().toISOString()
-                        });
-                      }
-
-                      // Here you would integrate with your email service
-                      // await sendEmailToRebootMedia(emailContent, formData);
-
-                      // Show success message (avoid including user data in alerts)
-                      if (import.meta.env.DEV) {
-                        console.log('Form submitted successfully');
-                      }
-                      // In production, show a success modal or redirect to a thank you page
+                      // Submit to server
+                      const result = await submitFormToServer(formData);
                       
-                      // Reset form
+                      console.log('Form submitted successfully:', result.data?.message);
+                      
+                      // Reset form and close modal
                       setShowDropdownForm(false);
                       setFormStep(1);
                       setFormData({
@@ -522,15 +539,24 @@ const LeadForm = () => {
                         teamSize: '',
                         currentMarketing: ''
                       });
+                      
+                      // You could show a success toast here instead of console.log
+                      
                     } catch (error) {
-                      if (import.meta.env.DEV) {
-                        console.error('Error submitting form:', error);
-                      }
+                      console.error('Error submitting form:', error);
+                      setSubmitError(error instanceof Error ? error.message : 'Failed to submit form. Please try again.');
+                    } finally {
+                      setIsSubmitting(false);
                     }
                   }}
-                  className="w-full mt-6 bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 hover:via-orange-700 hover:to-red-600 text-white px-8 py-4 rounded-xl font-black text-lg transition-all duration-300 transform hover:scale-105 shadow-2xl"
+                  disabled={isSubmitting}
+                  className={`w-full mt-6 px-8 py-4 rounded-xl font-black text-lg transition-all duration-300 transform shadow-2xl ${
+                    isSubmitting 
+                      ? 'bg-gray-400 cursor-not-allowed' 
+                      : 'bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 hover:via-orange-700 hover:to-red-600 hover:scale-105'
+                  } text-white`}
                 >
-                  Get My Free Marketing Analysis →
+                  {isSubmitting ? 'Submitting...' : 'Get My Free Marketing Analysis →'}
                 </button>
                 
                 <p className="text-gray-500 text-xs text-center mt-4">
