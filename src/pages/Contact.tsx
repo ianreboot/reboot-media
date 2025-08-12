@@ -5,7 +5,6 @@ import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
 import BackgroundGradient from '../components/BackgroundGradient';
-import { generateEmailContent } from '../utils/emailUtils';
 import { useLeadForm } from '../contexts/LeadFormContext';
 
 const Contact = () => {

@@ -203,7 +203,7 @@ describe('GlobalHeader', () => {
       const { container } = renderWithRouter(<GlobalHeader {...defaultProps} />);
       
       const mobileNavInner = container.querySelector('nav.fixed.bottom-0 > div');
-      expect(mobileNavInner).toHaveClass('backdrop-blur-lg', 'shadow-[0_-4px_24px_rgba(0,0,0,0.08)]');
+      expect(mobileNavInner).toHaveClass('backdrop-blur-fallback-lg', 'shadow-[0_-4px_24px_rgba(0,0,0,0.08)]');
     });
   });
 

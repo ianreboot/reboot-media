@@ -144,7 +144,7 @@ describe('Header Padding Integration Tests', () => {
       
       const headerDiv = container.querySelector('[class*="backdrop-blur"]');
       expect(headerDiv).toBeInTheDocument();
-      expect(headerDiv).toHaveClass('backdrop-blur-md');
+      expect(headerDiv).toHaveClass('backdrop-blur-fallback-md');
     });
 
     it('header background opacity allows content to show through slightly', () => {

@@ -44,7 +44,19 @@ const LeadForm = () => {
     });
   };
 
-  const submitFormToServer = async (formData: typeof formData) => {
+  const submitFormToServer = async (formData: {
+    email: string;
+    challenge: string;
+    revenue: string;
+    name: string;
+    company: string;
+    timeline: string;
+    website: string;
+    specificIssue: string;
+    industry: string;
+    teamSize: string;
+    currentMarketing: string;
+  }) => {
     const apiUrl = import.meta.env.DEV 
       ? 'http://localhost:3002/api/forms/lead'
       : '/api/forms/lead';
