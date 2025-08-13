@@ -1,5 +1,57 @@
 @import 'tailwindcss';
 
+/* Enhanced Responsive Navigation Styles */
+@layer utilities {
+  /* Backdrop blur fallbacks for better browser support */
+  .backdrop-blur-fallback-sm {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  
+  .backdrop-blur-fallback-md {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .backdrop-blur-fallback-lg {
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+  }
+
+  /* Enhanced mobile touch targets */
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Safe area insets for mobile */
+  .safe-area-top {
+    padding-top: env(safe-area-inset-top);
+  }
+  
+  .safe-area-bottom {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Improved mobile scroll behavior */
+  .mobile-scroll-smooth {
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  /* Prevent mobile zoom on input focus */
+  .prevent-zoom {
+    font-size: 16px;
+  }
+
+  /* Enhanced focus states for better accessibility */
+  .focus-enhanced:focus-visible {
+    outline: 2px solid theme('colors.orange.500');
+    outline-offset: 2px;
+    border-radius: 0.375rem;
+  }
+}
+
 @theme {
   /* 8pt Grid System Foundation */
   --space-1: 0.125rem;  /* 2px */

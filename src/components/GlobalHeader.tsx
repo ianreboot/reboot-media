@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef, useCallback } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 interface GlobalHeaderProps {
@@ -10,8 +10,11 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
   const [scrollY, setScrollY] = useState(0);
   const [readingProgress, setReadingProgress] = useState(0);
   const [showDevDropdown, setShowDevDropdown] = useState(false);
+  const [showMobileMenu, setShowMobileMenu] = useState(false);
+  const [isScrollingUp, setIsScrollingUp] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
   const dropdownRef = useRef<HTMLDivElement>(null);
-  // const navigate = useNavigate();
+  const mobileMenuRef = useRef<HTMLDivElement>(null);
   const location = useLocation();
   
   // Check if we're in development mode
@@ -29,42 +32,102 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
     return 'from-orange-500 to-orange-600'; // default
   };
 
+  // Enhanced scroll handler with direction detection and throttling
   useEffect(() => {
+    let ticking = false;
+    
     const handleScroll = () => {
-      setScrollY(window.scrollY);
-      
-      // Reading progress calculation when enabled
-      if (showProgressBar) {
-        const scrollTop = window.scrollY;
-        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        const progress = (scrollTop / docHeight) * 100;
-        setReadingProgress(Math.min(100, Math.max(0, progress)));
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          const currentScrollY = window.scrollY;
+          
+          // Update scroll direction for mobile navbar hiding
+          setIsScrollingUp(currentScrollY < lastScrollY || currentScrollY < 100);
+          setLastScrollY(currentScrollY);
+          setScrollY(currentScrollY);
+          
+          // Reading progress calculation when enabled
+          if (showProgressBar) {
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const progress = (currentScrollY / docHeight) * 100;
+            setReadingProgress(Math.min(100, Math.max(0, progress)));
+          }
+          
+          ticking = false;
+        });
+        ticking = true;
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, [showProgressBar]);
+  }, [showProgressBar, lastScrollY]);
   
-  // Close dropdown when clicking outside
+  // Close dropdowns and mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setShowDevDropdown(false);
       }
+      if (mobileMenuRef.current && !mobileMenuRef.current.contains(event.target as Node)) {
+        setShowMobileMenu(false);
+      }
     };
     
-    if (showDevDropdown) {
+    if (showDevDropdown || showMobileMenu) {
       document.addEventListener('mousedown', handleClickOutside);
     }
     
     return () => {
       document.removeEventListener('mousedown', handleClickOutside);
     };
-  }, [showDevDropdown]);
+  }, [showDevDropdown, showMobileMenu]);
 
-  const scrollToTop = () => {
+  // Handle escape key to close menus
+  useEffect(() => {
+    const handleEscape = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setShowDevDropdown(false);
+        setShowMobileMenu(false);
+      }
+    };
+    
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, []);
+
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    if (showMobileMenu) {
+      document.body.style.overflow = 'hidden';
+      document.body.style.touchAction = 'none';
+    } else {
+      document.body.style.overflow = '';
+      document.body.style.touchAction = '';
+    }
+    
+    return () => {
+      document.body.style.overflow = '';
+      document.body.style.touchAction = '';
+    };
+  }, [showMobileMenu]);
+
+  const scrollToTop = useCallback(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
+  }, []);
+
+  const handleMenuItemClick = useCallback(() => {
+    setShowDevDropdown(false);
+    setShowMobileMenu(false);
+    scrollToTop();
+  }, [scrollToTop]);
+
+  // Main navigation items for both desktop and mobile
+  const navigationItems = [
+    { path: '/', label: 'Home', icon: '🏠' },
+    { path: '/about', label: 'About', icon: '👥' },
+    { path: '/contact', label: 'Contact', icon: '📧' },
+  ];
 
   // const handleHashNavigation = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
   //   e.preventDefault();
@@ -89,23 +152,31 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
 
   return (
     <>
-      {/* Unified Top Navigation - Desktop and Mobile */}
-      <nav className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
+      {/* Main Navigation Header */}
+      <nav 
+        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
+          !isScrollingUp && scrollY > 100 ? '-translate-y-full' : 'translate-y-0'
+        }`}
+        role="navigation"
+        aria-label="Main navigation"
+      >
         <div className={`transition-all duration-300 ${
           scrollY > 50 
-            ? 'bg-white/75 dark:bg-slate-900/75 backdrop-blur-fallback-md shadow-lg border-b border-gray-200 dark:border-gray-700' 
-            : 'bg-white/80 backdrop-blur-fallback-md border-b border-white/20'
+            ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-xl border-b border-gray-200/50 dark:border-gray-700/50' 
+            : 'bg-white/85 backdrop-blur-md border-b border-white/20'
         }`}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between items-center py-3 sm:py-4">
-              {/* Logo and Dev Navigation */}
-              <div className="flex items-center gap-4">
+            <div className="flex justify-between items-center h-16 sm:h-18">
+              
+              {/* Left Side: Logo and Dev Navigation */}
+              <div className="flex items-center gap-6">
                 <Link 
                   to="/" 
                   onClick={scrollToTop}
-                  className="text-xl sm:text-2xl font-black cursor-pointer hover:scale-105 transition-transform duration-300"
+                  className="group flex items-center text-xl sm:text-2xl font-black focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded-lg p-1"
+                  aria-label="Reboot Media - Go to homepage"
                 >
-                  <span className={`transition-colors duration-300 ${
+                  <span className={`transition-all duration-300 group-hover:scale-105 ${
                     scrollY > 50 
                       ? 'text-gray-900 dark:text-white' 
                       : 'text-gray-800 dark:text-white'
@@ -116,31 +187,64 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                 
                 {/* Development-only Navigation Dropdown */}
                 {isDev && (
-                  <div className="relative" ref={dropdownRef}>
+                  <div className="relative hidden sm:block" ref={dropdownRef}>
                     <button
                       onClick={() => setShowDevDropdown(!showDevDropdown)}
-                      className="px-3 py-1 text-sm bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors font-medium flex items-center gap-1"
+                      className="px-3 py-2 text-sm bg-purple-600 text-white rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-all duration-200 font-medium flex items-center gap-2 shadow-md hover:shadow-lg"
                       title="Quick Navigation (Dev Only)"
+                      aria-expanded={showDevDropdown}
+                      aria-haspopup="true"
                     >
                       <span>Dev Nav</span>
-                      <svg className={`w-4 h-4 transition-transform ${showDevDropdown ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg 
+                        className={`w-4 h-4 transition-transform duration-200 ${showDevDropdown ? 'rotate-180' : ''}`} 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                        aria-hidden="true"
+                      >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
                     </button>
                     
                     {showDevDropdown && (
-                      <div className="absolute top-full left-0 mt-2 w-80 bg-white dark:bg-slate-800 rounded-lg shadow-xl border border-gray-200 dark:border-gray-700 max-h-[70vh] overflow-y-auto z-50">
-                        <div className="p-2">
-                          <div className="text-xs font-semibold text-purple-600 dark:text-purple-400 px-3 py-2 border-b border-gray-200 dark:border-gray-700 mb-2">
+                      <div 
+                        className="absolute top-full left-0 mt-3 w-80 bg-white dark:bg-slate-800 rounded-xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 max-h-[70vh] overflow-y-auto z-50 backdrop-blur-md"
+                        role="menu"
+                        aria-labelledby="dev-nav-button"
+                      >
+                        <div className="p-3">
+                          <div className="text-xs font-bold text-purple-600 dark:text-purple-400 px-3 py-2 border-b border-gray-100 dark:border-gray-700 mb-3 bg-purple-50/50 dark:bg-purple-900/20 rounded-lg">
                             DEVELOPMENT NAVIGATION
                           </div>
                           
                           {/* Main Pages */}
                           <div className="mb-3">
                             <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 px-3 py-1">MAIN</div>
-                            <Link to="/" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">🏠 Home</Link>
-                            <Link to="/about" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">👥 About</Link>
-                            <Link to="/contact" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">📧 Contact</Link>
+                            <Link 
+                              to="/" 
+                              onClick={handleMenuItemClick} 
+                              className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1"
+                              role="menuitem"
+                            >
+                              🏠 Home
+                            </Link>
+                            <Link 
+                              to="/about" 
+                              onClick={handleMenuItemClick} 
+                              className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1"
+                              role="menuitem"
+                            >
+                              👥 About
+                            </Link>
+                            <Link 
+                              to="/contact" 
+                              onClick={handleMenuItemClick} 
+                              className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1"
+                              role="menuitem"
+                            >
+                              📧 Contact
+                            </Link>
                           </div>
                           
                           {/* Marketing Psychology Pages */}
@@ -193,13 +297,59 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                 )}
               </div>
 
-              {/* Desktop Navigation Links */}
-              <div className="hidden md:flex items-center space-x-8">
+              {/* Right Side: Desktop Navigation & Mobile Menu Toggle */}
+              <div className="flex items-center gap-4">
+                
+                {/* Desktop Navigation Links */}
+                <div className="hidden lg:flex items-center gap-6">
+                  {navigationItems.map((item) => (
+                    <Link
+                      key={item.path}
+                      to={item.path}
+                      onClick={scrollToTop}
+                      className={`relative px-3 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ${
+                        location.pathname === item.path
+                          ? 'text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20'
+                          : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+                      }`}
+                    >
+                      <span className="hidden xl:inline">{item.icon} </span>
+                      {item.label}
+                      {location.pathname === item.path && (
+                        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-orange-500 rounded-full"></div>
+                      )}
+                    </Link>
+                  ))}
+                </div>
+
+                {/* CTA Button - Hidden on Mobile */}
                 <button 
                   onClick={onShowForm}
-                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105"
+                  className="hidden md:flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                  aria-label="Open growth analysis form"
                 >
-                  Unlock Growth Now
+                  <span className="text-sm">🚀</span>
+                  <span>Unlock Growth Now</span>
+                </button>
+
+                {/* Mobile Menu Toggle */}
+                <button
+                  onClick={() => setShowMobileMenu(!showMobileMenu)}
+                  className="lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-all duration-200"
+                  aria-expanded={showMobileMenu}
+                  aria-label="Toggle mobile menu"
+                >
+                  <div className="relative w-6 h-6">
+                    <span className={`absolute block w-6 h-0.5 bg-current transform transition-all duration-300 ${
+                      showMobileMenu ? 'rotate-45 translate-y-0' : '-translate-y-2'
+                    }`}></span>
+                    <span className={`absolute block w-6 h-0.5 bg-current transform transition-all duration-300 ${
+                      showMobileMenu ? 'opacity-0' : 'opacity-100'
+                    }`}></span>
+                    <span className={`absolute block w-6 h-0.5 bg-current transform transition-all duration-300 ${
+                      showMobileMenu ? '-rotate-45 translate-y-0' : 'translate-y-2'
+                    }`}></span>
+                  </div>
                 </button>
               </div>
             </div>
@@ -217,23 +367,119 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
         </div>
       </nav>
 
-      {/* Mobile Navigation - Sticky Ribbon (Bottom) */}
-      <nav className="fixed bottom-0 left-0 right-0 z-50 md:hidden transform-gpu">
-        <div className="bg-white/85 dark:bg-slate-900/85 backdrop-blur-fallback-lg border-t border-white/20 dark:border-gray-700 shadow-[0_-4px_24px_rgba(0,0,0,0.08)]">
-          <div className="flex justify-end items-center pr-4" style={{ padding: 'clamp(0.5rem, 2vw, 0.75rem) clamp(0.75rem, 2vw, 1rem)' }}>
-            <button 
-              onClick={onShowForm}
-              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white rounded-lg font-bold shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-200"
-              style={{ 
-                padding: 'clamp(0.625rem, 2.5vw, 0.75rem) clamp(1rem, 3vw, 1.25rem)',
-                fontSize: 'clamp(0.75rem, 2.5vw, 0.875rem)'
-              }}
+      {/* Mobile Menu Overlay */}
+      {showMobileMenu && (
+        <div 
+          className="fixed inset-0 z-40 lg:hidden"
+          aria-hidden="true"
+        >
+          <div 
+            className="fixed inset-0 bg-black/50 backdrop-blur-sm"
+            onClick={() => setShowMobileMenu(false)}
+          ></div>
+        </div>
+      )}
+
+      {/* Mobile Menu Slide-out */}
+      <div
+        ref={mobileMenuRef}
+        className={`fixed top-0 right-0 z-50 h-full w-80 max-w-[90vw] bg-white dark:bg-slate-900 shadow-2xl transform transition-transform duration-300 ease-out lg:hidden ${
+          showMobileMenu ? 'translate-x-0' : 'translate-x-full'
+        }`}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Mobile navigation menu"
+      >
+        <div className="flex flex-col h-full">
+          {/* Mobile Menu Header */}
+          <div className="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+            <h2 className="text-lg font-bold text-gray-900 dark:text-white">Navigation</h2>
+            <button
+              onClick={() => setShowMobileMenu(false)}
+              className="p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              aria-label="Close mobile menu"
             >
-              Unlock Growth Now
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Mobile Menu Content */}
+          <div className="flex-1 overflow-y-auto py-6">
+            <nav className="px-6 space-y-2">
+              {navigationItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  onClick={handleMenuItemClick}
+                  className={`flex items-center gap-3 px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 ${
+                    location.pathname === item.path
+                      ? 'text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500'
+                      : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800'
+                  }`}
+                >
+                  <span className="text-xl">{item.icon}</span>
+                  <span>{item.label}</span>
+                  {location.pathname === item.path && (
+                    <div className="ml-auto w-2 h-2 bg-orange-500 rounded-full"></div>
+                  )}
+                </Link>
+              ))}
+            </nav>
+
+            {/* Mobile Dev Navigation */}
+            {isDev && (
+              <div className="mt-8 px-6">
+                <div className="border-t border-gray-200 dark:border-gray-700 pt-6">
+                  <div className="text-sm font-semibold text-purple-600 dark:text-purple-400 mb-4 flex items-center gap-2">
+                    <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
+                    DEVELOPMENT SHORTCUTS
+                  </div>
+                  <div className="space-y-1">
+                    <Link to="/marketing-psychology" onClick={handleMenuItemClick} className="block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">🧠 Marketing Psychology</Link>
+                    <Link to="/growth-plateau-solutions" onClick={handleMenuItemClick} className="block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">📈 Growth Plateau</Link>
+                    <Link to="/fractional-cmo-guide" onClick={handleMenuItemClick} className="block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">💼 Fractional CMO</Link>
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Mobile Menu Footer with CTA */}
+          <div className="p-6 border-t border-gray-200 dark:border-gray-700 bg-gray-50 dark:bg-gray-800/50">
+            <button
+              onClick={() => {
+                onShowForm?.();
+                setShowMobileMenu(false);
+              }}
+              className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-4 rounded-xl font-bold text-base transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+            >
+              <span className="text-lg">🚀</span>
+              <span>Unlock Growth Now</span>
+            </button>
+            <p className="text-xs text-center text-gray-500 dark:text-gray-400 mt-3">
+              Free marketing analysis • No commitment
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Simplified Mobile Bottom CTA (when menu closed) */}
+      <div className={`fixed bottom-0 left-0 right-0 z-40 md:hidden transition-all duration-300 ${
+        showMobileMenu ? 'translate-y-full opacity-0' : 'translate-y-0 opacity-100'
+      }`}>
+        <div className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-gray-200/50 dark:border-gray-700/50 shadow-lg">
+          <div className="px-4 py-3">
+            <button
+              onClick={onShowForm}
+              className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all duration-200 shadow-lg hover:shadow-xl transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+            >
+              🚀 Unlock Growth Now
             </button>
           </div>
         </div>
-      </nav>
+      </div>
     </>
   );
 };
