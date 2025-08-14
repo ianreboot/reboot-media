@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
@@ -136,7 +135,7 @@ const FractionalCMOVsConsultant = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 text-gray-300">
-                  <Link to="/fractional-cmo-guide" className="hover:text-purple-400 transition-colors">Fractional CMO Guide</Link>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-purple-400 transition-colors">Fractional CMO Guide</a>
                   <span>→</span>
                   <span className="text-purple-400 font-semibold">vs Consultant</span>
                 </nav>
@@ -306,9 +305,9 @@ const FractionalCMOVsConsultant = () => {
                 >
                   Get Free Implementation Assessment
                 </button>
-                <Link to="/fractional-cmo-guide" className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Compare vs Agency & In-House
-                </Link>
+                </a>
               </div>
             </section>
 
@@ -320,9 +319,9 @@ const FractionalCMOVsConsultant = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/fractional-cmo-guide/transition-strategies" className="hover:text-purple-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-purple-600 transition-colors">
                       Stop Wasting $75K on Unimplemented Strategy →
-                    </Link>
+                    </a>
                   </h3>
                   <p className="text-standard dark:text-gray-300">
                     Have great strategy but can't execute? Learn how to transition from consultant advice to fractional CMO implementation.
@@ -330,9 +329,9 @@ const FractionalCMOVsConsultant = () => {
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/marketing-psychology" className="hover:text-purple-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-purple-600 transition-colors">
                       Psychology That Beats Industry Tactics →
-                    </Link>
+                    </a>
                   </h3>
                   <p className="text-standard dark:text-gray-300">
                     Consultants give industry tactics. Fractional CMOs apply universal psychology. Learn the principles that drive results.

@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
@@ -136,7 +135,7 @@ const TransitionStrategies = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 text-gray-300">
-                  <Link to="/fractional-cmo-guide" className="hover:text-purple-400 transition-colors">Fractional CMO Guide</Link>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-purple-400 transition-colors">Fractional CMO Guide</a>
                   <span>→</span>
                   <span className="text-pink-400 font-semibold">Transition Strategies</span>
                 </nav>
@@ -352,9 +351,9 @@ const TransitionStrategies = () => {
                 >
                   Get Free Transition Roadmap
                 </button>
-                <Link to="/fractional-cmo-guide" className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Choose Your Marketing Model
-                </Link>
+                </a>
               </div>
             </section>
 
@@ -366,9 +365,9 @@ const TransitionStrategies = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/fractional-cmo-guide/cost-roi-analysis" className="hover:text-purple-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="hover:text-purple-600 transition-colors">
                       Save $200K During Transition →
-                    </Link>
+                    </a>
                   </h3>
                   <p className="text-standard dark:text-gray-300">
                     Understanding the true costs and returns of switching marketing approaches. Make data-driven transition decisions.
@@ -376,9 +375,9 @@ const TransitionStrategies = () => {
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/growth-plateau-solutions" className="hover:text-purple-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-purple-600 transition-colors">
                       8 Plateau Patterns Forcing Change →
-                    </Link>
+                    </a>
                   </h3>
                   <p className="text-standard dark:text-gray-300">
                     Revenue plateaus often signal the need for marketing leadership transitions. Identify your plateau pattern.

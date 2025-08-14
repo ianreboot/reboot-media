@@ -1,5 +1,4 @@
 import { CheckCircle, Award, TrendingUp, Users, Globe, Briefcase } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
@@ -215,7 +214,7 @@ const About = () => {
             <h2 className="heading-xl text-white mb-4">Ready to Work Together?</h2>
             <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
               Stop fumbling with amateur advice. Get battle-tested strategies from executives who've 
-              guided Fortune 500 brands to measurable growth. <Link to="/privacy" className="transparent-link">Privacy protected</Link>.
+              guided Fortune 500 brands to measurable growth. <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/privacy`} className="transparent-link">Privacy protected</a>.
             </p>
             <button
               onClick={() => setShowDropdownForm(true)}

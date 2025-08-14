@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { getCanonicalUrl } from '../utils/urls';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
@@ -167,9 +166,9 @@ const FractionalCMOGuide = () => {
                     Most companies think "we need execution help" when they really need strategy refinement. 
                     <strong className="text-blue-600"> Who's accountable when tactics fail?</strong>
                   </p>
-                  <Link to="/fractional-cmo-guide/vs-marketing-agency" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-marketing-agency`} className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
                     See Why Agencies Fail at Strategy →
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -191,9 +190,9 @@ const FractionalCMOGuide = () => {
                     "We're big enough for a full-time CMO" is often ego talking. 
                     <strong className="text-green-600"> Can you give them $200K worth of meaningful work?</strong>
                   </p>
-                  <Link to="/fractional-cmo-guide/vs-full-time-cmo" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-full-time-cmo`} className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
                     Calculate If You Need $200K CMO →
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -215,9 +214,9 @@ const FractionalCMOGuide = () => {
                     Consultants give great advice, but who implements? 
                     <strong className="text-purple-600"> Fractional CMOs own results, not just recommendations.</strong>
                   </p>
-                  <Link to="/fractional-cmo-guide/vs-consultant" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-consultant`} className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
                     Advice vs Results: Who's Accountable? →
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -239,9 +238,9 @@ const FractionalCMOGuide = () => {
                     Building internal teams costs 2.5x base salaries. 
                     <strong className="text-indigo-600"> How long can you wait for competency?</strong>
                   </p>
-                  <Link to="/fractional-cmo-guide/vs-in-house-team" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-in-house-team`} className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
                     Reveal 2.5x Hidden Team Costs →
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -263,9 +262,9 @@ const FractionalCMOGuide = () => {
                     Revenue stage, growth trajectory, and internal capabilities determine optimal choice. 
                     <strong className="text-red-600"> Use the decision matrix.</strong>
                   </p>
-                  <Link to="/fractional-cmo-guide/when-to-choose-each" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/when-to-choose-each`} className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
                     Match Your Stage to Right Model →
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -287,9 +286,9 @@ const FractionalCMOGuide = () => {
                     Hourly rates lie. True costs include management overhead, ramp time, and opportunity costs. 
                     <strong className="text-teal-600"> See the real numbers.</strong>
                   </p>
-                  <Link to="/fractional-cmo-guide/cost-roi-analysis" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
                     See 3.2x ROI vs 1.8x Comparison →
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -311,9 +310,9 @@ const FractionalCMOGuide = () => {
                     Growth stages require different marketing approaches. Agency → Fractional → Full-time isn't always the path. 
                     <strong className="text-pink-600"> When to switch and how to do it right.</strong>
                   </p>
-                  <Link to="/fractional-cmo-guide/transition-strategies" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
                     Avoid 6-Month Transition Loss →
-                  </Link>
+                  </a>
                 </div>
               </div>
 
@@ -336,9 +335,9 @@ const FractionalCMOGuide = () => {
               >
                 Get Free Decision Analysis
               </button>
-              <Link to="/fractional-cmo-guide/cost-roi-analysis" className="border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+              <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                 Calculate Your $47K Mistake
-              </Link>
+              </a>
             </div>
           </section>
 
@@ -350,9 +349,9 @@ const FractionalCMOGuide = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                  <Link to="/growth-plateau-solutions" className="hover:text-blue-600 transition-colors">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-blue-600 transition-colors">
                     8 Proven Plateau Breakthrough Patterns →
-                  </Link>
+                  </a>
                 </h3>
                 <p className="text-standard dark:text-gray-300">
                   Marketing leadership choices often follow revenue plateaus. Discover psychology-driven solutions for breaking through growth ceilings.
@@ -360,9 +359,9 @@ const FractionalCMOGuide = () => {
               </div>
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                 <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                  <Link to="/marketing-psychology" className="hover:text-blue-600 transition-colors">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-blue-600 transition-colors">
                     5 Awareness Stages That Convert →
-                  </Link>
+                  </a>
                 </h3>
                 <p className="text-standard dark:text-gray-300">
                   Master the customer awareness stages and conversion psychology that separates great marketing leaders from tacticians.

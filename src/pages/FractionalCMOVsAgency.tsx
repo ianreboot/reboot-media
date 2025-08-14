@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
@@ -136,7 +135,7 @@ const FractionalCMOVsAgency = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 text-gray-300">
-                  <Link to="/fractional-cmo-guide" className="hover:text-blue-400 transition-colors">Fractional CMO Guide</Link>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-blue-400 transition-colors">Fractional CMO Guide</a>
                   <span>→</span>
                   <span className="text-blue-400 font-semibold">vs Marketing Agency</span>
                 </nav>
@@ -306,9 +305,9 @@ const FractionalCMOVsAgency = () => {
                 >
                   Get Free Strategy Analysis
                 </button>
-                <Link to="/fractional-cmo-guide" className="border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Compare vs Full-Time & Consultant
-                </Link>
+                </a>
               </div>
             </section>
 
@@ -320,9 +319,9 @@ const FractionalCMOVsAgency = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/fractional-cmo-guide/cost-roi-analysis" className="hover:text-blue-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="hover:text-blue-600 transition-colors">
                       Why Agencies Cost More Than Expected →
-                    </Link>
+                    </a>
                   </h3>
                   <p className="text-standard dark:text-gray-300">
                     Hidden costs of agency relationships vs fractional CMO engagements. See the real numbers behind the hourly rate illusion.
@@ -330,9 +329,9 @@ const FractionalCMOVsAgency = () => {
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/growth-plateau-solutions/customer-acquisition-stall" className="hover:text-blue-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/customer-acquisition-stall`} className="hover:text-blue-600 transition-colors">
                       Fix Your $8K CAC Problem →
-                    </Link>
+                    </a>
                   </h3>
                   <p className="text-standard dark:text-gray-300">
                     Agency vs fractional decisions often follow CAC inflation. Discover psychology-driven acquisition that sidesteps tactical wars.

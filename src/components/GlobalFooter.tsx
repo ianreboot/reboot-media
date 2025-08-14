@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import BackToTopButton from './BackToTopButton';
 
 interface GlobalFooterProps {
@@ -58,14 +58,14 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
             <div className="grid grid-cols-12 gap-8 mb-12">
               {/* Brand Statement - Left */}
               <div className="col-span-8">
-                <Link 
-                  to="/" 
+                <a 
+                  href="/" 
                   className="inline-block mb-6 hover:scale-105 transition-transform duration-300"
                 >
                   <h3 className="text-5xl font-black">
                     REBOOT <span className="text-orange-500">MEDIA</span>
                   </h3>
-                </Link>
+                </a>
                 
                 <div className="max-w-2xl">
                   <p className="text-2xl font-light text-gray-300 leading-relaxed mb-4">
@@ -107,11 +107,11 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <h4 className="text-sm font-medium text-gray-400 mb-4">Company</h4>
                 <ul className="space-y-2">
                   <li>
-                    <Link to="/about" 
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/about`} 
                           className="text-sm text-gray-300 hover:text-white transition-colors"
                           style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       About
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} 
@@ -121,11 +121,11 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                     </a>
                   </li>
                   <li>
-                    <Link to="/contact" 
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} 
                           className="text-sm text-gray-300 hover:text-white transition-colors"
                           style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       Contact
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -135,18 +135,18 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <h4 className="text-sm font-medium text-gray-400 mb-4">Legal</h4>
                 <ul className="space-y-2">
                   <li>
-                    <Link to="/privacy" 
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/privacy`} 
                           className="text-sm text-gray-300 hover:text-white transition-colors"
                           style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       Privacy Policy
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="/terms" 
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/terms`} 
                           className="text-sm text-gray-300 hover:text-white transition-colors"
                           style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       Terms of Service
-                    </Link>
+                    </a>
                   </li>
                 </ul>
               </div>
@@ -158,25 +158,25 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                   <div>
                     <ul className="space-y-2">
                       <li>
-                        <Link to="/marketing-psychology" 
+                        <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} 
                               className="text-sm text-gray-300 hover:text-white transition-colors"
                               style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                           Marketing Psychology Guide
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/growth-plateau-solutions" 
+                        <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} 
                               className="text-sm text-gray-300 hover:text-white transition-colors"
                               style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                           Breaking Growth Plateaus
-                        </Link>
+                        </a>
                       </li>
                       <li>
-                        <Link to="/fractional-cmo-guide" 
+                        <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} 
                               className="text-sm text-gray-300 hover:text-white transition-colors"
                               style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                           Fractional CMO vs Agency
-                        </Link>
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -197,15 +197,15 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
         <div className="lg:hidden">
           <div className="px-6 py-8">
             <div className="mb-6">
-              <Link 
-                to="/" 
+              <a 
+                href="/" 
                 className="inline-block cursor-pointer hover:scale-105 transition-transform duration-300"
                 style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}
               >
                 <h3 className="text-3xl font-black mb-3">
                   REBOOT <span className="text-orange-500">MEDIA</span>
                 </h3>
-              </Link>
+              </a>
               <p className="text-gray-400 text-sm leading-relaxed">
                 Fractional CMO services with proven C-level executive experience driving transformational growth for ambitious companies.
               </p>
@@ -307,19 +307,19 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <div className={`transition-all duration-300 ${expandedSections['resources'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
-                      <Link to="/marketing-psychology" className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
+                      <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Marketing Psychology Guide
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="/growth-plateau-solutions" className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
+                      <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Break Growth Plateaus
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="/fractional-cmo-guide" className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
+                      <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Fractional CMO vs Agency
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -344,9 +344,9 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <div className={`transition-all duration-300 ${expandedSections['company'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
-                      <Link to="/about" className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
+                      <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/about`} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         About
-                      </Link>
+                      </a>
                     </li>
                     <li>
                       <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
@@ -354,9 +354,9 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                       </a>
                     </li>
                     <li>
-                      <Link to="/contact" className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
+                      <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Contact
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -381,14 +381,14 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <div className={`transition-all duration-300 ${expandedSections['legal'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
-                      <Link to="/privacy" className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
+                      <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/privacy`} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Privacy Policy
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link to="/terms" className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
+                      <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/terms`} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Terms of Service
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </div>

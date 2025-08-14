@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
@@ -136,7 +135,7 @@ const FractionalCMOVsFullTime = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 text-gray-300">
-                  <Link to="/fractional-cmo-guide" className="hover:text-blue-400 transition-colors">Fractional CMO Guide</Link>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-blue-400 transition-colors">Fractional CMO Guide</a>
                   <span>→</span>
                   <span className="text-green-400 font-semibold">vs Full-Time CMO</span>
                 </nav>
@@ -306,9 +305,9 @@ const FractionalCMOVsFullTime = () => {
                 >
                   Get Free Workload Analysis
                 </button>
-                <Link to="/fractional-cmo-guide/cost-roi-analysis" className="border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   See Why Full-Time Costs $436K/Year
-                </Link>
+                </a>
               </div>
             </section>
 
@@ -320,9 +319,9 @@ const FractionalCMOVsFullTime = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/fractional-cmo-guide/transition-strategies" className="hover:text-green-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-green-600 transition-colors">
                       When $200K CMO Actually Makes Sense →
-                    </Link>
+                    </a>
                   </h3>
                   <p className="text-standard dark:text-gray-300">
                     When and how to transition from fractional to full-time CMO. Growth triggers and transition strategies that work.
@@ -330,9 +329,9 @@ const FractionalCMOVsFullTime = () => {
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/growth-plateau-solutions/revenue-ceiling-breakthrough" className="hover:text-green-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} className="hover:text-green-600 transition-colors">
                       Break Your $1M Revenue Ceiling →
-                    </Link>
+                    </a>
                   </h3>
                   <p className="text-standard dark:text-gray-300">
                     The fractional vs full-time decision often happens at revenue plateaus. Break through with the right leadership model.

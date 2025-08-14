@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { getCanonicalUrl } from '../utils/urls';
 import PageTemplate from '../components/PageTemplate';
 import type { PageTemplateProps } from '../components/PageTemplate';
@@ -130,9 +129,9 @@ const FractionalCMOGuide = () => {
                   Most companies think "we need execution help" when they really need strategy refinement. 
                   <strong className="text-blue-600"> Who's accountable when tactics fail?</strong>
                 </p>
-                <Link to="/fractional-cmo-guide/vs-marketing-agency" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-marketing-agency`} className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
                   See Why Agencies Fail at Strategy →
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -154,9 +153,9 @@ const FractionalCMOGuide = () => {
                   "We're big enough for a full-time CMO" is often ego talking. 
                   <strong className="text-green-600"> Can you give them $200K worth of meaningful work?</strong>
                 </p>
-                <Link to="/fractional-cmo-guide/vs-full-time-cmo" className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-full-time-cmo`} className="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
                   Calculate If You Need $200K CMO →
-                </Link>
+                </a>
               </div>
             </div>
 
@@ -181,9 +180,9 @@ const FractionalCMOGuide = () => {
               <button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
                 Get Free Decision Analysis
               </button>
-              <Link to="/fractional-cmo-guide/cost-roi-analysis" className="border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+              <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                 Calculate Your $47K Mistake
-              </Link>
+              </a>
             </div>
           </div>
         )
@@ -195,9 +194,9 @@ const FractionalCMOGuide = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                <Link to="/growth-plateau-solutions" className="hover:text-blue-600 transition-colors">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-blue-600 transition-colors">
                   8 Proven Plateau Breakthrough Patterns →
-                </Link>
+                </a>
               </h3>
               <p className="text-standard dark:text-gray-300">
                 Marketing leadership choices often follow revenue plateaus. Discover psychology-driven solutions for breaking through growth ceilings.
@@ -205,9 +204,9 @@ const FractionalCMOGuide = () => {
             </div>
             <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
               <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
-                <Link to="/marketing-psychology" className="hover:text-blue-600 transition-colors">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-blue-600 transition-colors">
                   5 Awareness Stages That Convert →
-                </Link>
+                </a>
               </h3>
               <p className="text-standard dark:text-gray-300">
                 Master the customer awareness stages and conversion psychology that separates great marketing leaders from tacticians.

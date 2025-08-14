@@ -1,5 +1,4 @@
 
-import { Link } from 'react-router-dom';
 import { getCanonicalUrl } from '../utils/urls';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
@@ -151,7 +150,7 @@ const Terms = () => {
                 <h2 className="heading-xl text-critical dark:text-white mb-4">7. Data and Privacy</h2>
                 <p className="text-standard dark:text-gray-300">
                   Your privacy and business confidentiality are important to us. All your information is governed by our{' '}
-                  <Link to="/privacy" className="transparent-link">comprehensive Privacy Policy</Link>. 
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/privacy`} className="transparent-link">comprehensive Privacy Policy</a>. 
                   By engaging our services, you consent to the collection and use of information as described in the Privacy Policy.
                 </p>
               </section>
@@ -293,7 +292,7 @@ const Terms = () => {
                   <p className="font-medium text-important dark:text-white">Reboot Media, Inc.</p>
                   <p className="text-optional dark:text-gray-400">17595 Harvard Ave C-738</p>
                   <p className="text-optional dark:text-gray-400">Irvine, CA 92614, USA</p>
-                  <p className="text-standard dark:text-gray-300">Contact Form: <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline">Submit inquiry</Link></p>
+                  <p className="text-standard dark:text-gray-300">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-600 underline">Submit inquiry</a></p>
                 </div>
               </section>
 

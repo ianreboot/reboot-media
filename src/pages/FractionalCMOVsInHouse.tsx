@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
@@ -136,7 +135,7 @@ const FractionalCMOVsInHouse = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 text-gray-300">
-                  <Link to="/fractional-cmo-guide" className="hover:text-indigo-400 transition-colors">Fractional CMO Guide</Link>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-indigo-400 transition-colors">Fractional CMO Guide</a>
                   <span>→</span>
                   <span className="text-indigo-400 font-semibold">vs In-House Team</span>
                 </nav>
@@ -306,9 +305,9 @@ const FractionalCMOVsInHouse = () => {
                 >
                   Get Free Team Cost Analysis
                 </button>
-                <Link to="/fractional-cmo-guide/cost-roi-analysis" className="border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Calculate Your 2.5x Hidden Costs
-                </Link>
+                </a>
               </div>
             </section>
 
@@ -320,9 +319,9 @@ const FractionalCMOVsInHouse = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/fractional-cmo-guide/transition-strategies" className="hover:text-indigo-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-indigo-600 transition-colors">
                       Recover From 43% Turnover Disaster →
-                    </Link>
+                    </a>
                   </h3>
                   <p className="text-standard dark:text-gray-300">
                     Internal marketing not working? Learn how to transition from failed in-house teams to fractional CMO success.
@@ -330,9 +329,9 @@ const FractionalCMOVsInHouse = () => {
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/growth-plateau-solutions/team-growth-bottlenecks" className="hover:text-indigo-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} className="hover:text-indigo-600 transition-colors">
                       Fix 18-Month Competency Gap →
-                    </Link>
+                    </a>
                   </h3>
                   <p className="text-standard dark:text-gray-300">
                     When building teams becomes the bottleneck to growth. Break through with the right expertise model.
