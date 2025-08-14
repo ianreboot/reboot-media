@@ -1,71 +1,28 @@
-import { useEffect } from 'react';
-import { getCanonicalUrl } from '../utils/urls';
+// Removed unused imports
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
+import SchemaMarkup from '../components/SchemaMarkup';
 import BackgroundGradient from '../components/BackgroundGradient';
 import { useLeadForm } from '../contexts/LeadFormContext';
 
 const MarketingPsychology = () => {
   const { setShowDropdownForm } = useLeadForm();
 
-  useEffect(() => {
-    document.title = "Marketing Psychology Principles That Drive Conversions | Reboot Media";
-    
-    // Update meta description
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Master the 5 customer awareness stages and conversion psychology principles that transform marketing from guesswork into predictable revenue growth. Used by 500+ companies worldwide.');
-    }
-    
-    // Update keywords
-    let metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (!metaKeywords) {
-      metaKeywords = document.createElement('meta');
-      metaKeywords.setAttribute('name', 'keywords');
-      document.head.appendChild(metaKeywords);
-    }
-    metaKeywords.setAttribute('content', 'marketing psychology, customer awareness stages, conversion psychology, behavioral marketing, psychology-driven marketing');
-    
-    // Add JSON-LD structured data
-    const script = document.createElement('script');
-    script.type = 'application/ld+json';
-    script.textContent = JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": "Marketing Psychology Principles That Drive Conversions",
-      "description": "Master the 5 customer awareness stages and conversion psychology principles that transform marketing from guesswork into predictable revenue growth.",
-      "author": {
-        "@type": "Person",
-        "name": "Ian Ho",
-        "url": "https://www.linkedin.com/in/ian-ho/"
-      },
-      "publisher": {
-        "@type": "Organization",
-        "name": "Reboot Media",
-        "url": "https://www.rebootmedia.net"
-      },
-      "mainEntityOfPage": "https://www.rebootmedia.net/marketing-psychology",
-      "datePublished": "2025-01-01",
-      "dateModified": "2025-01-01"
-    });
-    document.head.appendChild(script);
-
-    return () => {
-      // Cleanup JSON-LD script
-      const existingScript = document.querySelector('script[type="application/ld+json"]');
-      if (existingScript) {
-        document.head.removeChild(existingScript);
-      }
-    };
-  }, []);
-
   return (
     <>
+      {/* Enhanced SEO Head with auto-configuration */}
       <SEOHead 
-        title="Marketing Psychology Principles That Drive Conversions | Reboot Media"
-        description="Master the 5 customer awareness stages and conversion psychology principles that transform marketing from guesswork into predictable revenue growth. Used by 500+ companies worldwide."
-        canonicalUrl={getCanonicalUrl('marketing-psychology')}
+        pageSlug="marketing-psychology"
+        structuredDataType="article"
+        enableCoreWebVitalsOptimization={true}
+      />
+      
+      {/* Enhanced Schema Markup */}
+      <SchemaMarkup 
+        type="article"
+        pageSlug="marketing-psychology"
+        autoGenerate={true}
       />
 
       <div className="marketing-psychology-page min-h-screen relative overflow-hidden dark:bg-gray-900">

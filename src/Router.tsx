@@ -41,6 +41,9 @@ import { LeadFormProvider } from './contexts/LeadFormContext';
 import LeadForm from './components/LeadForm';
 import { PageLoadingSpinner, LazyLoadErrorFallback } from './components/LoadingComponents';
 
+// Lazy load analytics dashboards
+const AttributionDashboard = lazy(() => import('./components/AttributionDashboard'));
+
 const Router = () => {
   // Determine base path based on environment
   const basename = import.meta.env.MODE === 'development' ? '/reboot' : '';
@@ -294,6 +297,16 @@ const Router = () => {
                     element={
                       <ErrorBoundary level="page" name="CostROIAnalysisPage">
                         <CostROIAnalysis />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  
+                  {/* Analytics Dashboard Routes */}
+                  <Route 
+                    path="/analytics/attribution" 
+                    element={
+                      <ErrorBoundary level="page" name="AttributionDashboardPage">
+                        <AttributionDashboard />
                       </ErrorBoundary>
                     } 
                   />

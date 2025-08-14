@@ -34,6 +34,7 @@ import { cacheResponse } from './middleware/caching.js';
 import formRoutes from './routes/forms.js';
 import performanceRoutes from './routes/performance.js';
 import leadManagementRoutes from './routes/leadManagement.js';
+import attributionRoutes from './routes/attribution.js';
 
 // Load environment variables
 dotenv.config();
@@ -273,6 +274,7 @@ app.post('/api/cache/clear',
 app.use('/api/forms', strictFormLimiter, formLimiter, formRoutes);
 app.use('/api/v1/performance', performanceRoutes);
 app.use('/api/leads', leadManagementRoutes);
+app.use('/api/attribution', attributionRoutes);
 
 // Serve static files in production
 if (process.env.NODE_ENV === 'production') {

@@ -7,24 +7,7 @@ import SEOHead from '../components/SEOHead';
 import BackgroundGradient from '../components/BackgroundGradient';
 
 const Privacy = () => {
-  // SEO structured data
-  const privacyPageStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Privacy Policy",
-    "description": "Privacy policy for Reboot Media fractional CMO services",
-    "url": "https://www.rebootmedia.net/privacy",
-    "mainEntity": {
-      "@type": "PrivacyPolicy",
-      "name": "Reboot Media Privacy Policy",
-      "effectiveDate": "2025-01-08",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Reboot Media, Inc.",
-        "url": "https://www.rebootmedia.net/"
-      }
-    }
-  };
+  // Structured data now handled automatically by SEOHead component
 
   return (
     <div className="privacy-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
@@ -32,15 +15,12 @@ const Privacy = () => {
       <BackgroundGradient />
       
       <div className="relative z-10">
-      {/* SEO Head */}
+      {/* Enhanced SEO Head */}
       <SEOHead 
         title="Privacy Policy | Fractional CMO Services Data Protection | Reboot Media"
         description="Learn how Reboot Media protects your personal information. Our privacy policy details data collection, usage, and protection practices for our fractional CMO consulting services. GDPR and CCPA compliant."
-        keywords="privacy policy, data protection, GDPR compliance, CCPA compliance, fractional CMO privacy, marketing consultant data security, client confidentiality, business consulting privacy"
         canonicalUrl={getCanonicalUrl('privacy')}
-        ogTitle="Privacy Policy - Data Protection for Fractional CMO Services"
-        ogDescription="Comprehensive privacy policy for Reboot Media's fractional CMO services. Learn about our data protection practices and your privacy rights."
-        structuredData={privacyPageStructuredData}
+        enableCoreWebVitalsOptimization={true}
       />
         {/* Global Header with Progress Bar */}
         <GlobalHeader showProgressBar={true} />

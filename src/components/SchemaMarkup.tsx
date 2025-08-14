@@ -1,20 +1,68 @@
 import { useEffect } from 'react';
 import { getOrganizationUrl, getLogoUrl, getCanonicalUrl } from '../utils/urls';
+import { generateStructuredData } from '../utils/seoUtils';
 
 interface SchemaMarkupProps {
-  type?: 'organization' | 'service' | 'article' | 'faq' | 'breadcrumb';
+  type?: 'organization' | 'service' | 'article' | 'faq' | 'breadcrumb' | 'person' | 'contact' | 'review' | 'localbusiness';
+  pageSlug?: string;
   customData?: Record<string, unknown>;
+  autoGenerate?: boolean;
 }
 
-const SchemaMarkup = ({ type = 'organization', customData }: SchemaMarkupProps) => {
-  
-  const organizationSchema = {
+const SchemaMarkup = ({ 
+  type = 'organization', 
+  pageSlug = '', 
+  customData, 
+  autoGenerate = true 
+}: SchemaMarkupProps) => {
+
+  useEffect(() => {
+    // Remove any existing schema scripts to prevent duplicates
+    const existingScripts = document.querySelectorAll('script[data-schema-markup="true"]');
+    existingScripts.forEach(script => script.remove());
+
+    let schemasToAdd = [];
+
+    if (autoGenerate && pageSlug) {
+      // Use the enhanced structured data generator
+      schemasToAdd = generateStructuredData(type, pageSlug, customData);
+    } else if (customData) {
+      // Use custom data if provided
+      schemasToAdd = [customData];
+    } else {
+      // Generate based on legacy logic for backwards compatibility
+      schemasToAdd = generateLegacySchemas(type);
+    }
+
+    // Add new schema scripts
+    schemasToAdd.forEach((schema, index) => {
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.setAttribute('data-schema-markup', 'true');
+      script.setAttribute('data-schema-type', `${type}-${index}`);
+      script.textContent = JSON.stringify(schema);
+      document.head.appendChild(script);
+    });
+
+    // Cleanup function
+    return () => {
+      const scripts = document.querySelectorAll('script[data-schema-markup="true"]');
+      scripts.forEach(script => script.remove());
+    };
+  }, [type, pageSlug, customData, autoGenerate]);
+
+  return null; // This component doesn't render anything
+};
+
+// Legacy schema generation for backwards compatibility
+const generateLegacySchemas = (type: string) => {
+  const baseOrganization = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Reboot Media, Inc.",
     "alternateName": "Reboot Media",
     "url": getOrganizationUrl(),
-    "logo": getLogoUrl('reboot-media.avif'),
+    "logo": getLogoUrl('reboot-logo-white.svg'),
     "description": "Fractional CMO services providing C-level marketing leadership for growth-stage companies. Marketing psychology expertise that transforms $500K-$1.5M revenue companies into scalable enterprises.",
     "founder": {
       "@type": "Person",
@@ -178,7 +226,7 @@ const SchemaMarkup = ({ type = 'organization', customData }: SchemaMarkupProps) 
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Reboot Media, Inc.",
-    "image": getLogoUrl('reboot-media.avif'),
+    "image": getLogoUrl('reboot-logo-white.svg'),
     "priceRange": "$5,000 - $18,000 per month",
     "@id": getOrganizationUrl(),
     "url": getOrganizationUrl(),
@@ -205,53 +253,20 @@ const SchemaMarkup = ({ type = 'organization', customData }: SchemaMarkupProps) 
     }
   };
 
-  useEffect(() => {
-    // Remove any existing schema scripts
-    const existingScripts = document.querySelectorAll('script[data-schema-markup]');
-    existingScripts.forEach(script => script.remove());
-
-    // Determine which schemas to add
-    const schemasToAdd = [];
-    
-    switch(type) {
-      case 'organization':
-        schemasToAdd.push(organizationSchema, serviceSchema, faqSchema, localBusinessSchema);
-        break;
-      case 'service':
-        schemasToAdd.push(serviceSchema);
-        break;
-      case 'article':
-        if (customData) schemasToAdd.push(customData);
-        break;
-      case 'faq':
-        schemasToAdd.push(faqSchema);
-        break;
-      case 'breadcrumb':
-        schemasToAdd.push(breadcrumbSchema);
-        break;
-      default:
-        schemasToAdd.push(organizationSchema);
-    }
-
-    // Add new schema scripts
-    schemasToAdd.forEach((schema, index) => {
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.setAttribute('data-schema-markup', 'true');
-      script.setAttribute('data-schema-type', `${type}-${index}`);
-      script.textContent = JSON.stringify(schema);
-      document.head.appendChild(script);
-    });
-
-    // Cleanup function
-    return () => {
-      const scripts = document.querySelectorAll('script[data-schema-markup]');
-      scripts.forEach(script => script.remove());
-    };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [type, customData]);
-
-  return null; // This component doesn't render anything
+  switch(type) {
+    case 'organization':
+      return [baseOrganization, serviceSchema, faqSchema, localBusinessSchema];
+    case 'service':
+      return [serviceSchema];
+    case 'faq':
+      return [faqSchema];
+    case 'breadcrumb':
+      return [breadcrumbSchema];
+    case 'localbusiness':
+      return [localBusinessSchema];
+    default:
+      return [baseOrganization];
+  }
 };
 
 export default SchemaMarkup;

@@ -8,49 +8,206 @@
   <!-- Homepage - Highest Priority -->
   <url>
     <loc>https://www.rebootmedia.net/</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.rebootmedia.net/reboot-media.avif</image:loc>
+      <image:loc>https://www.rebootmedia.net/reboot-media-fractional-cmo.jpg</image:loc>
       <image:title>Reboot Media Fractional CMO Services</image:title>
-      <image:caption>C-level executive expertise for growing companies</image:caption>
+      <image:caption>Psychology-driven fractional CMO services for growth-stage companies</image:caption>
     </image:image>
   </url>
 
   <!-- High-Value SEO Content Pages - Highest Priority After Homepage -->
   <url>
     <loc>https://www.rebootmedia.net/marketing-psychology</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.rebootmedia.net/marketing-psychology-guide.jpg</image:loc>
+      <image:title>Marketing Psychology Principles That Drive Conversions</image:title>
+      <image:caption>5 customer awareness stages framework for psychology-driven marketing</image:caption>
+    </image:image>
   </url>
 
   <url>
     <loc>https://www.rebootmedia.net/growth-plateau-solutions</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.rebootmedia.net/growth-plateau-breakthrough.jpg</image:loc>
+      <image:title>Growth Plateau Solutions for Revenue Breakthrough</image:title>
+      <image:caption>7 proven strategies to break through revenue ceilings and scale</image:caption>
+    </image:image>
   </url>
 
   <url>
     <loc>https://www.rebootmedia.net/fractional-cmo-guide</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://www.rebootmedia.net/fractional-cmo-complete-guide.jpg</image:loc>
+      <image:title>Complete Fractional CMO Guide: When to Hire, Cost & ROI</image:title>
+      <image:caption>2025 guide to fractional CMO services for growth-stage companies</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Customer Awareness Stage Pages - High SEO Value -->
+  <url>
+    <loc>https://www.rebootmedia.net/unaware-stage-customers</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/problem-aware-stage-customers</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/solution-aware-stage-customers</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/product-aware-stage-customers</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/most-aware-stage-customers</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Fractional CMO Comparison Pages - Target Comparison Keywords -->
+  <url>
+    <loc>https://www.rebootmedia.net/fractional-cmo-vs-agency</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/fractional-cmo-vs-consultant</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/fractional-cmo-vs-full-time</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/fractional-cmo-vs-in-house</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/when-to-choose-each</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+  </url>
+
+  <!-- Growth Challenge Pages - Problem-Focused SEO -->
+  <url>
+    <loc>https://www.rebootmedia.net/revenue-ceiling-breakthrough</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/customer-acquisition-stall</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/operational-scaling-crisis</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/competitive-pressure-plateau</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/product-market-fit-erosion</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/team-growth-bottlenecks</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/market-expansion-barriers</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+
+  <!-- Analysis & Strategy Pages -->
+  <url>
+    <loc>https://www.rebootmedia.net/cost-roi-analysis</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+
+  <url>
+    <loc>https://www.rebootmedia.net/transition-strategies</loc>
+    <lastmod>2025-01-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
   </url>
 
   <!-- Core Pages - High Priority -->
   <url>
     <loc>https://www.rebootmedia.net/about</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://www.rebootmedia.net/ian-ho-fractional-cmo.jpg</image:loc>
+      <image:title>Ian Ho - Fractional CMO and Marketing Psychology Expert</image:title>
+      <image:caption>15+ years driving 150-300% revenue growth for growth-stage companies</image:caption>
+    </image:image>
   </url>
 
   <url>
     <loc>https://www.rebootmedia.net/contact</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -58,28 +215,28 @@
   <!-- Homepage Sections - Medium Priority -->
   <url>
     <loc>https://www.rebootmedia.net/#services</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://www.rebootmedia.net/#about</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.rebootmedia.net/#results</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://www.rebootmedia.net/#psychology</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -87,14 +244,14 @@
   <!-- Legal Pages - Low Priority -->
   <url>
     <loc>https://www.rebootmedia.net/privacy</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
 
   <url>
     <loc>https://www.rebootmedia.net/terms</loc>
-    <lastmod>2025-01-07</lastmod>
+    <lastmod>2025-01-14</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>

@@ -5,6 +5,7 @@ import './styles/subtle-scroll-improvements.css'
 import Router from './Router.tsx'
 import { registerServiceWorker, setupPerformanceIntegration } from './utils/serviceWorkerRegistration'
 import { initializePerformanceMonitoring } from './utils/performanceMonitor'
+import './utils/attributionTracking' // Initialize attribution tracking
 
 // Initialize performance monitoring
 initializePerformanceMonitoring();

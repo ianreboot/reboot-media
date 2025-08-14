@@ -511,3 +511,17 @@ export function predictCustomerLifetimeValue(
     factors
   };
 }
+
+/**
+ * Lead Scoring Service Class
+ * Wrapper for lead scoring functions
+ */
+export class LeadScoringService {
+  calculateLeadScore = calculateLeadScore;
+  getLeadRouting = getLeadRouting;
+  calculateLeadTrend = calculateLeadTrend;
+  predictCustomerLifetimeValue = predictCustomerLifetimeValue;
+}
+
+// Export singleton instance
+export const leadScoringService = new LeadScoringService();

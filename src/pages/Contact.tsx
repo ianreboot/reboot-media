@@ -120,30 +120,7 @@ const Contact = () => {
     }
   };
 
-  // SEO structured data
-  const contactPageStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "Reboot Media, Inc.",
-      "url": "https://www.rebootmedia.net/contact",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "customer service",
-        "availableLanguage": ["English"],
-        "areaServed": ["US", "TH", "SG", "MY", "ID", "PH", "VN"]
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "17595 Harvard Ave C-738",
-        "addressLocality": "Irvine",
-        "addressRegion": "CA",
-        "postalCode": "92614",
-        "addressCountry": "US"
-      }
-    }
-  };
+  // Structured data now handled automatically by SEOHead component
 
 
   return (
@@ -151,15 +128,11 @@ const Contact = () => {
       {/* Sophisticated Background Gradient */}
       <BackgroundGradient />
       
-      {/* SEO Head */}
+      {/* Enhanced SEO Head */}
       <SEOHead 
-        title="Contact Fractional CMO Services | Schedule Free Consultation | Reboot Media"
-        description="Contact our fractional CMO consultants for executive-level marketing strategy. Schedule your free consultation with Fortune 500-experienced C-level marketing leaders. Available globally with offices in USA, Bangkok, and Singapore."
-        keywords="contact fractional CMO, schedule CMO consultation, hire fractional Chief Marketing Officer, marketing executive consultant contact, C-level marketing strategy consultation, Fortune 500 marketing consultant"
-        canonicalUrl={getCanonicalUrl('contact')}
-        ogTitle="Contact Fractional CMO Services - Free Strategy Consultation"
-        ogDescription="Schedule your free consultation with Fortune 500-experienced fractional CMO consultants. Get executive-level marketing leadership for your growing business."
-        structuredData={contactPageStructuredData}
+        pageSlug="contact"
+        structuredDataType="contact"
+        enableCoreWebVitalsOptimization={true}
       />
       
       {/* Global Header */}

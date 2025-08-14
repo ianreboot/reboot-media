@@ -9,24 +9,7 @@ import BackgroundGradient from '../components/BackgroundGradient';
 
 const Terms = () => {
   // const { setShowDropdownForm } = useLeadForm();
-  // SEO structured data
-  const termsPageStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Terms of Service",
-    "description": "Terms of service for Reboot Media fractional CMO consulting services",
-    "url": "https://www.rebootmedia.net/terms",
-    "mainEntity": {
-      "@type": "TermsOfService",
-      "name": "Reboot Media Terms of Service",
-      "effectiveDate": "2025-01-08",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Reboot Media, Inc.",
-        "url": "https://www.rebootmedia.net/"
-      }
-    }
-  };
+  // Structured data now handled automatically by SEOHead component
 
   return (
     <div className="terms-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
@@ -34,15 +17,12 @@ const Terms = () => {
       <BackgroundGradient />
       
       <div className="relative z-10">
-      {/* SEO Head */}
+      {/* Enhanced SEO Head */}
       <SEOHead 
         title="Terms of Service | Fractional CMO Consulting Agreement | Reboot Media"
         description="Terms of service for Reboot Media's fractional CMO consulting services. Review our service agreements, client responsibilities, and business terms for strategic marketing leadership."
-        keywords="terms of service, fractional CMO agreement, consulting terms, marketing service contract, CMO consulting agreement, business consulting terms, strategic marketing contract"
         canonicalUrl={getCanonicalUrl('terms')}
-        ogTitle="Terms of Service - Fractional CMO Consulting Agreement"
-        ogDescription="Review the terms and conditions for Reboot Media's fractional CMO consulting services and strategic marketing leadership."
-        structuredData={termsPageStructuredData}
+        enableCoreWebVitalsOptimization={true}
       />
         {/* Global Header with Progress Bar */}
         <GlobalHeader showProgressBar={true} />

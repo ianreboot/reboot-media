@@ -2,7 +2,15 @@ import { useState, useEffect } from 'react';
 import { getCanonicalUrl } from './utils/urls';
 import GlobalHeader from './components/GlobalHeader';
 import GlobalFooter from './components/GlobalFooter';
-import PricingCards from './components/PricingCards';
+import EnhancedPricingCards from './components/EnhancedPricingCards';
+import EnhancedLeadForm from './components/EnhancedLeadForm';
+import ExitIntentManager from './components/ExitIntentModal';
+import { ABTestingDashboardTrigger } from './components/ABTestingDashboard';
+import { 
+  MobileStickyBar, 
+  MobileScrollProgress,
+  MobileExitIntentDetector 
+} from './components/MobileConversionOptimizer';
 import SchemaMarkup from './components/SchemaMarkup';
 import SEOHead from './components/SEOHead';
 import BackgroundGradient from './components/BackgroundGradient';
@@ -10,6 +18,10 @@ import EnhancedPerformanceMonitor from './components/EnhancedPerformanceMonitor'
 import ErrorBoundary from './components/ErrorBoundary';
 import { useLeadForm } from './contexts/LeadFormContext';
 import { useErrorReporter } from './contexts/ErrorContext';
+import { ABTestProvider } from './contexts/ABTestContext';
+import { ConversionOptimizationProvider } from './contexts/ConversionOptimizationContext';
+import { usePricingOptimization } from './hooks/useABTestHooks';
+import { useScrollOptimization, useTimeBasedOptimization, useClickHeatmap } from './hooks/useABTestHooks';
 
 // Words to cycle through - ordered by importance to target demographics
 const lostItems = [
@@ -32,7 +44,8 @@ const lostItems = [
   'Innovation'       // Modern vs traditional approaches
 ];
 
-function App() {
+// Main App Component with A/B Testing
+const MainApp = () => {
   const [typedWord, setTypedWord] = useState('');
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -40,6 +53,14 @@ function App() {
   // Use the lead form context and error reporting
   const { setShowDropdownForm } = useLeadForm();
   const reportError = useErrorReporter();
+  
+  // A/B Testing and Optimization Hooks
+  usePricingOptimization(); // Initialize pricing optimization
+  
+  // Initialize optimization hooks
+  useScrollOptimization();
+  useTimeBasedOptimization();
+  useClickHeatmap();
 
   // Global error handler for unhandled promise rejections
   useEffect(() => {
@@ -412,9 +433,9 @@ function App() {
             </div>
           </div>
 
-          {/* Unified Pricing Cards - Single Component for All Breakpoints */}
-          <ErrorBoundary level="component" name="PricingCards">
-            <PricingCards />
+          {/* Enhanced Pricing Cards with A/B Testing */}
+          <ErrorBoundary level="component" name="EnhancedPricingCards">
+            <EnhancedPricingCards />
           </ErrorBoundary>
 
           {/* Bottom Value Proposition */}
@@ -666,6 +687,26 @@ function App() {
       <ErrorBoundary level="component" name="GlobalFooter">
         <GlobalFooter onShowForm={() => setShowDropdownForm(true)} />
       </ErrorBoundary>
+
+      {/* Enhanced Lead Form with A/B Testing */}
+      <ErrorBoundary level="component" name="EnhancedLeadForm">
+        <EnhancedLeadForm />
+      </ErrorBoundary>
+
+      {/* Exit Intent Management */}
+      <ErrorBoundary level="component" name="ExitIntentManager">
+        <ExitIntentManager />
+      </ErrorBoundary>
+
+      {/* Mobile Conversion Optimizers */}
+      <ErrorBoundary level="component" name="MobileOptimization">
+        <MobileStickyBar />
+        <MobileScrollProgress />
+        <MobileExitIntentDetector />
+      </ErrorBoundary>
+
+      {/* A/B Testing Dashboard (Development Only) */}
+      <ABTestingDashboardTrigger />
       
       {/* Performance Monitor (development only) - Non-critical development tool */}
       <ErrorBoundary level="component" name="EnhancedPerformanceMonitor">
@@ -682,6 +723,17 @@ function App() {
       </div>
     </>
   )
+}
+
+// App Wrapper with Context Providers
+function App() {
+  return (
+    <ABTestProvider>
+      <ConversionOptimizationProvider>
+        <MainApp />
+      </ConversionOptimizationProvider>
+    </ABTestProvider>
+  );
 }
 
 export default App

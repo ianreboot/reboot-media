@@ -49,15 +49,11 @@ const About = () => {
       {/* Sophisticated Background Gradient */}
       <BackgroundGradient />
       
-      {/* SEO Head */}
+      {/* Enhanced SEO Head */}
       <SEOHead 
-        title="About Us | Fortune 500 Fractional CMO Leadership | Reboot Media"
-        description="Meet the team behind Reboot Media's fractional CMO services. Led by Ian Ho with 15+ years Fortune 500 C-level marketing experience managing $2B+ revenue. Founded 2020, serving companies globally with proven strategic marketing leadership."
-        keywords="about fractional CMO, Fortune 500 marketing executive, CMO consulting team, marketing leadership experience, Ian Ho CMO, Reboot Media founder, C-level marketing expertise, strategic marketing consultant"
-        canonicalUrl={getCanonicalUrl('about')}
-        ogTitle="About Reboot Media - Fortune 500 Fractional CMO Leadership"
-        ogDescription="Led by Fortune 500 marketing executive Ian Ho with $2B+ revenue management experience. Get proven C-level marketing leadership for your growing business."
-        structuredData={aboutPageStructuredData}
+        pageSlug="about"
+        structuredDataType="person"
+        enableCoreWebVitalsOptimization={true}
       />
       
       {/* Global Header */}
