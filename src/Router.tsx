@@ -1,6 +1,9 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
+import ErrorBoundary from './components/ErrorBoundary';
+import NotificationSystem from './components/NotificationSystem';
+import { ErrorProvider } from './contexts/ErrorContext';
 
 // Core pages loaded immediately
 import About from './pages/About';
@@ -37,10 +40,13 @@ import ScrollToTop from './components/ScrollToTop';
 import { LeadFormProvider } from './contexts/LeadFormContext';
 import LeadForm from './components/LeadForm';
 
-// Loading component for Suspense fallback
+// Enhanced loading component with error-safe design
 const LoadingSpinner = () => (
-  <div className="flex items-center justify-center min-h-screen">
-    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+  <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
+    <div className="text-center">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+      <p className="text-gray-600 text-sm">Loading...</p>
+    </div>
   </div>
 );
 
@@ -49,43 +55,273 @@ const Router = () => {
   const basename = import.meta.env.MODE === 'development' ? '/reboot' : '';
 
   return (
-    <BrowserRouter basename={basename}>
-      <LeadFormProvider>
-        <ScrollToTop />
-        <Suspense fallback={<LoadingSpinner />}>
-          <Routes>
-            <Route path="/" element={<App />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy" element={<Privacy />} />
-            <Route path="/terms" element={<Terms />} />
-            <Route path="/marketing-psychology" element={<MarketingPsychology />} />
-            <Route path="/marketing-psychology/unaware-stage-customers" element={<UnawareStageCustomers />} />
-            <Route path="/marketing-psychology/problem-aware-stage-customers" element={<ProblemAwareStageCustomers />} />
-            <Route path="/marketing-psychology/solution-aware-stage-customers" element={<SolutionAwareStageCustomers />} />
-            <Route path="/marketing-psychology/product-aware-stage-customers" element={<ProductAwareStageCustomers />} />
-            <Route path="/marketing-psychology/most-aware-stage-customers" element={<MostAwareStageCustomers />} />
-            <Route path="/growth-plateau-solutions" element={<GrowthPlateauSolutions />} />
-            <Route path="/growth-plateau-solutions/revenue-ceiling-breakthrough" element={<RevenueCeilingBreakthrough />} />
-            <Route path="/growth-plateau-solutions/customer-acquisition-stall" element={<CustomerAcquisitionStall />} />
-            <Route path="/growth-plateau-solutions/market-expansion-barriers" element={<MarketExpansionBarriers />} />
-            <Route path="/growth-plateau-solutions/operational-scaling-crisis" element={<OperationalScalingCrisis />} />
-            <Route path="/growth-plateau-solutions/team-growth-bottlenecks" element={<TeamGrowthBottlenecks />} />
-            <Route path="/growth-plateau-solutions/product-market-fit-erosion" element={<ProductMarketFitErosion />} />
-            <Route path="/growth-plateau-solutions/competitive-pressure-plateau" element={<CompetitivePressurePlateau />} />
-            <Route path="/fractional-cmo-guide" element={<FractionalCMOGuide />} />
-            <Route path="/fractional-cmo-guide/vs-marketing-agency" element={<FractionalCMOVsAgency />} />
-            <Route path="/fractional-cmo-guide/vs-full-time-cmo" element={<FractionalCMOVsFullTime />} />
-            <Route path="/fractional-cmo-guide/vs-consultant" element={<FractionalCMOVsConsultant />} />
-            <Route path="/fractional-cmo-guide/vs-in-house-team" element={<FractionalCMOVsInHouse />} />
-            <Route path="/fractional-cmo-guide/transition-strategies" element={<TransitionStrategies />} />
-            <Route path="/fractional-cmo-guide/when-to-choose-each" element={<WhenToChooseEach />} />
-            <Route path="/fractional-cmo-guide/cost-roi-analysis" element={<CostROIAnalysis />} />
-          </Routes>
-        </Suspense>
-        <LeadForm />
-      </LeadFormProvider>
-    </BrowserRouter>
+    <ErrorProvider enableErrorReporting={true}>
+      <ErrorBoundary 
+        level="page" 
+        name="ApplicationRootBoundary"
+        showDetails={import.meta.env.DEV}
+      >
+        <BrowserRouter basename={basename}>
+          <LeadFormProvider>
+            <ScrollToTop />
+            
+            {/* Main application with router-level error boundary */}
+            <ErrorBoundary 
+              level="page" 
+              name="RouterBoundary"
+              showDetails={import.meta.env.DEV}
+            >
+              <Suspense 
+                fallback={
+                  <ErrorBoundary 
+                    level="component" 
+                    name="LoadingSpinnerBoundary"
+                  >
+                    <LoadingSpinner />
+                  </ErrorBoundary>
+                }
+              >
+                <Routes>
+                  {/* Wrap each route with page-level error boundaries */}
+                  <Route 
+                    path="/" 
+                    element={
+                      <ErrorBoundary level="page" name="HomePage">
+                        <App />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/about" 
+                    element={
+                      <ErrorBoundary level="page" name="AboutPage">
+                        <About />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/contact" 
+                    element={
+                      <ErrorBoundary level="page" name="ContactPage">
+                        <Contact />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/privacy" 
+                    element={
+                      <ErrorBoundary level="page" name="PrivacyPage">
+                        <Privacy />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/terms" 
+                    element={
+                      <ErrorBoundary level="page" name="TermsPage">
+                        <Terms />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  
+                  {/* Marketing Psychology Routes */}
+                  <Route 
+                    path="/marketing-psychology" 
+                    element={
+                      <ErrorBoundary level="page" name="MarketingPsychologyPage">
+                        <MarketingPsychology />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/marketing-psychology/unaware-stage-customers" 
+                    element={
+                      <ErrorBoundary level="page" name="UnawareStageCustomersPage">
+                        <UnawareStageCustomers />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/marketing-psychology/problem-aware-stage-customers" 
+                    element={
+                      <ErrorBoundary level="page" name="ProblemAwareStageCustomersPage">
+                        <ProblemAwareStageCustomers />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/marketing-psychology/solution-aware-stage-customers" 
+                    element={
+                      <ErrorBoundary level="page" name="SolutionAwareStageCustomersPage">
+                        <SolutionAwareStageCustomers />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/marketing-psychology/product-aware-stage-customers" 
+                    element={
+                      <ErrorBoundary level="page" name="ProductAwareStageCustomersPage">
+                        <ProductAwareStageCustomers />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/marketing-psychology/most-aware-stage-customers" 
+                    element={
+                      <ErrorBoundary level="page" name="MostAwareStageCustomersPage">
+                        <MostAwareStageCustomers />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  
+                  {/* Growth Plateau Solutions Routes */}
+                  <Route 
+                    path="/growth-plateau-solutions" 
+                    element={
+                      <ErrorBoundary level="page" name="GrowthPlateauSolutionsPage">
+                        <GrowthPlateauSolutions />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/growth-plateau-solutions/revenue-ceiling-breakthrough" 
+                    element={
+                      <ErrorBoundary level="page" name="RevenueCeilingBreakthroughPage">
+                        <RevenueCeilingBreakthrough />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/growth-plateau-solutions/customer-acquisition-stall" 
+                    element={
+                      <ErrorBoundary level="page" name="CustomerAcquisitionStallPage">
+                        <CustomerAcquisitionStall />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/growth-plateau-solutions/market-expansion-barriers" 
+                    element={
+                      <ErrorBoundary level="page" name="MarketExpansionBarriersPage">
+                        <MarketExpansionBarriers />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/growth-plateau-solutions/operational-scaling-crisis" 
+                    element={
+                      <ErrorBoundary level="page" name="OperationalScalingCrisisPage">
+                        <OperationalScalingCrisis />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/growth-plateau-solutions/team-growth-bottlenecks" 
+                    element={
+                      <ErrorBoundary level="page" name="TeamGrowthBottlenecksPage">
+                        <TeamGrowthBottlenecks />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/growth-plateau-solutions/product-market-fit-erosion" 
+                    element={
+                      <ErrorBoundary level="page" name="ProductMarketFitErosionPage">
+                        <ProductMarketFitErosion />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/growth-plateau-solutions/competitive-pressure-plateau" 
+                    element={
+                      <ErrorBoundary level="page" name="CompetitivePressurePlateauPage">
+                        <CompetitivePressurePlateau />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  
+                  {/* Fractional CMO Guide Routes */}
+                  <Route 
+                    path="/fractional-cmo-guide" 
+                    element={
+                      <ErrorBoundary level="page" name="FractionalCMOGuidePage">
+                        <FractionalCMOGuide />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/fractional-cmo-guide/vs-marketing-agency" 
+                    element={
+                      <ErrorBoundary level="page" name="FractionalCMOVsAgencyPage">
+                        <FractionalCMOVsAgency />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/fractional-cmo-guide/vs-full-time-cmo" 
+                    element={
+                      <ErrorBoundary level="page" name="FractionalCMOVsFullTimePage">
+                        <FractionalCMOVsFullTime />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/fractional-cmo-guide/vs-consultant" 
+                    element={
+                      <ErrorBoundary level="page" name="FractionalCMOVsConsultantPage">
+                        <FractionalCMOVsConsultant />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/fractional-cmo-guide/vs-in-house-team" 
+                    element={
+                      <ErrorBoundary level="page" name="FractionalCMOVsInHousePage">
+                        <FractionalCMOVsInHouse />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/fractional-cmo-guide/transition-strategies" 
+                    element={
+                      <ErrorBoundary level="page" name="TransitionStrategiesPage">
+                        <TransitionStrategies />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/fractional-cmo-guide/when-to-choose-each" 
+                    element={
+                      <ErrorBoundary level="page" name="WhenToChooseEachPage">
+                        <WhenToChooseEach />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/fractional-cmo-guide/cost-roi-analysis" 
+                    element={
+                      <ErrorBoundary level="page" name="CostROIAnalysisPage">
+                        <CostROIAnalysis />
+                      </ErrorBoundary>
+                    } 
+                  />
+                </Routes>
+              </Suspense>
+            </ErrorBoundary>
+            
+            {/* Global components with error boundaries */}
+            <ErrorBoundary level="component" name="LeadFormBoundary">
+              <LeadForm />
+            </ErrorBoundary>
+            
+          </LeadFormProvider>
+        </BrowserRouter>
+        
+        {/* Notification system - outside router to persist across navigation */}
+        <NotificationSystem />
+        
+      </ErrorBoundary>
+    </ErrorProvider>
   );
 };
 

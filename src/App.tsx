@@ -7,7 +7,9 @@ import SchemaMarkup from './components/SchemaMarkup';
 import SEOHead from './components/SEOHead';
 import BackgroundGradient from './components/BackgroundGradient';
 import PerformanceMonitor from './components/PerformanceMonitor';
+import ErrorBoundary from './components/ErrorBoundary';
 import { useLeadForm } from './contexts/LeadFormContext';
+import { useErrorReporter } from './contexts/ErrorContext';
 
 // Words to cycle through - ordered by importance to target demographics
 const lostItems = [
@@ -35,9 +37,22 @@ function App() {
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   
-  // Use the lead form context
+  // Use the lead form context and error reporting
   const { setShowDropdownForm } = useLeadForm();
+  const reportError = useErrorReporter();
 
+  // Global error handler for unhandled promise rejections
+  useEffect(() => {
+    const handleUnhandledRejection = (event: PromiseRejectionEvent) => {
+      reportError(new Error(`Unhandled Promise Rejection: ${event.reason}`), {
+        type: 'promise_rejection',
+        reason: event.reason,
+      });
+    };
+
+    window.addEventListener('unhandledrejection', handleUnhandledRejection);
+    return () => window.removeEventListener('unhandledrejection', handleUnhandledRejection);
+  }, [reportError]);
   
   // Typewriter effect with progressive slowdown
   useEffect(() => {
@@ -74,22 +89,28 @@ function App() {
 
   return (
     <>
-      {/* SEO and Schema Markup */}
-      <SEOHead 
-        title="Fractional CMO Services | Marketing Psychology That Converts | Reboot Media"
-        description="Break through revenue plateaus with psychology-driven fractional CMO services. Transform $500K-$1.5M companies into scalable enterprises. Proven $100K→$3M growth."
-        keywords="fractional CMO, marketing psychology, revenue growth, growth plateau solutions, marketing strategy consultant"
-        canonicalUrl={getCanonicalUrl('')}
-      />
-      <SchemaMarkup type="organization" />
+      {/* SEO and Schema Markup - Critical for initial page load */}
+      <ErrorBoundary level="component" name="SEOComponents">
+        <SEOHead 
+          title="Fractional CMO Services | Marketing Psychology That Converts | Reboot Media"
+          description="Break through revenue plateaus with psychology-driven fractional CMO services. Transform $500K-$1.5M companies into scalable enterprises. Proven $100K→$3M growth."
+          keywords="fractional CMO, marketing psychology, revenue growth, growth plateau solutions, marketing strategy consultant"
+          canonicalUrl={getCanonicalUrl('')}
+        />
+        <SchemaMarkup type="organization" />
+      </ErrorBoundary>
       
       <div className="homepage min-h-screen relative overflow-hidden">
-        {/* Sophisticated Background Gradient */}
-        <BackgroundGradient />
+        {/* Sophisticated Background Gradient - Non-critical visual element */}
+        <ErrorBoundary level="component" name="BackgroundGradient">
+          <BackgroundGradient />
+        </ErrorBoundary>
         
-        {/* Global Header */}
+        {/* Global Header - Critical navigation component */}
         <div className="relative z-10">
-          <GlobalHeader onShowForm={() => setShowDropdownForm(true)} />
+          <ErrorBoundary level="component" name="GlobalHeader">
+            <GlobalHeader onShowForm={() => setShowDropdownForm(true)} />
+          </ErrorBoundary>
 
       {/* Hero Section - Vertically Centered in Viewport */}
       <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
@@ -392,7 +413,9 @@ function App() {
           </div>
 
           {/* Unified Pricing Cards - Single Component for All Breakpoints */}
-          <PricingCards />
+          <ErrorBoundary level="component" name="PricingCards">
+            <PricingCards />
+          </ErrorBoundary>
 
           {/* Bottom Value Proposition */}
           <div className="mt-12 text-center">
@@ -639,11 +662,15 @@ function App() {
       </section>
 
 
-      {/* Global Footer */}
-      <GlobalFooter onShowForm={() => setShowDropdownForm(true)} />
+      {/* Global Footer - Critical navigation component */}
+      <ErrorBoundary level="component" name="GlobalFooter">
+        <GlobalFooter onShowForm={() => setShowDropdownForm(true)} />
+      </ErrorBoundary>
       
-      {/* Performance Monitor (development only) */}
-      <PerformanceMonitor />
+      {/* Performance Monitor (development only) - Non-critical development tool */}
+      <ErrorBoundary level="component" name="PerformanceMonitor">
+        <PerformanceMonitor />
+      </ErrorBoundary>
         </div>
       </div>
     </>
