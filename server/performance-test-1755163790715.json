@@ -1,0 +1,762 @@
+{
+  "timestamp": "2025-08-14T09:29:45.857Z",
+  "server": "http://localhost:3002",
+  "tests": {
+    "warmup": {
+      "/api/health": {
+        "endpoint": "/api/health",
+        "method": "GET",
+        "totalRequests": 10,
+        "successCount": 10,
+        "errorCount": 0,
+        "successRate": 100,
+        "totalTime": "17.90",
+        "throughput": "558.81",
+        "responseTime": {
+          "min": 1.2630100000000084,
+          "max": 3.0029049999999984,
+          "avg": 1.5917783000000014,
+          "median": 1.3767865000000086,
+          "p95": 3.0029049999999984,
+          "p99": 3.0029049999999984
+        },
+        "caching": {
+          "hits": 10,
+          "misses": 0,
+          "hitRate": 100
+        },
+        "averageSize": 744
+      },
+      "/api/health/liveness": {
+        "endpoint": "/api/health/liveness",
+        "method": "GET",
+        "totalRequests": 10,
+        "successCount": 10,
+        "errorCount": 0,
+        "successRate": 100,
+        "totalTime": "20.83",
+        "throughput": "480.10",
+        "responseTime": {
+          "min": 1.2206820000000107,
+          "max": 4.757077999999979,
+          "avg": 1.9116092000000038,
+          "median": 1.450998999999996,
+          "p95": 4.757077999999979,
+          "p99": 4.757077999999979
+        },
+        "caching": null,
+        "averageSize": 182
+      },
+      "/api/health/readiness": {
+        "endpoint": "/api/health/readiness",
+        "method": "GET",
+        "totalRequests": 10,
+        "successCount": 6,
+        "errorCount": 4,
+        "successRate": 60,
+        "totalTime": "16.84",
+        "throughput": "593.90",
+        "responseTime": {
+          "min": 1.2984329999999886,
+          "max": 2.14461799999998,
+          "avg": 1.4618672000000004,
+          "median": 1.403767500000015,
+          "p95": 2.14461799999998,
+          "p99": 2.14461799999998
+        },
+        "caching": null,
+        "averageSize": 273.4
+      },
+      "/api/performance": {
+        "endpoint": "/api/performance",
+        "method": "GET",
+        "totalRequests": 10,
+        "successCount": 10,
+        "errorCount": 0,
+        "successRate": 100,
+        "totalTime": "15.19",
+        "throughput": "658.36",
+        "responseTime": {
+          "min": 1.1259019999999964,
+          "max": 2.1007270000000062,
+          "avg": 1.3725959999999986,
+          "median": 1.1803479999999809,
+          "p95": 2.1007270000000062,
+          "p99": 2.1007270000000062
+        },
+        "caching": {
+          "hits": 10,
+          "misses": 0,
+          "hitRate": 100
+        },
+        "averageSize": 695
+      },
+      "/api/forms/csrf-token": {
+        "endpoint": "/api/forms/csrf-token",
+        "method": "GET",
+        "totalRequests": 10,
+        "successCount": 5,
+        "errorCount": 5,
+        "successRate": 50,
+        "totalTime": "23.22",
+        "throughput": "430.75",
+        "responseTime": {
+          "min": 1.365158000000008,
+          "max": 3.423278000000039,
+          "avg": 2.0856030999999917,
+          "median": 1.9341425000000072,
+          "p95": 3.423278000000039,
+          "p99": 3.423278000000039
+        },
+        "caching": {
+          "hits": 4,
+          "misses": 1,
+          "hitRate": 80
+        },
+        "averageSize": 175
+      },
+      "/api/forms/security-status": {
+        "endpoint": "/api/forms/security-status",
+        "method": "GET",
+        "totalRequests": 10,
+        "successCount": 0,
+        "errorCount": 10,
+        "successRate": 0,
+        "totalTime": "17.79",
+        "throughput": "562.19",
+        "responseTime": {
+          "min": 1.1761079999999993,
+          "max": 3.5567719999999667,
+          "avg": 1.567662399999989,
+          "median": 1.2704595000000154,
+          "p95": 3.5567719999999667,
+          "p99": 3.5567719999999667
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 131
+      },
+      "/api/forms/status": {
+        "endpoint": "/api/forms/status",
+        "method": "GET",
+        "totalRequests": 10,
+        "successCount": 0,
+        "errorCount": 10,
+        "successRate": 0,
+        "totalTime": "17.93",
+        "throughput": "557.61",
+        "responseTime": {
+          "min": 1.1761000000000195,
+          "max": 3.5326519999999846,
+          "avg": 1.6545975000000055,
+          "median": 1.5250900000000058,
+          "p95": 3.5326519999999846,
+          "p99": 3.5326519999999846
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 131
+      },
+      "/api/cache/stats": {
+        "endpoint": "/api/cache/stats",
+        "method": "GET",
+        "totalRequests": 10,
+        "successCount": 5,
+        "errorCount": 5,
+        "successRate": 50,
+        "totalTime": "17.49",
+        "throughput": "571.65",
+        "responseTime": {
+          "min": 1.0317730000000438,
+          "max": 3.3751589999999965,
+          "avg": 1.5982913999999995,
+          "median": 1.3543374999999855,
+          "p95": 3.3751589999999965,
+          "p99": 3.3751589999999965
+        },
+        "caching": {
+          "hits": 4,
+          "misses": 1,
+          "hitRate": 80
+        },
+        "averageSize": 171.5
+      }
+    },
+    "load": {
+      "/api/health": {
+        "endpoint": "/api/health",
+        "method": "GET",
+        "totalRequests": 100,
+        "successCount": 0,
+        "errorCount": 100,
+        "successRate": 0,
+        "totalTime": "132.99",
+        "throughput": "751.91",
+        "responseTime": {
+          "min": 1.6410720000000083,
+          "max": 14.436875000000043,
+          "avg": 7.469784259999999,
+          "median": 7.749807500000003,
+          "p95": 13.226042999999947,
+          "p99": 14.436875000000043
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/health/liveness": {
+        "endpoint": "/api/health/liveness",
+        "method": "GET",
+        "totalRequests": 100,
+        "successCount": 0,
+        "errorCount": 100,
+        "successRate": 0,
+        "totalTime": "150.24",
+        "throughput": "665.61",
+        "responseTime": {
+          "min": 1.426240000000007,
+          "max": 35.19652800000006,
+          "avg": 9.112339220000003,
+          "median": 7.0812085000000025,
+          "p95": 24.647186000000033,
+          "p99": 35.19652800000006
+        },
+        "caching": null,
+        "averageSize": 124
+      },
+      "/api/health/readiness": {
+        "endpoint": "/api/health/readiness",
+        "method": "GET",
+        "totalRequests": 100,
+        "successCount": 0,
+        "errorCount": 100,
+        "successRate": 0,
+        "totalTime": "122.08",
+        "throughput": "819.16",
+        "responseTime": {
+          "min": 1.455524999999966,
+          "max": 18.916071999999986,
+          "avg": 6.687732710000002,
+          "median": 6.299703499999964,
+          "p95": 15.30636000000004,
+          "p99": 18.916071999999986
+        },
+        "caching": null,
+        "averageSize": 124
+      },
+      "/api/performance": {
+        "endpoint": "/api/performance",
+        "method": "GET",
+        "totalRequests": 100,
+        "successCount": 0,
+        "errorCount": 100,
+        "successRate": 0,
+        "totalTime": "110.84",
+        "throughput": "902.19",
+        "responseTime": {
+          "min": 1.3848470000000361,
+          "max": 17.109465,
+          "avg": 6.324442829999992,
+          "median": 6.041707000000031,
+          "p95": 12.098870999999917,
+          "p99": 17.109465
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/forms/csrf-token": {
+        "endpoint": "/api/forms/csrf-token",
+        "method": "GET",
+        "totalRequests": 100,
+        "successCount": 0,
+        "errorCount": 100,
+        "successRate": 0,
+        "totalTime": "125.66",
+        "throughput": "795.83",
+        "responseTime": {
+          "min": 1.2813160000000607,
+          "max": 20.668657999999937,
+          "avg": 7.252092129999993,
+          "median": 6.820122000000026,
+          "p95": 16.663463999999976,
+          "p99": 20.668657999999937
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/forms/security-status": {
+        "endpoint": "/api/forms/security-status",
+        "method": "GET",
+        "totalRequests": 100,
+        "successCount": 0,
+        "errorCount": 100,
+        "successRate": 0,
+        "totalTime": "97.63",
+        "throughput": "1024.30",
+        "responseTime": {
+          "min": 1.3434319999998934,
+          "max": 11.364211999999952,
+          "avg": 5.32530409000001,
+          "median": 5.088983499999927,
+          "p95": 9.996899999999869,
+          "p99": 11.364211999999952
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/forms/status": {
+        "endpoint": "/api/forms/status",
+        "method": "GET",
+        "totalRequests": 100,
+        "successCount": 0,
+        "errorCount": 100,
+        "successRate": 0,
+        "totalTime": "104.90",
+        "throughput": "953.28",
+        "responseTime": {
+          "min": 1.488405000000057,
+          "max": 13.71188200000006,
+          "avg": 6.108875250000008,
+          "median": 6.385986000000003,
+          "p95": 10.652217999999948,
+          "p99": 13.71188200000006
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/cache/stats": {
+        "endpoint": "/api/cache/stats",
+        "method": "GET",
+        "totalRequests": 100,
+        "successCount": 0,
+        "errorCount": 100,
+        "successRate": 0,
+        "totalTime": "107.19",
+        "throughput": "932.93",
+        "responseTime": {
+          "min": 1.272707999999966,
+          "max": 17.085665000000063,
+          "avg": 6.333034540000001,
+          "median": 6.059620500000051,
+          "p95": 14.13806599999998,
+          "p99": 17.085665000000063
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      }
+    },
+    "stress": {
+      "/api/health": {
+        "endpoint": "/api/health",
+        "method": "GET",
+        "totalRequests": 500,
+        "successCount": 0,
+        "errorCount": 500,
+        "successRate": 0,
+        "totalTime": "602.72",
+        "throughput": "829.57",
+        "responseTime": {
+          "min": 3.6521020000000135,
+          "max": 77.95247700000004,
+          "avg": 31.606356404000017,
+          "median": 31.036579999999958,
+          "p95": 58.114573000000064,
+          "p99": 73.51422600000001
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/health/liveness": {
+        "endpoint": "/api/health/liveness",
+        "method": "GET",
+        "totalRequests": 500,
+        "successCount": 0,
+        "errorCount": 500,
+        "successRate": 0,
+        "totalTime": "503.88",
+        "throughput": "992.30",
+        "responseTime": {
+          "min": 2.7305320000000393,
+          "max": 83.64578099999972,
+          "avg": 27.671925656000013,
+          "median": 27.110825000000204,
+          "p95": 51.20628499999998,
+          "p99": 80.59895600000027
+        },
+        "caching": null,
+        "averageSize": 124
+      },
+      "/api/health/readiness": {
+        "endpoint": "/api/health/readiness",
+        "method": "GET",
+        "totalRequests": 500,
+        "successCount": 0,
+        "errorCount": 500,
+        "successRate": 0,
+        "totalTime": "391.53",
+        "throughput": "1277.05",
+        "responseTime": {
+          "min": 2.666353000000072,
+          "max": 40.872605999999905,
+          "avg": 19.602944211999993,
+          "median": 18.840526999999838,
+          "p95": 35.462732999999844,
+          "p99": 38.28908000000001
+        },
+        "caching": null,
+        "averageSize": 124
+      },
+      "/api/performance": {
+        "endpoint": "/api/performance",
+        "method": "GET",
+        "totalRequests": 500,
+        "successCount": 0,
+        "errorCount": 500,
+        "successRate": 0,
+        "totalTime": "383.05",
+        "throughput": "1305.30",
+        "responseTime": {
+          "min": 2.4362879999998768,
+          "max": 51.72273600000017,
+          "avg": 20.010992813999998,
+          "median": 19.266702500000065,
+          "p95": 38.37224300000025,
+          "p99": 48.572251999999935
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/forms/csrf-token": {
+        "endpoint": "/api/forms/csrf-token",
+        "method": "GET",
+        "totalRequests": 500,
+        "successCount": 0,
+        "errorCount": 500,
+        "successRate": 0,
+        "totalTime": "364.95",
+        "throughput": "1370.06",
+        "responseTime": {
+          "min": 2.507448000000295,
+          "max": 41.9065529999998,
+          "avg": 18.431798588,
+          "median": 18.079608000000007,
+          "p95": 33.92666899999995,
+          "p99": 41.42022799999995
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/forms/security-status": {
+        "endpoint": "/api/forms/security-status",
+        "method": "GET",
+        "totalRequests": 500,
+        "successCount": 0,
+        "errorCount": 500,
+        "successRate": 0,
+        "totalTime": "340.33",
+        "throughput": "1469.14",
+        "responseTime": {
+          "min": 2.578425000000152,
+          "max": 35.639348000000155,
+          "avg": 17.11826737600001,
+          "median": 17.04931099999976,
+          "p95": 30.706633000000238,
+          "p99": 34.27034300000014
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/forms/status": {
+        "endpoint": "/api/forms/status",
+        "method": "GET",
+        "totalRequests": 500,
+        "successCount": 0,
+        "errorCount": 500,
+        "successRate": 0,
+        "totalTime": "352.76",
+        "throughput": "1417.41",
+        "responseTime": {
+          "min": 2.4769790000000285,
+          "max": 37.82441800000015,
+          "avg": 17.633386929999965,
+          "median": 17.192627000000357,
+          "p95": 32.45219300000008,
+          "p99": 35.94603099999995
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/cache/stats": {
+        "endpoint": "/api/cache/stats",
+        "method": "GET",
+        "totalRequests": 500,
+        "successCount": 0,
+        "errorCount": 500,
+        "successRate": 0,
+        "totalTime": "337.35",
+        "throughput": "1482.13",
+        "responseTime": {
+          "min": 2.496374000000287,
+          "max": 34.825111000000106,
+          "avg": 16.836611494,
+          "median": 16.474006499999632,
+          "p95": 30.933853999999883,
+          "p99": 33.671723000000384
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      }
+    },
+    "cache": {
+      "/api/health": {
+        "endpoint": "/api/health",
+        "method": "GET",
+        "totalRequests": 50,
+        "successCount": 0,
+        "errorCount": 50,
+        "successRate": 0,
+        "totalTime": "40.03",
+        "throughput": "1249.22",
+        "responseTime": {
+          "min": 0.7778539999999339,
+          "max": 5.876382999999805,
+          "avg": 2.4796316800000024,
+          "median": 2.464968499999941,
+          "p95": 4.705103000000236,
+          "p99": 5.876382999999805
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/health/liveness": {
+        "endpoint": "/api/health/liveness",
+        "method": "GET",
+        "totalRequests": 50,
+        "successCount": 0,
+        "errorCount": 50,
+        "successRate": 0,
+        "totalTime": "33.20",
+        "throughput": "1506.21",
+        "responseTime": {
+          "min": 0.7762149999998655,
+          "max": 3.220064000000093,
+          "avg": 1.934140499999994,
+          "median": 1.9171234999998887,
+          "p95": 3.0826250000000073,
+          "p99": 3.220064000000093
+        },
+        "caching": null,
+        "averageSize": 124
+      },
+      "/api/health/readiness": {
+        "endpoint": "/api/health/readiness",
+        "method": "GET",
+        "totalRequests": 50,
+        "successCount": 0,
+        "errorCount": 50,
+        "successRate": 0,
+        "totalTime": "37.06",
+        "throughput": "1349.03",
+        "responseTime": {
+          "min": 0.7443250000005719,
+          "max": 7.0844459999998435,
+          "avg": 2.339674459999951,
+          "median": 1.9532874999999876,
+          "p95": 5.976061999999729,
+          "p99": 7.0844459999998435
+        },
+        "caching": null,
+        "averageSize": 124
+      },
+      "/api/performance": {
+        "endpoint": "/api/performance",
+        "method": "GET",
+        "totalRequests": 50,
+        "successCount": 0,
+        "errorCount": 50,
+        "successRate": 0,
+        "totalTime": "33.31",
+        "throughput": "1500.93",
+        "responseTime": {
+          "min": 0.7825149999998757,
+          "max": 3.1508289999992485,
+          "avg": 1.9213134199999877,
+          "median": 1.910423499999979,
+          "p95": 3.0677419999992708,
+          "p99": 3.1508289999992485
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/forms/csrf-token": {
+        "endpoint": "/api/forms/csrf-token",
+        "method": "GET",
+        "totalRequests": 50,
+        "successCount": 0,
+        "errorCount": 50,
+        "successRate": 0,
+        "totalTime": "41.47",
+        "throughput": "1205.78",
+        "responseTime": {
+          "min": 0.8168759999998656,
+          "max": 6.538997999999992,
+          "avg": 2.643014439999988,
+          "median": 2.56698600000027,
+          "p95": 5.364983000000393,
+          "p99": 6.538997999999992
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/forms/security-status": {
+        "endpoint": "/api/forms/security-status",
+        "method": "GET",
+        "totalRequests": 50,
+        "successCount": 0,
+        "errorCount": 50,
+        "successRate": 0,
+        "totalTime": "35.67",
+        "throughput": "1401.68",
+        "responseTime": {
+          "min": 0.7817580000000817,
+          "max": 4.204666000000543,
+          "avg": 2.0603243200000363,
+          "median": 1.9564555000006294,
+          "p95": 3.4062430000003587,
+          "p99": 4.204666000000543
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/forms/status": {
+        "endpoint": "/api/forms/status",
+        "method": "GET",
+        "totalRequests": 50,
+        "successCount": 0,
+        "errorCount": 50,
+        "successRate": 0,
+        "totalTime": "33.97",
+        "throughput": "1472.09",
+        "responseTime": {
+          "min": 0.7857779999994818,
+          "max": 4.442312000000129,
+          "avg": 2.0253963599999043,
+          "median": 1.9057049999996707,
+          "p95": 3.240270000000237,
+          "p99": 4.442312000000129
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      },
+      "/api/cache/stats": {
+        "endpoint": "/api/cache/stats",
+        "method": "GET",
+        "totalRequests": 50,
+        "successCount": 0,
+        "errorCount": 50,
+        "successRate": 0,
+        "totalTime": "34.24",
+        "throughput": "1460.42",
+        "responseTime": {
+          "min": 0.7498690000002171,
+          "max": 5.57420700000057,
+          "avg": 2.1082664200000183,
+          "median": 1.8637635000004593,
+          "p95": 4.456152000000657,
+          "p99": 5.57420700000057
+        },
+        "caching": {
+          "hits": 0,
+          "misses": 0,
+          "hitRate": null
+        },
+        "averageSize": 124
+      }
+    }
+  },
+  "serverHealth": {
+    "healthy": true,
+    "avgResponseTime": "0.00ms",
+    "cacheType": "memory"
+  },
+  "cacheTest": {
+    "firstRequestTime": 2.304194999999993,
+    "secondRequestTime": 3.120801,
+    "speedImprovement": -35.439969273434315,
+    "hitRate": 100,
+    "totalTestRequests": 20
+  }
+}

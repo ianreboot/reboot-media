@@ -26,13 +26,15 @@ import {
   contactFormSecurityStack 
 } from '../middleware/validation.js';
 import { validateCSRFToken, generateCSRFToken } from '../middleware/csrf.js';
+import { cacheResponse, cacheQuery } from '../middleware/caching.js';
+import { optimizeQueryPerformance, generateETag } from '../middleware/performance.js';
 
 const router = express.Router();
 
 // Using any types for simplified Express integration
 
 /**
- * Lead form submission endpoint with comprehensive security
+ * Lead form submission endpoint with comprehensive security and performance optimization
  * POST /api/forms/lead
  */
 router.post('/lead', 
@@ -137,8 +139,11 @@ router.post('/lead',
       throw new AppError('Invalid form data provided', 400, 'SANITIZATION_FAILED');
     }
 
-    // Process the form submission
-    const emailSent = await processLeadSubmission(sanitizedData);
+    // Process the form submission with performance optimization
+    const emailSent = await optimizeQueryPerformance(
+      () => processLeadSubmission(sanitizedData),
+      'lead_submission_processing'
+    );
 
     if (!emailSent) {
       throw new AppError('Failed to process form submission', 500, 'EMAIL_SEND_ERROR');
@@ -172,13 +177,21 @@ router.post('/lead',
       'ALLOWED'
     );
 
-    res.status(200).json({
+    const responseData = {
       success: true,
       data: {
         message: 'Thank you for your submission. We will review your information and get back to you within 24 hours.',
         requestId: req.requestId,
+        processingTime: `${processingTime}ms`,
       },
-    });
+    };
+    
+    // Set ETag for caching optimization
+    const etag = generateETag(responseData);
+    res.set('ETag', etag);
+    res.set('Cache-Control', 'no-cache'); // Don't cache form submissions
+    
+    res.status(200).json(responseData);
 
   } catch (error) {
     next(error);
@@ -186,7 +199,7 @@ router.post('/lead',
 });
 
 /**
- * Contact form submission endpoint with comprehensive security
+ * Contact form submission endpoint with comprehensive security and performance optimization
  * POST /api/forms/contact
  */
 router.post('/contact',
@@ -291,8 +304,11 @@ router.post('/contact',
       throw new AppError('Invalid form data provided', 400, 'SANITIZATION_FAILED');
     }
 
-    // Process the form submission
-    const emailSent = await processContactSubmission(sanitizedData);
+    // Process the form submission with performance optimization
+    const emailSent = await optimizeQueryPerformance(
+      () => processContactSubmission(sanitizedData),
+      'contact_submission_processing'
+    );
 
     if (!emailSent) {
       throw new AppError('Failed to process contact form', 500, 'EMAIL_SEND_ERROR');
@@ -323,13 +339,21 @@ router.post('/contact',
       'ALLOWED'
     );
 
-    res.status(200).json({
+    const responseData = {
       success: true,
       data: {
         message: 'Thank you for your message. We will respond within 24 hours.',
         requestId: req.requestId,
+        processingTime: `${processingTime}ms`,
       },
-    });
+    };
+    
+    // Set ETag for caching optimization
+    const etag = generateETag(responseData);
+    res.set('ETag', etag);
+    res.set('Cache-Control', 'no-cache'); // Don't cache form submissions
+    
+    res.status(200).json(responseData);
 
   } catch (error) {
     next(error);
@@ -337,10 +361,13 @@ router.post('/contact',
 });
 
 /**
- * Get CSRF token endpoint
+ * Get CSRF token endpoint with caching
  * GET /api/forms/csrf-token
  */
-router.get('/csrf-token', generateCSRFToken, (req: any, res: any) => {
+router.get('/csrf-token', 
+  cacheResponse(300, 'csrf'), // Cache for 5 minutes
+  generateCSRFToken, 
+  (req: any, res: any) => {
   res.json({
     success: true,
     data: {
@@ -352,10 +379,12 @@ router.get('/csrf-token', generateCSRFToken, (req: any, res: any) => {
 });
 
 /**
- * Security status endpoint
+ * Security status endpoint with caching
  * GET /api/forms/security-status
  */
-router.get('/security-status', (req: any, res: any) => {
+router.get('/security-status', 
+  cacheResponse(60, 'security'), // Cache for 1 minute
+  (req: any, res: any) => {
   res.json({
     success: true,
     data: {
@@ -383,10 +412,12 @@ router.get('/security-status', (req: any, res: any) => {
 });
 
 /**
- * Form status endpoint for debugging
+ * Form status endpoint for debugging with caching
  * GET /api/forms/status
  */
-router.get('/status', (req: any, res: any) => {
+router.get('/status', 
+  cacheResponse(30, 'status'), // Cache for 30 seconds
+  (req: any, res: any) => {
   const securityStats = securityLogger.getSecurityStats ? securityLogger.getSecurityStats() : { message: 'Stats not available' };
   
   res.json({
