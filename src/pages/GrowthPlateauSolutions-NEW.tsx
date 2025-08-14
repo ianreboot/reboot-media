@@ -232,10 +232,14 @@ const GrowthPlateauSolutions = () => {
               <p className="text-lg text-standard dark:text-gray-300 mb-6">
                 Compare fractional CMO vs agency approaches and discover which delivers faster plateau breakthrough results for your specific situation.
               </p>
-              <div className="flex items-center text-red-600 dark:text-red-400 font-semibold">
+              <a 
+                href="/fractional-cmo-guide/vs-marketing-agency"
+                className="flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 dark:hover:text-red-300 transition-colors group"
+              >
                 <span className="mr-2">🎯</span>
                 Get Your CMO vs Agency Answer
-              </div>
+                <span className="ml-1 transform transition-transform group-hover:translate-x-1">→</span>
+              </a>
             </div>
           </div>
         )
