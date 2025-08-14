@@ -1,0 +1,78 @@
+# Production Docker Compose Configuration
+# Includes Redis for session storage and nginx for load balancing
+
+version: '3.8'
+
+services:
+  # Application server
+  reboot-app:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile.prod
+    container_name: reboot-app
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=3002
+      - REDIS_URL=redis://redis:6379
+      - FRONTEND_URL=https://www.rebootmedia.net
+    depends_on:
+      - redis
+    networks:
+      - app-network
+    volumes:
+      - app-logs:/app/logs
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3002/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+
+  # Redis for session storage and caching
+  redis:
+    image: redis:7-alpine
+    container_name: reboot-redis
+    restart: unless-stopped
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+    volumes:
+      - redis-data:/data
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # Nginx reverse proxy and load balancer
+  nginx:
+    image: nginx:alpine
+    container_name: reboot-nginx
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ../dist:/usr/share/nginx/html:ro
+      - ./nginx.prod.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+      - nginx-logs:/var/log/nginx
+    depends_on:
+      - reboot-app
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/api/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+volumes:
+  redis-data:
+  app-logs:
+  nginx-logs:
+
+networks:
+  app-network:
+    driver: bridge
