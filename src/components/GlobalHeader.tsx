@@ -215,7 +215,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                         aria-labelledby="dev-nav-button"
                         style={{ pointerEvents: 'auto' }}
                       >
-                        <div className="p-3">
+                        <div className="p-3 dev-nav-links" style={{ pointerEvents: 'auto' }}>
                           <div className="text-xs font-bold text-purple-600 dark:text-purple-400 px-3 py-2 border-b border-gray-100 dark:border-gray-700 mb-3 bg-purple-50/50 dark:bg-purple-900/20 rounded-lg">
                             DEVELOPMENT NAVIGATION
                           </div>
@@ -449,7 +449,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                     <span className="w-2 h-2 bg-purple-500 rounded-full"></span>
                     DEVELOPMENT SHORTCUTS
                   </div>
-                  <div className="space-y-1">
+                  <div className="space-y-1 dev-nav-links">
                     <Link to="/marketing-psychology" onClick={handleMenuItemClick} className="block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">🧠 Marketing Psychology</Link>
                     <Link to="/growth-plateau-solutions" onClick={handleMenuItemClick} className="block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">📈 Growth Plateau</Link>
                     <Link to="/fractional-cmo-guide" onClick={handleMenuItemClick} className="block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">💼 Fractional CMO</Link>

@@ -52,7 +52,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
         }}></div>
       </div>
       
-      <div className="relative z-10">
+      <div className="relative z-10" style={{ pointerEvents: 'auto' }}>
         {/* Modern Desktop Footer */}
         <div className="hidden lg:block">
           <div className="max-w-7xl mx-auto px-8" style={{ paddingTop: 'clamp(3rem, 5vw, 5rem)', paddingBottom: 'clamp(2rem, 3vw, 3rem)' }}>
@@ -112,19 +112,22 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <ul className="space-y-2">
                   <li>
                     <Link to="/about" onClick={scrollToTop} 
-                          className="text-sm text-gray-300 hover:text-white transition-colors">
+                          className="text-sm text-gray-300 hover:text-white transition-colors"
+                          style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       About
                     </Link>
                   </li>
                   <li>
                     <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} 
-                       className="text-sm text-gray-300 hover:text-white transition-colors cursor-pointer">
+                       className="text-sm text-gray-300 hover:text-white transition-colors cursor-pointer"
+                       style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       Services
                     </a>
                   </li>
                   <li>
                     <Link to="/contact" onClick={scrollToTop} 
-                          className="text-sm text-gray-300 hover:text-white transition-colors">
+                          className="text-sm text-gray-300 hover:text-white transition-colors"
+                          style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       Contact
                     </Link>
                   </li>
@@ -137,13 +140,15 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <ul className="space-y-2">
                   <li>
                     <Link to="/privacy" onClick={scrollToTop} 
-                          className="text-sm text-gray-300 hover:text-white transition-colors">
+                          className="text-sm text-gray-300 hover:text-white transition-colors"
+                          style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       Privacy Policy
                     </Link>
                   </li>
                   <li>
                     <Link to="/terms" onClick={scrollToTop} 
-                          className="text-sm text-gray-300 hover:text-white transition-colors">
+                          className="text-sm text-gray-300 hover:text-white transition-colors"
+                          style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       Terms of Service
                     </Link>
                   </li>
@@ -158,19 +163,22 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                     <ul className="space-y-2">
                       <li>
                         <Link to="/marketing-psychology" onClick={scrollToTop} 
-                              className="text-sm text-gray-300 hover:text-white transition-colors">
+                              className="text-sm text-gray-300 hover:text-white transition-colors"
+                              style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                           Marketing Psychology Guide
                         </Link>
                       </li>
                       <li>
                         <Link to="/growth-plateau-solutions" onClick={scrollToTop} 
-                              className="text-sm text-gray-300 hover:text-white transition-colors">
+                              className="text-sm text-gray-300 hover:text-white transition-colors"
+                              style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                           Breaking Growth Plateaus
                         </Link>
                       </li>
                       <li>
                         <Link to="/fractional-cmo-guide" onClick={scrollToTop} 
-                              className="text-sm text-gray-300 hover:text-white transition-colors">
+                              className="text-sm text-gray-300 hover:text-white transition-colors"
+                              style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                           Fractional CMO vs Agency
                         </Link>
                       </li>
@@ -197,6 +205,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 to="/" 
                 onClick={scrollToTop}
                 className="inline-block cursor-pointer hover:scale-105 transition-transform duration-300"
+                style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}
               >
                 <h3 className="text-3xl font-black mb-3">
                   REBOOT <span className="text-orange-500">MEDIA</span>
@@ -232,17 +241,17 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <div className={`transition-all duration-300 ${expandedSections['services'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
-                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Quick-Win Strategy
                       </a>
                     </li>
                     <li>
-                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Growth Strategy
                       </a>
                     </li>
                     <li>
-                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Executive Leadership
                       </a>
                     </li>
@@ -303,17 +312,17 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <div className={`transition-all duration-300 ${expandedSections['resources'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
-                      <Link to="/marketing-psychology" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                      <Link to="/marketing-psychology" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Marketing Psychology Guide
                       </Link>
                     </li>
                     <li>
-                      <Link to="/growth-plateau-solutions" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                      <Link to="/growth-plateau-solutions" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Break Growth Plateaus
                       </Link>
                     </li>
                     <li>
-                      <Link to="/fractional-cmo-guide" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                      <Link to="/fractional-cmo-guide" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Fractional CMO vs Agency
                       </Link>
                     </li>
@@ -340,17 +349,17 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <div className={`transition-all duration-300 ${expandedSections['company'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
-                      <Link to="/about" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                      <Link to="/about" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         About
                       </Link>
                     </li>
                     <li>
-                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                      <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Services
                       </a>
                     </li>
                     <li>
-                      <Link to="/contact" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                      <Link to="/contact" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Contact
                       </Link>
                     </li>
@@ -377,12 +386,12 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <div className={`transition-all duration-300 ${expandedSections['legal'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
-                      <Link to="/privacy" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                      <Link to="/privacy" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Privacy Policy
                       </Link>
                     </li>
                     <li>
-                      <Link to="/terms" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm">
+                      <Link to="/terms" onClick={scrollToTop} className="text-gray-400 hover:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                         Terms of Service
                       </Link>
                     </li>

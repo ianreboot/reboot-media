@@ -2,6 +2,14 @@
 
 /* Enhanced Responsive Navigation Styles */
 @layer utilities {
+  /* Fix for all navigation links - ensure they're clickable */
+  .dev-nav-links a,
+  .dev-nav-links Link {
+    pointer-events: auto !important;
+    position: relative !important;
+    z-index: 90 !important;
+  }
+  
   /* Backdrop blur fallbacks for better browser support */
   .backdrop-blur-fallback-sm {
     backdrop-filter: blur(4px);
