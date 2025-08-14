@@ -1,0 +1,233 @@
+global:
+  smtp_smarthost: 'localhost:587'
+  smtp_from: 'alerts@rebootmedia.net'
+  smtp_require_tls: true
+
+# Notification templates
+templates:
+  - '/etc/alertmanager/templates/*.tmpl'
+
+# Route configuration
+route:
+  group_by: ['alertname', 'severity', 'service']
+  group_wait: 10s
+  group_interval: 10s
+  repeat_interval: 1h
+  receiver: 'default'
+  
+  routes:
+    # Critical production alerts
+    - match:
+        severity: critical
+      receiver: 'critical-alerts'
+      group_wait: 0s
+      group_interval: 5s
+      repeat_interval: 30m
+      continue: true
+
+    # Business/Marketing team alerts
+    - match:
+        team: marketing
+      receiver: 'marketing-team'
+      group_wait: 30s
+      repeat_interval: 4h
+
+    # Security team alerts
+    - match:
+        team: security
+      receiver: 'security-team'
+      group_wait: 15s
+      repeat_interval: 2h
+
+    # Development team warnings
+    - match:
+        severity: warning
+      receiver: 'dev-team-warnings'
+      group_wait: 30s
+      repeat_interval: 2h
+
+# Notification receivers
+receivers:
+  - name: 'default'
+    slack_configs:
+      - api_url: 'https://hooks.slack.com/services/YOUR/SLACK/WEBHOOK'
+        channel: '#alerts'
+        title: 'Reboot Media Alert'
+        text: |
+          {{ range .Alerts }}
+          *{{ .Annotations.summary }}*
+          {{ .Annotations.description }}
+          {{ end }}
+
+  - name: 'critical-alerts'
+    # PagerDuty for critical alerts
+    pagerduty_configs:
+      - routing_key: 'YOUR_PAGERDUTY_INTEGRATION_KEY'
+        severity: 'critical'
+        details:
+          environment: 'production'
+          service: '{{ .GroupLabels.service }}'
+          summary: '{{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+        
+    # Slack for immediate visibility
+    slack_configs:
+      - api_url: 'https://hooks.slack.com/services/YOUR/CRITICAL/WEBHOOK'
+        channel: '#critical-alerts'
+        color: 'danger'
+        title: '🚨 CRITICAL: Production Alert'
+        text: |
+          {{ range .Alerts }}
+          *{{ .Annotations.summary }}*
+          {{ .Annotations.description }}
+          
+          *Environment:* Production
+          *Service:* {{ .Labels.service }}
+          *Severity:* {{ .Labels.severity }}
+          *Instance:* {{ .Labels.instance }}
+          {{ end }}
+        actions:
+          - type: button
+            text: 'View in Grafana'
+            url: 'https://grafana.rebootmedia.net/d/production-dashboard'
+          - type: button
+            text: 'Run Playbook'
+            url: 'https://runbook.rebootmedia.net/critical-alerts'
+
+    # Email for record keeping
+    email_configs:
+      - to: 'oncall@rebootmedia.net'
+        subject: '🚨 Critical Alert: {{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+        html: |
+          <h2>Critical Production Alert</h2>
+          {{ range .Alerts }}
+          <h3>{{ .Annotations.summary }}</h3>
+          <p>{{ .Annotations.description }}</p>
+          
+          <table border="1" style="border-collapse: collapse;">
+            <tr><th>Field</th><th>Value</th></tr>
+            <tr><td>Environment</td><td>Production</td></tr>
+            <tr><td>Service</td><td>{{ .Labels.service }}</td></tr>
+            <tr><td>Severity</td><td>{{ .Labels.severity }}</td></tr>
+            <tr><td>Instance</td><td>{{ .Labels.instance }}</td></tr>
+            <tr><td>Started</td><td>{{ .StartsAt }}</td></tr>
+          </table>
+          
+          <h4>Quick Actions:</h4>
+          <ul>
+            <li><a href="https://grafana.rebootmedia.net/d/production-dashboard">View Metrics</a></li>
+            <li><a href="https://runbook.rebootmedia.net/critical-alerts">Emergency Runbook</a></li>
+            <li><a href="https://status.rebootmedia.net">Status Page</a></li>
+          </ul>
+          {{ end }}
+
+  - name: 'marketing-team'
+    slack_configs:
+      - api_url: 'https://hooks.slack.com/services/YOUR/MARKETING/WEBHOOK'
+        channel: '#marketing-alerts'
+        color: 'warning'
+        title: '📈 Marketing Metrics Alert'
+        text: |
+          {{ range .Alerts }}
+          *{{ .Annotations.summary }}*
+          {{ .Annotations.description }}
+          {{ end }}
+        
+    email_configs:
+      - to: 'marketing@rebootmedia.net'
+        subject: 'Marketing Alert: {{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+        html: |
+          <h2>Marketing Performance Alert</h2>
+          {{ range .Alerts }}
+          <h3>{{ .Annotations.summary }}</h3>
+          <p>{{ .Annotations.description }}</p>
+          
+          <p><strong>Impact:</strong> This may affect lead generation and conversion rates.</p>
+          
+          <h4>Recommended Actions:</h4>
+          <ul>
+            <li>Check current campaign performance</li>
+            <li>Verify lead form functionality</li>
+            <li>Review A/B test configurations</li>
+            <li>Monitor conversion funnel</li>
+          </ul>
+          {{ end }}
+
+  - name: 'security-team'
+    slack_configs:
+      - api_url: 'https://hooks.slack.com/services/YOUR/SECURITY/WEBHOOK'
+        channel: '#security-alerts'
+        color: 'danger'
+        title: '🔒 Security Alert'
+        text: |
+          {{ range .Alerts }}
+          *{{ .Annotations.summary }}*
+          {{ .Annotations.description }}
+          
+          *Severity:* {{ .Labels.severity }}
+          *Service:* {{ .Labels.service }}
+          {{ end }}
+        
+    email_configs:
+      - to: 'security@rebootmedia.net'
+        subject: '🔒 Security Alert: {{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+        html: |
+          <h2>Security Alert</h2>
+          {{ range .Alerts }}
+          <h3>{{ .Annotations.summary }}</h3>
+          <p>{{ .Annotations.description }}</p>
+          
+          <h4>Investigation Steps:</h4>
+          <ul>
+            <li>Review access logs</li>
+            <li>Check authentication patterns</li>
+            <li>Verify rate limiting effectiveness</li>
+            <li>Monitor for suspicious activity</li>
+          </ul>
+          
+          <p><a href="https://security.rebootmedia.net/dashboard">Security Dashboard</a></p>
+          {{ end }}
+
+  - name: 'dev-team-warnings'
+    slack_configs:
+      - api_url: 'https://hooks.slack.com/services/YOUR/DEV/WEBHOOK'
+        channel: '#dev-alerts'
+        color: 'warning'
+        title: '⚠️ System Warning'
+        text: |
+          {{ range .Alerts }}
+          *{{ .Annotations.summary }}*
+          {{ .Annotations.description }}
+          {{ end }}
+
+# Inhibition rules (suppress certain alerts when others are firing)
+inhibit_rules:
+  # Suppress instance alerts if the entire service is down
+  - source_match:
+      alertname: ServiceDown
+    target_match:
+      alertname: HighCPUUsage
+    equal: ['instance']
+
+  - source_match:
+      alertname: ServiceDown
+    target_match:
+      alertname: HighMemoryUsage
+    equal: ['instance']
+
+  # Suppress high error rate if availability is already alerting
+  - source_match:
+      alertname: LowAvailability
+    target_match:
+      alertname: HighErrorRate
+    equal: ['service']
+
+# Silence configuration (for maintenance windows)
+silences:
+  # Example maintenance window (commented out)
+  # - matchers:
+  #     - name: alertname
+  #       value: HighCPUUsage
+  #   starts_at: 2024-01-15T02:00:00Z
+  #   ends_at: 2024-01-15T04:00:00Z
+  #   created_by: maintenance@rebootmedia.net
+  #   comment: Scheduled maintenance window

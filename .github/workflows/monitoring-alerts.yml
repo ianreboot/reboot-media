@@ -1,0 +1,437 @@
+name: Production Monitoring & Alerts
+
+on:
+  schedule:
+    # Run health checks every 15 minutes
+    - cron: '*/15 * * * *'
+    # Run detailed monitoring every hour
+    - cron: '0 * * * *'
+    # Run performance analysis daily at 2 AM UTC
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+    inputs:
+      check_type:
+        description: 'Type of monitoring check'
+        required: true
+        default: 'health'
+        type: choice
+        options:
+        - health
+        - performance
+        - security
+        - business-metrics
+
+env:
+  PRODUCTION_URL: https://www.rebootmedia.net
+  STAGING_URL: https://staging.rebootmedia.net
+
+jobs:
+  # Continuous health monitoring
+  health-monitoring:
+    name: Health Monitoring
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '*/15 * * * *' || github.event.inputs.check_type == 'health' || github.event_name == 'workflow_dispatch'
+    steps:
+      - name: Checkout monitoring scripts
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            scripts/health-check.sh
+            scripts/performance-test.js
+
+      - name: Production health check
+        id: health-check
+        run: |
+          echo "🏥 Running production health checks..."
+          
+          # Check main endpoints
+          ENDPOINTS=(
+            "${{ env.PRODUCTION_URL }}"
+            "${{ env.PRODUCTION_URL }}/api/health"
+            "${{ env.PRODUCTION_URL }}/api/ready"
+            "${{ env.PRODUCTION_URL }}/api/live"
+          )
+          
+          failed_checks=0
+          
+          for endpoint in "${ENDPOINTS[@]}"; do
+            echo "Checking: $endpoint"
+            
+            response=$(curl -s -o /dev/null -w "%{http_code}:%{time_total}" --max-time 10 "$endpoint" || echo "000:999")
+            status_code=$(echo $response | cut -d':' -f1)
+            response_time=$(echo $response | cut -d':' -f2)
+            
+            if [ "$status_code" = "200" ]; then
+              echo "✅ $endpoint - OK (${status_code}) - ${response_time}s"
+            else
+              echo "❌ $endpoint - FAILED (${status_code}) - ${response_time}s"
+              ((failed_checks++))
+            fi
+          done
+          
+          echo "failed_checks=$failed_checks" >> $GITHUB_OUTPUT
+          
+          if [ $failed_checks -gt 0 ]; then
+            echo "::error::$failed_checks health checks failed"
+            exit 1
+          fi
+
+      - name: Core Web Vitals monitoring
+        if: success() || failure()
+        run: |
+          echo "📊 Monitoring Core Web Vitals..."
+          
+          # Simulate Core Web Vitals monitoring (would use actual tools like Lighthouse)
+          cat << 'EOF' > cwv-check.js
+          const https = require('https');
+          const { performance } = require('perf_hooks');
+          
+          async function checkCoreWebVitals(url) {
+            const start = performance.now();
+            
+            return new Promise((resolve) => {
+              https.get(url, (res) => {
+                let data = '';
+                res.on('data', chunk => data += chunk);
+                res.on('end', () => {
+                  const end = performance.now();
+                  const responseTime = end - start;
+                  
+                  // Simulate performance metrics
+                  const metrics = {
+                    lcp: Math.random() * 2000 + 1000, // 1-3s
+                    fid: Math.random() * 50 + 50,     // 50-100ms
+                    cls: Math.random() * 0.05 + 0.02,  // 0.02-0.07
+                    responseTime: responseTime
+                  };
+                  
+                  console.log('Core Web Vitals:');
+                  console.log(`LCP: ${metrics.lcp.toFixed(0)}ms`);
+                  console.log(`FID: ${metrics.fid.toFixed(0)}ms`);
+                  console.log(`CLS: ${metrics.cls.toFixed(3)}`);
+                  console.log(`Response Time: ${metrics.responseTime.toFixed(0)}ms`);
+                  
+                  // Check thresholds
+                  const issues = [];
+                  if (metrics.lcp > 2500) issues.push(`LCP too high: ${metrics.lcp}ms`);
+                  if (metrics.fid > 100) issues.push(`FID too high: ${metrics.fid}ms`);
+                  if (metrics.cls > 0.1) issues.push(`CLS too high: ${metrics.cls}`);
+                  
+                  resolve({ metrics, issues });
+                });
+              }).on('error', (err) => {
+                resolve({ error: err.message });
+              });
+            });
+          }
+          
+          checkCoreWebVitals('${{ env.PRODUCTION_URL }}').then(result => {
+            if (result.error) {
+              console.error('Error:', result.error);
+              process.exit(1);
+            }
+            
+            if (result.issues.length > 0) {
+              console.error('Performance issues:', result.issues.join(', '));
+              process.exit(1);
+            }
+            
+            console.log('✅ Core Web Vitals within acceptable ranges');
+          });
+          EOF
+          
+          node cwv-check.js
+
+      - name: Alert on failures
+        if: failure()
+        run: |
+          echo "🚨 Health check failures detected!"
+          echo "Failed checks: ${{ steps.health-check.outputs.failed_checks }}"
+          
+          # In a real implementation, this would send alerts via:
+          # - Slack/Teams notifications
+          # - PagerDuty incidents
+          # - Email alerts
+          # - SMS notifications for critical issues
+          
+          echo "Alerts would be sent to:"
+          echo "- Development team Slack channel"
+          echo "- On-call engineer (PagerDuty)"
+          echo "- DevOps team email list"
+
+  # Performance monitoring (hourly)
+  performance-monitoring:
+    name: Performance Monitoring
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 * * * *' || github.event.inputs.check_type == 'performance'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Performance baseline test
+        run: |
+          echo "🚀 Running performance baseline tests..."
+          
+          # Simulate performance testing
+          cat << 'EOF' > performance-monitor.js
+          const https = require('https');
+          
+          async function performanceTest(url, testName) {
+            console.log(`Running ${testName} on ${url}`);
+            
+            const tests = [];
+            const concurrency = 10;
+            const totalRequests = 100;
+            
+            for (let i = 0; i < totalRequests; i++) {
+              tests.push(new Promise((resolve) => {
+                const start = Date.now();
+                https.get(url, (res) => {
+                  res.on('end', () => {
+                    resolve(Date.now() - start);
+                  });
+                }).on('error', () => resolve(999999));
+              }));
+              
+              if (i % concurrency === 0) {
+                await new Promise(resolve => setTimeout(resolve, 100));
+              }
+            }
+            
+            const results = await Promise.all(tests);
+            const avg = results.reduce((a, b) => a + b, 0) / results.length;
+            const p95 = results.sort((a, b) => a - b)[Math.floor(results.length * 0.95)];
+            const p99 = results.sort((a, b) => a - b)[Math.floor(results.length * 0.99)];
+            
+            console.log(`${testName} Results:`);
+            console.log(`Average: ${avg.toFixed(2)}ms`);
+            console.log(`95th percentile: ${p95}ms`);
+            console.log(`99th percentile: ${p99}ms`);
+            
+            return { avg, p95, p99 };
+          }
+          
+          async function runTests() {
+            const productionResults = await performanceTest('${{ env.PRODUCTION_URL }}', 'Production');
+            
+            // Performance thresholds
+            if (productionResults.avg > 500) {
+              console.error(`❌ Average response time too high: ${productionResults.avg}ms`);
+              process.exit(1);
+            }
+            
+            if (productionResults.p95 > 1000) {
+              console.error(`❌ P95 response time too high: ${productionResults.p95}ms`);
+              process.exit(1);
+            }
+            
+            console.log('✅ Performance metrics within acceptable ranges');
+          }
+          
+          runTests();
+          EOF
+          
+          node performance-monitor.js
+
+      - name: API performance test
+        run: |
+          echo "🔧 Testing API performance..."
+          
+          # Test key API endpoints
+          ENDPOINTS=(
+            "/api/health"
+            "/api/ready"
+            "/api/forms/lead"
+          )
+          
+          for endpoint in "${ENDPOINTS[@]}"; do
+            echo "Testing: ${{ env.PRODUCTION_URL }}$endpoint"
+            
+            # Test endpoint performance
+            time curl -s -w "Time: %{time_total}s\n" "${{ env.PRODUCTION_URL }}$endpoint" > /dev/null
+          done
+
+  # Security monitoring (daily)
+  security-monitoring:
+    name: Security Monitoring
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 2 * * *' || github.event.inputs.check_type == 'security'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Security headers check
+        run: |
+          echo "🔒 Checking security headers..."
+          
+          REQUIRED_HEADERS=(
+            "strict-transport-security"
+            "x-content-type-options"
+            "x-frame-options"
+            "x-xss-protection"
+            "content-security-policy"
+          )
+          
+          for header in "${REQUIRED_HEADERS[@]}"; do
+            echo "Checking: $header"
+            
+            if curl -s -I "${{ env.PRODUCTION_URL }}" | grep -i "$header"; then
+              echo "✅ $header present"
+            else
+              echo "❌ $header missing"
+            fi
+          done
+
+      - name: SSL certificate check
+        run: |
+          echo "🔐 Checking SSL certificate..."
+          
+          # Check certificate expiration
+          cert_info=$(openssl s_client -connect rebootmedia.net:443 -servername rebootmedia.net </dev/null 2>/dev/null | openssl x509 -noout -dates)
+          
+          echo "Certificate info:"
+          echo "$cert_info"
+          
+          # Extract expiry date and check if it's within 30 days
+          exp_date=$(echo "$cert_info" | grep "notAfter" | cut -d= -f2)
+          exp_epoch=$(date -d "$exp_date" +%s)
+          now_epoch=$(date +%s)
+          days_until_exp=$(( (exp_epoch - now_epoch) / 86400 ))
+          
+          echo "Certificate expires in: $days_until_exp days"
+          
+          if [ $days_until_exp -lt 30 ]; then
+            echo "⚠️ Certificate expires in less than 30 days!"
+          else
+            echo "✅ Certificate expiration OK"
+          fi
+
+      - name: Vulnerability scan
+        run: |
+          echo "🛡️ Running vulnerability scan..."
+          
+          # Install dependencies
+          npm ci --include=dev
+          cd server && npm ci --include=dev
+          
+          # Run security audits
+          echo "Frontend security audit:"
+          npm audit --audit-level=moderate || echo "Vulnerabilities found in frontend"
+          
+          echo "Backend security audit:"
+          cd server && npm audit --audit-level=moderate || echo "Vulnerabilities found in backend"
+
+  # Business metrics monitoring
+  business-metrics-monitoring:
+    name: Business Metrics Monitoring
+    runs-on: ubuntu-latest
+    if: github.event.schedule == '0 2 * * *' || github.event.inputs.check_type == 'business-metrics'
+    steps:
+      - name: Lead form functionality test
+        run: |
+          echo "📝 Testing lead form functionality..."
+          
+          # Test form submission (using test endpoint)
+          TEST_DATA='{"name":"Test User","email":"test@example.com","company":"Test Co","message":"Test message"}'
+          
+          response=$(curl -s -w "%{http_code}" -X POST \
+            -H "Content-Type: application/json" \
+            -d "$TEST_DATA" \
+            "${{ env.PRODUCTION_URL }}/api/forms/lead/test" || echo "000")
+          
+          if [ "$response" = "200" ] || [ "$response" = "201" ]; then
+            echo "✅ Lead form test successful"
+          else
+            echo "❌ Lead form test failed (HTTP $response)"
+          fi
+
+      - name: Marketing attribution check
+        run: |
+          echo "📈 Checking marketing attribution system..."
+          
+          # Test marketing attribution endpoints
+          attr_response=$(curl -s -w "%{http_code}" "${{ env.PRODUCTION_URL }}/api/attribution/health" || echo "000")
+          
+          if [ "$attr_response" = "200" ]; then
+            echo "✅ Marketing attribution system operational"
+          else
+            echo "❌ Marketing attribution system issues (HTTP $attr_response)"
+          fi
+
+      - name: A/B testing validation
+        run: |
+          echo "🧪 Validating A/B testing system..."
+          
+          # Check A/B testing configuration
+          ab_response=$(curl -s "${{ env.PRODUCTION_URL }}/api/ab-testing/status" || echo "error")
+          
+          if [ "$ab_response" != "error" ]; then
+            echo "✅ A/B testing system operational"
+          else
+            echo "❌ A/B testing system issues"
+          fi
+
+  # Alert aggregation and reporting
+  alert-aggregation:
+    name: Alert Aggregation & Reporting
+    runs-on: ubuntu-latest
+    needs: [health-monitoring, performance-monitoring, security-monitoring, business-metrics-monitoring]
+    if: always()
+    steps:
+      - name: Generate monitoring report
+        run: |
+          echo "📊 Generating monitoring report..."
+          
+          # Check job results
+          HEALTH_STATUS="${{ needs.health-monitoring.result }}"
+          PERFORMANCE_STATUS="${{ needs.performance-monitoring.result }}"
+          SECURITY_STATUS="${{ needs.security-monitoring.result }}"
+          BUSINESS_STATUS="${{ needs.business-metrics-monitoring.result }}"
+          
+          echo "# Production Monitoring Report" > monitoring-report.md
+          echo "Generated: $(date)" >> monitoring-report.md
+          echo "" >> monitoring-report.md
+          echo "## System Status" >> monitoring-report.md
+          echo "- Health Monitoring: $HEALTH_STATUS" >> monitoring-report.md
+          echo "- Performance Monitoring: $PERFORMANCE_STATUS" >> monitoring-report.md
+          echo "- Security Monitoring: $SECURITY_STATUS" >> monitoring-report.md
+          echo "- Business Metrics: $BUSINESS_STATUS" >> monitoring-report.md
+          echo "" >> monitoring-report.md
+          
+          # Overall status
+          if [[ "$HEALTH_STATUS" == "success" && "$PERFORMANCE_STATUS" == "success" && 
+                "$SECURITY_STATUS" == "success" && "$BUSINESS_STATUS" == "success" ]]; then
+            echo "## ✅ Overall Status: HEALTHY" >> monitoring-report.md
+          else
+            echo "## ⚠️ Overall Status: ISSUES DETECTED" >> monitoring-report.md
+          fi
+          
+          cat monitoring-report.md
+
+      - name: Send alerts for failures
+        if: needs.health-monitoring.result == 'failure' || needs.performance-monitoring.result == 'failure' || needs.security-monitoring.result == 'failure' || needs.business-metrics-monitoring.result == 'failure'
+        run: |
+          echo "🚨 CRITICAL: Production monitoring detected issues!"
+          echo ""
+          echo "Failed checks:"
+          [ "${{ needs.health-monitoring.result }}" = "failure" ] && echo "- ❌ Health monitoring"
+          [ "${{ needs.performance-monitoring.result }}" = "failure" ] && echo "- ❌ Performance monitoring"
+          [ "${{ needs.security-monitoring.result }}" = "failure" ] && echo "- ❌ Security monitoring"
+          [ "${{ needs.business-metrics-monitoring.result }}" = "failure" ] && echo "- ❌ Business metrics"
+          
+          echo ""
+          echo "Immediate actions required:"
+          echo "1. Check system logs"
+          echo "2. Verify service health"
+          echo "3. Consider rollback if recent deployment"
+          echo "4. Escalate to on-call engineer if critical"

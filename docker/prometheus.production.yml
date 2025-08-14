@@ -1,0 +1,267 @@
+global:
+  scrape_interval: 15s
+  evaluation_interval: 15s
+  external_labels:
+    environment: production
+    cluster: reboot-media
+
+rule_files:
+  - "alert_rules.yml"
+
+alerting:
+  alertmanagers:
+    - static_configs:
+        - targets:
+          - alertmanager:9093
+
+scrape_configs:
+  # Prometheus itself
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['localhost:9090']
+    scrape_interval: 15s
+    metrics_path: /metrics
+
+  # Node exporter for system metrics
+  - job_name: 'node-exporter'
+    static_configs:
+      - targets: ['node-exporter:9100']
+    scrape_interval: 30s
+    metrics_path: /metrics
+
+  # Frontend applications (Blue/Green)
+  - job_name: 'frontend-blue'
+    static_configs:
+      - targets: ['frontend-blue:80']
+    scrape_interval: 30s
+    metrics_path: /metrics
+    scrape_timeout: 10s
+
+  - job_name: 'frontend-green'
+    static_configs:
+      - targets: ['frontend-green:80']
+    scrape_interval: 30s
+    metrics_path: /metrics
+    scrape_timeout: 10s
+
+  # Backend API applications (Blue/Green)
+  - job_name: 'backend-blue'
+    static_configs:
+      - targets: ['backend-blue:3002']
+    scrape_interval: 15s
+    metrics_path: /api/metrics
+    scrape_timeout: 10s
+
+  - job_name: 'backend-green'
+    static_configs:
+      - targets: ['backend-green:3002']
+    scrape_interval: 15s
+    metrics_path: /api/metrics
+    scrape_timeout: 10s
+
+  # Redis metrics
+  - job_name: 'redis'
+    static_configs:
+      - targets: ['redis-cluster:6379']
+    scrape_interval: 30s
+    metrics_path: /metrics
+
+  # Load balancer metrics
+  - job_name: 'load-balancer'
+    static_configs:
+      - targets: ['load-balancer:80']
+    scrape_interval: 30s
+    metrics_path: /nginx_status
+    scrape_timeout: 10s
+
+  # Synthetic monitoring (external endpoints)
+  - job_name: 'blackbox-exporter'
+    metrics_path: /probe
+    params:
+      module: [http_2xx]
+    static_configs:
+      - targets:
+        - https://www.rebootmedia.net
+        - https://www.rebootmedia.net/api/health
+        - https://www.rebootmedia.net/api/ready
+        - https://www.rebootmedia.net/about
+        - https://www.rebootmedia.net/contact
+    relabel_configs:
+      - source_labels: [__address__]
+        target_label: __param_target
+      - source_labels: [__param_target]
+        target_label: instance
+      - target_label: __address__
+        replacement: blackbox-exporter:9115
+
+  # Business metrics (custom application metrics)
+  - job_name: 'business-metrics'
+    static_configs:
+      - targets: ['backend-blue:3002', 'backend-green:3002']
+    scrape_interval: 60s
+    metrics_path: /api/metrics/business
+    scrape_timeout: 15s
+
+# Recording rules for derived metrics
+recording_rules:
+  - name: reboot_media_sli
+    rules:
+      # Availability SLI
+      - record: reboot:availability:ratio_5m
+        expr: |
+          (
+            sum(rate(http_requests_total{job=~"backend.*",code!~"5.."}[5m])) /
+            sum(rate(http_requests_total{job=~"backend.*"}[5m]))
+          )
+
+      # Latency SLI (95th percentile)
+      - record: reboot:latency:p95_5m
+        expr: |
+          histogram_quantile(0.95,
+            sum(rate(http_request_duration_seconds_bucket{job=~"backend.*"}[5m])) by (le)
+          )
+
+      # Error rate SLI
+      - record: reboot:error_rate:ratio_5m
+        expr: |
+          (
+            sum(rate(http_requests_total{job=~"backend.*",code=~"5.."}[5m])) /
+            sum(rate(http_requests_total{job=~"backend.*"}[5m]))
+          )
+
+      # Throughput metrics
+      - record: reboot:throughput:requests_per_second
+        expr: sum(rate(http_requests_total{job=~"backend.*"}[1m]))
+
+      # Business metrics
+      - record: reboot:leads:conversion_rate_1h
+        expr: |
+          (
+            sum(increase(leads_submitted_total[1h])) /
+            sum(increase(page_views_total{page="/contact"}[1h]))
+          )
+
+      - record: reboot:leads:submission_rate_5m
+        expr: sum(rate(leads_submitted_total[5m]))
+
+# Alert rules
+alert_rules:
+  - name: reboot_media_alerts
+    rules:
+      # High-level SLO alerts
+      - alert: HighErrorRate
+        expr: reboot:error_rate:ratio_5m > 0.01
+        for: 5m
+        labels:
+          severity: critical
+          service: reboot-media
+        annotations:
+          summary: "High error rate detected"
+          description: "Error rate is {{ $value | humanizePercentage }} for the last 5 minutes"
+
+      - alert: HighLatency
+        expr: reboot:latency:p95_5m > 0.5
+        for: 5m
+        labels:
+          severity: warning
+          service: reboot-media
+        annotations:
+          summary: "High latency detected"
+          description: "95th percentile latency is {{ $value }}s for the last 5 minutes"
+
+      - alert: LowAvailability
+        expr: reboot:availability:ratio_5m < 0.995
+        for: 2m
+        labels:
+          severity: critical
+          service: reboot-media
+        annotations:
+          summary: "Low availability detected"
+          description: "Availability is {{ $value | humanizePercentage }} for the last 5 minutes"
+
+      # Infrastructure alerts
+      - alert: ServiceDown
+        expr: up{job=~"backend.*|frontend.*"} == 0
+        for: 1m
+        labels:
+          severity: critical
+        annotations:
+          summary: "Service {{ $labels.job }} is down"
+          description: "Service {{ $labels.job }} on instance {{ $labels.instance }} has been down for more than 1 minute"
+
+      - alert: HighCPUUsage
+        expr: 100 - (avg by(instance) (irate(node_cpu_seconds_total{mode="idle"}[5m])) * 100) > 80
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage detected"
+          description: "CPU usage is {{ $value }}% on instance {{ $labels.instance }}"
+
+      - alert: HighMemoryUsage
+        expr: (1 - (node_memory_MemAvailable_bytes / node_memory_MemTotal_bytes)) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage detected"
+          description: "Memory usage is {{ $value }}% on instance {{ $labels.instance }}"
+
+      - alert: DiskSpaceLow
+        expr: (1 - (node_filesystem_avail_bytes{mountpoint="/"} / node_filesystem_size_bytes{mountpoint="/"})) * 100 > 85
+        for: 5m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Low disk space"
+          description: "Disk usage is {{ $value }}% on instance {{ $labels.instance }}"
+
+      # Business metrics alerts
+      - alert: LeadSubmissionRateDrop
+        expr: |
+          (
+            reboot:leads:submission_rate_5m < 
+            (avg_over_time(reboot:leads:submission_rate_5m[1h] offset 24h) * 0.5)
+          )
+        for: 15m
+        labels:
+          severity: warning
+          team: marketing
+        annotations:
+          summary: "Significant drop in lead submissions"
+          description: "Lead submission rate is {{ $value }} leads/min, down from 24h average"
+
+      - alert: ConversionRateDrop
+        expr: reboot:leads:conversion_rate_1h < 0.02
+        for: 30m
+        labels:
+          severity: warning
+          team: marketing
+        annotations:
+          summary: "Low conversion rate detected"
+          description: "Conversion rate is {{ $value | humanizePercentage }} for the last hour"
+
+      # Security alerts
+      - alert: HighErrorRate4xx
+        expr: |
+          (
+            sum(rate(http_requests_total{code=~"4.."}[5m])) /
+            sum(rate(http_requests_total[5m]))
+          ) > 0.1
+        for: 10m
+        labels:
+          severity: warning
+          team: security
+        annotations:
+          summary: "High rate of 4xx errors"
+          description: "4xx error rate is {{ $value | humanizePercentage }}"
+
+      - alert: SuspiciousActivity
+        expr: rate(http_requests_total{code="429"}[1m]) > 10
+        for: 2m
+        labels:
+          severity: warning
+          team: security
+        annotations:
+          summary: "High rate limiting activity"
+          description: "Rate limiting triggered {{ $value }} times per second"

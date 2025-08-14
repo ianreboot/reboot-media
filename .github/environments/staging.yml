@@ -1,0 +1,57 @@
+# Staging Environment Configuration
+name: staging
+url: https://staging.rebootmedia.net
+
+# Protection rules
+protection_rules:
+  reviewers:
+    - type: team
+      name: devops-team
+  wait_timer: 0
+  prevent_self_review: false
+
+# Environment variables
+variables:
+  NODE_ENV: staging
+  LOG_LEVEL: debug
+  ENABLE_MONITORING: true
+  PERFORMANCE_BUDGET_KB: 350
+  ENABLE_SOURCE_MAPS: true
+
+# Deployment settings
+deployment:
+  auto_deploy: true
+  rollback_enabled: true
+  health_check_timeout: 300
+  deployment_timeout: 600
+
+# Quality gates
+quality_gates:
+  required_checks:
+    - typescript-compilation
+    - eslint-validation
+    - security-audit
+    - unit-tests
+  coverage_threshold: 70
+  bundle_size_limit_kb: 350
+  performance_budget:
+    lcp_ms: 3000
+    fid_ms: 150
+    cls: 0.15
+
+# Monitoring
+monitoring:
+  health_check_interval: 300
+  performance_monitoring: true
+  error_tracking: true
+  business_metrics: false
+  alert_channels:
+    - slack-dev-team
+    - email-staging-alerts
+
+# Feature flags
+feature_flags:
+  enable_ab_testing: true
+  enable_performance_monitoring: true
+  enable_error_boundaries: true
+  enable_analytics: false
