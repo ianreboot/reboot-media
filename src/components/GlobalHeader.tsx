@@ -154,11 +154,12 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
     <>
       {/* Main Navigation Header */}
       <nav 
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-out ${
+        className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-500 ease-out ${
           !isScrollingUp && scrollY > 100 ? '-translate-y-full' : 'translate-y-0'
         }`}
         role="navigation"
         aria-label="Main navigation"
+        style={{ pointerEvents: 'auto' }}
       >
         <div className={`transition-all duration-300 ${
           scrollY > 50 
@@ -209,9 +210,10 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                     
                     {showDevDropdown && (
                       <div 
-                        className="absolute top-full left-0 mt-3 w-80 bg-white dark:bg-slate-800 rounded-xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 max-h-[70vh] overflow-y-auto z-50 backdrop-blur-md"
+                        className="absolute top-full left-0 mt-3 w-80 bg-white dark:bg-slate-800 rounded-xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 max-h-[70vh] overflow-y-auto z-[80] backdrop-blur-md"
                         role="menu"
                         aria-labelledby="dev-nav-button"
+                        style={{ pointerEvents: 'auto' }}
                       >
                         <div className="p-3">
                           <div className="text-xs font-bold text-purple-600 dark:text-purple-400 px-3 py-2 border-b border-gray-100 dark:border-gray-700 mb-3 bg-purple-50/50 dark:bg-purple-900/20 rounded-lg">
@@ -301,7 +303,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
               <div className="flex items-center gap-4">
                 
                 {/* Desktop Navigation Links */}
-                <div className="hidden lg:flex items-center gap-6">
+                <div className="hidden lg:flex items-center gap-6" style={{ pointerEvents: 'auto' }}>
                   {navigationItems.map((item) => (
                     <Link
                       key={item.path}
@@ -312,6 +314,11 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                           ? 'text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20'
                           : 'text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
                       }`}
+                      style={{ 
+                        pointerEvents: 'auto',
+                        zIndex: 70,
+                        position: 'relative'
+                      }}
                     >
                       <span className="hidden xl:inline">{item.icon} </span>
                       {item.label}
@@ -325,8 +332,13 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                 {/* CTA Button - Hidden on Mobile */}
                 <button 
                   onClick={onShowForm}
-                  className="hidden md:flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                  className="hidden md:flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
                   aria-label="Open growth analysis form"
+                  style={{ 
+                    pointerEvents: 'auto',
+                    zIndex: 65,
+                    position: 'relative'
+                  }}
                 >
                   <span className="text-sm">🚀</span>
                   <span>Unlock Growth Now</span>
@@ -383,12 +395,13 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
       {/* Mobile Menu Slide-out */}
       <div
         ref={mobileMenuRef}
-        className={`fixed top-0 right-0 z-50 h-full w-80 max-w-[90vw] bg-white dark:bg-slate-900 shadow-2xl transform transition-transform duration-300 ease-out lg:hidden ${
+        className={`fixed top-0 right-0 z-[70] h-full w-80 max-w-[90vw] bg-white dark:bg-slate-900 shadow-2xl transform transition-transform duration-300 ease-out lg:hidden ${
           showMobileMenu ? 'translate-x-0' : 'translate-x-full'
         }`}
         role="dialog"
         aria-modal="true"
         aria-label="Mobile navigation menu"
+        style={{ pointerEvents: 'auto' }}
       >
         <div className="flex flex-col h-full">
           {/* Mobile Menu Header */}
