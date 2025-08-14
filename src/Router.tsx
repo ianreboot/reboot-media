@@ -5,11 +5,11 @@ import ErrorBoundary from './components/ErrorBoundary';
 import NotificationSystem from './components/NotificationSystem';
 import { ErrorProvider } from './contexts/ErrorContext';
 
-// Core pages loaded immediately
-import About from './pages/About';
-import Contact from './pages/Contact';
-import Privacy from './pages/Privacy';
-import Terms from './pages/Terms';
+// ALL pages are now lazy-loaded for optimal code splitting
+const About = lazy(() => import('./pages/About'));
+const Contact = lazy(() => import('./pages/Contact'));
+const Privacy = lazy(() => import('./pages/Privacy'));
+const Terms = lazy(() => import('./pages/Terms'));
 
 // Lazy-loaded page chunks for code splitting
 const MarketingPsychology = lazy(() => import('./pages/MarketingPsychology'));
@@ -39,16 +39,7 @@ const CostROIAnalysis = lazy(() => import('./pages/CostROIAnalysis'));
 import ScrollToTop from './components/ScrollToTop';
 import { LeadFormProvider } from './contexts/LeadFormContext';
 import LeadForm from './components/LeadForm';
-
-// Enhanced loading component with error-safe design
-const LoadingSpinner = () => (
-  <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-slate-50 to-gray-100">
-    <div className="text-center">
-      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
-      <p className="text-gray-600 text-sm">Loading...</p>
-    </div>
-  </div>
-);
+import { PageLoadingSpinner, LazyLoadErrorFallback } from './components/LoadingComponents';
 
 const Router = () => {
   // Determine base path based on environment
@@ -76,8 +67,9 @@ const Router = () => {
                   <ErrorBoundary 
                     level="component" 
                     name="LoadingSpinnerBoundary"
+                    fallback={<LazyLoadErrorFallback />}
                   >
-                    <LoadingSpinner />
+                    <PageLoadingSpinner />
                   </ErrorBoundary>
                 }
               >

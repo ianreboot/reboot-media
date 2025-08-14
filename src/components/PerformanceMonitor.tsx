@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { usePerformanceScore, useCoreWebVitals, useMetricOptimization, performanceOptimizations } from '../hooks/useCoreWebVitals';
+import { usePerformanceScore, useCoreWebVitals, useMetricOptimization, useBundleAnalysis, performanceOptimizations } from '../hooks/useCoreWebVitals';
 
 interface PerformanceMonitorProps {
   showInProduction?: boolean;
@@ -13,10 +13,11 @@ export const PerformanceMonitor: React.FC<PerformanceMonitorProps> = ({
   minimized = true,
 }) => {
   const [isExpanded, setIsExpanded] = useState(!minimized);
-  const [activeTab, setActiveTab] = useState<'overview' | 'details' | 'optimizations'>('overview');
+  const [activeTab, setActiveTab] = useState<'overview' | 'details' | 'optimizations' | 'bundles'>('overview');
   
   const { score, grade, color, isLoading, allGood } = usePerformanceScore();
   const metrics = useCoreWebVitals();
+  const bundleData = useBundleAnalysis();
 
   // Don't show in production unless explicitly enabled
   if (process.env.NODE_ENV === 'production' && !showInProduction) {
@@ -161,17 +162,18 @@ export const PerformanceMonitor: React.FC<PerformanceMonitorProps> = ({
       {isExpanded && (
         <div style={{ maxHeight: '400px', overflow: 'auto' }}>
           {/* Tabs */}
-          <div style={{ display: 'flex', borderBottom: '1px solid #e5e7eb' }}>
-            {['overview', 'details', 'optimizations'].map((tab) => (
+          <div style={{ display: 'flex', borderBottom: '1px solid #e5e7eb', flexWrap: 'wrap' }}>
+            {['overview', 'details', 'bundles', 'optimizations'].map((tab) => (
               <button
                 key={tab}
                 onClick={() => setActiveTab(tab as any)}
                 style={{
-                  flex: 1,
-                  padding: '8px 12px',
+                  flex: '1 1 auto',
+                  minWidth: '60px',
+                  padding: '6px 8px',
                   border: 'none',
                   backgroundColor: activeTab === tab ? '#f3f4f6' : 'transparent',
-                  fontSize: '12px',
+                  fontSize: '11px',
                   fontWeight: '500',
                   color: activeTab === tab ? '#374151' : '#6b7280',
                   cursor: 'pointer',
@@ -225,6 +227,97 @@ export const PerformanceMonitor: React.FC<PerformanceMonitorProps> = ({
                 <div style={{ marginBottom: '8px' }}>CLS: &lt;0.1 (good), &lt;0.25 (needs improvement)</div>
                 <div style={{ marginBottom: '8px' }}>TTFB: &lt;800ms (good), &lt;1.8s (needs improvement)</div>
                 <div style={{ marginBottom: '8px' }}>INP: &lt;200ms (good), &lt;500ms (needs improvement)</div>
+              </div>
+            )}
+
+            {activeTab === 'bundles' && (
+              <div>
+                <div style={{ marginBottom: '16px' }}>
+                  <div style={{ fontSize: '12px', color: '#6b7280', marginBottom: '8px' }}>
+                    Bundle Analysis
+                  </div>
+                  <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '8px', marginBottom: '12px' }}>
+                    <div style={{ padding: '8px', backgroundColor: '#f9fafb', borderRadius: '4px' }}>
+                      <div style={{ fontSize: '10px', color: '#6b7280' }}>Total JS</div>
+                      <div style={{ fontSize: '12px', fontWeight: '600', color: '#374151' }}>
+                        {(bundleData.totalJS / 1024).toFixed(0)}KB
+                      </div>
+                    </div>
+                    <div style={{ padding: '8px', backgroundColor: '#f9fafb', borderRadius: '4px' }}>
+                      <div style={{ fontSize: '10px', color: '#6b7280' }}>Total CSS</div>
+                      <div style={{ fontSize: '12px', fontWeight: '600', color: '#374151' }}>
+                        {(bundleData.totalCSS / 1024).toFixed(0)}KB
+                      </div>
+                    </div>
+                    <div style={{ padding: '8px', backgroundColor: '#f9fafb', borderRadius: '4px' }}>
+                      <div style={{ fontSize: '10px', color: '#6b7280' }}>Cache Hit Rate</div>
+                      <div style={{ fontSize: '12px', fontWeight: '600', color: '#374151' }}>
+                        {bundleData.cacheHitRate.toFixed(0)}%
+                      </div>
+                    </div>
+                    <div style={{ padding: '8px', backgroundColor: '#f9fafb', borderRadius: '4px' }}>
+                      <div style={{ fontSize: '10px', color: '#6b7280' }}>Load Time</div>
+                      <div style={{ fontSize: '12px', fontWeight: '600', color: '#374151' }}>
+                        {bundleData.initialLoadTime.toFixed(0)}ms
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                <div style={{ maxHeight: '200px', overflow: 'auto' }}>
+                  <div style={{ fontSize: '11px', color: '#6b7280', marginBottom: '6px' }}>
+                    Chunks ({bundleData.chunks.length})
+                  </div>
+                  {bundleData.chunks.map((chunk, index) => (
+                    <div
+                      key={index}
+                      style={{
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                        padding: '4px 0',
+                        borderBottom: '1px solid #f3f4f6',
+                      }}
+                    >
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        <div
+                          style={{
+                            fontSize: '10px',
+                            fontWeight: '500',
+                            color: '#374151',
+                            whiteSpace: 'nowrap',
+                            overflow: 'hidden',
+                            textOverflow: 'ellipsis',
+                          }}
+                        >
+                          {chunk.name}
+                        </div>
+                        <div style={{ fontSize: '9px', color: '#6b7280' }}>
+                          {chunk.loadTime?.toFixed(0)}ms
+                        </div>
+                      </div>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                        <span
+                          style={{
+                            fontSize: '10px',
+                            color: getMetricColor(chunk.rating),
+                            fontWeight: '500',
+                          }}
+                        >
+                          {(chunk.size / 1024).toFixed(0)}KB
+                        </span>
+                        <div
+                          style={{
+                            width: '6px',
+                            height: '6px',
+                            borderRadius: '50%',
+                            backgroundColor: getMetricColor(chunk.rating),
+                          }}
+                        />
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             )}
 

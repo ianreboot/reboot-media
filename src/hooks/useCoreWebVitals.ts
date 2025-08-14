@@ -1,6 +1,32 @@
 import { useEffect, useState, useCallback } from 'react';
 import { type PerformanceMetric, getPerformanceMonitor } from '../utils/performanceMonitor';
 
+// Bundle size thresholds (gzipped sizes)
+const BUNDLE_THRESHOLDS = {
+  MAIN_CHUNK: { good: 150000, poor: 250000 }, // 150KB / 250KB
+  VENDOR_CHUNK: { good: 150000, poor: 300000 }, // 150KB / 300KB
+  TOTAL_JS: { good: 400000, poor: 700000 }, // 400KB / 700KB
+  TOTAL_CSS: { good: 50000, poor: 100000 }, // 50KB / 100KB
+};
+
+interface BundleMetric {
+  name: string;
+  size: number;
+  gzipSize?: number;
+  rating: 'good' | 'needs-improvement' | 'poor';
+  loadTime?: number;
+  type: 'js' | 'css' | 'other';
+}
+
+interface BundleAnalysisData {
+  chunks: BundleMetric[];
+  totalJS: number;
+  totalCSS: number;
+  chunkLoadTimes: Record<string, number>;
+  cacheHitRate: number;
+  initialLoadTime: number;
+}
+
 export interface CoreWebVitalsData {
   lcp: PerformanceMetric | null;
   fid: PerformanceMetric | null;
@@ -184,6 +210,123 @@ export function usePerformanceScore() {
     allGood: metrics.allGood,
     metrics,
   };
+}
+
+const getBundleRating = (size: number, thresholds: {good: number, poor: number}): 'good' | 'needs-improvement' | 'poor' => {
+  if (size <= thresholds.good) return 'good';
+  if (size <= thresholds.poor) return 'needs-improvement';
+  return 'poor';
+};
+
+// Enhanced bundle analysis hook
+export function useBundleAnalysis(): BundleAnalysisData {
+  const [bundleData, setBundleData] = useState<BundleAnalysisData>({
+    chunks: [],
+    totalJS: 0,
+    totalCSS: 0,
+    chunkLoadTimes: {},
+    cacheHitRate: 0,
+    initialLoadTime: 0,
+  });
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+
+    const analyzeBundlePerformance = () => {
+      const performanceEntries = performance.getEntriesByType('resource') as PerformanceResourceTiming[];
+      const chunks: BundleMetric[] = [];
+      let totalJS = 0;
+      let totalCSS = 0;
+      const chunkLoadTimes: Record<string, number> = {};
+      let cacheHits = 0;
+      let maxLoadTime = 0;
+
+      performanceEntries.forEach(entry => {
+        const url = new URL(entry.name, window.location.origin);
+        const isOwnAsset = url.pathname.includes('/assets/') || url.pathname.includes('/reboot/assets/');
+        
+        if (!isOwnAsset) return;
+
+        const fileName = url.pathname.split('/').pop() || '';
+        const isJS = fileName.endsWith('.js');
+        const isCSS = fileName.endsWith('.css');
+        
+        if (!isJS && !isCSS) return;
+
+        const size = entry.transferSize || entry.encodedBodySize || 0;
+        const loadTime = entry.responseEnd - entry.requestStart;
+        maxLoadTime = Math.max(maxLoadTime, loadTime);
+        
+        // Detect cache hits
+        if (entry.transferSize === 0 && entry.decodedBodySize > 0) {
+          cacheHits++;
+        }
+
+        // Determine chunk type and rating
+        let rating: 'good' | 'needs-improvement' | 'poor';
+        if (isJS) {
+          if (fileName.includes('vendor') || fileName.includes('react')) {
+            rating = getBundleRating(size, BUNDLE_THRESHOLDS.VENDOR_CHUNK);
+          } else {
+            rating = getBundleRating(size, BUNDLE_THRESHOLDS.MAIN_CHUNK);
+          }
+        } else {
+          rating = getBundleRating(size, { good: 20000, poor: 50000 });
+        }
+
+        const metric: BundleMetric = {
+          name: fileName,
+          size,
+          loadTime,
+          rating,
+          type: isJS ? 'js' : 'css'
+        };
+
+        chunks.push(metric);
+        chunkLoadTimes[fileName] = loadTime;
+
+        if (isJS) totalJS += size;
+        if (isCSS) totalCSS += size;
+      });
+
+      const cacheHitRate = performanceEntries.length > 0 ? (cacheHits / performanceEntries.length) * 100 : 0;
+
+      setBundleData({
+        chunks,
+        totalJS,
+        totalCSS,
+        chunkLoadTimes,
+        cacheHitRate,
+        initialLoadTime: maxLoadTime,
+      });
+    };
+
+    // Initial analysis after a delay to ensure resources are loaded
+    const timeoutId = setTimeout(analyzeBundlePerformance, 2000);
+
+    // Re-analyze on route changes
+    let observer: PerformanceObserver | null = null;
+    if ('PerformanceObserver' in window) {
+      try {
+        observer = new PerformanceObserver((list) => {
+          const entries = list.getEntries();
+          if (entries.some(entry => entry.name.includes('.js') || entry.name.includes('.css'))) {
+            setTimeout(analyzeBundlePerformance, 500);
+          }
+        });
+        observer.observe({ entryTypes: ['resource'] });
+      } catch (error) {
+        console.warn('PerformanceObserver not supported:', error);
+      }
+    }
+
+    return () => {
+      clearTimeout(timeoutId);
+      observer?.disconnect();
+    };
+  }, []);
+
+  return bundleData;
 }
 
 // Performance optimization utilities
