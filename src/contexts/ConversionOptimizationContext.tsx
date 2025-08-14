@@ -308,7 +308,11 @@ export const ConversionOptimizationProvider: React.FC<{ children: ReactNode }> =
           scrollDepth: 0,
           interactions: []
         },
-        conversionFunnel: DEFAULT_FUNNEL_STEPS.map(step => ({ ...step })),
+        conversionFunnel: DEFAULT_FUNNEL_STEPS.map(step => 
+          step.id === 'page_view' 
+            ? { ...step, completed: true, timestamp: new Date() }
+            : { ...step }
+        ),
         personalization: TIER_PERSONALIZATION.Unqualified,
         exitIntentShown: 0,
         conversions: []
@@ -318,9 +322,6 @@ export const ConversionOptimizationProvider: React.FC<{ children: ReactNode }> =
       localStorage.setItem(`visited_${userId}`, 'true');
       
       setSession(newSession);
-
-      // Update page view funnel step
-      updateFunnelStep('page_view', true);
     };
 
     initializeSession();
@@ -388,20 +389,30 @@ export const ConversionOptimizationProvider: React.FC<{ children: ReactNode }> =
       timestamp: new Date()
     };
 
-    setSession(prev => prev ? {
-      ...prev,
-      interactions: [...prev.interactions, fullInteraction],
-      behavioralData: {
-        ...prev.behavioralData,
-        interactions: [...prev.behavioralData.interactions, fullInteraction]
-      }
-    } : null);
+    setSession(prev => {
+      if (!prev) return null;
+      
+      const updatedSession = {
+        ...prev,
+        interactions: [...prev.interactions, fullInteraction],
+        behavioralData: {
+          ...prev.behavioralData,
+          interactions: [...prev.behavioralData.interactions, fullInteraction]
+        }
+      };
 
-    // Check for engagement milestone
-    if (session && session.behavioralData.timeOnSite >= 30 && !session.conversionFunnel.find(s => s.id === 'engagement')?.completed) {
-      updateFunnelStep('engagement', true);
-    }
-  }, [session]);
+      // Check for engagement milestone within the same state update
+      if (updatedSession.behavioralData.timeOnSite >= 30 && !updatedSession.conversionFunnel.find(s => s.id === 'engagement')?.completed) {
+        updatedSession.conversionFunnel = updatedSession.conversionFunnel.map(step => 
+          step.id === 'engagement' 
+            ? { ...step, completed: true, timestamp: new Date() }
+            : step
+        );
+      }
+
+      return updatedSession;
+    });
+  }, []);
 
   // Track page view
   const trackPageView = useCallback((page: string) => {
@@ -429,21 +440,24 @@ export const ConversionOptimizationProvider: React.FC<{ children: ReactNode }> =
 
   // Track form abandonment
   const trackFormAbandonment = useCallback((formId: string, fieldName: string) => {
-    setSession(prev => prev ? {
-      ...prev,
-      behavioralData: {
-        ...prev.behavioralData,
-        formAbandonment: true
-      }
-    } : null);
-
-    trackInteraction({
+    const abandonInteraction: InteractionEvent = {
       type: 'form_abandon',
       element: formId,
       value: fieldName,
-      metadata: { abandonedAt: fieldName }
-    });
-  }, [trackInteraction]);
+      metadata: { abandonedAt: fieldName },
+      timestamp: new Date()
+    };
+
+    setSession(prev => prev ? {
+      ...prev,
+      interactions: [...prev.interactions, abandonInteraction],
+      behavioralData: {
+        ...prev.behavioralData,
+        formAbandonment: true,
+        interactions: [...prev.behavioralData.interactions, abandonInteraction]
+      }
+    } : null);
+  }, []);
 
   // Track conversion
   const trackConversion = useCallback((type: ConversionEvent['type'], value = 0, metadata?: Record<string, any>) => {
@@ -455,16 +469,27 @@ export const ConversionOptimizationProvider: React.FC<{ children: ReactNode }> =
       metadata
     };
 
-    setSession(prev => prev ? {
-      ...prev,
-      conversions: [...prev.conversions, conversion]
-    } : null);
-
-    // Update relevant funnel steps
-    if (type === 'form_submission') {
-      updateFunnelStep('form_complete', true, value);
-      updateFunnelStep('conversion', true, value);
-    }
+    setSession(prev => {
+      if (!prev) return null;
+      
+      let updatedFunnel = prev.conversionFunnel;
+      
+      // Update relevant funnel steps within the same state update
+      if (type === 'form_submission') {
+        updatedFunnel = updatedFunnel.map(step => {
+          if (step.id === 'form_complete' || step.id === 'conversion') {
+            return { ...step, completed: true, timestamp: new Date(), value };
+          }
+          return step;
+        });
+      }
+      
+      return {
+        ...prev,
+        conversions: [...prev.conversions, conversion],
+        conversionFunnel: updatedFunnel
+      };
+    });
   }, []);
 
   // Update funnel step
