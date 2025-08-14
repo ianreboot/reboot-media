@@ -124,12 +124,12 @@ export const useFormOptimization = (testId = 'form_optimization_test') => {
     });
   }, [trackInteraction, variant, testId]);
   
-  const trackFormAbandonment = useCallback((stepNumber: number, fieldName: string) => {
+  const trackFormAbandonmentEvent = useCallback((stepNumber: number, fieldName: string) => {
     const timeSpent = formStartTime.current ? Date.now() - formStartTime.current.getTime() : 0;
     
     trackFormAbandonment(`form_step_${stepNumber}`, fieldName);
     track('form_abandon', timeSpent / 1000);
-  }, [trackFormAbandonment, track, testId]);
+  }, [trackFormAbandonment, track]);
   
   const trackFormCompletion = useCallback((completionTime: number) => {
     updateFunnelStep('form_complete', true, completionTime);
@@ -148,7 +148,7 @@ export const useFormOptimization = (testId = 'form_optimization_test') => {
     isInTest,
     trackFormStart,
     trackFormStep,
-    trackAbandonment: trackFormAbandonment,
+    trackAbandonment: trackFormAbandonmentEvent,
     trackCompletion: trackFormCompletion
   };
 };
