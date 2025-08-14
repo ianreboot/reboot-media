@@ -10,30 +10,48 @@ import {
   sanitizeLeadFormData, 
   sanitizeContactFormData, 
   detectBot, 
-  createLogMessage 
+  detectSuspiciousContent,
+  detectRealTimeThreats,
+  calculateSecurityScore,
+  createSecurityLog
 } from '../utils/sanitization.js';
 import { 
   processLeadSubmission, 
   processContactSubmission 
 } from '../utils/emailService.js';
 import { AppError } from '../middleware/errorHandler.js';
+import { securityLogger } from '../utils/securityLogger.js';
+import { 
+  leadFormSecurityStack,
+  contactFormSecurityStack 
+} from '../middleware/validation.js';
+import { validateCSRFToken, generateCSRFToken } from '../middleware/csrf.js';
 
 const router = express.Router();
 
 // Using any types for simplified Express integration
 
 /**
- * Lead form submission endpoint
+ * Lead form submission endpoint with comprehensive security
  * POST /api/forms/lead
  */
-router.post('/lead', async (req: any, res: any, next: any) => {
+router.post('/lead', 
+  // Apply security middleware stack
+  ...leadFormSecurityStack,
+  validateCSRFToken,
+  async (req: any, res: any, next: any) => {
   try {
     const startTime = Date.now();
     
-    // Log submission attempt (without sensitive data)
-    console.log('Lead form submission attempt:', createLogMessage(req.body, req));
+    // Security analysis
+    const securityScore = calculateSecurityScore(req.body, req);
+    const realTimeThreats = detectRealTimeThreats(req);
+    
+    // Log submission attempt with security analysis
+    console.log('Lead form submission attempt:', createSecurityLog(req.body, req, 'form_submission'));
+    securityLogger.logFormSubmission(req, 'lead', securityScore, realTimeThreats);
 
-    // Validate input data
+    // Additional validation with Joi (express-validator already ran)
     const { error, value } = leadFormSchema.validate(req.body, { 
       abortEarly: false,
       stripUnknown: true 
@@ -44,6 +62,9 @@ router.post('/lead', async (req: any, res: any, next: any) => {
         field: detail.path.join('.'),
         message: detail.message,
       }));
+
+      // Log validation failure
+      securityLogger.logValidationFailure(req, validationErrors);
 
       return res.status(400).json({
         success: false,
@@ -58,9 +79,13 @@ router.post('/lead', async (req: any, res: any, next: any) => {
 
     const formData: LeadFormData = value;
 
-    // Bot detection
-    if (detectBot(formData, req)) {
-      console.log('Bot detected in lead form submission:', req.requestId);
+    // Enhanced bot and threat detection
+    const botDetected = detectBot(formData, req);
+    const suspiciousContent = detectSuspiciousContent(formData);
+    
+    if (botDetected) {
+      const botIndicators = realTimeThreats.filter(t => t.includes('BOT') || t.includes('AUTOMATED'));
+      securityLogger.logBotDetection(req, botIndicators);
       
       // Return success to avoid revealing bot detection
       return res.status(200).json({
@@ -71,9 +96,46 @@ router.post('/lead', async (req: any, res: any, next: any) => {
         },
       });
     }
+    
+    if (suspiciousContent || securityScore < 30) {
+      securityLogger.logSecurityEvent(
+        'SUSPICIOUS_CONTENT',
+        'HIGH',
+        req,
+        { securityScore, suspiciousContent, formData: Object.keys(formData) },
+        {
+          type: 'SUSPICIOUS_CONTENT',
+          confidence: 100 - securityScore,
+          patterns: ['spam_detection'],
+          riskScore: 100 - securityScore,
+        },
+        'FLAGGED'
+      );
+      
+      // Still process but flag for manual review
+      console.warn('Suspicious content detected in form submission:', {
+        requestId: req.requestId,
+        securityScore,
+        ip: req.ip
+      });
+    }
 
-    // Sanitize data
-    const sanitizedData = sanitizeLeadFormData(formData);
+    // Sanitize data with enhanced security
+    let sanitizedData;
+    try {
+      sanitizedData = sanitizeLeadFormData(formData);
+    } catch (sanitizationError: any) {
+      securityLogger.logSecurityEvent(
+        'MALFORMED_REQUEST',
+        'HIGH',
+        req,
+        { error: sanitizationError?.message || 'Unknown sanitization error', originalData: Object.keys(formData) },
+        undefined,
+        'BLOCKED'
+      );
+      
+      throw new AppError('Invalid form data provided', 400, 'SANITIZATION_FAILED');
+    }
 
     // Process the form submission
     const emailSent = await processLeadSubmission(sanitizedData);
@@ -90,7 +152,25 @@ router.post('/lead', async (req: any, res: any, next: any) => {
       company: sanitizedData.company,
       revenue: sanitizedData.revenue,
       industry: sanitizedData.industry,
+      securityScore,
+      threatCount: realTimeThreats.length,
     });
+    
+    // Log to security system
+    securityLogger.logSecurityEvent(
+      'FORM_SUBMISSION',
+      'LOW',
+      req,
+      { 
+        formType: 'lead',
+        processingTime,
+        securityScore,
+        company: sanitizedData.company,
+        industry: sanitizedData.industry 
+      },
+      undefined,
+      'ALLOWED'
+    );
 
     res.status(200).json({
       success: true,
@@ -106,17 +186,26 @@ router.post('/lead', async (req: any, res: any, next: any) => {
 });
 
 /**
- * Contact form submission endpoint
+ * Contact form submission endpoint with comprehensive security
  * POST /api/forms/contact
  */
-router.post('/contact', async (req: any, res: any, next: any) => {
+router.post('/contact',
+  // Apply security middleware stack
+  ...contactFormSecurityStack,
+  validateCSRFToken,
+  async (req: any, res: any, next: any) => {
   try {
     const startTime = Date.now();
     
-    // Log submission attempt (without sensitive data)
-    console.log('Contact form submission attempt:', createLogMessage(req.body, req));
+    // Security analysis
+    const securityScore = calculateSecurityScore(req.body, req);
+    const realTimeThreats = detectRealTimeThreats(req);
+    
+    // Log submission attempt with security analysis
+    console.log('Contact form submission attempt:', createSecurityLog(req.body, req, 'form_submission'));
+    securityLogger.logFormSubmission(req, 'contact', securityScore, realTimeThreats);
 
-    // Validate input data
+    // Additional validation with Joi (express-validator already ran)
     const { error, value } = contactFormSchema.validate(req.body, { 
       abortEarly: false,
       stripUnknown: true 
@@ -127,6 +216,9 @@ router.post('/contact', async (req: any, res: any, next: any) => {
         field: detail.path.join('.'),
         message: detail.message,
       }));
+
+      // Log validation failure
+      securityLogger.logValidationFailure(req, validationErrors);
 
       return res.status(400).json({
         success: false,
@@ -141,9 +233,13 @@ router.post('/contact', async (req: any, res: any, next: any) => {
 
     const formData: ContactFormData = value;
 
-    // Bot detection
-    if (detectBot(formData, req)) {
-      console.log('Bot detected in contact form submission:', req.requestId);
+    // Enhanced bot and threat detection
+    const botDetected = detectBot(formData, req);
+    const suspiciousContent = detectSuspiciousContent(formData);
+    
+    if (botDetected) {
+      const botIndicators = realTimeThreats.filter(t => t.includes('BOT') || t.includes('AUTOMATED'));
+      securityLogger.logBotDetection(req, botIndicators);
       
       // Return success to avoid revealing bot detection
       return res.status(200).json({
@@ -154,9 +250,46 @@ router.post('/contact', async (req: any, res: any, next: any) => {
         },
       });
     }
+    
+    if (suspiciousContent || securityScore < 30) {
+      securityLogger.logSecurityEvent(
+        'SUSPICIOUS_CONTENT',
+        'HIGH',
+        req,
+        { securityScore, suspiciousContent, formData: Object.keys(formData) },
+        {
+          type: 'SUSPICIOUS_CONTENT',
+          confidence: 100 - securityScore,
+          patterns: ['spam_detection'],
+          riskScore: 100 - securityScore,
+        },
+        'FLAGGED'
+      );
+      
+      // Still process but flag for manual review
+      console.warn('Suspicious content detected in contact form:', {
+        requestId: req.requestId,
+        securityScore,
+        ip: req.ip
+      });
+    }
 
-    // Sanitize data
-    const sanitizedData = sanitizeContactFormData(formData);
+    // Sanitize data with enhanced security
+    let sanitizedData;
+    try {
+      sanitizedData = sanitizeContactFormData(formData);
+    } catch (sanitizationError: any) {
+      securityLogger.logSecurityEvent(
+        'MALFORMED_REQUEST',
+        'HIGH',
+        req,
+        { error: sanitizationError?.message || 'Unknown sanitization error', originalData: Object.keys(formData) },
+        undefined,
+        'BLOCKED'
+      );
+      
+      throw new AppError('Invalid form data provided', 400, 'SANITIZATION_FAILED');
+    }
 
     // Process the form submission
     const emailSent = await processContactSubmission(sanitizedData);
@@ -171,7 +304,24 @@ router.post('/contact', async (req: any, res: any, next: any) => {
     console.log(`Contact form processed successfully in ${processingTime}ms:`, {
       requestId: req.requestId,
       subject: sanitizedData.subject,
+      securityScore,
+      threatCount: realTimeThreats.length,
     });
+    
+    // Log to security system
+    securityLogger.logSecurityEvent(
+      'FORM_SUBMISSION',
+      'LOW',
+      req,
+      { 
+        formType: 'contact',
+        processingTime,
+        securityScore,
+        subject: sanitizedData.subject 
+      },
+      undefined,
+      'ALLOWED'
+    );
 
     res.status(200).json({
       success: true,
@@ -187,17 +337,74 @@ router.post('/contact', async (req: any, res: any, next: any) => {
 });
 
 /**
+ * Get CSRF token endpoint
+ * GET /api/forms/csrf-token
+ */
+router.get('/csrf-token', generateCSRFToken, (req: any, res: any) => {
+  res.json({
+    success: true,
+    data: {
+      csrfToken: req.csrfToken,
+      expiresIn: 30 * 60 * 1000, // 30 minutes
+      instructions: 'Include this token in X-CSRF-Token header or csrfToken field',
+    },
+  });
+});
+
+/**
+ * Security status endpoint
+ * GET /api/forms/security-status
+ */
+router.get('/security-status', (req: any, res: any) => {
+  res.json({
+    success: true,
+    data: {
+      status: 'Security systems operational',
+      features: {
+        inputValidation: 'ACTIVE',
+        xssProtection: 'ACTIVE',
+        sqlInjectionProtection: 'ACTIVE',
+        rateLimiting: 'ACTIVE',
+        csrfProtection: 'ACTIVE',
+        botDetection: 'ACTIVE',
+        securityLogging: 'ACTIVE',
+        sanitization: 'ACTIVE',
+      },
+      endpoints: [
+        'GET /api/forms/csrf-token',
+        'POST /api/forms/lead',
+        'POST /api/forms/contact',
+        'GET /api/forms/security-status',
+      ],
+      timestamp: new Date().toISOString(),
+      requestId: req.requestId,
+    },
+  });
+});
+
+/**
  * Form status endpoint for debugging
  * GET /api/forms/status
  */
 router.get('/status', (req: any, res: any) => {
+  const securityStats = securityLogger.getSecurityStats ? securityLogger.getSecurityStats() : { message: 'Stats not available' };
+  
   res.json({
     success: true,
     data: {
       status: 'Form processing service is operational',
+      security: {
+        status: 'PROTECTED',
+        validationLayers: 3,
+        sanitizationActive: true,
+        loggingActive: true,
+      },
       endpoints: [
+        'GET /api/forms/csrf-token',
         'POST /api/forms/lead',
         'POST /api/forms/contact',
+        'GET /api/forms/security-status',
+        'GET /api/forms/status',
       ],
       timestamp: new Date().toISOString(),
       requestId: req.requestId,

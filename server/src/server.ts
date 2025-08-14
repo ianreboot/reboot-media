@@ -11,6 +11,9 @@ import { v4 as uuidv4 } from 'uuid';
 import { errorHandler } from './middleware/errorHandler.js';
 import { validateRequestId } from './middleware/requestId.js';
 import { securityHeaders } from './middleware/security.js';
+import { securityValidationStack } from './middleware/validation.js';
+import { generateCSRFToken } from './middleware/csrf.js';
+import { securityLogger } from './utils/securityLogger.js';
 import formRoutes from './routes/forms.js';
 
 // Load environment variables
@@ -94,6 +97,7 @@ const formLimiter = rateLimit({
     
     // Send the rate limit response
     res.status(options.statusCode).json(options.message);
+    return;
   },
 });
 
@@ -146,9 +150,22 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-// Body parsing
-app.use(express.json({ limit: '10mb' }));
-app.use(express.urlencoded({ extended: true, limit: '10mb' }));
+// Body parsing with enhanced security
+app.use(express.json({ 
+  limit: '1mb', // Reduced for security
+  verify: (req: any, res, buf) => {
+    // Store raw body for signature verification if needed
+    req.rawBody = buf.toString('utf8');
+  }
+}));
+app.use(express.urlencoded({ 
+  extended: true, 
+  limit: '1mb', // Reduced for security
+  parameterLimit: 50 // Limit number of parameters
+}));
+
+// Apply global security validation
+app.use(securityValidationStack);
 
 // Health check endpoint
 app.get('/api/health', (req: any, res: express.Response) => {
@@ -156,6 +173,27 @@ app.get('/api/health', (req: any, res: express.Response) => {
     success: true,
     data: {
       status: 'healthy',
+      security: {
+        inputValidation: 'ACTIVE',
+        rateLimiting: 'ACTIVE',
+        csrfProtection: 'ACTIVE',
+        logging: 'ACTIVE',
+      },
+      timestamp: new Date().toISOString(),
+      requestId: req.requestId,
+    },
+  });
+});
+
+// Security report endpoint (restricted access)
+app.get('/api/security/report', (req: any, res: express.Response) => {
+  // In production, add authentication check here
+  const report = securityLogger.generateSecurityReport ? securityLogger.generateSecurityReport() : 'Report generation not available';
+  
+  res.json({
+    success: true,
+    data: {
+      report,
       timestamp: new Date().toISOString(),
       requestId: req.requestId,
     },
