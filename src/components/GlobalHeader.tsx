@@ -112,15 +112,15 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
     };
   }, [showMobileMenu]);
 
-  const scrollToTop = useCallback(() => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  }, []);
 
   const handleMenuItemClick = useCallback(() => {
     setShowDevDropdown(false);
     setShowMobileMenu(false);
-    scrollToTop();
-  }, [scrollToTop]);
+    // Delay scroll to top until after navigation
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+  }, []);
 
   // Main navigation items for both desktop and mobile
   const navigationItems = [
@@ -172,8 +172,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
               {/* Left Side: Logo and Dev Navigation */}
               <div className="flex items-center gap-6">
                 <Link 
-                  to="/" 
-                  onClick={scrollToTop}
+                  to="/"
                   className="group flex items-center text-xl sm:text-2xl font-black focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded-lg p-1"
                   aria-label="Reboot Media - Go to homepage"
                 >
@@ -252,45 +251,45 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                           {/* Marketing Psychology Pages */}
                           <div className="mb-3">
                             <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 px-3 py-1">MARKETING PSYCHOLOGY</div>
-                            <Link to="/marketing-psychology" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">🧠 Marketing Psychology</Link>
-                            <Link to="/marketing-psychology/unaware-stage-customers" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Unaware Stage</Link>
-                            <Link to="/marketing-psychology/problem-aware-stage-customers" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Problem-Aware Stage</Link>
-                            <Link to="/marketing-psychology/solution-aware-stage-customers" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Solution-Aware Stage</Link>
-                            <Link to="/marketing-psychology/product-aware-stage-customers" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Product-Aware Stage</Link>
-                            <Link to="/marketing-psychology/most-aware-stage-customers" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Most-Aware Stage</Link>
+                            <Link to="/marketing-psychology" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">🧠 Marketing Psychology</Link>
+                            <Link to="/marketing-psychology/unaware-stage-customers" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Unaware Stage</Link>
+                            <Link to="/marketing-psychology/problem-aware-stage-customers" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Problem-Aware Stage</Link>
+                            <Link to="/marketing-psychology/solution-aware-stage-customers" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Solution-Aware Stage</Link>
+                            <Link to="/marketing-psychology/product-aware-stage-customers" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Product-Aware Stage</Link>
+                            <Link to="/marketing-psychology/most-aware-stage-customers" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Most-Aware Stage</Link>
                           </div>
                           
                           {/* Growth Plateau Pages */}
                           <div className="mb-3">
                             <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 px-3 py-1">GROWTH PLATEAU</div>
-                            <Link to="/growth-plateau-solutions" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">📈 Growth Plateau Solutions</Link>
-                            <Link to="/growth-plateau-solutions/product-market-fit-erosion" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Product-Market Fit Erosion</Link>
-                            <Link to="/growth-plateau-solutions/customer-acquisition-stall" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Customer Acquisition Stall</Link>
-                            <Link to="/growth-plateau-solutions/competitive-pressure-plateau" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Competitive Pressure</Link>
-                            <Link to="/growth-plateau-solutions/revenue-ceiling-breakthrough" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Revenue Ceiling</Link>
-                            <Link to="/growth-plateau-solutions/operational-scaling-crisis" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Operational Scaling</Link>
-                            <Link to="/growth-plateau-solutions/team-growth-bottlenecks" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Team Growth Bottlenecks</Link>
-                            <Link to="/growth-plateau-solutions/market-expansion-barriers" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Market Expansion</Link>
+                            <Link to="/growth-plateau-solutions" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">📈 Growth Plateau Solutions</Link>
+                            <Link to="/growth-plateau-solutions/product-market-fit-erosion" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Product-Market Fit Erosion</Link>
+                            <Link to="/growth-plateau-solutions/customer-acquisition-stall" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Customer Acquisition Stall</Link>
+                            <Link to="/growth-plateau-solutions/competitive-pressure-plateau" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Competitive Pressure</Link>
+                            <Link to="/growth-plateau-solutions/revenue-ceiling-breakthrough" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Revenue Ceiling</Link>
+                            <Link to="/growth-plateau-solutions/operational-scaling-crisis" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Operational Scaling</Link>
+                            <Link to="/growth-plateau-solutions/team-growth-bottlenecks" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Team Growth Bottlenecks</Link>
+                            <Link to="/growth-plateau-solutions/market-expansion-barriers" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Market Expansion</Link>
                           </div>
                           
                           {/* Fractional CMO Pages */}
                           <div className="mb-3">
                             <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 px-3 py-1">FRACTIONAL CMO</div>
-                            <Link to="/fractional-cmo-guide" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">💼 Fractional CMO Guide</Link>
-                            <Link to="/fractional-cmo-guide/vs-agency" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs Agency</Link>
-                            <Link to="/fractional-cmo-guide/vs-full-time" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs Full-Time CMO</Link>
-                            <Link to="/fractional-cmo-guide/vs-consultant" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs Consultant</Link>
-                            <Link to="/fractional-cmo-guide/vs-in-house-team" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs In-House Team</Link>
-                            <Link to="/fractional-cmo-guide/when-to-choose-each" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ When to Choose Each</Link>
-                            <Link to="/fractional-cmo-guide/cost-roi-analysis" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Cost & ROI Analysis</Link>
-                            <Link to="/fractional-cmo-guide/transition-strategies" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Transition Strategies</Link>
+                            <Link to="/fractional-cmo-guide" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">💼 Fractional CMO Guide</Link>
+                            <Link to="/fractional-cmo-guide/vs-agency" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs Agency</Link>
+                            <Link to="/fractional-cmo-guide/vs-full-time" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs Full-Time CMO</Link>
+                            <Link to="/fractional-cmo-guide/vs-consultant" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs Consultant</Link>
+                            <Link to="/fractional-cmo-guide/vs-in-house-team" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs In-House Team</Link>
+                            <Link to="/fractional-cmo-guide/when-to-choose-each" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ When to Choose Each</Link>
+                            <Link to="/fractional-cmo-guide/cost-roi-analysis" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Cost & ROI Analysis</Link>
+                            <Link to="/fractional-cmo-guide/transition-strategies" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Transition Strategies</Link>
                           </div>
                           
                           {/* Legal Pages */}
                           <div>
                             <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 px-3 py-1">LEGAL</div>
-                            <Link to="/privacy" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">🔒 Privacy Policy</Link>
-                            <Link to="/terms" onClick={() => { setShowDevDropdown(false); scrollToTop(); }} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">📜 Terms of Service</Link>
+                            <Link to="/privacy" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">🔒 Privacy Policy</Link>
+                            <Link to="/terms" onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">📜 Terms of Service</Link>
                           </div>
                         </div>
                       </div>
@@ -308,7 +307,6 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                     <Link
                       key={item.path}
                       to={item.path}
-                      onClick={scrollToTop}
                       className={`relative px-3 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ${
                         location.pathname === item.path
                           ? 'text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20'

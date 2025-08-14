@@ -111,7 +111,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <h4 className="text-sm font-medium text-gray-400 mb-4">Company</h4>
                 <ul className="space-y-2">
                   <li>
-                    <Link to="/about" onClick={scrollToTop} 
+                    <Link to="/about" 
                           className="text-sm text-gray-300 hover:text-white transition-colors"
                           style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       About
@@ -125,7 +125,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                     </a>
                   </li>
                   <li>
-                    <Link to="/contact" onClick={scrollToTop} 
+                    <Link to="/contact" 
                           className="text-sm text-gray-300 hover:text-white transition-colors"
                           style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       Contact
@@ -139,14 +139,14 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 <h4 className="text-sm font-medium text-gray-400 mb-4">Legal</h4>
                 <ul className="space-y-2">
                   <li>
-                    <Link to="/privacy" onClick={scrollToTop} 
+                    <Link to="/privacy" 
                           className="text-sm text-gray-300 hover:text-white transition-colors"
                           style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       Privacy Policy
                     </Link>
                   </li>
                   <li>
-                    <Link to="/terms" onClick={scrollToTop} 
+                    <Link to="/terms" 
                           className="text-sm text-gray-300 hover:text-white transition-colors"
                           style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                       Terms of Service
@@ -162,21 +162,21 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                   <div>
                     <ul className="space-y-2">
                       <li>
-                        <Link to="/marketing-psychology" onClick={scrollToTop} 
+                        <Link to="/marketing-psychology" 
                               className="text-sm text-gray-300 hover:text-white transition-colors"
                               style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                           Marketing Psychology Guide
                         </Link>
                       </li>
                       <li>
-                        <Link to="/growth-plateau-solutions" onClick={scrollToTop} 
+                        <Link to="/growth-plateau-solutions" 
                               className="text-sm text-gray-300 hover:text-white transition-colors"
                               style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                           Breaking Growth Plateaus
                         </Link>
                       </li>
                       <li>
-                        <Link to="/fractional-cmo-guide" onClick={scrollToTop} 
+                        <Link to="/fractional-cmo-guide" 
                               className="text-sm text-gray-300 hover:text-white transition-colors"
                               style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
                           Fractional CMO vs Agency
