@@ -225,7 +225,7 @@ const GrowthPlateauSolutions = () => {
               {plateauTypes.map((plateau) => (
                 <div key={plateau.id} className="group">
                   <a 
-                    href={plateau.link}
+                    href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}${plateau.link}`}
                     className="block bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:bg-white dark:hover:bg-slate-700/80"
                   >
                     <div className="text-center mb-6">
