@@ -1,7 +1,7 @@
 // Enhanced Metrics Collector for Real-time Business Intelligence
 // Integrates Core Web Vitals with business metrics for comprehensive monitoring
 
-import { getCLS, getFID, getFCP, getLCP, getTTFB, onINP } from 'web-vitals';
+import { onCLS, onFID, onFCP, onLCP, onTTFB, onINP } from 'web-vitals';
 
 interface EnhancedMetric {
   name: string;
@@ -130,16 +130,15 @@ class EnhancedMetricsCollector {
 
   private initializeMetricsCollection(): void {
     // Collect Core Web Vitals with business context
-    getCLS(this.createMetricHandler('cls'));
-    getFID(this.createMetricHandler('fid'));
-    getFCP(this.createMetricHandler('fcp'));
-    getLCP(this.createMetricHandler('lcp'));
-    getTTFB(this.createMetricHandler('ttfb'));
+    onCLS(this.createMetricHandler('cls'));
+    onFID(this.createMetricHandler('fid'));
+    onFCP(this.createMetricHandler('fcp'));
+    onLCP(this.createMetricHandler('lcp'));
+    onTTFB(this.createMetricHandler('ttfb'));
     onINP(this.createMetricHandler('inp'));
 
     // Collect additional performance metrics
-    this.collectResourceTimingMetrics();
-    this.collectNavigationTimingMetrics();
+    this.collectAdditionalMetrics();
   }
 
   private createMetricHandler(metricName: string) {
@@ -287,11 +286,33 @@ class EnhancedMetricsCollector {
     this.trackKeyElementClicks();
   }
 
+  private collectAdditionalMetrics(): void {
+    // Collect resource timing and navigation timing metrics
+    // This replaces the separate methods that were called before
+    try {
+      if ('performance' in window) {
+        const navigation = performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming;
+        if (navigation) {
+          this.trackBusinessKPI({
+            name: 'page_load_time',
+            value: navigation.loadEventEnd - navigation.loadEventStart,
+            target: 3000, // 3 second target
+            timestamp: Date.now(),
+            trend: 'down', // Lower is better
+            impactScore: 75
+          });
+        }
+      }
+    } catch (error) {
+      console.warn('Error collecting additional metrics:', error);
+    }
+  }
+
   private trackFormInteractions(): void {
     document.querySelectorAll('form').forEach((form, index) => {
-      const formName = form.getAttribute('name') || `form_${index}`;
+      form.getAttribute('name') || `form_${index}`;
       
-      form.addEventListener('submit', (event) => {
+      form.addEventListener('submit', () => {
         const formData = new FormData(form as HTMLFormElement);
         const leadScore = this.calculateLeadScore(formData);
         

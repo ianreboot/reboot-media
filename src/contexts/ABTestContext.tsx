@@ -3,7 +3,7 @@
  * Manages experiment configuration, variant assignment, and tracking
  */
 
-import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
+import React, { createContext, useContext, useState, useEffect, type ReactNode } from 'react';
 
 // Types for A/B Testing Framework
 export interface ABVariant {

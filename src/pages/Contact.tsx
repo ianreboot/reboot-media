@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Mail, MapPin, Globe, CheckCircle, AlertCircle, Loader2 } from 'lucide-react';
-import { getCanonicalUrl } from '../utils/urls';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';

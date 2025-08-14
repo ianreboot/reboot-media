@@ -135,9 +135,9 @@ export const MobilePricingOptimizer: React.FC<{ children: React.ReactNode }> = (
   return (
     <div className="mobile-pricing-optimizer">
       {React.Children.map(children, (child, index) => 
-        React.cloneElement(child as React.ReactElement, {
+        React.cloneElement(child as React.ReactElement<any>, {
           onTouchStart: () => handleCardTouch(index),
-          className: `${(child as React.ReactElement).props.className} ${
+          className: `${(child as React.ReactElement<any>).props.className} ${
             activeCard === index ? 'ring-4 ring-blue-500 ring-opacity-50' : ''
           }`
         })
@@ -167,10 +167,12 @@ export const MobileFormOptimizer: React.FC<{ children: React.ReactNode }> = ({ c
 
         // Scroll focused field into view with offset for keyboard
         setTimeout(() => {
-          e.target.scrollIntoView({ 
-            behavior: 'smooth', 
-            block: 'center' 
-          });
+          if (e.target && 'scrollIntoView' in e.target) {
+            (e.target as Element).scrollIntoView({ 
+              behavior: 'smooth', 
+              block: 'center' 
+            });
+          }
         }, 300);
       }
     };

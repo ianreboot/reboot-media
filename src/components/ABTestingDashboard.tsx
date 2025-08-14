@@ -3,7 +3,7 @@
  * Admin interface for managing tests and viewing results
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { useABTest } from '../contexts/ABTestContext';
 import { useConversionOptimization } from '../contexts/ConversionOptimizationContext';
 import { useTestResults } from '../hooks/useABTestHooks';
@@ -14,9 +14,8 @@ interface DashboardProps {
 }
 
 const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) => {
-  const { activeTests, createTest, updateTest, startTest, pauseTest, stopTest } = useABTest();
+  const { activeTests, createTest, startTest, pauseTest, stopTest } = useABTest();
   const { session, getBehavioralInsights, getConversionFunnelData } = useConversionOptimization();
-  const [selectedTest, setSelectedTest] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'overview' | 'tests' | 'analytics' | 'create'>('overview');
 
   if (!isVisible) return null;

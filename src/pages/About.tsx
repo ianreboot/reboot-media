@@ -1,5 +1,4 @@
 import { CheckCircle, Award, TrendingUp, Users, Globe, Briefcase } from 'lucide-react';
-import { getCanonicalUrl } from '../utils/urls';
 import { Link } from 'react-router-dom';
 import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
@@ -15,34 +14,6 @@ const About = () => {
   };
 
 
-  // SEO structured data
-  const aboutPageStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "About Reboot Media",
-    "description": "Learn about Reboot Media's fractional CMO services and C-level marketing expertise",
-    "url": "https://www.rebootmedia.net/about",
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "Reboot Media, Inc.",
-      "foundingDate": "2020",
-      "description": "Fractional CMO services with Fortune 500 executive experience",
-      "url": "https://www.rebootmedia.net/",
-      "founder": {
-        "@type": "Person",
-        "name": "Ian Ho",
-        "url": "https://www.linkedin.com/in/ian-ho/"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "17595 Harvard Ave C-738",
-        "addressLocality": "Irvine",
-        "addressRegion": "CA",
-        "postalCode": "92614",
-        "addressCountry": "US"
-      }
-    }
-  };
 
   return (
     <div className="about-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">

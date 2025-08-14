@@ -15,7 +15,7 @@ interface ExitIntentModalProps {
 }
 
 const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, onConvert }) => {
-  const { leadScore, personalization, trackConversion, trackInteraction } = useConversionOptimization();
+  const { leadScore, trackConversion, trackInteraction } = useConversionOptimization();
   const { setShowDropdownForm } = useLeadForm();
   const { isEligible, leadTier } = useExitIntentOptimization();
   const [isClosing, setIsClosing] = useState(false);
@@ -129,7 +129,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
         }
       });
       
-      trackConversion('exit_intent_shown', leadScore?.total || 0);
+      trackConversion('form_submission', leadScore?.total || 0);
     }
   }, [isVisible, trackInteraction, trackConversion, leadTier, leadScore]);
 
@@ -147,7 +147,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
       metadata: { leadTier, method: 'close_button' }
     });
     
-    trackConversion('exit_intent_dismissed', 0);
+    trackConversion('email_signup', 0);
   };
 
   const handleBackdropClick = (e: React.MouseEvent) => {
@@ -159,7 +159,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
         metadata: { leadTier, method: 'backdrop_click' }
       });
       
-      trackConversion('exit_intent_dismissed', 0);
+      trackConversion('email_signup', 0);
       handleClose();
     }
   };
@@ -176,7 +176,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
       }
     });
     
-    trackConversion('exit_intent_converted', leadScore?.total || 0);
+    trackConversion('form_submission', leadScore?.total || 0);
 
     // For Hot and Warm leads, show the lead form
     if (leadTier === 'Hot' || leadTier === 'Warm') {

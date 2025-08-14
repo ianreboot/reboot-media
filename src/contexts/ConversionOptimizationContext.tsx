@@ -3,7 +3,7 @@
  * Manages personalization, exit-intent, and conversion tracking
  */
 
-import React, { createContext, useContext, useState, useEffect, ReactNode, useCallback } from 'react';
+import React, { createContext, useContext, useState, useEffect, type ReactNode, useCallback } from 'react';
 
 // Lead scoring types (imported from backend integration)
 export interface LeadScore {
@@ -553,7 +553,7 @@ export const ConversionOptimizationProvider: React.FC<{ children: ReactNode }> =
 
   // Optimization helpers
   const shouldShowUrgency = useCallback(() => {
-    return leadScore?.tier === 'Hot' || (leadScore?.intent && leadScore.intent >= 75);
+    return Boolean(leadScore?.tier === 'Hot' || (leadScore?.intent && leadScore.intent >= 75));
   }, [leadScore]);
 
   const getOptimalCTAText = useCallback(() => {

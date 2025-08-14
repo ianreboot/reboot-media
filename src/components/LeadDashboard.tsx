@@ -3,7 +3,7 @@
  * Business intelligence and conversion tracking
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { 
   TrendingUp, 
   TrendingDown, 
@@ -52,7 +52,7 @@ interface Recommendation {
 }
 
 const LeadDashboard: React.FC = () => {
-  const [metrics, setMetrics] = useState<LeadMetrics>({
+  const [metrics] = useState<LeadMetrics>({
     totalLeads: 247,
     conversionRate: 3.2,
     averageScore: 68,
@@ -63,7 +63,7 @@ const LeadDashboard: React.FC = () => {
     unqualifiedLeads: 55
   });
 
-  const [funnelData, setFunnelData] = useState<FunnelStage[]>([
+  const [funnelData] = useState<FunnelStage[]>([
     { name: 'Landing Page Visit', count: 5420, conversionRate: 100, dropoffRate: 0, averageTime: 0 },
     { name: 'Content Engagement', count: 2168, conversionRate: 40, dropoffRate: 60, averageTime: 2.5 },
     { name: 'Form Started', count: 651, conversionRate: 30, dropoffRate: 70, averageTime: 5.2 },
@@ -72,14 +72,14 @@ const LeadDashboard: React.FC = () => {
     { name: 'Opportunity Created', count: 32, conversionRate: 36, dropoffRate: 64, averageTime: 72 }
   ]);
 
-  const [trendData, setTrendData] = useState<TrendData>({
+  const [trendData] = useState<TrendData>({
     trend: 'improving',
     changePercent: 12.5,
     averageScore: 68,
     recommendation: 'Lead quality improving - maintain current marketing strategy'
   });
 
-  const [recommendations, setRecommendations] = useState<Recommendation[]>([
+  const [recommendations] = useState<Recommendation[]>([
     {
       priority: 'high',
       area: 'Conversion Rate',
@@ -104,7 +104,6 @@ const LeadDashboard: React.FC = () => {
   ]);
 
   const [selectedTimeframe, setSelectedTimeframe] = useState<'daily' | 'weekly' | 'monthly'>('weekly');
-  const [isLoading, setIsLoading] = useState(false);
 
   // Format currency
   const formatCurrency = (value: number) => {

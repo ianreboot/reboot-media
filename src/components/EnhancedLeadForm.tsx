@@ -3,7 +3,7 @@
  * Features progressive disclosure, personalization, and advanced tracking
  */
 
-import React, { useState, useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { useLeadForm } from '../contexts/LeadFormContext';
 import { useConversionOptimization } from '../contexts/ConversionOptimizationContext';
 import { useFormOptimization, useCTAOptimization } from '../hooks/useABTestHooks';
@@ -25,11 +25,8 @@ interface FormData {
 const EnhancedLeadForm = () => {
   const { showDropdownForm, setShowDropdownForm } = useLeadForm();
   const { 
-    personalization, 
     trackConversion, 
-    updateLeadScore, 
     trackInteraction,
-    updateFunnelStep,
     shouldShowUrgency,
     getRecommendedNextAction
   } = useConversionOptimization();
@@ -250,7 +247,7 @@ const EnhancedLeadForm = () => {
           <button 
             onClick={() => {
               if (formStartTime.current) {
-                const timeSpent = Date.now() - formStartTime.current.getTime();
+                Date.now() - formStartTime.current.getTime();
                 trackAbandonment(formStep, 'close_button');
               }
               setShowDropdownForm(false);

@@ -28,7 +28,7 @@ export const useCTAOptimization = (testId = 'hero_cta_test') => {
     trackInteraction({
       type: 'click',
       element: `cta_button_${location}`,
-      value: variant,
+      value: variant || 'default',
       metadata: { testId, location }
     });
     
@@ -39,7 +39,7 @@ export const useCTAOptimization = (testId = 'hero_cta_test') => {
     trackInteraction({
       type: 'cta_view',
       element: `cta_button_${location}`,
-      value: variant,
+      value: variant || 'default',
       metadata: { testId, location }
     });
   }, [trackInteraction, variant, testId]);
