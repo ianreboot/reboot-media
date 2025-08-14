@@ -136,7 +136,7 @@ const CostROIAnalysis = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 text-gray-300">
-                  <Link to="/fractional-cmo-guide" className="hover:text-green-400 transition-colors" onClick={() => window.scrollTo(0, 0)}>Fractional CMO Guide</Link>
+                  <Link to="/fractional-cmo-guide" className="hover:text-green-400 transition-colors">Fractional CMO Guide</Link>
                   <span>→</span>
                   <span className="text-green-400 font-semibold">Cost & ROI Analysis</span>
                 </nav>
@@ -428,7 +428,7 @@ const CostROIAnalysis = () => {
                 >
                   Get Your ROI Analysis
                 </button>
-                <Link to="/fractional-cmo-guide" className="border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block" onClick={() => window.scrollTo(0, 0)}>
+                <Link to="/fractional-cmo-guide" className="border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Back to Guide
                 </Link>
               </div>
@@ -442,7 +442,7 @@ const CostROIAnalysis = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/fractional-cmo-guide/when-to-choose-each" className="hover:text-green-600 transition-colors" onClick={() => window.scrollTo(0, 0)}>
+                    <Link to="/fractional-cmo-guide/when-to-choose-each" className="hover:text-green-600 transition-colors">
                       Revenue Stage Decision Matrix →
                     </Link>
                   </h3>
@@ -452,7 +452,7 @@ const CostROIAnalysis = () => {
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/growth-plateau-solutions/revenue-ceiling-breakthrough" className="hover:text-green-600 transition-colors" onClick={() => window.scrollTo(0, 0)}>
+                    <Link to="/growth-plateau-solutions/revenue-ceiling-breakthrough" className="hover:text-green-600 transition-colors">
                       Breaking Revenue Ceilings →
                     </Link>
                   </h3>

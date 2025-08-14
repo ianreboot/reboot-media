@@ -123,7 +123,7 @@ const ProductMarketFitErosion = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 text-gray-300">
-                  <a href="/growth-plateau-solutions" className="hover:text-purple-400 transition-colors">Growth Plateau Solutions</a>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-purple-400 transition-colors">Growth Plateau Solutions</a>
                   <span>→</span>
                   <span className="text-purple-400 font-semibold">Product-Market Fit Erosion</span>
                 </nav>
@@ -294,7 +294,7 @@ const ProductMarketFitErosion = () => {
                   Get Free PMF Restoration Analysis
                 </button>
                 <a 
-                  href="/growth-plateau-solutions" 
+                  href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} 
                   className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
                 >
                   See All Plateau Types
@@ -310,7 +310,7 @@ const ProductMarketFitErosion = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-important dark:text-white text-xl font-bold mb-3">
-                    <a href="/growth-plateau-solutions/market-expansion-barriers" className="hover:text-purple-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/market-expansion-barriers`} className="hover:text-purple-600 transition-colors">
                       Market Expansion Barriers →
                     </a>
                   </h3>
@@ -320,7 +320,7 @@ const ProductMarketFitErosion = () => {
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-important dark:text-white text-xl font-bold mb-3">
-                    <a href="/marketing-psychology" className="hover:text-purple-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-purple-600 transition-colors">
                       Marketing Psychology Fundamentals →
                     </a>
                   </h3>

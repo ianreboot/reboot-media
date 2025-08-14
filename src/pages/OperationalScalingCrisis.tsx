@@ -135,7 +135,7 @@ const OperationalScalingCrisis = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 text-gray-300">
-                  <a href="/growth-plateau-solutions" className="hover:text-green-400 transition-colors">Growth Plateau Solutions</a>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-green-400 transition-colors">Growth Plateau Solutions</a>
                   <span>→</span>
                   <span className="text-green-400 font-semibold">Operational Scaling Crisis</span>
                 </nav>
@@ -306,7 +306,7 @@ const OperationalScalingCrisis = () => {
                   Get Free Scaling Crisis Analysis
                 </button>
                 <a 
-                  href="/growth-plateau-solutions" 
+                  href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} 
                   className="border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
                 >
                   See All Plateau Types
@@ -322,7 +322,7 @@ const OperationalScalingCrisis = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3">
-                    <a href="/growth-plateau-solutions/team-growth-bottlenecks" className="hover:text-green-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} className="hover:text-green-600 transition-colors">
                       Team Growth Bottlenecks →
                     </a>
                   </h3>
@@ -332,7 +332,7 @@ const OperationalScalingCrisis = () => {
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3">
-                    <a href="/fractional-cmo-guide" className="hover:text-green-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-green-600 transition-colors">
                       Need Strategic Marketing Leadership? →
                     </a>
                   </h3>

@@ -136,7 +136,7 @@ const TransitionStrategies = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 text-gray-300">
-                  <Link to="/fractional-cmo-guide" className="hover:text-purple-400 transition-colors" onClick={() => window.scrollTo(0, 0)}>Fractional CMO Guide</Link>
+                  <Link to="/fractional-cmo-guide" className="hover:text-purple-400 transition-colors">Fractional CMO Guide</Link>
                   <span>→</span>
                   <span className="text-pink-400 font-semibold">Transition Strategies</span>
                 </nav>
@@ -352,7 +352,7 @@ const TransitionStrategies = () => {
                 >
                   Get Free Transition Roadmap
                 </button>
-                <Link to="/fractional-cmo-guide" className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block" onClick={() => window.scrollTo(0, 0)}>
+                <Link to="/fractional-cmo-guide" className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Choose Your Marketing Model
                 </Link>
               </div>
@@ -366,7 +366,7 @@ const TransitionStrategies = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/fractional-cmo-guide/cost-roi-analysis" className="hover:text-purple-600 transition-colors" onClick={() => window.scrollTo(0, 0)}>
+                    <Link to="/fractional-cmo-guide/cost-roi-analysis" className="hover:text-purple-600 transition-colors">
                       Save $200K During Transition →
                     </Link>
                   </h3>
@@ -376,7 +376,7 @@ const TransitionStrategies = () => {
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/growth-plateau-solutions" className="hover:text-purple-600 transition-colors" onClick={() => window.scrollTo(0, 0)}>
+                    <Link to="/growth-plateau-solutions" className="hover:text-purple-600 transition-colors">
                       8 Plateau Patterns Forcing Change →
                     </Link>
                   </h3>

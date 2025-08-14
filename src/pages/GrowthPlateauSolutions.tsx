@@ -290,22 +290,25 @@ const GrowthPlateauSolutions = () => {
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl transition-shadow">
                 <h3 className="heading-lg text-important dark:text-white mb-4">
-                  <a href="/marketing-psychology" className="hover:text-red-600 transition-colors">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-red-600 transition-colors">
                     Marketing Psychology Fundamentals →
                   </a>
                 </h3>
                 <p className="text-lg text-standard dark:text-gray-300 mb-6">
                   Master the 5 customer awareness stages and conversion psychology principles that transform scattered marketing into predictable revenue growth.
                 </p>
-                <div className="flex items-center text-red-600 dark:text-red-400 font-semibold">
+                <a 
+                  href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`}
+                  className="flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 dark:hover:text-red-300 transition-colors"
+                >
                   <span className="mr-2">📚</span>
                   Master $47K/Month Psychology
-                </div>
+                </a>
               </div>
               
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl transition-shadow">
                 <h3 className="heading-lg text-important dark:text-white mb-4">
-                  <a href="/fractional-cmo-guide" className="hover:text-red-600 transition-colors">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-red-600 transition-colors">
                     Need Strategic Marketing Leadership? →
                   </a>
                 </h3>
@@ -313,7 +316,7 @@ const GrowthPlateauSolutions = () => {
                   Compare fractional CMO vs agency approaches and discover which delivers faster plateau breakthrough results for your specific situation.
                 </p>
                 <a 
-                  href="/fractional-cmo-guide/vs-marketing-agency"
+                  href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-marketing-agency`}
                   className="flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 dark:hover:text-red-300 transition-colors group"
                 >
                   <span className="mr-2">🎯</span>

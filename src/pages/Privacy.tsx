@@ -122,7 +122,7 @@ const Privacy = () => {
                 </ul>
                 <p className="mt-4 text-standard dark:text-gray-300">
                   To exercise these rights, please contact us through our{' '}
-                  <Link to="/contact" className="transparent-link" onClick={() => window.scrollTo(0, 0)}>contact form</Link>.
+                  <Link to="/contact" className="transparent-link">contact form</Link>.
                 </p>
               </section>
 
@@ -297,7 +297,7 @@ const Privacy = () => {
                   <p className="font-medium text-important dark:text-white">Reboot Media, Inc.</p>
                   <p className="text-optional dark:text-gray-400">17595 Harvard Ave C-738</p>
                   <p className="text-optional dark:text-gray-400">Irvine, CA 92614, USA</p>
-                  <p className="text-standard dark:text-gray-300">Contact Form: <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline" onClick={() => window.scrollTo(0, 0)}>Submit inquiry</Link></p>
+                  <p className="text-standard dark:text-gray-300">Contact Form: <Link to="/contact" className="text-orange-500 hover:text-orange-600 underline">Submit inquiry</Link></p>
                 </div>
               </section>
             </div>

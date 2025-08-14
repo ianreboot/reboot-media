@@ -136,7 +136,7 @@ const FractionalCMOVsAgency = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 text-gray-300">
-                  <Link to="/fractional-cmo-guide" className="hover:text-blue-400 transition-colors" onClick={() => window.scrollTo(0, 0)}>Fractional CMO Guide</Link>
+                  <Link to="/fractional-cmo-guide" className="hover:text-blue-400 transition-colors">Fractional CMO Guide</Link>
                   <span>→</span>
                   <span className="text-blue-400 font-semibold">vs Marketing Agency</span>
                 </nav>
@@ -306,7 +306,7 @@ const FractionalCMOVsAgency = () => {
                 >
                   Get Free Strategy Analysis
                 </button>
-                <Link to="/fractional-cmo-guide" className="border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block" onClick={() => window.scrollTo(0, 0)}>
+                <Link to="/fractional-cmo-guide" className="border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Compare vs Full-Time & Consultant
                 </Link>
               </div>
@@ -320,7 +320,7 @@ const FractionalCMOVsAgency = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/fractional-cmo-guide/cost-roi-analysis" className="hover:text-blue-600 transition-colors" onClick={() => window.scrollTo(0, 0)}>
+                    <Link to="/fractional-cmo-guide/cost-roi-analysis" className="hover:text-blue-600 transition-colors">
                       Why Agencies Cost More Than Expected →
                     </Link>
                   </h3>
@@ -330,7 +330,7 @@ const FractionalCMOVsAgency = () => {
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <Link to="/growth-plateau-solutions/customer-acquisition-stall" className="hover:text-blue-600 transition-colors" onClick={() => window.scrollTo(0, 0)}>
+                    <Link to="/growth-plateau-solutions/customer-acquisition-stall" className="hover:text-blue-600 transition-colors">
                       Fix Your $8K CAC Problem →
                     </Link>
                   </h3>

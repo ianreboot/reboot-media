@@ -9,9 +9,6 @@ import { useLeadForm } from '../contexts/LeadFormContext';
 const About = () => {
   const { setShowDropdownForm } = useLeadForm();
 
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
 
 
 
@@ -218,7 +215,7 @@ const About = () => {
             <h2 className="heading-xl text-white mb-4">Ready to Work Together?</h2>
             <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
               Stop fumbling with amateur advice. Get battle-tested strategies from executives who've 
-              guided Fortune 500 brands to measurable growth. <Link to="/privacy" className="transparent-link" onClick={scrollToTop}>Privacy protected</Link>.
+              guided Fortune 500 brands to measurable growth. <Link to="/privacy" className="transparent-link">Privacy protected</Link>.
             </p>
             <button
               onClick={() => setShowDropdownForm(true)}

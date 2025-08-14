@@ -398,7 +398,7 @@ const MarketingPsychology = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                  <a href="/growth-plateau-solutions" className="hover:text-orange-600 transition-colors">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-orange-600 transition-colors">
                     Stuck in a Growth Plateau? →
                   </a>
                 </h3>
@@ -408,7 +408,7 @@ const MarketingPsychology = () => {
               </div>
               <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                  <a href="/fractional-cmo-guide" className="hover:text-orange-600 transition-colors">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-orange-600 transition-colors">
                     Fractional CMO vs Agency →
                   </a>
                 </h3>

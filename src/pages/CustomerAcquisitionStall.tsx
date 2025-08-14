@@ -135,7 +135,7 @@ const CustomerAcquisitionStall = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 text-gray-300">
-                  <a href="/growth-plateau-solutions" className="hover:text-orange-400 transition-colors">Growth Plateau Solutions</a>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-orange-400 transition-colors">Growth Plateau Solutions</a>
                   <span>→</span>
                   <span className="text-orange-400 font-semibold">Customer Acquisition Stall</span>
                 </nav>
@@ -306,7 +306,7 @@ const CustomerAcquisitionStall = () => {
                   Get Free CAC Analysis
                 </button>
                 <a 
-                  href="/growth-plateau-solutions" 
+                  href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} 
                   className="border-2 border-orange-500 text-orange-600 hover:bg-orange-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
                 >
                   See All Plateau Types
@@ -322,7 +322,7 @@ const CustomerAcquisitionStall = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3">
-                    <a href="/growth-plateau-solutions/revenue-ceiling-breakthrough" className="hover:text-orange-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} className="hover:text-orange-600 transition-colors">
                       Revenue Ceiling Breakthrough →
                     </a>
                   </h3>
@@ -332,7 +332,7 @@ const CustomerAcquisitionStall = () => {
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3">
-                    <a href="/marketing-psychology" className="hover:text-orange-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-orange-600 transition-colors">
                       Marketing Psychology Fundamentals →
                     </a>
                   </h3>
