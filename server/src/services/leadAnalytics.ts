@@ -199,6 +199,25 @@ export class CustomerJourneyTracker {
     const touchpoints = journey.touchpoints;
     const totalTouchpoints = touchpoints.length;
     
+    // Ensure attribution data exists
+    if (!journey.attributionData) {
+      journey.attributionData = {
+        firstTouch: { channel: '', timestamp: new Date() },
+        lastTouch: { channel: '', timestamp: new Date() },
+        multiTouch: { channels: {}, campaigns: {} },
+        modelType: 'time_decay'
+      };
+    }
+    if (!journey.attributionData.multiTouch) {
+      journey.attributionData.multiTouch = { channels: {}, campaigns: {} };
+    }
+    if (!journey.attributionData.multiTouch.channels) {
+      journey.attributionData.multiTouch.channels = {};
+    }
+    if (!journey.attributionData.multiTouch.campaigns) {
+      journey.attributionData.multiTouch.campaigns = {};
+    }
+
     // Reset multi-touch data
     journey.attributionData.multiTouch.channels = {};
     journey.attributionData.multiTouch.campaigns = {};
@@ -207,24 +226,27 @@ export class CustomerJourneyTracker {
     touchpoints.forEach((tp, index) => {
       const weight = this.calculateTimeDecayWeight(index, totalTouchpoints);
       
-      // Update channel attribution
-      if (!journey.attributionData.multiTouch.channels[tp.channel]) {
-        journey.attributionData.multiTouch.channels[tp.channel] = 0;
+      // Update channel attribution (objects guaranteed to exist after initialization above)
+      const channels = journey.attributionData!.multiTouch!.channels!;
+      if (!channels[tp.channel]) {
+        channels[tp.channel] = 0;
       }
-      journey.attributionData.multiTouch.channels[tp.channel] += weight;
+      channels[tp.channel] = (channels[tp.channel] || 0) + weight;
 
       // Update campaign attribution if applicable
-      if (tp.details.emailCampaign) {
-        if (!journey.attributionData.multiTouch.campaigns[tp.details.emailCampaign]) {
-          journey.attributionData.multiTouch.campaigns[tp.details.emailCampaign] = 0;
+      if (tp.details?.emailCampaign) {
+        const campaigns = journey.attributionData!.multiTouch!.campaigns!;
+        const campaign = tp.details.emailCampaign;
+        if (!campaigns[campaign]) {
+          campaigns[campaign] = 0;
         }
-        journey.attributionData.multiTouch.campaigns[tp.details.emailCampaign] += weight;
+        campaigns[campaign] += weight;
       }
     });
 
     // Normalize to percentages
-    this.normalizeAttribution(journey.attributionData.multiTouch.channels);
-    this.normalizeAttribution(journey.attributionData.multiTouch.campaigns);
+    this.normalizeAttribution(journey.attributionData?.multiTouch?.channels);
+    this.normalizeAttribution(journey.attributionData?.multiTouch?.campaigns);
   }
 
   /**
@@ -239,11 +261,14 @@ export class CustomerJourneyTracker {
   /**
    * Normalize attribution values to percentages
    */
-  private normalizeAttribution(attribution: { [key: string]: number }): void {
+  private normalizeAttribution(attribution: { [key: string]: number } | undefined): void {
+    if (!attribution) return;
+    
     const total = Object.values(attribution).reduce((sum, val) => sum + val, 0);
     if (total > 0) {
       Object.keys(attribution).forEach(key => {
-        attribution[key] = Math.round((attribution[key] / total) * 100);
+        const value = attribution![key] || 0;
+        attribution![key] = Math.round((value / total) * 100);
       });
     }
   }
@@ -405,19 +430,19 @@ export function calculateFunnelMetrics(
     { name: 'Opportunity Created', identifier: 'opportunity' }
   ];
 
+  let previousStageCount = journeys.length;
   const stageMetrics = stages.map((stage, index) => {
     const journeysAtStage = journeys.filter(j => 
       j.touchpoints.some(tp => tp.type === stage.identifier as any)
     );
 
     const count = journeysAtStage.length;
-    const previousCount = index > 0 
-      ? stages[index - 1].count 
-      : journeys.length;
-
-    const conversionRate = previousCount > 0 
-      ? (count / previousCount) * 100 
+    const conversionRate = previousStageCount > 0 
+      ? (count / previousStageCount) * 100 
       : 0;
+      
+    // Update previous count for next iteration
+    const currentStageCount = count;
 
     const dropoffRate = 100 - conversionRate;
 
@@ -432,6 +457,9 @@ export function calculateFunnelMetrics(
     const averageTime = times.length > 0
       ? times.reduce((a, b) => a + b, 0) / times.length
       : 0;
+
+    // Update for next iteration
+    previousStageCount = currentStageCount;
 
     return {
       name: stage.name,

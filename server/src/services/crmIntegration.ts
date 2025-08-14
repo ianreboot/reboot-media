@@ -487,7 +487,7 @@ export class CRMManager {
     if (existingLeads.length > 0) {
       // Update existing lead
       const lead = this.activeIntegration['formatLead'](formData, score, journey);
-      return await this.activeIntegration.updateLead(existingLeads[0].id!, lead);
+      return await this.activeIntegration.updateLead(existingLeads[0]?.id || '', lead);
     } else {
       // Create new lead
       const lead = this.activeIntegration['formatLead'](formData, score, journey);

@@ -116,6 +116,8 @@ export interface PasswordResetResponse {
 }
 
 // Extended Express Request interface
+import { Request } from 'express';
+
 export interface AuthenticatedRequest extends Request {
   user?: UserProfile;
   token?: string;

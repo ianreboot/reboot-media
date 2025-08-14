@@ -530,6 +530,10 @@ export function calculateTestResults(test: ABTestConfig): {
   recommendation: string;
 } {
   // Find control and best performing variant
+  if (!test.variants || test.variants.length === 0) {
+    throw new Error('No variants found in test configuration');
+  }
+  
   const control = test.variants[0];
   const bestVariant = test.variants.reduce((best, current) => {
     const currentRate = current.views > 0 ? current.conversions / current.views : 0;
@@ -537,7 +541,7 @@ export function calculateTestResults(test: ABTestConfig): {
     return currentRate > bestRate ? current : best;
   });
 
-  const controlRate = control.views > 0 ? control.conversions / control.views : 0;
+  const controlRate = control && control.views > 0 ? control.conversions / control.views : 0;
   const bestRate = bestVariant.views > 0 ? bestVariant.conversions / bestVariant.views : 0;
 
   // Calculate lift
@@ -549,8 +553,8 @@ export function calculateTestResults(test: ABTestConfig): {
   
   // Z-score approximation for significance
   const standardError = Math.sqrt(
-    (controlRate * (1 - controlRate) / control.views) +
-    (bestRate * (1 - bestRate) / bestVariant.views)
+    (controlRate * (1 - controlRate) / (control?.views || 1)) +
+    (bestRate * (1 - bestRate) / (bestVariant?.views || 1))
   );
   const zScore = Math.abs((bestRate - controlRate) / standardError);
   const significant = zScore > 1.96 && hasEnoughData; // 95% confidence

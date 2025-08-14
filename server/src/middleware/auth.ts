@@ -27,7 +27,7 @@ export function authenticateToken(
   res: Response, 
   next: NextFunction
 ): void {
-  const authHeader = req.headers.get('authorization') ?? undefined;
+  const authHeader = req.get('authorization') ?? undefined;
   const token = extractTokenFromHeader(authHeader);
 
   if (!token) {
@@ -83,7 +83,7 @@ async function checkTokenBlacklist(
     }
 
     // Token is valid, proceed to user validation
-    const verificationResult = verifyAccessToken(extractTokenFromHeader(req.headers.get('authorization') ?? undefined)!);
+    const verificationResult = verifyAccessToken(extractTokenFromHeader(req.get('authorization') ?? undefined)!);
     await validateUser(verificationResult.payload!, req, res, next);
   } catch (error) {
     console.error('Token blacklist check error:', error);
@@ -133,7 +133,7 @@ async function validateUser(
 
     // Attach user and token info to request
     req.user = user;
-    req.token = extractTokenFromHeader(req.headers.get('authorization') ?? undefined)!;
+    req.token = extractTokenFromHeader(req.get('authorization') ?? undefined)!;
     req.tokenType = TokenType.ACCESS;
 
     next();
@@ -227,7 +227,7 @@ export function requireEmailVerification(req: AuthenticatedRequest, res: Respons
  * Optional authentication - validates token if present but doesn't require it
  */
 export function optionalAuth(req: AuthenticatedRequest, res: Response, next: NextFunction): void {
-  const authHeader = req.headers.get('authorization') ?? undefined;
+  const authHeader = req.get('authorization') ?? undefined;
   const token = extractTokenFromHeader(authHeader);
 
   if (!token) {
@@ -345,7 +345,7 @@ export function auditAuthAction(action: string) {
     // Store audit info for logging after response
     res.locals.auditAction = action;
     res.locals.auditIp = (req as any).ip || (req as any).connection?.remoteAddress || 'unknown';
-    res.locals.auditUserAgent = req.headers.get('user-agent') || 'unknown';
+    res.locals.auditUserAgent = req.get('user-agent') || 'unknown';
     res.locals.auditUserId = req.user?.id;
     
     // Log after response is sent

@@ -5,13 +5,15 @@
 
 import express from 'express';
 import { Request, Response, NextFunction } from 'express';
+import { AuthenticatedRequest } from '../types/auth.js';
 import { 
   calculateLeadScore, 
   getLeadRouting,
   calculateLeadTrend,
   predictCustomerLifetimeValue,
   BehavioralData,
-  EnrichedLeadData
+  EnrichedLeadData,
+  LeadScore
 } from '../services/leadScoring.js';
 import {
   journeyTracker,
@@ -41,17 +43,18 @@ const router = express.Router();
  * Score a lead based on form data and behavioral metrics
  * POST /api/leads/score
  */
-router.post('/score', authenticateToken, async (req: any, res: any, next: any) => {
+router.post('/score', authenticateToken, async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
   try {
     const startTime = Date.now();
     const { formData, behavioral, sessionId } = req.body;
 
     // Validate input
     if (!formData || !formData.email) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Form data with email is required'
       });
+      return;
     }
 
     // Create enriched lead data
@@ -62,7 +65,7 @@ router.post('/score', authenticateToken, async (req: any, res: any, next: any) =
 
     // Calculate lead score
     const score = await optimizeQueryPerformance(
-      () => calculateLeadScore(enrichedLead, behavioral),
+      () => Promise.resolve(calculateLeadScore(enrichedLead, behavioral)),
       'lead_scoring'
     );
 
@@ -121,15 +124,16 @@ router.post('/score', authenticateToken, async (req: any, res: any, next: any) =
  * Track customer journey touchpoint
  * POST /api/leads/journey/track
  */
-router.post('/journey/track', async (req: any, res: any, next: any) => {
+router.post('/journey/track', async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { sessionId, touchpoint, leadId } = req.body;
 
     if (!sessionId || !touchpoint) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Session ID and touchpoint data required'
       });
+      return;
     }
 
     // Create touchpoint with proper typing
@@ -172,15 +176,16 @@ router.post('/journey/track', async (req: any, res: any, next: any) => {
 router.get('/journey/:id', 
   authenticateToken,
   cacheResponse(60, 'journey'),
-  async (req: any, res: any, next: any) => {
+  async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
   try {
-    const journey = journeyTracker.getJourney(req.params.id);
+    const journey = journeyTracker.getJourney(req.params.id!);
 
     if (!journey) {
-      return res.status(404).json({
+      res.status(404).json({
         success: false,
         error: 'Journey not found'
       });
+      return;
     }
 
     const metrics = journeyTracker.calculateLeadMetrics(journey.leadId);
@@ -201,15 +206,16 @@ router.get('/journey/:id',
  * Get personalization strategy for a lead
  * POST /api/leads/personalize
  */
-router.post('/personalize', async (req: any, res: any, next: any) => {
+router.post('/personalize', async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { score, sessionId } = req.body;
 
     if (!score) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Lead score data required'
       });
+      return;
     }
 
     // Get journey if available
@@ -245,15 +251,16 @@ router.post('/personalize', async (req: any, res: any, next: any) => {
  * Handle exit intent
  * POST /api/leads/exit-intent
  */
-router.post('/exit-intent', async (req: any, res: any, next: any) => {
+router.post('/exit-intent', async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { score, timeOnPage, scrollDepth, sessionId } = req.body;
 
     if (!score) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Lead score required'
       });
+      return;
     }
 
     // Generate exit intent strategy
@@ -293,7 +300,7 @@ router.post('/exit-intent', async (req: any, res: any, next: any) => {
 router.get('/analytics/funnel',
   authenticateToken,
   cacheResponse(300, 'analytics'),
-  async (req: any, res: any, next: any) => {
+  async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
   try {
     // Get all journeys (in production, would filter by date range)
     const allJourneys = Array.from({ length: 100 }, (_, i) => {
@@ -344,7 +351,7 @@ router.get('/analytics/funnel',
 router.get('/analytics/cohort',
   authenticateToken,
   cacheResponse(600, 'cohort'),
-  async (req: any, res: any, next: any) => {
+  async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { startDate, endDate, period = 'weekly' } = req.query;
 
@@ -372,15 +379,16 @@ router.get('/analytics/cohort',
  */
 router.post('/ab-test/create', 
   authenticateToken,
-  async (req: any, res: any, next: any) => {
+  async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { name, hypothesis, variants } = req.body;
 
     if (!name || !hypothesis || !variants || variants.length < 2) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Test name, hypothesis, and at least 2 variants required'
       });
+      return;
     }
 
     const testConfig = createABTest(name, hypothesis, variants);
@@ -400,15 +408,16 @@ router.post('/ab-test/create',
  */
 router.post('/ab-test/results',
   authenticateToken,
-  async (req: any, res: any, next: any) => {
+  async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { testConfig } = req.body;
 
     if (!testConfig) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'Test configuration required'
       });
+      return;
     }
 
     const results = calculateTestResults(testConfig);
@@ -429,7 +438,7 @@ router.post('/ab-test/results',
 router.get('/trends',
   authenticateToken,
   cacheResponse(3600, 'trends'),
-  async (req: any, res: any, next: any) => {
+  async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
   try {
     // Simulated historical scores (in production, would fetch from database)
     const historicalScores = [
@@ -457,7 +466,7 @@ router.get('/trends',
  */
 router.get('/crm/status',
   authenticateToken,
-  async (req: any, res: any, next: any) => {
+  async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
   try {
     const status = crmManager.getStatus();
 
@@ -476,24 +485,26 @@ router.get('/crm/status',
  */
 router.post('/crm/configure',
   authenticateToken,
-  async (req: any, res: any, next: any) => {
+  async (req: AuthenticatedRequest, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { provider } = req.body;
 
     if (!provider) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: 'CRM provider required'
       });
+      return;
     }
 
     const success = crmManager.setActiveIntegration(provider);
 
     if (!success) {
-      return res.status(400).json({
+      res.status(400).json({
         success: false,
         error: `CRM provider ${provider} not available`
       });
+      return;
     }
 
     res.json({
