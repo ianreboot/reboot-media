@@ -1,0 +1,315 @@
+# Synthetic Monitoring Configuration for Reboot Media
+# Critical user journey monitoring and uptime checks
+
+global:
+  scrape_interval: 30s
+  evaluation_interval: 30s
+  external_labels:
+    environment: production
+    service: synthetic-monitoring
+
+# Blackbox exporter configuration for HTTP(S) checks
+blackbox_configs:
+  - module: http_2xx
+    prober: http
+    timeout: 10s
+    http:
+      valid_http_versions: ["HTTP/1.1", "HTTP/2.0"]
+      valid_status_codes: [200, 301, 302]
+      method: GET
+      headers:
+        User-Agent: "RebootMedia-SyntheticMonitoring/1.0"
+        Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+      follow_redirects: true
+      preferred_ip_protocol: "ip4"
+      ip_protocol_fallback: false
+
+  - module: http_post_form
+    prober: http
+    timeout: 15s
+    http:
+      method: POST
+      headers:
+        Content-Type: "application/x-www-form-urlencoded"
+        User-Agent: "RebootMedia-SyntheticMonitoring/1.0"
+      body: "name=Test+User&email=test%40example.com&company=Test+Company&message=Synthetic+monitoring+test"
+      valid_status_codes: [200, 201, 400] # 400 expected for test data
+      fail_if_body_matches_regexp:
+        - "Internal Server Error"
+        - "500"
+        - "Database Error"
+
+  - module: ssl_expiry
+    prober: tcp
+    timeout: 10s
+    tcp:
+      preferred_ip_protocol: "ip4"
+      tls: true
+      tls_config:
+        insecure_skip_verify: false
+
+# Critical User Journey Definitions
+user_journeys:
+  # Journey 1: Homepage to Contact Form Submission
+  - name: homepage_to_contact
+    description: "Complete user journey from homepage to contact form submission"
+    steps:
+      - name: load_homepage
+        url: "https://www.rebootmedia.net"
+        method: GET
+        expected_status: 200
+        assertions:
+          - contains: "Fractional CMO"
+          - contains: "Contact"
+          - response_time_ms: <2000
+        extract:
+          - name: csrf_token
+            regex: 'name="csrf_token" value="([^"]+)"'
+
+      - name: view_services
+        url: "https://www.rebootmedia.net/fractional-cmo-guide"
+        method: GET
+        expected_status: 200
+        assertions:
+          - contains: "Marketing Strategy"
+          - contains: "ROI"
+          - response_time_ms: <3000
+
+      - name: visit_contact_page
+        url: "https://www.rebootmedia.net/contact"
+        method: GET
+        expected_status: 200
+        assertions:
+          - contains: "Get Started"
+          - contains: "form"
+          - response_time_ms: <2000
+
+      - name: submit_contact_form
+        url: "https://www.rebootmedia.net/api/v1/leads"
+        method: POST
+        headers:
+          Content-Type: "application/json"
+          X-Requested-With: "XMLHttpRequest"
+        body: |
+          {
+            "name": "Synthetic Test User",
+            "email": "synthetic-test@rebootmedia.net",
+            "company": "Test Company Ltd",
+            "phone": "+1-555-0123",
+            "message": "This is a synthetic monitoring test submission",
+            "source": "synthetic",
+            "synthetic_test": true
+          }
+        expected_status: [201, 400] # 400 expected for synthetic test data
+        assertions:
+          - response_time_ms: <5000
+
+  # Journey 2: SEO Landing Page Optimization Check
+  - name: seo_landing_pages
+    description: "Verify SEO-optimized landing pages load correctly"
+    steps:
+      - name: fractional_cmo_guide
+        url: "https://www.rebootmedia.net/fractional-cmo-guide"
+        method: GET
+        expected_status: 200
+        assertions:
+          - contains: "<title>"
+          - contains: "meta name=\"description\""
+          - contains: "Fractional CMO"
+          - response_time_ms: <2500
+
+      - name: cost_roi_analysis
+        url: "https://www.rebootmedia.net/cost-roi-analysis"
+        method: GET
+        expected_status: 200
+        assertions:
+          - contains: "ROI Analysis"
+          - contains: "meta name=\"description\""
+          - response_time_ms: <2500
+
+      - name: growth_plateau_solutions
+        url: "https://www.rebootmedia.net/growth-plateau-solutions"
+        method: GET
+        expected_status: 200
+        assertions:
+          - contains: "Growth Plateau"
+          - contains: "meta name=\"description\""
+          - response_time_ms: <2500
+
+  # Journey 3: API Health and Performance Check
+  - name: api_health_check
+    description: "Comprehensive API health and performance monitoring"
+    steps:
+      - name: api_health_endpoint
+        url: "https://www.rebootmedia.net/api/health"
+        method: GET
+        expected_status: 200
+        assertions:
+          - json_path: "$.status"
+            equals: "healthy"
+          - json_path: "$.database"
+            equals: "connected"
+          - response_time_ms: <1000
+
+      - name: api_ready_endpoint
+        url: "https://www.rebootmedia.net/api/ready"
+        method: GET
+        expected_status: 200
+        assertions:
+          - json_path: "$.ready"
+            equals: true
+          - response_time_ms: <1000
+
+      - name: api_metrics_endpoint
+        url: "https://www.rebootmedia.net/api/metrics"
+        method: GET
+        expected_status: 200
+        assertions:
+          - contains: "http_requests_total"
+          - contains: "http_request_duration_seconds"
+          - response_time_ms: <2000
+
+  # Journey 4: Core Web Vitals Performance Check
+  - name: core_web_vitals_check
+    description: "Monitor Core Web Vitals performance across key pages"
+    browser_checks: true
+    steps:
+      - name: homepage_web_vitals
+        url: "https://www.rebootmedia.net"
+        assertions:
+          - lcp_ms: <2500
+          - cls_score: <0.1
+          - fid_ms: <100
+          - total_blocking_time_ms: <200
+
+      - name: contact_page_web_vitals
+        url: "https://www.rebootmedia.net/contact"
+        assertions:
+          - lcp_ms: <2500
+          - cls_score: <0.1
+          - fid_ms: <100
+
+      - name: service_page_web_vitals
+        url: "https://www.rebootmedia.net/fractional-cmo-guide"
+        assertions:
+          - lcp_ms: <3000
+          - cls_score: <0.1
+          - fid_ms: <100
+
+# Monitoring Schedules
+monitoring_schedules:
+  - name: critical_uptime
+    frequency: "30s"
+    journeys:
+      - "homepage_to_contact"
+      - "api_health_check"
+    alerts:
+      - threshold: 1 # Alert after 1 failure
+        severity: critical
+        channels: ["pagerduty", "slack-critical"]
+
+  - name: performance_monitoring
+    frequency: "2m"
+    journeys:
+      - "core_web_vitals_check"
+      - "seo_landing_pages"
+    alerts:
+      - threshold: 3 # Alert after 3 consecutive failures
+        severity: warning
+        channels: ["slack-performance"]
+
+  - name: business_flow_validation
+    frequency: "5m"
+    journeys:
+      - "homepage_to_contact"
+    alerts:
+      - threshold: 2 # Alert after 2 consecutive failures
+        severity: warning
+        channels: ["slack-business"]
+
+# Geographic Distribution (Multi-region monitoring)
+monitoring_locations:
+  - name: us-east-1
+    description: "Primary AWS US East region"
+    provider: "aws"
+    region: "us-east-1"
+
+  - name: us-west-2
+    description: "Secondary AWS US West region"
+    provider: "aws"
+    region: "us-west-2"
+
+  - name: eu-west-1
+    description: "European monitoring point"
+    provider: "aws"
+    region: "eu-west-1"
+
+# Alert Rules for Synthetic Monitoring
+alert_rules:
+  - name: SyntheticMonitoringCritical
+    condition: "probe_success == 0"
+    for: "1m"
+    labels:
+      severity: critical
+      service: reboot-media
+      monitoring: synthetic
+    annotations:
+      summary: "Critical synthetic check failed"
+      description: "Synthetic monitoring check {{ $labels.job }} failed"
+      runbook_url: "https://runbooks.rebootmedia.net/synthetic-monitoring"
+
+  - name: CoreWebVitalsRegression
+    condition: "lcp_seconds > 2.5 or cls_score > 0.1 or fid_seconds > 0.1"
+    for: "5m"
+    labels:
+      severity: warning
+      team: frontend
+      monitoring: synthetic
+    annotations:
+      summary: "Core Web Vitals performance regression"
+      description: "Core Web Vitals metrics degraded: LCP={{ $labels.lcp_seconds }}s, CLS={{ $labels.cls_score }}, FID={{ $labels.fid_seconds }}s"
+
+  - name: APILatencyRegression
+    condition: "probe_duration_seconds > 5"
+    for: "3m"
+    labels:
+      severity: warning
+      team: backend
+      monitoring: synthetic
+    annotations:
+      summary: "API response time regression"
+      description: "API endpoint {{ $labels.instance }} response time is {{ $value }}s"
+
+  - name: LeadFormSubmissionFailure
+    condition: "probe_success{job=\"contact-form-submission\"} == 0"
+    for: "2m"
+    labels:
+      severity: critical
+      team: marketing
+      business_impact: high
+    annotations:
+      summary: "Lead form submission failing"
+      description: "Contact form submission synthetic test is failing"
+      business_impact: "Revenue generation may be impacted"
+
+# Success Rate SLO Definitions
+slo_definitions:
+  - name: overall_availability
+    target: 99.95
+    measurement_window: "30d"
+    description: "Overall site availability SLO"
+
+  - name: api_availability
+    target: 99.9
+    measurement_window: "30d"
+    description: "API endpoint availability SLO"
+
+  - name: core_web_vitals_compliance
+    target: 90 # 90% of checks should pass Core Web Vitals thresholds
+    measurement_window: "7d"
+    description: "Core Web Vitals performance SLO"
+
+  - name: lead_form_availability
+    target: 99.5
+    measurement_window: "30d"
+    description: "Lead form submission availability SLO"

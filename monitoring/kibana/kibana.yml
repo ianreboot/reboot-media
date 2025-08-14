@@ -1,0 +1,97 @@
+# Kibana Configuration for Reboot Media
+# Visualization and analysis interface for centralized logging
+
+server.name: reboot-media-kibana
+server.host: "0.0.0.0"
+server.port: 5601
+server.basePath: ""
+
+# Elasticsearch connection
+elasticsearch.hosts: ["https://elasticsearch-1:9200", "https://elasticsearch-2:9200", "https://elasticsearch-3:9200"]
+elasticsearch.username: "kibana_system"
+elasticsearch.password: "${ELASTICSEARCH_PASSWORD}"
+
+# SSL/TLS settings
+elasticsearch.ssl.certificateAuthorities: ["/usr/share/kibana/config/certs/ca.crt"]
+elasticsearch.ssl.verificationMode: certificate
+
+server.ssl.enabled: true
+server.ssl.certificate: "/usr/share/kibana/config/certs/kibana.crt"
+server.ssl.key: "/usr/share/kibana/config/certs/kibana.key"
+
+# Security
+xpack.security.enabled: true
+xpack.security.encryptionKey: "${KIBANA_ENCRYPTION_KEY}"
+
+# Session settings
+xpack.security.session.idleTimeout: "1h"
+xpack.security.session.lifespan: "8h"
+
+# Monitoring
+xpack.monitoring.enabled: true
+xpack.monitoring.kibana.collection.enabled: true
+xpack.monitoring.ui.container.elasticsearch.enabled: true
+xpack.monitoring.ui.container.logstash.enabled: true
+
+# Default index patterns
+kibana.index: ".kibana"
+kibana.defaultAppId: "discover"
+
+# Logging
+logging.appenders.file.type: file
+logging.appenders.file.fileName: /usr/share/kibana/logs/kibana.log
+logging.appenders.file.layout.type: json
+logging.root.appenders: ["file"]
+logging.root.level: info
+
+# Performance settings
+elasticsearch.requestTimeout: 120000
+elasticsearch.shardTimeout: 120000
+elasticsearch.pingTimeout: 3000
+
+# Memory optimization
+node.options: ["--max-old-space-size=2048"]
+
+# Dashboard and visualization defaults
+tilemap.url: 'https://tiles.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana'
+tilemap.options.attribution: '© Elastic Maps Service'
+
+# Reporting (if needed)
+xpack.reporting.enabled: false
+
+# Canvas (disable to save resources)
+xpack.canvas.enabled: false
+
+# Spaces (for multi-tenancy - optional)
+xpack.spaces.enabled: true
+xpack.spaces.maxSpaces: 100
+
+# Index lifecycle management
+xpack.ilm.enabled: true
+
+# Machine learning (disabled for resource optimization)
+xpack.ml.enabled: false
+
+# Data visualization settings
+visualization.colorMapping: {}
+visualization.regionmap.includeElasticMapsService: true
+
+# Custom logo/branding (optional)
+# server.customResponseHeaders: {}
+
+# CORS settings
+server.cors.enabled: false
+
+# Map services
+map.includeElasticMapsService: true
+map.tilemap.url: 'https://tiles.elastic.co/v2/default/{z}/{x}/{y}.png?elastic_tile_service_tos=agree&my_app_name=kibana'
+
+# Telemetry
+telemetry.enabled: false
+telemetry.optIn: false
+
+# Usage collection
+xpack.usage_collection.enabled: true
+
+# Default saved objects
+kibana.defaultAppId: "dashboards"

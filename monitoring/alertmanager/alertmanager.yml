@@ -1,0 +1,273 @@
+# Reboot Media Production Alertmanager Configuration
+# Multi-tier alerting with escalation policies
+
+global:
+  # SMTP Configuration for email alerts
+  smtp_smarthost: 'smtp.sendgrid.net:587'
+  smtp_from: 'alerts@rebootmedia.net'
+  smtp_auth_username: 'apikey'
+  smtp_auth_password: '${SENDGRID_API_KEY}'
+  smtp_require_tls: true
+  
+  # Slack webhook URL (set via environment variable)
+  slack_api_url: '${SLACK_WEBHOOK_URL}'
+  
+  # PagerDuty integration key
+  pagerduty_url: 'https://events.pagerduty.com/v2/enqueue'
+
+# Template definitions
+templates:
+  - '/etc/alertmanager/templates/*.tmpl'
+
+# Route configuration with escalation policies
+route:
+  # Default settings
+  group_by: ['alertname', 'cluster', 'service']
+  group_wait: 30s
+  group_interval: 5m
+  repeat_interval: 4h
+  receiver: 'web.hook.fallback'
+
+  routes:
+    # Critical business impact alerts - Immediate escalation
+    - matchers:
+        - severity = "critical"
+        - service = "reboot-media"
+      receiver: 'critical-escalation'
+      group_wait: 0s
+      group_interval: 1m
+      repeat_interval: 5m
+      continue: true
+
+    # Security incidents - Immediate security team notification
+    - matchers:
+        - team = "security"
+      receiver: 'security-team'
+      group_wait: 30s
+      group_interval: 2m
+      repeat_interval: 15m
+
+    # Marketing alerts - Business hours notification
+    - matchers:
+        - team = "marketing"
+      receiver: 'marketing-team'
+      group_wait: 2m
+      group_interval: 10m
+      repeat_interval: 1h
+      # Only during business hours (9 AM - 6 PM, Mon-Fri)
+      active_time_intervals:
+        - business_hours
+
+    # Infrastructure warnings - Operations team
+    - matchers:
+        - severity = "warning"
+        - alertname =~ "(HighCPUUsage|HighMemoryUsage|DiskSpaceLow)"
+      receiver: 'ops-team'
+      group_wait: 5m
+      group_interval: 15m
+      repeat_interval: 2h
+
+    # Application performance issues
+    - matchers:
+        - alertname =~ "(HighLatency|HighErrorRate)"
+      receiver: 'performance-team'
+      group_wait: 2m
+      group_interval: 5m
+      repeat_interval: 30m
+
+    # Lead generation performance issues
+    - matchers:
+        - alertname =~ "(LeadSubmissionRateDrop|ConversionRateDrop)"
+      receiver: 'revenue-team'
+      group_wait: 5m
+      group_interval: 15m
+      repeat_interval: 1h
+      active_time_intervals:
+        - business_hours
+
+# Inhibit rules to prevent alert spam
+inhibit_rules:
+  # If a service is down, don't alert on high latency/error rate
+  - source_matchers:
+      - alertname = "ServiceDown"
+    target_matchers:
+      - service =~ ".*"
+    equal: ['service', 'instance']
+
+  # If entire cluster is down, don't alert on individual services
+  - source_matchers:
+      - alertname = "ClusterDown"
+    target_matchers:
+      - alertname =~ "(ServiceDown|HighLatency|HighErrorRate)"
+    equal: ['cluster']
+
+  # If there's a critical alert, suppress warnings for the same service
+  - source_matchers:
+      - severity = "critical"
+    target_matchers:
+      - severity = "warning"
+    equal: ['service', 'instance']
+
+# Receiver configurations
+receivers:
+  # Fallback receiver
+  - name: 'web.hook.fallback'
+    slack_configs:
+      - channel: '#alerts-general'
+        title: 'Reboot Media Alert'
+        text: '{{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+        color: 'warning'
+
+  # Critical escalation path
+  - name: 'critical-escalation'
+    # Immediate PagerDuty alert
+    pagerduty_configs:
+      - service_key: '${PAGERDUTY_SERVICE_KEY_CRITICAL}'
+        description: '{{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+        severity: 'critical'
+        details:
+          environment: 'production'
+          service: '{{ .GroupLabels.service }}'
+          runbook: 'https://runbooks.rebootmedia.net/critical-incidents'
+    
+    # Immediate Slack notification
+    slack_configs:
+      - channel: '#incidents-critical'
+        title: '🚨 CRITICAL ALERT - Immediate Action Required'
+        text: |
+          *Service*: {{ .GroupLabels.service }}
+          *Environment*: Production
+          {{ range .Alerts }}
+          *Alert*: {{ .Annotations.summary }}
+          *Description*: {{ .Annotations.description }}
+          *Runbook*: {{ .Annotations.runbook_url }}
+          {{ end }}
+        color: 'danger'
+        actions:
+          - type: button
+            text: 'View Dashboard'
+            url: 'https://grafana.rebootmedia.net/d/executive'
+          - type: button
+            text: 'Acknowledge'
+            url: '{{ .ExternalURL }}'
+
+    # Email to on-call engineers
+    email_configs:
+      - to: 'oncall-engineers@rebootmedia.net'
+        subject: '🚨 CRITICAL: {{ .GroupLabels.service }} - {{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+        html: |
+          <h2 style="color: #d63031;">CRITICAL ALERT</h2>
+          <p><strong>Service:</strong> {{ .GroupLabels.service }}</p>
+          <p><strong>Environment:</strong> Production</p>
+          {{ range .Alerts }}
+          <h3>{{ .Annotations.summary }}</h3>
+          <p>{{ .Annotations.description }}</p>
+          <p><strong>Started:</strong> {{ .StartsAt.Format "2006-01-02 15:04:05 UTC" }}</p>
+          <p><strong>Runbook:</strong> <a href="{{ .Annotations.runbook_url }}">{{ .Annotations.runbook_url }}</a></p>
+          {{ end }}
+
+  # Security team notifications
+  - name: 'security-team'
+    slack_configs:
+      - channel: '#security-alerts'
+        title: '🔒 Security Alert'
+        text: |
+          {{ range .Alerts }}
+          *Alert*: {{ .Annotations.summary }}
+          *Description*: {{ .Annotations.description }}
+          *Severity*: {{ .Labels.severity }}
+          {{ end }}
+        color: '#fd79a8'
+
+    email_configs:
+      - to: 'security@rebootmedia.net'
+        subject: 'Security Alert: {{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+
+  # Marketing team notifications
+  - name: 'marketing-team'
+    slack_configs:
+      - channel: '#marketing-alerts'
+        title: '📊 Marketing Performance Alert'
+        text: |
+          {{ range .Alerts }}
+          *Metric*: {{ .Annotations.summary }}
+          *Impact*: {{ .Annotations.description }}
+          *Current Value*: {{ .Annotations.current_value }}
+          *Threshold*: {{ .Annotations.threshold }}
+          {{ end }}
+        color: '#fdcb6e'
+
+    email_configs:
+      - to: 'marketing@rebootmedia.net'
+        subject: 'Marketing Alert: {{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+
+  # Operations team notifications  
+  - name: 'ops-team'
+    slack_configs:
+      - channel: '#ops-alerts'
+        title: '⚙️ Infrastructure Alert'
+        text: |
+          {{ range .Alerts }}
+          *Resource*: {{ .Labels.instance }}
+          *Alert*: {{ .Annotations.summary }}
+          *Details*: {{ .Annotations.description }}
+          {{ end }}
+        color: '#e17055'
+
+  # Performance team notifications
+  - name: 'performance-team'
+    slack_configs:
+      - channel: '#performance-alerts'
+        title: '⚡ Performance Alert'
+        text: |
+          {{ range .Alerts }}
+          *Service*: {{ .Labels.service }}
+          *Issue*: {{ .Annotations.summary }}
+          *Impact*: {{ .Annotations.description }}
+          *SLA Breach*: {{ if .Annotations.sla_breach }}Yes{{ else }}No{{ end }}
+          {{ end }}
+        color: '#ffeaa7'
+
+  # Revenue team notifications
+  - name: 'revenue-team'
+    slack_configs:
+      - channel: '#revenue-alerts'
+        title: '💰 Revenue Impact Alert'
+        text: |
+          {{ range .Alerts }}
+          *Metric*: {{ .Annotations.summary }}
+          *Business Impact*: {{ .Annotations.description }}
+          *Estimated Revenue Impact*: {{ .Annotations.revenue_impact }}
+          {{ end }}
+        color: '#ff7675'
+
+    email_configs:
+      - to: 'revenue@rebootmedia.net,executives@rebootmedia.net'
+        subject: 'Revenue Alert: {{ range .Alerts }}{{ .Annotations.summary }}{{ end }}'
+
+# Time intervals for business hours routing
+time_intervals:
+  - name: business_hours
+    time_intervals:
+      - times:
+          - start_time: '09:00'
+            end_time: '18:00'
+        weekdays: ['monday:friday']
+        months: ['january:december']
+
+  - name: weekend_maintenance
+    time_intervals:
+      - times:
+          - start_time: '02:00'
+            end_time: '06:00'
+        weekdays: ['saturday', 'sunday']
+
+# Mute configuration for maintenance windows
+mute_time_intervals:
+  - name: maintenance_window
+    time_intervals:
+      - times:
+          - start_time: '02:00'
+            end_time: '04:00'
+        weekdays: ['sunday']
+        months: ['january:december']

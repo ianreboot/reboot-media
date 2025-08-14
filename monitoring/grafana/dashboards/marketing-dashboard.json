@@ -1,0 +1,373 @@
+{
+  "dashboard": {
+    "id": null,
+    "title": "Reboot Media - Marketing Intelligence",
+    "tags": ["marketing", "conversion", "attribution"],
+    "style": "dark",
+    "timezone": "browser",
+    "refresh": "5m",
+    "time": {
+      "from": "now-7d",
+      "to": "now"
+    },
+    "panels": [
+      {
+        "id": 1,
+        "title": "Conversion Funnel Analysis",
+        "type": "sankey",
+        "targets": [
+          {
+            "expr": "sum(increase(page_views_total{page=\"/\"}[24h]))",
+            "legendFormat": "Homepage Views",
+            "refId": "A"
+          },
+          {
+            "expr": "sum(increase(page_views_total{page=~\"/fractional.*\"}[24h]))",
+            "legendFormat": "Service Page Views",
+            "refId": "B"
+          },
+          {
+            "expr": "sum(increase(page_views_total{page=\"/contact\"}[24h]))",
+            "legendFormat": "Contact Page Views",
+            "refId": "C"
+          },
+          {
+            "expr": "sum(increase(leads_submitted_total[24h]))",
+            "legendFormat": "Lead Submissions",
+            "refId": "D"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 0}
+      },
+      {
+        "id": 2,
+        "title": "Lead Attribution by Source",
+        "type": "piechart",
+        "targets": [
+          {
+            "expr": "sum(increase(leads_submitted_total{source=\"organic\"}[7d]))",
+            "legendFormat": "Organic Search",
+            "refId": "A"
+          },
+          {
+            "expr": "sum(increase(leads_submitted_total{source=\"paid\"}[7d]))",
+            "legendFormat": "Paid Advertising",
+            "refId": "B"
+          },
+          {
+            "expr": "sum(increase(leads_submitted_total{source=\"social\"}[7d]))",
+            "legendFormat": "Social Media",
+            "refId": "C"
+          },
+          {
+            "expr": "sum(increase(leads_submitted_total{source=\"referral\"}[7d]))",
+            "legendFormat": "Referrals",
+            "refId": "D"
+          },
+          {
+            "expr": "sum(increase(leads_submitted_total{source=\"direct\"}[7d]))",
+            "legendFormat": "Direct Traffic",
+            "refId": "E"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "color": {"mode": "palette-classic"},
+            "unit": "short"
+          }
+        },
+        "options": {
+          "displayLabels": ["name", "value", "percent"]
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 8}
+      },
+      {
+        "id": 3,
+        "title": "Lead Quality Score Distribution",
+        "type": "histogram",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.25, lead_quality_score_bucket)",
+            "legendFormat": "Q1 (25th percentile)",
+            "refId": "A"
+          },
+          {
+            "expr": "histogram_quantile(0.50, lead_quality_score_bucket)",
+            "legendFormat": "Q2 (Median)",
+            "refId": "B"
+          },
+          {
+            "expr": "histogram_quantile(0.75, lead_quality_score_bucket)",
+            "legendFormat": "Q3 (75th percentile)",
+            "refId": "C"
+          },
+          {
+            "expr": "histogram_quantile(0.90, lead_quality_score_bucket)",
+            "legendFormat": "Q4 (90th percentile)",
+            "refId": "D"
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 8}
+      },
+      {
+        "id": 4,
+        "title": "Conversion Rate Trends",
+        "type": "timeseries",
+        "targets": [
+          {
+            "expr": "rate(leads_submitted_total{source=\"organic\"}[1h]) / rate(page_views_total{source=\"organic\"}[1h]) * 100",
+            "legendFormat": "Organic Conversion %",
+            "refId": "A"
+          },
+          {
+            "expr": "rate(leads_submitted_total{source=\"paid\"}[1h]) / rate(page_views_total{source=\"paid\"}[1h]) * 100",
+            "legendFormat": "Paid Conversion %",
+            "refId": "B"
+          },
+          {
+            "expr": "rate(leads_submitted_total{source=\"social\"}[1h]) / rate(page_views_total{source=\"social\"}[1h]) * 100",
+            "legendFormat": "Social Conversion %",
+            "refId": "C"
+          },
+          {
+            "expr": "rate(leads_submitted_total{source=\"referral\"}[1h]) / rate(page_views_total{source=\"referral\"}[1h]) * 100",
+            "legendFormat": "Referral Conversion %",
+            "refId": "D"
+          },
+          {
+            "expr": "rate(leads_submitted_total{source=\"direct\"}[1h]) / rate(page_views_total{source=\"direct\"}[1h]) * 100",
+            "legendFormat": "Direct Conversion %",
+            "refId": "E"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "percent",
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": null},
+                {"color": "yellow", "value": 2},
+                {"color": "green", "value": 3}
+              ]
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 16}
+      },
+      {
+        "id": 5,
+        "title": "Page Performance Impact on Conversion",
+        "type": "graph",
+        "targets": [
+          {
+            "expr": "histogram_quantile(0.75, sum(rate(web_vitals_lcp_bucket[5m])) by (le, page))",
+            "legendFormat": "LCP P75 - {{ page }}",
+            "refId": "A"
+          },
+          {
+            "expr": "rate(leads_submitted_total[5m]) by (landing_page) * 60",
+            "legendFormat": "Conversions/min - {{ landing_page }}",
+            "refId": "B"
+          }
+        ],
+        "yAxes": [
+          {
+            "label": "LCP (ms)",
+            "logBase": 1,
+            "max": 4000,
+            "min": 0,
+            "show": true
+          },
+          {
+            "label": "Conversions/min",
+            "logBase": 1,
+            "max": null,
+            "min": 0,
+            "show": true
+          }
+        ],
+        "gridPos": {"h": 8, "w": 12, "x": 0, "y": 24}
+      },
+      {
+        "id": 6,
+        "title": "A/B Test Performance",
+        "type": "table",
+        "targets": [
+          {
+            "expr": "sum(rate(leads_submitted_total[1h])) by (ab_test_variant) / sum(rate(page_views_total[1h])) by (ab_test_variant) * 100",
+            "legendFormat": "{{ ab_test_variant }}",
+            "refId": "A",
+            "instant": true
+          },
+          {
+            "expr": "sum(increase(leads_submitted_total[24h])) by (ab_test_variant)",
+            "legendFormat": "{{ ab_test_variant }}",
+            "refId": "B",
+            "instant": true
+          },
+          {
+            "expr": "sum(increase(page_views_total[24h])) by (ab_test_variant)",
+            "legendFormat": "{{ ab_test_variant }}",
+            "refId": "C",
+            "instant": true
+          }
+        ],
+        "transformations": [
+          {
+            "id": "merge",
+            "options": {}
+          },
+          {
+            "id": "organize",
+            "options": {
+              "excludeByName": {},
+              "indexByName": {},
+              "renameByName": {
+                "Value #A": "Conversion Rate %",
+                "Value #B": "Total Leads",
+                "Value #C": "Total Views"
+              }
+            }
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "custom": {
+              "align": "center",
+              "displayMode": "color-background"
+            },
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": null},
+                {"color": "yellow", "value": 2},
+                {"color": "green", "value": 3}
+              ]
+            }
+          },
+          "overrides": [
+            {
+              "matcher": {"id": "byName", "options": "Conversion Rate %"},
+              "properties": [
+                {"id": "unit", "value": "percent"}
+              ]
+            }
+          ]
+        },
+        "gridPos": {"h": 8, "w": 12, "x": 12, "y": 24}
+      },
+      {
+        "id": 7,
+        "title": "Marketing Channel ROI",
+        "type": "bargauge",
+        "targets": [
+          {
+            "expr": "sum(increase(revenue_attributed_total{channel=\"organic\"}[7d])) / sum(increase(marketing_spend_total{channel=\"organic\"}[7d]))",
+            "legendFormat": "Organic ROI",
+            "refId": "A"
+          },
+          {
+            "expr": "sum(increase(revenue_attributed_total{channel=\"paid_search\"}[7d])) / sum(increase(marketing_spend_total{channel=\"paid_search\"}[7d]))",
+            "legendFormat": "Paid Search ROI",
+            "refId": "B"
+          },
+          {
+            "expr": "sum(increase(revenue_attributed_total{channel=\"social_ads\"}[7d])) / sum(increase(marketing_spend_total{channel=\"social_ads\"}[7d]))",
+            "legendFormat": "Social Ads ROI",
+            "refId": "C"
+          },
+          {
+            "expr": "sum(increase(revenue_attributed_total{channel=\"display\"}[7d])) / sum(increase(marketing_spend_total{channel=\"display\"}[7d]))",
+            "legendFormat": "Display ROI",
+            "refId": "D"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "unit": "none",
+            "thresholds": {
+              "steps": [
+                {"color": "red", "value": null},
+                {"color": "yellow", "value": 2},
+                {"color": "green", "value": 3}
+              ]
+            }
+          }
+        },
+        "options": {
+          "orientation": "horizontal",
+          "displayMode": "gradient"
+        },
+        "gridPos": {"h": 6, "w": 24, "x": 0, "y": 32}
+      },
+      {
+        "id": 8,
+        "title": "Customer Journey Analytics",
+        "type": "heatmap",
+        "targets": [
+          {
+            "expr": "sum(rate(page_transitions_total[1h])) by (from_page, to_page)",
+            "legendFormat": "{{ from_page }} -> {{ to_page }}",
+            "refId": "A"
+          }
+        ],
+        "fieldConfig": {
+          "defaults": {
+            "custom": {
+              "hideFrom": {"legend": false, "tooltip": false, "vis": false},
+              "scaleDistribution": {"type": "linear"}
+            }
+          }
+        },
+        "gridPos": {"h": 8, "w": 24, "x": 0, "y": 38}
+      }
+    ],
+    "templating": {
+      "list": [
+        {
+          "name": "time_range",
+          "type": "interval",
+          "query": "1h,6h,12h,1d,7d,30d",
+          "current": {"text": "1d", "value": "1d"}
+        },
+        {
+          "name": "source",
+          "type": "query",
+          "query": "label_values(leads_submitted_total, source)",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          },
+          "multi": true,
+          "includeAll": true
+        }
+      ]
+    },
+    "annotations": {
+      "list": [
+        {
+          "name": "Marketing Campaigns",
+          "datasource": {
+            "type": "prometheus",
+            "uid": "${DS_PROMETHEUS}"
+          },
+          "enable": true,
+          "expr": "increase(campaign_launches_total[1m])",
+          "iconColor": "purple",
+          "titleFormat": "Campaign: {{ campaign_name }}",
+          "textFormat": "{{ campaign_description }}"
+        }
+      ]
+    },
+    "links": [
+      {
+        "title": "Executive Dashboard",
+        "url": "/d/executive/reboot-media-executive-dashboard"
+      },
+      {
+        "title": "Technical Operations",
+        "url": "/d/technical/reboot-media-technical-operations"
+      }
+    ],
+    "version": 1
+  }
+}
