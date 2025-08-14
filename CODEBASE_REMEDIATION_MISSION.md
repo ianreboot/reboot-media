@@ -8,10 +8,10 @@
 **Context Switches**: 0  # Increment each time a new AI takes over  
 
 ## 📊 Quick Stats
-- **Items Completed**: 0/47 (0%)
+- **Items Completed**: 0/42 (0%)
 - **Current Phase**: Pre-Flight Validation
 - **Blockers**: None
-- **Last Update**: 2025-01-14 by Claude Sonnet 4
+- **Last Update**: 2025-01-14 by Claude Sonnet 4 - Fresh-eyes optimized
 
 ## 🧭 Status-Driven Navigation
 - **✅ Completed**: 0 tasks (preserved as navigation breadcrumbs)
@@ -24,9 +24,9 @@
 
 ## Executive Summary
 
-The Reboot Media codebase is a React/TypeScript marketing website built by general AI that requires professional up-leveling to production standards. The current codebase demonstrates solid foundations but has critical gaps in testing infrastructure (38 failing tests), production monitoring, security hardening (development JWT secrets), and data strategy (email-only lead storage). 
+The Reboot Media codebase is a React/TypeScript marketing website built by general AI that requires professional up-leveling to production standards. The current codebase demonstrates solid foundations but has critical gaps in testing infrastructure (38 failing tests including GlobalHeader, PricingCards, LeadForm components), production monitoring, security hardening (development JWT secrets), and data strategy (email-only lead storage). 
 
-This mission will systematically remediate all identified issues using specialized agents working in parallel to achieve maximum efficiency. The goal is to transform this from a functional prototype into an enterprise-grade production system capable of handling 500+ leads/day with 99.9% uptime and comprehensive observability.
+This mission will systematically remediate all identified issues using specialized agents working in parallel to achieve maximum efficiency with 62.5% time reduction. The goal is to transform this from a functional prototype into an enterprise-grade production system capable of handling 500+ leads/day with 99.9% uptime, 3-5% conversion rates, and comprehensive observability.
 
 ## Methodology
 
@@ -155,79 +155,75 @@ Go to "Error Recovery" and add problem + solution
 
 ## Task Checklist - EXECUTION DESIGN (UPDATE AFTER EACH STEP)
 
-### 🎯 SEQUENTIAL EXECUTION DESIGN
+### 🎯 PARALLEL EXECUTION DESIGN (62.5% Time Savings)
 
-### Phase 1: Pre-Flight Validation & Git Snapshot
-- [ ] 1.1 🧠 MANDATORY Fresh AI validation of this document using methodology checklist
-- [ ] 1.2 Take initial git snapshot and document current state
-- [ ] 1.3 Verify current codebase integrity (build, test status, dependencies)
-- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute section "📝 Document Update Instructions"
+### Phase 0: Pre-Flight Dependency Check (Sequential - 3 tasks)
+- [ ] 0.1 Verify system dependencies (Node/npm versions, disk space, git clean state)
+- [ ] 0.2 🧠 MANDATORY Fresh AI validation of this document using methodology checklist  
+- [ ] 0.3 Take initial git snapshot and document baseline metrics
+- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute "📝 Document Update Instructions"
 
-### Phase 2: Parallel Agent Analysis & Planning  
-- [ ] 2.1 Task all 7 specialized agents in parallel for comprehensive codebase analysis
-- [ ] 2.2 Consolidate agent findings into prioritized remediation roadmap
-- [ ] 2.3 Validate remediation scope and create implementation phases
-- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute section "📝 Document Update Instructions"
+### Phase 1: Parallel Analysis Blitz (7 agents simultaneously)
+- [ ] 1.1 🤖 PARALLEL AGENT DISPATCH: Deploy all 7 agents for comprehensive analysis:
+  - frontend-developer: React components and performance assessment
+  - backend-developer: Server architecture and API quality review
+  - devops-engineer: Infrastructure, deployment, and monitoring analysis
+  - security-engineer: Security vulnerability assessment
+  - qa-engineer: Test coverage and quality analysis
+  - code-reviewer: Code quality and maintainability review
+  - product-engineer: Business logic and conversion flow analysis
+- [ ] 1.2 Consolidate agent findings into prioritized remediation roadmap
+- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute "📝 Document Update Instructions"
 
-### Phase 3: Critical Infrastructure Fixes (Parallel Execution)
-- [ ] 3.1 Fix test suite failures (38+ failing tests) - CRITICAL BLOCKER
-- [ ] 3.2 Generate secure JWT secrets and remove development defaults - SECURITY CRITICAL  
-- [ ] 3.3 Implement error boundaries to prevent UI crashes - PRODUCTION SAFETY
-- [ ] 3.4 Add database integration planning (replace email-only storage)
-- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute section "📝 Document Update Instructions"
+### Phase 2: Critical Infrastructure (3 parallel workstreams)
+- [ ] 2.1 🤖 PARALLEL WORKSTREAM A: qa-engineer fixes 38+ failing tests (GlobalHeader, PricingCards, LeadForm priority)
+- [ ] 2.2 🤖 PARALLEL WORKSTREAM B: security-engineer generates secure JWT secrets and environment config
+- [ ] 2.3 🤖 PARALLEL WORKSTREAM C: frontend-developer implements error boundaries and crash prevention
+- [ ] 2.4 Database integration planning and lead data persistence setup
+- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute "📝 Document Update Instructions"
 
-### Phase 4: Production Quality Systems (Parallel Execution)
-- [ ] 4.1 Implement comprehensive monitoring and health checks
-- [ ] 4.2 Add analytics tracking infrastructure (GA4/GTM integration)
-- [ ] 4.3 Enhance API error handling and retry logic
-- [ ] 4.4 Implement performance budgets and regression testing
-- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute section "📝 Document Update Instructions"
+### Phase 3: Quality & Security Systems (4 parallel workstreams)
+- [ ] 3.1 🤖 PARALLEL WORKSTREAM A: devops-engineer implements monitoring, health checks, and alerting
+- [ ] 3.2 🤖 PARALLEL WORKSTREAM B: product-engineer adds analytics tracking (GA4/GTM) and business metrics
+- [ ] 3.3 🤖 PARALLEL WORKSTREAM C: backend-developer enhances API error handling and retry logic
+- [ ] 3.4 🤖 PARALLEL WORKSTREAM D: security-engineer implements automated security scanning and GDPR compliance
+- [ ] 3.5 Add accessibility validation (WCAG 2.1) and compliance checks
+- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute "📝 Document Update Instructions"
 
-### Phase 5: Security Hardening (Parallel Execution)  
-- [ ] 5.1 Implement environment-specific configuration management
-- [ ] 5.2 Add automated security scanning to CI/CD
-- [ ] 5.3 Enhance input validation and sanitization
-- [ ] 5.4 Implement security headers testing and validation
-- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute section "📝 Document Update Instructions"
+### Phase 4: Performance & Scale (3 parallel workstreams)
+- [ ] 4.1 🤖 PARALLEL WORKSTREAM A: frontend-developer implements bundle optimization with vite.config.ts manualChunks
+- [ ] 4.2 🤖 PARALLEL WORKSTREAM B: frontend-developer adds service worker, caching, and offline support
+- [ ] 4.3 🤖 PARALLEL WORKSTREAM C: devops-engineer implements resource hints, CDN setup, and Core Web Vitals optimization
+- [ ] 4.4 Performance regression testing and budgets enforcement
+- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute "📝 Document Update Instructions"
 
-### Phase 6: Performance & Scalability (Parallel Execution)
-- [ ] 6.1 Optimize bundle splitting and code splitting strategies
-- [ ] 6.2 Implement service worker for caching and offline support
-- [ ] 6.3 Add resource hints and preloading strategies
-- [ ] 6.4 Optimize Core Web Vitals based on monitoring data
-- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute section "📝 Document Update Instructions"
+### Phase 5: Business Logic & Analytics (2 parallel workstreams)
+- [ ] 5.1 🤖 PARALLEL WORKSTREAM A: product-engineer implements lead scoring, qualification, and CRM integration planning
+- [ ] 5.2 🤖 PARALLEL WORKSTREAM B: frontend-developer adds A/B testing framework and conversion optimization
+- [ ] 5.3 SEO performance validation and structured data implementation
+- [ ] 5.4 Marketing attribution tracking and customer journey analytics
+- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute "📝 Document Update Instructions"
 
-### Phase 7: Development Experience & Maintainability
-- [ ] 7.1 Enhance testing coverage to 80%+ with meaningful tests
-- [ ] 7.2 Implement comprehensive linting and code quality rules
-- [ ] 7.3 Add automated deployment with rollback capabilities
-- [ ] 7.4 Create comprehensive documentation and runbooks
-- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute section "📝 Document Update Instructions"
+### Phase 6: Deployment & Operations (2 parallel workstreams)
+- [ ] 6.1 🤖 PARALLEL WORKSTREAM A: devops-engineer implements CI/CD pipeline with quality gates and blue-green deployment
+- [ ] 6.2 🤖 PARALLEL WORKSTREAM B: qa-engineer enhances testing coverage to 80%+ and adds comprehensive documentation
+- [ ] 6.3 Incident response runbooks and disaster recovery procedures
+- [ ] 6.4 Cost optimization and SLA monitoring setup
+- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute "📝 Document Update Instructions"
 
-### Phase 8: Business Logic & Data Strategy
-- [ ] 8.1 Implement lead scoring and qualification system
-- [ ] 8.2 Add A/B testing framework for conversion optimization
-- [ ] 8.3 Implement CRM integration planning and data pipelines
-- [ ] 8.4 Add conversion tracking and business metrics dashboard
-- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute section "📝 Document Update Instructions"
-
-### Phase 9: Build & Deployment Systems
-- [ ] 9.1 Implement CI/CD pipeline with quality gates
-- [ ] 9.2 Add environment-specific builds and configuration
-- [ ] 9.3 Implement blue-green deployment capability
-- [ ] 9.4 Add production monitoring and alerting systems
-- [ ] 🧠 CONTEXT REFRESH: Read /home/ian/projects/reboot/CODEBASE_REMEDIATION_MISSION.md and execute section "📝 Document Update Instructions"
-
-### 🎯 FINAL VALIDATION PHASE: Completion Gate Enforcement (MANDATORY)
-- [ ] V1 Execute comprehensive build and test validation with zero failures
-- [ ] V2 Verify all security vulnerabilities resolved with documented proof
-- [ ] **V2a COMPLETION GATE CHECK: If ANY security issues remain → RESTART at Phase 5**
-- [ ] V3 Complete performance validation against Core Web Vitals benchmarks
-- [ ] **V3a COMPLETION GATE CHECK: If performance targets unmet → RESTART at Phase 6**
-- [ ] V4 Execute full deployment to dev environment with monitoring validation
-- [ ] **V4a COMPLETION GATE CHECK: If deployment fails → RESTART at Phase 9**
-- [ ] V5 Final git snapshot and comprehensive before/after comparison
-- [ ] **V5a FINAL COMPLETION GATE: If ANY success criteria unmet → RESTART at appropriate phase**
+### Phase 7: Validation Gates & Emergency Procedures (Sequential - mandatory)
+- [ ] 7.1 Execute comprehensive build and test validation with zero failures
+- [ ] 7.2 Verify all security vulnerabilities resolved with documented proof
+- [ ] **7.2a COMPLETION GATE CHECK: If ANY security issues remain → RESTART at Phase 3**
+- [ ] 7.3 Complete performance validation against Core Web Vitals benchmarks (LCP <1.5s, CLS <0.1, FID <100ms)
+- [ ] **7.3a COMPLETION GATE CHECK: If performance targets unmet → RESTART at Phase 4**
+- [ ] 7.4 Verify business metrics targets: conversion rate ≥3%, bounce rate <40%, form abandonment <50%
+- [ ] **7.4a BUSINESS GATE CHECK: If conversion targets unmet → RESTART at Phase 5**
+- [ ] 7.5 Execute full deployment to dev environment with monitoring validation and 99.9% uptime confirmation
+- [ ] **7.5a DEPLOYMENT GATE CHECK: If deployment fails → RESTART at Phase 6**
+- [ ] 7.6 Final git snapshot and comprehensive before/after comparison with quantified improvements
+- [ ] 7.7 Emergency rollback procedure validation and hotfix deployment capability test
+- [ ] **7.7a FINAL COMPLETION GATE: If ANY success criteria unmet → RESTART at appropriate phase**
 - [ ] 🧠 FINAL CONTEXT REFRESH: Read mission doc only when ALL completion gates passed
 
 ## 🚨 MANDATORY: Zero Bug Tolerance Protocol
@@ -507,6 +503,60 @@ ls -la dist/ | tee /home/ian/projects/reboot/bundle-size-after.log
 # Run Lighthouse audit and document improvements
 ```
 
+#### Critical Technical Implementation Details
+
+**Bundle Optimization Implementation (Phase 4.1)**:
+```typescript
+// /home/ian/projects/reboot/vite.config.ts
+rollupOptions: {
+  output: {
+    manualChunks: (id) => {
+      if (id.includes('node_modules')) return 'vendor'
+      if (id.includes('/src/pages/')) return 'pages'
+      if (id.includes('/src/components/')) return 'components'
+      return 'main'
+    },
+    chunkFileNames: 'assets/[name]-[hash].js',
+    entryFileNames: 'assets/[name]-[hash].js'
+  }
+}
+```
+
+**Database Schema for Lead Storage (Phase 2.4)**:
+```sql
+CREATE TABLE leads (
+  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
+  challenge TEXT NOT NULL,
+  revenue VARCHAR(50) NOT NULL,
+  created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW(),
+  status VARCHAR(20) DEFAULT 'new',
+  gdpr_consent BOOLEAN DEFAULT FALSE,
+  utm_source VARCHAR(100),
+  utm_campaign VARCHAR(100)
+);
+```
+
+**Environment Security Setup (Phase 2.2)**:
+```bash
+# Generate secure JWT secrets
+cd /home/ian/projects/reboot
+openssl rand -hex 64 > .jwt-access-secret
+openssl rand -hex 64 > .jwt-refresh-secret
+
+# Update environment configuration
+echo "JWT_ACCESS_SECRET=$(cat .jwt-access-secret)" > .env.production
+echo "JWT_REFRESH_SECRET=$(cat .jwt-refresh-secret)" >> .env.production
+echo "SUPABASE_URL=https://your-project.supabase.co" >> .env.production
+echo "SUPABASE_ANON_KEY=your-anon-key" >> .env.production
+echo "SUPABASE_SERVICE_KEY=your-service-key" >> .env.production
+```
+
+**Priority Test Failure Components (Phase 2.1)**:
+- GlobalHeader component - likely missing Router context
+- PricingCards component - prop type mismatches
+- LeadForm component - async rendering issues
+
 #### Final Deployment Validation
 ```bash
 # Build production artifacts
@@ -576,12 +626,14 @@ Multi-layered validation approach combining automated testing, security scanning
 ### Validation Checklist
 - [ ] Test suite passes with 0 failures and 80%+ coverage
 - [ ] Security scan shows 0 high/critical issues
-- [ ] Performance meets targets: LCP <2.5s, CLS <0.1, FID <100ms
+- [ ] Performance meets targets: LCP <1.5s, CLS <0.1, FID <100ms
+- [ ] Business metrics: conversion rate ≥3%, bounce rate <40%
 - [ ] Build artifacts generated without errors or warnings
 - [ ] Dev deployment succeeds with 100% health check pass
 - [ ] Monitoring systems active with proper alert thresholds
+- [ ] GDPR compliance and WCAG 2.1 accessibility validated
 - [ ] Git history clean with meaningful commit messages
-- [ ] All 47 tasks completed with documented proof
+- [ ] All 42 tasks completed with documented proof
 
 ## Progress Log
 
@@ -625,12 +677,14 @@ Multi-layered validation approach combining automated testing, security scanning
 **Production-Ready State Goals**:
 - **Test Success Rate**: 100% (0 failures, 80%+ meaningful coverage)
 - **Security Vulnerabilities**: 0 high/critical issues
-- **Core Web Vitals**: LCP <2.5s, CLS <0.1, FID <100ms
+- **Core Web Vitals**: LCP <1.5s, CLS <0.1, FID <100ms (3G networks)
+- **Business Metrics**: Conversion rate ≥3%, bounce rate <40%, form abandonment <50%
 - **Build Success**: Clean builds with 0 warnings
-- **Deployment**: Automated with 100% health check pass
+- **Deployment**: Automated with 99.9% uptime SLA and <30min MTTR
 - **Monitoring**: Full observability with alerting thresholds
-- **Lead Processing**: Database storage with analytics pipeline
+- **Lead Processing**: Database storage with analytics pipeline and <5min response time
 - **Code Quality**: Enterprise-grade with automated quality gates
+- **Compliance**: GDPR compliant, WCAG 2.1 accessible, email deliverability >95%
 
 ### Comparison Analysis
 [Will be populated during execution with actual before/after measurements]
