@@ -10,9 +10,7 @@ const CORE_CACHE_RESOURCES = [
   '/',
   '/reboot/',
   '/reboot/index.html',
-  '/reboot/manifest.json',
-  '/reboot/favicon.ico',
-  '/reboot/favicon.svg',
+  // Note: favicon files are served from HTML meta tags, not needed in cache
 ];
 
 // Install event - cache core resources
