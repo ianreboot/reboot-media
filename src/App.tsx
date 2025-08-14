@@ -14,7 +14,8 @@ import {
 import SchemaMarkup from './components/SchemaMarkup';
 import SEOHead from './components/SEOHead';
 import BackgroundGradient from './components/BackgroundGradient';
-import EnhancedPerformanceMonitor from './components/EnhancedPerformanceMonitor';
+import { useCoreWebVitals } from './hooks/useCoreWebVitals';
+import analytics from './utils/simpleAnalytics';
 import ErrorBoundary from './components/ErrorBoundary';
 import { useLeadForm } from './contexts/LeadFormContext';
 import { useErrorReporter } from './contexts/ErrorContext';
@@ -61,6 +62,9 @@ const MainApp = () => {
   useScrollOptimization();
   useTimeBasedOptimization();
   useClickHeatmap();
+  
+  // Simple Core Web Vitals tracking
+  useCoreWebVitals();
 
   // Global error handler for unhandled promise rejections
   useEffect(() => {
@@ -160,7 +164,10 @@ const MainApp = () => {
           {/* Single Primary CTA */}
           <div className="flex justify-center">
             <button 
-              onClick={() => setShowDropdownForm(true)}
+              onClick={() => {
+                analytics.ctaClick('Show Me What\'s Broken in My Marketing', 'hero');
+                setShowDropdownForm(true);
+              }}
               className="cta-primary px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center gap-3"
             >
               <span className="text-2xl">🔍</span>
@@ -664,7 +671,10 @@ const MainApp = () => {
             {/* Final CTA */}
             <div>
               <button 
-                onClick={() => setShowDropdownForm(true)}
+                onClick={() => {
+                  analytics.ctaClick('Yes, Show Me What I\'m Missing', 'final-cta');
+                  setShowDropdownForm(true);
+                }}
                 className="bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 hover:via-orange-700 hover:to-red-600 text-white px-10 sm:px-14 py-5 rounded-xl font-black text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center gap-3 group"
               >
                 <span>Yes, Show Me What I'm Missing</span>
@@ -707,18 +717,6 @@ const MainApp = () => {
 
       {/* A/B Testing Dashboard (Development Only) */}
       <ABTestingDashboardTrigger />
-      
-      {/* Performance Monitor (development only) - Non-critical development tool */}
-      <ErrorBoundary level="component" name="EnhancedPerformanceMonitor">
-        <EnhancedPerformanceMonitor
-          showInProduction={false}
-          position="bottom-right"
-          minimized={true}
-          enableAlerts={true}
-          enableTrends={true}
-          enableBudgets={true}
-        />
-      </ErrorBoundary>
         </div>
       </div>
     </>

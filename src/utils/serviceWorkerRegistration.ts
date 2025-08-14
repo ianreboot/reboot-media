@@ -203,35 +203,11 @@ export function cacheResources(urls: string[]): Promise<void> {
   });
 }
 
-// Performance-aware service worker integration
+// Basic service worker integration - complex performance monitoring removed
 export function setupPerformanceIntegration(): void {
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.ready.then(() => {
-      // Send performance metrics to service worker
-      const sendMetrics = () => {
-        if (navigator.serviceWorker.controller) {
-          const perfEntries = performance.getEntriesByType('navigation');
-          if (perfEntries.length > 0) {
-            const entry = perfEntries[0] as PerformanceNavigationTiming;
-            navigator.serviceWorker.controller.postMessage({
-              type: 'PERFORMANCE_DATA',
-              data: {
-                loadTime: entry.loadEventEnd - entry.fetchStart,
-                domContentLoaded: entry.domContentLoadedEventEnd - entry.fetchStart,
-                firstPaint: performance.getEntriesByName('first-paint')[0]?.startTime || 0,
-                firstContentfulPaint: performance.getEntriesByName('first-contentful-paint')[0]?.startTime || 0,
-              },
-            });
-          }
-        }
-      };
-
-      // Send metrics after load
-      if (document.readyState === 'complete') {
-        sendMetrics();
-      } else {
-        window.addEventListener('load', sendMetrics);
-      }
+      console.log('[SW] Service worker ready for basic caching');
     });
   }
 }

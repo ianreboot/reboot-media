@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { getOgImageUrl, getCanonicalUrl } from '../utils/urls';
 import { PAGE_SEO_CONFIG, generateStructuredData, type SEOMetaConfig } from '../utils/seoUtils';
-import { useCoreWebVitals } from '../hooks/useCoreWebVitals';
+// Core Web Vitals tracking removed - SEO doesn't need performance data in meta tags
 
 interface SEOHeadProps extends Partial<SEOMetaConfig> {
   pageSlug?: string;
@@ -27,7 +27,7 @@ const SEOHead = ({
   articlePublisher = 'Reboot Media',
   businessEmail = 'ian@rebootmedia.net'
 }: SEOHeadProps) => {
-  const coreWebVitals = useCoreWebVitals();
+  // Core Web Vitals tracking moved to App level
 
   // Auto-configure SEO based on page slug if provided
   const pageConfig = pageSlug ? PAGE_SEO_CONFIG[pageSlug as keyof typeof PAGE_SEO_CONFIG] : null;
@@ -192,24 +192,7 @@ const SEOHead = ({
     };
   }, [finalTitle, finalDescription, finalKeywords, finalCanonicalUrl, ogTitle, ogDescription, finalOgImage, pageSlug, structuredDataType, customStructuredData, enableCoreWebVitalsOptimization, twitterCard, articleAuthor, articlePublisher, businessEmail]);
 
-  // Report SEO metrics for monitoring
-  useEffect(() => {
-    if (coreWebVitals && !coreWebVitals.isLoading) {
-      const seoMetrics = {
-        page: pageSlug || 'unknown',
-        title: finalTitle,
-        lcp: coreWebVitals.lcp?.value,
-        fid: coreWebVitals.fid?.value,
-        cls: coreWebVitals.cls?.value,
-        inp: coreWebVitals.inp?.value,
-        score: coreWebVitals.score,
-        timestamp: new Date().toISOString()
-      };
-      
-      // Log for monitoring (could be sent to analytics)
-      console.log('SEO Metrics:', seoMetrics);
-    }
-  }, [coreWebVitals, pageSlug, finalTitle]);
+  // SEO metrics monitoring removed - Core Web Vitals tracked at App level
 
   return null; // This component doesn't render anything
 };

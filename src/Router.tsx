@@ -41,8 +41,7 @@ import { LeadFormProvider } from './contexts/LeadFormContext';
 import LeadForm from './components/LeadForm';
 import { PageLoadingSpinner, LazyLoadErrorFallback } from './components/LoadingComponents';
 
-// Lazy load analytics dashboards
-const AttributionDashboard = lazy(() => import('./components/AttributionDashboard'));
+// Analytics dashboards removed - were making 404 API calls to over-engineered endpoints
 
 const Router = () => {
   // Determine base path based on environment
@@ -301,15 +300,7 @@ const Router = () => {
                     } 
                   />
                   
-                  {/* Analytics Dashboard Routes */}
-                  <Route 
-                    path="/analytics/attribution" 
-                    element={
-                      <ErrorBoundary level="page" name="AttributionDashboardPage">
-                        <AttributionDashboard />
-                      </ErrorBoundary>
-                    } 
-                  />
+                  {/* Analytics Dashboard Routes - removed over-engineered monitoring */}
                 </Routes>
               </Suspense>
             </ErrorBoundary>
