@@ -35,6 +35,7 @@ import formRoutes from './routes/forms.js';
 import performanceRoutes from './routes/performance.js';
 import leadManagementRoutes from './routes/leadManagement.js';
 import attributionRoutes from './routes/attribution.js';
+import businessMetricsRoutes from './routes/business-metrics.js';
 
 // Load environment variables
 dotenv.config();
@@ -275,6 +276,7 @@ app.use('/api/forms', strictFormLimiter, formLimiter, formRoutes);
 app.use('/api/v1/performance', performanceRoutes);
 app.use('/api/leads', leadManagementRoutes);
 app.use('/api/attribution', attributionRoutes);
+app.use('/api', businessMetricsRoutes);
 
 // Serve static files in production
 if (process.env.NODE_ENV === 'production') {
