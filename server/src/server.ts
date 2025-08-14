@@ -32,6 +32,7 @@ import {
 } from './middleware/performance.js';
 import { cacheResponse } from './middleware/caching.js';
 import formRoutes from './routes/forms.js';
+import performanceRoutes from './routes/performance.js';
 
 // Load environment variables
 dotenv.config();
@@ -269,6 +270,7 @@ app.post('/api/cache/clear',
 
 // API routes with layered rate limiting
 app.use('/api/forms', strictFormLimiter, formLimiter, formRoutes);
+app.use('/api/v1/performance', performanceRoutes);
 
 // Serve static files in production
 if (process.env.NODE_ENV === 'production') {

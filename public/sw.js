@@ -1,7 +1,8 @@
 // Service Worker for Performance Optimization and Offline Capability
-// Version: 1.0.0
+// Version: 2.0.0 - Enhanced with Core Web Vitals monitoring
 
-const CACHE_NAME = 'reboot-media-v1';
+const CACHE_NAME = 'reboot-media-v2';
+const PERFORMANCE_CACHE = 'reboot-performance-v1';
 const OFFLINE_URL = '/offline.html';
 
 // Assets to cache on install
@@ -227,32 +228,342 @@ function isExpired(response, maxAge) {
   return (now - responseTime) > maxAge;
 }
 
-// Performance monitoring - Core Web Vitals
-self.addEventListener('message', (event) => {
-  if (event.data && event.data.type === 'PERFORMANCE_METRIC') {
-    console.log('[SW] Performance metric:', event.data.metric);
+// Enhanced Performance monitoring and analytics storage
+self.addEventListener('message', async (event) => {
+  if (!event.data) return;
+
+  const { type, data } = event.data;
+
+  switch (type) {
+    case 'PERFORMANCE_METRIC':
+      await handlePerformanceMetric(data);
+      break;
     
-    // Store performance metrics for analysis
-    if (event.data.metric.name === 'LCP') {
-      console.log('[SW] LCP:', event.data.metric.value);
-    } else if (event.data.metric.name === 'FID') {
-      console.log('[SW] FID:', event.data.metric.value);
-    } else if (event.data.metric.name === 'CLS') {
-      console.log('[SW] CLS:', event.data.metric.value);
+    case 'PERFORMANCE_ANALYTICS':
+      await handlePerformanceAnalytics(data);
+      break;
+    
+    case 'GET_OFFLINE_ANALYTICS':
+      await sendOfflineAnalytics();
+      break;
+      
+    case 'CLEAR_PERFORMANCE_DATA':
+      await clearPerformanceData();
+      break;
+  }
+});
+
+// Handle individual performance metrics
+async function handlePerformanceMetric(metric) {
+  try {
+    console.log('[SW] Performance metric received:', metric.name, metric.value);
+    
+    // Store in IndexedDB for offline analytics
+    await storePerformanceData('metrics', {
+      ...metric,
+      storedAt: Date.now(),
+      synced: false,
+    });
+    
+    // Attempt immediate sync if online
+    if (navigator.onLine) {
+      await syncPerformanceMetric(metric);
     }
+  } catch (error) {
+    console.error('[SW] Error handling performance metric:', error);
   }
-});
+}
 
-// Background sync for form submissions
+// Handle complete analytics payload
+async function handlePerformanceAnalytics(analyticsData) {
+  try {
+    console.log('[SW] Analytics data received:', analyticsData.sessionId);
+    
+    // Store in IndexedDB for offline capabilities
+    await storePerformanceData('analytics', {
+      ...analyticsData,
+      storedAt: Date.now(),
+      synced: false,
+    });
+    
+    // Attempt immediate sync if online
+    if (navigator.onLine) {
+      await syncAnalyticsData(analyticsData);
+    } else {
+      // Schedule background sync
+      await scheduleBackgroundSync();
+    }
+  } catch (error) {
+    console.error('[SW] Error handling analytics data:', error);
+  }
+}
+
+// Store performance data in IndexedDB
+async function storePerformanceData(storeName, data) {
+  return new Promise((resolve, reject) => {
+    const request = indexedDB.open('PerformanceDB', 1);
+    
+    request.onerror = () => reject(request.error);
+    
+    request.onsuccess = () => {
+      const db = request.result;
+      const transaction = db.transaction([storeName], 'readwrite');
+      const store = transaction.objectStore(storeName);
+      
+      const addRequest = store.add({
+        ...data,
+        id: `${data.sessionId || Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+      });
+      
+      addRequest.onsuccess = () => resolve(addRequest.result);
+      addRequest.onerror = () => reject(addRequest.error);
+    };
+    
+    request.onupgradeneeded = (event) => {
+      const db = event.target.result;
+      
+      // Create metrics store
+      if (!db.objectStoreNames.contains('metrics')) {
+        const metricsStore = db.createObjectStore('metrics', { keyPath: 'id' });
+        metricsStore.createIndex('sessionId', 'sessionId', { unique: false });
+        metricsStore.createIndex('synced', 'synced', { unique: false });
+      }
+      
+      // Create analytics store
+      if (!db.objectStoreNames.contains('analytics')) {
+        const analyticsStore = db.createObjectStore('analytics', { keyPath: 'id' });
+        analyticsStore.createIndex('sessionId', 'sessionId', { unique: false });
+        analyticsStore.createIndex('synced', 'synced', { unique: false });
+      }
+    };
+  });
+}
+
+// Sync single performance metric
+async function syncPerformanceMetric(metric) {
+  try {
+    const response = await fetch('/api/v1/performance/metrics', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(metric),
+    });
+    
+    if (response.ok) {
+      console.log('[SW] Performance metric synced:', metric.name);
+    }
+  } catch (error) {
+    console.warn('[SW] Failed to sync performance metric:', error);
+  }
+}
+
+// Sync analytics data
+async function syncAnalyticsData(data) {
+  try {
+    const response = await fetch('/api/v1/performance/analytics', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(data),
+    });
+    
+    if (response.ok) {
+      console.log('[SW] Analytics data synced:', data.sessionId);
+      // Mark as synced in IndexedDB
+      await markDataAsSynced('analytics', data.sessionId);
+      return true;
+    }
+  } catch (error) {
+    console.warn('[SW] Failed to sync analytics data:', error);
+  }
+  return false;
+}
+
+// Mark data as synced in IndexedDB
+async function markDataAsSynced(storeName, sessionId) {
+  return new Promise((resolve, reject) => {
+    const request = indexedDB.open('PerformanceDB', 1);
+    
+    request.onsuccess = () => {
+      const db = request.result;
+      const transaction = db.transaction([storeName], 'readwrite');
+      const store = transaction.objectStore(storeName);
+      const index = store.index('sessionId');
+      
+      index.openCursor(sessionId).onsuccess = (event) => {
+        const cursor = event.target.result;
+        if (cursor) {
+          const record = cursor.value;
+          record.synced = true;
+          record.syncedAt = Date.now();
+          cursor.update(record);
+          cursor.continue();
+        } else {
+          resolve();
+        }
+      };
+    };
+    
+    request.onerror = () => reject(request.error);
+  });
+}
+
+// Send offline analytics to main thread
+async function sendOfflineAnalytics() {
+  try {
+    const unsyncedData = await getUnsyncedData();
+    
+    // Send to all clients
+    const clients = await self.clients.matchAll();
+    clients.forEach(client => {
+      client.postMessage({
+        type: 'OFFLINE_ANALYTICS',
+        data: unsyncedData,
+      });
+    });
+  } catch (error) {
+    console.error('[SW] Error sending offline analytics:', error);
+  }
+}
+
+// Get unsynced performance data
+async function getUnsyncedData() {
+  return new Promise((resolve, reject) => {
+    const request = indexedDB.open('PerformanceDB', 1);
+    
+    request.onsuccess = () => {
+      const db = request.result;
+      const results = { metrics: [], analytics: [] };
+      
+      // Get unsynced metrics
+      const metricsTransaction = db.transaction(['metrics'], 'readonly');
+      const metricsStore = metricsTransaction.objectStore('metrics');
+      const metricsIndex = metricsStore.index('synced');
+      
+      metricsIndex.openCursor(false).onsuccess = (event) => {
+        const cursor = event.target.result;
+        if (cursor) {
+          results.metrics.push(cursor.value);
+          cursor.continue();
+        }
+      };
+      
+      // Get unsynced analytics
+      const analyticsTransaction = db.transaction(['analytics'], 'readonly');
+      const analyticsStore = analyticsTransaction.objectStore('analytics');
+      const analyticsIndex = analyticsStore.index('synced');
+      
+      analyticsIndex.openCursor(false).onsuccess = (event) => {
+        const cursor = event.target.result;
+        if (cursor) {
+          results.analytics.push(cursor.value);
+          cursor.continue();
+        }
+      };
+      
+      // Wait for both to complete
+      Promise.all([
+        new Promise(res => metricsTransaction.oncomplete = () => res()),
+        new Promise(res => analyticsTransaction.oncomplete = () => res()),
+      ]).then(() => resolve(results));
+    };
+    
+    request.onerror = () => reject(request.error);
+  });
+}
+
+// Schedule background sync
+async function scheduleBackgroundSync() {
+  try {
+    await self.registration.sync.register('performance-sync');
+    console.log('[SW] Background sync scheduled for performance data');
+  } catch (error) {
+    console.warn('[SW] Background sync not available:', error);
+  }
+}
+
+// Clear old performance data
+async function clearPerformanceData() {
+  return new Promise((resolve, reject) => {
+    const request = indexedDB.open('PerformanceDB', 1);
+    
+    request.onsuccess = () => {
+      const db = request.result;
+      const transaction = db.transaction(['metrics', 'analytics'], 'readwrite');
+      
+      transaction.objectStore('metrics').clear();
+      transaction.objectStore('analytics').clear();
+      
+      transaction.oncomplete = () => {
+        console.log('[SW] Performance data cleared');
+        resolve();
+      };
+      
+      transaction.onerror = () => reject(transaction.error);
+    };
+    
+    request.onerror = () => reject(request.error);
+  });
+}
+
+// Enhanced background sync for forms and performance data
 self.addEventListener('sync', (event) => {
-  if (event.tag === 'background-sync') {
-    event.waitUntil(handleBackgroundSync());
+  if (event.tag === 'background-sync' || event.tag === 'performance-sync') {
+    event.waitUntil(handleBackgroundSync(event.tag));
   }
 });
 
-async function handleBackgroundSync() {
-  // Handle any queued form submissions or data sync
-  console.log('[SW] Background sync triggered');
+async function handleBackgroundSync(tag) {
+  console.log(`[SW] Background sync triggered: ${tag}`);
+  
+  if (tag === 'performance-sync') {
+    await syncOfflinePerformanceData();
+  } else {
+    // Handle any queued form submissions or other data sync
+    console.log('[SW] Background sync for forms triggered');
+  }
+}
+
+// Sync offline performance data when connectivity is restored
+async function syncOfflinePerformanceData() {
+  try {
+    const unsyncedData = await getUnsyncedData();
+    
+    console.log(`[SW] Syncing ${unsyncedData.analytics.length} analytics records and ${unsyncedData.metrics.length} metrics`);
+    
+    // Sync analytics data
+    for (const analyticsRecord of unsyncedData.analytics) {
+      const success = await syncAnalyticsData(analyticsRecord);
+      if (!success) {
+        console.warn('[SW] Failed to sync analytics record:', analyticsRecord.id);
+      }
+    }
+    
+    // Sync individual metrics
+    for (const metricRecord of unsyncedData.metrics) {
+      await syncPerformanceMetric(metricRecord);
+      await markDataAsSynced('metrics', metricRecord.sessionId);
+    }
+    
+    console.log('[SW] Offline performance data sync completed');
+    
+    // Notify clients about successful sync
+    const clients = await self.clients.matchAll();
+    clients.forEach(client => {
+      client.postMessage({
+        type: 'PERFORMANCE_SYNC_COMPLETE',
+        syncedRecords: {
+          analytics: unsyncedData.analytics.length,
+          metrics: unsyncedData.metrics.length,
+        },
+      });
+    });
+    
+  } catch (error) {
+    console.error('[SW] Error syncing offline performance data:', error);
+  }
 }
 
 // Push notifications (for future use)

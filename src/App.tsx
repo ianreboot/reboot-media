@@ -6,7 +6,7 @@ import PricingCards from './components/PricingCards';
 import SchemaMarkup from './components/SchemaMarkup';
 import SEOHead from './components/SEOHead';
 import BackgroundGradient from './components/BackgroundGradient';
-import PerformanceMonitor from './components/PerformanceMonitor';
+import EnhancedPerformanceMonitor from './components/EnhancedPerformanceMonitor';
 import ErrorBoundary from './components/ErrorBoundary';
 import { useLeadForm } from './contexts/LeadFormContext';
 import { useErrorReporter } from './contexts/ErrorContext';
@@ -668,8 +668,15 @@ function App() {
       </ErrorBoundary>
       
       {/* Performance Monitor (development only) - Non-critical development tool */}
-      <ErrorBoundary level="component" name="PerformanceMonitor">
-        <PerformanceMonitor />
+      <ErrorBoundary level="component" name="EnhancedPerformanceMonitor">
+        <EnhancedPerformanceMonitor
+          showInProduction={false}
+          position="bottom-right"
+          minimized={true}
+          enableAlerts={true}
+          enableTrends={true}
+          enableBudgets={true}
+        />
       </ErrorBoundary>
         </div>
       </div>
