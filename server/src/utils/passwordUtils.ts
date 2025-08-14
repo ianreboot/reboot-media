@@ -200,7 +200,7 @@ function shuffleString(str: string): string {
   const array = str.split('');
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
-    [array[i], array[j]] = [array[j], array[i]];
+    [array[i], array[j]] = [array[j]!, array[i]!];
   }
   return array.join('');
 }
@@ -239,7 +239,7 @@ export function getPasswordStrengthLevel(password: string): 'weak' | 'fair' | 'g
 export async function needsRehash(hash: string): Promise<boolean> {
   try {
     // Extract the current salt rounds from the hash
-    const saltRounds = parseInt(hash.split('$')[2]);
+    const saltRounds = parseInt(hash.split('$')[2]!);
     // Rehash if current salt rounds are less than our target (12)
     return saltRounds < 12;
   } catch (error) {

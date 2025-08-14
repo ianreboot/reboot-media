@@ -169,6 +169,7 @@ export interface UserStorage {
   addRefreshToken(userId: string, token: string): Promise<void>;
   removeRefreshToken(userId: string, token: string): Promise<void>;
   clearRefreshTokens(userId: string): Promise<void>;
+  isRefreshTokenValid(userId: string, token: string): Promise<boolean>;
   incrementFailedLoginAttempts(userId: string): Promise<void>;
   resetFailedLoginAttempts(userId: string): Promise<void>;
   lockAccount(userId: string, lockoutUntil: Date): Promise<void>;

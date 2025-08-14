@@ -63,7 +63,7 @@ export function generateTokenPair(user: UserProfile, rememberMe: boolean = false
   };
   
   // Generate tokens with appropriate expiry
-  const accessToken = jwt.sign(accessPayload, config.accessTokenSecret, {
+  const accessToken = (jwt.sign as any)(accessPayload, config.accessTokenSecret, {
     expiresIn: config.accessTokenExpiry,
     issuer: config.issuer,
     audience: config.audience,
@@ -71,7 +71,7 @@ export function generateTokenPair(user: UserProfile, rememberMe: boolean = false
   });
   
   const refreshTokenExpiry = rememberMe ? '30d' : config.refreshTokenExpiry;
-  const refreshToken = jwt.sign(refreshPayload, config.refreshTokenSecret, {
+  const refreshToken = (jwt.sign as any)(refreshPayload, config.refreshTokenSecret, {
     expiresIn: refreshTokenExpiry,
     issuer: config.issuer,
     audience: config.audience,
@@ -162,7 +162,7 @@ export function generateEmailVerificationToken(userId: string, email: string): s
     jti: `email_${uuidv4()}`
   };
   
-  return jwt.sign(payload, config.emailVerificationSecret, {
+  return (jwt.sign as any)(payload, config.emailVerificationSecret, {
     expiresIn: config.emailVerificationExpiry,
     issuer: config.issuer,
     audience: config.audience,
@@ -212,7 +212,7 @@ export function generatePasswordResetToken(userId: string, email: string): strin
     jti: `reset_${uuidv4()}`
   };
   
-  return jwt.sign(payload, config.passwordResetSecret, {
+  return (jwt.sign as any)(payload, config.passwordResetSecret, {
     expiresIn: config.passwordResetExpiry,
     issuer: config.issuer,
     audience: config.audience,
@@ -261,7 +261,7 @@ export function extractTokenFromHeader(authHeader: string | undefined): string |
     return null;
   }
   
-  return parts[1];
+  return parts[1] || null;
 }
 
 /**
@@ -354,7 +354,7 @@ export function refreshAccessToken(refreshToken: string, user: UserProfile): { s
     jti: `access_${jti}`
   };
   
-  const accessToken = jwt.sign(accessPayload, config.accessTokenSecret, {
+  const accessToken = (jwt.sign as any)(accessPayload, config.accessTokenSecret, {
     expiresIn: config.accessTokenExpiry,
     issuer: config.issuer,
     audience: config.audience,
