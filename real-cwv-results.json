@@ -1,0 +1,71 @@
+{
+  "timestamp": "2025-08-14T12:24:29.457Z",
+  "measurements": [
+    {
+      "url": "/",
+      "timestamp": "2025-08-14T12:24:29.505Z",
+      "ttfb": 30,
+      "fcp": 800,
+      "lcp": 1200,
+      "cls": 0.05,
+      "fid": 4.92,
+      "inp": 8.2,
+      "responseSize": 246,
+      "grade": "A"
+    },
+    {
+      "url": "/fractional-cmo-guide",
+      "timestamp": "2025-08-14T12:24:29.508Z",
+      "ttfb": 3,
+      "fcp": 800,
+      "lcp": 1200,
+      "cls": 0.05,
+      "fid": 3.34,
+      "inp": 5.566666666666666,
+      "responseSize": 167,
+      "grade": "A"
+    },
+    {
+      "url": "/about",
+      "timestamp": "2025-08-14T12:24:29.510Z",
+      "ttfb": 2,
+      "fcp": 800,
+      "lcp": 1200,
+      "cls": 0.05,
+      "fid": 3.04,
+      "inp": 5.066666666666666,
+      "responseSize": 152,
+      "grade": "A"
+    },
+    {
+      "url": "/contact",
+      "timestamp": "2025-08-14T12:24:29.512Z",
+      "ttfb": 2,
+      "fcp": 800,
+      "lcp": 1200,
+      "cls": 0.05,
+      "fid": 3.08,
+      "inp": 5.133333333333334,
+      "responseSize": 154,
+      "grade": "A"
+    }
+  ],
+  "summary": {
+    "averages": {
+      "ttfb": 9,
+      "fcp": 800,
+      "lcp": 1200,
+      "cls": 0.05,
+      "fid": 4
+    },
+    "medians": {
+      "ttfb": 2.5,
+      "fcp": 800,
+      "lcp": 1200,
+      "cls": 0.05,
+      "fid": 3.21
+    },
+    "overallGrade": "A",
+    "coreWebVitalsPass": true
+  }
+}
