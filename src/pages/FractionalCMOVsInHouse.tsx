@@ -293,7 +293,7 @@ const FractionalCMOVsInHouse = () => {
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-standard-accessible dark:replace-text-gray-300 font-medium">
+                        <p className="text-black-standard dark:replace-text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -309,7 +309,7 @@ const FractionalCMOVsInHouse = () => {
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Underestimating Team Building Costs
                 </h3>
-                <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-black-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you delay expertise while building internal teams costs you opportunities and revenue. 
                   Get your free team cost analysis and discover the true investment required for marketing competency.
                 </p>

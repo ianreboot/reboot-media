@@ -293,7 +293,7 @@ const FractionalCMOVsAgency = () => {
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-standard-accessible dark:replace-text-gray-300 font-medium">
+                        <p className="text-black-standard dark:replace-text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -309,7 +309,7 @@ const FractionalCMOVsAgency = () => {
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Executing the Wrong Strategy
                 </h3>
-                <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-black-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you execute without strategic accountability, you're burning budget and missing opportunities. 
                   Get your free strategy vs execution analysis and discover which approach builds the growth engine your company needs.
                 </p>

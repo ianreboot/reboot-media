@@ -355,7 +355,7 @@ const TransitionStrategies = () => {
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Losing Momentum During Transitions
                 </h3>
-                <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-black-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you delay a necessary transition or switch reactively without a plan costs you growth momentum. 
                   Get your free transition roadmap and switch smoothly to the right marketing leadership model.
                 </p>

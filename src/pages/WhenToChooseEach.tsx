@@ -371,7 +371,7 @@ const WhenToChooseEach = () => {
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Choosing the Wrong Marketing Model
                 </h3>
-                <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-black-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month with the wrong model costs you growth, money, and momentum. 
                   Get your personalized recommendation based on your specific situation, budget, and goals.
                 </p>

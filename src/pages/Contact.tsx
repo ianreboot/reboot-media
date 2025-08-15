@@ -165,7 +165,7 @@ const Contact = () => {
 
           {/* Form Usage Guidance */}
           <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-2xl p-6 mb-8 text-center">
-            <h2 className="heading-sm text-important-accessible dark:text-orange-100 mb-3">
+            <h2 className="heading-sm text-black-important dark:text-orange-100 mb-3">
               Looking for Marketing Help?
             </h2>
             <p className="text-orange-800 dark:text-orange-200 mb-4">
@@ -384,7 +384,7 @@ const Contact = () => {
               
               {/* Company Info */}
               <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6">
-                <h3 className="heading-md text-important-accessible dark:text-white mb-4">Get in Touch</h3>
+                <h3 className="heading-md text-black-important dark:text-white mb-4">Get in Touch</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <MapPin className="w-5 h-5 text-orange-500 mr-3 mt-1" />
@@ -412,8 +412,8 @@ const Contact = () => {
 
               {/* Response Time */}
               <div className="bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900 dark:to-amber-900 rounded-2xl p-6">
-                <h3 className="heading-md text-important-accessible dark:text-white mb-2">Response Time</h3>
-                <p className="text-standard-accessible dark:replace-text-gray-300 text-sm">
+                <h3 className="heading-md text-black-important dark:text-white mb-2">Response Time</h3>
+                <p className="text-black-standard dark:replace-text-gray-300 text-sm">
                   We typically respond to all inquiries within 24 hours during business days. 
                   For urgent matters, please mention it in your message subject line.
                 </p>
@@ -421,7 +421,7 @@ const Contact = () => {
 
               {/* Free Consultation CTA */}
               <div className="bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900 dark:to-indigo-900 rounded-2xl p-6">
-                <h3 className="heading-md text-important-accessible dark:text-white mb-2">Free Marketing Analysis</h3>
+                <h3 className="heading-md text-black-important dark:text-white mb-2">Free Marketing Analysis</h3>
                 <p className="replace-text-gray-700 dark:replace-text-gray-300 text-sm mb-4">
                   Ready to transform your marketing? Get a personalized analysis 
                   that shows exactly how to accelerate your business growth.

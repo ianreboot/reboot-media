@@ -387,7 +387,7 @@ const CostROIAnalysis = () => {
                           <span className="mr-2">💰</span>
                           Financial Reality:
                         </h4>
-                        <p className="text-standard-accessible dark:replace-text-gray-300 font-medium">
+                        <p className="text-black-standard dark:replace-text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -431,7 +431,7 @@ const CostROIAnalysis = () => {
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Every Month You Delay Costs You $26,000+
                 </h3>
-                <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-black-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   That's the average monthly opportunity cost of not having strategic marketing leadership. 
                   Get your personalized cost-benefit analysis and see your specific numbers.
                 </p>

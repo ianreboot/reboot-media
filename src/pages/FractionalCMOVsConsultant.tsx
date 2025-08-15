@@ -293,7 +293,7 @@ const FractionalCMOVsConsultant = () => {
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-standard-accessible dark:replace-text-gray-300 font-medium">
+                        <p className="text-black-standard dark:replace-text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -309,7 +309,7 @@ const FractionalCMOVsConsultant = () => {
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Paying for Advice Without Accountability
                 </h3>
-                <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-black-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you implement consultant recommendations without support, you're wasting strategy investments. 
                   Get your free implementation assessment and discover whether you need advice or results ownership.
                 </p>
