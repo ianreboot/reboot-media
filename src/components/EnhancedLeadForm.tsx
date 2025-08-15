@@ -232,7 +232,15 @@ const EnhancedLeadForm = () => {
   const personalizedContent = getPersonalizedContent();
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-fallback-sm z-[60] flex items-start justify-center pt-4 md:pt-10 px-4">
+    <div 
+      className="fixed inset-0 z-[60] flex items-start justify-center pt-4 md:pt-10 px-4"
+      style={{
+        // Consistent modal backdrop across browsers
+        background: 'rgba(0, 0, 0, 0.65)',
+        backdropFilter: 'blur(6px) saturate(120%)',
+        WebkitBackdropFilter: 'blur(6px) saturate(120%)'
+      }}
+    >
       <div className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full flex flex-col relative" style={{ maxHeight: '92vh' }}>
         
         {/* Lead Score Indicator (Hot leads only) */}
@@ -501,7 +509,7 @@ const EnhancedLeadForm = () => {
                 {/* Progressive Form Fields */}
                 <div className="space-y-4">
                   {/* Contact Information */}
-                  <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-fallback-sm rounded-xl p-4 border border-white/20 dark:border-slate-600/20">
+                  <div className="bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30">
                     <h4 className="font-bold text-blue-900 mb-3 flex items-center">
                       <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs mr-2">1</span>
                       Contact Information
@@ -559,7 +567,7 @@ const EnhancedLeadForm = () => {
                   {isProgressive && formData.name && formData.email && (
                     <>
                       {/* Business Details */}
-                      <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-fallback-sm rounded-xl p-4 border border-white/20 dark:border-slate-600/20">
+                      <div className="bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30">
                         <h4 className="font-bold text-green-900 mb-3 flex items-center">
                           <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-2">2</span>
                           Business Details
@@ -634,7 +642,7 @@ const EnhancedLeadForm = () => {
 
                       {/* Marketing Challenge - Only if basic info is complete */}
                       {formData.industry && (
-                        <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-fallback-sm rounded-xl p-4 border border-white/20 dark:border-slate-600/20">
+                        <div className="bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30">
                           <h4 className="font-bold text-yellow-900 mb-3 flex items-center">
                             <span className="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center text-white text-xs mr-2">3</span>
                             Your Marketing Challenge
@@ -658,7 +666,7 @@ const EnhancedLeadForm = () => {
 
                       {/* Timeline - Final step */}
                       {formData.specificIssue && (
-                        <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-fallback-sm rounded-xl p-4 border border-white/20 dark:border-slate-600/20">
+                        <div className="bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30">
                           <h4 className="font-bold text-purple-900 mb-3 flex items-center">
                             <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2">4</span>
                             Timeline
@@ -683,7 +691,7 @@ const EnhancedLeadForm = () => {
                                 }}
                                 className={`px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${
                                   formData.timeline === option.value 
-                                    ? 'border-orange-500 bg-white/50 dark:bg-slate-700/50 backdrop-blur-fallback-sm text-orange-700 dark:text-orange-300' 
+                                    ? 'border-orange-500 bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized text-orange-700 dark:text-orange-300' 
                                     : 'border-gray-200 hover:border-gray-300'
                                 }`}
                               >
@@ -700,7 +708,7 @@ const EnhancedLeadForm = () => {
                   {!isProgressive && (
                     <>
                       {/* All sections shown for standard form */}
-                      <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-fallback-sm rounded-xl p-4 border border-white/20 dark:border-slate-600/20">
+                      <div className="bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30">
                         <h4 className="font-bold text-green-900 mb-3 flex items-center">
                           <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-2">2</span>
                           Business Details
@@ -761,7 +769,7 @@ const EnhancedLeadForm = () => {
                       </div>
 
                       {/* Marketing Challenge */}
-                      <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-fallback-sm rounded-xl p-4 border border-white/20 dark:border-slate-600/20">
+                      <div className="bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30">
                         <h4 className="font-bold text-yellow-900 mb-3 flex items-center">
                           <span className="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center text-white text-xs mr-2">3</span>
                           Your Marketing Challenge
@@ -795,7 +803,7 @@ const EnhancedLeadForm = () => {
                       </div>
 
                       {/* Timeline */}
-                      <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-fallback-sm rounded-xl p-4 border border-white/20 dark:border-slate-600/20">
+                      <div className="bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30">
                         <h4 className="font-bold text-purple-900 mb-3 flex items-center">
                           <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2">4</span>
                           Timeline
@@ -813,7 +821,7 @@ const EnhancedLeadForm = () => {
                               onClick={() => setFormData({...formData, timeline: option.value})}
                               className={`px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${
                                 formData.timeline === option.value 
-                                  ? 'border-orange-500 bg-white/50 dark:bg-slate-700/50 backdrop-blur-fallback-sm text-orange-700 dark:text-orange-300' 
+                                  ? 'border-orange-500 bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized text-orange-700 dark:text-orange-300' 
                                   : 'border-gray-200 hover:border-gray-300'
                               }`}
                             >

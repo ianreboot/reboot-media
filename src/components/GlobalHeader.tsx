@@ -163,9 +163,17 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
       >
         <div className={`transition-all duration-300 ${
           scrollY > 50 
-            ? 'bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-xl border-b border-gray-200/50 dark:border-gray-700/50' 
-            : 'bg-white/85 backdrop-blur-md border-b border-white/20'
-        }`}>
+            ? 'bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm shadow-xl border-b border-gray-200/50 dark:border-gray-700/50' 
+            : 'bg-white/90 backdrop-blur-sm border-b border-white/30'
+        }`} style={{
+          // Browser-specific backdrop normalization
+          backdropFilter: scrollY > 50 ? 'blur(8px) saturate(180%)' : 'blur(6px) saturate(150%)',
+          WebkitBackdropFilter: scrollY > 50 ? 'blur(8px) saturate(180%)' : 'blur(6px) saturate(150%)',
+          // Explicit background fallback for Safari
+          backgroundColor: scrollY > 50 
+            ? 'rgba(255, 255, 255, 0.95)' 
+            : 'rgba(255, 255, 255, 0.90)'
+        }}>
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16 sm:h-18">
               
@@ -377,17 +385,18 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
         </div>
       </nav>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile Menu Overlay - Single consistent backdrop */}
       {showMobileMenu && (
         <div 
           className="fixed inset-0 z-40 lg:hidden"
           aria-hidden="true"
-        >
-          <div 
-            className="fixed inset-0 bg-black/50 backdrop-blur-sm"
-            onClick={() => setShowMobileMenu(false)}
-          ></div>
-        </div>
+          style={{
+            background: 'rgba(0, 0, 0, 0.6)',
+            backdropFilter: 'blur(4px)',
+            WebkitBackdropFilter: 'blur(4px)'
+          }}
+          onClick={() => setShowMobileMenu(false)}
+        ></div>
       )}
 
       {/* Mobile Menu Slide-out */}

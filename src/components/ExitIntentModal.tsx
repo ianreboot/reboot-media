@@ -200,9 +200,15 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
 
   return (
     <div 
-      className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-[70] flex items-center justify-center p-4 transition-all duration-300 ${
+      className={`fixed inset-0 z-[70] flex items-center justify-center p-4 transition-all duration-300 ${
         isClosing ? 'opacity-0' : 'opacity-100'
       }`}
+      style={{
+        // Consistent exit intent backdrop across browsers
+        background: 'rgba(0, 0, 0, 0.7)',
+        backdropFilter: 'blur(8px) saturate(150%)',
+        WebkitBackdropFilter: 'blur(8px) saturate(150%)'
+      }}
       onClick={handleBackdropClick}
     >
       <div 

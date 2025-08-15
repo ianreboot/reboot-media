@@ -395,35 +395,52 @@ body {
   
   /* Cross-browser compatible backdrop blur with consistent rendering */
   .backdrop-blur-fallback-sm {
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px) saturate(150%);
+    -webkit-backdrop-filter: blur(4px) saturate(150%);
     /* Force consistent background color interpretation */
     background-color: inherit;
   }
   
   .backdrop-blur-fallback-md {
-    backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px) saturate(160%);
+    -webkit-backdrop-filter: blur(8px) saturate(160%);
     background-color: inherit;
   }
   
   .backdrop-blur-fallback-lg {
-    backdrop-filter: blur(16px);
-    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px) saturate(170%);
+    -webkit-backdrop-filter: blur(16px) saturate(170%);
     background-color: inherit;
   }
   
   /* Modal-specific backdrop that ensures dark overlay consistency */
   .modal-backdrop-dark {
     background: rgba(0, 0, 0, 0.65) !important;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(6px) saturate(120%);
+    -webkit-backdrop-filter: blur(6px) saturate(120%);
+  }
+  
+  /* Safari-specific adjustments for consistent transparency */
+  @supports (-webkit-backdrop-filter: blur(1px)) {
+    .modal-backdrop-dark {
+      background: rgba(0, 0, 0, 0.7) !important;
+      -webkit-backdrop-filter: blur(8px) saturate(130%);
+    }
   }
   
   /* Chrome/Firefox specific adjustments */
   @media screen and (-webkit-min-device-pixel-ratio: 0) {
     .modal-backdrop-dark {
-      background: rgba(0, 0, 0, 0.7) !important;
+      background: rgba(0, 0, 0, 0.68) !important;
+      backdrop-filter: blur(6px) saturate(110%);
+    }
+  }
+  
+  /* Opera GX specific fixes */
+  @supports (backdrop-filter: blur(1px)) and (not (-webkit-backdrop-filter: blur(1px))) {
+    .modal-backdrop-dark {
+      background: rgba(0, 0, 0, 0.72) !important;
+      backdrop-filter: blur(7px) saturate(125%);
     }
   }
   
@@ -432,7 +449,7 @@ body {
     .backdrop-blur-fallback-sm,
     .backdrop-blur-fallback-md,
     .backdrop-blur-fallback-lg {
-      background: rgba(255, 255, 255, 0.85);
+      background: rgba(255, 255, 255, 0.9) !important;
     }
     
     .modal-backdrop-dark {
@@ -442,8 +459,27 @@ body {
     .dark .backdrop-blur-fallback-sm,
     .dark .backdrop-blur-fallback-md,
     .dark .backdrop-blur-fallback-lg {
-      background: rgba(15, 23, 42, 0.85);
+      background: rgba(15, 23, 42, 0.9) !important;
     }
+  }
+  
+  /* Normalize background gradient rendering across browsers */
+  .background-gradient-base {
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /* Prevent compound transparency issues */
+    isolation: isolate;
+  }
+  
+  /* Cross-browser transparency normalization */
+  .transparency-normalized {
+    /* Force browser to render backgrounds consistently */
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    /* Prevent subpixel rendering issues */
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
   }
   .scale-102 {
     transform: scale(1.02);
