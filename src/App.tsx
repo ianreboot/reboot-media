@@ -153,12 +153,12 @@ const MainApp = () => {
             <span className="block text-orange-500">
               {typedWord}<span className="animate-blink">|</span>
             </span>
-            <span className="block">to <span style={{color: '#e9dbcd'}} className="line-through decoration-red-500 decoration-4">Broken</span> Marketing</span>
+            <span className="block">to <span className="text-white line-through decoration-red-500 decoration-4">Broken</span> Marketing</span>
           </h1>
           
           {/* Subheadline */}
           <p className="text-xl text-standard max-w-4xl mx-auto mb-8">
-            <span style={{color: '#e9dbcd'}}>Stop fumbling with amateur advice. Get</span> <span className="font-bold text-important">battle-tested strategies proven at Fortune 500 companies</span> <span style={{color: '#e9dbcd'}}>that drive explosive growth</span>
+            <span className="text-white/90">Stop fumbling with amateur advice. Get</span> <span className="font-bold text-important">battle-tested strategies proven at Fortune 500 companies</span> <span className="text-white/90">that drive explosive growth</span>
           </p>
 
           {/* Single Primary CTA */}
@@ -216,7 +216,7 @@ const MainApp = () => {
               The <span className="text-red-500">$200K</span> Marketing Mistake
             </h2>
             <p className="text-xl text-stone-700 max-w-3xl mx-auto leading-normal">
-              <span style={{color: '#e9dbcd'}}><span className="font-bold">73% of growing companies</span> can't explain their value clearly to customers. They suffer from the "Curse of Knowledge" - knowing too much about their product to communicate it simply.</span>
+              <span className="text-white/90"><span className="font-bold">73% of growing companies</span> can't explain their value clearly to customers. They suffer from the "Curse of Knowledge" - knowing too much about their product to communicate it simply.</span>
             </p>
           </div>
 
@@ -234,9 +234,9 @@ const MainApp = () => {
             
             <div className="order-1 lg:order-2">
               <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-xl border border-orange-200/30 dark:border-orange-400/30 transform rotate-1">
-                <h3 className="text-2xl font-bold mb-6" style={{color: '#f5f6fc'}}>What Customers Hear:</h3>
+                <h3 className="text-2xl font-bold mb-6 text-white">What Customers Hear:</h3>
                 <div className="space-y-4 text-stone-700">
-                  <p className="italic" style={{color: '#e9dbcd'}}>"We help you stop losing customers and make more money from the ones you have."</p>
+                  <p className="italic text-white/90">"We help you stop losing customers and make more money from the ones you have."</p>
                   <p className="text-green-600 font-semibold">✅ Clear, benefits-focused</p>
                 </div>
               </div>
@@ -259,7 +259,7 @@ const MainApp = () => {
               "Do You Have Experience in <span className="text-blue-600">My Industry</span>?"
             </h2>
             <p className="text-xl text-slate-600 mb-8">
-              <span style={{color: '#e9dbcd'}}>This is the right question to ask. But the answer might surprise you...</span>
+              <span className="text-white/90">This is the right question to ask. But the answer might surprise you...</span>
             </p>
           </div>
 
@@ -419,7 +419,7 @@ const MainApp = () => {
               <span className="text-orange-500">Executive</span> Services
             </h2>
             <p className="text-xl text-stone-700 max-w-3xl mx-auto mb-4">
-              <span style={{color: '#e9dbcd'}}>Strategic marketing leadership without the $300K+ salary commitment</span>
+              <span className="text-white/90">Strategic marketing leadership without the $300K+ salary commitment</span>
             </p>
             
             {/* Price Anchoring Header */}
@@ -484,7 +484,7 @@ const MainApp = () => {
               Meet Your <span className="text-blue-600">C-Level Executive</span> Partner
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              <span style={{color: '#f5f6fc'}}>20+ years C-level experience driving measurable revenue growth at US companies</span>
+              <span className="text-white/95">20+ years C-level experience driving measurable revenue growth at US companies</span>
             </p>
           </div>
 
@@ -536,7 +536,7 @@ const MainApp = () => {
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Battle-Tested Results</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                <span style={{color: '#f5f6fc'}}>I've spent <strong>$500K/month of my own money</strong> testing what actually brings customers. 
+                <span className="text-white/95">I've spent <strong>$500K/month of my own money</strong> testing what actually brings customers. 
                 Not theory - real results with real consequences.</span>
               </p>
             </div>
@@ -549,7 +549,7 @@ const MainApp = () => {
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Global Reach</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                <span style={{color: '#f5f6fc'}}>Based in Bangkok, I serve companies worldwide who want <strong>proven marketing excellence</strong> 
+                <span className="text-white/95">Based in Bangkok, I serve companies worldwide who want <strong>proven marketing excellence</strong> 
                 at competitive rates. Perfect for US market expansion.</span>
               </p>
             </div>
@@ -562,7 +562,7 @@ const MainApp = () => {
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Proven Across Industries</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                <span style={{color: '#f5f6fc'}}>Software, Healthcare, E-commerce, Financial Services, Professional Services, 
+                <span className="text-white/95">Software, Healthcare, E-commerce, Financial Services, Professional Services, 
                 and more. <strong>Psychology works universally.</strong></span>
               </p>
             </div>

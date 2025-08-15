@@ -302,29 +302,33 @@ body {
   .text-metadata { color: var(--black-metadata); }
   .text-decorative { color: var(--black-decorative); }
   
-  /* Override for dark backgrounds ONLY in hero sections with actual dark backgrounds */
+  /* Override for dark backgrounds - trigger when dark background gradient is present */
+  .homepage .text-critical,
   section[class*="bg-gradient-to-br"][class*="from-slate-9"] .text-critical,
   section[class*="bg-black"] .text-critical,
   .dark .text-critical {
-    color: white;
+    color: white !important;
   }
   
+  .homepage .text-important,
   section[class*="bg-gradient-to-br"][class*="from-slate-9"] .text-important,
   section[class*="bg-black"] .text-important,
   .dark .text-important {
-    color: rgba(255, 255, 255, 0.95);
+    color: rgba(255, 255, 255, 0.95) !important;
   }
   
+  .homepage .text-standard,
   section[class*="bg-gradient-to-br"][class*="from-slate-9"] .text-standard,
   section[class*="bg-black"] .text-standard,
   .dark .text-standard {
-    color: rgba(255, 255, 255, 0.85);
+    color: rgba(255, 255, 255, 0.85) !important;
   }
   
+  .homepage .text-optional,
   section[class*="bg-gradient-to-br"][class*="from-slate-9"] .text-optional,
   section[class*="bg-black"] .text-optional,
   .dark .text-optional {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7) !important;
   }
 
   .bg-critical { background-color: var(--white-critical); }
