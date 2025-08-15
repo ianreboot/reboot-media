@@ -293,7 +293,7 @@ const FractionalCMOVsFullTime = () => {
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-standard-accessible dark:replace-text-gray-300 font-medium">
+                        <p className="text-black-standard dark:replace-text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -309,7 +309,7 @@ const FractionalCMOVsFullTime = () => {
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Overpaying for Underutilized Talent
                 </h3>
-                <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-black-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you pay for full-time when you need fractional, you're burning $10K+ on underutilized capacity. 
                   Get your free workload analysis and discover if you have $200K worth of strategic work.
                 </p>

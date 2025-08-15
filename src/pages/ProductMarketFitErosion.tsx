@@ -282,7 +282,7 @@ const ProductMarketFitErosion = () => {
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-standard-accessible dark:replace-text-gray-300 font-medium">
+                        <p className="text-black-standard dark:replace-text-gray-300 font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -298,7 +298,7 @@ const ProductMarketFitErosion = () => {
                 <h3 className="heading-lg text-important-accessible dark:text-white text-2xl font-bold mb-4">
                   🚨 Stop Watching Your Market Fit Decay
                 </h3>
-                <p className="text-important-accessible text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-black-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month your messaging stays frozen while markets evolve, competitors with current positioning capture opportunities you're missing. 
                   Get your free PMF analysis and discover which erosion patterns are disconnecting you from your market.
                 </p>
