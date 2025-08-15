@@ -210,10 +210,10 @@ const GrowthPlateauSolutions = () => {
             </div>
             
             <div className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-2xl p-8 border border-red-200/50 dark:border-red-800/50">
-              <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
+              <h3 className="heading-lg text-black-important dark:text-white mb-4">
                 🚨 Every Month You Wait Costs You $47,000+
               </h3>
-              <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+              <p className="text-lg text-black-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                 While you're stuck at $1M, you should be at $1.5M+ with proper marketing psychology. That's $500K+ annual difference. 
                 Every month of delay costs you qualified opportunities competitors are capturing.
               </p>

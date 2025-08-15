@@ -186,6 +186,23 @@
   color: var(--luminescence-layer-4) !important;
 }
 
+/* Dark text utilities for light colored backgrounds */
+.text-black-critical {
+  color: var(--black-critical) !important; /* 5% black - darkest */
+}
+
+.text-black-important {
+  color: var(--black-important) !important; /* 15% black - headers */
+}
+
+.text-black-standard {
+  color: var(--black-standard) !important; /* 25% black - body text */
+}
+
+.text-black-optional {
+  color: var(--black-optional) !important; /* 35% black - supporting text */
+}
+
 /* High contrast mode support */
 @media (prefers-contrast: high) {
   :root {
