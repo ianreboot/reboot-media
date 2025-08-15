@@ -158,10 +158,10 @@ const ProductMarketFitErosion = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold mb-6">
+                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold mb-6 text-center">
                   Why Product-Market Fit Erodes (And How to Restore It)
                 </h2>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed text-center">
                   Product-market fit isn't a permanent achievement—it requires ongoing maintenance. Markets, customers, and competitive landscapes evolve 
                   constantly, but many companies assume their initial PMF will last forever without iteration.
                 </p>
@@ -179,7 +179,7 @@ const ProductMarketFitErosion = () => {
                     <p className="text-sm text-optional dark:text-gray-400">Restore with repositioning</p>
                   </div>
                 </div>
-                <p className="text-important text-standard dark:text-gray-300 font-semibold">
+                <p className="text-important text-standard dark:text-gray-300 font-semibold text-center">
                   The pattern: Initial success → Market evolution → Messaging lag → Fit erosion
                 </p>
               </div>
@@ -188,7 +188,8 @@ const ProductMarketFitErosion = () => {
             {/* Scenarios */}
             <section className="mb-16">
               <h2 className="heading-xl text-critical dark:text-white text-3xl md:text-4xl font-bold mb-12 text-center">
-                6 PMF Erosion Patterns (Which is Yours?)
+                <span className="block">6 PMF Erosion Patterns</span>
+                <span className="block">(Which is Yours?)</span>
               </h2>
               
               <div className="space-y-8">

@@ -65,15 +65,16 @@ const ProductAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important dark:text-gray-300 mb-6">
+              <p className="text-lg text-important dark:text-gray-300 mb-6 text-center">
                 Product-aware customers are close. They're seriously considering you but have specific concerns holding them back. They're not questioning if they need help—they're questioning if YOU'RE the right help.
               </p>
             </section>
 
             {/* Real Customer Examples */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-8">
-                The Final Objections (And How to Overcome Them)
+              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
+                <span className="block">The Final Objections</span>
+                <span className="block">(And How to Overcome Them)</span>
               </h2>
 
               <div className="space-y-8">
@@ -198,7 +199,7 @@ const ProductAwareStageCustomers = () => {
 
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-6">
+              <h2 className="heading-xl text-critical dark:text-white mb-6 text-center">
                 The Truth About Product-Aware Customers
               </h2>
               

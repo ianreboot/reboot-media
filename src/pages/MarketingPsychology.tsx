@@ -37,7 +37,8 @@ const MarketingPsychology = () => {
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,165,0,0.1)_0%,transparent_50%)]"></div>
           <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h1 className="heading-hero text-critical dark:text-white mb-6 leading-tight">
-              Stop Guessing. Start Converting.
+              <span className="block">Stop Guessing.</span>
+              <span className="block">Start Converting.</span>
               <span className="block text-orange-500 mt-2">Master Marketing Psychology</span>
             </h1>
             <p className="text-xl text-important dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
@@ -65,14 +66,14 @@ const MarketingPsychology = () => {
           
           {/* Problem Introduction */}
           <section id="problem" className="mb-8">
-            <h2 className="heading-xl text-critical dark:text-white mb-8">
+            <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
               Why 73% of Marketing Campaigns Fail to Convert
             </h2>
             <div className="prose prose-lg max-w-none dark:prose-invert">
-              <p className="text-standard dark:text-gray-300 mb-6">
+              <p className="text-standard dark:text-gray-300 mb-6 text-center">
                 Most businesses are throwing marketing messages at prospects without understanding <strong>where they are in the buying journey</strong>. They're using product-focused messaging for people who don't even know they have a problem yet. They're creating urgency for prospects who haven't built trust yet.
               </p>
-              <p className="text-standard dark:text-gray-300 mb-8">
+              <p className="text-standard dark:text-gray-300 mb-8 text-center">
                 The result? Marketing that feels like shouting into the void. Campaigns that burn through budget without generating qualified leads. Teams frustrated by "marketing that doesn't work."
               </p>
             </div>
@@ -93,10 +94,10 @@ const MarketingPsychology = () => {
 
           {/* Customer Awareness Stages */}
           <section id="awareness-stages" className="mb-8">
-            <h2 className="heading-xl text-critical dark:text-white mb-8">
+            <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
               The 5 Customer Awareness Stages Framework
             </h2>
-            <p className="text-standard dark:text-gray-300 mb-12 text-lg">
+            <p className="text-standard dark:text-gray-300 mb-12 text-lg text-center">
               Created by legendary copywriter Eugene Schwartz, this framework reveals exactly how to match your message to your prospect's mindset. Master this, and marketing becomes predictable.
             </p>
 
@@ -272,7 +273,7 @@ const MarketingPsychology = () => {
 
           {/* Conversion Psychology Triggers */}
           <section className="mb-8">
-            <h2 className="heading-xl text-critical dark:text-white mb-8">
+            <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
               The 4 Psychological Triggers That Drive Action
             </h2>
             
@@ -354,8 +355,9 @@ const MarketingPsychology = () => {
 
           {/* Case Study Section */}
           <section className="mb-8">
-            <h2 className="heading-xl text-critical dark:text-white mb-8">
-              Real Results: Norton Antivirus Case Study
+            <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
+              <span className="block">Real Results:</span>
+              <span className="block">Norton Antivirus Case Study</span>
             </h2>
             <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8">
               <div className="grid md:grid-cols-3 gap-6 mb-8">
@@ -392,7 +394,7 @@ const MarketingPsychology = () => {
 
           {/* Internal Linking Section */}
           <section className="mb-8">
-            <h2 className="heading-xl text-critical dark:text-white mb-8">
+            <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
               Master These Psychology Principles in Your Business
             </h2>
             <div className="grid md:grid-cols-2 gap-6">

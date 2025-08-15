@@ -170,10 +170,10 @@ const CustomerAcquisitionStall = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-orange-200/50 dark:border-orange-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   Why Customer Acquisition Costs Keep Rising
                 </h2>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed text-center">
                   CAC inflation isn't random—it follows predictable patterns. When everyone competes on the same channels with similar messaging, 
                   costs go up and quality goes down. The solution isn't more budget; it's psychology-driven differentiation.
                 </p>
@@ -191,7 +191,7 @@ const CustomerAcquisitionStall = () => {
                     <p className="text-sm text-optional dark:text-gray-400">Break cycle with differentiation</p>
                   </div>
                 </div>
-                <p className="text-important text-standard dark:text-gray-300 font-semibold">
+                <p className="text-important text-standard dark:text-gray-300 font-semibold text-center">
                   The pattern: Same channels → Same message → Same prospects → Price competition
                 </p>
               </div>
@@ -200,7 +200,8 @@ const CustomerAcquisitionStall = () => {
             {/* Scenarios */}
             <section className="mb-16">
               <h2 className="heading-xl text-critical dark:text-white text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-                7 CAC Inflation Patterns (Which is Yours?)
+                <span className="block">7 CAC Inflation Patterns</span>
+                <span className="block">(Which is Yours?)</span>
               </h2>
               
               <div className="space-y-8">

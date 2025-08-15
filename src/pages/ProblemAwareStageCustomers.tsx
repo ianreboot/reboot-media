@@ -65,15 +65,16 @@ const ProblemAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important dark:text-gray-300 mb-6">
+              <p className="text-lg text-important dark:text-gray-300 mb-6 text-center">
                 Problem-aware customers are dangerous to themselves. They know enough to be worried but not enough to make smart decisions. They're buying random tools, hiring random freelancers, and changing strategies every month—burning cash without understanding why nothing works.
               </p>
             </section>
 
             {/* Real Customer Examples */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-8">
-                What Problem-Aware Customers Actually Say (And What They Really Need)
+              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
+                <span className="block">What Problem-Aware Customers Actually Say</span>
+                <span className="block">(And What They Really Need)</span>
               </h2>
 
               <div className="space-y-8">
@@ -244,7 +245,7 @@ const ProblemAwareStageCustomers = () => {
 
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-6">
+              <h2 className="heading-xl text-critical dark:text-white mb-6 text-center">
                 The Pattern: How to Help Problem-Aware Customers
               </h2>
               

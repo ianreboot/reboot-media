@@ -65,14 +65,14 @@ const SolutionAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important dark:text-gray-300 mb-6">
+              <p className="text-lg text-important dark:text-gray-300 mb-6 text-center">
                 Solution-aware customers are overwhelmed. They've got 10 browser tabs open, 5 sales calls scheduled, and a spreadsheet comparing options that all sound identical. They're not looking for another pitch—they're looking for clarity on why one option is actually different.
               </p>
             </section>
 
             {/* Real Customer Examples */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-8">
+              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
                 What Solution-Aware Customers Actually Think (And How to Win Them)
               </h2>
 
@@ -221,7 +221,7 @@ const SolutionAwareStageCustomers = () => {
 
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-6">
+              <h2 className="heading-xl text-critical dark:text-white mb-6 text-center">
                 The Pattern: How Solution-Aware Customers Actually Decide
               </h2>
               

@@ -158,10 +158,10 @@ const CompetitivePressurePlateau = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-red-200/50 dark:border-red-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   Why David Beats Goliath (Strategic Positioning Over Brute Force)
                 </h2>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed text-center">
                   Competitive pressure plateaus happen when smaller companies try to compete on bigger companies' terms—features, price, or scale. 
                   The solution isn't bigger budgets; it's smarter positioning that makes their advantages irrelevant.
                 </p>
@@ -179,7 +179,7 @@ const CompetitivePressurePlateau = () => {
                     <p className="text-sm text-optional dark:text-gray-400">Win with unique positioning</p>
                   </div>
                 </div>
-                <p className="text-important text-standard dark:text-gray-300 font-semibold">
+                <p className="text-important text-standard dark:text-gray-300 font-semibold text-center">
                   The pattern: Competitor pressure → Feature matching → Price competition → Plateau
                 </p>
               </div>

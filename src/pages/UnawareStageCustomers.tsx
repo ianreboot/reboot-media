@@ -65,14 +65,14 @@ const UnawareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important dark:text-gray-300 mb-6">
+              <p className="text-lg text-important dark:text-gray-300 mb-6 text-center">
                 Unaware stage customers are the most dangerous for your business. They're convinced they're doing fine when they're actually hemorrhaging opportunities. Here are real examples of what they say and what's actually happening.
               </p>
             </section>
 
             {/* Real Customer Examples */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-8">
+              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
                 What Unaware Customers Actually Say (And What's Really Happening)
               </h2>
 
@@ -221,7 +221,7 @@ const UnawareStageCustomers = () => {
 
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-6">
+              <h2 className="heading-xl text-critical dark:text-white mb-6 text-center">
                 The Pattern: What Unaware Customers Really Need
               </h2>
               

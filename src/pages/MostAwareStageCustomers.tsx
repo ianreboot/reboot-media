@@ -65,14 +65,14 @@ const MostAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important dark:text-gray-300 mb-6">
+              <p className="text-lg text-important dark:text-gray-300 mb-6 text-center">
                 Most aware customers are 95% sold. They believe in your solution, trust your expertise, and have budget approval. But that last 5%? That's where deals die. These final moments require finesse, not force.
               </p>
             </section>
 
             {/* Real Customer Examples */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-8">
+              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
                 The Last-Minute Hesitations (And How to Dissolve Them)
               </h2>
 
@@ -198,7 +198,7 @@ const MostAwareStageCustomers = () => {
 
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-6">
+              <h2 className="heading-xl text-critical dark:text-white mb-6 text-center">
                 The Secret to Closing Most Aware Customers
               </h2>
               

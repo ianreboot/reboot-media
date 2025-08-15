@@ -393,20 +393,38 @@ body {
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   }
   
-  /* Robust backdrop blur fallbacks for browser compatibility */
+  /* Cross-browser compatible backdrop blur with consistent rendering */
   .backdrop-blur-fallback-sm {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
+    /* Force consistent background color interpretation */
+    background-color: inherit;
   }
   
   .backdrop-blur-fallback-md {
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
+    background-color: inherit;
   }
   
   .backdrop-blur-fallback-lg {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
+    background-color: inherit;
+  }
+  
+  /* Modal-specific backdrop that ensures dark overlay consistency */
+  .modal-backdrop-dark {
+    background: rgba(0, 0, 0, 0.65) !important;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+  
+  /* Chrome/Firefox specific adjustments */
+  @media screen and (-webkit-min-device-pixel-ratio: 0) {
+    .modal-backdrop-dark {
+      background: rgba(0, 0, 0, 0.7) !important;
+    }
   }
   
   /* Fallback for browsers that don't support backdrop-filter */
@@ -415,6 +433,10 @@ body {
     .backdrop-blur-fallback-md,
     .backdrop-blur-fallback-lg {
       background: rgba(255, 255, 255, 0.85);
+    }
+    
+    .modal-backdrop-dark {
+      background: rgba(0, 0, 0, 0.8) !important;
     }
     
     .dark .backdrop-blur-fallback-sm,

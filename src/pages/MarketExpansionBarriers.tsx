@@ -170,10 +170,10 @@ const MarketExpansionBarriers = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-yellow-200/50 dark:border-yellow-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   Why Market "Saturation" is Usually a Positioning Problem
                 </h2>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed text-center">
                   Most "saturated" markets aren't actually saturated—companies have just defined their addressable market too narrowly. 
                   The solution isn't finding new markets; it's redefining your current one through psychology and positioning.
                 </p>
@@ -191,7 +191,7 @@ const MarketExpansionBarriers = () => {
                     <p className="text-sm text-optional dark:text-gray-400">Succeed with repositioning</p>
                   </div>
                 </div>
-                <p className="text-important text-standard dark:text-gray-300 font-semibold">
+                <p className="text-important text-standard dark:text-gray-300 font-semibold text-center">
                   Pattern: Same product → Different problems → New markets
                 </p>
               </div>
@@ -200,7 +200,8 @@ const MarketExpansionBarriers = () => {
             {/* Scenarios */}
             <section className="mb-16">
               <h2 className="heading-xl text-critical dark:text-white text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-                7 Market Expansion Barriers (Which is Yours?)
+                <span className="block">7 Market Expansion Barriers</span>
+                <span className="block">(Which is Yours?)</span>
               </h2>
               
               <div className="space-y-8">

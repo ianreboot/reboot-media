@@ -146,10 +146,10 @@ const RevenueCeilingBreakthrough = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-red-200/50 dark:border-red-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   Why Revenue Gets Stuck at Predictable Dollar Amounts
                 </h2>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed text-center">
                   After analyzing 200+ growth-stage companies, we discovered that revenue plateaus happen at predictable milestones: 
                   $500K, $1M, $1.2M, $1.5M, and $2M. Each ceiling has a specific psychological and systems cause.
                 </p>
@@ -167,7 +167,7 @@ const RevenueCeilingBreakthrough = () => {
                     <p className="text-sm text-optional dark:text-gray-400">Break through with systems</p>
                   </div>
                 </div>
-                <p className="text-important text-standard dark:text-gray-300 font-semibold">
+                <p className="text-important text-standard dark:text-gray-300 font-semibold text-center">
                   The root cause? What works at $500K breaks at $1M. What works at $1M breaks at $2M.
                 </p>
               </div>
@@ -176,7 +176,8 @@ const RevenueCeilingBreakthrough = () => {
             {/* Scenarios */}
             <section className="mb-16">
               <h2 className="heading-xl text-critical dark:text-white text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-                5 Revenue Ceiling Scenarios (Which is Yours?)
+                <span className="block">5 Revenue Ceiling Scenarios</span>
+                <span className="block">(Which is Yours?)</span>
               </h2>
               
               <div className="space-y-8">

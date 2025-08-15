@@ -234,7 +234,7 @@ const GrowthPlateauSolutions = () => {
                         {plateau.title}
                       </h3>
                     </div>
-                    <p className="text-standard dark:text-gray-300 text-base leading-relaxed mb-6">
+                    <p className="text-standard dark:text-gray-300 text-base leading-relaxed mb-6 text-center">
                       {plateau.description}
                     </p>
                     <div className="flex items-center justify-center text-red-600 dark:text-red-400 font-semibold group-hover:text-red-700 dark:group-hover:text-red-300 transition-colors">

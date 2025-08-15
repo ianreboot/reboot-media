@@ -170,10 +170,10 @@ const OperationalScalingCrisis = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   Why Growth Breaks Operations (And How to Fix It)
                 </h2>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed text-center">
                   Operational scaling crises aren't random—they follow predictable patterns. What works at $500K breaks at $2M+ 
                   because manual processes hit exponential complexity while systems thinking provides linear solutions.
                 </p>
@@ -191,7 +191,7 @@ const OperationalScalingCrisis = () => {
                     <p className="text-sm text-optional dark:text-gray-400">Solve with systems first</p>
                   </div>
                 </div>
-                <p className="text-important text-standard dark:text-gray-300 font-semibold">
+                <p className="text-important text-standard dark:text-gray-300 font-semibold text-center">
                   The pattern: Manual processes → Exponential complexity → Systems breakdown
                 </p>
               </div>
@@ -200,7 +200,8 @@ const OperationalScalingCrisis = () => {
             {/* Scenarios */}
             <section className="mb-16">
               <h2 className="heading-xl text-critical dark:text-white text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-                7 Operational Crisis Patterns (Which is Yours?)
+                <span className="block">7 Operational Crisis Patterns</span>
+                <span className="block">(Which is Yours?)</span>
               </h2>
               
               <div className="space-y-8">

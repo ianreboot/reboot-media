@@ -170,10 +170,10 @@ const TeamGrowthBottlenecks = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-blue-200/50 dark:border-blue-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6">
+                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   Why Team Growth Gets Stuck (And How Culture Really Scales)
                 </h2>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed text-center">
                   Team growth bottlenecks aren't about finding "good people"—they're about systems that enable people to succeed. 
                   Culture shifts with size, and what worked at 5 people breaks at 50 without intentional frameworks.
                 </p>
@@ -191,7 +191,7 @@ const TeamGrowthBottlenecks = () => {
                     <p className="text-sm text-optional dark:text-gray-400">Break founder dependency</p>
                   </div>
                 </div>
-                <p className="text-important text-standard dark:text-gray-300 font-semibold">
+                <p className="text-important text-standard dark:text-gray-300 font-semibold text-center">
                   The pattern: Founder dependency → Team growth → Systems breakdown
                 </p>
               </div>
@@ -200,7 +200,8 @@ const TeamGrowthBottlenecks = () => {
             {/* Scenarios */}
             <section className="mb-16">
               <h2 className="heading-xl text-critical dark:text-white text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
-                7 Team Bottleneck Patterns (Which is Yours?)
+                <span className="block">7 Team Bottleneck Patterns</span>
+                <span className="block">(Which is Yours?)</span>
               </h2>
               
               <div className="space-y-8">
