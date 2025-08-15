@@ -135,7 +135,7 @@ export const ErrorDemoComponent: React.FC<{
   return (
     <div className="p-4 bg-blue-50 border border-blue-200 rounded-lg">
       <h3 className="font-bold text-blue-800 mb-2">Error Demo Component</h3>
-      <p className="text-blue-600 text-sm mb-2">
+      <p className="text-blue-accessible text-sm mb-2">
         {shouldThrow 
           ? `Triggering: ${DEMO_ERRORS[errorType].name}` 
           : 'Ready to trigger demo errors'

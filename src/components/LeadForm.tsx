@@ -103,7 +103,7 @@ const LeadForm = () => {
             }}
             className="w-10 h-10 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all"
           >
-            <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6 replace-text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
             </svg>
           </button>
@@ -115,7 +115,7 @@ const LeadForm = () => {
               <h3 className="text-2xl font-black text-slate-900 mb-4">
                 Is Your Marketing <span className="text-orange-500">Keeping You</span> Up at Night?
               </h3>
-              <p className="text-gray-600 mb-8">
+              <p className="replace-text-gray-600 mb-8">
                 You're not alone. 87% of growth-stage companies struggle with the same marketing challenges.
               </p>
               
@@ -176,7 +176,7 @@ const LeadForm = () => {
                 Yes, I Need Help With This →
               </button>
               
-              <p className="text-gray-500 text-sm mt-6">
+              <p className="replace-text-gray-500 text-sm mt-6">
                 Takes 60 seconds • No sales pressure • Get real solutions
               </p>
             </div>
@@ -187,7 +187,7 @@ const LeadForm = () => {
             <div>
               <button 
                 onClick={() => setFormStep(1)}
-                className="text-gray-500 hover:text-gray-700 mb-4 flex items-center transition-colors"
+                className="replace-text-gray-500 hover:text-gray-700 mb-4 flex items-center transition-colors"
               >
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
@@ -199,7 +199,7 @@ const LeadForm = () => {
                 <h3 className="text-2xl font-black text-slate-900 mb-4">
                   I Feel You. Let's <span className="text-orange-500">Identify</span> Your Growth Stage
                 </h3>
-                <p className="text-gray-600 mb-6">
+                <p className="replace-text-gray-600 mb-6">
                   Different revenue levels need different psychology approaches
                 </p>
                 
@@ -214,7 +214,7 @@ const LeadForm = () => {
                       2
                     </div>
                     <div className="w-20 h-1 bg-gray-300"></div>
-                    <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-gray-500 font-bold">
+                    <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center replace-text-gray-500 font-bold">
                       3
                     </div>
                   </div>
@@ -222,7 +222,7 @@ const LeadForm = () => {
                 
                 <div className="mb-8">
                   <h4 className="font-bold text-gray-900 mb-4">Step 2: Your Revenue Stage</h4>
-                  <p className="text-sm text-gray-600 mb-4">What's your current annual revenue?</p>
+                  <p className="text-sm replace-text-gray-600 mb-4">What's your current annual revenue?</p>
                   
                   <div className="space-y-3">
                     <label className="block">
@@ -235,7 +235,7 @@ const LeadForm = () => {
                       />
                       <span className="text-gray-700">
                         <strong>$500K - $1M</strong><br />
-                        <span className="text-sm text-gray-500 ml-7">Growing but hitting walls</span>
+                        <span className="text-sm replace-text-gray-500 ml-7">Growing but hitting walls</span>
                       </span>
                     </label>
                     
@@ -249,7 +249,7 @@ const LeadForm = () => {
                       />
                       <span className="text-gray-700">
                         <strong>$1M - $3M</strong><br />
-                        <span className="text-sm text-gray-500 ml-7">Scaling but inconsistent</span>
+                        <span className="text-sm replace-text-gray-500 ml-7">Scaling but inconsistent</span>
                       </span>
                     </label>
                     
@@ -263,7 +263,7 @@ const LeadForm = () => {
                       />
                       <span className="text-gray-700">
                         <strong>$3M - $10M</strong><br />
-                        <span className="text-sm text-gray-500 ml-7">Need systematic growth</span>
+                        <span className="text-sm replace-text-gray-500 ml-7">Need systematic growth</span>
                       </span>
                     </label>
                     
@@ -277,7 +277,7 @@ const LeadForm = () => {
                       />
                       <span className="text-gray-700">
                         <strong>$10M+</strong><br />
-                        <span className="text-sm text-gray-500 ml-7">Ready for transformation</span>
+                        <span className="text-sm replace-text-gray-500 ml-7">Ready for transformation</span>
                       </span>
                     </label>
                   </div>
@@ -297,7 +297,7 @@ const LeadForm = () => {
                   className={`w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl ${
                     formData.revenue 
                       ? 'bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white' 
-                      : 'bg-gray-300 text-gray-500 cursor-not-allowed'
+                      : 'bg-gray-300 replace-text-gray-500 cursor-not-allowed'
                   }`}
                 >
                   Continue to Final Step →
@@ -311,7 +311,7 @@ const LeadForm = () => {
             <div>
               <button 
                 onClick={() => setFormStep(2)}
-                className="text-gray-500 hover:text-gray-700 mb-4 flex items-center transition-colors"
+                className="replace-text-gray-500 hover:text-gray-700 mb-4 flex items-center transition-colors"
               >
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
@@ -323,7 +323,7 @@ const LeadForm = () => {
                 <h3 className="text-2xl font-black text-slate-900 mb-4 text-center">
                   Perfect! Let's Get Your <span className="text-orange-500">Free Analysis</span>
                 </h3>
-                <p className="text-gray-600 mb-8 text-center">
+                <p className="replace-text-gray-600 mb-8 text-center">
                   I'll personally review your situation and send you a custom growth strategy within 24 hours
                 </p>
                 
@@ -478,7 +478,7 @@ const LeadForm = () => {
                       <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2">4</span>
                       Timeline
                     </h4>
-                    <p className="text-xs text-gray-600 mb-3">When do you need to see marketing results?</p>
+                    <p className="text-xs replace-text-gray-600 mb-3">When do you need to see marketing results?</p>
                     <div className="grid grid-cols-2 gap-2">
                       {[
                         { value: 'asap', label: 'ASAP' },
@@ -571,7 +571,7 @@ const LeadForm = () => {
                   {isSubmitting ? 'Submitting...' : 'Get My Free Marketing Analysis →'}
                 </button>
                 
-                <p className="text-gray-500 text-xs text-center mt-4">
+                <p className="replace-text-gray-500 text-xs text-center mt-4">
                   🔒 Your information is 100% secure. No spam, ever.
                 </p>
               </div>

@@ -221,7 +221,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
           onClick={handleClose}
           className="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors z-10"
         >
-          <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 replace-text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
           </svg>
         </button>
@@ -234,7 +234,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
             <h3 className="text-2xl font-black text-gray-900 mb-3">
               {content.title}
             </h3>
-            <p className="text-gray-600">
+            <p className="replace-text-gray-600">
               {content.subtitle}
             </p>
           </div>
@@ -268,10 +268,10 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
 
           {/* Urgency/Social Proof */}
           <div className="text-center mb-6">
-            <p className="text-sm text-gray-600 mb-2">
+            <p className="text-sm replace-text-gray-600 mb-2">
               {content.urgency}
             </p>
-            <p className="text-xs text-gray-500">
+            <p className="text-xs replace-text-gray-500">
               {content.socialProof}
             </p>
           </div>
@@ -287,7 +287,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
             
             <button
               onClick={handleSecondaryAction}
-              className="w-full py-3 rounded-xl font-medium text-gray-600 border border-gray-300 hover:bg-gray-50 transition-all duration-300"
+              className="w-full py-3 rounded-xl font-medium replace-text-gray-600 border border-gray-300 hover:bg-gray-50 transition-all duration-300"
             >
               Maybe Later
             </button>
@@ -295,7 +295,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
 
           {/* Trust Indicators */}
           <div className="text-center mt-6 pt-6 border-t border-gray-200">
-            <div className="flex items-center justify-center space-x-4 text-xs text-gray-500">
+            <div className="flex items-center justify-center space-x-4 text-xs replace-text-gray-500">
               <span className="flex items-center">
                 <svg className="w-4 h-4 text-green-500 mr-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />

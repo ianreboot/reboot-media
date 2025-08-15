@@ -22,7 +22,7 @@ export const PageLoadingSpinner: React.FC<{ pageName?: string }> = ({ pageName }
         <p className="text-gray-700 font-medium">
           {pageName ? `Loading ${pageName}...` : 'Loading page...'}
         </p>
-        <p className="text-gray-500 text-sm">
+        <p className="replace-text-gray-500 text-sm">
           Optimizing your experience
         </p>
       </div>
@@ -40,7 +40,7 @@ export const ComponentLoadingSpinner: React.FC = () => (
   <div className="flex items-center justify-center p-8">
     <div className="text-center">
       <div className="animate-spin rounded-full h-8 w-8 border-2 border-gray-200 border-t-blue-600 mx-auto mb-2"></div>
-      <p className="text-gray-500 text-xs">Loading...</p>
+      <p className="replace-text-gray-500 text-xs">Loading...</p>
     </div>
   </div>
 );
@@ -91,7 +91,7 @@ export const LazyLoadErrorFallback: React.FC<{ error?: Error; retry?: () => void
         <h2 className="text-xl font-semibold text-gray-800 mb-2">
           Loading Failed
         </h2>
-        <p className="text-gray-600 text-sm mb-4">
+        <p className="replace-text-gray-600 text-sm mb-4">
           We encountered an issue loading this page. Please try again.
         </p>
         {error && process.env.NODE_ENV === 'development' && (
@@ -99,7 +99,7 @@ export const LazyLoadErrorFallback: React.FC<{ error?: Error; retry?: () => void
             <summary className="cursor-pointer text-xs font-medium text-gray-700">
               Error Details
             </summary>
-            <pre className="text-xs text-gray-600 mt-2 whitespace-pre-wrap">
+            <pre className="text-xs replace-text-gray-600 mt-2 whitespace-pre-wrap">
               {error.message}
             </pre>
           </details>
@@ -123,7 +123,7 @@ export const LazyLoadErrorFallback: React.FC<{ error?: Error; retry?: () => void
         </button>
         <button
           onClick={() => window.history.back()}
-          className="text-blue-600 hover:text-blue-700 text-sm font-medium"
+          className="text-blue-accessible hover:text-blue-700 text-sm font-medium"
         >
           ← Go Back
         </button>

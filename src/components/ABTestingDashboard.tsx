@@ -30,8 +30,8 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
       <div className="bg-white border border-gray-200 rounded-lg p-6 mb-4">
         <div className="flex items-center justify-between mb-4">
           <div>
-            <h3 className="text-lg font-bold text-gray-900">{test.name}</h3>
-            <p className="text-sm text-gray-600">{test.description}</p>
+            <h3 className="text-lg font-bold text-critical-accessible">{test.name}</h3>
+            <p className="text-sm replace-text-gray-600">{test.description}</p>
           </div>
           <div className="flex items-center space-x-2">
             <span className={`px-3 py-1 rounded-full text-xs font-bold ${
@@ -54,7 +54,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
           {variants.map((variant) => (
             <div key={variant.id} className="flex items-center justify-between p-3 bg-gray-50 rounded-lg">
               <div className="flex items-center">
-                <span className="font-medium text-gray-900 mr-3">{variant.name}</span>
+                <span className="font-medium text-critical-accessible mr-3">{variant.name}</span>
                 {variant.isWinner && (
                   <span className="px-2 py-1 bg-gold-100 text-gold-800 rounded text-xs font-bold">
                     🏆 WINNER
@@ -63,16 +63,16 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
               </div>
               <div className="flex items-center space-x-6">
                 <div className="text-center">
-                  <div className="text-sm text-gray-500">Conversions</div>
+                  <div className="text-sm replace-text-gray-500">Conversions</div>
                   <div className="font-bold">{variant.conversions}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-sm text-gray-500">Rate</div>
+                  <div className="text-sm replace-text-gray-500">Rate</div>
                   <div className="font-bold">{variant.conversionRate.toFixed(2)}%</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-sm text-gray-500">Significant</div>
-                  <div className={`font-bold ${variant.isSignificant ? 'text-green-600' : 'text-gray-400'}`}>
+                  <div className="text-sm replace-text-gray-500">Significant</div>
+                  <div className={`font-bold ${variant.isSignificant ? 'text-green-600' : 'replace-text-gray-400'}`}>
                     {variant.isSignificant ? '✓ Yes' : '✗ No'}
                   </div>
                 </div>
@@ -191,7 +191,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
                 min="0"
                 max="100"
               />
-              <span className="text-sm text-gray-500">%</span>
+              <span className="text-sm replace-text-gray-500">%</span>
             </div>
           ))}
         </div>
@@ -216,7 +216,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
             onClick={onClose}
             className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
           >
-            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 replace-text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
             </svg>
           </button>
@@ -235,8 +235,8 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
               onClick={() => setActiveTab(tab.id as any)}
               className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
                 activeTab === tab.id
-                  ? 'border-blue-500 text-blue-600'
-                  : 'border-transparent text-gray-500 hover:text-gray-700'
+                  ? 'border-blue-500 text-blue-accessible'
+                  : 'border-transparent replace-text-gray-500 hover:text-gray-700'
               }`}
             >
               <span className="mr-2">{tab.icon}</span>
@@ -256,7 +256,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
                   <div className="text-3xl font-black text-blue-700">
                     {activeTests.filter(t => t.status === 'running').length}
                   </div>
-                  <p className="text-sm text-blue-600">Currently running</p>
+                  <p className="text-sm text-blue-accessible">Currently running</p>
                 </div>
 
                 <div className="bg-green-50 border border-green-200 rounded-lg p-6">
@@ -274,7 +274,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
                       sum + Object.values(test.metrics.conversions).reduce((a, b) => a + b, 0), 0
                     )}
                   </div>
-                  <p className="text-sm text-orange-600">Total conversions</p>
+                  <p className="text-sm text-orange-accessible">Total conversions</p>
                 </div>
               </div>
 
@@ -284,19 +284,19 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
                   <h3 className="text-lg font-bold text-gray-900 mb-4">Current Session</h3>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                     <div>
-                      <span className="font-medium text-gray-600">Session ID:</span>
+                      <span className="font-medium replace-text-gray-600">Session ID:</span>
                       <div className="font-mono text-xs">{session.id.slice(0, 8)}...</div>
                     </div>
                     <div>
-                      <span className="font-medium text-gray-600">Lead Score:</span>
+                      <span className="font-medium replace-text-gray-600">Lead Score:</span>
                       <div className="font-bold">{session.leadScore?.total || 'Not scored'}</div>
                     </div>
                     <div>
-                      <span className="font-medium text-gray-600">Page Views:</span>
+                      <span className="font-medium replace-text-gray-600">Page Views:</span>
                       <div className="font-bold">{session.behavioralData.pageViews}</div>
                     </div>
                     <div>
-                      <span className="font-medium text-gray-600">Time on Site:</span>
+                      <span className="font-medium replace-text-gray-600">Time on Site:</span>
                       <div className="font-bold">{Math.round(session.behavioralData.timeOnSite)}s</div>
                     </div>
                   </div>
@@ -336,16 +336,16 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
                   {getConversionFunnelData().map((step, index) => (
                     <div key={step.id} className="flex items-center">
                       <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                        step.completed ? 'bg-green-500 text-white' : 'bg-gray-300 text-gray-600'
+                        step.completed ? 'bg-green-500 text-white' : 'bg-gray-300 replace-text-gray-600'
                       }`}>
                         {index + 1}
                       </div>
                       <div className="ml-4 flex-1">
                         <div className="font-medium">{step.name}</div>
-                        <div className="text-sm text-gray-600">{step.description}</div>
+                        <div className="text-sm replace-text-gray-600">{step.description}</div>
                       </div>
                       <div className={`px-3 py-1 rounded-full text-xs font-bold ${
-                        step.completed ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-600'
+                        step.completed ? 'bg-green-100 text-green-800' : 'bg-gray-100 replace-text-gray-600'
                       }`}>
                         {step.completed ? 'Completed' : 'Pending'}
                       </div>
@@ -363,20 +363,20 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
                     return (
                       <>
                         <div className="text-center">
-                          <div className="text-2xl font-bold text-blue-600">{insights.pageViews}</div>
-                          <div className="text-sm text-gray-600">Page Views</div>
+                          <div className="text-2xl font-bold text-blue-accessible">{insights.pageViews}</div>
+                          <div className="text-sm replace-text-gray-600">Page Views</div>
                         </div>
                         <div className="text-center">
                           <div className="text-2xl font-bold text-green-600">{Math.round(insights.timeOnSite)}s</div>
-                          <div className="text-sm text-gray-600">Time on Site</div>
+                          <div className="text-sm replace-text-gray-600">Time on Site</div>
                         </div>
                         <div className="text-center">
-                          <div className="text-2xl font-bold text-orange-600">{insights.scrollDepth}%</div>
-                          <div className="text-sm text-gray-600">Scroll Depth</div>
+                          <div className="text-2xl font-bold text-orange-accessible">{insights.scrollDepth}%</div>
+                          <div className="text-sm replace-text-gray-600">Scroll Depth</div>
                         </div>
                         <div className="text-center">
                           <div className="text-2xl font-bold text-purple-600">{insights.interactions.length}</div>
-                          <div className="text-sm text-gray-600">Interactions</div>
+                          <div className="text-sm replace-text-gray-600">Interactions</div>
                         </div>
                       </>
                     );

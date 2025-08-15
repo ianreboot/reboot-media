@@ -110,7 +110,7 @@ const RevenueCeilingBreakthrough = () => {
               
               {/* Breadcrumb */}
               <div className="mb-8">
-                <nav className="flex items-center space-x-2 text-gray-300">
+                <nav className="flex items-center space-x-2 replace-text-gray-300">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-red-400 transition-colors">Growth Plateau Solutions</a>
                   <span>→</span>
                   <span className="text-red-400 font-semibold">Revenue Ceiling Breakthrough</span>
@@ -122,11 +122,11 @@ const RevenueCeilingBreakthrough = () => {
                   <span className="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span>
                   Revenue Stuck at Predictable Milestones
                 </div>
-                <h1 className="heading-hero text-critical dark:text-white text-4xl md:text-6xl font-black mb-6 leading-tight">
+                <h1 className="heading-hero text-gradient-critical text-4xl md:text-6xl font-black mb-6 leading-tight">
                   <span className="text-red-400">Revenue Ceiling</span>
                   <span className="block text-white mt-2">Breakthrough Guide</span>
                 </h1>
-                <p className="text-important text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-important text-xl replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                   Stuck at $500K, $1M, or $1.5M for months? The problem isn't your product or market—it's that 
                   <span className="text-red-400 font-semibold"> founder-led sales can't scale</span> without documented processes.
                 </p>
@@ -146,28 +146,28 @@ const RevenueCeilingBreakthrough = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-red-200/50 dark:border-red-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+                <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   Why Revenue Gets Stuck at Predictable Dollar Amounts
                 </h2>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed text-center">
+                <p className="text-important text-lg text-standard dark:replace-text-gray-300 mb-6 leading-relaxed text-center">
                   After analyzing 200+ growth-stage companies, we discovered that revenue plateaus happen at predictable milestones: 
                   $500K, $1M, $1.2M, $1.5M, and $2M. Each ceiling has a specific psychological and systems cause.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">67%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Hit predictable ceilings</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Hit predictable ceilings</p>
                   </div>
                   <div className="text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
-                    <div className="text-2xl font-bold text-orange-600 mb-1">14mo</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Average time stuck</p>
+                    <div className="text-2xl font-bold text-orange-accessible mb-1">14mo</div>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Average time stuck</p>
                   </div>
                   <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">33%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Break through with systems</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Break through with systems</p>
                   </div>
                 </div>
-                <p className="text-important text-standard dark:text-gray-300 font-semibold text-center">
+                <p className="text-important text-standard dark:replace-text-gray-300 font-semibold text-center">
                   The root cause? What works at $500K breaks at $1M. What works at $1M breaks at $2M.
                 </p>
               </div>
@@ -175,7 +175,7 @@ const RevenueCeilingBreakthrough = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
                 <span className="block">5 Revenue Ceiling Scenarios</span>
                 <span className="block">(Which is Yours?)</span>
               </h2>
@@ -210,7 +210,7 @@ const RevenueCeilingBreakthrough = () => {
                               <span className="mr-2">💬</span>
                               Customer Says:
                             </h4>
-                            <p className="text-standard dark:text-gray-300 italic">
+                            <p className="text-standard dark:replace-text-gray-300 italic">
                               "{scenario.customerSays}"
                             </p>
                           </div>
@@ -220,7 +220,7 @@ const RevenueCeilingBreakthrough = () => {
                               <span className="mr-2">💭</span>
                               Customer Thinks:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.customerThinks}
                             </p>
                           </div>
@@ -233,7 +233,7 @@ const RevenueCeilingBreakthrough = () => {
                               <span className="mr-2">🔍</span>
                               Real Problem:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.realProblem}
                             </p>
                           </div>
@@ -243,7 +243,7 @@ const RevenueCeilingBreakthrough = () => {
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.solution}
                             </p>
                           </div>
@@ -256,7 +256,7 @@ const RevenueCeilingBreakthrough = () => {
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-standard dark:text-gray-300 font-medium">
+                        <p className="text-standard dark:replace-text-gray-300 font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -272,7 +272,7 @@ const RevenueCeilingBreakthrough = () => {
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   🚨 Tired of Founder-Led Sales Bottlenecks?
                 </h3>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-important text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you stay stuck at your revenue ceiling, competitors with documented sales processes are capturing the growth that should be yours. 
                   Get your free plateau analysis and discover which ceiling scenario matches your situation.
                 </p>
@@ -293,7 +293,7 @@ const RevenueCeilingBreakthrough = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
@@ -303,7 +303,7 @@ const RevenueCeilingBreakthrough = () => {
                       Customer Acquisition Stall →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     CAC keeps rising while conversion stays flat? You're competing on the same channels with the same message as everyone else.
                   </p>
                 </div>
@@ -313,7 +313,7 @@ const RevenueCeilingBreakthrough = () => {
                       Marketing Psychology Fundamentals →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     Master the 5 customer awareness stages that transform scattered marketing into predictable revenue systems.
                   </p>
                 </div>

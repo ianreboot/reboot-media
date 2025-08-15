@@ -88,7 +88,7 @@ export const MobileStickyBar: React.FC = () => {
             <div className="text-sm font-bold text-gray-900">
               {shouldShowUrgency() ? '🔥 Limited Time' : personalization.messaging.heroTitle.split(' ').slice(0, 3).join(' ')}
             </div>
-            <div className="text-xs text-gray-600">
+            <div className="text-xs replace-text-gray-600">
               {shouldShowUrgency() ? 'Priority response guaranteed' : 'Free marketing analysis'}
             </div>
           </div>
@@ -101,7 +101,7 @@ export const MobileStickyBar: React.FC = () => {
         </div>
         
         {shouldShowUrgency() && (
-          <div className="mt-2 text-center text-xs text-orange-600 font-medium">
+          <div className="mt-2 text-center text-xs text-orange-accessible font-medium">
             ⚡ Response within 1 hour for qualified leads
           </div>
         )}

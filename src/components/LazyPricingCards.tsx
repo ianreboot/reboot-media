@@ -12,10 +12,10 @@ const LazyPricingCards: React.FC = () => {
       name="PricingCardsLazyLoad"
       fallback={
         <div className="text-center py-12">
-          <p className="text-gray-600">Unable to load pricing information</p>
+          <p className="replace-text-gray-600">Unable to load pricing information</p>
           <button 
             onClick={() => window.location.reload()} 
-            className="mt-2 text-blue-600 hover:text-blue-700 font-medium"
+            className="mt-2 text-blue-accessible hover:text-blue-700 font-medium"
           >
             Refresh to try again
           </button>

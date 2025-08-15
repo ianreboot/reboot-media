@@ -134,7 +134,7 @@ const CostROIAnalysis = () => {
               
               {/* Breadcrumb */}
               <div className="mb-8">
-                <nav className="flex items-center space-x-2 text-gray-300">
+                <nav className="flex items-center space-x-2 replace-text-gray-300">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-green-400 transition-colors">Fractional CMO Guide</a>
                   <span>→</span>
                   <span className="text-green-400 font-semibold">Cost & ROI Analysis</span>
@@ -146,11 +146,11 @@ const CostROIAnalysis = () => {
                   <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                   Real Numbers, Hidden Costs, True ROI
                 </div>
-                <h1 className="heading-hero text-critical dark:text-white mb-6 leading-tight">
+                <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
                   <span className="text-emerald-400">Marketing Cost &</span>
                   <span className="block text-green-400 mt-2">ROI Analysis</span>
                 </h1>
-                <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                   The $300/hour fractional CMO looks expensive until you calculate the true fully-loaded costs. 
                   <span className="text-green-400 font-semibold"> Most companies underestimate costs by 60% and overestimate ROI by 40%.</span>
                 </p>
@@ -170,15 +170,15 @@ const CostROIAnalysis = () => {
             {/* Cost Comparison Table */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8 overflow-x-auto">
-                <h2 className="heading-xl text-critical dark:text-white mb-6">
+                <h2 className="heading-xl text-gradient-critical mb-6">
                   True Cost Comparison (Including Hidden Costs)
                 </h2>
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b-2 border-gray-200 dark:border-gray-700">
                       <th className="text-left py-3 px-2 font-bold text-gray-900 dark:text-white">Cost Factor</th>
-                      <th className="text-center py-3 px-2 text-blue-600">Fractional CMO</th>
-                      <th className="text-center py-3 px-2 text-orange-600">Marketing Agency</th>
+                      <th className="text-center py-3 px-2 text-blue-accessible">Fractional CMO</th>
+                      <th className="text-center py-3 px-2 text-orange-accessible">Marketing Agency</th>
                       <th className="text-center py-3 px-2 text-purple-600">Full-Time CMO</th>
                       <th className="text-center py-3 px-2 text-green-600">In-House Team</th>
                     </tr>
@@ -229,7 +229,7 @@ const CostROIAnalysis = () => {
                     <tr className="border-t-2 border-gray-200 dark:border-gray-700 bg-green-50 dark:bg-green-900/10">
                       <td className="py-3 px-2 font-bold">TRUE ANNUAL COST</td>
                       <td className="text-center py-3 px-2 font-bold text-green-600">$96-180K</td>
-                      <td className="text-center py-3 px-2 font-bold text-orange-600">$84-300K</td>
+                      <td className="text-center py-3 px-2 font-bold text-orange-accessible">$84-300K</td>
                       <td className="text-center py-3 px-2 font-bold text-red-600">$260-436K</td>
                       <td className="text-center py-3 px-2 font-bold text-purple-600">$216-384K</td>
                     </tr>
@@ -241,12 +241,12 @@ const CostROIAnalysis = () => {
             {/* ROI Comparison */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white mb-6">
+                <h2 className="heading-xl text-gradient-critical mb-6">
                   12-Month ROI Comparison (Real Client Data)
                 </h2>
                 <div className="grid md:grid-cols-2 gap-8">
                   <div>
-                    <h3 className="heading-lg text-critical dark:text-white mb-4">Average Revenue Impact</h3>
+                    <h3 className="heading-lg text-gradient-critical mb-4">Average Revenue Impact</h3>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
                         <span className="font-medium">Fractional CMO</span>
@@ -254,7 +254,7 @@ const CostROIAnalysis = () => {
                       </div>
                       <div className="flex justify-between items-center p-3 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
                         <span className="font-medium">Agency</span>
-                        <span className="font-bold text-orange-600">+23% growth</span>
+                        <span className="font-bold text-orange-accessible">+23% growth</span>
                       </div>
                       <div className="flex justify-between items-center p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
                         <span className="font-medium">Consultant</span>
@@ -262,12 +262,12 @@ const CostROIAnalysis = () => {
                       </div>
                       <div className="flex justify-between items-center p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                         <span className="font-medium">In-House</span>
-                        <span className="font-bold text-blue-600">+18% growth</span>
+                        <span className="font-bold text-blue-accessible">+18% growth</span>
                       </div>
                     </div>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-critical dark:text-white mb-4">ROI Multiplier</h3>
+                    <h3 className="heading-lg text-gradient-critical mb-4">ROI Multiplier</h3>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center p-3 bg-green-50 dark:bg-green-900/20 rounded-lg">
                         <span className="font-medium">Fractional CMO</span>
@@ -275,7 +275,7 @@ const CostROIAnalysis = () => {
                       </div>
                       <div className="flex justify-between items-center p-3 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
                         <span className="font-medium">Agency</span>
-                        <span className="font-bold text-orange-600">1.8x ROI</span>
+                        <span className="font-bold text-orange-accessible">1.8x ROI</span>
                       </div>
                       <div className="flex justify-between items-center p-3 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
                         <span className="font-medium">Consultant</span>
@@ -283,7 +283,7 @@ const CostROIAnalysis = () => {
                       </div>
                       <div className="flex justify-between items-center p-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                         <span className="font-medium">In-House</span>
-                        <span className="font-bold text-blue-600">1.4x ROI</span>
+                        <span className="font-bold text-blue-accessible">1.4x ROI</span>
                       </div>
                     </div>
                   </div>
@@ -293,7 +293,7 @@ const CostROIAnalysis = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white mb-12 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-12 text-center">
                 7 Cost & ROI Revelations (The Numbers They Don't Share)
               </h2>
               
@@ -327,7 +327,7 @@ const CostROIAnalysis = () => {
                               <span className="mr-2">💬</span>
                               Company Says:
                             </h4>
-                            <p className="text-standard dark:text-gray-300 italic">
+                            <p className="text-standard dark:replace-text-gray-300 italic">
                               "{scenario.companySays}"
                             </p>
                           </div>
@@ -337,7 +337,7 @@ const CostROIAnalysis = () => {
                               <span className="mr-2">💭</span>
                               Company Thinks:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.companyThinks}
                             </p>
                           </div>
@@ -350,7 +350,7 @@ const CostROIAnalysis = () => {
                               <span className="mr-2">🔍</span>
                               Real Consideration:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.realConsideration}
                             </p>
                           </div>
@@ -360,7 +360,7 @@ const CostROIAnalysis = () => {
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.evaluationFramework}
                             </p>
                           </div>
@@ -373,7 +373,7 @@ const CostROIAnalysis = () => {
                           <span className="mr-2">💰</span>
                           Financial Reality:
                         </h4>
-                        <p className="text-standard dark:text-gray-300 font-medium">
+                        <p className="text-standard dark:replace-text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -414,10 +414,10 @@ const CostROIAnalysis = () => {
             {/* Call to Action */}
             <section className="mb-16">
               <div className="text-center bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl p-8 border border-green-200/50 dark:border-green-800/50">
-                <h3 className="heading-lg text-critical dark:text-white mb-4">
+                <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Every Month You Delay Costs You $26,000+
                 </h3>
-                <p className="text-lg text-standard dark:text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   That's the average monthly opportunity cost of not having strategic marketing leadership. 
                   Get your personalized cost-benefit analysis and see your specific numbers.
                 </p>
@@ -435,27 +435,27 @@ const CostROIAnalysis = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
                 Related Financial Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-critical dark:text-white mb-3">
+                  <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/when-to-choose-each`} className="hover:text-green-600 transition-colors">
                       Revenue Stage Decision Matrix →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     Different revenue stages require different marketing investments. Find your optimal model based on your stage.
                   </p>
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-critical dark:text-white mb-3">
+                  <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} className="hover:text-green-600 transition-colors">
                       Breaking Revenue Ceilings →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     Most companies hit revenue ceilings due to marketing underinvestment. Learn the investment triggers for breakthrough.
                   </p>
                 </div>

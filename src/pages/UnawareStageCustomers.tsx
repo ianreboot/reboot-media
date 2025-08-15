@@ -37,11 +37,11 @@ const UnawareStageCustomers = () => {
           <section className="pt-20 md:pt-24 pb-8 bg-gradient-to-br from-slate-900 via-slate-950 to-black relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,165,0,0.1)_0%,transparent_50%)]"></div>
             <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-              <h1 className="heading-hero text-critical dark:text-white mb-6 leading-tight">
+              <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
                 "Everything Is Fine"
                 <span className="block text-orange-500 mt-2">When Customers Don't Know They're Bleeding Money</span>
               </h1>
-              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                 These prospects think their biggest problem is getting more leads. The reality? They're solving the wrong problem entirely, and every day of confusion costs them customers.
               </p>
             </div>
@@ -51,10 +51,10 @@ const UnawareStageCustomers = () => {
           <section className="bg-white/5 backdrop-blur-sm border-b border-white/10">
             <div className="max-w-4xl mx-auto px-6 lg:px-8 py-4">
               <nav className="flex items-center space-x-2 text-sm">
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="text-gray-400 hover:text-orange-400 transition-colors">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="replace-text-gray-400 hover:text-orange-400 transition-colors">
                   Marketing Psychology
                 </a>
-                <span className="text-gray-600">→</span>
+                <span className="replace-text-gray-600">→</span>
                 <span className="text-orange-400">Unaware Stage Customers</span>
               </nav>
             </div>
@@ -65,14 +65,14 @@ const UnawareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important dark:text-gray-300 mb-6 text-center">
+              <p className="text-lg text-important dark:replace-text-gray-300 mb-6 text-center">
                 Unaware stage customers are the most dangerous for your business. They're convinced they're doing fine when they're actually hemorrhaging opportunities. Here are real examples of what they say and what's actually happening.
               </p>
             </section>
 
             {/* Real Customer Examples */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
                 What Unaware Customers Actually Say (And What's Really Happening)
               </h2>
 
@@ -82,17 +82,17 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"We built the best product but no one gets it"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"We built the best product but no one gets it"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">You're speaking engineer, they're thinking business results. Your "advanced features" sound like expensive complications to someone trying to solve a simple problem.</p>
+                    <p className="text-standard dark:replace-text-gray-300">You're speaking engineer, they're thinking business results. Your "advanced features" sound like expensive complications to someone trying to solve a simple problem.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Start with the cost of their current broken process. Instead of "Our AI-powered analytics platform," try "Stop losing $3,000 monthly to decisions made on gut feeling instead of data."</p>
+                    <p className="text-standard dark:replace-text-gray-300">Start with the cost of their current broken process. Instead of "Our AI-powered analytics platform," try "Stop losing $3,000 monthly to decisions made on gut feeling instead of data."</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -105,17 +105,17 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"We just need more traffic to our website"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"We just need more traffic to our website"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">More traffic to a broken experience just means more people saying no. They're treating symptoms while the disease spreads.</p>
+                    <p className="text-standard dark:replace-text-gray-300">More traffic to a broken experience just means more people saying no. They're treating symptoms while the disease spreads.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Help them see the real math. "Before sending more people to a site where 90% leave confused, let's figure out why your current visitors aren't buying. More confused people isn't the solution."</p>
+                    <p className="text-standard dark:replace-text-gray-300">Help them see the real math. "Before sending more people to a site where 90% leave confused, let's figure out why your current visitors aren't buying. More confused people isn't the solution."</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -128,17 +128,17 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"Our prices are competitive, I don't know why we're not winning deals"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"Our prices are competitive, I don't know why we're not winning deals"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">When price becomes the conversation, you've already lost. You're being compared like a commodity because you haven't shown unique value.</p>
+                    <p className="text-standard dark:replace-text-gray-300">When price becomes the conversation, you've already lost. You're being compared like a commodity because you haven't shown unique value.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Change the conversation from cost to outcome. "The companies beating you aren't competing on price—they're making price irrelevant by showing specific results their solution delivers."</p>
+                    <p className="text-standard dark:replace-text-gray-300">Change the conversation from cost to outcome. "The companies beating you aren't competing on price—they're making price irrelevant by showing specific results their solution delivers."</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -151,17 +151,17 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"Everyone in our industry struggles with marketing"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"Everyone in our industry struggles with marketing"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">They're normalizing failure instead of recognizing opportunity. While they accept "everyone struggles," their smartest competitors are pulling ahead.</p>
+                    <p className="text-standard dark:replace-text-gray-300">They're normalizing failure instead of recognizing opportunity. While they accept "everyone struggles," their smartest competitors are pulling ahead.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Show them the exception proves the rule. "While most companies in your space do struggle, the 15% that don't are capturing disproportionate market share. Here's what they do differently."</p>
+                    <p className="text-standard dark:replace-text-gray-300">Show them the exception proves the rule. "While most companies in your space do struggle, the 15% that don't are capturing disproportionate market share. Here's what they do differently."</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -174,17 +174,17 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"Our team is too busy to focus on marketing right now"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"Our team is too busy to focus on marketing right now"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">They're confusing activity with progress. Being "busy" often means working harder on the wrong things while competitors work smarter on the right things.</p>
+                    <p className="text-standard dark:replace-text-gray-300">They're confusing activity with progress. Being "busy" often means working harder on the wrong things while competitors work smarter on the right things.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Reframe busy as expensive. "The cost of your team being too busy for marketing isn't just missed opportunities—it's working twice as hard for half the results because you're invisible to your best prospects."</p>
+                    <p className="text-standard dark:replace-text-gray-300">Reframe busy as expensive. "The cost of your team being too busy for marketing isn't just missed opportunities—it's working twice as hard for half the results because you're invisible to your best prospects."</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -197,17 +197,17 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"We've tried marketing before and it didn't work"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"We've tried marketing before and it didn't work"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">They're treating marketing like a magic button instead of a systematic process. One failed attempt makes them think the entire discipline doesn't work.</p>
+                    <p className="text-standard dark:replace-text-gray-300">They're treating marketing like a magic button instead of a systematic process. One failed attempt makes them think the entire discipline doesn't work.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Separate strategy from tactics. "Marketing isn't one thing that either works or doesn't. The question is: did you have the right message, to the right people, at the right time? Most 'marketing failures' are actually messaging failures."</p>
+                    <p className="text-standard dark:replace-text-gray-300">Separate strategy from tactics. "Marketing isn't one thing that either works or doesn't. The question is: did you have the right message, to the right people, at the right time? Most 'marketing failures' are actually messaging failures."</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -221,7 +221,7 @@ const UnawareStageCustomers = () => {
 
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-6 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-6 text-center">
                 The Pattern: What Unaware Customers Really Need
               </h2>
               
@@ -237,7 +237,7 @@ const UnawareStageCustomers = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
                   <h3 className="heading-lg text-important dark:text-white mb-3">What NOT to do:</h3>
-                  <ul className="text-standard dark:text-gray-300 space-y-2 text-sm">
+                  <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
                     <li>• Lead with features or capabilities</li>
                     <li>• Assume they understand the problem</li>
                     <li>• Use industry jargon or technical terms</li>
@@ -248,7 +248,7 @@ const UnawareStageCustomers = () => {
                 
                 <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
                   <h3 className="heading-lg text-important dark:text-white mb-3">What TO do:</h3>
-                  <ul className="text-standard dark:text-gray-300 space-y-2 text-sm">
+                  <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
                     <li>• Start with the cost of their current situation</li>
                     <li>• Use their exact language and concerns</li>
                     <li>• Provide gentle education, not sales pressure</li>
@@ -261,10 +261,10 @@ const UnawareStageCustomers = () => {
 
             {/* Strong CTA Section */}
             <section className="text-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white rounded-2xl p-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-6">
+              <h2 className="heading-xl text-gradient-critical mb-6">
                 Are You Struggling with Customers Who Don't Even Know You Exist?
               </h2>
-              <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
+              <p className="replace-text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
                 Stop wasting months trying to convince people who think everything is fine. Get our systematic approach to turning unaware prospects into eager customers who finally understand what they've been missing.
               </p>
               <button 
@@ -273,7 +273,7 @@ const UnawareStageCustomers = () => {
               >
                 Get Your Free Marketing Psychology Analysis →
               </button>
-              <p className="text-gray-400 text-sm mt-4">
+              <p className="replace-text-gray-400 text-sm mt-4">
                 ✅ Identify your biggest unaware prospect problems • ✅ Custom messaging strategy • ✅ No obligation
               </p>
             </section>
@@ -283,13 +283,13 @@ const UnawareStageCustomers = () => {
               <div className="flex justify-between items-center">
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`}
-                  className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
+                  className="replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible dark:hover:text-orange-400 transition-colors"
                 >
                   ← Back to Marketing Psychology Overview
                 </a>
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/problem-aware-stage-customers`}
-                  className="text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors"
+                  className="text-orange-accessible dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors"
                 >
                   Next: Problem-Aware Stage Customers →
                 </a>

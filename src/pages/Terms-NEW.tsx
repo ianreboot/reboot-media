@@ -45,30 +45,30 @@ const Terms = () => {
         content: (
           <div className="space-y-8">
             <div className="text-center mb-8">
-              <h1 className="heading-hero text-critical dark:text-white mb-4">
+              <h1 className="heading-hero text-gradient-critical mb-4">
                 Terms of Service for Reboot Media
               </h1>
-              <p className="text-optional dark:text-gray-300">Effective Date: January 8, 2025</p>
+              <p className="text-optional dark:replace-text-gray-300">Effective Date: January 8, 2025</p>
             </div>
             
-            <p className="text-standard dark:text-gray-300">
+            <p className="text-standard dark:replace-text-gray-300">
               Please read these Terms of Service ("Terms") carefully before using the https://www.rebootmedia.net website 
               (the "Service") and engaging with the marketing consulting services operated by Reboot Media, Inc. ("us", "we", or "our").
             </p>
             
-            <p className="text-standard dark:text-gray-300">
+            <p className="text-standard dark:replace-text-gray-300">
               Your access to and use of the Service, as well as your engagement with our marketing consulting services, is conditioned 
               on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users, and clients who 
               access or use our website and services. By accessing our website or engaging our services, you agree to be bound by these Terms.
             </p>
 
             <section>
-              <h2 className="heading-xl text-critical dark:text-white mb-4">1. Description of Services</h2>
-              <p className="mb-4 text-standard dark:text-gray-300">
+              <h2 className="heading-xl text-gradient-critical mb-4">1. Description of Services</h2>
+              <p className="mb-4 text-standard dark:replace-text-gray-300">
                 Reboot Media, Inc. provides fractional Chief Marketing Officer (CMO) services, strategic marketing consulting, 
                 and related business advisory services to companies seeking C-level marketing expertise. Our services include:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-standard dark:text-gray-300">
+              <ul className="list-disc list-inside space-y-2 text-standard dark:replace-text-gray-300">
                 <li><strong>Quick-Win Strategy:</strong> 3-month strategic analysis and revenue growth strategy development</li>
                 <li><strong>Growth Strategy:</strong> 6-month strategic marketing implementation with ongoing guidance</li>
                 <li><strong>Fractional CMO:</strong> 12-month comprehensive marketing leadership transformation</li>
@@ -76,19 +76,19 @@ const Terms = () => {
                 <li><strong>Growth Advisory:</strong> Ongoing strategic guidance and business development support</li>
                 <li><strong>Marketing Analysis:</strong> Data-driven insights and performance optimization</li>
               </ul>
-              <p className="mt-4 text-standard dark:text-gray-300">
+              <p className="mt-4 text-standard dark:replace-text-gray-300">
                 <strong>Service Dependencies:</strong> Our services may involve third-party tools, platforms, and integrations 
                 for analytics, automation, and marketing execution. Service effectiveness may depend on these third-party systems.
               </p>
             </section>
 
             <section>
-              <h2 className="heading-xl text-critical dark:text-white mb-4">2. Client Engagement and Responsibilities</h2>
-              <p className="mb-4 text-standard dark:text-gray-300">
+              <h2 className="heading-xl text-gradient-critical mb-4">2. Client Engagement and Responsibilities</h2>
+              <p className="mb-4 text-standard dark:replace-text-gray-300">
                 To engage our marketing consulting services, you must provide accurate information about your business, marketing 
                 challenges, and objectives. You are responsible for:
               </p>
-              <ul className="list-disc list-inside space-y-2 text-standard dark:text-gray-300">
+              <ul className="list-disc list-inside space-y-2 text-standard dark:replace-text-gray-300">
                 <li>Providing timely access to necessary business data, marketing metrics, and operational information</li>
                 <li>Participating in scheduled strategy sessions, meetings, and collaborative planning activities</li>
                 <li>Implementing recommended strategies and tactics within agreed-upon timeframes</li>
@@ -99,15 +99,15 @@ const Terms = () => {
             </section>
 
             <section>
-              <h2 className="heading-xl text-critical dark:text-white mb-4">16. Contact Information</h2>
-              <p className="mb-4 text-standard dark:text-gray-300">
+              <h2 className="heading-xl text-gradient-critical mb-4">16. Contact Information</h2>
+              <p className="mb-4 text-standard dark:replace-text-gray-300">
                 If you have questions about these Terms or our services, please contact us:
               </p>
               <div className="bg-gray-50 dark:bg-slate-800 p-4 rounded-lg">
                 <p className="font-medium text-important dark:text-white">Reboot Media, Inc.</p>
-                <p className="text-optional dark:text-gray-400">17595 Harvard Ave C-738</p>
-                <p className="text-optional dark:text-gray-400">Irvine, CA 92614, USA</p>
-                <p className="text-standard dark:text-gray-300">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-600 underline">Submit inquiry</a></p>
+                <p className="text-optional dark:replace-text-gray-400">17595 Harvard Ave C-738</p>
+                <p className="text-optional dark:replace-text-gray-400">Irvine, CA 92614, USA</p>
+                <p className="text-standard dark:replace-text-gray-300">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-accessible underline">Submit inquiry</a></p>
               </div>
             </section>
           </div>

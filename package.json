@@ -20,7 +20,11 @@
     "test:coverage": "node --max-old-space-size=2048 node_modules/vitest/vitest.mjs --coverage",
     "deploy:dev": "./scripts/deploy-dev.sh",
     "deploy:fullstack:dev": "./scripts/deploy-fullstack-dev.sh",
-    "deploy:prod": "./scripts/deploy-prod.sh"
+    "deploy:prod": "./scripts/deploy-prod.sh",
+    "accessibility:validate": "node scripts/accessibility-validation.js",
+    "accessibility:full-pipeline": "npm run build:dev && npm run accessibility:validate",
+    "accessibility:fix": "node scripts/accessibility-bulk-fix.js",
+    "accessibility:fix-and-validate": "npm run accessibility:fix && npm run build:dev && npm run accessibility:validate"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",

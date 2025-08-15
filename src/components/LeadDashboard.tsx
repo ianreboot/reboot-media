@@ -126,7 +126,7 @@ const LeadDashboard: React.FC = () => {
       case 'high': return 'text-red-600 bg-red-50';
       case 'medium': return 'text-yellow-600 bg-yellow-50';
       case 'low': return 'text-green-600 bg-green-50';
-      default: return 'text-gray-600 bg-gray-50';
+      default: return 'replace-text-gray-600 bg-gray-50';
     }
   };
 
@@ -137,7 +137,7 @@ const LeadDashboard: React.FC = () => {
     } else if (trend === 'declining') {
       return <TrendingDown className="w-5 h-5 text-red-500" />;
     }
-    return <Activity className="w-5 h-5 text-gray-500" />;
+    return <Activity className="w-5 h-5 replace-text-gray-500" />;
   };
 
   return (
@@ -148,7 +148,7 @@ const LeadDashboard: React.FC = () => {
           <h1 className="text-3xl font-bold text-gray-900 mb-2">
             Lead Analytics Dashboard
           </h1>
-          <p className="text-gray-600">
+          <p className="replace-text-gray-600">
             Real-time insights into lead generation and conversion performance
           </p>
         </div>
@@ -178,7 +178,7 @@ const LeadDashboard: React.FC = () => {
               <Users className="w-8 h-8 text-blue-500" />
               {getTrendIcon(trendData.trend)}
             </div>
-            <h3 className="text-sm font-medium text-gray-500 mb-1">Total Leads</h3>
+            <h3 className="text-sm font-medium replace-text-gray-500 mb-1">Total Leads</h3>
             <p className="text-2xl font-bold text-gray-900">{metrics.totalLeads}</p>
             <p className={`text-sm mt-2 ${
               trendData.changePercent > 0 ? 'text-green-600' : 'text-red-600'
@@ -197,9 +197,9 @@ const LeadDashboard: React.FC = () => {
                 {metrics.conversionRate >= 3 ? 'On Target' : 'Below Target'}
               </span>
             </div>
-            <h3 className="text-sm font-medium text-gray-500 mb-1">Conversion Rate</h3>
+            <h3 className="text-sm font-medium replace-text-gray-500 mb-1">Conversion Rate</h3>
             <p className="text-2xl font-bold text-gray-900">{formatPercent(metrics.conversionRate)}</p>
-            <p className="text-sm text-gray-500 mt-2">Industry avg: 2.35%</p>
+            <p className="text-sm replace-text-gray-500 mt-2">Industry avg: 2.35%</p>
           </div>
 
           {/* Average Lead Score */}
@@ -211,7 +211,7 @@ const LeadDashboard: React.FC = () => {
                  metrics.averageScore >= 50 ? 'Medium Quality' : 'Low Quality'}
               </span>
             </div>
-            <h3 className="text-sm font-medium text-gray-500 mb-1">Avg Lead Score</h3>
+            <h3 className="text-sm font-medium replace-text-gray-500 mb-1">Avg Lead Score</h3>
             <p className="text-2xl font-bold text-gray-900">{metrics.averageScore}</p>
             <div className="mt-2 bg-gray-200 rounded-full h-2">
               <div 
@@ -225,11 +225,11 @@ const LeadDashboard: React.FC = () => {
           <div className="bg-white rounded-xl shadow-sm p-6">
             <div className="flex items-center justify-between mb-4">
               <DollarSign className="w-8 h-8 text-yellow-500" />
-              <Clock className="w-5 h-5 text-gray-400" />
+              <Clock className="w-5 h-5 replace-text-gray-400" />
             </div>
-            <h3 className="text-sm font-medium text-gray-500 mb-1">Pipeline Value</h3>
+            <h3 className="text-sm font-medium replace-text-gray-500 mb-1">Pipeline Value</h3>
             <p className="text-2xl font-bold text-gray-900">{formatCurrency(metrics.estimatedRevenue)}</p>
-            <p className="text-sm text-gray-500 mt-2">Next 12 months</p>
+            <p className="text-sm replace-text-gray-500 mt-2">Next 12 months</p>
           </div>
         </div>
 
@@ -249,7 +249,7 @@ const LeadDashboard: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-lg font-bold text-gray-900">{metrics.hotLeads}</span>
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm replace-text-gray-500">
                     ({formatPercent((metrics.hotLeads / metrics.totalLeads) * 100)})
                   </span>
                 </div>
@@ -261,7 +261,7 @@ const LeadDashboard: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-lg font-bold text-gray-900">{metrics.warmLeads}</span>
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm replace-text-gray-500">
                     ({formatPercent((metrics.warmLeads / metrics.totalLeads) * 100)})
                   </span>
                 </div>
@@ -273,7 +273,7 @@ const LeadDashboard: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-lg font-bold text-gray-900">{metrics.coldLeads}</span>
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm replace-text-gray-500">
                     ({formatPercent((metrics.coldLeads / metrics.totalLeads) * 100)})
                   </span>
                 </div>
@@ -285,7 +285,7 @@ const LeadDashboard: React.FC = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <span className="text-lg font-bold text-gray-900">{metrics.unqualifiedLeads}</span>
-                  <span className="text-sm text-gray-500">
+                  <span className="text-sm replace-text-gray-500">
                     ({formatPercent((metrics.unqualifiedLeads / metrics.totalLeads) * 100)})
                   </span>
                 </div>
@@ -324,7 +324,7 @@ const LeadDashboard: React.FC = () => {
                 <div key={stage.name} className="relative">
                   <div className="flex items-center justify-between mb-1">
                     <span className="text-sm font-medium text-gray-700">{stage.name}</span>
-                    <span className="text-sm text-gray-500">{stage.count}</span>
+                    <span className="text-sm replace-text-gray-500">{stage.count}</span>
                   </div>
                   <div className="bg-gray-200 rounded-full h-6">
                     <div 
@@ -374,7 +374,7 @@ const LeadDashboard: React.FC = () => {
                     {rec.expectedImpact}
                   </span>
                 </div>
-                <p className="text-sm text-gray-600 mb-2">{rec.issue}</p>
+                <p className="text-sm replace-text-gray-600 mb-2">{rec.issue}</p>
                 <p className="text-sm font-medium text-gray-900">
                   → {rec.recommendation}
                 </p>
@@ -391,16 +391,16 @@ const LeadDashboard: React.FC = () => {
           </h3>
           <div className="bg-gray-50 rounded-lg p-4">
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-gray-600">Current Trend</span>
+              <span className="text-sm replace-text-gray-600">Current Trend</span>
               <span className={`font-semibold capitalize ${
                 trendData.trend === 'improving' ? 'text-green-600' :
-                trendData.trend === 'declining' ? 'text-red-600' : 'text-gray-600'
+                trendData.trend === 'declining' ? 'text-red-600' : 'replace-text-gray-600'
               }`}>
                 {trendData.trend}
               </span>
             </div>
             <div className="flex items-center justify-between mb-2">
-              <span className="text-sm text-gray-600">Change</span>
+              <span className="text-sm replace-text-gray-600">Change</span>
               <span className={`font-semibold ${
                 trendData.changePercent > 0 ? 'text-green-600' : 'text-red-600'
               }`}>
@@ -408,7 +408,7 @@ const LeadDashboard: React.FC = () => {
               </span>
             </div>
             <div className="flex items-center justify-between mb-4">
-              <span className="text-sm text-gray-600">Average Score</span>
+              <span className="text-sm replace-text-gray-600">Average Score</span>
               <span className="font-semibold text-gray-900">{trendData.averageScore}/100</span>
             </div>
             <div className="bg-blue-50 rounded-lg p-3">

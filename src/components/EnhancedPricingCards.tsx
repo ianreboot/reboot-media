@@ -231,7 +231,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${
             service.color === 'orange' || service.color === 'blue' 
               ? 'bg-white/20 text-white'
-              : 'bg-gray-100 text-gray-600'
+              : 'bg-gray-100 replace-text-gray-600'
           }`}>
             {service.size} Business
           </div>
@@ -240,7 +240,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
             service.color === 'gray' ? 'text-slate-900' : 'text-white'
           }`}>{service.title}</h3>
           <p className={`text-sm ${
-            service.color === 'gray' ? 'text-gray-600' : 'text-white/90'
+            service.color === 'gray' ? 'replace-text-gray-600' : 'text-white/90'
           }`}>{service.subtitle}</p>
         </div>
 
@@ -257,7 +257,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
               {service.valueProposition}
             </p>
             <p className={`text-xs mt-1 ${
-              service.color === 'gray' ? 'text-blue-600' : 'text-white/80'
+              service.color === 'gray' ? 'text-blue-accessible' : 'text-white/80'
             }`}>
               {service.roi}
             </p>
@@ -267,14 +267,14 @@ const PricingCard: React.FC<PricingCardProps> = ({
         {/* Pricing */}
         <div className="mb-4">
           <div className={`text-sm line-through mb-1 ${
-            service.color === 'gray' ? 'text-gray-500' : 'text-white/60'
+            service.color === 'gray' ? 'replace-text-gray-500' : 'text-white/60'
           }`}>{service.originalPrice}/mo</div>
           <div className="flex items-baseline justify-center gap-1">
             <span className={`text-3xl font-black ${
-              service.color === 'gray' ? 'text-orange-600' : 'text-white'
+              service.color === 'gray' ? 'text-orange-accessible' : 'text-white'
             }`}>{service.price}</span>
             <span className={`text-sm ${
-              service.color === 'gray' ? 'text-gray-600' : 'text-white/90'
+              service.color === 'gray' ? 'replace-text-gray-600' : 'text-white/90'
             }`}>{service.priceNote}</span>
           </div>
           
@@ -302,7 +302,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         </div>
 
         <div className={`text-xs mb-4 ${
-          service.color === 'gray' ? 'text-gray-600' : 'text-white/80'
+          service.color === 'gray' ? 'replace-text-gray-600' : 'text-white/80'
         }`}>{service.duration}</div>
 
         {/* Tier Message */}
@@ -337,7 +337,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           onMouseEnter={() => onEngagement('cta_hover', service.title)}
           className={`w-full py-3 rounded-xl font-bold transition-all duration-300 ${
             service.color === 'orange'
-              ? 'bg-white text-orange-600 hover:bg-orange-50'
+              ? 'bg-white text-orange-accessible hover:bg-orange-50'
               : service.color === 'blue'
               ? 'bg-white text-blue-700 hover:bg-blue-50'
               : leadTier === 'Hot'
@@ -352,7 +352,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         {tierMessage?.urgency && (
           <div className="mt-3 text-center text-xs">
             <span className={`font-bold ${
-              service.color === 'orange' || service.color === 'blue' ? 'text-yellow-200' : 'text-orange-600'
+              service.color === 'orange' || service.color === 'blue' ? 'text-yellow-200' : 'text-orange-accessible'
             }`}>
               ⚡ {tierMessage.urgency}
             </span>
@@ -361,7 +361,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
         {/* Guarantee */}
         <div className={`mt-4 text-center text-xs ${
-          service.color === 'orange' || service.color === 'blue' ? 'text-white/70' : 'text-gray-500'
+          service.color === 'orange' || service.color === 'blue' ? 'text-white/70' : 'replace-text-gray-500'
         }`}>
           90-day improvement guarantee
         </div>
@@ -483,7 +483,7 @@ const EnhancedPricingCards = () => {
         <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">
           {sectionContent.title}
         </h2>
-        <p className="text-lg text-gray-600 mb-8">
+        <p className="text-lg replace-text-gray-600 mb-8">
           {sectionContent.subtitle}
         </p>
         
@@ -609,7 +609,7 @@ const EnhancedPricingCards = () => {
             <p className="text-gray-700 font-medium mb-2">
               "We saw a 340% increase in qualified leads within 90 days"
             </p>
-            <p className="text-sm text-gray-600">
+            <p className="text-sm replace-text-gray-600">
               - Sarah Chen, CEO of TechScale (Similar company size and industry)
             </p>
             <div className="flex justify-center mt-4">

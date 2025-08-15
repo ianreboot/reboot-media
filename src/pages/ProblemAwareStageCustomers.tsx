@@ -37,11 +37,11 @@ const ProblemAwareStageCustomers = () => {
           <section className="pt-20 md:pt-24 pb-8 bg-gradient-to-br from-slate-900 via-slate-950 to-black relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,165,0,0.1)_0%,transparent_50%)"></div>
             <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-              <h1 className="heading-hero text-critical dark:text-white mb-6 leading-tight">
+              <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
                 "Something Isn't Working"
                 <span className="block text-orange-500 mt-2">The Frustration of Knowing You're Stuck Without Knowing Why</span>
               </h1>
-              <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                 These prospects know their marketing is broken. They see competitors pulling ahead. But they're throwing solutions at the wall hoping something sticks—because they haven't diagnosed the real problem yet.
               </p>
             </div>
@@ -51,10 +51,10 @@ const ProblemAwareStageCustomers = () => {
           <section className="bg-white/5 backdrop-blur-sm border-b border-white/10">
             <div className="max-w-4xl mx-auto px-6 lg:px-8 py-4">
               <nav className="flex items-center space-x-2 text-sm">
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="text-gray-400 hover:text-orange-400 transition-colors">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="replace-text-gray-400 hover:text-orange-400 transition-colors">
                   Marketing Psychology
                 </a>
-                <span className="text-gray-600">→</span>
+                <span className="replace-text-gray-600">→</span>
                 <span className="text-orange-400">Problem-Aware Stage Customers</span>
               </nav>
             </div>
@@ -65,14 +65,14 @@ const ProblemAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important dark:text-gray-300 mb-6 text-center">
+              <p className="text-lg text-important dark:replace-text-gray-300 mb-6 text-center">
                 Problem-aware customers are dangerous to themselves. They know enough to be worried but not enough to make smart decisions. They're buying random tools, hiring random freelancers, and changing strategies every month—burning cash without understanding why nothing works.
               </p>
             </section>
 
             {/* Real Customer Examples */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
                 <span className="block">What Problem-Aware Customers Actually Say</span>
                 <span className="block">(And What They Really Need)</span>
               </h2>
@@ -83,17 +83,17 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"Our marketing isn't working anymore"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"Our marketing isn't working anymore"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">They're measuring the wrong things. Their marketing might be working perfectly—they just can't tell because they're looking at vanity metrics instead of revenue drivers.</p>
+                    <p className="text-standard dark:replace-text-gray-300">They're measuring the wrong things. Their marketing might be working perfectly—they just can't tell because they're looking at vanity metrics instead of revenue drivers.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Help them see the measurement gap. "Most companies think their marketing is broken when really their measurement is. Let me show you the three numbers that actually predict revenue growth."</p>
+                    <p className="text-standard dark:replace-text-gray-300">Help them see the measurement gap. "Most companies think their marketing is broken when really their measurement is. Let me show you the three numbers that actually predict revenue growth."</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -106,17 +106,17 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"We're getting traffic but no one's buying"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"We're getting traffic but no one's buying"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">They're attracting the wrong people. High traffic from people who will never buy is worse than low traffic from qualified prospects.</p>
+                    <p className="text-standard dark:replace-text-gray-300">They're attracting the wrong people. High traffic from people who will never buy is worse than low traffic from qualified prospects.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Show them the quality vs quantity truth. "You don't have a traffic problem, you have a targeting problem. Would you rather have 10,000 visitors and 10 sales, or 500 visitors and 50 sales?"</p>
+                    <p className="text-standard dark:replace-text-gray-300">Show them the quality vs quantity truth. "You don't have a traffic problem, you have a targeting problem. Would you rather have 10,000 visitors and 10 sales, or 500 visitors and 50 sales?"</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -129,17 +129,17 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"Our customer acquisition cost keeps going up"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"Our customer acquisition cost keeps going up"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">They're competing on the same message as everyone else. When you sound identical to competitors, the only differentiator becomes price—and costs skyrocket.</p>
+                    <p className="text-standard dark:replace-text-gray-300">They're competing on the same message as everyone else. When you sound identical to competitors, the only differentiator becomes price—and costs skyrocket.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Help them find their unique angle. "CAC goes up when you're fighting for the same customers with the same message. What if we targeted a slightly different problem that only you solve well?"</p>
+                    <p className="text-standard dark:replace-text-gray-300">Help them find their unique angle. "CAC goes up when you're fighting for the same customers with the same message. What if we targeted a slightly different problem that only you solve well?"</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -152,17 +152,17 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"We tried content marketing and it didn't work"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"We tried content marketing and it didn't work"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">They created content for themselves, not their customers. Blog posts about company updates and product features that no prospect cares about.</p>
+                    <p className="text-standard dark:replace-text-gray-300">They created content for themselves, not their customers. Blog posts about company updates and product features that no prospect cares about.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Shift to problem-focused content. "Content marketing fails when it's about you. It succeeds when it's about your customer's expensive problems. What's the #1 question prospects ask before buying?"</p>
+                    <p className="text-standard dark:replace-text-gray-300">Shift to problem-focused content. "Content marketing fails when it's about you. It succeeds when it's about your customer's expensive problems. What's the #1 question prospects ask before buying?"</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -175,17 +175,17 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"Social media isn't driving any sales"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"Social media isn't driving any sales"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">They're using social media for broadcasting instead of conversation. Posting into the void and wondering why no one responds.</p>
+                    <p className="text-standard dark:replace-text-gray-300">They're using social media for broadcasting instead of conversation. Posting into the void and wondering why no one responds.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Teach them engagement over reach. "Social media doesn't drive sales through posts—it drives sales through relationships. Are you spending more time posting or responding to ideal customers?"</p>
+                    <p className="text-standard dark:replace-text-gray-300">Teach them engagement over reach. "Social media doesn't drive sales through posts—it drives sales through relationships. Are you spending more time posting or responding to ideal customers?"</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -198,17 +198,17 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"Our sales team says leads are terrible"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"Our sales team says leads are terrible"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">Marketing and sales aren't aligned on what a "good lead" looks like. Marketing celebrates quantity while sales needs quality.</p>
+                    <p className="text-standard dark:replace-text-gray-300">Marketing and sales aren't aligned on what a "good lead" looks like. Marketing celebrates quantity while sales needs quality.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Create a shared definition of success. "The leads aren't terrible—the handoff is. What are the three things sales needs to know about a lead to have a successful first conversation?"</p>
+                    <p className="text-standard dark:replace-text-gray-300">Create a shared definition of success. "The leads aren't terrible—the handoff is. What are the three things sales needs to know about a lead to have a successful first conversation?"</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -221,17 +221,17 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:text-gray-300 italic">"Competitors keep stealing our customers"</p>
+                    <p className="text-standard dark:replace-text-gray-300 italic">"Competitors keep stealing our customers"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:text-gray-300">They're not giving customers a reason to stay. No differentiation, no relationship, no switching costs—just hoping loyalty happens by accident.</p>
+                    <p className="text-standard dark:replace-text-gray-300">They're not giving customers a reason to stay. No differentiation, no relationship, no switching costs—just hoping loyalty happens by accident.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:text-gray-300">Build switching costs through value. "Competitors can't steal customers who don't want to leave. What would make leaving you so painful that customers wouldn't even consider it?"</p>
+                    <p className="text-standard dark:replace-text-gray-300">Build switching costs through value. "Competitors can't steal customers who don't want to leave. What would make leaving you so painful that customers wouldn't even consider it?"</p>
                   </div>
                   
                   <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -245,7 +245,7 @@ const ProblemAwareStageCustomers = () => {
 
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-6 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-6 text-center">
                 The Pattern: How to Help Problem-Aware Customers
               </h2>
               
@@ -261,7 +261,7 @@ const ProblemAwareStageCustomers = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
                   <h3 className="heading-lg text-important dark:text-white mb-3">What NOT to do:</h3>
-                  <ul className="text-standard dark:text-gray-300 space-y-2 text-sm">
+                  <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
                     <li>• Jump straight to your solution</li>
                     <li>• Add to their confusion with more options</li>
                     <li>• Validate their self-diagnosis (often wrong)</li>
@@ -272,7 +272,7 @@ const ProblemAwareStageCustomers = () => {
                 
                 <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
                   <h3 className="heading-lg text-important dark:text-white mb-3">What TO do:</h3>
-                  <ul className="text-standard dark:text-gray-300 space-y-2 text-sm">
+                  <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
                     <li>• Help them see the real root cause</li>
                     <li>• Connect symptoms to underlying problems</li>
                     <li>• Provide clarity before solutions</li>
@@ -285,10 +285,10 @@ const ProblemAwareStageCustomers = () => {
 
             {/* Strong CTA Section */}
             <section className="text-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white rounded-2xl p-12">
-              <h2 className="heading-xl text-critical dark:text-white mb-6">
+              <h2 className="heading-xl text-gradient-critical mb-6">
                 Tired of Throwing Money at Marketing Problems That Won't Go Away?
               </h2>
-              <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
+              <p className="replace-text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
                 Stop guessing what's broken. Get a professional diagnosis that shows you exactly why your marketing isn't converting and the specific steps to fix it—permanently.
               </p>
               <button 
@@ -297,7 +297,7 @@ const ProblemAwareStageCustomers = () => {
               >
                 Get Your Free Marketing Diagnosis →
               </button>
-              <p className="text-gray-400 text-sm mt-4">
+              <p className="replace-text-gray-400 text-sm mt-4">
                 ✅ Find the real problem • ✅ Get a clear fix • ✅ Stop wasting budget
               </p>
             </section>
@@ -307,13 +307,13 @@ const ProblemAwareStageCustomers = () => {
               <div className="flex justify-between items-center">
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/unaware-stage-customers`}
-                  className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
+                  className="replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible dark:hover:text-orange-400 transition-colors"
                 >
                   ← Previous: Unaware Stage Customers
                 </a>
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/solution-aware-stage-customers`}
-                  className="text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors"
+                  className="text-orange-accessible dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors"
                 >
                   Next: Solution-Aware Stage Customers →
                 </a>

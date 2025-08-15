@@ -295,7 +295,7 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
         {/* Content */}
         <div className="p-6">
           <div className="mb-6">
-            <p className="text-gray-600 mb-4">
+            <p className="replace-text-gray-600 mb-4">
               Don't worry - this happens sometimes. We've been notified and are working on a fix.
               In the meantime, you can try one of the options below.
             </p>
@@ -368,7 +368,7 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
                 {error.stack && (
                   <div className="bg-gray-100 rounded-lg p-4 mb-4">
                     <h4 className="font-medium text-gray-800 mb-2">Stack Trace</h4>
-                    <pre className="text-xs text-gray-600 whitespace-pre-wrap break-all overflow-x-auto">
+                    <pre className="text-xs replace-text-gray-600 whitespace-pre-wrap break-all overflow-x-auto">
                       {error.stack}
                     </pre>
                   </div>
@@ -377,14 +377,14 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
                 {errorInfo?.componentStack && (
                   <div className="bg-blue-50 rounded-lg p-4">
                     <h4 className="font-medium text-blue-800 mb-2">Component Stack</h4>
-                    <pre className="text-xs text-blue-600 whitespace-pre-wrap break-all overflow-x-auto">
+                    <pre className="text-xs text-blue-accessible whitespace-pre-wrap break-all overflow-x-auto">
                       {errorInfo.componentStack}
                     </pre>
                   </div>
                 )}
 
                 {errorBoundaryName && (
-                  <div className="mt-4 text-xs text-gray-500">
+                  <div className="mt-4 text-xs replace-text-gray-500">
                     Error Boundary: {errorBoundaryName}
                   </div>
                 )}
@@ -398,7 +398,7 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
             <p className="text-blue-700 text-sm mb-3">
               If this problem persists, please contact our support team.
             </p>
-            <p className="text-xs text-blue-600">
+            <p className="text-xs text-blue-accessible">
               Session ID: <code className="bg-blue-100 px-2 py-1 rounded">{SESSION_ID}</code>
             </p>
           </div>
@@ -471,16 +471,16 @@ const ComponentErrorFallback: React.FC<Omit<ErrorFallbackProps, 'onRefresh' | 'o
               Technical Details
             </summary>
             <div className="p-3 pt-0 border-t">
-              <div className="text-xs text-gray-600 mb-2">
+              <div className="text-xs replace-text-gray-600 mb-2">
                 <strong>Error:</strong> {error.message}
               </div>
               {errorInfo && (
-                <div className="text-xs text-gray-500 mb-2">
+                <div className="text-xs replace-text-gray-500 mb-2">
                   Component Stack Available
                 </div>
               )}
               {errorBoundaryName && (
-                <div className="text-xs text-gray-500">
+                <div className="text-xs replace-text-gray-500">
                   Boundary: {errorBoundaryName}
                 </div>
               )}

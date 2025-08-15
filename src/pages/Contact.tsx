@@ -144,10 +144,10 @@ const Contact = () => {
           
           {/* Header */}
           <div className="text-center mb-12">
-            <h1 className="heading-hero text-critical dark:text-white mb-6">
+            <h1 className="heading-hero text-gradient-critical mb-6">
               Contact Us
             </h1>
-            <p className="text-xl text-important dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-important dark:replace-text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Ready to transform your marketing strategy? Let's discuss how our fractional CMO services 
               can drive measurable growth for your business.
             </p>
@@ -175,8 +175,8 @@ const Contact = () => {
             {/* Contact Form */}
             <div className="lg:col-span-2">
               <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6">
-                <h2 className="heading-lg text-critical dark:text-white mb-6">General Inquiries</h2>
-            <p className="text-standard dark:text-gray-300 mb-4 text-sm">
+                <h2 className="heading-lg text-gradient-critical mb-6">General Inquiries</h2>
+            <p className="text-standard dark:replace-text-gray-300 mb-4 text-sm">
               Use this form for legal inquiries, privacy questions, technical support, or other non-marketing matters.
             </p>
                 
@@ -205,7 +205,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
+                      <label htmlFor="name" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
                         Full Name *
                       </label>
                       <input
@@ -220,7 +220,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
+                      <label htmlFor="email" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
                         Email Address *
                       </label>
                       <input
@@ -238,7 +238,7 @@ const Contact = () => {
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
+                      <label htmlFor="company" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
                         Company Name
                       </label>
                       <input
@@ -252,7 +252,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="website" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
+                      <label htmlFor="website" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
                         Website URL
                       </label>
                       <input
@@ -269,7 +269,7 @@ const Contact = () => {
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
+                      <label htmlFor="phone" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
                         Phone Number
                       </label>
                       <input
@@ -283,7 +283,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="serviceInterest" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
+                      <label htmlFor="serviceInterest" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
                         Service Interest
                       </label>
                       <select
@@ -304,7 +304,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
+                    <label htmlFor="subject" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
                       Subject
                     </label>
                     <input
@@ -319,7 +319,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-standard dark:text-gray-300 mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
                       Message *
                     </label>
                     <textarea
@@ -380,7 +380,7 @@ const Contact = () => {
                     <MapPin className="w-5 h-5 text-orange-500 mr-3 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900 dark:text-white">Address</p>
-                      <p className="text-sm text-optional dark:text-gray-300">
+                      <p className="text-sm text-optional dark:replace-text-gray-300">
                         17595 Harvard Ave C-738<br />
                         Irvine, CA 92614<br />
                         United States
@@ -391,7 +391,7 @@ const Contact = () => {
                     <Globe className="w-5 h-5 text-orange-500 mr-3 mt-1" />
                     <div>
                       <p className="font-medium text-gray-900 dark:text-white">Service Areas</p>
-                      <p className="text-sm text-optional dark:text-gray-300">
+                      <p className="text-sm text-optional dark:replace-text-gray-300">
                         USA • Bangkok • Singapore<br />
                         Global services available
                       </p>
@@ -403,7 +403,7 @@ const Contact = () => {
               {/* Response Time */}
               <div className="bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900 dark:to-amber-900 rounded-2xl p-6">
                 <h3 className="heading-md text-important dark:text-white mb-2">Response Time</h3>
-                <p className="text-standard dark:text-gray-300 text-sm">
+                <p className="text-standard dark:replace-text-gray-300 text-sm">
                   We typically respond to all inquiries within 24 hours during business days. 
                   For urgent matters, please mention it in your message subject line.
                 </p>
@@ -412,7 +412,7 @@ const Contact = () => {
               {/* Free Consultation CTA */}
               <div className="bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900 dark:to-indigo-900 rounded-2xl p-6">
                 <h3 className="heading-md text-important dark:text-white mb-2">Free Marketing Analysis</h3>
-                <p className="text-gray-700 dark:text-gray-300 text-sm mb-4">
+                <p className="text-gray-700 dark:replace-text-gray-300 text-sm mb-4">
                   Ready to transform your marketing? Get a personalized analysis 
                   that shows exactly how to accelerate your business growth.
                 </p>

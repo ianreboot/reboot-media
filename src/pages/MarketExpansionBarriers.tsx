@@ -134,7 +134,7 @@ const MarketExpansionBarriers = () => {
               
               {/* Breadcrumb */}
               <div className="mb-8">
-                <nav className="flex items-center space-x-2 text-gray-300">
+                <nav className="flex items-center space-x-2 replace-text-gray-300">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-yellow-400 transition-colors">Growth Plateau Solutions</a>
                   <span>→</span>
                   <span className="text-yellow-400 font-semibold">Market Expansion Barriers</span>
@@ -146,11 +146,11 @@ const MarketExpansionBarriers = () => {
                   <span className="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></span>
                   Market Feels Saturated
                 </div>
-                <h1 className="heading-hero text-critical dark:text-white text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+                <h1 className="heading-hero text-gradient-critical text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
                   <span className="text-yellow-400">Market Expansion</span>
                   <span className="block text-white mt-2">Barrier Solutions</span>
                 </h1>
-                <p className="text-important text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-important text-xl replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                   Core market feels saturated? The issue isn't market size—it's that you've 
                   <span className="text-yellow-400 font-semibold"> defined your market by product category</span> instead of problems solved.
                 </p>
@@ -170,28 +170,28 @@ const MarketExpansionBarriers = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-yellow-200/50 dark:border-yellow-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+                <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   Why Market "Saturation" is Usually a Positioning Problem
                 </h2>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed text-center">
+                <p className="text-important text-lg text-standard dark:replace-text-gray-300 mb-6 leading-relaxed text-center">
                   Most "saturated" markets aren't actually saturated—companies have just defined their addressable market too narrowly. 
                   The solution isn't finding new markets; it's redefining your current one through psychology and positioning.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="text-center p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-yellow-600 mb-1">78%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Feel market constrained</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Feel market constrained</p>
                   </div>
                   <div className="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">3.4x</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Larger addressable market</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Larger addressable market</p>
                   </div>
                   <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">22%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Succeed with repositioning</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Succeed with repositioning</p>
                   </div>
                 </div>
-                <p className="text-important text-standard dark:text-gray-300 font-semibold text-center">
+                <p className="text-important text-standard dark:replace-text-gray-300 font-semibold text-center">
                   Pattern: Same product → Different problems → New markets
                 </p>
               </div>
@@ -199,7 +199,7 @@ const MarketExpansionBarriers = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
                 <span className="block">7 Market Expansion Barriers</span>
                 <span className="block">(Which is Yours?)</span>
               </h2>
@@ -234,7 +234,7 @@ const MarketExpansionBarriers = () => {
                               <span className="mr-2">💬</span>
                               Customer Says:
                             </h4>
-                            <p className="text-standard dark:text-gray-300 italic">
+                            <p className="text-standard dark:replace-text-gray-300 italic">
                               "{scenario.customerSays}"
                             </p>
                           </div>
@@ -244,7 +244,7 @@ const MarketExpansionBarriers = () => {
                               <span className="mr-2">💭</span>
                               Customer Thinks:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.customerThinks}
                             </p>
                           </div>
@@ -257,7 +257,7 @@ const MarketExpansionBarriers = () => {
                               <span className="mr-2">🔍</span>
                               Real Problem:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.realProblem}
                             </p>
                           </div>
@@ -267,7 +267,7 @@ const MarketExpansionBarriers = () => {
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.solution}
                             </p>
                           </div>
@@ -280,7 +280,7 @@ const MarketExpansionBarriers = () => {
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-standard dark:text-gray-300 font-medium">
+                        <p className="text-standard dark:replace-text-gray-300 font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -296,7 +296,7 @@ const MarketExpansionBarriers = () => {
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   🚨 Stop Accepting Market "Limitations" as Reality
                 </h3>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-important text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you stay trapped by narrow market definitions, competitors with better positioning psychology 
                   are capturing expansion opportunities you can't see. Get your free expansion analysis and discover which barriers are limiting your growth.
                 </p>
@@ -317,7 +317,7 @@ const MarketExpansionBarriers = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
@@ -327,7 +327,7 @@ const MarketExpansionBarriers = () => {
                       Customer Acquisition Stall →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     CAC rising while conversion stays flat? Stop competing on the same channels with the same message as everyone else.
                   </p>
                 </div>
@@ -337,7 +337,7 @@ const MarketExpansionBarriers = () => {
                       Marketing Psychology Fundamentals →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     Master positioning psychology and awareness stages that reveal hidden market expansion opportunities.
                   </p>
                 </div>

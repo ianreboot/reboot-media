@@ -134,7 +134,7 @@ const FractionalCMOVsAgency = () => {
               
               {/* Breadcrumb */}
               <div className="mb-8">
-                <nav className="flex items-center space-x-2 text-gray-300">
+                <nav className="flex items-center space-x-2 replace-text-gray-300">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-blue-400 transition-colors">Fractional CMO Guide</a>
                   <span>→</span>
                   <span className="text-blue-400 font-semibold">vs Marketing Agency</span>
@@ -146,11 +146,11 @@ const FractionalCMOVsAgency = () => {
                   <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
                   Strategy Leadership vs Execution Power
                 </div>
-                <h1 className="heading-hero text-critical dark:text-white mb-6 leading-tight">
+                <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
                   <span className="text-blue-400">Fractional CMO</span>
                   <span className="block text-white mt-2">vs Marketing Agency</span>
                 </h1>
-                <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                   Most companies think "we need execution help" when they really need strategy refinement. The problem isn't your tactics—it's that 
                   <span className="text-blue-400 font-semibold"> who's accountable when strategy fails?</span>
                 </p>
@@ -170,28 +170,28 @@ const FractionalCMOVsAgency = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-blue-200/50 dark:border-blue-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white mb-6">
+                <h2 className="heading-xl text-gradient-critical mb-6">
                   Why Strategy vs Execution Is the Wrong Question
                 </h2>
-                <p className="text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 leading-relaxed">
                   Most companies frame this as strategy OR execution, when the real question is: who owns the results when tactics fail? 
                   Agencies execute your ideas; Fractional CMOs take responsibility for outcomes.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-600 mb-1">84%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Blame execution, not strategy</p>
+                    <div className="text-2xl font-bold text-blue-accessible mb-1">84%</div>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Blame execution, not strategy</p>
                   </div>
                   <div className="text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
-                    <div className="text-2xl font-bold text-orange-600 mb-1">67%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Switch within 18 months</p>
+                    <div className="text-2xl font-bold text-orange-accessible mb-1">67%</div>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Switch within 18 months</p>
                   </div>
                   <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">23%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Consider strategy first</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Consider strategy first</p>
                   </div>
                 </div>
-                <p className="text-standard dark:text-gray-300 font-semibold">
+                <p className="text-standard dark:replace-text-gray-300 font-semibold">
                   The pattern: Tactics fail → Blame execution → Switch → Same results
                 </p>
               </div>
@@ -199,7 +199,7 @@ const FractionalCMOVsAgency = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white mb-12 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-12 text-center">
                 7 Decision Scenarios (Which is Yours?)
               </h2>
               
@@ -233,7 +233,7 @@ const FractionalCMOVsAgency = () => {
                               <span className="mr-2">💬</span>
                               Company Says:
                             </h4>
-                            <p className="text-standard dark:text-gray-300 italic">
+                            <p className="text-standard dark:replace-text-gray-300 italic">
                               "{scenario.companySays}"
                             </p>
                           </div>
@@ -243,7 +243,7 @@ const FractionalCMOVsAgency = () => {
                               <span className="mr-2">💭</span>
                               Company Thinks:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.companyThinks}
                             </p>
                           </div>
@@ -256,7 +256,7 @@ const FractionalCMOVsAgency = () => {
                               <span className="mr-2">🔍</span>
                               Real Consideration:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.realConsideration}
                             </p>
                           </div>
@@ -266,7 +266,7 @@ const FractionalCMOVsAgency = () => {
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.evaluationFramework}
                             </p>
                           </div>
@@ -279,7 +279,7 @@ const FractionalCMOVsAgency = () => {
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-standard dark:text-gray-300 font-medium">
+                        <p className="text-standard dark:replace-text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -292,10 +292,10 @@ const FractionalCMOVsAgency = () => {
             {/* Call to Action */}
             <section className="mb-16">
               <div className="text-center bg-gradient-to-r from-blue-50 to-orange-50 dark:from-blue-900/20 dark:to-orange-900/20 rounded-2xl p-8 border border-blue-200/50 dark:border-blue-800/50">
-                <h3 className="heading-lg text-critical dark:text-white mb-4">
+                <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Executing the Wrong Strategy
                 </h3>
-                <p className="text-lg text-standard dark:text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you execute without strategic accountability, you're burning budget and missing opportunities. 
                   Get your free strategy vs execution analysis and discover which approach builds the growth engine your company needs.
                 </p>
@@ -305,7 +305,7 @@ const FractionalCMOVsAgency = () => {
                 >
                   Get Free Strategy Analysis
                 </button>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-blue-500 text-blue-accessible hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Compare vs Full-Time & Consultant
                 </a>
               </div>
@@ -313,27 +313,27 @@ const FractionalCMOVsAgency = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="hover:text-blue-600 transition-colors">
+                  <h3 className="heading-lg text-gradient-critical mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="hover:text-blue-accessible transition-colors">
                       Why Agencies Cost More Than Expected →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     Hidden costs of agency relationships vs fractional CMO engagements. See the real numbers behind the hourly rate illusion.
                   </p>
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-critical dark:text-white mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/customer-acquisition-stall`} className="hover:text-blue-600 transition-colors">
+                  <h3 className="heading-lg text-gradient-critical mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/customer-acquisition-stall`} className="hover:text-blue-accessible transition-colors">
                       Fix Your $8K CAC Problem →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     Agency vs fractional decisions often follow CAC inflation. Discover psychology-driven acquisition that sidesteps tactical wars.
                   </p>
                 </div>

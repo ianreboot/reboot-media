@@ -134,7 +134,7 @@ const FractionalCMOVsInHouse = () => {
               
               {/* Breadcrumb */}
               <div className="mb-8">
-                <nav className="flex items-center space-x-2 text-gray-300">
+                <nav className="flex items-center space-x-2 replace-text-gray-300">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-indigo-400 transition-colors">Fractional CMO Guide</a>
                   <span>→</span>
                   <span className="text-indigo-400 font-semibold">vs In-House Team</span>
@@ -146,11 +146,11 @@ const FractionalCMOVsInHouse = () => {
                   <span className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></span>
                   Build vs Buy Marketing Expertise
                 </div>
-                <h1 className="heading-hero text-critical dark:text-white mb-6 leading-tight">
+                <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
                   <span className="text-blue-400">Fractional CMO</span> vs
                   <span className="block text-indigo-400 mt-2">In-House Team</span>
                 </h1>
-                <p className="text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                   Building internal teams is harder and more expensive than most realize. The hidden truth: 
                   <span className="text-indigo-400 font-semibold"> Teams cost 2.5x base salaries and take years to reach expertise.</span>
                 </p>
@@ -170,28 +170,28 @@ const FractionalCMOVsInHouse = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-indigo-200/50 dark:border-indigo-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white mb-6">
+                <h2 className="heading-xl text-gradient-critical mb-6">
                   Why Building Internal Teams Costs More Than You Think
                 </h2>
-                <p className="text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed">
+                <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 leading-relaxed">
                   The "build vs buy" decision for marketing expertise is often made with incomplete math. Companies calculate salaries 
                   but miss recruitment costs, training time, management overhead, turnover risk, and the 18-month learning curve.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="text-center p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-indigo-600 mb-1">2.5x</div>
-                    <p className="text-sm text-optional dark:text-gray-400">True cost multiplier</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">True cost multiplier</p>
                   </div>
                   <div className="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">43%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Marketing turnover rate</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Marketing turnover rate</p>
                   </div>
                   <div className="text-center p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-yellow-600 mb-1">18mo</div>
-                    <p className="text-sm text-optional dark:text-gray-400">To reach competency</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">To reach competency</p>
                   </div>
                 </div>
-                <p className="text-standard dark:text-gray-300 font-semibold">
+                <p className="text-standard dark:replace-text-gray-300 font-semibold">
                   The pattern: Underestimate costs → Hire junior → Struggle with results → Start over
                 </p>
               </div>
@@ -199,7 +199,7 @@ const FractionalCMOVsInHouse = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white mb-12 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-12 text-center">
                 7 Build vs Buy Scenarios (Which is Yours?)
               </h2>
               
@@ -233,7 +233,7 @@ const FractionalCMOVsInHouse = () => {
                               <span className="mr-2">💬</span>
                               Company Says:
                             </h4>
-                            <p className="text-standard dark:text-gray-300 italic">
+                            <p className="text-standard dark:replace-text-gray-300 italic">
                               "{scenario.companySays}"
                             </p>
                           </div>
@@ -243,7 +243,7 @@ const FractionalCMOVsInHouse = () => {
                               <span className="mr-2">💭</span>
                               Company Thinks:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.companyThinks}
                             </p>
                           </div>
@@ -256,7 +256,7 @@ const FractionalCMOVsInHouse = () => {
                               <span className="mr-2">🔍</span>
                               Real Consideration:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.realConsideration}
                             </p>
                           </div>
@@ -266,7 +266,7 @@ const FractionalCMOVsInHouse = () => {
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.evaluationFramework}
                             </p>
                           </div>
@@ -279,7 +279,7 @@ const FractionalCMOVsInHouse = () => {
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-standard dark:text-gray-300 font-medium">
+                        <p className="text-standard dark:replace-text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -292,10 +292,10 @@ const FractionalCMOVsInHouse = () => {
             {/* Call to Action */}
             <section className="mb-16">
               <div className="text-center bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-900/20 dark:to-blue-900/20 rounded-2xl p-8 border border-indigo-200/50 dark:border-indigo-800/50">
-                <h3 className="heading-lg text-critical dark:text-white mb-4">
+                <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Underestimating Team Building Costs
                 </h3>
-                <p className="text-lg text-standard dark:text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you delay expertise while building internal teams costs you opportunities and revenue. 
                   Get your free team cost analysis and discover the true investment required for marketing competency.
                 </p>
@@ -313,27 +313,27 @@ const FractionalCMOVsInHouse = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-critical dark:text-white mb-3">
+                  <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-indigo-600 transition-colors">
                       Recover From 43% Turnover Disaster →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     Internal marketing not working? Learn how to transition from failed in-house teams to fractional CMO success.
                   </p>
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-critical dark:text-white mb-3">
+                  <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} className="hover:text-indigo-600 transition-colors">
                       Fix 18-Month Competency Gap →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     When building teams becomes the bottleneck to growth. Break through with the right expertise model.
                   </p>
                 </div>

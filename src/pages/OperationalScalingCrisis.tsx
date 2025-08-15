@@ -134,7 +134,7 @@ const OperationalScalingCrisis = () => {
               
               {/* Breadcrumb */}
               <div className="mb-8">
-                <nav className="flex items-center space-x-2 text-gray-300">
+                <nav className="flex items-center space-x-2 replace-text-gray-300">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-green-400 transition-colors">Growth Plateau Solutions</a>
                   <span>→</span>
                   <span className="text-green-400 font-semibold">Operational Scaling Crisis</span>
@@ -146,11 +146,11 @@ const OperationalScalingCrisis = () => {
                   <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                   Growth Breaking Everything
                 </div>
-                <h1 className="heading-hero text-critical dark:text-white text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
+                <h1 className="heading-hero text-gradient-critical text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
                   <span className="text-green-400">Operational Scaling</span>
                   <span className="block text-white mt-2">Crisis Solutions</span>
                 </h1>
-                <p className="text-important text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-important text-xl replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                   Growth feels like everything's breaking? The problem isn't your team or timing—it's that 
                   <span className="text-green-400 font-semibold"> manual processes that worked at $500K</span> fail spectacularly at $2M+ without systems.
                 </p>
@@ -170,28 +170,28 @@ const OperationalScalingCrisis = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+                <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   Why Growth Breaks Operations (And How to Fix It)
                 </h2>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed text-center">
+                <p className="text-important text-lg text-standard dark:replace-text-gray-300 mb-6 leading-relaxed text-center">
                   Operational scaling crises aren't random—they follow predictable patterns. What works at $500K breaks at $2M+ 
                   because manual processes hit exponential complexity while systems thinking provides linear solutions.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">84%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Experience scaling crisis</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Experience scaling crisis</p>
                   </div>
                   <div className="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">267%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Complexity increase</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Complexity increase</p>
                   </div>
                   <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <div className="text-2xl font-bold text-blue-600 mb-1">16%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Solve with systems first</p>
+                    <div className="text-2xl font-bold text-blue-accessible mb-1">16%</div>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Solve with systems first</p>
                   </div>
                 </div>
-                <p className="text-important text-standard dark:text-gray-300 font-semibold text-center">
+                <p className="text-important text-standard dark:replace-text-gray-300 font-semibold text-center">
                   The pattern: Manual processes → Exponential complexity → Systems breakdown
                 </p>
               </div>
@@ -199,7 +199,7 @@ const OperationalScalingCrisis = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
                 <span className="block">7 Operational Crisis Patterns</span>
                 <span className="block">(Which is Yours?)</span>
               </h2>
@@ -234,7 +234,7 @@ const OperationalScalingCrisis = () => {
                               <span className="mr-2">💬</span>
                               Customer Says:
                             </h4>
-                            <p className="text-standard dark:text-gray-300 italic">
+                            <p className="text-standard dark:replace-text-gray-300 italic">
                               "{scenario.customerSays}"
                             </p>
                           </div>
@@ -244,7 +244,7 @@ const OperationalScalingCrisis = () => {
                               <span className="mr-2">💭</span>
                               Customer Thinks:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.customerThinks}
                             </p>
                           </div>
@@ -257,7 +257,7 @@ const OperationalScalingCrisis = () => {
                               <span className="mr-2">🔍</span>
                               Real Problem:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.realProblem}
                             </p>
                           </div>
@@ -267,7 +267,7 @@ const OperationalScalingCrisis = () => {
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.solution}
                             </p>
                           </div>
@@ -280,7 +280,7 @@ const OperationalScalingCrisis = () => {
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-standard dark:text-gray-300 font-medium">
+                        <p className="text-standard dark:replace-text-gray-300 font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -296,7 +296,7 @@ const OperationalScalingCrisis = () => {
                 <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   🚨 Stop Letting Growth Break Your Operations
                 </h3>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-important text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you operate with manual processes designed for smaller scale, operational inefficiencies compound exponentially. 
                   Get your free scaling analysis and discover which crisis patterns are limiting your growth capacity.
                 </p>
@@ -317,7 +317,7 @@ const OperationalScalingCrisis = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
@@ -327,7 +327,7 @@ const OperationalScalingCrisis = () => {
                       Team Growth Bottlenecks →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     Can't hire fast enough or new people aren't working out? The founder bottleneck kills scaling when everything goes through you.
                   </p>
                 </div>
@@ -337,7 +337,7 @@ const OperationalScalingCrisis = () => {
                       Need Strategic Marketing Leadership? →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     Systems thinking requires strategic leadership. Discover if fractional CMO services can accelerate your scaling solutions.
                   </p>
                 </div>

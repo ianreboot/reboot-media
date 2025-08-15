@@ -39,7 +39,7 @@ const UnawareStageCustomers = () => {
       {
         id: 'introduction',
         content: (
-          <p className="text-lg text-important dark:text-gray-300 mb-6">
+          <p className="text-lg text-important dark:replace-text-gray-300 mb-6">
             Unaware stage customers are the most dangerous for your business. They're convinced they're doing fine when they're actually hemorrhaging opportunities. Here are real examples of what they say and what's actually happening.
           </p>
         )
@@ -53,17 +53,17 @@ const UnawareStageCustomers = () => {
             <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
               <div className="mb-4">
                 <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                <p className="text-standard dark:text-gray-300 italic">"We built the best product but no one gets it"</p>
+                <p className="text-standard dark:replace-text-gray-300 italic">"We built the best product but no one gets it"</p>
               </div>
               
               <div className="mb-4">
                 <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                <p className="text-standard dark:text-gray-300">You're speaking engineer, they're thinking business results. Your "advanced features" sound like expensive complications to someone trying to solve a simple problem.</p>
+                <p className="text-standard dark:replace-text-gray-300">You're speaking engineer, they're thinking business results. Your "advanced features" sound like expensive complications to someone trying to solve a simple problem.</p>
               </div>
               
               <div className="mb-4">
                 <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                <p className="text-standard dark:text-gray-300">Start with the cost of their current broken process. Instead of "Our AI-powered analytics platform," try "Stop losing $3,000 monthly to decisions made on gut feeling instead of data."</p>
+                <p className="text-standard dark:replace-text-gray-300">Start with the cost of their current broken process. Instead of "Our AI-powered analytics platform," try "Stop losing $3,000 monthly to decisions made on gut feeling instead of data."</p>
               </div>
               
               <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -76,17 +76,17 @@ const UnawareStageCustomers = () => {
             <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
               <div className="mb-4">
                 <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
-                <p className="text-standard dark:text-gray-300 italic">"We just need more traffic to our website"</p>
+                <p className="text-standard dark:replace-text-gray-300 italic">"We just need more traffic to our website"</p>
               </div>
               
               <div className="mb-4">
                 <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                <p className="text-standard dark:text-gray-300">More traffic to a broken experience just means more people saying no. They're treating symptoms while the disease spreads.</p>
+                <p className="text-standard dark:replace-text-gray-300">More traffic to a broken experience just means more people saying no. They're treating symptoms while the disease spreads.</p>
               </div>
               
               <div className="mb-4">
                 <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                <p className="text-standard dark:text-gray-300">Help them see the real math. "Before sending more people to a site where 90% leave confused, let's figure out why your current visitors aren't buying. More confused people isn't the solution."</p>
+                <p className="text-standard dark:replace-text-gray-300">Help them see the real math. "Before sending more people to a site where 90% leave confused, let's figure out why your current visitors aren't buying. More confused people isn't the solution."</p>
               </div>
               
               <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
@@ -116,7 +116,7 @@ const UnawareStageCustomers = () => {
             <div className="grid md:grid-cols-2 gap-6">
               <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
                 <h3 className="heading-lg text-important dark:text-white mb-3">What NOT to do:</h3>
-                <ul className="text-standard dark:text-gray-300 space-y-2 text-sm">
+                <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
                   <li>• Lead with features or capabilities</li>
                   <li>• Assume they understand the problem</li>
                   <li>• Use industry jargon or technical terms</li>
@@ -127,7 +127,7 @@ const UnawareStageCustomers = () => {
               
               <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
                 <h3 className="heading-lg text-important dark:text-white mb-3">What TO do:</h3>
-                <ul className="text-standard dark:text-gray-300 space-y-2 text-sm">
+                <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
                   <li>• Start with the cost of their current situation</li>
                   <li>• Use their exact language and concerns</li>
                   <li>• Provide gentle education, not sales pressure</li>
@@ -162,13 +162,13 @@ const UnawareStageCustomers = () => {
       <div className="flex justify-between items-center">
         <a 
           href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`}
-          className="text-gray-600 dark:text-gray-400 hover:text-orange-600 dark:hover:text-orange-400 transition-colors"
+          className="replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible dark:hover:text-orange-400 transition-colors"
         >
           ← Back to Marketing Psychology Overview
         </a>
         <a 
           href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/problem-aware-stage-customers`}
-          className="text-orange-600 dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors"
+          className="text-orange-accessible dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors"
         >
           Next: Problem-Aware Stage Customers →
         </a>

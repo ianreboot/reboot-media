@@ -122,7 +122,7 @@ const ProductMarketFitErosion = () => {
               
               {/* Breadcrumb */}
               <div className="mb-8">
-                <nav className="flex items-center space-x-2 text-gray-300">
+                <nav className="flex items-center space-x-2 replace-text-gray-300">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-purple-400 transition-colors">Growth Plateau Solutions</a>
                   <span>→</span>
                   <span className="text-purple-400 font-semibold">Product-Market Fit Erosion</span>
@@ -134,11 +134,11 @@ const ProductMarketFitErosion = () => {
                   <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
                   What Worked Before Stopped Working
                 </div>
-                <h1 className="heading-hero text-critical dark:text-white text-4xl md:text-6xl font-black mb-6 leading-tight">
+                <h1 className="heading-hero text-gradient-critical text-4xl md:text-6xl font-black mb-6 leading-tight">
                   <span className="text-purple-400">Product-Market Fit</span>
                   <span className="block text-white mt-2">Erosion Solutions</span>
                 </h1>
-                <p className="text-important text-xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-important text-xl replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                   What worked before isn't working now? The problem isn't your product losing relevance—it's that 
                   <span className="text-purple-400 font-semibold"> markets evolve faster than products</span>, and your messaging may be stuck in the past.
                 </p>
@@ -158,28 +158,28 @@ const ProductMarketFitErosion = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-8">
-                <h2 className="heading-xl text-critical dark:text-white text-2xl font-bold mb-6 text-center">
+                <h2 className="heading-xl text-gradient-critical text-2xl font-bold mb-6 text-center">
                   Why Product-Market Fit Erodes (And How to Restore It)
                 </h2>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 leading-relaxed text-center">
+                <p className="text-important text-lg text-standard dark:replace-text-gray-300 mb-6 leading-relaxed text-center">
                   Product-market fit isn't a permanent achievement—it requires ongoing maintenance. Markets, customers, and competitive landscapes evolve 
                   constantly, but many companies assume their initial PMF will last forever without iteration.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-purple-600 mb-1">71%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Experience PMF erosion</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Experience PMF erosion</p>
                   </div>
                   <div className="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">18mo</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Average fit decay time</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Average fit decay time</p>
                   </div>
                   <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">29%</div>
-                    <p className="text-sm text-optional dark:text-gray-400">Restore with repositioning</p>
+                    <p className="text-sm text-optional dark:replace-text-gray-400">Restore with repositioning</p>
                   </div>
                 </div>
-                <p className="text-important text-standard dark:text-gray-300 font-semibold text-center">
+                <p className="text-important text-standard dark:replace-text-gray-300 font-semibold text-center">
                   The pattern: Initial success → Market evolution → Messaging lag → Fit erosion
                 </p>
               </div>
@@ -187,7 +187,7 @@ const ProductMarketFitErosion = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white text-3xl md:text-4xl font-bold mb-12 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold mb-12 text-center">
                 <span className="block">6 PMF Erosion Patterns</span>
                 <span className="block">(Which is Yours?)</span>
               </h2>
@@ -222,7 +222,7 @@ const ProductMarketFitErosion = () => {
                               <span className="mr-2">💬</span>
                               Customer Says:
                             </h4>
-                            <p className="text-standard dark:text-gray-300 italic">
+                            <p className="text-standard dark:replace-text-gray-300 italic">
                               "{scenario.customerSays}"
                             </p>
                           </div>
@@ -232,7 +232,7 @@ const ProductMarketFitErosion = () => {
                               <span className="mr-2">💭</span>
                               Customer Thinks:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.customerThinks}
                             </p>
                           </div>
@@ -245,7 +245,7 @@ const ProductMarketFitErosion = () => {
                               <span className="mr-2">🔍</span>
                               Real Problem:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.realProblem}
                             </p>
                           </div>
@@ -255,7 +255,7 @@ const ProductMarketFitErosion = () => {
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-standard dark:text-gray-300">
+                            <p className="text-standard dark:replace-text-gray-300">
                               {scenario.solution}
                             </p>
                           </div>
@@ -268,7 +268,7 @@ const ProductMarketFitErosion = () => {
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-standard dark:text-gray-300 font-medium">
+                        <p className="text-standard dark:replace-text-gray-300 font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -284,7 +284,7 @@ const ProductMarketFitErosion = () => {
                 <h3 className="heading-lg text-important dark:text-white text-2xl font-bold mb-4">
                   🚨 Stop Watching Your Market Fit Decay
                 </h3>
-                <p className="text-important text-lg text-standard dark:text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-important text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month your messaging stays frozen while markets evolve, competitors with current positioning capture opportunities you're missing. 
                   Get your free PMF analysis and discover which erosion patterns are disconnecting you from your market.
                 </p>
@@ -305,7 +305,7 @@ const ProductMarketFitErosion = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-critical dark:text-white text-3xl font-bold mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl font-bold mb-8 text-center">
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
@@ -315,7 +315,7 @@ const ProductMarketFitErosion = () => {
                       Market Expansion Barriers →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     Fit erosion often reveals expansion opportunities. Discover how positioning psychology unlocks adjacent markets.
                   </p>
                 </div>
@@ -325,7 +325,7 @@ const ProductMarketFitErosion = () => {
                       Marketing Psychology Fundamentals →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gray-300">
+                  <p className="text-standard dark:replace-text-gray-300">
                     Master customer awareness stages and positioning psychology that prevents and reverses market fit erosion.
                   </p>
                 </div>

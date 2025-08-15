@@ -253,10 +253,10 @@ const MainApp = () => {
               <svg className="w-4 h-4 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
-              <span className="text-blue-600 text-sm font-semibold">Common Question</span>
+              <span className="text-blue-accessible text-sm font-semibold">Common Question</span>
             </div>
             <h2 className="heading-xl text-slate-900 mb-6" style={{ marginTop: '0.25rem' }}>
-              "Do You Have Experience in <span className="text-blue-600">My Industry</span>?"
+              "Do You Have Experience in <span className="text-blue-accessible">My Industry</span>?"
             </h2>
             <p className="text-xl text-slate-600 mb-8">
               <span className="text-white/90">This is the right question to ask. But the answer might surprise you...</span>
@@ -282,7 +282,7 @@ const MainApp = () => {
                 <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3">The Curse of Knowledge</h4>
-                    <p className="text-gray-300 text-base leading-relaxed">
+                    <p className="replace-text-gray-300 text-base leading-relaxed">
                       They're so deep in industry jargon they can't see what confuses customers
                     </p>
                   </div>
@@ -290,7 +290,7 @@ const MainApp = () => {
                 <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3">Replicate Not Customize</h4>
-                    <p className="text-gray-300 text-base leading-relaxed">
+                    <p className="replace-text-gray-300 text-base leading-relaxed">
                       They copy what worked elsewhere instead of customizing for your unique market
                     </p>
                   </div>
@@ -314,7 +314,7 @@ const MainApp = () => {
                 <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3">Customer Perspective</h4>
-                    <p className="text-gray-300 text-base leading-relaxed">
+                    <p className="replace-text-gray-300 text-base leading-relaxed">
                       I ask the same questions your prospects do, spotting exactly where they get confused
                     </p>
                   </div>
@@ -322,7 +322,7 @@ const MainApp = () => {
                 <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3">Question Everything</h4>
-                    <p className="text-gray-300 text-base leading-relaxed">
+                    <p className="replace-text-gray-300 text-base leading-relaxed">
                       While experts accept "how we've always done it," I ask "why?" and find new opportunities
                     </p>
                   </div>
@@ -330,7 +330,7 @@ const MainApp = () => {
                 <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3">Executive Experience</h4>
-                    <p className="text-gray-300 text-base leading-relaxed">
+                    <p className="replace-text-gray-300 text-base leading-relaxed">
                       C-level strategies that work across industries - proven at 20+ US companies
                     </p>
                   </div>
@@ -354,7 +354,7 @@ const MainApp = () => {
                     
                     <div className="space-y-6">
                       <div>
-                        <div className="text-7xl font-black text-blue-600 mb-2">85%</div>
+                        <div className="text-7xl font-black text-blue-accessible mb-2">85%</div>
                         <p className="text-blue-800 text-lg font-semibold leading-tight">
                           of breakthrough results come from questioning "industry standards"
                         </p>
@@ -453,22 +453,22 @@ const MainApp = () => {
                 <div>
                   <div className="text-3xl font-black text-orange-400 mb-2">⚡</div>
                   <h4 className="font-bold mb-1">Immediate Impact</h4>
-                  <p className="text-gray-300 text-sm">Start seeing results in weeks, not months</p>
+                  <p className="replace-text-gray-300 text-sm">Start seeing results in weeks, not months</p>
                 </div>
                 <div>
                   <div className="text-3xl font-black text-orange-400 mb-2">💰</div>
                   <h4 className="font-bold mb-1">Better ROI</h4>
-                  <p className="text-gray-300 text-sm">Pay for expertise, not overhead and recruiting</p>
+                  <p className="replace-text-gray-300 text-sm">Pay for expertise, not overhead and recruiting</p>
                 </div>
                 <div>
                   <div className="text-3xl font-black text-orange-400 mb-2">🎯</div>
                   <h4 className="font-bold mb-1">Proven Systems</h4>
-                  <p className="text-gray-300 text-sm">Battle-tested systems from 20+ years C-level experience</p>
+                  <p className="replace-text-gray-300 text-sm">Battle-tested systems from 20+ years C-level experience</p>
                 </div>
                 <div>
                   <div className="text-3xl font-black text-orange-400 mb-2">💎</div>
                   <h4 className="font-bold mb-1">Equity Upside</h4>
-                  <p className="text-gray-300 text-sm">Potential equity participation for long-term partnerships</p>
+                  <p className="replace-text-gray-300 text-sm">Potential equity participation for long-term partnerships</p>
                 </div>
               </div>
             </div>
@@ -481,7 +481,7 @@ const MainApp = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="heading-xl text-slate-900 mb-6">
-              Meet Your <span className="text-blue-600">C-Level Executive</span> Partner
+              Meet Your <span className="text-blue-accessible">C-Level Executive</span> Partner
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
               <span className="text-white/95">20+ years C-level experience driving measurable revenue growth at US companies</span>
@@ -505,7 +505,7 @@ const MainApp = () => {
                 <div className="lg:col-span-2">
                   <div className="grid grid-cols-2 gap-4">
                     <div className="bg-gradient-to-br from-blue-50/60 to-blue-100/40 dark:from-blue-900/30 dark:to-blue-800/20 backdrop-blur-sm border border-blue-400/50 dark:border-blue-400/40 rounded-xl p-6 text-center shadow-lg">
-                      <div className="text-3xl font-black text-blue-600 mb-1">20+</div>
+                      <div className="text-3xl font-black text-blue-accessible mb-1">20+</div>
                       <div className="text-blue-700 dark:text-blue-300 font-medium text-sm">Years Experience</div>
                     </div>
                     <div className="bg-gradient-to-br from-green-50/60 to-green-100/40 dark:from-green-900/30 dark:to-green-800/20 backdrop-blur-sm border border-green-400/50 dark:border-green-400/40 rounded-xl p-6 text-center shadow-lg">
@@ -530,12 +530,12 @@ const MainApp = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-orange-200/30 dark:border-orange-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-orange-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-orange-accessible" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Battle-Tested Results</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="replace-text-gray-600 text-sm leading-relaxed">
                 <span className="text-white/95">I've spent <strong>$500K/month of my own money</strong> testing what actually brings customers. 
                 Not theory - real results with real consequences.</span>
               </p>
@@ -543,12 +543,12 @@ const MainApp = () => {
 
             <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-blue-200/30 dark:border-blue-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 hover:rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-blue-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
-                <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 text-blue-accessible" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Global Reach</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="replace-text-gray-600 text-sm leading-relaxed">
                 <span className="text-white/95">Based in Bangkok, I serve companies worldwide who want <strong>proven marketing excellence</strong> 
                 at competitive rates. Perfect for US market expansion.</span>
               </p>
@@ -561,7 +561,7 @@ const MainApp = () => {
                 </svg>
               </div>
               <h3 className="text-lg font-bold text-slate-900 mb-3">Proven Across Industries</h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="replace-text-gray-600 text-sm leading-relaxed">
                 <span className="text-white/95">Software, Healthcare, E-commerce, Financial Services, Professional Services, 
                 and more. <strong>Psychology works universally.</strong></span>
               </p>
@@ -595,7 +595,7 @@ const MainApp = () => {
                 Every Month You Wait Costs You <span className="text-orange-400">$47,000</span> in Lost Revenue
               </h2>
               
-              <p className="text-xl mb-8 max-w-3xl mx-auto text-gray-300">
+              <p className="text-xl mb-8 max-w-3xl mx-auto replace-text-gray-300">
                 That's the average monthly opportunity cost for businesses operating without proper marketing strategy. 
                 Your competitors aren't waiting. <span className="text-orange-400 font-semibold">Neither should you.</span>
               </p>
@@ -610,15 +610,15 @@ const MainApp = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div className="text-left">
                   <div className="text-red-400 font-bold mb-2">❌ What Others Say:</div>
-                  <p className="text-gray-400 text-sm">"We'll grow your business" (with no specifics)</p>
+                  <p className="replace-text-gray-400 text-sm">"We'll grow your business" (with no specifics)</p>
                 </div>
                 <div className="text-left">
                   <div className="text-red-400 font-bold mb-2">❌ What They Do:</div>
-                  <p className="text-gray-400 text-sm">Generic templates and hope for the best</p>
+                  <p className="replace-text-gray-400 text-sm">Generic templates and hope for the best</p>
                 </div>
                 <div className="text-left">
                   <div className="text-green-400 font-bold mb-2">✅ What We Do:</div>
-                  <p className="text-gray-300 text-sm">Show you exactly what's broken before you pay a dime</p>
+                  <p className="replace-text-gray-300 text-sm">Show you exactly what's broken before you pay a dime</p>
                 </div>
               </div>
 
@@ -626,7 +626,7 @@ const MainApp = () => {
                 <h4 className="text-lg font-bold text-white mb-3">
                   Here's Why This Analysis is Different:
                 </h4>
-                <ul className="text-left space-y-2 text-gray-300 text-sm max-w-2xl mx-auto">
+                <ul className="text-left space-y-2 replace-text-gray-300 text-sm max-w-2xl mx-auto">
                   <li className="flex items-start">
                     <span className="text-green-400 mr-2 mt-0.5">✓</span>
                     <span><strong>No generic advice:</strong> Specific to YOUR business, YOUR industry, YOUR competition</span>
@@ -660,7 +660,7 @@ const MainApp = () => {
                 You Have Nothing to Lose (Except More Revenue)
               </h3>
               
-              <div className="text-gray-300 space-y-0 max-w-2xl mx-auto">
+              <div className="replace-text-gray-300 space-y-0 max-w-2xl mx-auto">
                 <p className="py-0">🚫 No credit card required</p>
                 <p className="py-0">🚫 No sales pressure</p>
                 <p className="py-0">🚫 No spam emails</p>
@@ -683,7 +683,7 @@ const MainApp = () => {
                 </svg>
               </button>
               
-              <p className="text-gray-400 text-sm mt-6">
+              <p className="replace-text-gray-400 text-sm mt-6">
                 <span className="text-orange-400 font-semibold">While you're reading this</span>, your competitors are fixing their marketing. 
                 <span className="text-white">What are you waiting for?</span>
               </p>

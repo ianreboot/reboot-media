@@ -205,23 +205,23 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
               )}
 
               {typeof hero.title === 'string' ? (
-                <h1 className="heading-hero text-critical dark:text-white mb-6 leading-tight">
+                <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
                   {hero.title}
                 </h1>
               ) : (
-                <h1 className="heading-hero text-critical dark:text-white mb-6 leading-tight">
+                <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
                   {hero.title}
                 </h1>
               )}
 
               {hero.subtitle && (
-                <h2 className="text-xl md:text-2xl text-important dark:text-gray-300 mb-6 max-w-4xl mx-auto">
+                <h2 className="text-xl md:text-2xl text-important dark:replace-text-gray-300 mb-6 max-w-4xl mx-auto">
                   {hero.subtitle}
                 </h2>
               )}
 
               {hero.description && (
-                <p className="text-xl text-important dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl text-important dark:replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                   {hero.description}
                 </p>
               )}
@@ -253,17 +253,17 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                     {breadcrumb.href ? (
                       <a 
                         href={breadcrumb.href} 
-                        className="text-gray-400 hover:text-orange-400 transition-colors"
+                        className="replace-text-gray-400 hover:text-orange-400 transition-colors"
                       >
                         {breadcrumb.text}
                       </a>
                     ) : (
-                      <span className={breadcrumb.isActive ? 'text-orange-400' : 'text-gray-400'}>
+                      <span className={breadcrumb.isActive ? 'text-orange-400' : 'replace-text-gray-400'}>
                         {breadcrumb.text}
                       </span>
                     )}
                     {index < breadcrumbs.length - 1 && (
-                      <span className="text-gray-600">→</span>
+                      <span className="replace-text-gray-600">→</span>
                     )}
                   </React.Fragment>
                 ))}
@@ -277,7 +277,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
           {content.map((section, index) => (
             <section key={section.id} className={`${index > 0 ? 'mt-16' : ''} mb-16`}>
               {section.title && (
-                <h2 className="heading-xl text-critical dark:text-white mb-8 text-center">
+                <h2 className="heading-xl text-gradient-critical mb-8 text-center">
                   {section.title}
                 </h2>
               )}
@@ -296,13 +296,13 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                 ? `bg-gradient-to-br from-${footerCTA.gradient || hero.gradient || 'blue'}-900 via-${footerCTA.gradient || hero.gradient || 'blue'}-950 to-black text-white rounded-2xl p-12`
                 : 'bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-12'
             }`}>
-              <h2 className={`heading-xl mb-6 ${footerCTA.variant === 'gradient' ? 'text-white' : 'text-critical dark:text-white'}`}>
+              <h2 className={`heading-xl mb-6 ${footerCTA.variant === 'gradient' ? 'text-white' : 'text-gradient-critical'}`}>
                 {footerCTA.title}
               </h2>
               <p className={`text-lg mb-8 max-w-4xl mx-auto leading-relaxed ${
                 footerCTA.variant === 'gradient' 
-                  ? 'text-gray-300' 
-                  : 'text-standard dark:text-gray-300'
+                  ? 'replace-text-gray-300' 
+                  : 'text-standard dark:replace-text-gray-300'
               }`}>
                 {footerCTA.description}
               </p>
