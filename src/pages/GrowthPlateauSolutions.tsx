@@ -231,7 +231,7 @@ const GrowthPlateauSolutions = () => {
             <h2 className="heading-xl text-gradient-critical mb-8 text-center">
               7 Plateau Types (Which is Yours?)
             </h2>
-            <p className="text-xl text-standard dark:replace-text-gray-300 mb-16 text-center max-w-4xl mx-auto">
+            <p className="text-xl text-important-accessible dark:replace-text-gray-300 mb-16 text-center max-w-4xl mx-auto">
               After analyzing 200+ growth-stage companies, we've identified exactly why companies get stuck. 
               Each plateau type has specific psychology fixes that unlock the next revenue level.
             </p>
@@ -309,7 +309,7 @@ const GrowthPlateauSolutions = () => {
                     Marketing Psychology Fundamentals →
                   </a>
                 </h3>
-                <p className="text-lg text-standard dark:replace-text-gray-300 mb-6">
+                <p className="text-lg text-important-accessible dark:replace-text-gray-300 mb-6">
                   Master the 5 customer awareness stages and conversion psychology principles that transform scattered marketing into predictable revenue growth.
                 </p>
                 <a 
@@ -327,7 +327,7 @@ const GrowthPlateauSolutions = () => {
                     Need Strategic Marketing Leadership? →
                   </a>
                 </h3>
-                <p className="text-lg text-standard dark:replace-text-gray-300 mb-6">
+                <p className="text-lg text-important-accessible dark:replace-text-gray-300 mb-6">
                   Compare fractional CMO vs agency approaches and discover which delivers faster plateau breakthrough results for your specific situation.
                 </p>
                 <a 
