@@ -279,7 +279,7 @@ const EnhancedLeadForm = () => {
           {/* Step 1: Pain Point Acknowledgment with Personalization */}
           {formStep === 1 && (
             <div className="text-center">
-              <h3 className="text-2xl font-black text-slate-900 mb-4">
+              <h3 className="text-2xl font-black replace-text-slate-900 mb-4">
                 {personalizedContent.title}
               </h3>
               <p className="replace-text-gray-600 mb-4">
@@ -318,7 +318,7 @@ const EnhancedLeadForm = () => {
                         });
                       }}
                     />
-                    <span className="text-gray-700">
+                    <span className="replace-text-gray-700">
                       <strong>{option.label}</strong> - {option.desc}
                     </span>
                   </label>
@@ -346,7 +346,7 @@ const EnhancedLeadForm = () => {
             <div>
               <button 
                 onClick={() => handleStepChange(1)}
-                className="replace-text-gray-500 hover:text-gray-700 mb-4 flex items-center transition-colors"
+                className="replace-text-gray-500 hover:replace-text-gray-700 mb-4 flex items-center transition-colors"
               >
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
@@ -355,7 +355,7 @@ const EnhancedLeadForm = () => {
               </button>
               
               <div className="bg-white rounded-2xl p-6 max-w-lg mx-auto shadow-2xl">
-                <h3 className="text-2xl font-black text-slate-900 mb-4">
+                <h3 className="text-2xl font-black replace-text-slate-900 mb-4">
                   Perfect! Let's <span className="text-orange-500">Identify</span> Your Growth Stage
                 </h3>
                 <p className="replace-text-gray-600 mb-6">
@@ -396,7 +396,7 @@ const EnhancedLeadForm = () => {
                 )}
                 
                 <div className="mb-8">
-                  <h4 className="font-bold text-gray-900 mb-4">Step 2: Your Revenue Stage</h4>
+                  <h4 className="font-bold replace-text-gray-900 mb-4">Step 2: Your Revenue Stage</h4>
                   <p className="text-sm replace-text-gray-600 mb-4">What's your current annual revenue?</p>
                   
                   <div className="space-y-3">
@@ -423,7 +423,7 @@ const EnhancedLeadForm = () => {
                           onFocus={() => handleFieldFocus('revenue')}
                           className="mr-3 w-4 h-4"
                         />
-                        <span className="text-gray-700">
+                        <span className="replace-text-gray-700">
                           <strong>{option.label}</strong><br />
                           <span className="text-sm replace-text-gray-500 ml-7">{option.desc}</span>
                         </span>
@@ -459,7 +459,7 @@ const EnhancedLeadForm = () => {
             <div>
               <button 
                 onClick={() => handleStepChange(2)}
-                className="replace-text-gray-500 hover:text-gray-700 mb-4 flex items-center transition-colors"
+                className="replace-text-gray-500 hover:replace-text-gray-700 mb-4 flex items-center transition-colors"
               >
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
@@ -468,7 +468,7 @@ const EnhancedLeadForm = () => {
               </button>
               
               <div className="max-w-2xl mx-auto">
-                <h3 className="text-2xl font-black text-slate-900 mb-4 text-center">
+                <h3 className="text-2xl font-black replace-text-slate-900 mb-4 text-center">
                   Perfect! Let's Get Your <span className="text-orange-500">Free Analysis</span>
                 </h3>
                 <p className="replace-text-gray-600 mb-8 text-center">
@@ -516,7 +516,7 @@ const EnhancedLeadForm = () => {
                     </h4>
                     <div className="grid md:grid-cols-2 gap-3">
                       <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">Your Name *</label>
+                        <label className="block text-xs font-bold replace-text-slate-700 mb-2">Your Name *</label>
                         <input 
                           type="text" 
                           value={formData.name}
@@ -528,7 +528,7 @@ const EnhancedLeadForm = () => {
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">Company Name *</label>
+                        <label className="block text-xs font-bold replace-text-slate-700 mb-2">Company Name *</label>
                         <input 
                           type="text" 
                           value={formData.company}
@@ -541,7 +541,7 @@ const EnhancedLeadForm = () => {
                       </div>
                     </div>
                     <div>
-                      <label className="block text-xs font-bold text-slate-700 mb-2">Business Email *</label>
+                      <label className="block text-xs font-bold replace-text-slate-700 mb-2">Business Email *</label>
                       <input 
                         type="email" 
                         value={formData.email}
@@ -574,7 +574,7 @@ const EnhancedLeadForm = () => {
                         </h4>
                         <div className="space-y-3">
                           <div>
-                            <label className="block text-xs font-bold text-slate-700 mb-2">Website URL</label>
+                            <label className="block text-xs font-bold replace-text-slate-700 mb-2">Website URL</label>
                             <input 
                               type="url" 
                               value={formData.website}
@@ -590,7 +590,7 @@ const EnhancedLeadForm = () => {
                           </div>
                           <div className="grid grid-cols-2 gap-3">
                             <div>
-                              <label className="block text-xs font-bold text-slate-700 mb-2">Industry</label>
+                              <label className="block text-xs font-bold replace-text-slate-700 mb-2">Industry</label>
                               <select 
                                 value={formData.industry}
                                 onChange={(e) => {
@@ -615,7 +615,7 @@ const EnhancedLeadForm = () => {
                               </select>
                             </div>
                             <div>
-                              <label className="block text-xs font-bold text-slate-700 mb-2">Team Size</label>
+                              <label className="block text-xs font-bold replace-text-slate-700 mb-2">Team Size</label>
                               <select 
                                 value={formData.teamSize}
                                 onChange={(e) => {
@@ -649,7 +649,7 @@ const EnhancedLeadForm = () => {
                           </h4>
                           <div className="space-y-3">
                             <div>
-                              <label className="block text-xs font-bold text-slate-700 mb-2">What's your biggest marketing pain right now? *</label>
+                              <label className="block text-xs font-bold replace-text-slate-700 mb-2">What's your biggest marketing pain right now? *</label>
                               <textarea 
                                 value={formData.specificIssue}
                                 onChange={(e) => setFormData({...formData, specificIssue: e.target.value})}
@@ -716,7 +716,7 @@ const EnhancedLeadForm = () => {
                         {/* Same fields as progressive version */}
                         <div className="space-y-3">
                           <div>
-                            <label className="block text-xs font-bold text-slate-700 mb-2">Website URL</label>
+                            <label className="block text-xs font-bold replace-text-slate-700 mb-2">Website URL</label>
                             <input 
                               type="url" 
                               value={formData.website}
@@ -732,7 +732,7 @@ const EnhancedLeadForm = () => {
                           </div>
                           <div className="grid grid-cols-2 gap-3">
                             <div>
-                              <label className="block text-xs font-bold text-slate-700 mb-2">Industry</label>
+                              <label className="block text-xs font-bold replace-text-slate-700 mb-2">Industry</label>
                               <select 
                                 value={formData.industry}
                                 onChange={(e) => setFormData({...formData, industry: e.target.value})}
@@ -750,7 +750,7 @@ const EnhancedLeadForm = () => {
                               </select>
                             </div>
                             <div>
-                              <label className="block text-xs font-bold text-slate-700 mb-2">Team Size</label>
+                              <label className="block text-xs font-bold replace-text-slate-700 mb-2">Team Size</label>
                               <select 
                                 value={formData.teamSize}
                                 onChange={(e) => setFormData({...formData, teamSize: e.target.value})}
@@ -776,7 +776,7 @@ const EnhancedLeadForm = () => {
                         </h4>
                         <div className="space-y-3">
                           <div>
-                            <label className="block text-xs font-bold text-slate-700 mb-2">What's your biggest marketing pain right now? *</label>
+                            <label className="block text-xs font-bold replace-text-slate-700 mb-2">What's your biggest marketing pain right now? *</label>
                             <textarea 
                               value={formData.specificIssue}
                               onChange={(e) => setFormData({...formData, specificIssue: e.target.value})}
@@ -788,7 +788,7 @@ const EnhancedLeadForm = () => {
                             />
                           </div>
                           <div>
-                            <label className="block text-xs font-bold text-slate-700 mb-2">What marketing are you currently doing?</label>
+                            <label className="block text-xs font-bold replace-text-slate-700 mb-2">What marketing are you currently doing?</label>
                             <textarea 
                               value={formData.currentMarketing}
                               onChange={(e) => setFormData({...formData, currentMarketing: e.target.value})}

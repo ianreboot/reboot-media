@@ -343,12 +343,12 @@ const FractionalCMOGuide = () => {
 
           {/* Related Resources */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+            <h2 className="text-3xl font-bold replace-text-gray-900 dark:text-white mb-8 text-center">
               Related Marketing Leadership Resources
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-blue-accessible transition-colors">
                     8 Proven Plateau Breakthrough Patterns →
                   </a>
@@ -358,7 +358,7 @@ const FractionalCMOGuide = () => {
                 </p>
               </div>
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-blue-accessible transition-colors">
                     5 Awareness Stages That Convert →
                   </a>

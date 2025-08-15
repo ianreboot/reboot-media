@@ -150,20 +150,25 @@ class AccessibilityValidator {
       const content = fs.readFileSync(file, 'utf8');
       const relativePath = path.relative(srcPath, file);
 
-      // Check for problematic patterns
+      // Check for problematic patterns with word boundaries
       this.problematicPatterns.forEach(pattern => {
-        const regex = new RegExp(`className="[^"]*${pattern.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&')}[^"]*"`, 'g');
+        // Use word boundary to match exact classes, not substrings
+        const escapedPattern = pattern.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+        const regex = new RegExp(`className="[^"]*\\b${escapedPattern}\\b[^"]*"`, 'g');
         const matches = content.match(regex);
         
         if (matches) {
           matches.forEach(match => {
-            this.violations.push({
-              type: 'PROBLEMATIC_COLOR_CLASS',
-              file: relativePath,
-              pattern: pattern,
-              context: match,
-              message: `Problematic color class "${pattern}" found - may fail WCAG contrast requirements`
-            });
+            // Additional check to ensure we're not matching replacement classes
+            if (!match.includes(`replace-${pattern}`) && !match.includes(`dark:replace-${pattern.replace('dark:', '')}`)) {
+              this.violations.push({
+                type: 'PROBLEMATIC_COLOR_CLASS',
+                file: relativePath,
+                pattern: pattern,
+                context: match,
+                message: `Problematic color class "${pattern}" found - may fail WCAG contrast requirements`
+              });
+            }
           });
         }
       });

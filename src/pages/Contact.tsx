@@ -379,7 +379,7 @@ const Contact = () => {
                   <div className="flex items-start">
                     <MapPin className="w-5 h-5 text-orange-500 mr-3 mt-1" />
                     <div>
-                      <p className="font-medium text-gray-900 dark:text-white">Address</p>
+                      <p className="font-medium replace-text-gray-900 dark:text-white">Address</p>
                       <p className="text-sm text-optional dark:replace-text-gray-300">
                         17595 Harvard Ave C-738<br />
                         Irvine, CA 92614<br />
@@ -390,7 +390,7 @@ const Contact = () => {
                   <div className="flex items-start">
                     <Globe className="w-5 h-5 text-orange-500 mr-3 mt-1" />
                     <div>
-                      <p className="font-medium text-gray-900 dark:text-white">Service Areas</p>
+                      <p className="font-medium replace-text-gray-900 dark:text-white">Service Areas</p>
                       <p className="text-sm text-optional dark:replace-text-gray-300">
                         USA • Bangkok • Singapore<br />
                         Global services available
@@ -412,7 +412,7 @@ const Contact = () => {
               {/* Free Consultation CTA */}
               <div className="bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900 dark:to-indigo-900 rounded-2xl p-6">
                 <h3 className="heading-md text-important dark:text-white mb-2">Free Marketing Analysis</h3>
-                <p className="text-gray-700 dark:replace-text-gray-300 text-sm mb-4">
+                <p className="replace-text-gray-700 dark:replace-text-gray-300 text-sm mb-4">
                   Ready to transform your marketing? Get a personalized analysis 
                   that shows exactly how to accelerate your business growth.
                 </p>

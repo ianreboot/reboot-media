@@ -112,7 +112,7 @@ const LeadForm = () => {
           {/* Step 1: Marketing Anxiety Acknowledgment */}
           {formStep === 1 && (
             <div className="text-center">
-              <h3 className="text-2xl font-black text-slate-900 mb-4">
+              <h3 className="text-2xl font-black replace-text-slate-900 mb-4">
                 Is Your Marketing <span className="text-orange-500">Keeping You</span> Up at Night?
               </h3>
               <p className="replace-text-gray-600 mb-8">
@@ -127,7 +127,7 @@ const LeadForm = () => {
                     checked={selectedOptions['notWorking']}
                     onChange={() => handleCheckboxChange('notWorking')}
                   />
-                  <span className="text-gray-700">
+                  <span className="replace-text-gray-700">
                     <strong>Marketing isn't working</strong> - You're spending money but not seeing results
                   </span>
                 </label>
@@ -139,7 +139,7 @@ const LeadForm = () => {
                     checked={selectedOptions['plateau']}
                     onChange={() => handleCheckboxChange('plateau')}
                   />
-                  <span className="text-gray-700">
+                  <span className="replace-text-gray-700">
                     <strong>Hit a growth plateau</strong> - What worked before isn't working anymore
                   </span>
                 </label>
@@ -151,7 +151,7 @@ const LeadForm = () => {
                     checked={selectedOptions['competition']}
                     onChange={() => handleCheckboxChange('competition')}
                   />
-                  <span className="text-gray-700">
+                  <span className="replace-text-gray-700">
                     <strong>Losing to competition</strong> - Competitors are growing while you're stuck
                   </span>
                 </label>
@@ -163,7 +163,7 @@ const LeadForm = () => {
                     checked={selectedOptions['clarity']}
                     onChange={() => handleCheckboxChange('clarity')}
                   />
-                  <span className="text-gray-700">
+                  <span className="replace-text-gray-700">
                     <strong>No clear strategy</strong> - You're trying everything but nothing sticks
                   </span>
                 </label>
@@ -187,7 +187,7 @@ const LeadForm = () => {
             <div>
               <button 
                 onClick={() => setFormStep(1)}
-                className="replace-text-gray-500 hover:text-gray-700 mb-4 flex items-center transition-colors"
+                className="replace-text-gray-500 hover:replace-text-gray-700 mb-4 flex items-center transition-colors"
               >
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
@@ -196,7 +196,7 @@ const LeadForm = () => {
               </button>
               
               <div className="bg-white rounded-2xl p-6 max-w-lg mx-auto shadow-2xl">
-                <h3 className="text-2xl font-black text-slate-900 mb-4">
+                <h3 className="text-2xl font-black replace-text-slate-900 mb-4">
                   I Feel You. Let's <span className="text-orange-500">Identify</span> Your Growth Stage
                 </h3>
                 <p className="replace-text-gray-600 mb-6">
@@ -221,7 +221,7 @@ const LeadForm = () => {
                 </div>
                 
                 <div className="mb-8">
-                  <h4 className="font-bold text-gray-900 mb-4">Step 2: Your Revenue Stage</h4>
+                  <h4 className="font-bold replace-text-gray-900 mb-4">Step 2: Your Revenue Stage</h4>
                   <p className="text-sm replace-text-gray-600 mb-4">What's your current annual revenue?</p>
                   
                   <div className="space-y-3">
@@ -233,7 +233,7 @@ const LeadForm = () => {
                         onChange={(e) => setFormData({...formData, revenue: e.target.value})}
                         className="mr-3 w-4 h-4"
                       />
-                      <span className="text-gray-700">
+                      <span className="replace-text-gray-700">
                         <strong>$500K - $1M</strong><br />
                         <span className="text-sm replace-text-gray-500 ml-7">Growing but hitting walls</span>
                       </span>
@@ -247,7 +247,7 @@ const LeadForm = () => {
                         onChange={(e) => setFormData({...formData, revenue: e.target.value})}
                         className="mr-3 w-4 h-4"
                       />
-                      <span className="text-gray-700">
+                      <span className="replace-text-gray-700">
                         <strong>$1M - $3M</strong><br />
                         <span className="text-sm replace-text-gray-500 ml-7">Scaling but inconsistent</span>
                       </span>
@@ -261,7 +261,7 @@ const LeadForm = () => {
                         onChange={(e) => setFormData({...formData, revenue: e.target.value})}
                         className="mr-3 w-4 h-4"
                       />
-                      <span className="text-gray-700">
+                      <span className="replace-text-gray-700">
                         <strong>$3M - $10M</strong><br />
                         <span className="text-sm replace-text-gray-500 ml-7">Need systematic growth</span>
                       </span>
@@ -275,7 +275,7 @@ const LeadForm = () => {
                         onChange={(e) => setFormData({...formData, revenue: e.target.value})}
                         className="mr-3 w-4 h-4"
                       />
-                      <span className="text-gray-700">
+                      <span className="replace-text-gray-700">
                         <strong>$10M+</strong><br />
                         <span className="text-sm replace-text-gray-500 ml-7">Ready for transformation</span>
                       </span>
@@ -311,7 +311,7 @@ const LeadForm = () => {
             <div>
               <button 
                 onClick={() => setFormStep(2)}
-                className="replace-text-gray-500 hover:text-gray-700 mb-4 flex items-center transition-colors"
+                className="replace-text-gray-500 hover:replace-text-gray-700 mb-4 flex items-center transition-colors"
               >
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
@@ -320,7 +320,7 @@ const LeadForm = () => {
               </button>
               
               <div className="max-w-2xl mx-auto">
-                <h3 className="text-2xl font-black text-slate-900 mb-4 text-center">
+                <h3 className="text-2xl font-black replace-text-slate-900 mb-4 text-center">
                   Perfect! Let's Get Your <span className="text-orange-500">Free Analysis</span>
                 </h3>
                 <p className="replace-text-gray-600 mb-8 text-center">
@@ -353,7 +353,7 @@ const LeadForm = () => {
                     </h4>
                     <div className="grid md:grid-cols-2 gap-3">
                       <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">Your Name *</label>
+                        <label className="block text-xs font-bold replace-text-slate-700 mb-2">Your Name *</label>
                         <input 
                           type="text" 
                           value={formData.name}
@@ -363,7 +363,7 @@ const LeadForm = () => {
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">Company Name *</label>
+                        <label className="block text-xs font-bold replace-text-slate-700 mb-2">Company Name *</label>
                         <input 
                           type="text" 
                           value={formData.company}
@@ -374,7 +374,7 @@ const LeadForm = () => {
                       </div>
                     </div>
                     <div>
-                      <label className="block text-xs font-bold text-slate-700 mb-2">Business Email *</label>
+                      <label className="block text-xs font-bold replace-text-slate-700 mb-2">Business Email *</label>
                       <input 
                         type="email" 
                         value={formData.email}
@@ -393,7 +393,7 @@ const LeadForm = () => {
                     </h4>
                     <div className="space-y-3">
                       <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">Website URL</label>
+                        <label className="block text-xs font-bold replace-text-slate-700 mb-2">Website URL</label>
                         <input 
                           type="url" 
                           value={formData.website}
@@ -408,7 +408,7 @@ const LeadForm = () => {
                       </div>
                       <div className="grid grid-cols-2 gap-3">
                         <div>
-                          <label className="block text-xs font-bold text-slate-700 mb-2">Industry</label>
+                          <label className="block text-xs font-bold replace-text-slate-700 mb-2">Industry</label>
                           <select 
                             value={formData.industry}
                             onChange={(e) => setFormData({...formData, industry: e.target.value})}
@@ -425,7 +425,7 @@ const LeadForm = () => {
                           </select>
                         </div>
                         <div>
-                          <label className="block text-xs font-bold text-slate-700 mb-2">Team Size</label>
+                          <label className="block text-xs font-bold replace-text-slate-700 mb-2">Team Size</label>
                           <select 
                             value={formData.teamSize}
                             onChange={(e) => setFormData({...formData, teamSize: e.target.value})}
@@ -450,7 +450,7 @@ const LeadForm = () => {
                     </h4>
                     <div className="space-y-3">
                       <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">What's your biggest marketing pain right now? *</label>
+                        <label className="block text-xs font-bold replace-text-slate-700 mb-2">What's your biggest marketing pain right now? *</label>
                         <textarea 
                           value={formData.specificIssue}
                           onChange={(e) => setFormData({...formData, specificIssue: e.target.value})}
@@ -460,7 +460,7 @@ const LeadForm = () => {
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-bold text-slate-700 mb-2">What marketing are you currently doing?</label>
+                        <label className="block text-xs font-bold replace-text-slate-700 mb-2">What marketing are you currently doing?</label>
                         <textarea 
                           value={formData.currentMarketing}
                           onChange={(e) => setFormData({...formData, currentMarketing: e.target.value})}

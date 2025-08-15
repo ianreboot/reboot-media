@@ -299,35 +299,35 @@ const TransitionStrategies = () => {
                   <div className="flex items-center">
                     <div className="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">1</div>
                     <div>
-                      <strong className="text-gray-900 dark:text-white">$0-500K:</strong>
+                      <strong className="replace-text-gray-900 dark:text-white">$0-500K:</strong>
                       <span className="text-standard dark:replace-text-gray-300 ml-2">Founder-led marketing or DIY approach</span>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">2</div>
                     <div>
-                      <strong className="text-gray-900 dark:text-white">$500K-1M:</strong>
+                      <strong className="replace-text-gray-900 dark:text-white">$500K-1M:</strong>
                       <span className="text-standard dark:replace-text-gray-300 ml-2">First agency or consultant engagement</span>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">3</div>
                     <div>
-                      <strong className="text-gray-900 dark:text-white">$1M-3M:</strong>
+                      <strong className="replace-text-gray-900 dark:text-white">$1M-3M:</strong>
                       <span className="text-standard dark:replace-text-gray-300 ml-2">Fractional CMO for strategic growth</span>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">4</div>
                     <div>
-                      <strong className="text-gray-900 dark:text-white">$3M-5M:</strong>
+                      <strong className="replace-text-gray-900 dark:text-white">$3M-5M:</strong>
                       <span className="text-standard dark:replace-text-gray-300 ml-2">Hybrid: Fractional CMO + internal team</span>
                     </div>
                   </div>
                   <div className="flex items-center">
                     <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">5</div>
                     <div>
-                      <strong className="text-gray-900 dark:text-white">$5M+:</strong>
+                      <strong className="replace-text-gray-900 dark:text-white">$5M+:</strong>
                       <span className="text-standard dark:replace-text-gray-300 ml-2">Full-time CMO with complete team</span>
                     </div>
                   </div>

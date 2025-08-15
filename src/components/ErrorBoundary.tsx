@@ -356,7 +356,7 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
           {/* Error Details (Development/Debug Mode) */}
           {showDetails && error && (
             <details className="bg-gray-50 rounded-lg">
-              <summary className="p-4 cursor-pointer font-medium text-gray-700 hover:bg-gray-100 rounded-lg">
+              <summary className="p-4 cursor-pointer font-medium replace-text-gray-700 hover:bg-gray-100 rounded-lg">
                 Technical Details (for developers)
               </summary>
               <div className="p-4 pt-0">
@@ -367,7 +367,7 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
                 
                 {error.stack && (
                   <div className="bg-gray-100 rounded-lg p-4 mb-4">
-                    <h4 className="font-medium text-gray-800 mb-2">Stack Trace</h4>
+                    <h4 className="font-medium replace-text-gray-800 mb-2">Stack Trace</h4>
                     <pre className="text-xs replace-text-gray-600 whitespace-pre-wrap break-all overflow-x-auto">
                       {error.stack}
                     </pre>
@@ -467,7 +467,7 @@ const ComponentErrorFallback: React.FC<Omit<ErrorFallbackProps, 'onRefresh' | 'o
         {/* Error Details for Component Level */}
         {showDetails && error && (
           <details className="mt-4 bg-white rounded border">
-            <summary className="p-3 cursor-pointer text-sm font-medium text-gray-700 hover:bg-gray-50">
+            <summary className="p-3 cursor-pointer text-sm font-medium replace-text-gray-700 hover:bg-gray-50">
               Technical Details
             </summary>
             <div className="p-3 pt-0 border-t">

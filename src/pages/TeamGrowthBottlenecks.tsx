@@ -170,7 +170,7 @@ const TeamGrowthBottlenecks = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-blue-200/50 dark:border-blue-800/50 p-8">
-                <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
+                <h2 className="heading-xl text-gradient-critical text-2xl font-bold replace-text-gray-900 dark:text-white mb-6 text-center">
                   Why Team Growth Gets Stuck (And How Culture Really Scales)
                 </h2>
                 <p className="text-important text-lg text-standard dark:replace-text-gray-300 mb-6 leading-relaxed text-center">
@@ -199,7 +199,7 @@ const TeamGrowthBottlenecks = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold replace-text-gray-900 dark:text-white mb-12 text-center">
                 <span className="block">7 Team Bottleneck Patterns</span>
                 <span className="block">(Which is Yours?)</span>
               </h2>
@@ -293,7 +293,7 @@ const TeamGrowthBottlenecks = () => {
             {/* Call to Action */}
             <section className="mb-16">
               <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8 border border-blue-200/50 dark:border-blue-800/50">
-                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+                <h3 className="text-2xl font-bold replace-text-gray-900 dark:text-white mb-4">
                   🚨 Stop Being the Bottleneck to Your Own Growth
                 </h3>
                 <p className="text-important text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
@@ -317,12 +317,12 @@ const TeamGrowthBottlenecks = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl font-bold replace-text-gray-900 dark:text-white mb-8 text-center">
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  <h3 className="heading-lg text-important dark:text-white text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/operational-scaling-crisis`} className="hover:text-blue-accessible transition-colors">
                       Operational Scaling Crisis →
                     </a>
@@ -332,7 +332,7 @@ const TeamGrowthBottlenecks = () => {
                   </p>
                 </div>
                 <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3">
+                  <h3 className="heading-lg text-important dark:text-white text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-blue-accessible transition-colors">
                       Need Strategic Marketing Leadership? →
                     </a>

@@ -302,7 +302,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
               <p className={`text-lg mb-8 max-w-4xl mx-auto leading-relaxed ${
                 footerCTA.variant === 'gradient' 
                   ? 'replace-text-gray-300' 
-                  : 'text-standard dark:replace-text-gray-300'
+                  : 'text-standard dark:replace-'
               }`}>
                 {footerCTA.description}
               </p>

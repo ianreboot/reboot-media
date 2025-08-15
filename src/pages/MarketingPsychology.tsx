@@ -80,7 +80,7 @@ const MarketingPsychology = () => {
             
             {/* Strategic CTA */}
             <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-orange-500/30 dark:border-orange-400/30 border-l-4 border-l-orange-500 p-6 mb-8">
-              <p className="text-standard dark:text-gray-200 font-semibold mb-4">
+              <p className="text-standard dark:replace-text-gray-200 font-semibold mb-4">
                 🚨 <strong>Warning:</strong> Every day you use psychology-ignorant marketing costs you qualified prospects
               </p>
               <button 
@@ -153,7 +153,7 @@ const MarketingPsychology = () => {
                 </p>
                 <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
                   <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Example Headline:</p>
-                  <p className="text-gray-900 dark:text-white">"Why Your Marketing Feels Scattered (And the 3 Systems That Fix It)"</p>
+                  <p className="replace-text-gray-900 dark:text-white">"Why Your Marketing Feels Scattered (And the 3 Systems That Fix It)"</p>
                 </div>
                 
                 <div className="mt-6">
@@ -187,7 +187,7 @@ const MarketingPsychology = () => {
                 
                 <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
                   <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Example Headline:</p>
-                  <p className="text-gray-900 dark:text-white">"Marketing Agency vs Fractional CMO: Which Drives Faster Growth?"</p>
+                  <p className="replace-text-gray-900 dark:text-white">"Marketing Agency vs Fractional CMO: Which Drives Faster Growth?"</p>
                 </div>
                 
                 <div className="mt-6">
@@ -221,7 +221,7 @@ const MarketingPsychology = () => {
                 
                 <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
                   <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Example Headline:</p>
-                  <p className="text-gray-900 dark:text-white">"How We Helped Norton Antivirus Grow from $100K to $3M Monthly Revenue"</p>
+                  <p className="replace-text-gray-900 dark:text-white">"How We Helped Norton Antivirus Grow from $100K to $3M Monthly Revenue"</p>
                 </div>
                 
                 <div className="mt-6">
@@ -255,7 +255,7 @@ const MarketingPsychology = () => {
                 
                 <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
                   <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Example Headline:</p>
-                  <p className="text-gray-900 dark:text-white">"Get Your Free Marketing Analysis - Limited to 8 Clients This Quarter"</p>
+                  <p className="replace-text-gray-900 dark:text-white">"Get Your Free Marketing Analysis - Limited to 8 Clients This Quarter"</p>
                 </div>
                 
                 <div className="mt-6">
@@ -281,7 +281,7 @@ const MarketingPsychology = () => {
               
               {/* Loss Aversion */}
               <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">1. Loss Aversion</h3>
+                <h3 className="text-xl font-bold replace-text-gray-900 dark:text-white mb-4">1. Loss Aversion</h3>
                 <p className="text-standard dark:replace-text-gray-300 mb-4">
                   People are 2.5x more motivated to avoid loss than gain benefit. Frame your value proposition around what they'll lose by not acting.
                 </p>
@@ -289,48 +289,48 @@ const MarketingPsychology = () => {
                   <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Instead of:</p>
                   <p className="text-standard dark:replace-text-gray-300 mb-3">"Get 30% more leads"</p>
                   <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Say:</p>
-                  <p className="text-gray-900 dark:text-white font-medium">"Don't lose 30% of potential leads to broken messaging"</p>
+                  <p className="replace-text-gray-900 dark:text-white font-medium">"Don't lose 30% of potential leads to broken messaging"</p>
                 </div>
               </div>
 
               {/* Social Proof */}
               <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">2. Social Proof</h3>
+                <h3 className="text-xl font-bold replace-text-gray-900 dark:text-white mb-4">2. Social Proof</h3>
                 <p className="text-standard dark:replace-text-gray-300 mb-4">
                   People follow what others like them are doing. Use peer testimonials, expert endorsements, and usage indicators strategically.
                 </p>
                 <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-600/20">
                   <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Hierarchy:</p>
-                  <p className="text-gray-900 dark:text-white">1. Peer testimonials</p>
-                  <p className="text-gray-900 dark:text-white">2. Expert endorsements</p>
-                  <p className="text-gray-900 dark:text-white">3. Media mentions</p>
-                  <p className="text-gray-900 dark:text-white">4. Usage statistics</p>
+                  <p className="replace-text-gray-900 dark:text-white">1. Peer testimonials</p>
+                  <p className="replace-text-gray-900 dark:text-white">2. Expert endorsements</p>
+                  <p className="replace-text-gray-900 dark:text-white">3. Media mentions</p>
+                  <p className="replace-text-gray-900 dark:text-white">4. Usage statistics</p>
                 </div>
               </div>
 
               {/* Scarcity */}
               <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">3. Scarcity & Urgency</h3>
+                <h3 className="text-xl font-bold replace-text-gray-900 dark:text-white mb-4">3. Scarcity & Urgency</h3>
                 <p className="text-standard dark:replace-text-gray-300 mb-4">
                   Limited availability creates urgency. But it must be authentic - fake scarcity destroys trust faster than any other mistake.
                 </p>
                 <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-600/20">
                   <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Authentic Example:</p>
-                  <p className="text-gray-900 dark:text-white">"Limited to 8 clients for personalized attention" (if actually true)</p>
+                  <p className="replace-text-gray-900 dark:text-white">"Limited to 8 clients for personalized attention" (if actually true)</p>
                 </div>
               </div>
 
               {/* Authority */}
               <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-4">4. Authority Positioning</h3>
+                <h3 className="text-xl font-bold replace-text-gray-900 dark:text-white mb-4">4. Authority Positioning</h3>
                 <p className="text-standard dark:replace-text-gray-300 mb-4">
                   People trust experts. Build authority through expertise signals, process transparency, and educational content.
                 </p>
                 <div className="bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-600/20">
                   <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Authority Signals:</p>
-                  <p className="text-gray-900 dark:text-white">• Years of experience</p>
-                  <p className="text-gray-900 dark:text-white">• Specific credentials</p>
-                  <p className="text-gray-900 dark:text-white">• Detailed case studies</p>
+                  <p className="replace-text-gray-900 dark:text-white">• Years of experience</p>
+                  <p className="replace-text-gray-900 dark:text-white">• Specific credentials</p>
+                  <p className="replace-text-gray-900 dark:text-white">• Detailed case studies</p>
                 </div>
               </div>
 
@@ -375,7 +375,7 @@ const MarketingPsychology = () => {
                 </div>
               </div>
               <div className="prose prose-lg max-w-none dark:prose-invert">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-4">The Psychology Strategy That Worked:</h3>
+                <h3 className="text-xl font-semibold replace-text-gray-900 dark:text-white mb-4">The Psychology Strategy That Worked:</h3>
                 <ul className="text-standard dark:replace-text-gray-300 space-y-2">
                   <li><strong>Customer Awareness Mapping:</strong> Identified that customers were Solution-Aware about antivirus, not Problem-Aware about cyber threats</li>
                   <li><strong>Loss Aversion Messaging:</strong> "Don't wait until after you're hacked - protect what matters now"</li>
@@ -384,7 +384,7 @@ const MarketingPsychology = () => {
                 </ul>
                 <div className="mt-6 p-4 bg-white/50 dark:bg-gray-800/50 rounded-lg">
                   <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium">Key Insight:</p>
-                  <p className="text-gray-900 dark:text-white">
+                  <p className="replace-text-gray-900 dark:text-white">
                     "The breakthrough came when we stopped talking about antivirus features and started educating customers about why they need protection before it's too late."
                   </p>
                 </div>
@@ -399,7 +399,7 @@ const MarketingPsychology = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-xl font-semibold replace-text-gray-900 dark:text-white mb-3">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-orange-accessible transition-colors">
                     Stuck in a Growth Plateau? →
                   </a>
@@ -409,7 +409,7 @@ const MarketingPsychology = () => {
                 </p>
               </div>
               <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
-                <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-xl font-semibold replace-text-gray-900 dark:text-white mb-3">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-orange-accessible transition-colors">
                     Fractional CMO vs Agency →
                   </a>

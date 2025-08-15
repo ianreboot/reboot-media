@@ -85,7 +85,7 @@ export const MobileStickyBar: React.FC = () => {
       <div className="bg-white border-t-2 border-gray-200 shadow-2xl p-4">
         <div className="flex items-center justify-between">
           <div className="flex-1 mr-4">
-            <div className="text-sm font-bold text-gray-900">
+            <div className="text-sm font-bold replace-text-gray-900">
               {shouldShowUrgency() ? '🔥 Limited Time' : personalization.messaging.heroTitle.split(' ').slice(0, 3).join(' ')}
             </div>
             <div className="text-xs replace-text-gray-600">

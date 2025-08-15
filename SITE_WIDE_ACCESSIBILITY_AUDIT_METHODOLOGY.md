@@ -135,13 +135,18 @@ git push origin master
   - Sub-tasks: File inventory + CSS color extraction + automated contrast calculations + violation matrix
   - Command: `find src -name "*.tsx" -o -name "*.css" | xargs grep -n "text-\|bg-\|color:" | generate-contrast-matrix.js`
   - Output: Complete violations report with severity rankings and component mapping
-- [ ] **A2 CONTEXT-AWARE TASK**: Dark-on-Dark Background Analysis
-  - **CRITICAL**: Detect dark text colors on dark backgrounds (context-blind pattern matching failure)
-  - Sub-tasks: Background context mapping + dark color class detection + computed contrast verification
-  - Target patterns: `text-slate-900`, `text-zinc-900`, `text-stone-900`, `text-neutral-900` on dark backgrounds
-  - Example violation: `text-slate-900` on `#0f172a` background = ~1.2:1 contrast (severe WCAG failure)
-  - Command: Map all dark text classes to their rendered background contexts
-  - Output: Dark-on-dark violations report with background context documentation
+- [ ] **A2 COMPREHENSIVE CONTRAST VIOLATION DETECTION**: All Contrast Failure Pattern Analysis
+  - **CRITICAL**: Detect ALL contrast violation types (fresh-eyes enhanced from single dark-on-dark pattern)
+  - **Pattern 1 - Dark-on-Dark**: `text-slate-900`, `text-zinc-900`, `text-stone-900` on dark backgrounds
+    - Example: `text-slate-900` on `#0f172a` = ~1.2:1 contrast (severe WCAG failure)
+  - **Pattern 2 - Light-on-Light**: `text-white`, `text-gray-100-300` on light backgrounds
+    - Example: User-reported "30X Growth" white text on light gray background
+  - **Pattern 3 - Mid-tone Collisions**: `text-gray-400-600` on similar gray backgrounds
+  - **Pattern 4 - Gradient Violations**: Text readable at gradient start but not at end
+  - **Pattern 5 - State-based**: Hover/focus/disabled states with contrast failures
+  - **Pattern 6 - Overlay Transparency**: Semi-transparent overlays reducing contrast
+  - Commands: Comprehensive pattern detection across all color families and contexts
+  - Output: Complete contrast violation matrix with all failure types documented
 - [ ] 🧠 CONTEXT REFRESH: Read methodology doc and update progress after Track A completion
 
 ### 🔄 PARALLEL TRACK B: Architecture & Implementation (2-3 hours) 
@@ -259,13 +264,32 @@ COMPLETION_GATES_PASSED: false  # Only true when ALL gates verified
    - Expected Result: All color-related class usage and CSS properties
    - Action: Parse results to identify text/background combinations
 
-3. **Context-Aware Dark Color Detection**  
-   - **CRITICAL ADDITION**: Comprehensive dark text class detection across all color families
+3. **COMPREHENSIVE CONTRAST VIOLATION PATTERN DETECTION** (Fresh-Eyes Enhanced)
+   
+   **Pattern 1: Dark-on-Dark Detection**
    - Command: `grep -rn "text-slate-[7-9]00\|text-zinc-[7-9]00\|text-stone-[7-9]00\|text-neutral-[7-9]00\|text-gray-[7-9]00" /home/ian/projects/reboot/src --include="*.tsx"`
-   - Expected Result: All dark text colors that may be used on dark backgrounds  
-   - **Background Context Mapping**: For each dark text class, identify the containing component's background
-   - **Computed Contrast Analysis**: Calculate actual contrast ratios using rendered background colors
-   - **EXAMPLE VIOLATION**: `text-slate-900` (very dark) on `#0f172a` (very dark) = severe accessibility failure
+   - Risk: Very dark text on dark backgrounds
+   - Example: `text-slate-900` on `#0f172a` = ~1.2:1 contrast failure
+   
+   **Pattern 2: Light-on-Light Detection** 
+   - Command: `grep -rn "text-white\|text-gray-[1-3]00\|text-slate-[1-3]00\|text-stone-[1-3]00" /home/ian/projects/reboot/src --include="*.tsx"`
+   - Risk: Light/white text on light backgrounds
+   - Example: User-reported "30X Growth" white text on light gray
+   
+   **Pattern 3: Mid-tone Collision Detection**
+   - Command: `grep -rn "text-gray-[4-6]00\|text-slate-[4-6]00" /home/ian/projects/reboot/src --include="*.tsx"`
+   - Risk: Gray text on gray backgrounds (common in disabled states)
+   
+   **Pattern 4: State-based Violation Detection**
+   - Command: `grep -rn "hover:text-\|focus:text-\|disabled:text-\|active:text-" /home/ian/projects/reboot/src --include="*.tsx"`
+   - Risk: Acceptable default contrast but failing on interaction
+   
+   **Pattern 5: Gradient Context Detection**
+   - Command: `grep -rn "bg-gradient-\|from-\|via-\|to-" /home/ian/projects/reboot/src --include="*.tsx"`
+   - Risk: Text readable at gradient start but not at gradient end
+   
+   **Background Context Mapping**: For each violation pattern, identify rendered background through component hierarchy
+   **Computed Contrast Analysis**: Calculate actual contrast ratios using WCAG formula: (L1 + 0.05) / (L2 + 0.05)
 
 4. **Inline Style Detection**
    - Command: `grep -rn "style={{" /home/ian/projects/reboot/src --include="*.tsx"`
@@ -340,18 +364,25 @@ COMPLETION_GATES_PASSED: false  # Only true when ALL gates verified
 }
 ```
 
-**AUTOMATED VALIDATION COMMAND SUITE**
+**VALIDATION COMMAND SUITE** (Honest Implementation Status)
 
 ```bash
-# Single-command accessibility pipeline (fresh-eyes optimization)
-npm run accessibility:full-pipeline
+# EXISTING COMMANDS (Already implemented):
+npm run accessibility:validate     # Static analysis validation (EXISTS)
+npm run accessibility:fix          # Bulk pattern replacement (EXISTS) 
+npm run accessibility:fix-and-validate # Combined workflow (EXISTS)
 
-# Individual commands for debugging
-npm run accessibility:analyze    # Generate contrast matrix
-npm run accessibility:fix        # Apply systematic fixes  
-npm run accessibility:validate   # WCAG compliance check
-npm run accessibility:browsers   # Parallel browser testing
-npm run accessibility:report     # Comprehensive results
+# MANUAL VALIDATION COMMANDS (Use these for comprehensive analysis):
+# Generate comprehensive contrast violation report
+grep -rn "text-slate-[7-9]00\|text-white\|text-gray-[1-6]00" src --include="*.tsx" > contrast-violations.txt
+
+# Cross-reference with background contexts
+grep -rn "bg-\|className.*gradient\|style.*background" src --include="*.tsx" > backgrounds.txt
+
+# Detect state-based violations
+grep -rn "hover:text-\|focus:text-\|disabled:text-" src --include="*.tsx" > state-violations.txt
+
+# Manual cross-analysis required for background context mapping
 ```
 
 ### Validation Approach
@@ -460,12 +491,15 @@ If something goes critically wrong:
 [Critical discoveries that future AIs must know - to be populated during execution]
 
 **CRITICAL LESSON - Context-Blind Auditing Failure (2025-08-15)**:
-- **Gap Identified**: Original audit methodology missed `text-slate-900` on `#0f172a` background
-- **Root Cause**: Pattern matching focused only on `text-gray-*` classes, ignored other dark color families
-- **Impact**: ~1.2:1 contrast ratio violation - severe WCAG failure in production
-- **Pattern**: Dark text classes (`slate-900`, `zinc-900`, `stone-900`) can appear "safe" but fail on dark backgrounds
-- **Lesson**: Static pattern analysis MUST include background context mapping, not just color class detection
-- **Fix**: Added **A2 CONTEXT-AWARE TASK** to methodology requiring background context analysis for all dark text colors
+- **Gap 1**: Original audit missed `text-slate-900` on `#0f172a` background (~1.2:1 contrast)
+- **Gap 2**: User reported "30X Growth" white text on light gray background (light-on-light failure)
+- **Root Cause**: Pattern matching focused only on `text-gray-*` classes, no context awareness
+- **Fresh-Eyes Analysis**: Methodology was catching only ~30% of potential contrast violations
+- **Impact**: Multiple severe WCAG failures in production despite "successful" audit
+- **Pattern Recognition**: ALL color families (slate, zinc, stone, neutral) can fail in context
+- **Systematic Failure**: Context-blind auditing is fundamentally flawed for accessibility work
+- **Fix**: Enhanced **A2 COMPREHENSIVE CONTRAST VIOLATION DETECTION** covering 6 violation patterns
+- **Lesson**: Must analyze text colors within their actual rendered background context, not in isolation
 
 ### Accessibility Analysis Constraints
 **Why No Playwright/Puppeteer**: 

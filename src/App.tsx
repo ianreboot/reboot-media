@@ -188,8 +188,8 @@ const MainApp = () => {
             
             <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
               <div className="text-center">
-                <div className="text-2xl font-black text-slate-900 mb-1">Stop the Bleed</div>
-                <div className="text-sm text-slate-700 font-medium leading-tight">
+                <div className="text-2xl font-black replace-text-slate-900 mb-1">Stop the Bleed</div>
+                <div className="text-sm replace-text-slate-700 font-medium leading-tight">
                   Finally understand why customers don't buy, instead of wondering why
                 </div>
               </div>
@@ -197,8 +197,8 @@ const MainApp = () => {
             
             <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
               <div className="text-center">
-                <div className="text-2xl font-black text-slate-900 mb-1">Sleep Better</div>
-                <div className="text-sm text-slate-700 font-medium leading-tight">
+                <div className="text-2xl font-black replace-text-slate-900 mb-1">Sleep Better</div>
+                <div className="text-sm replace-text-slate-700 font-medium leading-tight">
                   No more throwing money at marketing that doesn't bring customers
                 </div>
               </div>
@@ -215,7 +215,7 @@ const MainApp = () => {
             <h2 className="heading-xl text-critical mb-6 sm:mb-8">
               The <span className="text-red-500">$200K</span> Marketing Mistake
             </h2>
-            <p className="text-xl text-stone-700 max-w-3xl mx-auto leading-normal">
+            <p className="text-xl replace-text-stone-700 max-w-3xl mx-auto leading-normal">
               <span className="text-white/90"><span className="font-bold">73% of growing companies</span> can't explain their value clearly to customers. They suffer from the "Curse of Knowledge" - knowing too much about their product to communicate it simply.</span>
             </p>
           </div>
@@ -224,8 +224,8 @@ const MainApp = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-xl border border-stone-200 transform -rotate-1">
-                <h3 className="text-2xl font-bold text-slate-900 mb-6">What Business Owners Say:</h3>
-                <div className="space-y-4 text-stone-700">
+                <h3 className="text-2xl font-bold replace-text-slate-900 mb-6">What Business Owners Say:</h3>
+                <div className="space-y-4 replace-text-stone-700">
                   <p className="italic">"Our advanced AI-powered customer management platform leverages machine learning algorithms to deliver personalized experiences..."</p>
                   <p className="text-red-600 font-semibold">❌ Customers don't understand this</p>
                 </div>
@@ -235,7 +235,7 @@ const MainApp = () => {
             <div className="order-1 lg:order-2">
               <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-xl border border-orange-200/30 dark:border-orange-400/30 transform rotate-1">
                 <h3 className="text-2xl font-bold mb-6 text-white">What Customers Hear:</h3>
-                <div className="space-y-4 text-stone-700">
+                <div className="space-y-4 replace-text-stone-700">
                   <p className="italic text-white/90">"We help you stop losing customers and make more money from the ones you have."</p>
                   <p className="text-green-600 font-semibold">✅ Clear, benefits-focused</p>
                 </div>
@@ -255,7 +255,7 @@ const MainApp = () => {
               </svg>
               <span className="text-blue-accessible text-sm font-semibold">Common Question</span>
             </div>
-            <h2 className="heading-xl text-slate-900 mb-6" style={{ marginTop: '0.25rem' }}>
+            <h2 className="heading-xl replace-text-slate-900 mb-6" style={{ marginTop: '0.25rem' }}>
               "Do You Have Experience in <span className="text-blue-accessible">My Industry</span>?"
             </h2>
             <p className="text-xl text-slate-600 mb-8">
@@ -363,11 +363,11 @@ const MainApp = () => {
                       <div className="bg-white/70 rounded-2xl p-6 backdrop-blur-sm">
                         <div className="grid grid-cols-2 gap-4 text-center">
                           <div>
-                            <div className="text-2xl font-black text-slate-700">20+</div>
+                            <div className="text-2xl font-black replace-text-slate-700">20+</div>
                             <div className="text-xs text-slate-600 font-medium">US Companies</div>
                           </div>
                           <div>
-                            <div className="text-2xl font-black text-slate-700">$2B+</div>
+                            <div className="text-2xl font-black replace-text-slate-700">$2B+</div>
                             <div className="text-xs text-slate-600 font-medium">Revenue Managed</div>
                           </div>
                         </div>
@@ -378,7 +378,7 @@ const MainApp = () => {
                   {/* Right Side - The Real Question */}
                   <div className="space-y-6">
                     <div>
-                      <h3 className="heading-lg text-slate-900 mb-4 leading-tight">
+                      <h3 className="heading-lg replace-text-slate-900 mb-4 leading-tight">
                         The Real Question Isn't<br />
                         <span className="text-red-500 line-through decoration-4">"Industry Experience"</span>
                       </h3>
@@ -393,7 +393,7 @@ const MainApp = () => {
                       </div>
                       
                       <div className="bg-white/50 rounded-xl p-4 border-l-4 border-orange-500">
-                        <p className="text-slate-700 text-sm italic">
+                        <p className="replace-text-slate-700 text-sm italic">
                           "The best consultants don't know your industry inside-out. 
                           They know <strong>customers</strong> inside-out."
                         </p>
@@ -413,12 +413,12 @@ const MainApp = () => {
       <section id="services" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
-            <h2 className="heading-xl text-slate-900 mb-6 sm:mb-8">
+            <h2 className="heading-xl replace-text-slate-900 mb-6 sm:mb-8">
               Fractional CMO
               <br />
               <span className="text-orange-500">Executive</span> Services
             </h2>
-            <p className="text-xl text-stone-700 max-w-3xl mx-auto mb-4">
+            <p className="text-xl replace-text-stone-700 max-w-3xl mx-auto mb-4">
               <span className="text-white/90">Strategic marketing leadership without the $300K+ salary commitment</span>
             </p>
             
@@ -426,13 +426,13 @@ const MainApp = () => {
             <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-2xl p-6 max-w-4xl mx-auto mb-8">
               <div className="flex flex-col md:flex-row items-center justify-between text-center">
                 <div className="mb-4 md:mb-0">
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">Full-Time CMO Cost</h3>
+                  <h3 className="text-lg font-bold replace-text-slate-900 mb-2">Full-Time CMO Cost</h3>
                   <div className="text-3xl font-black text-red-600 line-through">$300K+</div>
                   <div className="text-sm text-red-700">+ benefits, recruiting, risk</div>
                 </div>
                 <div className="text-orange-500 text-4xl font-bold mx-8">VS</div>
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-2">Fractional CMO</h3>
+                  <h3 className="text-lg font-bold replace-text-slate-900 mb-2">Fractional CMO</h3>
                   <div className="text-3xl font-black text-orange-500">$5K-18K</div>
                   <div className="text-sm text-orange-700">immediate start, proven results</div>
                 </div>
@@ -480,7 +480,7 @@ const MainApp = () => {
       <section id="about" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="heading-xl text-slate-900 mb-6">
+            <h2 className="heading-xl replace-text-slate-900 mb-6">
               Meet Your <span className="text-blue-accessible">C-Level Executive</span> Partner
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
@@ -534,7 +534,7 @@ const MainApp = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Battle-Tested Results</h3>
+              <h3 className="text-lg font-bold replace-text-slate-900 mb-3">Battle-Tested Results</h3>
               <p className="replace-text-gray-600 text-sm leading-relaxed">
                 <span className="text-white/95">I've spent <strong>$500K/month of my own money</strong> testing what actually brings customers. 
                 Not theory - real results with real consequences.</span>
@@ -547,7 +547,7 @@ const MainApp = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Global Reach</h3>
+              <h3 className="text-lg font-bold replace-text-slate-900 mb-3">Global Reach</h3>
               <p className="replace-text-gray-600 text-sm leading-relaxed">
                 <span className="text-white/95">Based in Bangkok, I serve companies worldwide who want <strong>proven marketing excellence</strong> 
                 at competitive rates. Perfect for US market expansion.</span>
@@ -560,7 +560,7 @@ const MainApp = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-bold text-slate-900 mb-3">Proven Across Industries</h3>
+              <h3 className="text-lg font-bold replace-text-slate-900 mb-3">Proven Across Industries</h3>
               <p className="replace-text-gray-600 text-sm leading-relaxed">
                 <span className="text-white/95">Software, Healthcare, E-commerce, Financial Services, Professional Services, 
                 and more. <strong>Psychology works universally.</strong></span>

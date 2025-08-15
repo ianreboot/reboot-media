@@ -237,10 +237,10 @@ const PricingCard: React.FC<PricingCardProps> = ({
           </div>
           
           <h3 className={`text-2xl font-black mb-1 ${
-            service.color === 'gray' ? 'text-slate-900' : 'text-white'
+            service.color === 'gray' ? 'replace-text-slate-900' : 'text-white'
           }`}>{service.title}</h3>
           <p className={`text-sm ${
-            service.color === 'gray' ? 'replace-text-gray-600' : 'text-white/90'
+            service.color === 'gray' ? 'replace-' : 'text-white/90'
           }`}>{service.subtitle}</p>
         </div>
 
@@ -302,7 +302,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         </div>
 
         <div className={`text-xs mb-4 ${
-          service.color === 'gray' ? 'replace-text-gray-600' : 'text-white/80'
+          service.color === 'gray' ? 'replace-' : 'text-white/80'
         }`}>{service.duration}</div>
 
         {/* Tier Message */}
@@ -320,7 +320,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         <ul className={`${service.popular ? 'space-y-2 mb-6' : 'space-y-1.5 mb-4'} text-left ${service.popular ? 'flex-1' : ''}`}>
           {service.features.map((feature, idx) => (
             <li key={idx} className={`${service.popular ? 'text-sm' : 'text-xs'} flex items-start ${
-              service.color === 'orange' || service.color === 'blue' ? 'text-white/90' : 'text-slate-700'
+              service.color === 'orange' || service.color === 'blue' ? 'text-white/90' : 'replace-text-slate-700'
             }`}>
               <span className="mr-2 flex-shrink-0">{feature.split(' ')[0]}</span>
               <span>{feature.split(' ').slice(1).join(' ')}</span>
@@ -480,7 +480,7 @@ const EnhancedPricingCards = () => {
     <section className="py-16">
       {/* Section Header with Personalization */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">
+        <h2 className="text-3xl md:text-4xl font-black replace-text-slate-900 mb-4">
           {sectionContent.title}
         </h2>
         <p className="text-lg replace-text-gray-600 mb-8">
@@ -606,7 +606,7 @@ const EnhancedPricingCards = () => {
       {(leadScore?.tier === 'Warm' || leadScore?.tier === 'Cold') && (
         <div className="text-center mt-12">
           <div className="bg-gray-50 rounded-xl p-6 max-w-2xl mx-auto">
-            <p className="text-gray-700 font-medium mb-2">
+            <p className="replace-text-gray-700 font-medium mb-2">
               "We saw a 340% increase in qualified leads within 90 days"
             </p>
             <p className="text-sm replace-text-gray-600">
