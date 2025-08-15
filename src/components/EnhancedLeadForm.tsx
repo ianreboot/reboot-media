@@ -278,7 +278,7 @@ const EnhancedLeadForm = () => {
           
           {/* Step 1: Pain Point Acknowledgment with Personalization */}
           {formStep === 1 && (
-            <div className="text-center">
+            <div className="text-center" aria-current="step" aria-label="Step 1 of form">
               <h3 className="text-2xl font-black replace-text-slate-900 mb-4">
                 {personalizedContent.title}
               </h3>
@@ -343,7 +343,7 @@ const EnhancedLeadForm = () => {
           
           {/* Step 2: Revenue Qualification */}
           {formStep === 2 && (
-            <div>
+            <div aria-current="step" aria-label="Step 2 of form">
               <button 
                 onClick={() => handleStepChange(1)}
                 className="replace-text-gray-500 hover:replace-text-gray-700 focus-visible:replace-text-gray-700 mb-4 flex items-center transition-colors"
@@ -456,7 +456,7 @@ const EnhancedLeadForm = () => {
           
           {/* Step 3: Enhanced Contact Information with Progressive Disclosure */}
           {formStep === 3 && (
-            <div>
+            <div aria-current="step" aria-label="Step 3 of form">
               <button 
                 onClick={() => handleStepChange(2)}
                 className="replace-text-gray-500 hover:replace-text-gray-700 focus-visible:replace-text-gray-700 mb-4 flex items-center transition-colors"
@@ -566,6 +566,14 @@ const EnhancedLeadForm = () => {
                   {/* Progressive Disclosure: Only show if form style is progressive */}
                   {isProgressive && formData.name && formData.email && (
                     <>
+  {/* Form accessibility - live regions for announcements */}
+  <div aria-live="assertive" aria-atomic="true" className="sr-only" id="form-error-announcer">
+    {submitError && <span>{submitError}</span>}
+  </div>
+  <div aria-live="polite" aria-atomic="true" className="sr-only" id="form-status-announcer">
+    {isSubmitting && <span>Form is being submitted, please wait...</span>}
+  </div>
+
                       {/* Business Details */}
                       <div className="bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30">
                         <h4 className="font-bold text-green-900 mb-3 flex items-center">

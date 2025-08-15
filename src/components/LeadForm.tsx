@@ -111,7 +111,7 @@ const LeadForm = () => {
         <div className="p-4 md:p-6 overflow-y-auto" style={{ scrollbarWidth: 'thin', scrollbarColor: '#CBD5E0 transparent' }}>
           {/* Step 1: Marketing Anxiety Acknowledgment */}
           {formStep === 1 && (
-            <div className="text-center">
+            <div className="text-center" aria-current="step" aria-label="Step 1 of form">
               <h3 className="text-2xl font-black replace-text-slate-900 mb-4">
                 Is Your Marketing <span className="text-orange-500">Keeping You</span> Up at Night?
               </h3>
@@ -184,7 +184,7 @@ const LeadForm = () => {
           
           {/* Step 2: Revenue Stage Qualification */}
           {formStep === 2 && (
-            <div>
+            <div aria-current="step" aria-label="Step 2 of form">
               <button 
                 onClick={() => setFormStep(1)}
                 className="replace-text-gray-500 hover:replace-text-gray-700 focus-visible:replace-text-gray-700 mb-4 flex items-center transition-colors"
@@ -308,7 +308,7 @@ const LeadForm = () => {
           
           {/* Step 3: Contact Information */}
           {formStep === 3 && (
-            <div>
+            <div aria-current="step" aria-label="Step 3 of form">
               <button 
                 onClick={() => setFormStep(2)}
                 className="replace-text-gray-500 hover:replace-text-gray-700 focus-visible:replace-text-gray-700 mb-4 flex items-center transition-colors"
