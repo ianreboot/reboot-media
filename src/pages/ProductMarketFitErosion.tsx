@@ -141,7 +141,7 @@ const ProductMarketFitErosion = () => {
 
               <div className="text-center">
                 <div className="inline-flex items-center gap-2 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                  <span className="w-2 h-2 bg-purple-500 rounded-full animate-pulse"></span>
+                  <span className="w-2 h-2 bg-purple-500 rounded-full motion-safe:animate-pulse motion-reduce:animate-none"></span>
                   What Worked Before Stopped Working
                 </div>
                 <h1 className="heading-hero text-gradient-critical text-4xl md:text-6xl font-black mb-6 leading-tight">
@@ -154,7 +154,7 @@ const ProductMarketFitErosion = () => {
                 </p>
                 <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                  className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 motion-safe:transform motion-safe:hover:scale-105 motion-reduce:transform-none motion-safe:focus-visible:scale-105 motion-reduce:transform-none shadow-xl"
                 >
                   Restore Your Market Fit
                 </button>
@@ -304,13 +304,13 @@ const ProductMarketFitErosion = () => {
                 </p>
                 <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4"
+                  className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 motion-safe:transform motion-safe:hover:scale-105 motion-reduce:transform-none motion-safe:focus-visible:scale-105 motion-reduce:transform-none shadow-lg mr-4"
                 >
                   Get Free PMF Restoration Analysis
                 </button>
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} 
-                  className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 focus-visible:bg-purple-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
+                  className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 focus-visible:bg-purple-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 inline-block"
                 >
                   See All Plateau Types
                 </a>

@@ -181,14 +181,14 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
       {/* Main Navigation Header */}
       <nav 
         id="navigation-menu"
-        className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-500 ease-out ${
+        className={`fixed top-0 left-0 right-0 z-[60] motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-500 motion-reduce:duration-0 ease-out ${
           !isScrollingUp && scrollY > 100 ? '-translate-y-full' : 'translate-y-0'
         }`}
         role="banner"
         aria-label="Main navigation and site header"
         style={{ pointerEvents: 'auto' }}
       >
-        <div className={`transition-all duration-300 ${
+        <div className={`motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${
           scrollY > 50 
             ? 'bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm shadow-xl border-b border-gray-200/50 dark:border-gray-700/50' 
             : 'bg-white/90 backdrop-blur-sm border-b border-white/30'
@@ -211,7 +211,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                   className="group flex items-center text-xl sm:text-2xl font-black focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded-lg p-1"
                   aria-label="Reboot Media - Go to homepage"
                 >
-                  <span className={`transition-all duration-300 group-hover:scale-105 group-focus-visible:scale-105 focus-visible:scale-105 ${
+                  <span className={`motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 group-hover:scale-105 group-motion-safe:focus-visible:scale-105 motion-reduce:transform-none motion-safe:focus-visible:scale-105 motion-reduce:transform-none ${
                     scrollY > 50 
                       ? 'replace-text-gray-900 dark:text-white' 
                       : 'replace-text-gray-800 dark:text-white'
@@ -225,7 +225,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                   <div className="relative hidden sm:block" ref={dropdownRef}>
                     <button
                       onClick={() => setShowDevDropdown(!showDevDropdown)}
-                      className="px-3 py-2 text-sm bg-purple-600 text-white rounded-lg hover:bg-purple-700 focus-visible:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-all duration-200 font-medium flex items-center gap-2 shadow-md hover:shadow-lg focus-visible:shadow-lg"
+                      className="px-3 py-2 text-sm bg-purple-600 text-white rounded-lg hover:bg-purple-700 focus-visible:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 motion-safe:transition-all motion-reduce:transition-none duration-200 font-medium flex items-center gap-2 shadow-md hover:shadow-lg focus-visible:shadow-lg"
                       title="Quick Navigation (Dev Only)"
                       aria-expanded={showDevDropdown}
                       aria-haspopup="true"
@@ -260,7 +260,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                             <a 
                               href="/" 
                               onClick={handleMenuItemClick} 
-                              className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1 focus-visible:translate-x-1"
+                              className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg motion-safe:transition-all motion-reduce:transition-none duration-200 hover:translate-x-1 focus-visible:translate-x-1"
                               role="menuitem"
                             >
                               🏠 Home
@@ -268,7 +268,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                             <a 
                               href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/about`} 
                               onClick={handleMenuItemClick} 
-                              className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1 focus-visible:translate-x-1"
+                              className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg motion-safe:transition-all motion-reduce:transition-none duration-200 hover:translate-x-1 focus-visible:translate-x-1"
                               role="menuitem"
                             >
                               👥 About
@@ -276,7 +276,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                             <a 
                               href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} 
                               onClick={handleMenuItemClick} 
-                              className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1 focus-visible:translate-x-1"
+                              className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg motion-safe:transition-all motion-reduce:transition-none duration-200 hover:translate-x-1 focus-visible:translate-x-1"
                               role="menuitem"
                             >
                               📧 Contact
@@ -342,7 +342,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                     <a
                       key={item.path}
                       href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}${item.path}`}
-                      className={`relative px-3 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-gray-100 focus-visible:bg-gray-100 dark:hover:bg-gray-800 focus-visible:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ${
+                      className={`relative px-3 py-2 text-sm font-medium motion-safe:transition-all motion-reduce:transition-none duration-200 rounded-lg hover:bg-gray-100 focus-visible:bg-gray-100 dark:hover:bg-gray-800 focus-visible:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ${
                         location.pathname === item.path
                           ? 'text-orange-accessible dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20'
                           : 'replace-text-gray-700 dark:replace-text-gray-300 hover:replace-text-gray-900 focus-visible:replace-text-gray-900 dark:hover:text-white focus-visible:text-white'
@@ -365,7 +365,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                 {/* CTA Button - Hidden on Mobile */}
                 <button 
                   onClick={onShowForm}
-                  className="hidden md:flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-200 shadow-lg hover:shadow-xl focus-visible:shadow-xl transform hover:scale-105 focus-visible:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                  className="hidden md:flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-6 py-2.5 rounded-full font-semibold motion-safe:transition-all motion-reduce:transition-none duration-200 shadow-lg hover:shadow-xl focus-visible:shadow-xl motion-safe:transform motion-safe:hover:scale-105 motion-reduce:transform-none motion-safe:focus-visible:scale-105 motion-reduce:transform-none focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
                   aria-label="Open growth analysis form"
                   style={{ 
                     pointerEvents: 'auto',
@@ -380,18 +380,18 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                 {/* Mobile Menu Toggle */}
                 <button
                   onClick={() => setShowMobileMenu(!showMobileMenu)}
-                  className="lg:hidden p-2 rounded-lg replace-text-gray-600 dark:replace-text-gray-400 hover:replace-text-gray-900 focus-visible:replace-text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-100 focus-visible:bg-gray-100 dark:hover:bg-gray-800 focus-visible:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-all duration-200"
+                  className="lg:hidden p-2 rounded-lg replace-text-gray-600 dark:replace-text-gray-400 hover:replace-text-gray-900 focus-visible:replace-text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-100 focus-visible:bg-gray-100 dark:hover:bg-gray-800 focus-visible:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 motion-safe:transition-all motion-reduce:transition-none duration-200"
                   aria-expanded={showMobileMenu}
                   aria-label="Toggle mobile menu"
                 >
                   <div className="relative w-6 h-6">
-                    <span className={`absolute block w-6 h-0.5 bg-current transform transition-all duration-300 ${
+                    <span className={`absolute block w-6 h-0.5 bg-current transform motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${
                       showMobileMenu ? 'rotate-45 translate-y-0' : '-translate-y-2'
                     }`}></span>
-                    <span className={`absolute block w-6 h-0.5 bg-current transform transition-all duration-300 ${
+                    <span className={`absolute block w-6 h-0.5 bg-current transform motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${
                       showMobileMenu ? 'opacity-0' : 'opacity-100'
                     }`}></span>
-                    <span className={`absolute block w-6 h-0.5 bg-current transform transition-all duration-300 ${
+                    <span className={`absolute block w-6 h-0.5 bg-current transform motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${
                       showMobileMenu ? '-rotate-45 translate-y-0' : 'translate-y-2'
                     }`}></span>
                   </div>
@@ -404,7 +404,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
           {showProgressBar && (
             <div className="w-full h-1 bg-gray-200 dark:bg-gray-800">
               <div 
-                className={`h-full bg-gradient-to-r ${getProgressBarGradient()} transition-all duration-150 ease-out`}
+                className={`h-full bg-gradient-to-r ${getProgressBarGradient()} motion-safe:transition-all motion-reduce:transition-none duration-150 ease-out`}
                 style={{ width: `${readingProgress}%` }}
               />
             </div>
@@ -429,7 +429,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
       {/* Mobile Menu Slide-out */}
       <div
         ref={mobileMenuRef}
-        className={`fixed top-0 right-0 z-[70] h-full w-80 max-w-[90vw] bg-white dark:bg-slate-900 shadow-2xl transform transition-transform duration-300 ease-out lg:hidden ${
+        className={`fixed top-0 right-0 z-[70] h-full w-80 max-w-[90vw] bg-white dark:bg-slate-900 shadow-2xl transform transition-transform motion-safe:duration-300 motion-reduce:duration-0 ease-out lg:hidden ${
           showMobileMenu ? 'translate-x-0' : 'translate-x-full'
         }`}
         role="dialog"
@@ -460,7 +460,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                   key={item.path}
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}${item.path}`}
                   onClick={handleMenuItemClick}
-                  className={`flex items-center gap-3 px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 ${
+                  className={`flex items-center gap-3 px-4 py-3 text-base font-medium rounded-xl motion-safe:transition-all motion-reduce:transition-none duration-200 ${
                     location.pathname === item.path
                       ? 'text-orange-accessible dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500'
                       : 'replace-text-gray-700 dark:replace-text-gray-300 hover:replace-text-gray-900 focus-visible:replace-text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-50 focus-visible:bg-gray-50 dark:hover:bg-gray-800 focus-visible:bg-gray-800'
@@ -500,7 +500,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                 onShowForm?.();
                 setShowMobileMenu(false);
               }}
-              className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-6 py-4 rounded-xl font-bold text-base transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:shadow-xl transform hover:scale-105 focus-visible:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+              className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-6 py-4 rounded-xl font-bold text-base motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 shadow-lg hover:shadow-xl focus-visible:shadow-xl motion-safe:transform motion-safe:hover:scale-105 motion-reduce:transform-none motion-safe:focus-visible:scale-105 motion-reduce:transform-none focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
             >
               <span className="text-lg">🚀</span>
               <span>Unlock Growth Now</span>
@@ -513,14 +513,14 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
       </div>
 
       {/* Simplified Mobile Bottom CTA (when menu closed) */}
-      <div className={`fixed bottom-0 left-0 right-0 z-40 md:hidden transition-all duration-300 ${
+      <div className={`fixed bottom-0 left-0 right-0 z-40 md:hidden motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${
         showMobileMenu ? 'translate-y-full opacity-0' : 'translate-y-0 opacity-100'
       }`}>
         <div className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-gray-200/50 dark:border-gray-700/50 shadow-lg">
           <div className="px-4 py-3">
             <button aria-label="Opens contact form for free marketing analysis"
               onClick={onShowForm}
-              className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all duration-200 shadow-lg hover:shadow-xl focus-visible:shadow-xl transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+              className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-6 py-3 rounded-xl font-bold text-sm motion-safe:transition-all motion-reduce:transition-none duration-200 shadow-lg hover:shadow-xl focus-visible:shadow-xl transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
             >
               🚀 Unlock Growth Now
             </button>

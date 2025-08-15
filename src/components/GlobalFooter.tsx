@@ -60,7 +60,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
               <div className="col-span-8">
                 <a 
                   href="/" 
-                  className="inline-block mb-6 hover:scale-105 focus-visible:scale-105 transition-transform duration-300"
+                  className="inline-block mb-6 hover:scale-105 motion-safe:focus-visible:scale-105 motion-reduce:transform-none transition-transform motion-safe:duration-300 motion-reduce:duration-0"
                 >
                   <h3 className="text-5xl font-black">
                     REBOOT <span className="text-orange-500">MEDIA</span>
@@ -92,7 +92,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                   <div className="pt-4 border-t border-white/10">
                     <p className="text-xs replace-text-gray-400 uppercase tracking-wider mb-2">Operating Globally</p>
                     <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
+                      <div className="w-2 h-2 bg-green-400 rounded-full motion-safe:animate-pulse motion-reduce:animate-none"></div>
                       <span className="text-xs replace-text-gray-300">USA • Bangkok • Singapore</span>
                     </div>
                   </div>
@@ -199,7 +199,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
             <div className="mb-6">
               <a 
                 href="/" 
-                className="inline-block cursor-pointer hover:scale-105 focus-visible:scale-105 transition-transform duration-300"
+                className="inline-block cursor-pointer hover:scale-105 motion-safe:focus-visible:scale-105 motion-reduce:transform-none transition-transform motion-safe:duration-300 motion-reduce:duration-0"
                 style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}
               >
                 <h3 className="text-3xl font-black mb-3">
@@ -225,7 +225,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 >
                   <h4 className="font-bold text-white text-sm uppercase tracking-wider">Fractional CMO Services</h4>
                   <svg 
-                    className={`w-5 h-5 replace-text-gray-400 transition-transform duration-300 ${expandedSections['services'] ? 'rotate-180' : ''}`} 
+                    className={`w-5 h-5 replace-text-gray-400 transition-transform motion-safe:duration-300 motion-reduce:duration-0 ${expandedSections['services'] ? 'rotate-180' : ''}`} 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -233,7 +233,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
                   </svg>
                 </button>
-                <div className={`transition-all duration-300 ${expandedSections['services'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
+                <div className={`motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${expandedSections['services'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
                       <a href="#services" onClick={(e) => handleHashNavigation(e, 'services')} className="replace-text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
@@ -262,7 +262,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 >
                   <h4 className="font-bold text-white text-sm uppercase tracking-wider">Proven Track Record</h4>
                   <svg 
-                    className={`w-5 h-5 replace-text-gray-400 transition-transform duration-300 ${expandedSections['track'] ? 'rotate-180' : ''}`} 
+                    className={`w-5 h-5 replace-text-gray-400 transition-transform motion-safe:duration-300 motion-reduce:duration-0 ${expandedSections['track'] ? 'rotate-180' : ''}`} 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -270,7 +270,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
                   </svg>
                 </button>
-                <div className={`transition-all duration-300 ${expandedSections['track'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
+                <div className={`motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${expandedSections['track'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li className="replace-text-gray-400 text-sm flex items-start">
                       <span className="text-orange-500 mr-2">20+</span>
@@ -296,7 +296,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 >
                   <h4 className="font-bold text-white text-sm uppercase tracking-wider">Resources & Insights</h4>
                   <svg 
-                    className={`w-5 h-5 replace-text-gray-400 transition-transform duration-300 ${expandedSections['resources'] ? 'rotate-180' : ''}`} 
+                    className={`w-5 h-5 replace-text-gray-400 transition-transform motion-safe:duration-300 motion-reduce:duration-0 ${expandedSections['resources'] ? 'rotate-180' : ''}`} 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -304,7 +304,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
                   </svg>
                 </button>
-                <div className={`transition-all duration-300 ${expandedSections['resources'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
+                <div className={`motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${expandedSections['resources'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
                       <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="replace-text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
@@ -333,7 +333,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 >
                   <h4 className="font-bold text-white text-sm uppercase tracking-wider">Company</h4>
                   <svg 
-                    className={`w-5 h-5 replace-text-gray-400 transition-transform duration-300 ${expandedSections['company'] ? 'rotate-180' : ''}`} 
+                    className={`w-5 h-5 replace-text-gray-400 transition-transform motion-safe:duration-300 motion-reduce:duration-0 ${expandedSections['company'] ? 'rotate-180' : ''}`} 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -341,7 +341,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
                   </svg>
                 </button>
-                <div className={`transition-all duration-300 ${expandedSections['company'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
+                <div className={`motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${expandedSections['company'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
                       <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/about`} className="replace-text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
@@ -370,7 +370,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 >
                   <h4 className="font-bold text-white text-sm uppercase tracking-wider">Legal</h4>
                   <svg 
-                    className={`w-5 h-5 replace-text-gray-400 transition-transform duration-300 ${expandedSections['legal'] ? 'rotate-180' : ''}`} 
+                    className={`w-5 h-5 replace-text-gray-400 transition-transform motion-safe:duration-300 motion-reduce:duration-0 ${expandedSections['legal'] ? 'rotate-180' : ''}`} 
                     fill="none" 
                     stroke="currentColor" 
                     viewBox="0 0 24 24"
@@ -378,7 +378,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"/>
                   </svg>
                 </button>
-                <div className={`transition-all duration-300 ${expandedSections['legal'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
+                <div className={`motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${expandedSections['legal'] ? 'max-h-96' : 'max-h-0'} overflow-hidden`}>
                   <ul className="px-4 py-3 space-y-2 bg-white/5">
                     <li>
                       <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/privacy`} className="replace-text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm" style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>

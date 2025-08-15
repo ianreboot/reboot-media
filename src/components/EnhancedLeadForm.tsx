@@ -245,7 +245,7 @@ const EnhancedLeadForm = () => {
         
         {/* Lead Score Indicator (Hot leads only) */}
         {leadScorePrediction >= 80 && (
-          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-500 to-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold animate-pulse">
+          <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-500 to-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold motion-safe:animate-pulse motion-reduce:animate-none">
             🔥 HIGH-PRIORITY LEAD
           </div>
         )}
@@ -266,7 +266,7 @@ const EnhancedLeadForm = () => {
                 teamSize: '', currentMarketing: ''
               });
             }}
-            className="w-10 h-10 rounded-full bg-white/90 hover:bg-white focus-visible:bg-white shadow-lg flex items-center justify-center transition-all"
+            className="w-10 h-10 rounded-full bg-white/90 hover:bg-white focus-visible:bg-white shadow-lg flex items-center justify-center motion-safe:transition-all motion-reduce:transition-none"
           >
             <svg className="w-6 h-6 replace-text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
@@ -330,7 +330,7 @@ const EnhancedLeadForm = () => {
                   handleStepChange(2);
                   trackClick('pain_acknowledgment');
                 }}
-                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 motion-safe:transform motion-safe:hover:scale-105 motion-reduce:transform-none motion-safe:focus-visible:scale-105 motion-reduce:transform-none shadow-xl"
               >
                 {ctaText || 'Yes, I Need Help With This'} →
               </button>
@@ -388,7 +388,7 @@ const EnhancedLeadForm = () => {
                     </div>
                     <div className="w-full bg-green-200 rounded-full h-2 mt-2">
                       <div 
-                        className="bg-gradient-to-r from-green-500 to-blue-500 h-2 rounded-full transition-all duration-500"
+                        className="bg-gradient-to-r from-green-500 to-blue-500 h-2 rounded-full motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-500 motion-reduce:duration-0"
                         style={{ width: `${leadScorePrediction}%` }}
                       ></div>
                     </div>
@@ -442,7 +442,7 @@ const EnhancedLeadForm = () => {
                     }
                   }}
                   disabled={!formData.revenue}
-                  className={`w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl ${
+                  className={`w-full py-4 rounded-xl font-bold text-lg motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 motion-safe:transform motion-safe:hover:scale-105 motion-reduce:transform-none motion-safe:focus-visible:scale-105 motion-reduce:transform-none shadow-xl ${
                     formData.revenue 
                       ? 'bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white' 
                       : 'bg-gray-300 replace-text-gray-500 cursor-not-allowed'
@@ -494,7 +494,7 @@ const EnhancedLeadForm = () => {
                   </div>
                   <div className="w-full bg-blue-200 rounded-full h-3">
                     <div 
-                      className="bg-gradient-to-r from-blue-500 to-purple-500 h-3 rounded-full transition-all duration-500"
+                      className="bg-gradient-to-r from-blue-500 to-purple-500 h-3 rounded-full motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-500 motion-reduce:duration-0"
                       style={{ width: `${leadScorePrediction}%` }}
                     ></div>
                   </div>
@@ -523,7 +523,7 @@ const EnhancedLeadForm = () => {
                           onChange={(e) => setFormData({...formData, name: e.target.value})}
                           onFocus={() => handleFieldFocus('name')}
                           onBlur={(e) => handleFieldBlur('name', e.target.value)}
-                          className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                          className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm" 
                           placeholder="John Smith"
                         />
                       </div>
@@ -535,7 +535,7 @@ const EnhancedLeadForm = () => {
                           onChange={(e) => setFormData({...formData, company: e.target.value})}
                           onFocus={() => handleFieldFocus('company')}
                           onBlur={(e) => handleFieldBlur('company', e.target.value)}
-                          className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm" 
+                          className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm" 
                           placeholder="Acme Corp"
                         />
                       </div>
@@ -548,7 +548,7 @@ const EnhancedLeadForm = () => {
                         onChange={(e) => setFormData({...formData, email: e.target.value})}
                         onFocus={() => handleFieldFocus('email')}
                         onBlur={(e) => handleFieldBlur('email', e.target.value)}
-                        className={`w-full px-3 py-2.5 border-2 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm ${
+                        className={`w-full px-3 py-2.5 border-2 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm ${
                           fieldValidation.email === 'valid' ? 'border-green-500' : 
                           fieldValidation.email === 'invalid' ? 'border-red-500' : 'border-gray-200'
                         }`}
@@ -589,7 +589,7 @@ const EnhancedLeadForm = () => {
                               onChange={(e) => setFormData({...formData, website: e.target.value})}
                               onFocus={() => handleFieldFocus('website')}
                               onBlur={(e) => handleFieldBlur('website', e.target.value)}
-                              className={`w-full px-3 py-2.5 border-2 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm ${
+                              className={`w-full px-3 py-2.5 border-2 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm ${
                                 fieldValidation.website === 'valid' ? 'border-green-500' : 
                                 fieldValidation.website === 'invalid' ? 'border-red-500' : 'border-gray-200'
                               }`}
@@ -610,7 +610,7 @@ const EnhancedLeadForm = () => {
                                   });
                                 }}
                                 onFocus={() => handleFieldFocus('industry')}
-                                className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
+                                className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm"
                               >
                                 <option value="">Select industry</option>
                                 <option value="software">Software/SaaS</option>
@@ -635,7 +635,7 @@ const EnhancedLeadForm = () => {
                                   });
                                 }}
                                 onFocus={() => handleFieldFocus('teamSize')}
-                                className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
+                                className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm"
                               >
                                 <option value="">Select size</option>
                                 <option value="1-10">1-10 employees</option>
@@ -663,7 +663,7 @@ const EnhancedLeadForm = () => {
                                 onChange={(e) => setFormData({...formData, specificIssue: e.target.value})}
                                 onFocus={() => handleFieldFocus('specificIssue')}
                                 onBlur={(e) => handleFieldBlur('specificIssue', e.target.value)}
-                                className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm placeholder:text-xs" 
+                                className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm placeholder:text-xs" 
                                 placeholder="e.g., Not getting enough leads, poor conversion rates, unclear messaging, competitors beating us, website visitors not buying..."
                                 rows={3}
                               />
@@ -697,7 +697,7 @@ const EnhancedLeadForm = () => {
                                     value: option.value
                                   });
                                 }}
-                                className={`px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${
+                                className={`px-3 py-2 rounded-lg border-2 text-xs font-medium motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${
                                   formData.timeline === option.value 
                                     ? 'border-orange-500 bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized text-orange-700 dark:text-orange-300' 
                                     : 'border-gray-200 hover:border-gray-300 focus-visible:border-gray-300'
@@ -731,7 +731,7 @@ const EnhancedLeadForm = () => {
                               onChange={(e) => setFormData({...formData, website: e.target.value})}
                               onFocus={() => handleFieldFocus('website')}
                               onBlur={(e) => handleFieldBlur('website', e.target.value)}
-                              className={`w-full px-3 py-2.5 border-2 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm ${
+                              className={`w-full px-3 py-2.5 border-2 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm ${
                                 fieldValidation.website === 'valid' ? 'border-green-500' : 
                                 fieldValidation.website === 'invalid' ? 'border-red-500' : 'border-gray-200'
                               }`}
@@ -745,7 +745,7 @@ const EnhancedLeadForm = () => {
                                 value={formData.industry}
                                 onChange={(e) => setFormData({...formData, industry: e.target.value})}
                                 onFocus={() => handleFieldFocus('industry')}
-                                className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
+                                className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm"
                               >
                                 <option value="">Select industry</option>
                                 <option value="software">Software/SaaS</option>
@@ -763,7 +763,7 @@ const EnhancedLeadForm = () => {
                                 value={formData.teamSize}
                                 onChange={(e) => setFormData({...formData, teamSize: e.target.value})}
                                 onFocus={() => handleFieldFocus('teamSize')}
-                                className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm"
+                                className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm"
                               >
                                 <option value="">Select size</option>
                                 <option value="1-10">1-10 employees</option>
@@ -790,7 +790,7 @@ const EnhancedLeadForm = () => {
                               onChange={(e) => setFormData({...formData, specificIssue: e.target.value})}
                               onFocus={() => handleFieldFocus('specificIssue')}
                               onBlur={(e) => handleFieldBlur('specificIssue', e.target.value)}
-                              className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm placeholder:text-xs" 
+                              className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm placeholder:text-xs" 
                               placeholder="e.g., Not getting enough leads, poor conversion rates, unclear messaging, competitors beating us, website visitors not buying..."
                               rows={3}
                             />
@@ -802,7 +802,7 @@ const EnhancedLeadForm = () => {
                               onChange={(e) => setFormData({...formData, currentMarketing: e.target.value})}
                               onFocus={() => handleFieldFocus('currentMarketing')}
                               onBlur={(e) => handleFieldBlur('currentMarketing', e.target.value)}
-                              className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 transition-all duration-300 text-sm placeholder:text-xs" 
+                              className="w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm placeholder:text-xs" 
                               placeholder="e.g., Google Ads, social media, content marketing, email campaigns, SEO..."
                               rows={2}
                             />
@@ -827,7 +827,7 @@ const EnhancedLeadForm = () => {
                             <button
                               key={option.value}
                               onClick={() => setFormData({...formData, timeline: option.value})}
-                              className={`px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${
+                              className={`px-3 py-2 rounded-lg border-2 text-xs font-medium motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${
                                 formData.timeline === option.value 
                                   ? 'border-orange-500 bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized text-orange-700 dark:text-orange-300' 
                                   : 'border-gray-200 hover:border-gray-300 focus-visible:border-gray-300'
@@ -908,12 +908,12 @@ const EnhancedLeadForm = () => {
                       }
                     }}
                     disabled={isSubmitting}
-                    className={`w-full mt-6 px-8 py-4 rounded-xl font-black text-lg transition-all duration-300 transform shadow-2xl ${
+                    className={`w-full mt-6 px-8 py-4 rounded-xl font-black text-lg motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 transform shadow-2xl ${
                       isSubmitting 
                         ? 'bg-gray-400 cursor-not-allowed' 
                         : leadScorePrediction >= 80
-                        ? 'bg-gradient-to-r from-red-500 via-orange-600 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-700 focus-visible:to-red-700 hover:scale-105 focus-visible:scale-105 animate-pulse'
-                        : 'bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 focus-visible:from-orange-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-600 focus-visible:to-red-600 hover:scale-105 focus-visible:scale-105'
+                        ? 'bg-gradient-to-r from-red-500 via-orange-600 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-700 focus-visible:to-red-700 hover:scale-105 motion-safe:focus-visible:scale-105 motion-reduce:transform-none motion-safe:animate-pulse motion-reduce:animate-none'
+                        : 'bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 focus-visible:from-orange-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-600 focus-visible:to-red-600 hover:scale-105 motion-safe:focus-visible:scale-105 motion-reduce:transform-none'
                     } text-white`}
                   >
                     {isSubmitting ? 'Submitting...' : 
