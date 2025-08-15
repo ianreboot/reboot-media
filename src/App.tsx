@@ -168,7 +168,7 @@ const MainApp = () => {
                 analytics.ctaClick('Show Me What\'s Broken in My Marketing', 'hero');
                 setShowDropdownForm(true);
               }}
-              className="cta-primary px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center gap-3"
+              className="cta-primary px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl inline-flex items-center gap-3"
             >
               <span className="text-2xl">🔍</span>
               <span>Show Me What's Broken in My Marketing</span>
@@ -177,7 +177,7 @@ const MainApp = () => {
 
           {/* Benefits-Focused Proof Points */}
           <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
+            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
               <div className="text-center">
                 <div className="text-2xl font-black text-important-accessible mb-1">30X Growth</div>
                 <div className="text-sm text-standard font-medium leading-tight">
@@ -186,7 +186,7 @@ const MainApp = () => {
               </div>
             </div>
             
-            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
+            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
               <div className="text-center">
                 <div className="text-2xl font-black replace-text-slate-900 mb-1">Stop the Bleed</div>
                 <div className="text-sm replace-text-slate-700 font-medium leading-tight">
@@ -195,7 +195,7 @@ const MainApp = () => {
               </div>
             </div>
             
-            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
+            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
               <div className="text-center">
                 <div className="text-2xl font-black replace-text-slate-900 mb-1">Sleep Better</div>
                 <div className="text-sm replace-text-slate-700 font-medium leading-tight">
@@ -311,7 +311,7 @@ const MainApp = () => {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
+                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3">Customer Perspective</h4>
                     <p className="replace-text-gray-300 text-base leading-relaxed">
@@ -319,7 +319,7 @@ const MainApp = () => {
                     </p>
                   </div>
                 </div>
-                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
+                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3">Question Everything</h4>
                     <p className="replace-text-gray-300 text-base leading-relaxed">
@@ -327,7 +327,7 @@ const MainApp = () => {
                     </p>
                   </div>
                 </div>
-                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer">
+                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3">Executive Experience</h4>
                     <p className="replace-text-gray-300 text-base leading-relaxed">
@@ -528,7 +528,7 @@ const MainApp = () => {
 
           {/* Story Section - Scannable Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-orange-200/30 dark:border-orange-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
+            <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-orange-200/30 dark:border-orange-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-orange-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-orange-accessible" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -541,7 +541,7 @@ const MainApp = () => {
               </p>
             </div>
 
-            <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-blue-200/30 dark:border-blue-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 hover:rotate-1 cursor-pointer">
+            <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-blue-200/30 dark:border-blue-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:rotate-1 focus-visible:rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-blue-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-blue-accessible" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
@@ -554,7 +554,7 @@ const MainApp = () => {
               </p>
             </div>
 
-            <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-green-200/30 dark:border-green-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer">
+            <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-green-200/30 dark:border-green-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-green-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -675,10 +675,10 @@ const MainApp = () => {
                   analytics.ctaClick('Yes, Show Me What I\'m Missing', 'final-cta');
                   setShowDropdownForm(true);
                 }}
-                className="bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 hover:via-orange-700 hover:to-red-600 text-white px-10 sm:px-14 py-5 rounded-xl font-black text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center gap-3 group"
+                className="bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 focus-visible:from-orange-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-600 focus-visible:to-red-600 text-white px-10 sm:px-14 py-5 rounded-xl font-black text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl inline-flex items-center gap-3 group"
               >
                 <span>Yes, Show Me What I'm Missing</span>
-                <svg className="w-6 h-6 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-6 h-6 group-hover:translate-x-1 group-focus-visible:translate-x-1 focus-visible:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
                 </svg>
               </button>

@@ -115,6 +115,16 @@ const WhenToChooseEach = () => {
 
   return (
     <>
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       <SEOHead 
         title="When to Choose Each Marketing Model: Decision Matrix | Reboot Media"
         description="Clear decision matrix for choosing between Fractional CMO, agency, consultant, or in-house team. 7 business situations with definitive recommendations."
@@ -135,7 +145,7 @@ const WhenToChooseEach = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 replace-text-gray-300">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-indigo-400 transition-colors">Fractional CMO Guide</a>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-indigo-400 focus-visible:text-indigo-400 transition-colors">Fractional CMO Guide</a>
                   <span>→</span>
                   <span className="text-indigo-400 font-semibold">When to Choose Each</span>
                 </nav>
@@ -154,9 +164,9 @@ const WhenToChooseEach = () => {
                   Stop guessing. Every business situation has an optimal marketing model. 
                   <span className="text-indigo-400 font-semibold"> Match your stage, challenge, and goals to the right approach.</span>
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+                  className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 focus-visible:from-indigo-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
                 >
                   Get Your Custom Recommendation
                 </button>
@@ -165,7 +175,11 @@ const WhenToChooseEach = () => {
           </section>
 
           {/* Main Content */}
-          <main className="max-w-5xl mx-auto px-6 lg:px-8 py-16">
+          <main 
+          id="main-content" 
+          role="main"
+          aria-label="Main content"
+          className="max-w-5xl mx-auto px-6 lg:px-8 py-16">
             
             {/* Quick Decision Matrix */}
             <section className="mb-16">
@@ -357,17 +371,17 @@ const WhenToChooseEach = () => {
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Choosing the Wrong Marketing Model
                 </h3>
-                <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month with the wrong model costs you growth, money, and momentum. 
                   Get your personalized recommendation based on your specific situation, budget, and goals.
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4"
+                  className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 focus-visible:from-indigo-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4"
                 >
                   Get Personalized Recommendation
                 </button>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 focus-visible:bg-indigo-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   See Cost Analysis
                 </a>
               </div>
@@ -379,9 +393,9 @@ const WhenToChooseEach = () => {
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-indigo-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
                       How to Transition Between Models →
                     </a>
                   </h3>
@@ -389,9 +403,9 @@ const WhenToChooseEach = () => {
                     Growth requires different models at different stages. Learn how to transition smoothly without losing momentum.
                   </p>
                 </div>
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-indigo-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
                       Stuck at Current Model? →
                     </a>
                   </h3>

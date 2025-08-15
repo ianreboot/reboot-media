@@ -115,6 +115,16 @@ const FractionalCMOVsConsultant = () => {
 
   return (
     <>
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       <SEOHead 
         title="Fractional CMO vs Consultant: Results vs Recommendations | Reboot Media"
         description="Fractional CMO vs Consultant comparison. 7 scenarios revealing who owns results vs who gives advice. Implementation accountability matters."
@@ -135,7 +145,7 @@ const FractionalCMOVsConsultant = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 replace-text-gray-300">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-purple-400 transition-colors">Fractional CMO Guide</a>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-purple-400 focus-visible:text-purple-400 transition-colors">Fractional CMO Guide</a>
                   <span>→</span>
                   <span className="text-purple-400 font-semibold">vs Consultant</span>
                 </nav>
@@ -154,9 +164,9 @@ const FractionalCMOVsConsultant = () => {
                   Consultants give great advice, but who implements? The real difference: 
                   <span className="text-purple-400 font-semibold"> Fractional CMOs own results, not just recommendations.</span>
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+                  className="bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
                 >
                   Discover Your Best Approach
                 </button>
@@ -165,7 +175,11 @@ const FractionalCMOVsConsultant = () => {
           </section>
 
           {/* Main Content */}
-          <main className="max-w-5xl mx-auto px-6 lg:px-8 py-16">
+          <main 
+          id="main-content" 
+          role="main"
+          aria-label="Main content"
+          className="max-w-5xl mx-auto px-6 lg:px-8 py-16">
             
             {/* Introduction */}
             <section className="mb-16">
@@ -279,7 +293,7 @@ const FractionalCMOVsConsultant = () => {
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-standard dark:replace-text-gray-300 font-medium">
+                        <p className="text-standard-accessible dark:replace-text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -295,17 +309,17 @@ const FractionalCMOVsConsultant = () => {
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Paying for Advice Without Accountability
                 </h3>
-                <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you implement consultant recommendations without support, you're wasting strategy investments. 
                   Get your free implementation assessment and discover whether you need advice or results ownership.
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4"
+                  className="bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4"
                 >
                   Get Free Implementation Assessment
                 </button>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 focus-visible:bg-purple-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Compare vs Agency & In-House
                 </a>
               </div>
@@ -317,9 +331,9 @@ const FractionalCMOVsConsultant = () => {
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-purple-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-purple-600 focus-visible:text-purple-600 transition-colors">
                       Stop Wasting $75K on Unimplemented Strategy →
                     </a>
                   </h3>
@@ -327,9 +341,9 @@ const FractionalCMOVsConsultant = () => {
                     Have great strategy but can't execute? Learn how to transition from consultant advice to fractional CMO implementation.
                   </p>
                 </div>
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-purple-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-purple-600 focus-visible:text-purple-600 transition-colors">
                       Psychology That Beats Industry Tactics →
                     </a>
                   </h3>

@@ -162,13 +162,13 @@ const UnawareStageCustomers = () => {
       <div className="flex justify-between items-center">
         <a 
           href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`}
-          className="replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible dark:hover:text-orange-400 transition-colors"
+          className="replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible focus-visible:text-orange-accessible dark:hover:text-orange-400 focus-visible:text-orange-400 transition-colors"
         >
           ← Back to Marketing Psychology Overview
         </a>
         <a 
           href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/problem-aware-stage-customers`}
-          className="text-orange-accessible dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors"
+          className="text-orange-accessible dark:text-orange-400 hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 font-semibold transition-colors"
         >
           Next: Problem-Aware Stage Customers →
         </a>

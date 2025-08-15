@@ -44,7 +44,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
           ctaText: 'Book My Priority Call',
           urgency: 'Limited to 5 priority consultations per week',
           socialProof: 'Join 47 companies that booked priority calls this month',
-          ctaStyle: 'bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 animate-pulse'
+          ctaStyle: 'bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 focus-visible:from-red-600 hover:to-orange-600 focus-visible:to-orange-600 animate-pulse'
         };
         
       case 'Warm':
@@ -65,7 +65,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
           ctaText: 'Get My Free Audit',
           urgency: 'Only 10 audits available this month',
           socialProof: 'Over 200 companies have received their audit',
-          ctaStyle: 'bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700'
+          ctaStyle: 'bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700'
         };
         
       case 'Cold':
@@ -86,7 +86,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
           ctaText: 'Download Free Framework',
           urgency: 'Downloaded by 1,000+ marketers',
           socialProof: 'Join companies already using this framework',
-          ctaStyle: 'bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700'
+          ctaStyle: 'bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-blue-700 focus-visible:to-blue-700'
         };
         
       case 'Unqualified':
@@ -108,7 +108,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
           ctaText: 'Get Weekly Insights',
           urgency: 'Join 10,000+ marketers already subscribed',
           socialProof: 'Trusted by marketing leaders worldwide',
-          ctaStyle: 'bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800'
+          ctaStyle: 'bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 focus-visible:from-gray-700 hover:to-gray-800 focus-visible:to-gray-800'
         };
     }
   };
@@ -219,7 +219,7 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
         {/* Close Button */}
         <button 
           onClick={handleClose}
-          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors z-10"
+          className="absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 focus-visible:bg-gray-200 flex items-center justify-center transition-colors z-10"
         >
           <svg className="w-5 h-5 replace-text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
@@ -280,14 +280,14 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
           <div className="space-y-3">
             <button
               onClick={handleCTAClick}
-              className={`w-full py-4 rounded-xl font-bold text-lg text-white transition-all duration-300 transform hover:scale-105 shadow-lg ${content.ctaStyle}`}
+              className={`w-full py-4 rounded-xl font-bold text-lg text-white transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg ${content.ctaStyle}`}
             >
               {content.ctaText}
             </button>
             
             <button
               onClick={handleSecondaryAction}
-              className="w-full py-3 rounded-xl font-medium replace-text-gray-600 border border-gray-300 hover:bg-gray-50 transition-all duration-300"
+              className="w-full py-3 rounded-xl font-medium replace-text-gray-600 border border-gray-300 hover:bg-gray-50 focus-visible:bg-gray-50 transition-all duration-300"
             >
               Maybe Later
             </button>

@@ -122,7 +122,7 @@ const FractionalCMOGuide = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Get Personalized Recommendation"
                 },
                 void 0,
@@ -138,7 +138,7 @@ const FractionalCMOGuide = () => {
                 "a",
                 {
                   href: "#comparison-table",
-                  className: "border-2 border-blue-500 text-blue-400 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300",
+                  className: "border-2 border-blue-500 text-blue-400 hover:bg-blue-500 focus-visible:bg-blue-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300",
                   children: "See Detailed Comparison"
                 },
                 void 0,
@@ -252,7 +252,7 @@ const FractionalCMOGuide = () => {
               columnNumber: 13
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-8", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-blue-500 to-orange-500 p-6", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-between", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-2", children: "📊 Fractional CMO vs Agency" }, void 0, false, {
@@ -297,7 +297,7 @@ const FractionalCMOGuide = () => {
                     lineNumber: 165,
                     columnNumber: 19
                   }, void 0),
-                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-marketing-agency`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700", children: "See Why Agencies Fail at Strategy →" }, void 0, false, {
+                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-marketing-agency`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 focus-visible:text-blue-700 font-semibold transition-colors group-hover:text-blue-700 group-focus-visible:text-blue-700 focus-visible:text-blue-700", children: "See Why Agencies Fail at Strategy →" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOGuide.tsx",
                     lineNumber: 169,
                     columnNumber: 19
@@ -312,7 +312,7 @@ const FractionalCMOGuide = () => {
                 lineNumber: 152,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-blue-500 to-green-500 p-6", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-between", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-2", children: "💼 Fractional vs Full-Time CMO" }, void 0, false, {
@@ -357,7 +357,7 @@ const FractionalCMOGuide = () => {
                     lineNumber: 189,
                     columnNumber: 19
                   }, void 0),
-                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-full-time-cmo`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700", children: "Calculate If You Need $200K CMO →" }, void 0, false, {
+                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-full-time-cmo`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 focus-visible:text-blue-700 font-semibold transition-colors group-hover:text-blue-700 group-focus-visible:text-blue-700 focus-visible:text-blue-700", children: "Calculate If You Need $200K CMO →" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOGuide.tsx",
                     lineNumber: 193,
                     columnNumber: 19
@@ -372,7 +372,7 @@ const FractionalCMOGuide = () => {
                 lineNumber: 176,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-blue-500 to-purple-500 p-6", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-between", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-2", children: "🧠 Fractional CMO vs Consultant" }, void 0, false, {
@@ -417,7 +417,7 @@ const FractionalCMOGuide = () => {
                     lineNumber: 213,
                     columnNumber: 19
                   }, void 0),
-                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-consultant`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700", children: "Advice vs Results: Who's Accountable? →" }, void 0, false, {
+                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-consultant`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 focus-visible:text-blue-700 font-semibold transition-colors group-hover:text-blue-700 group-focus-visible:text-blue-700 focus-visible:text-blue-700", children: "Advice vs Results: Who's Accountable? →" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOGuide.tsx",
                     lineNumber: 217,
                     columnNumber: 19
@@ -432,7 +432,7 @@ const FractionalCMOGuide = () => {
                 lineNumber: 200,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-blue-500 to-indigo-500 p-6", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-between", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-2", children: "👥 Fractional CMO vs In-House Team" }, void 0, false, {
@@ -477,7 +477,7 @@ const FractionalCMOGuide = () => {
                     lineNumber: 237,
                     columnNumber: 19
                   }, void 0),
-                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-in-house-team`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700", children: "Reveal 2.5x Hidden Team Costs →" }, void 0, false, {
+                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-in-house-team`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 focus-visible:text-blue-700 font-semibold transition-colors group-hover:text-blue-700 group-focus-visible:text-blue-700 focus-visible:text-blue-700", children: "Reveal 2.5x Hidden Team Costs →" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOGuide.tsx",
                     lineNumber: 241,
                     columnNumber: 19
@@ -492,7 +492,7 @@ const FractionalCMOGuide = () => {
                 lineNumber: 224,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-yellow-500 to-red-500 p-6", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-between", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-2", children: "🎪 When to Choose Each Option" }, void 0, false, {
@@ -537,7 +537,7 @@ const FractionalCMOGuide = () => {
                     lineNumber: 261,
                     columnNumber: 19
                   }, void 0),
-                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/when-to-choose-each`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700", children: "Match Your Stage to Right Model →" }, void 0, false, {
+                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/when-to-choose-each`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 focus-visible:text-blue-700 font-semibold transition-colors group-hover:text-blue-700 group-focus-visible:text-blue-700 focus-visible:text-blue-700", children: "Match Your Stage to Right Model →" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOGuide.tsx",
                     lineNumber: 265,
                     columnNumber: 19
@@ -552,7 +552,7 @@ const FractionalCMOGuide = () => {
                 lineNumber: 248,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-green-500 to-teal-500 p-6", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-between", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-2", children: "💰 Cost-ROI Analysis" }, void 0, false, {
@@ -597,7 +597,7 @@ const FractionalCMOGuide = () => {
                     lineNumber: 285,
                     columnNumber: 19
                   }, void 0),
-                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700", children: "See 3.2x ROI vs 1.8x Comparison →" }, void 0, false, {
+                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 focus-visible:text-blue-700 font-semibold transition-colors group-hover:text-blue-700 group-focus-visible:text-blue-700 focus-visible:text-blue-700", children: "See 3.2x ROI vs 1.8x Comparison →" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOGuide.tsx",
                     lineNumber: 289,
                     columnNumber: 19
@@ -612,7 +612,7 @@ const FractionalCMOGuide = () => {
                 lineNumber: 272,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105 md:col-span-2", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 md:col-span-2", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-purple-500 to-pink-500 p-6", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-between", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-2", children: "🔄 Transition Strategies" }, void 0, false, {
@@ -657,7 +657,7 @@ const FractionalCMOGuide = () => {
                     lineNumber: 309,
                     columnNumber: 19
                   }, void 0),
-                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/transition-strategies`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700", children: "Avoid 6-Month Transition Loss →" }, void 0, false, {
+                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/transition-strategies`, className: "inline-flex items-center text-blue-600 hover:text-blue-700 focus-visible:text-blue-700 font-semibold transition-colors group-hover:text-blue-700 group-focus-visible:text-blue-700 focus-visible:text-blue-700", children: "Avoid 6-Month Transition Loss →" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOGuide.tsx",
                     lineNumber: 313,
                     columnNumber: 19
@@ -697,7 +697,7 @@ const FractionalCMOGuide = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free Decision Analysis"
               },
               void 0,
@@ -709,7 +709,7 @@ const FractionalCMOGuide = () => {
               },
               void 0
             ),
-            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "Calculate Your $47K Mistake" }, void 0, false, {
+            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "border-2 border-blue-500 text-blue-600 hover:bg-blue-500 focus-visible:bg-blue-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "Calculate Your $47K Mistake" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOGuide.tsx",
               lineNumber: 338,
               columnNumber: 15
@@ -730,8 +730,8 @@ const FractionalCMOGuide = () => {
               columnNumber: 13
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-blue-600 transition-colors", children: "8 Proven Plateau Breakthrough Patterns →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-blue-600 focus-visible:text-blue-600 transition-colors", children: "8 Proven Plateau Breakthrough Patterns →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOGuide.tsx",
                   lineNumber: 352,
                   columnNumber: 19
@@ -750,8 +750,8 @@ const FractionalCMOGuide = () => {
                 lineNumber: 350,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-blue-600 transition-colors", children: "5 Awareness Stages That Convert →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-blue-600 focus-visible:text-blue-600 transition-colors", children: "5 Awareness Stages That Convert →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOGuide.tsx",
                   lineNumber: 362,
                   columnNumber: 19
@@ -949,7 +949,7 @@ const FractionalCMOVsAgency = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-blue-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-blue-400 focus-visible:text-blue-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsAgency.tsx",
                 lineNumber: 138,
                 columnNumber: 19
@@ -1018,7 +1018,7 @@ const FractionalCMOVsAgency = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-blue-500 to-orange-600 hover:from-blue-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-blue-500 to-orange-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Get Your Decision Analysis"
                 },
                 void 0,
@@ -1352,7 +1352,7 @@ const FractionalCMOVsAgency = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-blue-500 to-orange-600 hover:from-blue-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-blue-500 to-orange-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free Strategy Analysis"
               },
               void 0,
@@ -1364,7 +1364,7 @@ const FractionalCMOVsAgency = () => {
               },
               void 0
             ),
-            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "border-2 border-blue-500 text-blue-600 hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "Compare vs Full-Time & Consultant" }, void 0, false, {
+            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "border-2 border-blue-500 text-blue-600 hover:bg-blue-500 focus-visible:bg-blue-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "Compare vs Full-Time & Consultant" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsAgency.tsx",
               lineNumber: 308,
               columnNumber: 17
@@ -1385,8 +1385,8 @@ const FractionalCMOVsAgency = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "hover:text-blue-600 transition-colors", children: "Why Agencies Cost More Than Expected →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "hover:text-blue-600 focus-visible:text-blue-600 transition-colors", children: "Why Agencies Cost More Than Expected →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsAgency.tsx",
                   lineNumber: 322,
                   columnNumber: 21
@@ -1405,8 +1405,8 @@ const FractionalCMOVsAgency = () => {
                 lineNumber: 320,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, className: "hover:text-blue-600 transition-colors", children: "Fix Your $8K CAC Problem →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, className: "hover:text-blue-600 focus-visible:text-blue-600 transition-colors", children: "Fix Your $8K CAC Problem →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsAgency.tsx",
                   lineNumber: 332,
                   columnNumber: 21
@@ -1604,7 +1604,7 @@ const FractionalCMOVsFullTime = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-blue-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-blue-400 focus-visible:text-blue-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsFullTime.tsx",
                 lineNumber: 138,
                 columnNumber: 19
@@ -1674,7 +1674,7 @@ const FractionalCMOVsFullTime = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-blue-500 to-green-600 hover:from-blue-600 hover:to-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-blue-500 to-green-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-green-700 focus-visible:to-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Calculate Your True CMO Needs"
                 },
                 void 0,
@@ -2008,7 +2008,7 @@ const FractionalCMOVsFullTime = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-blue-500 to-green-600 hover:from-blue-600 hover:to-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-blue-500 to-green-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-green-700 focus-visible:to-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free Workload Analysis"
               },
               void 0,
@@ -2020,7 +2020,7 @@ const FractionalCMOVsFullTime = () => {
               },
               void 0
             ),
-            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "See Why Full-Time Costs $436K/Year" }, void 0, false, {
+            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "border-2 border-green-500 text-green-600 hover:bg-green-500 focus-visible:bg-green-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "See Why Full-Time Costs $436K/Year" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsFullTime.tsx",
               lineNumber: 308,
               columnNumber: 17
@@ -2041,8 +2041,8 @@ const FractionalCMOVsFullTime = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/transition-strategies`, className: "hover:text-green-600 transition-colors", children: "When $200K CMO Actually Makes Sense →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/transition-strategies`, className: "hover:text-green-600 focus-visible:text-green-600 transition-colors", children: "When $200K CMO Actually Makes Sense →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsFullTime.tsx",
                   lineNumber: 322,
                   columnNumber: 21
@@ -2061,8 +2061,8 @@ const FractionalCMOVsFullTime = () => {
                 lineNumber: 320,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/revenue-ceiling-breakthrough`, className: "hover:text-green-600 transition-colors", children: "Break Your $1M Revenue Ceiling →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/revenue-ceiling-breakthrough`, className: "hover:text-green-600 focus-visible:text-green-600 transition-colors", children: "Break Your $1M Revenue Ceiling →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsFullTime.tsx",
                   lineNumber: 332,
                   columnNumber: 21
@@ -2260,7 +2260,7 @@ const FractionalCMOVsConsultant = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-purple-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-purple-400 focus-visible:text-purple-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsConsultant.tsx",
                 lineNumber: 138,
                 columnNumber: 19
@@ -2330,7 +2330,7 @@ const FractionalCMOVsConsultant = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Discover Your Best Approach"
                 },
                 void 0,
@@ -2664,7 +2664,7 @@ const FractionalCMOVsConsultant = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free Implementation Assessment"
               },
               void 0,
@@ -2676,7 +2676,7 @@ const FractionalCMOVsConsultant = () => {
               },
               void 0
             ),
-            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "Compare vs Agency & In-House" }, void 0, false, {
+            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "border-2 border-purple-500 text-purple-600 hover:bg-purple-500 focus-visible:bg-purple-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "Compare vs Agency & In-House" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsConsultant.tsx",
               lineNumber: 308,
               columnNumber: 17
@@ -2697,8 +2697,8 @@ const FractionalCMOVsConsultant = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/transition-strategies`, className: "hover:text-purple-600 transition-colors", children: "Stop Wasting $75K on Unimplemented Strategy →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/transition-strategies`, className: "hover:text-purple-600 focus-visible:text-purple-600 transition-colors", children: "Stop Wasting $75K on Unimplemented Strategy →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsConsultant.tsx",
                   lineNumber: 322,
                   columnNumber: 21
@@ -2717,8 +2717,8 @@ const FractionalCMOVsConsultant = () => {
                 lineNumber: 320,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-purple-600 transition-colors", children: "Psychology That Beats Industry Tactics →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-purple-600 focus-visible:text-purple-600 transition-colors", children: "Psychology That Beats Industry Tactics →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsConsultant.tsx",
                   lineNumber: 332,
                   columnNumber: 21
@@ -2916,7 +2916,7 @@ const FractionalCMOVsInHouse = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-indigo-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-indigo-400 focus-visible:text-indigo-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsInHouse.tsx",
                 lineNumber: 138,
                 columnNumber: 19
@@ -2986,7 +2986,7 @@ const FractionalCMOVsInHouse = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 focus-visible:from-indigo-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Calculate Your True Team Cost"
                 },
                 void 0,
@@ -3320,7 +3320,7 @@ const FractionalCMOVsInHouse = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 focus-visible:from-indigo-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free Team Cost Analysis"
               },
               void 0,
@@ -3332,7 +3332,7 @@ const FractionalCMOVsInHouse = () => {
               },
               void 0
             ),
-            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "Calculate Your 2.5x Hidden Costs" }, void 0, false, {
+            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 focus-visible:bg-indigo-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "Calculate Your 2.5x Hidden Costs" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsInHouse.tsx",
               lineNumber: 308,
               columnNumber: 17
@@ -3353,8 +3353,8 @@ const FractionalCMOVsInHouse = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/transition-strategies`, className: "hover:text-indigo-600 transition-colors", children: "Recover From 43% Turnover Disaster →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/transition-strategies`, className: "hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors", children: "Recover From 43% Turnover Disaster →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsInHouse.tsx",
                   lineNumber: 322,
                   columnNumber: 21
@@ -3373,8 +3373,8 @@ const FractionalCMOVsInHouse = () => {
                 lineNumber: 320,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/team-growth-bottlenecks`, className: "hover:text-indigo-600 transition-colors", children: "Fix 18-Month Competency Gap →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/team-growth-bottlenecks`, className: "hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors", children: "Fix 18-Month Competency Gap →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/FractionalCMOVsInHouse.tsx",
                   lineNumber: 332,
                   columnNumber: 21
@@ -3572,7 +3572,7 @@ const TransitionStrategies = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-purple-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-purple-400 focus-visible:text-purple-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/TransitionStrategies.tsx",
                 lineNumber: 138,
                 columnNumber: 19
@@ -3641,7 +3641,7 @@ const TransitionStrategies = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-pink-700 focus-visible:to-pink-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Plan Your Transition Strategy"
                 },
                 void 0,
@@ -4131,7 +4131,7 @@ const TransitionStrategies = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 hover:to-pink-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-pink-700 focus-visible:to-pink-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free Transition Roadmap"
               },
               void 0,
@@ -4143,7 +4143,7 @@ const TransitionStrategies = () => {
               },
               void 0
             ),
-            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "Choose Your Marketing Model" }, void 0, false, {
+            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "border-2 border-purple-500 text-purple-600 hover:bg-purple-500 focus-visible:bg-purple-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "Choose Your Marketing Model" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/pages/TransitionStrategies.tsx",
               lineNumber: 354,
               columnNumber: 17
@@ -4164,8 +4164,8 @@ const TransitionStrategies = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "hover:text-purple-600 transition-colors", children: "Save $200K During Transition →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "hover:text-purple-600 focus-visible:text-purple-600 transition-colors", children: "Save $200K During Transition →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/TransitionStrategies.tsx",
                   lineNumber: 368,
                   columnNumber: 21
@@ -4184,8 +4184,8 @@ const TransitionStrategies = () => {
                 lineNumber: 366,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-purple-600 transition-colors", children: "8 Plateau Patterns Forcing Change →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-purple-600 focus-visible:text-purple-600 transition-colors", children: "8 Plateau Patterns Forcing Change →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/TransitionStrategies.tsx",
                   lineNumber: 378,
                   columnNumber: 21
@@ -4383,7 +4383,7 @@ const WhenToChooseEach = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-indigo-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-indigo-400 focus-visible:text-indigo-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/WhenToChooseEach.tsx",
                 lineNumber: 138,
                 columnNumber: 19
@@ -4452,7 +4452,7 @@ const WhenToChooseEach = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 focus-visible:from-indigo-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Get Your Custom Recommendation"
                 },
                 void 0,
@@ -5041,7 +5041,7 @@ const WhenToChooseEach = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 focus-visible:from-indigo-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Personalized Recommendation"
               },
               void 0,
@@ -5053,7 +5053,7 @@ const WhenToChooseEach = () => {
               },
               void 0
             ),
-            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "See Cost Analysis" }, void 0, false, {
+            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, className: "border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 focus-visible:bg-indigo-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "See Cost Analysis" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/pages/WhenToChooseEach.tsx",
               lineNumber: 370,
               columnNumber: 17
@@ -5074,8 +5074,8 @@ const WhenToChooseEach = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/transition-strategies`, className: "hover:text-indigo-600 transition-colors", children: "How to Transition Between Models →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/transition-strategies`, className: "hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors", children: "How to Transition Between Models →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/WhenToChooseEach.tsx",
                   lineNumber: 384,
                   columnNumber: 21
@@ -5094,8 +5094,8 @@ const WhenToChooseEach = () => {
                 lineNumber: 382,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-indigo-600 transition-colors", children: "Stuck at Current Model? →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors", children: "Stuck at Current Model? →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/WhenToChooseEach.tsx",
                   lineNumber: 394,
                   columnNumber: 21
@@ -5293,7 +5293,7 @@ const CostROIAnalysis = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-green-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-green-400 focus-visible:text-green-400 transition-colors", children: "Fractional CMO Guide" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/CostROIAnalysis.tsx",
                 lineNumber: 138,
                 columnNumber: 19
@@ -5362,7 +5362,7 @@ const CostROIAnalysis = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 focus-visible:from-green-600 hover:to-emerald-700 focus-visible:to-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Calculate Your True Marketing Costs"
                 },
                 void 0,
@@ -6183,7 +6183,7 @@ const CostROIAnalysis = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 focus-visible:from-green-600 hover:to-emerald-700 focus-visible:to-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Your ROI Analysis"
               },
               void 0,
@@ -6195,7 +6195,7 @@ const CostROIAnalysis = () => {
               },
               void 0
             ),
-            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "Back to Guide" }, void 0, false, {
+            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "border-2 border-green-500 text-green-600 hover:bg-green-500 focus-visible:bg-green-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block", children: "Back to Guide" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/pages/CostROIAnalysis.tsx",
               lineNumber: 430,
               columnNumber: 17
@@ -6216,8 +6216,8 @@ const CostROIAnalysis = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/when-to-choose-each`, className: "hover:text-green-600 transition-colors", children: "Revenue Stage Decision Matrix →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/when-to-choose-each`, className: "hover:text-green-600 focus-visible:text-green-600 transition-colors", children: "Revenue Stage Decision Matrix →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/CostROIAnalysis.tsx",
                   lineNumber: 444,
                   columnNumber: 21
@@ -6236,8 +6236,8 @@ const CostROIAnalysis = () => {
                 lineNumber: 442,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/revenue-ceiling-breakthrough`, className: "hover:text-green-600 transition-colors", children: "Breaking Revenue Ceilings →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-critical dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/revenue-ceiling-breakthrough`, className: "hover:text-green-600 focus-visible:text-green-600 transition-colors", children: "Breaking Revenue Ceilings →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/CostROIAnalysis.tsx",
                   lineNumber: 454,
                   columnNumber: 21

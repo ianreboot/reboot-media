@@ -176,6 +176,10 @@
 
 .text-standard-accessible {
   color: var(--luminescence-layer-3) !important;
+  /* Enhanced for colored backgrounds - Pattern 8 fix */
+  text-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.3),
+    0 0 1px rgba(0, 0, 0, 0.2);
 }
 
 .text-optional-accessible {
@@ -203,6 +207,187 @@
   }
 }
 
+/* SCREEN READER SUPPORT UTILITIES */
+/* Essential for WCAG 2.4.1 Bypass Blocks (Level A) and screen reader accessibility */
+
+/* Screen reader only content - visually hidden but accessible to AT */
+.sr-only {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+
+/* Focus-visible version of sr-only - becomes visible when focused */
+.sr-only-focusable:focus-visible {
+  position: static !important;
+  width: auto !important;
+  height: auto !important;
+  padding: 0.5rem 1rem !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  clip: auto !important;
+  white-space: normal !important;
+  background: var(--text-primary) !important;
+  color: #000000 !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+  border: 2px solid #000000 !important;
+  border-radius: 0.375rem !important;
+  z-index: 1000 !important;
+}
+
+/* Skip navigation links - WCAG 2.4.1 Level A requirement */
+.skip-link {
+  position: absolute !important;
+  left: -9999px !important;
+  top: 0 !important;
+  z-index: 9999 !important;
+  padding: 1rem 1.5rem !important;
+  background: var(--text-primary) !important;
+  color: #000000 !important;
+  text-decoration: none !important;
+  font-weight: bold !important;
+  border: 2px solid #000000 !important;
+  border-radius: 0 0 0.375rem 0.375rem !important;
+}
+
+.skip-link:focus-visible {
+  left: 1rem !important;
+}
+
+/* Live region utilities for dynamic content announcements */
+.sr-live-polite {
+  speak: normal !important;
+  /* Screen readers should announce changes politely */
+}
+
+.sr-live-assertive {
+  speak: assertive !important;
+  /* Screen readers should interrupt to announce changes */
+}
+
+/* Semantic landmark helpers */
+.landmark-main {
+  /* Ensures main content is properly identified */
+  role: main;
+}
+
+.landmark-navigation {
+  /* Navigation landmark identification */
+  role: navigation;
+}
+
+.landmark-banner {
+  /* Banner/header landmark identification */
+  role: banner;
+}
+
+.landmark-contentinfo {
+  /* Footer/content info landmark identification */
+  role: contentinfo;
+}
+
+/* Form accessibility utilities */
+.form-label-required::after {
+  content: " *" !important;
+  color: #dc2626 !important; /* Red-600 for required field indication */
+  font-weight: bold !important;
+}
+
+.form-error-message {
+  color: #dc2626 !important; /* Red-600 for error messages */
+  font-size: 0.875rem !important;
+  margin-top: 0.25rem !important;
+  display: block !important;
+}
+
+/* Screen reader context helpers */
+.sr-context-before::before {
+  content: attr(data-sr-prefix) " " !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+.sr-context-after::after {
+  content: " " attr(data-sr-suffix) !important;
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* Button and interactive element descriptions */
+.sr-button-context {
+  /* Use with data-sr-description for additional context */
+  position: relative !important;
+}
+
+.sr-button-context::after {
+  content: attr(data-sr-description) !important;
+  position: absolute !important;
+  left: -9999px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+}
+
+/* Table accessibility helpers */
+.table-caption {
+  caption-side: top !important;
+  text-align: left !important;
+  font-weight: bold !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.table-summary {
+  /* For complex tables needing summary */
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+/* Focus management utilities */
+.focus-trap-boundary {
+  /* Marks focus trap boundaries for modal dialogs */
+  position: relative !important;
+}
+
+/* Loading state announcements */
+.loading-announcement {
+  position: absolute !important;
+  left: -9999px !important;
+}
+
+.loading-announcement[aria-live="polite"] {
+  /* Announce loading states politely */
+  speak: normal !important;
+}
+
+.loading-announcement[aria-live="assertive"] {
+  /* Announce critical loading states immediately */
+  speak: assertive !important;
+}
+
+/* Error boundary announcements */
+.error-announcement {
+  position: absolute !important;
+  left: -9999px !important;
+  color: #dc2626 !important;
+  font-weight: bold !important;
+}
+
+/* Success announcements */
+.success-announcement {
+  position: absolute !important;
+  left: -9999px !important;
+  color: #16a34a !important; /* Green-600 for success */
+  font-weight: bold !important;
+}
+
 /* Reduced motion preferences */
 @media (prefers-reduced-motion: reduce) {
   .contrast-primary,
@@ -212,5 +397,18 @@
   .luminescence-body,
   .luminescence-muted {
     transition: none;
+  }
+  
+  /* Remove all animations for users who prefer reduced motion */
+  *,
+  *::before,
+  *::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
   }
 }

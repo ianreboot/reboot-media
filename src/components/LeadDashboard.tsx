@@ -162,7 +162,7 @@ const LeadDashboard: React.FC = () => {
               className={`px-4 py-2 rounded-lg font-medium capitalize transition-colors ${
                 selectedTimeframe === timeframe
                   ? 'bg-blue-600 text-white'
-                  : 'bg-white replace-text-gray-700 hover:bg-gray-100'
+                  : 'bg-white replace-text-gray-700 hover:bg-gray-100 focus-visible:bg-gray-100'
               }`}
             >
               {timeframe}
@@ -361,7 +361,7 @@ const LeadDashboard: React.FC = () => {
             {recommendations.map((rec, index) => (
               <div 
                 key={index}
-                className="border border-gray-200 rounded-lg p-4 hover:shadow-md transition-shadow"
+                className="border border-gray-200 rounded-lg p-4 hover:shadow-md focus-visible:shadow-md transition-shadow"
               >
                 <div className="flex items-start justify-between mb-2">
                   <div className="flex items-center gap-2">

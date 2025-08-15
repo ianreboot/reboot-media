@@ -115,6 +115,16 @@ const CustomerAcquisitionStall = () => {
 
   return (
     <>
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       <SEOHead 
         title="CAC Rising, Conversion Flat? Customer Acquisition Stall Solutions | Reboot Media"
         description="CAC inflation killing growth? 7 customer acquisition stall patterns and psychology fixes that break through the same-channel, same-message competition trap."
@@ -135,7 +145,7 @@ const CustomerAcquisitionStall = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 replace-text-gray-300">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-orange-400 transition-colors">Growth Plateau Solutions</a>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-orange-400 focus-visible:text-orange-400 transition-colors">Growth Plateau Solutions</a>
                   <span>→</span>
                   <span className="text-orange-400 font-semibold">Customer Acquisition Stall</span>
                 </nav>
@@ -154,9 +164,9 @@ const CustomerAcquisitionStall = () => {
                   CAC keeps rising while conversion stays flat? The problem isn't your product or budget—it's that you're 
                   <span className="text-orange-400 font-semibold"> competing on the same channels with the same message</span> as everyone else.
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
                 >
                   Fix Your CAC Inflation
                 </button>
@@ -165,7 +175,11 @@ const CustomerAcquisitionStall = () => {
           </section>
 
           {/* Main Content */}
-          <main className="max-w-5xl mx-auto px-6 lg:px-8 py-16">
+          <main 
+          id="main-content" 
+          role="main"
+          aria-label="Main content"
+          className="max-w-5xl mx-auto px-6 lg:px-8 py-16">
             
             {/* Introduction */}
             <section className="mb-16">
@@ -280,7 +294,7 @@ const CustomerAcquisitionStall = () => {
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-standard dark:replace-text-gray-300 font-medium">
+                        <p className="text-standard-accessible dark:replace-text-gray-300 font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -296,19 +310,19 @@ const CustomerAcquisitionStall = () => {
                 <h3 className="text-2xl font-bold replace-text-gray-900 dark:text-white mb-4">
                   🚨 Stop Competing on Price in Saturated Channels
                 </h3>
-                <p className="text-important-accessible text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-important-accessible text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you compete on the same channels with the same message, your CAC gets worse while competitors with 
                   differentiated psychology capture qualified prospects. Get your free acquisition analysis and discover which pattern is killing your efficiency.
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4"
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4"
                 >
                   Get Free CAC Analysis
                 </button>
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} 
-                  className="border-2 border-orange-500 text-orange-accessible hover:bg-orange-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
+                  className="border-2 border-orange-500 text-orange-accessible hover:bg-orange-500 focus-visible:bg-orange-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
                 >
                   See All Plateau Types
                 </a>
@@ -321,9 +335,9 @@ const CustomerAcquisitionStall = () => {
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-important-accessible dark:text-white text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} className="hover:text-orange-accessible transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} className="hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors">
                       Revenue Ceiling Breakthrough →
                     </a>
                   </h3>
@@ -331,9 +345,9 @@ const CustomerAcquisitionStall = () => {
                     Revenue stuck at $500K, $1M, or $1.5M? The problem isn't your product—founder-led sales can't scale without documented processes.
                   </p>
                 </div>
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-important-accessible dark:text-white text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-orange-accessible transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors">
                       Marketing Psychology Fundamentals →
                     </a>
                   </h3>

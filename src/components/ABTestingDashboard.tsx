@@ -87,13 +87,13 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
             <>
               <button
                 onClick={() => pauseTest(testId)}
-                className="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors"
+                className="px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 focus-visible:bg-yellow-600 transition-colors"
               >
                 Pause Test
               </button>
               <button
                 onClick={() => stopTest(testId)}
-                className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors"
+                className="px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 focus-visible:bg-red-600 transition-colors"
               >
                 Stop Test
               </button>
@@ -101,7 +101,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
           ) : (
             <button
               onClick={() => startTest(testId)}
-              className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors"
+              className="px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 focus-visible:bg-green-600 transition-colors"
             >
               Start Test
             </button>
@@ -198,7 +198,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
 
         <button
           type="submit"
-          className="w-full px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-medium"
+          className="w-full px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus-visible:bg-blue-600 transition-colors font-medium"
         >
           Create Test
         </button>
@@ -214,7 +214,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
           <h2 className="text-2xl font-bold replace-text-gray-900">A/B Testing Dashboard</h2>
           <button
             onClick={onClose}
-            className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors"
+            className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 focus-visible:bg-gray-200 flex items-center justify-center transition-colors"
           >
             <svg className="w-5 h-5 replace-text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
@@ -236,7 +236,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
               className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
                 activeTab === tab.id
                   ? 'border-blue-500 text-blue-accessible'
-                  : 'border-transparent replace-text-gray-500 hover:replace-text-gray-700'
+                  : 'border-transparent replace-text-gray-500 hover:replace-text-gray-700 focus-visible:replace-text-gray-700'
               }`}
             >
               <span className="mr-2">{tab.icon}</span>
@@ -312,7 +312,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
                 <h3 className="text-xl font-bold replace-text-gray-900">Active A/B Tests</h3>
                 <button
                   onClick={() => setActiveTab('create')}
-                  className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors"
+                  className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus-visible:bg-blue-600 transition-colors"
                 >
                   Create New Test
                 </button>
@@ -410,7 +410,7 @@ export const ABTestingDashboardTrigger: React.FC = () => {
     <>
       <button
         onClick={() => setShowDashboard(true)}
-        className="fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition-colors z-50"
+        className="fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 focus-visible:bg-blue-600 transition-colors z-50"
         title="Open A/B Testing Dashboard"
       >
         📊

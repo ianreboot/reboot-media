@@ -175,10 +175,10 @@ const PricingCard = ({ service }: { service: ServicePlan }) => {
         {/* CTA Button */}
         <button className={`w-full py-3 rounded-xl font-bold transition-all duration-300 ${
           service.color === 'orange'
-            ? 'bg-white text-orange-accessible hover:bg-orange-50'
+            ? 'bg-white text-orange-accessible hover:bg-orange-50 focus-visible:bg-orange-50'
             : service.color === 'blue'
-            ? 'bg-white text-blue-700 hover:bg-blue-50'
-            : 'bg-blue-900 text-white hover:bg-blue-800'
+            ? 'bg-white text-blue-700 hover:bg-blue-50 focus-visible:bg-blue-50'
+            : 'bg-blue-900 text-white hover:bg-blue-800 focus-visible:bg-blue-800'
         }`}>
           Get Started
         </button>

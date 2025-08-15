@@ -124,6 +124,16 @@ const Contact = () => {
 
   return (
     <div className="contact-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       {/* Sophisticated Background Gradient */}
       <BackgroundGradient />
       
@@ -162,9 +172,9 @@ const Contact = () => {
               If you're looking to improve your marketing, grow your revenue, or get a free marketing analysis, 
               please use our Marketing Analysis form for the fastest response and personalized recommendations.
             </p>
-            <button
+            <button aria-label="Opens contact form for free marketing analysis"
               onClick={() => setShowDropdownForm(true)}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+              className="bg-orange-500 hover:bg-orange-600 focus-visible:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
             >
               Get Your Free Marketing Analysis →
             </button>
@@ -351,7 +361,7 @@ const Contact = () => {
                   <button
                     type="submit"
                     disabled={status === 'loading'}
-                    className="w-full px-8 py-4 bg-orange-500 hover:bg-orange-600 disabled:bg-orange-300 text-white font-semibold rounded-lg transition-colors flex items-center justify-center"
+                    className="w-full px-8 py-4 bg-orange-500 hover:bg-orange-600 focus-visible:bg-orange-600 disabled:bg-orange-300 text-white font-semibold rounded-lg transition-colors flex items-center justify-center"
                   >
                     {status === 'loading' ? (
                       <>
@@ -403,7 +413,7 @@ const Contact = () => {
               {/* Response Time */}
               <div className="bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900 dark:to-amber-900 rounded-2xl p-6">
                 <h3 className="heading-md text-important-accessible dark:text-white mb-2">Response Time</h3>
-                <p className="text-standard dark:replace-text-gray-300 text-sm">
+                <p className="text-standard-accessible dark:replace-text-gray-300 text-sm">
                   We typically respond to all inquiries within 24 hours during business days. 
                   For urgent matters, please mention it in your message subject line.
                 </p>
@@ -416,9 +426,9 @@ const Contact = () => {
                   Ready to transform your marketing? Get a personalized analysis 
                   that shows exactly how to accelerate your business growth.
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors"
+                  className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 focus-visible:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors"
                 >
                   Get Your Free Analysis
                 </button>

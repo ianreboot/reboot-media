@@ -123,7 +123,7 @@ const GrowthPlateauSolutions = () => {
               <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
                 🚨 Every Month You Wait Costs You $47,000+
               </h3>
-              <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+              <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                 While you're stuck at $1M, you should be at $1.5M+ with proper marketing psychology. That's $500K+ annual difference. 
                 Every month of delay costs you qualified opportunities competitors are capturing.
               </p>
@@ -146,18 +146,18 @@ const GrowthPlateauSolutions = () => {
                 <div key={plateau.id} className="group">
                   <a 
                     href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}${plateau.link}`}
-                    className="block bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:bg-white dark:hover:bg-slate-700/80"
+                    className="block bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-8 transition-all duration-300 hover:shadow-2xl focus-visible:shadow-2xl hover:scale-105 focus-visible:scale-105 hover:bg-white focus-visible:bg-white dark:hover:bg-slate-700 focus-visible:bg-slate-700/80"
                   >
                     <div className="text-center mb-6">
                       <div className="text-4xl mb-4">{plateau.icon}</div>
-                      <h3 className="heading-md text-important-accessible dark:text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-red-500 group-hover:to-orange-500 transition-all duration-300">
+                      <h3 className="heading-md text-important-accessible dark:text-white mb-3 group-hover:text-transparent group-focus-visible:text-transparent focus-visible:text-transparent group-hover:bg-gradient-to-r group-focus-visible:bg-gradient-to-r focus-visible:bg-gradient-to-r group-hover:bg-clip-text group-focus-visible:bg-clip-text focus-visible:bg-clip-text group-hover:from-red-500 group-focus-visible:from-red-500 focus-visible:from-red-500 group-hover:to-orange-500 group-focus-visible:to-orange-500 focus-visible:to-orange-500 transition-all duration-300">
                         {plateau.title}
                       </h3>
                     </div>
-                    <p className="text-standard dark:replace-text-gray-300 text-base leading-relaxed mb-6">
+                    <p className="text-standard-accessible dark:replace-text-gray-300 text-base leading-relaxed mb-6">
                       {plateau.description}
                     </p>
-                    <div className="flex items-center justify-center text-red-600 dark:text-red-400 font-semibold group-hover:text-red-700 dark:group-hover:text-red-300 transition-colors">
+                    <div className="flex items-center justify-center text-red-600 dark:text-red-400 font-semibold group-hover:text-red-700 group-focus-visible:text-red-700 focus-visible:text-red-700 dark:group-hover:text-red-300 group-focus-visible:text-red-300 focus-visible:text-red-300 transition-colors">
                       Discover Your Breakthrough →
                     </div>
                   </a>
@@ -173,7 +173,7 @@ const GrowthPlateauSolutions = () => {
         variant: 'glass',
         content: (
           <div>
-            <p className="text-xl text-standard dark:replace-text-gray-300 mb-12 text-center max-w-4xl mx-auto">
+            <p className="text-xl text-standard-accessible dark:replace-text-gray-300 mb-12 text-center max-w-4xl mx-auto">
               The 33% of companies that break through plateaus use this systematic approach. 
               It's not about working harder—it's about <span className="font-semibold text-red-600 dark:text-red-400">marketing psychology that actually converts</span>.
             </p>
@@ -208,9 +208,9 @@ const GrowthPlateauSolutions = () => {
         title: 'Master the Psychology Behind Breakthrough Growth',
         content: (
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl transition-shadow">
+            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow">
               <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-red-600 transition-colors">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                   Marketing Psychology Fundamentals →
                 </a>
               </h3>
@@ -219,16 +219,16 @@ const GrowthPlateauSolutions = () => {
               </p>
               <a 
                 href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`}
-                className="flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 dark:hover:text-red-300 transition-colors"
+                className="flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 focus-visible:text-red-700 dark:hover:text-red-300 focus-visible:text-red-300 transition-colors"
               >
                 <span className="mr-2">📚</span>
                 Master $47K/Month Psychology
               </a>
             </div>
             
-            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl transition-shadow">
+            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow">
               <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-red-600 transition-colors">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                   Need Strategic Marketing Leadership? →
                 </a>
               </h3>
@@ -237,11 +237,11 @@ const GrowthPlateauSolutions = () => {
               </p>
               <a 
                 href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-marketing-agency`}
-                className="flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 dark:hover:text-red-300 transition-colors group"
+                className="flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 focus-visible:text-red-700 dark:hover:text-red-300 focus-visible:text-red-300 transition-colors group"
               >
                 <span className="mr-2">🎯</span>
                 Get Your CMO vs Agency Answer
-                <span className="ml-1 transform transition-transform group-hover:translate-x-1">→</span>
+                <span className="ml-1 transform transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1 focus-visible:translate-x-1">→</span>
               </a>
             </div>
           </div>

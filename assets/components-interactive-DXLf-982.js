@@ -282,7 +282,7 @@ const PricingCard = ({
                 onEngagement("cta_click", service.title);
               },
               onMouseEnter: () => onEngagement("cta_hover", service.title),
-              className: `w-full py-3 rounded-xl font-bold transition-all duration-300 ${service.color === "orange" ? "bg-white text-orange-600 hover:bg-orange-50" : service.color === "blue" ? "bg-white text-blue-700 hover:bg-blue-50" : leadTier === "Hot" ? "bg-red-600 text-white hover:bg-red-700 animate-pulse" : "bg-blue-900 text-white hover:bg-blue-800"}`,
+              className: `w-full py-3 rounded-xl font-bold transition-all duration-300 ${service.color === "orange" ? "bg-white text-orange-600 hover:bg-orange-50 focus-visible:bg-orange-50" : service.color === "blue" ? "bg-white text-blue-700 hover:bg-blue-50 focus-visible:bg-blue-50" : leadTier === "Hot" ? "bg-red-600 text-white hover:bg-red-700 focus-visible:bg-red-700 animate-pulse" : "bg-blue-900 text-white hover:bg-blue-800 focus-visible:bg-blue-800"}`,
               children: getCTAText()
             },
             void 0,
@@ -577,7 +577,7 @@ const EnhancedPricingCards = () => {
         "button",
         {
           onClick: () => handleCTAClick("Priority"),
-          className: "bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white px-8 py-3 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 shadow-xl animate-pulse",
+          className: "bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 focus-visible:from-red-600 hover:to-orange-600 focus-visible:to-orange-600 text-white px-8 py-3 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl animate-pulse",
           children: "Claim Priority Onboarding →"
         },
         void 0,
@@ -845,7 +845,7 @@ const EnhancedLeadForm = () => {
                 currentMarketing: ""
               });
             },
-            className: "w-10 h-10 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all",
+            className: "w-10 h-10 rounded-full bg-white/90 hover:bg-white focus-visible:bg-white shadow-lg flex items-center justify-center transition-all",
             children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-6 h-6 text-gray-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6 18L18 6M6 6l12 12" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/components/EnhancedLeadForm.tsx",
               lineNumber: 272,
@@ -900,7 +900,7 @@ const EnhancedLeadForm = () => {
               { key: "plateau", label: "Hit a growth plateau", desc: "What worked before isn't working anymore" },
               { key: "competition", label: "Losing to competition", desc: "Competitors growing while you're stuck" },
               { key: "clarity", label: "No clear strategy", desc: "Trying everything but nothing sticks" }
-            ].map((option) => /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "flex items-start text-left p-4 bg-gray-50 rounded-xl hover:bg-gray-100 cursor-pointer transition-colors", children: [
+            ].map((option) => /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "flex items-start text-left p-4 bg-gray-50 rounded-xl hover:bg-gray-100 focus-visible:bg-gray-100 cursor-pointer transition-colors", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(
                 "input",
                 {
@@ -954,7 +954,7 @@ const EnhancedLeadForm = () => {
                   handleStepChange(2);
                   trackClick("pain_acknowledgment");
                 },
-                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                 children: [
                   ctaText || "Yes, I Need Help With This",
                   " →"
@@ -984,7 +984,7 @@ const EnhancedLeadForm = () => {
               "button",
               {
                 onClick: () => handleStepChange(1),
-                className: "text-gray-500 hover:text-gray-700 mb-4 flex items-center transition-colors",
+                className: "text-gray-500 hover:text-gray-700 focus-visible:text-gray-700 mb-4 flex items-center transition-colors",
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4 mr-1", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15 19l-7-7 7-7" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/components/EnhancedLeadForm.tsx",
@@ -1196,7 +1196,7 @@ const EnhancedLeadForm = () => {
                     }
                   },
                   disabled: !formData.revenue,
-                  className: `w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl ${formData.revenue ? "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white" : "bg-gray-300 text-gray-500 cursor-not-allowed"}`,
+                  className: `w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl ${formData.revenue ? "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white" : "bg-gray-300 text-gray-500 cursor-not-allowed"}`,
                   children: [
                     "Continue to ",
                     isProgressive ? "Contact Info" : "Final Step",
@@ -1227,7 +1227,7 @@ const EnhancedLeadForm = () => {
               "button",
               {
                 onClick: () => handleStepChange(2),
-                className: "text-gray-500 hover:text-gray-700 mb-4 flex items-center transition-colors",
+                className: "text-gray-500 hover:text-gray-700 focus-visible:text-gray-700 mb-4 flex items-center transition-colors",
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4 mr-1", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15 19l-7-7 7-7" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/components/EnhancedLeadForm.tsx",
@@ -1768,7 +1768,7 @@ const EnhancedLeadForm = () => {
                             value: option.value
                           });
                         },
-                        className: `px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${formData.timeline === option.value ? "border-orange-500 bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized text-orange-700 dark:text-orange-300" : "border-gray-200 hover:border-gray-300"}`,
+                        className: `px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${formData.timeline === option.value ? "border-orange-500 bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized text-orange-700 dark:text-orange-300" : "border-gray-200 hover:border-gray-300 focus-visible:border-gray-300"}`,
                         children: option.label
                       },
                       option.value,
@@ -2094,7 +2094,7 @@ const EnhancedLeadForm = () => {
                       "button",
                       {
                         onClick: () => setFormData({ ...formData, timeline: option.value }),
-                        className: `px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${formData.timeline === option.value ? "border-orange-500 bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized text-orange-700 dark:text-orange-300" : "border-gray-200 hover:border-gray-300"}`,
+                        className: `px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${formData.timeline === option.value ? "border-orange-500 bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized text-orange-700 dark:text-orange-300" : "border-gray-200 hover:border-gray-300 focus-visible:border-gray-300"}`,
                         children: option.label
                       },
                       option.value,
@@ -2181,7 +2181,7 @@ const EnhancedLeadForm = () => {
                     }
                   },
                   disabled: isSubmitting,
-                  className: `w-full mt-6 px-8 py-4 rounded-xl font-black text-lg transition-all duration-300 transform shadow-2xl ${isSubmitting ? "bg-gray-400 cursor-not-allowed" : leadScorePrediction >= 80 ? "bg-gradient-to-r from-red-500 via-orange-600 to-red-600 hover:from-red-600 hover:via-orange-700 hover:to-red-700 hover:scale-105 animate-pulse" : "bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 hover:via-orange-700 hover:to-red-600 hover:scale-105"} text-white`,
+                  className: `w-full mt-6 px-8 py-4 rounded-xl font-black text-lg transition-all duration-300 transform shadow-2xl ${isSubmitting ? "bg-gray-400 cursor-not-allowed" : leadScorePrediction >= 80 ? "bg-gradient-to-r from-red-500 via-orange-600 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-700 focus-visible:to-red-700 hover:scale-105 focus-visible:scale-105 animate-pulse" : "bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 focus-visible:from-orange-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-600 focus-visible:to-red-600 hover:scale-105 focus-visible:scale-105"} text-white`,
                   children: isSubmitting ? "Submitting..." : leadScorePrediction >= 80 ? "🚀 Get Priority Analysis Now →" : leadScorePrediction >= 60 ? "Get My Growth Strategy →" : "Get My Free Marketing Analysis →"
                 },
                 void 0,
@@ -2351,7 +2351,7 @@ const NotificationItem = ({ notification, onDismiss }) => {
               onClick: action.action,
               className: `
                       px-3 py-1 text-xs font-medium rounded transition-colors duration-200
-                      ${action.variant === "primary" ? notification.type === "error" ? "bg-red-600 hover:bg-red-700 text-white" : notification.type === "warning" ? "bg-orange-600 hover:bg-orange-700 text-white" : notification.type === "success" ? "bg-green-600 hover:bg-green-700 text-white" : "bg-blue-600 hover:bg-blue-700 text-white" : notification.type === "error" ? "bg-red-100 hover:bg-red-200 text-red-800" : notification.type === "warning" ? "bg-orange-100 hover:bg-orange-200 text-orange-800" : notification.type === "success" ? "bg-green-100 hover:bg-green-200 text-green-800" : "bg-blue-100 hover:bg-blue-200 text-blue-800"}
+                      ${action.variant === "primary" ? notification.type === "error" ? "bg-red-600 hover:bg-red-700 focus-visible:bg-red-700 text-white" : notification.type === "warning" ? "bg-orange-600 hover:bg-orange-700 focus-visible:bg-orange-700 text-white" : notification.type === "success" ? "bg-green-600 hover:bg-green-700 focus-visible:bg-green-700 text-white" : "bg-blue-600 hover:bg-blue-700 focus-visible:bg-blue-700 text-white" : notification.type === "error" ? "bg-red-100 hover:bg-red-200 focus-visible:bg-red-200 text-red-800" : notification.type === "warning" ? "bg-orange-100 hover:bg-orange-200 focus-visible:bg-orange-200 text-orange-800" : notification.type === "success" ? "bg-green-100 hover:bg-green-200 focus-visible:bg-green-200 text-green-800" : "bg-blue-100 hover:bg-blue-200 focus-visible:bg-blue-200 text-blue-800"}
                     `,
               children: action.label
             },
@@ -2377,9 +2377,9 @@ const NotificationItem = ({ notification, onDismiss }) => {
           "button",
           {
             onClick: handleDismiss,
-            className: "flex-shrink-0 ml-2 p-1 rounded-full hover:bg-black/5 transition-colors duration-200",
+            className: "flex-shrink-0 ml-2 p-1 rounded-full hover:bg-black focus-visible:bg-black/5 transition-colors duration-200",
             "aria-label": "Dismiss notification",
-            children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4 opacity-60 hover:opacity-100", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6 18L18 6M6 6l12 12" }, void 0, false, {
+            children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4 opacity-60 hover:opacity-100 focus-visible:opacity-100", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6 18L18 6M6 6l12 12" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/components/NotificationSystem.tsx",
               lineNumber: 145,
               columnNumber: 15
@@ -2575,7 +2575,7 @@ const LeadForm = () => {
             currentMarketing: ""
           });
         },
-        className: "w-10 h-10 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all",
+        className: "w-10 h-10 rounded-full bg-white/90 hover:bg-white focus-visible:bg-white shadow-lg flex items-center justify-center transition-all",
         children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-6 h-6 text-gray-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6 18L18 6M6 6l12 12" }, void 0, false, {
           fileName: "/home/ian/projects/reboot/src/components/LeadForm.tsx",
           lineNumber: 107,
@@ -2620,7 +2620,7 @@ const LeadForm = () => {
           columnNumber: 15
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "space-y-3 mb-8", children: [
-          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "flex items-start text-left p-4 bg-gray-50 rounded-xl hover:bg-gray-100 cursor-pointer transition-colors", children: [
+          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "flex items-start text-left p-4 bg-gray-50 rounded-xl hover:bg-gray-100 focus-visible:bg-gray-100 cursor-pointer transition-colors", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(
               "input",
               {
@@ -2655,7 +2655,7 @@ const LeadForm = () => {
             lineNumber: 123,
             columnNumber: 17
           }, void 0),
-          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "flex items-start text-left p-4 bg-gray-50 rounded-xl hover:bg-gray-100 cursor-pointer transition-colors", children: [
+          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "flex items-start text-left p-4 bg-gray-50 rounded-xl hover:bg-gray-100 focus-visible:bg-gray-100 cursor-pointer transition-colors", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(
               "input",
               {
@@ -2690,7 +2690,7 @@ const LeadForm = () => {
             lineNumber: 135,
             columnNumber: 17
           }, void 0),
-          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "flex items-start text-left p-4 bg-gray-50 rounded-xl hover:bg-gray-100 cursor-pointer transition-colors", children: [
+          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "flex items-start text-left p-4 bg-gray-50 rounded-xl hover:bg-gray-100 focus-visible:bg-gray-100 cursor-pointer transition-colors", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(
               "input",
               {
@@ -2725,7 +2725,7 @@ const LeadForm = () => {
             lineNumber: 147,
             columnNumber: 17
           }, void 0),
-          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "flex items-start text-left p-4 bg-gray-50 rounded-xl hover:bg-gray-100 cursor-pointer transition-colors", children: [
+          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "flex items-start text-left p-4 bg-gray-50 rounded-xl hover:bg-gray-100 focus-visible:bg-gray-100 cursor-pointer transition-colors", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(
               "input",
               {
@@ -2769,7 +2769,7 @@ const LeadForm = () => {
           "button",
           {
             onClick: () => setFormStep(2),
-            className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+            className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
             children: "Yes, I Need Help With This →"
           },
           void 0,
@@ -2796,7 +2796,7 @@ const LeadForm = () => {
           "button",
           {
             onClick: () => setFormStep(1),
-            className: "text-gray-500 hover:text-gray-700 mb-4 flex items-center transition-colors",
+            className: "text-gray-500 hover:text-gray-700 focus-visible:text-gray-700 mb-4 flex items-center transition-colors",
             children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4 mr-1", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15 19l-7-7 7-7" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/LeadForm.tsx",
@@ -3087,7 +3087,7 @@ const LeadForm = () => {
                 }
               },
               disabled: !formData.revenue,
-              className: `w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl ${formData.revenue ? "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white" : "bg-gray-300 text-gray-500 cursor-not-allowed"}`,
+              className: `w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl ${formData.revenue ? "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white" : "bg-gray-300 text-gray-500 cursor-not-allowed"}`,
               children: "Continue to Final Step →"
             },
             void 0,
@@ -3114,7 +3114,7 @@ const LeadForm = () => {
           "button",
           {
             onClick: () => setFormStep(2),
-            className: "text-gray-500 hover:text-gray-700 mb-4 flex items-center transition-colors",
+            className: "text-gray-500 hover:text-gray-700 focus-visible:text-gray-700 mb-4 flex items-center transition-colors",
             children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4 mr-1", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15 19l-7-7 7-7" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/LeadForm.tsx",
@@ -3594,7 +3594,7 @@ const LeadForm = () => {
                 "button",
                 {
                   onClick: () => setFormData({ ...formData, timeline: option.value }),
-                  className: `px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${formData.timeline === option.value ? "border-orange-500 bg-orange-50 dark:bg-slate-700/95 text-orange-700 dark:text-orange-300" : "border-gray-200 hover:border-gray-300"}`,
+                  className: `px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${formData.timeline === option.value ? "border-orange-500 bg-orange-50 dark:bg-slate-700/95 text-orange-700 dark:text-orange-300" : "border-gray-200 hover:border-gray-300 focus-visible:border-gray-300"}`,
                   children: option.label
                 },
                 option.value,
@@ -3669,7 +3669,7 @@ const LeadForm = () => {
                 }
               },
               disabled: isSubmitting,
-              className: `w-full mt-6 px-8 py-4 rounded-xl font-black text-lg transition-all duration-300 transform shadow-2xl ${isSubmitting ? "bg-gray-400 cursor-not-allowed" : "bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 hover:via-orange-700 hover:to-red-600 hover:scale-105"} text-white`,
+              className: `w-full mt-6 px-8 py-4 rounded-xl font-black text-lg transition-all duration-300 transform shadow-2xl ${isSubmitting ? "bg-gray-400 cursor-not-allowed" : "bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 focus-visible:from-orange-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-600 focus-visible:to-red-600 hover:scale-105 focus-visible:scale-105"} text-white`,
               children: isSubmitting ? "Submitting..." : "Get My Free Marketing Analysis →"
             },
             void 0,

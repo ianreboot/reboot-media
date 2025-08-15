@@ -115,6 +115,16 @@ const FractionalCMOVsInHouse = () => {
 
   return (
     <>
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       <SEOHead 
         title="Fractional CMO vs In-House Team: Build vs Buy Marketing | Reboot Media"
         description="Fractional CMO vs In-House Team decision guide. 7 scenarios revealing true costs of building internal teams. 2.5x more expensive than expected."
@@ -135,7 +145,7 @@ const FractionalCMOVsInHouse = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 replace-text-gray-300">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-indigo-400 transition-colors">Fractional CMO Guide</a>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-indigo-400 focus-visible:text-indigo-400 transition-colors">Fractional CMO Guide</a>
                   <span>→</span>
                   <span className="text-indigo-400 font-semibold">vs In-House Team</span>
                 </nav>
@@ -154,9 +164,9 @@ const FractionalCMOVsInHouse = () => {
                   Building internal teams is harder and more expensive than most realize. The hidden truth: 
                   <span className="text-indigo-400 font-semibold"> Teams cost 2.5x base salaries and take years to reach expertise.</span>
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+                  className="bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 focus-visible:from-indigo-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
                 >
                   Calculate Your True Team Cost
                 </button>
@@ -165,7 +175,11 @@ const FractionalCMOVsInHouse = () => {
           </section>
 
           {/* Main Content */}
-          <main className="max-w-5xl mx-auto px-6 lg:px-8 py-16">
+          <main 
+          id="main-content" 
+          role="main"
+          aria-label="Main content"
+          className="max-w-5xl mx-auto px-6 lg:px-8 py-16">
             
             {/* Introduction */}
             <section className="mb-16">
@@ -279,7 +293,7 @@ const FractionalCMOVsInHouse = () => {
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-standard dark:replace-text-gray-300 font-medium">
+                        <p className="text-standard-accessible dark:replace-text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -295,17 +309,17 @@ const FractionalCMOVsInHouse = () => {
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Underestimating Team Building Costs
                 </h3>
-                <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you delay expertise while building internal teams costs you opportunities and revenue. 
                   Get your free team cost analysis and discover the true investment required for marketing competency.
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4"
+                  className="bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 focus-visible:from-indigo-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4"
                 >
                   Get Free Team Cost Analysis
                 </button>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 focus-visible:bg-indigo-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Calculate Your 2.5x Hidden Costs
                 </a>
               </div>
@@ -317,9 +331,9 @@ const FractionalCMOVsInHouse = () => {
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-indigo-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
                       Recover From 43% Turnover Disaster →
                     </a>
                   </h3>
@@ -327,9 +341,9 @@ const FractionalCMOVsInHouse = () => {
                     Internal marketing not working? Learn how to transition from failed in-house teams to fractional CMO success.
                   </p>
                 </div>
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} className="hover:text-indigo-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
                       Fix 18-Month Competency Gap →
                     </a>
                   </h3>

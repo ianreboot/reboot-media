@@ -103,6 +103,16 @@ const CompetitivePressurePlateau = () => {
 
   return (
     <>
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       <SEOHead 
         title="Bigger Competitors Crushing You? Competitive Pressure Plateau Solutions | Reboot Media"
         description="Bigger competitors crushing you? 6 competitive pressure plateau patterns where companies try to compete on competitors' terms instead of unique positioning."
@@ -123,7 +133,7 @@ const CompetitivePressurePlateau = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 replace-text-gray-300">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-red-400 transition-colors">Growth Plateau Solutions</a>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-red-400 focus-visible:text-red-400 transition-colors">Growth Plateau Solutions</a>
                   <span>→</span>
                   <span className="text-red-400 font-semibold">Competitive Pressure Plateau</span>
                 </nav>
@@ -142,9 +152,9 @@ const CompetitivePressurePlateau = () => {
                   Bigger competitors crushing you? The problem isn't their size or budget—it's that you're trying to 
                   <span className="text-red-400 font-semibold"> compete on their terms</span> instead of creating unique positioning where you win.
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+                  className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
                 >
                   Beat Bigger Competitors
                 </button>
@@ -153,7 +163,11 @@ const CompetitivePressurePlateau = () => {
           </section>
 
           {/* Main Content */}
-          <main className="max-w-5xl mx-auto px-6 lg:px-8 py-16">
+          <main 
+          id="main-content" 
+          role="main"
+          aria-label="Main content"
+          className="max-w-5xl mx-auto px-6 lg:px-8 py-16">
             
             {/* Introduction */}
             <section className="mb-16">
@@ -267,7 +281,7 @@ const CompetitivePressurePlateau = () => {
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-standard dark:replace-text-gray-300 font-medium">
+                        <p className="text-standard-accessible dark:replace-text-gray-300 font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -283,19 +297,19 @@ const CompetitivePressurePlateau = () => {
                 <h3 className="text-2xl font-bold replace-text-gray-900 dark:text-white mb-4">
                   🚨 Stop Playing by Their Rules
                 </h3>
-                <p className="text-important-accessible text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-important-accessible text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   Every month you compete on their terms—features, price, scale—you're fighting a battle you can't win. 
                   Get your free competitive analysis and discover unique positioning angles that make their size irrelevant.
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4"
+                  className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4"
                 >
                   Get Free Competitive Analysis
                 </button>
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} 
-                  className="border-2 border-red-500 text-red-600 hover:bg-red-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
+                  className="border-2 border-red-500 text-red-600 hover:bg-red-500 focus-visible:bg-red-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
                 >
                   See All Plateau Types
                 </a>
@@ -308,9 +322,9 @@ const CompetitivePressurePlateau = () => {
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-important-accessible dark:text-white text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/customer-acquisition-stall`} className="hover:text-red-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/customer-acquisition-stall`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                       Customer Acquisition Stall →
                     </a>
                   </h3>
@@ -318,9 +332,9 @@ const CompetitivePressurePlateau = () => {
                     Competitive pressure often drives CAC inflation. Learn psychology-driven acquisition that sidesteps competitor wars.
                   </p>
                 </div>
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-important-accessible dark:text-white text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-red-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                       Need Strategic Marketing Leadership? →
                     </a>
                   </h3>

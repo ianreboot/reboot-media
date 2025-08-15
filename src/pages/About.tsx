@@ -13,6 +13,16 @@ const About = () => {
 
   return (
     <div className="about-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       {/* Sophisticated Background Gradient */}
       <BackgroundGradient />
       
@@ -63,7 +73,7 @@ const About = () => {
               </div>
               <div className="bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900 dark:to-amber-900 p-6 rounded-xl">
                 <h3 className="heading-lg text-important-accessible dark:text-white mb-4">Why "Reboot" Media?</h3>
-                <p className="text-standard dark:replace-text-gray-300">
+                <p className="text-standard-accessible dark:replace-text-gray-300">
                   Sometimes the best solution isn't to add more features – it's to restart with a clean, 
                   proven foundation. We help companies "reboot" their marketing with strategies that actually work, 
                   eliminating the guesswork and focusing on what drives real business results.
@@ -85,11 +95,11 @@ const About = () => {
                 <div className="lg:w-2/3 space-y-4">
                   <h3 className="heading-lg text-important-accessible dark:text-white">Ian Ho</h3>
                   <p className="text-lg text-orange-accessible dark:text-orange-400 font-semibold">Founder & Fractional CMO</p>
-                  <p className="text-standard dark:replace-text-gray-300 leading-relaxed">
+                  <p className="text-standard-accessible dark:replace-text-gray-300 leading-relaxed">
                     With over 15 years of C-level marketing experience across Fortune 500 companies, Ian has managed 
                     marketing budgets exceeding $2B and driven growth strategies for companies from startup to enterprise scale.
                   </p>
-                  <p className="text-standard dark:replace-text-gray-300 leading-relaxed">
+                  <p className="text-standard-accessible dark:replace-text-gray-300 leading-relaxed">
                     His expertise spans strategic planning, revenue optimization, digital transformation, and organizational 
                     scaling. Ian's hands-on approach combines analytical rigor with creative strategic thinking to deliver 
                     measurable business results.
@@ -99,7 +109,7 @@ const About = () => {
                       href="https://www.linkedin.com/in/ian-ho/" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors"
+                      className="inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 focus-visible:bg-blue-700 text-white rounded-lg transition-colors"
                     >
                       <Users className="w-4 h-4 mr-2" />
                       Connect on LinkedIn
@@ -143,7 +153,7 @@ const About = () => {
                   <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
                   The Fresh Eyes Advantage
                 </h3>
-                <p className="text-standard dark:replace-text-gray-300 leading-relaxed">
+                <p className="text-standard-accessible dark:replace-text-gray-300 leading-relaxed">
                   Outside perspective cuts through internal assumptions and politics. We see opportunities 
                   your team misses because they're too close to the problem. This objectivity is your competitive advantage.
                 </p>
@@ -153,7 +163,7 @@ const About = () => {
                   <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
                   Battle-Tested Strategies
                 </h3>
-                <p className="text-standard dark:replace-text-gray-300 leading-relaxed">
+                <p className="text-standard-accessible dark:replace-text-gray-300 leading-relaxed">
                   Every recommendation comes from proven Fortune 500 experience. We don't experiment with your business – 
                   we apply strategies that have already worked at scale.
                 </p>
@@ -163,7 +173,7 @@ const About = () => {
                   <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
                   C-Level Expertise
                 </h3>
-                <p className="text-standard dark:replace-text-gray-300 leading-relaxed">
+                <p className="text-standard-accessible dark:replace-text-gray-300 leading-relaxed">
                   Access to executive-level strategic thinking without the $300K+ annual cost. Get Fortune 500 
                   caliber marketing leadership at a fraction of traditional consulting rates.
                 </p>
@@ -173,7 +183,7 @@ const About = () => {
                   <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
                   Measurable Results
                 </h3>
-                <p className="text-standard dark:replace-text-gray-300 leading-relaxed">
+                <p className="text-standard-accessible dark:replace-text-gray-300 leading-relaxed">
                   We focus on metrics that matter: revenue growth, market share expansion, and customer lifetime value. 
                   Our success is measured by your business results, not vanity metrics.
                 </p>
@@ -216,9 +226,9 @@ const About = () => {
               Stop fumbling with amateur advice. Get battle-tested strategies from executives who've 
               guided Fortune 500 brands to measurable growth. <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/privacy`} className="transparent-link">Privacy protected</a>.
             </p>
-            <button
+            <button aria-label="Opens contact form for free marketing analysis"
               onClick={() => setShowDropdownForm(true)}
-              className="inline-block px-8 py-4 bg-white text-orange-accessible font-semibold rounded-xl hover:bg-gray-50 transition-colors text-lg"
+              className="inline-block px-8 py-4 bg-white text-orange-accessible font-semibold rounded-xl hover:bg-gray-50 focus-visible:bg-gray-50 transition-colors text-lg"
             >
               Get Your Free Marketing Analysis
             </button>

@@ -24,8 +24,8 @@ const BackToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-20 sm:bottom-6 right-6 z-40 p-3 bg-orange-500/60 hover:bg-orange-600/80 text-white rounded-full shadow-md transition-all duration-300 transform ${
-        isVisible ? 'translate-y-0 opacity-60 hover:opacity-90' : 'translate-y-16 opacity-0'
+      className={`fixed bottom-20 sm:bottom-6 right-6 z-40 p-3 bg-orange-500/60 hover:bg-orange-600 focus-visible:bg-orange-600/80 text-white rounded-full shadow-md transition-all duration-300 transform ${
+        isVisible ? 'translate-y-0 opacity-60 hover:opacity-90 focus-visible:opacity-90' : 'translate-y-16 opacity-0'
       }`}
       style={{ 
         visibility: isVisible ? 'visible' : 'hidden'

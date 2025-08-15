@@ -115,6 +115,16 @@ const CostROIAnalysis = () => {
 
   return (
     <>
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       <SEOHead 
         title="Marketing Cost & ROI Analysis: Real Numbers Comparison | Reboot Media"
         description="True cost and ROI comparison across marketing models. Real numbers including hidden costs. Fractional CMO delivers 3.2x ROI vs 1.8x for alternatives."
@@ -135,7 +145,7 @@ const CostROIAnalysis = () => {
               {/* Breadcrumb */}
               <div className="mb-8">
                 <nav className="flex items-center space-x-2 replace-text-gray-300">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-green-400 transition-colors">Fractional CMO Guide</a>
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-green-400 focus-visible:text-green-400 transition-colors">Fractional CMO Guide</a>
                   <span>→</span>
                   <span className="text-green-400 font-semibold">Cost & ROI Analysis</span>
                 </nav>
@@ -154,9 +164,9 @@ const CostROIAnalysis = () => {
                   The $300/hour fractional CMO looks expensive until you calculate the true fully-loaded costs. 
                   <span className="text-green-400 font-semibold"> Most companies underestimate costs by 60% and overestimate ROI by 40%.</span>
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+                  className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 focus-visible:from-green-600 hover:to-emerald-700 focus-visible:to-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
                 >
                   Calculate Your True Marketing Costs
                 </button>
@@ -165,7 +175,11 @@ const CostROIAnalysis = () => {
           </section>
 
           {/* Main Content */}
-          <main className="max-w-5xl mx-auto px-6 lg:px-8 py-16">
+          <main 
+          id="main-content" 
+          role="main"
+          aria-label="Main content"
+          className="max-w-5xl mx-auto px-6 lg:px-8 py-16">
             
             {/* Cost Comparison Table */}
             <section className="mb-16">
@@ -373,7 +387,7 @@ const CostROIAnalysis = () => {
                           <span className="mr-2">💰</span>
                           Financial Reality:
                         </h4>
-                        <p className="text-standard dark:replace-text-gray-300 font-medium">
+                        <p className="text-standard-accessible dark:replace-text-gray-300 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -417,17 +431,17 @@ const CostROIAnalysis = () => {
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Every Month You Delay Costs You $26,000+
                 </h3>
-                <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                   That's the average monthly opportunity cost of not having strategic marketing leadership. 
                   Get your personalized cost-benefit analysis and see your specific numbers.
                 </p>
-                <button 
+                <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 hover:to-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4"
+                  className="bg-gradient-to-r from-green-500 to-emerald-600 hover:from-green-600 focus-visible:from-green-600 hover:to-emerald-700 focus-visible:to-emerald-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4"
                 >
                   Get Your ROI Analysis
                 </button>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-green-500 text-green-600 hover:bg-green-500 focus-visible:bg-green-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Back to Guide
                 </a>
               </div>
@@ -439,9 +453,9 @@ const CostROIAnalysis = () => {
                 Related Financial Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/when-to-choose-each`} className="hover:text-green-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/when-to-choose-each`} className="hover:text-green-600 focus-visible:text-green-600 transition-colors">
                       Revenue Stage Decision Matrix →
                     </a>
                   </h3>
@@ -449,9 +463,9 @@ const CostROIAnalysis = () => {
                     Different revenue stages require different marketing investments. Find your optimal model based on your stage.
                   </p>
                 </div>
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} className="hover:text-green-600 transition-colors">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} className="hover:text-green-600 focus-visible:text-green-600 transition-colors">
                       Breaking Revenue Ceilings →
                     </a>
                   </h3>

@@ -11,6 +11,16 @@ const MarketingPsychology = () => {
 
   return (
     <>
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       {/* Enhanced SEO Head with auto-configuration */}
       <SEOHead 
         pageSlug="marketing-psychology"
@@ -45,15 +55,15 @@ const MarketingPsychology = () => {
               The 5 customer awareness stages and conversion psychology principles that transform scattered marketing into predictable revenue growth. Used by Fortune 500 companies and growth-stage businesses worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button 
+              <button aria-label="Opens contact form for free marketing analysis" 
                 onClick={() => setShowDropdownForm(true)}
-                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
               >
                 Get Free Psychology Audit
               </button>
               <a 
                 href="#awareness-stages" 
-                className="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
+                className="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 focus-visible:bg-orange-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
               >
                 Learn the Framework
               </a>
@@ -62,7 +72,12 @@ const MarketingPsychology = () => {
         </section>
 
         {/* Main Content */}
-        <main className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
+        <main 
+          id="main-content" 
+          className="max-w-4xl mx-auto px-6 lg:px-8 py-16"
+          role="main"
+          aria-label="Marketing psychology principles and customer awareness stages"
+        >
           
           {/* Problem Introduction */}
           <section id="problem" className="mb-8">
@@ -83,9 +98,9 @@ const MarketingPsychology = () => {
               <p className="text-standard dark:replace-text-gray-200 font-semibold mb-4">
                 🚨 <strong>Warning:</strong> Every day you use psychology-ignorant marketing costs you qualified prospects
               </p>
-              <button 
+              <button aria-label="Opens contact form for free marketing analysis" 
                 onClick={() => setShowDropdownForm(true)}
-                className="text-orange-accessible dark:text-orange-400 font-semibold hover:underline"
+                className="text-orange-accessible dark:text-orange-400 font-semibold hover:underline focus-visible:underline"
               >
                 Get your free marketing psychology audit →
               </button>
@@ -104,7 +119,7 @@ const MarketingPsychology = () => {
             <div className="space-y-12">
               
               {/* Stage 1: Unaware */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="bg-red-100 dark:bg-red-900/30 rounded-full p-3">
                     <span className="text-red-600 font-bold text-lg">1</span>
@@ -126,7 +141,7 @@ const MarketingPsychology = () => {
                 <div className="mt-6">
                   <a 
                     href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/unaware-stage-customers`}
-                    className="inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors"
+                    className="inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 transition-colors"
                   >
                     See real customer examples and what actually works →
                   </a>
@@ -134,7 +149,7 @@ const MarketingPsychology = () => {
               </div>
 
               {/* Stage 2: Problem-Aware */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="bg-orange-100 dark:bg-orange-900/30 rounded-full p-3">
                     <span className="text-orange-accessible font-bold text-lg">2</span>
@@ -159,7 +174,7 @@ const MarketingPsychology = () => {
                 <div className="mt-6">
                   <a 
                     href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/problem-aware-stage-customers`}
-                    className="inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors"
+                    className="inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 transition-colors"
                   >
                     See real customer examples and what actually works →
                   </a>
@@ -167,7 +182,7 @@ const MarketingPsychology = () => {
               </div>
 
               {/* Stage 3: Solution-Aware */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="bg-yellow-100 dark:bg-yellow-900/30 rounded-full p-3">
                     <span className="text-yellow-600 font-bold text-lg">3</span>
@@ -193,7 +208,7 @@ const MarketingPsychology = () => {
                 <div className="mt-6">
                   <a 
                     href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/solution-aware-stage-customers`}
-                    className="inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors"
+                    className="inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 transition-colors"
                   >
                     See real customer examples and what actually works →
                   </a>
@@ -201,7 +216,7 @@ const MarketingPsychology = () => {
               </div>
 
               {/* Stage 4: Product-Aware */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="bg-green-100 dark:bg-green-900/30 rounded-full p-3">
                     <span className="text-green-600 font-bold text-lg">4</span>
@@ -227,7 +242,7 @@ const MarketingPsychology = () => {
                 <div className="mt-6">
                   <a 
                     href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/product-aware-stage-customers`}
-                    className="inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors"
+                    className="inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 transition-colors"
                   >
                     See real customer examples and what actually works →
                   </a>
@@ -235,7 +250,7 @@ const MarketingPsychology = () => {
               </div>
 
               {/* Stage 5: Most Aware */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="bg-blue-100 dark:bg-blue-900/30 rounded-full p-3">
                     <span className="text-blue-accessible font-bold text-lg">5</span>
@@ -261,7 +276,7 @@ const MarketingPsychology = () => {
                 <div className="mt-6">
                   <a 
                     href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/most-aware-stage-customers`}
-                    className="inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors"
+                    className="inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 transition-colors"
                   >
                     See real customer examples and what actually works →
                   </a>
@@ -341,12 +356,12 @@ const MarketingPsychology = () => {
               <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
                 Ready to Transform Your Marketing with Psychology?
               </h3>
-              <p className="text-standard dark:replace-text-gray-300 mb-6 max-w-2xl mx-auto">
+              <p className="text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-2xl mx-auto">
                 Don't let another month pass with marketing that ignores how customers actually think. Get your free psychology audit and discover exactly where your messaging is missing the mark.
               </p>
-              <button 
+              <button aria-label="Opens contact form for free marketing analysis" 
                 onClick={() => setShowDropdownForm(true)}
-                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg"
               >
                 Get Your Free Marketing Psychology Audit
               </button>
@@ -398,9 +413,9 @@ const MarketingPsychology = () => {
               Master These Psychology Principles in Your Business
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow">
                 <h3 className="text-xl font-semibold replace-text-gray-900 dark:text-white mb-3">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-orange-accessible transition-colors">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors">
                     Stuck in a Growth Plateau? →
                   </a>
                 </h3>
@@ -408,9 +423,9 @@ const MarketingPsychology = () => {
                   Learn why 67% of companies hit revenue plateaus and the psychological triggers that break through them.
                 </p>
               </div>
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow">
                 <h3 className="text-xl font-semibold replace-text-gray-900 dark:text-white mb-3">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-orange-accessible transition-colors">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors">
                     Fractional CMO vs Agency →
                   </a>
                 </h3>
@@ -430,9 +445,9 @@ const MarketingPsychology = () => {
               Every day you delay implementing these psychology principles, competitors are capturing prospects with messages that actually convert. Get your free audit now.
             </p>
             <div className="flex justify-center mb-6">
-              <button 
+              <button aria-label="Opens contact form for free marketing analysis" 
                 onClick={() => setShowDropdownForm(true)}
-                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
               >
                 Get Your Free Marketing Psychology Audit →
               </button>

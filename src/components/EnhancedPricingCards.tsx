@@ -337,12 +337,12 @@ const PricingCard: React.FC<PricingCardProps> = ({
           onMouseEnter={() => onEngagement('cta_hover', service.title)}
           className={`w-full py-3 rounded-xl font-bold transition-all duration-300 ${
             service.color === 'orange'
-              ? 'bg-white text-orange-accessible hover:bg-orange-50'
+              ? 'bg-white text-orange-accessible hover:bg-orange-50 focus-visible:bg-orange-50'
               : service.color === 'blue'
-              ? 'bg-white text-blue-700 hover:bg-blue-50'
+              ? 'bg-white text-blue-700 hover:bg-blue-50 focus-visible:bg-blue-50'
               : leadTier === 'Hot'
-              ? 'bg-red-600 text-white hover:bg-red-700 animate-pulse'
-              : 'bg-blue-900 text-white hover:bg-blue-800'
+              ? 'bg-red-600 text-white hover:bg-red-700 focus-visible:bg-red-700 animate-pulse'
+              : 'bg-blue-900 text-white hover:bg-blue-800 focus-visible:bg-blue-800'
           }`}
         >
           {getCTAText()}
@@ -594,7 +594,7 @@ const EnhancedPricingCards = () => {
             </p>
             <button
               onClick={() => handleCTAClick('Priority')}
-              className="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 text-white px-8 py-3 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 shadow-xl animate-pulse"
+              className="bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 focus-visible:from-red-600 hover:to-orange-600 focus-visible:to-orange-600 text-white px-8 py-3 rounded-xl font-bold transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl animate-pulse"
             >
               Claim Priority Onboarding →
             </button>

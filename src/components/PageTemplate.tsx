@@ -136,7 +136,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
 
   // Get button classes
   const getButtonClasses = (button: CTAButton) => {
-    const baseClasses = 'font-bold transition-all duration-300 transform hover:scale-105 shadow-xl rounded-xl';
+    const baseClasses = 'font-bold transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl rounded-xl';
     const sizeClasses = {
       md: 'px-6 py-3 text-base',
       lg: 'px-8 py-4 text-lg',
@@ -144,8 +144,8 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
     };
     const variantClasses = {
       primary: `bg-gradient-to-r from-${hero.gradient || 'blue'}-500 to-${hero.gradient || 'blue'}-600 hover:from-${hero.gradient || 'blue'}-600 hover:to-${hero.gradient || 'blue'}-700 text-white`,
-      secondary: `bg-white dark:bg-slate-800 text-${hero.gradient || 'blue'}-600 dark:text-${hero.gradient || 'blue'}-400 hover:bg-gray-50 dark:hover:bg-slate-700`,
-      outline: `border-2 border-${hero.gradient || 'blue'}-500 text-${hero.gradient || 'blue'}-400 hover:bg-${hero.gradient || 'blue'}-500 hover:text-white`,
+      secondary: `bg-white dark:bg-slate-800 text-${hero.gradient || 'blue'}-600 dark:text-${hero.gradient || 'blue'}-400 hover:bg- focus-visible:bg-gray-50 focus-visible:bg-gray-50 dark:hover:bg- focus-visible:bg-slate-700 focus-visible:bg-slate-700`,
+      outline: `border-2 border-${hero.gradient || 'blue'}-500 text-${hero.gradient || 'blue'}-400 hover:bg-${hero.gradient || 'blue'}-500 hover:text-white focus-visible:text-white`,
     };
 
     return `${baseClasses} ${sizeClasses[button.size || 'lg']} ${variantClasses[button.variant || 'primary']}`;
@@ -253,7 +253,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                     {breadcrumb.href ? (
                       <a 
                         href={breadcrumb.href} 
-                        className="replace-text-gray-400 hover:text-orange-400 transition-colors"
+                        className="replace-text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors"
                       >
                         {breadcrumb.text}
                       </a>

@@ -112,19 +112,19 @@ const NotificationItem: React.FC<NotificationProps> = ({ notification, onDismiss
                       px-3 py-1 text-xs font-medium rounded transition-colors duration-200
                       ${action.variant === 'primary'
                         ? notification.type === 'error'
-                          ? 'bg-red-600 hover:bg-red-700 text-white'
+                          ? 'bg-red-600 hover:bg-red-700 focus-visible:bg-red-700 text-white'
                           : notification.type === 'warning'
-                            ? 'bg-orange-600 hover:bg-orange-700 text-white'
+                            ? 'bg-orange-600 hover:bg-orange-700 focus-visible:bg-orange-700 text-white'
                             : notification.type === 'success'
-                              ? 'bg-green-600 hover:bg-green-700 text-white'
-                              : 'bg-blue-600 hover:bg-blue-700 text-white'
+                              ? 'bg-green-600 hover:bg-green-700 focus-visible:bg-green-700 text-white'
+                              : 'bg-blue-600 hover:bg-blue-700 focus-visible:bg-blue-700 text-white'
                         : notification.type === 'error'
-                          ? 'bg-red-100 hover:bg-red-200 text-red-800'
+                          ? 'bg-red-100 hover:bg-red-200 focus-visible:bg-red-200 text-red-800'
                           : notification.type === 'warning'
-                            ? 'bg-orange-100 hover:bg-orange-200 text-orange-800'
+                            ? 'bg-orange-100 hover:bg-orange-200 focus-visible:bg-orange-200 text-orange-800'
                             : notification.type === 'success'
-                              ? 'bg-green-100 hover:bg-green-200 text-green-800'
-                              : 'bg-blue-100 hover:bg-blue-200 text-blue-800'
+                              ? 'bg-green-100 hover:bg-green-200 focus-visible:bg-green-200 text-green-800'
+                              : 'bg-blue-100 hover:bg-blue-200 focus-visible:bg-blue-200 text-blue-800'
                       }
                     `}
                   >
@@ -138,10 +138,10 @@ const NotificationItem: React.FC<NotificationProps> = ({ notification, onDismiss
           {/* Dismiss button */}
           <button
             onClick={handleDismiss}
-            className="flex-shrink-0 ml-2 p-1 rounded-full hover:bg-black/5 transition-colors duration-200"
+            className="flex-shrink-0 ml-2 p-1 rounded-full hover:bg-black focus-visible:bg-black/5 transition-colors duration-200"
             aria-label="Dismiss notification"
           >
-            <svg className="w-4 h-4 opacity-60 hover:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 opacity-60 hover:opacity-100 focus-visible:opacity-100" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>

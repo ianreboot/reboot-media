@@ -15,7 +15,7 @@ const LazyPricingCards: React.FC = () => {
           <p className="replace-text-gray-600">Unable to load pricing information</p>
           <button 
             onClick={() => window.location.reload()} 
-            className="mt-2 text-blue-accessible hover:text-blue-700 font-medium"
+            className="mt-2 text-blue-accessible hover:text-blue-700 focus-visible:text-blue-700 font-medium"
           >
             Refresh to try again
           </button>

@@ -12,6 +12,16 @@ const Terms = () => {
 
   return (
     <div className="terms-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       {/* Sophisticated Background Gradient */}
       <BackgroundGradient />
       
@@ -292,7 +302,7 @@ const Terms = () => {
                   <p className="font-medium text-important-accessible dark:text-white">Reboot Media, Inc.</p>
                   <p className="text-optional dark:replace-text-gray-400">17595 Harvard Ave C-738</p>
                   <p className="text-optional dark:replace-text-gray-400">Irvine, CA 92614, USA</p>
-                  <p className="text-standard dark:replace-text-gray-300">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-accessible underline">Submit inquiry</a></p>
+                  <p className="text-standard dark:replace-text-gray-300">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-accessible focus-visible:text-orange-accessible underline">Submit inquiry</a></p>
                 </div>
               </section>
 

@@ -88,7 +88,7 @@ const MarketingPsychology = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Get Free Psychology Audit"
                 },
                 void 0,
@@ -104,7 +104,7 @@ const MarketingPsychology = () => {
                 "a",
                 {
                   href: "#awareness-stages",
-                  className: "border-2 border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300",
+                  className: "border-2 border-orange-500 text-orange-500 hover:bg-orange-500 focus-visible:bg-orange-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300",
                   children: "Learn the Framework"
                 },
                 void 0,
@@ -180,7 +180,7 @@ const MarketingPsychology = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "text-orange-accessible dark:text-orange-400 font-semibold hover:underline",
+                  className: "text-orange-accessible dark:text-orange-400 font-semibold hover:underline focus-visible:underline",
                   children: "Get your free marketing psychology audit →"
                 },
                 void 0,
@@ -214,7 +214,7 @@ const MarketingPsychology = () => {
               columnNumber: 13
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "space-y-12", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-start gap-4 mb-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-red-100 dark:bg-red-900/30 rounded-full p-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-red-600 font-bold text-lg", children: "1" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/MarketingPsychology.tsx",
@@ -260,7 +260,7 @@ const MarketingPsychology = () => {
                   "a",
                   {
                     href: `${"/reboot"}/marketing-psychology/unaware-stage-customers`,
-                    className: "inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors",
+                    className: "inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 transition-colors",
                     children: "See real customer examples and what actually works →"
                   },
                   void 0,
@@ -281,7 +281,7 @@ const MarketingPsychology = () => {
                 lineNumber: 107,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-start gap-4 mb-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-orange-100 dark:bg-orange-900/30 rounded-full p-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-orange-accessible font-bold text-lg", children: "2" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/MarketingPsychology.tsx",
@@ -343,7 +343,7 @@ const MarketingPsychology = () => {
                   "a",
                   {
                     href: `${"/reboot"}/marketing-psychology/problem-aware-stage-customers`,
-                    className: "inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors",
+                    className: "inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 transition-colors",
                     children: "See real customer examples and what actually works →"
                   },
                   void 0,
@@ -364,7 +364,7 @@ const MarketingPsychology = () => {
                 lineNumber: 137,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-start gap-4 mb-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-yellow-100 dark:bg-yellow-900/30 rounded-full p-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-yellow-600 font-bold text-lg", children: "3" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/MarketingPsychology.tsx",
@@ -426,7 +426,7 @@ const MarketingPsychology = () => {
                   "a",
                   {
                     href: `${"/reboot"}/marketing-psychology/solution-aware-stage-customers`,
-                    className: "inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors",
+                    className: "inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 transition-colors",
                     children: "See real customer examples and what actually works →"
                   },
                   void 0,
@@ -447,7 +447,7 @@ const MarketingPsychology = () => {
                 lineNumber: 170,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-start gap-4 mb-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-green-100 dark:bg-green-900/30 rounded-full p-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-green-600 font-bold text-lg", children: "4" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/MarketingPsychology.tsx",
@@ -509,7 +509,7 @@ const MarketingPsychology = () => {
                   "a",
                   {
                     href: `${"/reboot"}/marketing-psychology/product-aware-stage-customers`,
-                    className: "inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors",
+                    className: "inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 transition-colors",
                     children: "See real customer examples and what actually works →"
                   },
                   void 0,
@@ -530,7 +530,7 @@ const MarketingPsychology = () => {
                 lineNumber: 204,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-start gap-4 mb-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-blue-100 dark:bg-blue-900/30 rounded-full p-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-blue-accessible font-bold text-lg", children: "5" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/MarketingPsychology.tsx",
@@ -592,7 +592,7 @@ const MarketingPsychology = () => {
                   "a",
                   {
                     href: `${"/reboot"}/marketing-psychology/most-aware-stage-customers`,
-                    className: "inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 dark:hover:text-orange-300 transition-colors",
+                    className: "inline-flex items-center text-orange-accessible dark:text-orange-400 font-semibold hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 transition-colors",
                     children: "See real customer examples and what actually works →"
                   },
                   void 0,
@@ -813,7 +813,7 @@ const MarketingPsychology = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg",
+                  className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg",
                   children: "Get Your Free Marketing Psychology Audit"
                 },
                 void 0,
@@ -1005,8 +1005,8 @@ const MarketingPsychology = () => {
               columnNumber: 13
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-xl font-semibold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-orange-accessible transition-colors", children: "Stuck in a Growth Plateau? →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-xl font-semibold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors", children: "Stuck in a Growth Plateau? →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/MarketingPsychology.tsx",
                   lineNumber: 403,
                   columnNumber: 19
@@ -1025,8 +1025,8 @@ const MarketingPsychology = () => {
                 lineNumber: 401,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-xl font-semibold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-orange-accessible transition-colors", children: "Fractional CMO vs Agency →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-xl font-semibold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors", children: "Fractional CMO vs Agency →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/MarketingPsychology.tsx",
                   lineNumber: 413,
                   columnNumber: 19
@@ -1070,7 +1070,7 @@ const MarketingPsychology = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-xl",
+                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                 children: "Get Your Free Marketing Psychology Audit →"
               },
               void 0,
@@ -1199,7 +1199,7 @@ const UnawareStageCustomers = () => {
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "bg-white/5 backdrop-blur-sm border-b border-white/10", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "max-w-4xl mx-auto px-6 lg:px-8 py-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-sm", children: [
-          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "replace-text-gray-400 hover:text-orange-400 transition-colors", children: "Marketing Psychology" }, void 0, false, {
+          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "replace-text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors", children: "Marketing Psychology" }, void 0, false, {
             fileName: "/home/ian/projects/reboot/src/pages/UnawareStageCustomers.tsx",
             lineNumber: 54,
             columnNumber: 17
@@ -1810,7 +1810,7 @@ const UnawareStageCustomers = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-xl",
+                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                 children: "Get Your Free Marketing Psychology Analysis →"
               },
               void 0,
@@ -1837,7 +1837,7 @@ const UnawareStageCustomers = () => {
               "a",
               {
                 href: `${"/reboot"}/marketing-psychology`,
-                className: "replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible dark:hover:text-orange-400 transition-colors",
+                className: "replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible focus-visible:text-orange-accessible dark:hover:text-orange-400 focus-visible:text-orange-400 transition-colors",
                 children: "← Back to Marketing Psychology Overview"
               },
               void 0,
@@ -1853,7 +1853,7 @@ const UnawareStageCustomers = () => {
               "a",
               {
                 href: `${"/reboot"}/marketing-psychology/problem-aware-stage-customers`,
-                className: "text-orange-accessible dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors",
+                className: "text-orange-accessible dark:text-orange-400 hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 font-semibold transition-colors",
                 children: "Next: Problem-Aware Stage Customers →"
               },
               void 0,
@@ -1977,7 +1977,7 @@ const ProblemAwareStageCustomers = () => {
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "bg-white/5 backdrop-blur-sm border-b border-white/10", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "max-w-4xl mx-auto px-6 lg:px-8 py-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-sm", children: [
-          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "replace-text-gray-400 hover:text-orange-400 transition-colors", children: "Marketing Psychology" }, void 0, false, {
+          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "replace-text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors", children: "Marketing Psychology" }, void 0, false, {
             fileName: "/home/ian/projects/reboot/src/pages/ProblemAwareStageCustomers.tsx",
             lineNumber: 54,
             columnNumber: 17
@@ -2669,7 +2669,7 @@ const ProblemAwareStageCustomers = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-xl",
+                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                 children: "Get Your Free Marketing Diagnosis →"
               },
               void 0,
@@ -2696,7 +2696,7 @@ const ProblemAwareStageCustomers = () => {
               "a",
               {
                 href: `${"/reboot"}/marketing-psychology/unaware-stage-customers`,
-                className: "replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible dark:hover:text-orange-400 transition-colors",
+                className: "replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible focus-visible:text-orange-accessible dark:hover:text-orange-400 focus-visible:text-orange-400 transition-colors",
                 children: "← Previous: Unaware Stage Customers"
               },
               void 0,
@@ -2712,7 +2712,7 @@ const ProblemAwareStageCustomers = () => {
               "a",
               {
                 href: `${"/reboot"}/marketing-psychology/solution-aware-stage-customers`,
-                className: "text-orange-accessible dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors",
+                className: "text-orange-accessible dark:text-orange-400 hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 font-semibold transition-colors",
                 children: "Next: Solution-Aware Stage Customers →"
               },
               void 0,
@@ -2836,7 +2836,7 @@ const SolutionAwareStageCustomers = () => {
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "bg-white/5 backdrop-blur-sm border-b border-white/10", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "max-w-4xl mx-auto px-6 lg:px-8 py-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-sm", children: [
-          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "replace-text-gray-400 hover:text-orange-400 transition-colors", children: "Marketing Psychology" }, void 0, false, {
+          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "replace-text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors", children: "Marketing Psychology" }, void 0, false, {
             fileName: "/home/ian/projects/reboot/src/pages/SolutionAwareStageCustomers.tsx",
             lineNumber: 54,
             columnNumber: 17
@@ -3447,7 +3447,7 @@ const SolutionAwareStageCustomers = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-xl",
+                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                 children: "Get Your Differentiation Strategy →"
               },
               void 0,
@@ -3474,7 +3474,7 @@ const SolutionAwareStageCustomers = () => {
               "a",
               {
                 href: `${"/reboot"}/marketing-psychology/problem-aware-stage-customers`,
-                className: "replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible dark:hover:text-orange-400 transition-colors",
+                className: "replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible focus-visible:text-orange-accessible dark:hover:text-orange-400 focus-visible:text-orange-400 transition-colors",
                 children: "← Previous: Problem-Aware Stage"
               },
               void 0,
@@ -3490,7 +3490,7 @@ const SolutionAwareStageCustomers = () => {
               "a",
               {
                 href: `${"/reboot"}/marketing-psychology/product-aware-stage-customers`,
-                className: "text-orange-accessible dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors",
+                className: "text-orange-accessible dark:text-orange-400 hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 font-semibold transition-colors",
                 children: "Next: Product-Aware Stage →"
               },
               void 0,
@@ -3614,7 +3614,7 @@ const ProductAwareStageCustomers = () => {
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "bg-white/5 backdrop-blur-sm border-b border-white/10", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "max-w-4xl mx-auto px-6 lg:px-8 py-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-sm", children: [
-          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "replace-text-gray-400 hover:text-orange-400 transition-colors", children: "Marketing Psychology" }, void 0, false, {
+          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "replace-text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors", children: "Marketing Psychology" }, void 0, false, {
             fileName: "/home/ian/projects/reboot/src/pages/ProductAwareStageCustomers.tsx",
             lineNumber: 54,
             columnNumber: 17
@@ -4076,7 +4076,7 @@ const ProductAwareStageCustomers = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-xl",
+                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                 children: "Get Your Objection-Handling Playbook →"
               },
               void 0,
@@ -4103,7 +4103,7 @@ const ProductAwareStageCustomers = () => {
               "a",
               {
                 href: `${"/reboot"}/marketing-psychology/solution-aware-stage-customers`,
-                className: "replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible dark:hover:text-orange-400 transition-colors",
+                className: "replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible focus-visible:text-orange-accessible dark:hover:text-orange-400 focus-visible:text-orange-400 transition-colors",
                 children: "← Previous: Solution-Aware Stage"
               },
               void 0,
@@ -4119,7 +4119,7 @@ const ProductAwareStageCustomers = () => {
               "a",
               {
                 href: `${"/reboot"}/marketing-psychology/most-aware-stage-customers`,
-                className: "text-orange-accessible dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors",
+                className: "text-orange-accessible dark:text-orange-400 hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 font-semibold transition-colors",
                 children: "Next: Most Aware Stage →"
               },
               void 0,
@@ -4243,7 +4243,7 @@ const MostAwareStageCustomers = () => {
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "bg-white/5 backdrop-blur-sm border-b border-white/10", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "max-w-4xl mx-auto px-6 lg:px-8 py-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-sm", children: [
-          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "replace-text-gray-400 hover:text-orange-400 transition-colors", children: "Marketing Psychology" }, void 0, false, {
+          /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "replace-text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors", children: "Marketing Psychology" }, void 0, false, {
             fileName: "/home/ian/projects/reboot/src/pages/MostAwareStageCustomers.tsx",
             lineNumber: 54,
             columnNumber: 17
@@ -4694,7 +4694,7 @@ const MostAwareStageCustomers = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-xl",
+                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                 children: "Get Your Closing Psychology Guide →"
               },
               void 0,
@@ -4721,7 +4721,7 @@ const MostAwareStageCustomers = () => {
               "a",
               {
                 href: `${"/reboot"}/marketing-psychology/product-aware-stage-customers`,
-                className: "replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible dark:hover:text-orange-400 transition-colors",
+                className: "replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible focus-visible:text-orange-accessible dark:hover:text-orange-400 focus-visible:text-orange-400 transition-colors",
                 children: "← Previous: Product-Aware Stage"
               },
               void 0,
@@ -4737,7 +4737,7 @@ const MostAwareStageCustomers = () => {
               "a",
               {
                 href: `${"/reboot"}/marketing-psychology`,
-                className: "text-orange-accessible dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors",
+                className: "text-orange-accessible dark:text-orange-400 hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 font-semibold transition-colors",
                 children: "Back to Marketing Psychology Overview →"
               },
               void 0,

@@ -188,7 +188,7 @@ const GrowthPlateauSolutions = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl",
+                  className: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl",
                   children: "Break Through Your Plateau"
                 },
                 void 0,
@@ -204,7 +204,7 @@ const GrowthPlateauSolutions = () => {
                 "a",
                 {
                   href: "#plateau-types",
-                  className: "border-2 border-red-500 text-red-400 hover:bg-red-500 hover:text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300",
+                  className: "border-2 border-red-500 text-red-400 hover:bg-red-500 focus-visible:bg-red-500 hover:text-white focus-visible:text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300",
                   children: "Diagnose Your Plateau"
                 },
                 void 0,
@@ -322,7 +322,7 @@ const GrowthPlateauSolutions = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "text-red-600 dark:text-red-400 font-bold hover:underline text-lg",
+                  className: "text-red-600 dark:text-red-400 font-bold hover:underline focus-visible:underline text-lg",
                   children: "Get your plateau breakthrough analysis →"
                 },
                 void 0,
@@ -359,7 +359,7 @@ const GrowthPlateauSolutions = () => {
               "a",
               {
                 href: `${"/reboot"}${plateau.link}`,
-                className: "block bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:bg-white dark:hover:bg-slate-700/80",
+                className: "block bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-8 transition-all duration-300 hover:shadow-2xl focus-visible:shadow-2xl hover:scale-105 focus-visible:scale-105 hover:bg-white focus-visible:bg-white dark:hover:bg-slate-700 focus-visible:bg-slate-700/80",
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center mb-6", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-4xl mb-4", children: plateau.icon }, void 0, false, {
@@ -367,7 +367,7 @@ const GrowthPlateauSolutions = () => {
                       lineNumber: 232,
                       columnNumber: 23
                     }, void 0),
-                    /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-md text-important dark:text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-red-500 group-hover:to-orange-500 transition-all duration-300", children: plateau.title }, void 0, false, {
+                    /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-md text-important dark:text-white mb-3 group-hover:text-transparent group-focus-visible:text-transparent focus-visible:text-transparent group-hover:bg-gradient-to-r group-focus-visible:bg-gradient-to-r focus-visible:bg-gradient-to-r group-hover:bg-clip-text group-focus-visible:bg-clip-text focus-visible:bg-clip-text group-hover:from-red-500 group-focus-visible:from-red-500 focus-visible:from-red-500 group-hover:to-orange-500 group-focus-visible:to-orange-500 focus-visible:to-orange-500 transition-all duration-300", children: plateau.title }, void 0, false, {
                       fileName: "/home/ian/projects/reboot/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 233,
                       columnNumber: 23
@@ -382,7 +382,7 @@ const GrowthPlateauSolutions = () => {
                     lineNumber: 237,
                     columnNumber: 21
                   }, void 0),
-                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-center text-red-600 dark:text-red-400 font-semibold group-hover:text-red-700 dark:group-hover:text-red-300 transition-colors", children: "Discover Your Breakthrough →" }, void 0, false, {
+                  /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-center text-red-600 dark:text-red-400 font-semibold group-hover:text-red-700 group-focus-visible:text-red-700 focus-visible:text-red-700 dark:group-hover:text-red-300 group-focus-visible:text-red-300 focus-visible:text-red-300 transition-colors", children: "Discover Your Breakthrough →" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 240,
                     columnNumber: 21
@@ -536,8 +536,8 @@ const GrowthPlateauSolutions = () => {
               columnNumber: 13
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-8", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white mb-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-red-600 transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white mb-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-red-600 focus-visible:text-red-600 transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 293,
                   columnNumber: 19
@@ -555,7 +555,7 @@ const GrowthPlateauSolutions = () => {
                   "a",
                   {
                     href: `${"/reboot"}/marketing-psychology`,
-                    className: "flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 dark:hover:text-red-300 transition-colors",
+                    className: "flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 focus-visible:text-red-700 dark:hover:text-red-300 focus-visible:text-red-300 transition-colors",
                     children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "📚" }, void 0, false, {
                         fileName: "/home/ian/projects/reboot/src/pages/GrowthPlateauSolutions.tsx",
@@ -579,8 +579,8 @@ const GrowthPlateauSolutions = () => {
                 lineNumber: 291,
                 columnNumber: 15
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white mb-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-red-600 transition-colors", children: "Need Strategic Marketing Leadership? →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white mb-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-red-600 focus-visible:text-red-600 transition-colors", children: "Need Strategic Marketing Leadership? →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 311,
                   columnNumber: 19
@@ -598,7 +598,7 @@ const GrowthPlateauSolutions = () => {
                   "a",
                   {
                     href: `${"/reboot"}/fractional-cmo-guide/vs-marketing-agency`,
-                    className: "flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 dark:hover:text-red-300 transition-colors group",
+                    className: "flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 focus-visible:text-red-700 dark:hover:text-red-300 focus-visible:text-red-300 transition-colors group",
                     children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🎯" }, void 0, false, {
                         fileName: "/home/ian/projects/reboot/src/pages/GrowthPlateauSolutions.tsx",
@@ -606,7 +606,7 @@ const GrowthPlateauSolutions = () => {
                         columnNumber: 19
                       }, void 0),
                       "Get Your CMO vs Agency Answer",
-                      /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "ml-1 transform transition-transform group-hover:translate-x-1", children: "→" }, void 0, false, {
+                      /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "ml-1 transform transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1 focus-visible:translate-x-1", children: "→" }, void 0, false, {
                         fileName: "/home/ian/projects/reboot/src/pages/GrowthPlateauSolutions.tsx",
                         lineNumber: 324,
                         columnNumber: 19
@@ -652,7 +652,7 @@ const GrowthPlateauSolutions = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-12 py-6 rounded-xl font-bold text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl",
+                className: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-12 py-6 rounded-xl font-bold text-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl",
                 children: "Get Your Free Plateau Breakthrough Analysis →"
               },
               void 0,
@@ -823,7 +823,7 @@ const RevenueCeilingBreakthrough = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 replace-text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-red-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-red-400 focus-visible:text-red-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 114,
                 columnNumber: 19
@@ -893,7 +893,7 @@ const RevenueCeilingBreakthrough = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Break Through Your Revenue Ceiling"
                 },
                 void 0,
@@ -1238,7 +1238,7 @@ const RevenueCeilingBreakthrough = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free Revenue Ceiling Analysis"
               },
               void 0,
@@ -1254,7 +1254,7 @@ const RevenueCeilingBreakthrough = () => {
               "a",
               {
                 href: `${"/reboot"}/growth-plateau-solutions`,
-                className: "border-2 border-red-500 text-red-600 hover:bg-red-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
+                className: "border-2 border-red-500 text-red-600 hover:bg-red-500 focus-visible:bg-red-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
                 children: "See All Plateau Types"
               },
               void 0,
@@ -1282,8 +1282,8 @@ const RevenueCeilingBreakthrough = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, className: "hover:text-red-600 transition-colors", children: "Customer Acquisition Stall →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, className: "hover:text-red-600 focus-visible:text-red-600 transition-colors", children: "Customer Acquisition Stall →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 302,
                   columnNumber: 21
@@ -1302,8 +1302,8 @@ const RevenueCeilingBreakthrough = () => {
                 lineNumber: 300,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-red-600 transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-red-600 focus-visible:text-red-600 transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 312,
                   columnNumber: 21
@@ -1501,7 +1501,7 @@ const CustomerAcquisitionStall = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 replace-text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-orange-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-orange-400 focus-visible:text-orange-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 138,
                 columnNumber: 19
@@ -1571,7 +1571,7 @@ const CustomerAcquisitionStall = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Fix Your CAC Inflation"
                 },
                 void 0,
@@ -1916,7 +1916,7 @@ const CustomerAcquisitionStall = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free CAC Analysis"
               },
               void 0,
@@ -1932,7 +1932,7 @@ const CustomerAcquisitionStall = () => {
               "a",
               {
                 href: `${"/reboot"}/growth-plateau-solutions`,
-                className: "border-2 border-orange-500 text-orange-accessible hover:bg-orange-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
+                className: "border-2 border-orange-500 text-orange-accessible hover:bg-orange-500 focus-visible:bg-orange-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
                 children: "See All Plateau Types"
               },
               void 0,
@@ -1960,8 +1960,8 @@ const CustomerAcquisitionStall = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/revenue-ceiling-breakthrough`, className: "hover:text-orange-accessible transition-colors", children: "Revenue Ceiling Breakthrough →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/revenue-ceiling-breakthrough`, className: "hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors", children: "Revenue Ceiling Breakthrough →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 326,
                   columnNumber: 21
@@ -1980,8 +1980,8 @@ const CustomerAcquisitionStall = () => {
                 lineNumber: 324,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-orange-accessible transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 336,
                   columnNumber: 21
@@ -2179,7 +2179,7 @@ const MarketExpansionBarriers = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 replace-text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-yellow-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-yellow-400 focus-visible:text-yellow-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 138,
                 columnNumber: 19
@@ -2249,7 +2249,7 @@ const MarketExpansionBarriers = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 focus-visible:from-yellow-600 hover:to-yellow-700 focus-visible:to-yellow-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Break Market Barriers"
                 },
                 void 0,
@@ -2594,7 +2594,7 @@ const MarketExpansionBarriers = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 hover:to-yellow-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-yellow-500 to-yellow-600 hover:from-yellow-600 focus-visible:from-yellow-600 hover:to-yellow-700 focus-visible:to-yellow-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free Market Expansion Analysis"
               },
               void 0,
@@ -2610,7 +2610,7 @@ const MarketExpansionBarriers = () => {
               "a",
               {
                 href: `${"/reboot"}/growth-plateau-solutions`,
-                className: "border-2 border-yellow-500 text-yellow-600 hover:bg-yellow-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
+                className: "border-2 border-yellow-500 text-yellow-600 hover:bg-yellow-500 focus-visible:bg-yellow-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
                 children: "See All Plateau Types"
               },
               void 0,
@@ -2638,8 +2638,8 @@ const MarketExpansionBarriers = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, className: "hover:text-yellow-600 transition-colors", children: "Customer Acquisition Stall →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, className: "hover:text-yellow-600 focus-visible:text-yellow-600 transition-colors", children: "Customer Acquisition Stall →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 326,
                   columnNumber: 21
@@ -2658,8 +2658,8 @@ const MarketExpansionBarriers = () => {
                 lineNumber: 324,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-yellow-600 transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-yellow-600 focus-visible:text-yellow-600 transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 336,
                   columnNumber: 21
@@ -2857,7 +2857,7 @@ const OperationalScalingCrisis = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 replace-text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-green-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-green-400 focus-visible:text-green-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 138,
                 columnNumber: 19
@@ -2927,7 +2927,7 @@ const OperationalScalingCrisis = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 focus-visible:from-green-600 hover:to-green-700 focus-visible:to-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Fix Your Scaling Crisis"
                 },
                 void 0,
@@ -3272,7 +3272,7 @@ const OperationalScalingCrisis = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 focus-visible:from-green-600 hover:to-green-700 focus-visible:to-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free Scaling Crisis Analysis"
               },
               void 0,
@@ -3288,7 +3288,7 @@ const OperationalScalingCrisis = () => {
               "a",
               {
                 href: `${"/reboot"}/growth-plateau-solutions`,
-                className: "border-2 border-green-500 text-green-600 hover:bg-green-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
+                className: "border-2 border-green-500 text-green-600 hover:bg-green-500 focus-visible:bg-green-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
                 children: "See All Plateau Types"
               },
               void 0,
@@ -3316,8 +3316,8 @@ const OperationalScalingCrisis = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/team-growth-bottlenecks`, className: "hover:text-green-600 transition-colors", children: "Team Growth Bottlenecks →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/team-growth-bottlenecks`, className: "hover:text-green-600 focus-visible:text-green-600 transition-colors", children: "Team Growth Bottlenecks →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 326,
                   columnNumber: 21
@@ -3336,8 +3336,8 @@ const OperationalScalingCrisis = () => {
                 lineNumber: 324,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-green-600 transition-colors", children: "Need Strategic Marketing Leadership? →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-green-600 focus-visible:text-green-600 transition-colors", children: "Need Strategic Marketing Leadership? →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 336,
                   columnNumber: 21
@@ -3535,7 +3535,7 @@ const TeamGrowthBottlenecks = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 replace-text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-blue-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-blue-400 focus-visible:text-blue-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 138,
                 columnNumber: 19
@@ -3605,7 +3605,7 @@ const TeamGrowthBottlenecks = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Fix Your Team Bottlenecks"
                 },
                 void 0,
@@ -3950,7 +3950,7 @@ const TeamGrowthBottlenecks = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free Team Bottleneck Analysis"
               },
               void 0,
@@ -3966,7 +3966,7 @@ const TeamGrowthBottlenecks = () => {
               "a",
               {
                 href: `${"/reboot"}/growth-plateau-solutions`,
-                className: "border-2 border-blue-500 text-blue-accessible hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
+                className: "border-2 border-blue-500 text-blue-accessible hover:bg-blue-500 focus-visible:bg-blue-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
                 children: "See All Plateau Types"
               },
               void 0,
@@ -3994,8 +3994,8 @@ const TeamGrowthBottlenecks = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/operational-scaling-crisis`, className: "hover:text-blue-accessible transition-colors", children: "Operational Scaling Crisis →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/operational-scaling-crisis`, className: "hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors", children: "Operational Scaling Crisis →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 326,
                   columnNumber: 21
@@ -4014,8 +4014,8 @@ const TeamGrowthBottlenecks = () => {
                 lineNumber: 324,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-blue-accessible transition-colors", children: "Need Strategic Marketing Leadership? →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors", children: "Need Strategic Marketing Leadership? →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 336,
                   columnNumber: 21
@@ -4201,7 +4201,7 @@ const ProductMarketFitErosion = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 replace-text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-purple-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-purple-400 focus-visible:text-purple-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 126,
                 columnNumber: 19
@@ -4271,7 +4271,7 @@ const ProductMarketFitErosion = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Restore Your Market Fit"
                 },
                 void 0,
@@ -4616,7 +4616,7 @@ const ProductMarketFitErosion = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free PMF Restoration Analysis"
               },
               void 0,
@@ -4632,7 +4632,7 @@ const ProductMarketFitErosion = () => {
               "a",
               {
                 href: `${"/reboot"}/growth-plateau-solutions`,
-                className: "border-2 border-purple-500 text-purple-600 hover:bg-purple-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
+                className: "border-2 border-purple-500 text-purple-600 hover:bg-purple-500 focus-visible:bg-purple-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
                 children: "See All Plateau Types"
               },
               void 0,
@@ -4660,8 +4660,8 @@ const ProductMarketFitErosion = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/market-expansion-barriers`, className: "hover:text-purple-600 transition-colors", children: "Market Expansion Barriers →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/market-expansion-barriers`, className: "hover:text-purple-600 focus-visible:text-purple-600 transition-colors", children: "Market Expansion Barriers →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 314,
                   columnNumber: 21
@@ -4680,8 +4680,8 @@ const ProductMarketFitErosion = () => {
                 lineNumber: 312,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-purple-600 transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-purple-600 focus-visible:text-purple-600 transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 324,
                   columnNumber: 21
@@ -4867,7 +4867,7 @@ const CompetitivePressurePlateau = () => {
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 replace-text-gray-300", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-red-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-red-400 focus-visible:text-red-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 126,
                 columnNumber: 19
@@ -4937,7 +4937,7 @@ const CompetitivePressurePlateau = () => {
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl",
+                  className: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl",
                   children: "Beat Bigger Competitors"
                 },
                 void 0,
@@ -5271,7 +5271,7 @@ const CompetitivePressurePlateau = () => {
               "button",
               {
                 onClick: () => setShowDropdownForm(true),
-                className: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg mr-4",
+                className: "bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4",
                 children: "Get Free Competitive Analysis"
               },
               void 0,
@@ -5287,7 +5287,7 @@ const CompetitivePressurePlateau = () => {
               "a",
               {
                 href: `${"/reboot"}/growth-plateau-solutions`,
-                className: "border-2 border-red-500 text-red-600 hover:bg-red-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
+                className: "border-2 border-red-500 text-red-600 hover:bg-red-500 focus-visible:bg-red-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block",
                 children: "See All Plateau Types"
               },
               void 0,
@@ -5315,8 +5315,8 @@ const CompetitivePressurePlateau = () => {
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, className: "hover:text-red-600 transition-colors", children: "Customer Acquisition Stall →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, className: "hover:text-red-600 focus-visible:text-red-600 transition-colors", children: "Customer Acquisition Stall →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 313,
                   columnNumber: 21
@@ -5335,8 +5335,8 @@ const CompetitivePressurePlateau = () => {
                 lineNumber: 311,
                 columnNumber: 17
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-red-600 transition-colors", children: "Need Strategic Marketing Leadership? →" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-red-600 focus-visible:text-red-600 transition-colors", children: "Need Strategic Marketing Leadership? →" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 323,
                   columnNumber: 21

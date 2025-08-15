@@ -21,6 +21,16 @@ const ProblemAwareStageCustomers = () => {
 
   return (
     <>
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       <SEOHead 
         title="Problem-Aware Stage Customers: When They Know Something's Wrong But Not What | Reboot Media"
         description="Real examples of problem-aware customers who know they're struggling but can't pinpoint the solution. Learn their exact pain points and how to guide them to clarity."
@@ -51,7 +61,7 @@ const ProblemAwareStageCustomers = () => {
           <section className="bg-white/5 backdrop-blur-sm border-b border-white/10">
             <div className="max-w-4xl mx-auto px-6 lg:px-8 py-4">
               <nav className="flex items-center space-x-2 text-sm">
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="replace-text-gray-400 hover:text-orange-400 transition-colors">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="replace-text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors">
                   Marketing Psychology
                 </a>
                 <span className="replace-text-gray-600">→</span>
@@ -61,7 +71,11 @@ const ProblemAwareStageCustomers = () => {
           </section>
 
           {/* Main Content */}
-          <main className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
+          <main 
+          id="main-content" 
+          role="main"
+          aria-label="Main content"
+          className="max-w-4xl mx-auto px-6 lg:px-8 py-16">
             
             {/* Introduction */}
             <section className="mb-12">
@@ -291,9 +305,9 @@ const ProblemAwareStageCustomers = () => {
               <p className="replace-text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
                 Stop guessing what's broken. Get a professional diagnosis that shows you exactly why your marketing isn't converting and the specific steps to fix it—permanently.
               </p>
-              <button 
+              <button aria-label="Opens contact form for free marketing analysis" 
                 onClick={() => setShowDropdownForm(true)}
-                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
               >
                 Get Your Free Marketing Diagnosis →
               </button>
@@ -307,13 +321,13 @@ const ProblemAwareStageCustomers = () => {
               <div className="flex justify-between items-center">
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/unaware-stage-customers`}
-                  className="replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible dark:hover:text-orange-400 transition-colors"
+                  className="replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible focus-visible:text-orange-accessible dark:hover:text-orange-400 focus-visible:text-orange-400 transition-colors"
                 >
                   ← Previous: Unaware Stage Customers
                 </a>
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/solution-aware-stage-customers`}
-                  className="text-orange-accessible dark:text-orange-400 hover:text-orange-700 dark:hover:text-orange-300 font-semibold transition-colors"
+                  className="text-orange-accessible dark:text-orange-400 hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 font-semibold transition-colors"
                 >
                   Next: Solution-Aware Stage Customers →
                 </a>

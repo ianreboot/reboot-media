@@ -110,20 +110,20 @@ export const LazyLoadErrorFallback: React.FC<{ error?: Error; retry?: () => void
         {retry && (
           <button
             onClick={retry}
-            className="w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
+            className="w-full bg-blue-600 hover:bg-blue-700 focus-visible:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
           >
             Try Again
           </button>
         )}
         <button
           onClick={() => window.location.reload()}
-          className="w-full bg-gray-200 hover:bg-gray-300 replace-text-gray-700 px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
+          className="w-full bg-gray-200 hover:bg-gray-300 focus-visible:bg-gray-300 replace-text-gray-700 px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
         >
           Refresh Page
         </button>
         <button
           onClick={() => window.history.back()}
-          className="text-blue-accessible hover:text-blue-700 text-sm font-medium"
+          className="text-blue-accessible hover:text-blue-700 focus-visible:text-blue-700 text-sm font-medium"
         >
           ← Go Back
         </button>

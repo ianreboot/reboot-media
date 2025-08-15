@@ -266,7 +266,7 @@ const EnhancedLeadForm = () => {
                 teamSize: '', currentMarketing: ''
               });
             }}
-            className="w-10 h-10 rounded-full bg-white/90 hover:bg-white shadow-lg flex items-center justify-center transition-all"
+            className="w-10 h-10 rounded-full bg-white/90 hover:bg-white focus-visible:bg-white shadow-lg flex items-center justify-center transition-all"
           >
             <svg className="w-6 h-6 replace-text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
@@ -304,7 +304,7 @@ const EnhancedLeadForm = () => {
                   { key: 'competition', label: 'Losing to competition', desc: 'Competitors growing while you\'re stuck' },
                   { key: 'clarity', label: 'No clear strategy', desc: 'Trying everything but nothing sticks' }
                 ].map((option) => (
-                  <label key={option.key} className="flex items-start text-left p-4 bg-gray-50 rounded-xl hover:bg-gray-100 cursor-pointer transition-colors">
+                  <label key={option.key} className="flex items-start text-left p-4 bg-gray-50 rounded-xl hover:bg-gray-100 focus-visible:bg-gray-100 cursor-pointer transition-colors">
                     <input 
                       type="checkbox" 
                       className="mt-1 mr-3 w-5 h-5"
@@ -330,7 +330,7 @@ const EnhancedLeadForm = () => {
                   handleStepChange(2);
                   trackClick('pain_acknowledgment');
                 }}
-                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
               >
                 {ctaText || 'Yes, I Need Help With This'} →
               </button>
@@ -346,7 +346,7 @@ const EnhancedLeadForm = () => {
             <div>
               <button 
                 onClick={() => handleStepChange(1)}
-                className="replace-text-gray-500 hover:replace-text-gray-700 mb-4 flex items-center transition-colors"
+                className="replace-text-gray-500 hover:replace-text-gray-700 focus-visible:replace-text-gray-700 mb-4 flex items-center transition-colors"
               >
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
@@ -442,9 +442,9 @@ const EnhancedLeadForm = () => {
                     }
                   }}
                   disabled={!formData.revenue}
-                  className={`w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl ${
+                  className={`w-full py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl ${
                     formData.revenue 
-                      ? 'bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white' 
+                      ? 'bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white' 
                       : 'bg-gray-300 replace-text-gray-500 cursor-not-allowed'
                   }`}
                 >
@@ -459,7 +459,7 @@ const EnhancedLeadForm = () => {
             <div>
               <button 
                 onClick={() => handleStepChange(2)}
-                className="replace-text-gray-500 hover:replace-text-gray-700 mb-4 flex items-center transition-colors"
+                className="replace-text-gray-500 hover:replace-text-gray-700 focus-visible:replace-text-gray-700 mb-4 flex items-center transition-colors"
               >
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
@@ -692,7 +692,7 @@ const EnhancedLeadForm = () => {
                                 className={`px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${
                                   formData.timeline === option.value 
                                     ? 'border-orange-500 bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized text-orange-700 dark:text-orange-300' 
-                                    : 'border-gray-200 hover:border-gray-300'
+                                    : 'border-gray-200 hover:border-gray-300 focus-visible:border-gray-300'
                                 }`}
                               >
                                 {option.label}
@@ -822,7 +822,7 @@ const EnhancedLeadForm = () => {
                               className={`px-3 py-2 rounded-lg border-2 text-xs font-medium transition-all duration-300 ${
                                 formData.timeline === option.value 
                                   ? 'border-orange-500 bg-white/60 dark:bg-slate-700/60 backdrop-blur-fallback-sm transparency-normalized text-orange-700 dark:text-orange-300' 
-                                  : 'border-gray-200 hover:border-gray-300'
+                                  : 'border-gray-200 hover:border-gray-300 focus-visible:border-gray-300'
                               }`}
                             >
                               {option.label}
@@ -904,8 +904,8 @@ const EnhancedLeadForm = () => {
                       isSubmitting 
                         ? 'bg-gray-400 cursor-not-allowed' 
                         : leadScorePrediction >= 80
-                        ? 'bg-gradient-to-r from-red-500 via-orange-600 to-red-600 hover:from-red-600 hover:via-orange-700 hover:to-red-700 hover:scale-105 animate-pulse'
-                        : 'bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 hover:via-orange-700 hover:to-red-600 hover:scale-105'
+                        ? 'bg-gradient-to-r from-red-500 via-orange-600 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-700 focus-visible:to-red-700 hover:scale-105 focus-visible:scale-105 animate-pulse'
+                        : 'bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 focus-visible:from-orange-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-600 focus-visible:to-red-600 hover:scale-105 focus-visible:scale-105'
                     } text-white`}
                   >
                     {isSubmitting ? 'Submitting...' : 

@@ -121,6 +121,16 @@ const GrowthPlateauSolutions = () => {
 
   return (
     <>
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       <SEOHead 
         title="Stuck at $1M Revenue? Growth Plateau Solutions That Work | Reboot Media"
         description="Why 67% of growth-stage companies hit revenue plateaus between $500K-$1.5M and the proven marketing psychology fixes that break through to predictable scaling."
@@ -152,15 +162,15 @@ const GrowthPlateauSolutions = () => {
               Here's how the 33% break through.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button 
+              <button aria-label="Opens contact form for free marketing analysis" 
                 onClick={() => setShowDropdownForm(true)}
-                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl"
+                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl"
               >
                 Break Through Your Plateau
               </button>
               <a 
                 href="#plateau-types" 
-                className="border-2 border-red-500 text-red-400 hover:bg-red-500 hover:text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300"
+                className="border-2 border-red-500 text-red-400 hover:bg-red-500 focus-visible:bg-red-500 hover:text-white focus-visible:text-white px-10 py-5 rounded-xl font-bold text-xl transition-all duration-300"
               >
                 Diagnose Your Plateau
               </a>
@@ -169,7 +179,12 @@ const GrowthPlateauSolutions = () => {
         </section>
 
         {/* Main Content */}
-        <main className="max-w-6xl mx-auto px-6 lg:px-8 py-20">
+        <main 
+          id="main-content" 
+          className="max-w-6xl mx-auto px-6 lg:px-8 py-20"
+          role="main"
+          aria-label="Growth plateau solutions and strategies"
+        >
           
           {/* Problem Recognition */}
           <section className="mb-20 text-center">
@@ -198,13 +213,13 @@ const GrowthPlateauSolutions = () => {
               <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
                 🚨 Every Month You Wait Costs You $47,000+
               </h3>
-              <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+              <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
                 While you're stuck at $1M, you should be at $1.5M+ with proper marketing psychology. That's $500K+ annual difference. 
                 Every month of delay costs you qualified opportunities competitors are capturing.
               </p>
-              <button 
+              <button aria-label="Opens contact form for free marketing analysis" 
                 onClick={() => setShowDropdownForm(true)}
-                className="text-red-600 dark:text-red-400 font-bold hover:underline text-lg"
+                className="text-red-600 dark:text-red-400 font-bold hover:underline focus-visible:underline text-lg"
               >
                 Get your plateau breakthrough analysis →
               </button>
@@ -226,18 +241,18 @@ const GrowthPlateauSolutions = () => {
                 <div key={plateau.id} className="group">
                   <a 
                     href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}${plateau.link}`}
-                    className="block bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105 hover:bg-white dark:hover:bg-slate-700/80"
+                    className="block bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-8 transition-all duration-300 hover:shadow-2xl focus-visible:shadow-2xl hover:scale-105 focus-visible:scale-105 hover:bg-white focus-visible:bg-white dark:hover:bg-slate-700 focus-visible:bg-slate-700/80"
                   >
                     <div className="text-center mb-6">
                       <div className="text-4xl mb-4">{plateau.icon}</div>
-                      <h3 className="heading-md text-important-accessible dark:text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-red-500 group-hover:to-orange-500 transition-all duration-300">
+                      <h3 className="heading-md text-important-accessible dark:text-white mb-3 group-hover:text-transparent group-focus-visible:text-transparent focus-visible:text-transparent group-hover:bg-gradient-to-r group-focus-visible:bg-gradient-to-r focus-visible:bg-gradient-to-r group-hover:bg-clip-text group-focus-visible:bg-clip-text focus-visible:bg-clip-text group-hover:from-red-500 group-focus-visible:from-red-500 focus-visible:from-red-500 group-hover:to-orange-500 group-focus-visible:to-orange-500 focus-visible:to-orange-500 transition-all duration-300">
                         {plateau.title}
                       </h3>
                     </div>
-                    <p className="text-standard dark:replace-text-gray-300 text-base leading-relaxed mb-6 text-center">
+                    <p className="text-standard-accessible dark:replace-text-gray-300 text-base leading-relaxed mb-6 text-center">
                       {plateau.description}
                     </p>
-                    <div className="flex items-center justify-center text-red-600 dark:text-red-400 font-semibold group-hover:text-red-700 dark:group-hover:text-red-300 transition-colors">
+                    <div className="flex items-center justify-center text-red-600 dark:text-red-400 font-semibold group-hover:text-red-700 group-focus-visible:text-red-700 focus-visible:text-red-700 dark:group-hover:text-red-300 group-focus-visible:text-red-300 focus-visible:text-red-300 transition-colors">
                       Discover Your Breakthrough →
                     </div>
                   </a>
@@ -252,7 +267,7 @@ const GrowthPlateauSolutions = () => {
               <h2 className="heading-xl text-gradient-critical mb-8 text-center">
                 The Psychology-Driven Breakthrough Framework
               </h2>
-              <p className="text-xl text-standard dark:replace-text-gray-300 mb-12 text-center max-w-4xl mx-auto">
+              <p className="text-xl text-standard-accessible dark:replace-text-gray-300 mb-12 text-center max-w-4xl mx-auto">
                 The 33% of companies that break through plateaus use this systematic approach. 
                 It's not about working harder—it's about <span className="font-semibold text-red-600 dark:text-red-400">marketing psychology that actually converts</span>.
               </p>
@@ -288,9 +303,9 @@ const GrowthPlateauSolutions = () => {
               Master the Psychology Behind Breakthrough Growth
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl transition-shadow">
+              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow">
                 <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-red-600 transition-colors">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                     Marketing Psychology Fundamentals →
                   </a>
                 </h3>
@@ -299,16 +314,16 @@ const GrowthPlateauSolutions = () => {
                 </p>
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`}
-                  className="flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 dark:hover:text-red-300 transition-colors"
+                  className="flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 focus-visible:text-red-700 dark:hover:text-red-300 focus-visible:text-red-300 transition-colors"
                 >
                   <span className="mr-2">📚</span>
                   Master $47K/Month Psychology
                 </a>
               </div>
               
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl transition-shadow">
+              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow">
                 <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-red-600 transition-colors">
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                     Need Strategic Marketing Leadership? →
                   </a>
                 </h3>
@@ -317,11 +332,11 @@ const GrowthPlateauSolutions = () => {
                 </p>
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-marketing-agency`}
-                  className="flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 dark:hover:text-red-300 transition-colors group"
+                  className="flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 focus-visible:text-red-700 dark:hover:text-red-300 focus-visible:text-red-300 transition-colors group"
                 >
                   <span className="mr-2">🎯</span>
                   Get Your CMO vs Agency Answer
-                  <span className="ml-1 transform transition-transform group-hover:translate-x-1">→</span>
+                  <span className="ml-1 transform transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1 focus-visible:translate-x-1">→</span>
                 </a>
               </div>
             </div>
@@ -337,9 +352,9 @@ const GrowthPlateauSolutions = () => {
               Every month you wait is another $47K+ of growth your competitors capture instead.
             </p>
             <div className="flex justify-center mb-8">
-              <button 
+              <button aria-label="Opens contact form for free marketing analysis" 
                 onClick={() => setShowDropdownForm(true)}
-                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 hover:to-red-700 text-white px-12 py-6 rounded-xl font-bold text-2xl transition-all duration-300 transform hover:scale-105 shadow-2xl"
+                className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-12 py-6 rounded-xl font-bold text-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl"
               >
                 Get Your Free Plateau Breakthrough Analysis →
               </button>

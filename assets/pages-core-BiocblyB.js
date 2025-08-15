@@ -151,7 +151,7 @@ const About = () => {
                   href: "https://www.linkedin.com/in/ian-ho/",
                   target: "_blank",
                   rel: "noopener noreferrer",
-                  className: "inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors",
+                  className: "inline-flex items-center px-4 py-2 bg-blue-600 hover:bg-blue-700 focus-visible:bg-blue-700 text-white rounded-lg transition-colors",
                   children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(Users, { className: "w-4 h-4 mr-2" }, void 0, false, {
                       fileName: "/home/ian/projects/reboot/src/pages/About.tsx",
@@ -507,7 +507,7 @@ const About = () => {
             "button",
             {
               onClick: () => setShowDropdownForm(true),
-              className: "inline-block px-8 py-4 bg-white text-orange-accessible font-semibold rounded-xl hover:bg-gray-50 transition-colors text-lg",
+              className: "inline-block px-8 py-4 bg-white text-orange-accessible font-semibold rounded-xl hover:bg-gray-50 focus-visible:bg-gray-50 transition-colors text-lg",
               children: "Get Your Free Marketing Analysis"
             },
             void 0,
@@ -714,7 +714,7 @@ Service Interest: ${formData.serviceInterest}`;
             "button",
             {
               onClick: () => setShowDropdownForm(true),
-              className: "bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors",
+              className: "bg-orange-500 hover:bg-orange-600 focus-visible:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors",
               children: "Get Your Free Marketing Analysis →"
             },
             void 0,
@@ -1119,7 +1119,7 @@ Service Interest: ${formData.serviceInterest}`;
                 {
                   type: "submit",
                   disabled: status === "loading",
-                  className: "w-full px-8 py-4 bg-orange-500 hover:bg-orange-600 disabled:bg-orange-300 text-white font-semibold rounded-lg transition-colors flex items-center justify-center",
+                  className: "w-full px-8 py-4 bg-orange-500 hover:bg-orange-600 focus-visible:bg-orange-600 disabled:bg-orange-300 text-white font-semibold rounded-lg transition-colors flex items-center justify-center",
                   children: status === "loading" ? /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(jsxDevRuntimeExports.Fragment, { children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(LoaderCircle, { className: "w-5 h-5 mr-2 animate-spin" }, void 0, false, {
                       fileName: "/home/ian/projects/reboot/src/pages/Contact.tsx",
@@ -1292,7 +1292,7 @@ Service Interest: ${formData.serviceInterest}`;
                 "button",
                 {
                   onClick: () => setShowDropdownForm(true),
-                  className: "inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors",
+                  className: "inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 focus-visible:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors",
                   children: "Get Your Free Analysis"
                 },
                 void 0,
@@ -2531,7 +2531,7 @@ const Privacy = () => {
                   columnNumber: 23
                 }, void 0),
                 " Install the ",
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: "https://tools.google.com/dlpage/gaoptout", target: "_blank", rel: "noopener noreferrer", className: "text-orange-500 hover:text-orange-accessible underline", children: "Google Analytics Opt-out Browser Add-on" }, void 0, false, {
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: "https://tools.google.com/dlpage/gaoptout", target: "_blank", rel: "noopener noreferrer", className: "text-orange-500 hover:text-orange-accessible focus-visible:text-orange-accessible underline", children: "Google Analytics Opt-out Browser Add-on" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/Privacy.tsx",
                   lineNumber: 237,
                   columnNumber: 78
@@ -2770,7 +2770,7 @@ const Privacy = () => {
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:replace-text-gray-300", children: [
                 "Contact Form: ",
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/contact`, className: "text-orange-500 hover:text-orange-accessible underline", children: "Submit inquiry" }, void 0, false, {
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/contact`, className: "text-orange-500 hover:text-orange-accessible focus-visible:text-orange-accessible underline", children: "Submit inquiry" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/Privacy.tsx",
                   lineNumber: 299,
                   columnNumber: 89
@@ -3726,7 +3726,7 @@ const Terms = () => {
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:replace-text-gray-300", children: [
                 "Contact Form: ",
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/contact`, className: "text-orange-500 hover:text-orange-accessible underline", children: "Submit inquiry" }, void 0, false, {
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/contact`, className: "text-orange-500 hover:text-orange-accessible focus-visible:text-orange-accessible underline", children: "Submit inquiry" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/pages/Terms.tsx",
                   lineNumber: 295,
                   columnNumber: 89

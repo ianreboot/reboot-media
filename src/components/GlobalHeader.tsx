@@ -152,13 +152,40 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
 
   return (
     <>
+      {/* Skip Navigation Links - WCAG 2.4.1 Level A requirement */}
+      <div className="sr-only">
+        <a 
+          href="#main-content"
+          className="skip-link"
+        >
+          Skip to main content
+        </a>
+        <a 
+          href="#navigation-menu"
+          className="skip-link"
+        >
+          Skip to navigation
+        </a>
+      </div>
+
+      {/* Screen Reader Announcements for Dynamic Content */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only loading-announcement"
+        id="page-status-announcer"
+      >
+        <span className="sr-only">Page loaded successfully</span>
+      </div>
+
       {/* Main Navigation Header */}
       <nav 
+        id="navigation-menu"
         className={`fixed top-0 left-0 right-0 z-[60] transition-all duration-500 ease-out ${
           !isScrollingUp && scrollY > 100 ? '-translate-y-full' : 'translate-y-0'
         }`}
-        role="navigation"
-        aria-label="Main navigation"
+        role="banner"
+        aria-label="Main navigation and site header"
         style={{ pointerEvents: 'auto' }}
       >
         <div className={`transition-all duration-300 ${
@@ -184,7 +211,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                   className="group flex items-center text-xl sm:text-2xl font-black focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded-lg p-1"
                   aria-label="Reboot Media - Go to homepage"
                 >
-                  <span className={`transition-all duration-300 group-hover:scale-105 ${
+                  <span className={`transition-all duration-300 group-hover:scale-105 group-focus-visible:scale-105 focus-visible:scale-105 ${
                     scrollY > 50 
                       ? 'replace-text-gray-900 dark:text-white' 
                       : 'replace-text-gray-800 dark:text-white'
@@ -198,7 +225,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                   <div className="relative hidden sm:block" ref={dropdownRef}>
                     <button
                       onClick={() => setShowDevDropdown(!showDevDropdown)}
-                      className="px-3 py-2 text-sm bg-purple-600 text-white rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-all duration-200 font-medium flex items-center gap-2 shadow-md hover:shadow-lg"
+                      className="px-3 py-2 text-sm bg-purple-600 text-white rounded-lg hover:bg-purple-700 focus-visible:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-all duration-200 font-medium flex items-center gap-2 shadow-md hover:shadow-lg focus-visible:shadow-lg"
                       title="Quick Navigation (Dev Only)"
                       aria-expanded={showDevDropdown}
                       aria-haspopup="true"
@@ -233,7 +260,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                             <a 
                               href="/" 
                               onClick={handleMenuItemClick} 
-                              className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1"
+                              className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1 focus-visible:translate-x-1"
                               role="menuitem"
                             >
                               🏠 Home
@@ -241,7 +268,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                             <a 
                               href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/about`} 
                               onClick={handleMenuItemClick} 
-                              className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1"
+                              className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1 focus-visible:translate-x-1"
                               role="menuitem"
                             >
                               👥 About
@@ -249,7 +276,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                             <a 
                               href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} 
                               onClick={handleMenuItemClick} 
-                              className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1"
+                              className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1 focus-visible:translate-x-1"
                               role="menuitem"
                             >
                               📧 Contact
@@ -259,45 +286,45 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                           {/* Marketing Psychology Pages */}
                           <div className="mb-3">
                             <div className="text-xs font-semibold replace-text-gray-500 dark:replace-text-gray-400 px-3 py-1">MARKETING PSYCHOLOGY</div>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">🧠 Marketing Psychology</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/unaware-stage-customers`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Unaware Stage</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/problem-aware-stage-customers`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Problem-Aware Stage</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/solution-aware-stage-customers`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Solution-Aware Stage</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/product-aware-stage-customers`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Product-Aware Stage</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/most-aware-stage-customers`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Most-Aware Stage</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors">🧠 Marketing Psychology</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/unaware-stage-customers`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Unaware Stage</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/problem-aware-stage-customers`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Problem-Aware Stage</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/solution-aware-stage-customers`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Solution-Aware Stage</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/product-aware-stage-customers`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Product-Aware Stage</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/most-aware-stage-customers`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Most-Aware Stage</a>
                           </div>
                           
                           {/* Growth Plateau Pages */}
                           <div className="mb-3">
                             <div className="text-xs font-semibold replace-text-gray-500 dark:replace-text-gray-400 px-3 py-1">GROWTH PLATEAU</div>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">📈 Growth Plateau Solutions</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/product-market-fit-erosion`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Product-Market Fit Erosion</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/customer-acquisition-stall`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Customer Acquisition Stall</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/competitive-pressure-plateau`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Competitive Pressure</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Revenue Ceiling</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/operational-scaling-crisis`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Operational Scaling</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Team Growth Bottlenecks</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/market-expansion-barriers`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Market Expansion</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors">📈 Growth Plateau Solutions</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/product-market-fit-erosion`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Product-Market Fit Erosion</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/customer-acquisition-stall`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Customer Acquisition Stall</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/competitive-pressure-plateau`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Competitive Pressure</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Revenue Ceiling</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/operational-scaling-crisis`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Operational Scaling</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Team Growth Bottlenecks</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/market-expansion-barriers`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Market Expansion</a>
                           </div>
                           
                           {/* Fractional CMO Pages */}
                           <div className="mb-3">
                             <div className="text-xs font-semibold replace-text-gray-500 dark:replace-text-gray-400 px-3 py-1">FRACTIONAL CMO</div>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">💼 Fractional CMO Guide</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-marketing-agency`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs Agency</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-full-time-cmo`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs Full-Time CMO</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-consultant`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs Consultant</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-in-house-team`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs In-House Team</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/when-to-choose-each`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ When to Choose Each</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Cost & ROI Analysis</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4">→ Transition Strategies</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors">💼 Fractional CMO Guide</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-marketing-agency`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs Agency</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-full-time-cmo`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs Full-Time CMO</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-consultant`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs Consultant</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-in-house-team`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ vs In-House Team</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/when-to-choose-each`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ When to Choose Each</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Cost & ROI Analysis</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4">→ Transition Strategies</a>
                           </div>
                           
                           {/* Legal Pages */}
                           <div>
                             <div className="text-xs font-semibold replace-text-gray-500 dark:replace-text-gray-400 px-3 py-1">LEGAL</div>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/privacy`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">🔒 Privacy Policy</a>
-                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/terms`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors">📜 Terms of Service</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/privacy`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors">🔒 Privacy Policy</a>
+                            <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/terms`} onClick={() => setShowDevDropdown(false)} className="block px-3 py-2 text-sm replace-text-gray-700 dark:replace-text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors">📜 Terms of Service</a>
                           </div>
                         </div>
                       </div>
@@ -315,10 +342,10 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                     <a
                       key={item.path}
                       href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}${item.path}`}
-                      className={`relative px-3 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ${
+                      className={`relative px-3 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-gray-100 focus-visible:bg-gray-100 dark:hover:bg-gray-800 focus-visible:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ${
                         location.pathname === item.path
                           ? 'text-orange-accessible dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20'
-                          : 'replace-text-gray-700 dark:replace-text-gray-300 hover:replace-text-gray-900 dark:hover:text-white'
+                          : 'replace-text-gray-700 dark:replace-text-gray-300 hover:replace-text-gray-900 focus-visible:replace-text-gray-900 dark:hover:text-white focus-visible:text-white'
                       }`}
                       style={{ 
                         pointerEvents: 'auto',
@@ -338,7 +365,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                 {/* CTA Button - Hidden on Mobile */}
                 <button 
                   onClick={onShowForm}
-                  className="hidden md:flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+                  className="hidden md:flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-200 shadow-lg hover:shadow-xl focus-visible:shadow-xl transform hover:scale-105 focus-visible:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
                   aria-label="Open growth analysis form"
                   style={{ 
                     pointerEvents: 'auto',
@@ -353,7 +380,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                 {/* Mobile Menu Toggle */}
                 <button
                   onClick={() => setShowMobileMenu(!showMobileMenu)}
-                  className="lg:hidden p-2 rounded-lg replace-text-gray-600 dark:replace-text-gray-400 hover:replace-text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-all duration-200"
+                  className="lg:hidden p-2 rounded-lg replace-text-gray-600 dark:replace-text-gray-400 hover:replace-text-gray-900 focus-visible:replace-text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-100 focus-visible:bg-gray-100 dark:hover:bg-gray-800 focus-visible:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-all duration-200"
                   aria-expanded={showMobileMenu}
                   aria-label="Toggle mobile menu"
                 >
@@ -416,7 +443,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
             <h2 className="text-lg font-bold replace-text-gray-900 dark:text-white">Navigation</h2>
             <button
               onClick={() => setShowMobileMenu(false)}
-              className="p-2 rounded-lg replace-text-gray-500 hover:replace-text-gray-700 dark:replace-text-gray-400 dark:hover:replace-text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="p-2 rounded-lg replace-text-gray-500 hover:replace-text-gray-700 focus-visible:replace-text-gray-700 dark:replace-text-gray-400 dark:hover:replace-text-gray-200 focus-visible:replace-text-gray-200 hover:bg-gray-100 focus-visible:bg-gray-100 dark:hover:bg-gray-800 focus-visible:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500"
               aria-label="Close mobile menu"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -436,7 +463,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                   className={`flex items-center gap-3 px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 ${
                     location.pathname === item.path
                       ? 'text-orange-accessible dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500'
-                      : 'replace-text-gray-700 dark:replace-text-gray-300 hover:replace-text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800'
+                      : 'replace-text-gray-700 dark:replace-text-gray-300 hover:replace-text-gray-900 focus-visible:replace-text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-50 focus-visible:bg-gray-50 dark:hover:bg-gray-800 focus-visible:bg-gray-800'
                   }`}
                 >
                   <span className="text-xl">{item.icon}</span>
@@ -457,9 +484,9 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                     DEVELOPMENT SHORTCUTS
                   </div>
                   <div className="space-y-1 dev-nav-links">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} onClick={handleMenuItemClick} className="block px-3 py-2 text-sm replace-text-gray-600 dark:replace-text-gray-400 hover:replace-text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">🧠 Marketing Psychology</a>
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} onClick={handleMenuItemClick} className="block px-3 py-2 text-sm replace-text-gray-600 dark:replace-text-gray-400 hover:replace-text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">📈 Growth Plateau</a>
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} onClick={handleMenuItemClick} className="block px-3 py-2 text-sm replace-text-gray-600 dark:replace-text-gray-400 hover:replace-text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors">💼 Fractional CMO</a>
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} onClick={handleMenuItemClick} className="block px-3 py-2 text-sm replace-text-gray-600 dark:replace-text-gray-400 hover:replace-text-gray-900 focus-visible:replace-text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-50 focus-visible:bg-gray-50 dark:hover:bg-gray-800 focus-visible:bg-gray-800 rounded-lg transition-colors">🧠 Marketing Psychology</a>
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} onClick={handleMenuItemClick} className="block px-3 py-2 text-sm replace-text-gray-600 dark:replace-text-gray-400 hover:replace-text-gray-900 focus-visible:replace-text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-50 focus-visible:bg-gray-50 dark:hover:bg-gray-800 focus-visible:bg-gray-800 rounded-lg transition-colors">📈 Growth Plateau</a>
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} onClick={handleMenuItemClick} className="block px-3 py-2 text-sm replace-text-gray-600 dark:replace-text-gray-400 hover:replace-text-gray-900 focus-visible:replace-text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-50 focus-visible:bg-gray-50 dark:hover:bg-gray-800 focus-visible:bg-gray-800 rounded-lg transition-colors">💼 Fractional CMO</a>
                   </div>
                 </div>
               </div>
@@ -473,7 +500,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                 onShowForm?.();
                 setShowMobileMenu(false);
               }}
-              className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-4 rounded-xl font-bold text-base transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+              className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-6 py-4 rounded-xl font-bold text-base transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:shadow-xl transform hover:scale-105 focus-visible:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
             >
               <span className="text-lg">🚀</span>
               <span>Unlock Growth Now</span>
@@ -491,9 +518,9 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
       }`}>
         <div className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-gray-200/50 dark:border-gray-700/50 shadow-lg">
           <div className="px-4 py-3">
-            <button
+            <button aria-label="Opens contact form for free marketing analysis"
               onClick={onShowForm}
-              className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all duration-200 shadow-lg hover:shadow-xl transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
+              className="w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all duration-200 shadow-lg hover:shadow-xl focus-visible:shadow-xl transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
             >
               🚀 Unlock Growth Now
             </button>

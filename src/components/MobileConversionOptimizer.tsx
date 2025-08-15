@@ -221,7 +221,7 @@ export const MobileFormOptimizer: React.FC<{ children: React.ReactNode }> = ({ c
               const activeElement = document.activeElement as HTMLElement;
               activeElement?.blur();
             }}
-            className="ml-4 text-blue-200 hover:text-white"
+            className="ml-4 text-blue-200 hover:text-white focus-visible:text-white"
           >
             Done
           </button>

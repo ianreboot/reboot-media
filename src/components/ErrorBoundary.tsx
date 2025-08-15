@@ -319,7 +319,7 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
             {onRetry && (
               <button
                 onClick={onRetry}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2"
+                className="bg-blue-600 hover:bg-blue-700 focus-visible:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -331,7 +331,7 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
             {onRefresh && (
               <button
                 onClick={onRefresh}
-                className="bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2"
+                className="bg-gray-600 hover:bg-gray-700 focus-visible:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -343,7 +343,7 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
             {onGoHome && (
               <button
                 onClick={onGoHome}
-                className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2"
+                className="bg-orange-600 hover:bg-orange-700 focus-visible:bg-orange-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
@@ -356,7 +356,7 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
           {/* Error Details (Development/Debug Mode) */}
           {showDetails && error && (
             <details className="bg-gray-50 rounded-lg">
-              <summary className="p-4 cursor-pointer font-medium replace-text-gray-700 hover:bg-gray-100 rounded-lg">
+              <summary className="p-4 cursor-pointer font-medium replace-text-gray-700 hover:bg-gray-100 focus-visible:bg-gray-100 rounded-lg">
                 Technical Details (for developers)
               </summary>
               <div className="p-4 pt-0">
@@ -455,7 +455,7 @@ const ComponentErrorFallback: React.FC<Omit<ErrorFallbackProps, 'onRefresh' | 'o
         {onRetry && (
           <button
             onClick={onRetry}
-            className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded font-medium transition-colors duration-200 text-sm flex items-center gap-2"
+            className="bg-red-600 hover:bg-red-700 focus-visible:bg-red-700 text-white px-4 py-2 rounded font-medium transition-colors duration-200 text-sm flex items-center gap-2"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -467,7 +467,7 @@ const ComponentErrorFallback: React.FC<Omit<ErrorFallbackProps, 'onRefresh' | 'o
         {/* Error Details for Component Level */}
         {showDetails && error && (
           <details className="mt-4 bg-white rounded border">
-            <summary className="p-3 cursor-pointer text-sm font-medium replace-text-gray-700 hover:bg-gray-50">
+            <summary className="p-3 cursor-pointer text-sm font-medium replace-text-gray-700 hover:bg-gray-50 focus-visible:bg-gray-50">
               Technical Details
             </summary>
             <div className="p-3 pt-0 border-t">

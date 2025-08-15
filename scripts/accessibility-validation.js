@@ -59,8 +59,13 @@ class AccessibilityValidator {
       'text-gray-600',
       'dark:text-gray-300',
       'dark:text-gray-400',
-      // Pattern 7: Text on colored backgrounds
-      'text-important',  // Very dark gray on colored backgrounds
+      // Pattern 7: Text on colored backgrounds (always problematic)
+      'text-important',  // Very dark gray (hsl(0, 0%, 15%)) on colored backgrounds
+    ];
+
+    // Contextual patterns that need background checking
+    this.contextualPatterns = [
+      'text-standard',   // Dark gray (hsl(0, 0%, 25%)) - only problematic on colored backgrounds
     ];
 
     // Color mappings for Tailwind classes
@@ -178,6 +183,34 @@ class AccessibilityValidator {
         }
       });
 
+      // Check contextual patterns (only flag if on colored backgrounds)
+      this.contextualPatterns.forEach(pattern => {
+        const escapedPattern = pattern.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+        const regex = new RegExp(`className="[^"]*\\b${escapedPattern}\\b[^"]*"`, 'g');
+        const matches = content.match(regex);
+        
+        if (matches) {
+          matches.forEach(match => {
+            // Skip if this is an accessible version
+            const isAccessibleVersion = match.includes(`${pattern}-accessible`);
+            if (isAccessibleVersion) return;
+
+            // Check if this element has a colored background in its context
+            const hasColoredBackground = this.hasColoredBackgroundInContext(content, match);
+            
+            if (hasColoredBackground) {
+              this.violations.push({
+                type: 'PROBLEMATIC_COLOR_CLASS_CONTEXTUAL',
+                file: relativePath,
+                pattern: pattern,
+                context: match,
+                message: `Contextual color class "${pattern}" found on colored background - may fail WCAG contrast requirements`
+              });
+            }
+          });
+        }
+      });
+
       // Check for accessibility class usage (positive indicators)
       const goodPatterns = [
         'replace-text-gray-300',
@@ -187,7 +220,7 @@ class AccessibilityValidator {
         'text-gradient-critical',
         'text-critical-accessible',
         'text-important-accessible',  // Pattern 7 fix
-        'text-standard-accessible',
+        'text-standard-accessible',   // Pattern 8 fix
         'text-optional-accessible'
       ];
 
@@ -204,6 +237,27 @@ class AccessibilityValidator {
     }
 
     console.log('✅ Component scanning complete\n');
+  }
+
+  hasColoredBackgroundInContext(content, match) {
+    // Find the position of this match in the content
+    const matchIndex = content.indexOf(match);
+    if (matchIndex === -1) return false;
+
+    // Get context around the match (500 characters before and after)
+    const contextStart = Math.max(0, matchIndex - 500);
+    const contextEnd = Math.min(content.length, matchIndex + match.length + 500);
+    const context = content.substring(contextStart, contextEnd);
+
+    // Check for colored background patterns in the context
+    const coloredBackgroundPatterns = [
+      /bg-gradient-to-[a-z]+.*from-(?:red|orange|blue|green|purple|slate|yellow|pink|indigo|teal|cyan|emerald|lime|amber|rose|fuchsia|violet|sky|stone)-/,
+      /from-(?:red|orange|blue|green|purple|slate|yellow|pink|indigo|teal|cyan|emerald|lime|amber|rose|fuchsia|violet|sky|stone)-[0-9]+/,
+      /to-(?:red|orange|blue|green|purple|slate|yellow|pink|indigo|teal|cyan|emerald|lime|amber|rose|fuchsia|violet|sky|stone)-[0-9]+/,
+      /via-(?:red|orange|blue|green|purple|slate|yellow|pink|indigo|teal|cyan|emerald|lime|amber|rose|fuchsia|violet|sky|stone)-[0-9]+/
+    ];
+
+    return coloredBackgroundPatterns.some(pattern => pattern.test(context));
   }
 
   async validateBuiltCSS() {

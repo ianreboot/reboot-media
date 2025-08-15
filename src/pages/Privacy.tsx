@@ -10,6 +10,16 @@ const Privacy = () => {
 
   return (
     <div className="privacy-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+      {/* Screen Reader Status Announcements */}
+      <div 
+        aria-live="polite" 
+        aria-atomic="true" 
+        className="sr-only"
+        id="status-announcer"
+      >
+        <span className="sr-only">Content loaded successfully</span>
+      </div>
+      
       {/* Sophisticated Background Gradient */}
       <BackgroundGradient />
       
@@ -234,7 +244,7 @@ const Privacy = () => {
                 <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Cookie Control and Opt-Out</h3>
                 <ul className="list-disc list-inside space-y-2 mb-4 text-standard dark:replace-text-gray-300">
                   <li><strong>Browser Settings:</strong> You can control cookies through your browser settings</li>
-                  <li><strong>Google Analytics Opt-Out:</strong> Install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:text-orange-accessible underline">Google Analytics Opt-out Browser Add-on</a></li>
+                  <li><strong>Google Analytics Opt-Out:</strong> Install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:text-orange-accessible focus-visible:text-orange-accessible underline">Google Analytics Opt-out Browser Add-on</a></li>
                   <li><strong>Do Not Track:</strong> We respect Do Not Track signals where technically feasible</li>
                   <li><strong>Cookie Lifespan:</strong> Most cookies expire after 26 months of inactivity</li>
                 </ul>
@@ -296,7 +306,7 @@ const Privacy = () => {
                   <p className="font-medium text-important-accessible dark:text-white">Reboot Media, Inc.</p>
                   <p className="text-optional dark:replace-text-gray-400">17595 Harvard Ave C-738</p>
                   <p className="text-optional dark:replace-text-gray-400">Irvine, CA 92614, USA</p>
-                  <p className="text-standard dark:replace-text-gray-300">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-accessible underline">Submit inquiry</a></p>
+                  <p className="text-standard dark:replace-text-gray-300">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-accessible focus-visible:text-orange-accessible underline">Submit inquiry</a></p>
                 </div>
               </section>
             </div>

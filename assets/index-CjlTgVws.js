@@ -118,7 +118,7 @@ const ExitIntentModal = ({ isVisible, onClose, onConvert }) => {
           ctaText: "Book My Priority Call",
           urgency: "Limited to 5 priority consultations per week",
           socialProof: "Join 47 companies that booked priority calls this month",
-          ctaStyle: "bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 hover:to-orange-600 animate-pulse"
+          ctaStyle: "bg-gradient-to-r from-red-500 to-orange-500 hover:from-red-600 focus-visible:from-red-600 hover:to-orange-600 focus-visible:to-orange-600 animate-pulse"
         };
       case "Warm":
         return {
@@ -138,7 +138,7 @@ const ExitIntentModal = ({ isVisible, onClose, onConvert }) => {
           ctaText: "Get My Free Audit",
           urgency: "Only 10 audits available this month",
           socialProof: "Over 200 companies have received their audit",
-          ctaStyle: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700"
+          ctaStyle: "bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700"
         };
       case "Cold":
         return {
@@ -158,7 +158,7 @@ const ExitIntentModal = ({ isVisible, onClose, onConvert }) => {
           ctaText: "Download Free Framework",
           urgency: "Downloaded by 1,000+ marketers",
           socialProof: "Join companies already using this framework",
-          ctaStyle: "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700"
+          ctaStyle: "bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-blue-700 focus-visible:to-blue-700"
         };
       case "Unqualified":
       default:
@@ -179,7 +179,7 @@ const ExitIntentModal = ({ isVisible, onClose, onConvert }) => {
           ctaText: "Get Weekly Insights",
           urgency: "Join 10,000+ marketers already subscribed",
           socialProof: "Trusted by marketing leaders worldwide",
-          ctaStyle: "bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 hover:to-gray-800"
+          ctaStyle: "bg-gradient-to-r from-gray-600 to-gray-700 hover:from-gray-700 focus-visible:from-gray-700 hover:to-gray-800 focus-visible:to-gray-800"
         };
     }
   };
@@ -266,7 +266,7 @@ const ExitIntentModal = ({ isVisible, onClose, onConvert }) => {
               "button",
               {
                 onClick: handleClose,
-                className: "absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors z-10",
+                className: "absolute top-4 right-4 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 focus-visible:bg-gray-200 flex items-center justify-center transition-colors z-10",
                 children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-5 h-5 text-gray-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6 18L18 6M6 6l12 12" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/components/ExitIntentModal.tsx",
                   lineNumber: 219,
@@ -371,7 +371,7 @@ const ExitIntentModal = ({ isVisible, onClose, onConvert }) => {
                   "button",
                   {
                     onClick: handleCTAClick,
-                    className: `w-full py-4 rounded-xl font-bold text-lg text-white transition-all duration-300 transform hover:scale-105 shadow-lg ${content.ctaStyle}`,
+                    className: `w-full py-4 rounded-xl font-bold text-lg text-white transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg ${content.ctaStyle}`,
                     children: content.ctaText
                   },
                   void 0,
@@ -387,7 +387,7 @@ const ExitIntentModal = ({ isVisible, onClose, onConvert }) => {
                   "button",
                   {
                     onClick: handleSecondaryAction,
-                    className: "w-full py-3 rounded-xl font-medium text-gray-600 border border-gray-300 hover:bg-gray-50 transition-all duration-300",
+                    className: "w-full py-3 rounded-xl font-medium text-gray-600 border border-gray-300 hover:bg-gray-50 focus-visible:bg-gray-50 transition-all duration-300",
                     children: "Maybe Later"
                   },
                   void 0,
@@ -646,7 +646,7 @@ const ABTestingDashboard = ({ isVisible, onClose }) => {
           "button",
           {
             onClick: () => pauseTest(testId),
-            className: "px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 transition-colors",
+            className: "px-4 py-2 bg-yellow-500 text-white rounded-lg hover:bg-yellow-600 focus-visible:bg-yellow-600 transition-colors",
             children: "Pause Test"
           },
           void 0,
@@ -662,7 +662,7 @@ const ABTestingDashboard = ({ isVisible, onClose }) => {
           "button",
           {
             onClick: () => stopTest(testId),
-            className: "px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 transition-colors",
+            className: "px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 focus-visible:bg-red-600 transition-colors",
             children: "Stop Test"
           },
           void 0,
@@ -682,7 +682,7 @@ const ABTestingDashboard = ({ isVisible, onClose }) => {
         "button",
         {
           onClick: () => startTest(testId),
-          className: "px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 transition-colors",
+          className: "px-4 py-2 bg-green-500 text-white rounded-lg hover:bg-green-600 focus-visible:bg-green-600 transition-colors",
           children: "Start Test"
         },
         void 0,
@@ -860,7 +860,7 @@ const ABTestingDashboard = ({ isVisible, onClose }) => {
         "button",
         {
           type: "submit",
-          className: "w-full px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors font-medium",
+          className: "w-full px-4 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus-visible:bg-blue-600 transition-colors font-medium",
           children: "Create Test"
         },
         void 0,
@@ -889,7 +889,7 @@ const ABTestingDashboard = ({ isVisible, onClose }) => {
         "button",
         {
           onClick: onClose,
-          className: "w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 flex items-center justify-center transition-colors",
+          className: "w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 focus-visible:bg-gray-200 flex items-center justify-center transition-colors",
           children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-5 h-5 text-gray-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6 18L18 6M6 6l12 12" }, void 0, false, {
             fileName: "/home/ian/projects/reboot/src/components/ABTestingDashboard.tsx",
             lineNumber: 220,
@@ -923,7 +923,7 @@ const ABTestingDashboard = ({ isVisible, onClose }) => {
       "button",
       {
         onClick: () => setActiveTab(tab.id),
-        className: `px-6 py-3 text-sm font-medium border-b-2 transition-colors ${activeTab === tab.id ? "border-blue-500 text-blue-600" : "border-transparent text-gray-500 hover:text-gray-700"}`,
+        className: `px-6 py-3 text-sm font-medium border-b-2 transition-colors ${activeTab === tab.id ? "border-blue-500 text-blue-600" : "border-transparent text-gray-500 hover:text-gray-700 focus-visible:text-gray-700"}`,
         children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: tab.icon }, void 0, false, {
             fileName: "/home/ian/projects/reboot/src/components/ABTestingDashboard.tsx",
@@ -1123,7 +1123,7 @@ const ABTestingDashboard = ({ isVisible, onClose }) => {
             "button",
             {
               onClick: () => setActiveTab("create"),
-              className: "px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors",
+              className: "px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus-visible:bg-blue-600 transition-colors",
               children: "Create New Test"
             },
             void 0,
@@ -1340,7 +1340,7 @@ const ABTestingDashboardTrigger = () => {
       "button",
       {
         onClick: () => setShowDashboard(true),
-        className: "fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition-colors z-50",
+        className: "fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 focus-visible:bg-blue-600 transition-colors z-50",
         title: "Open A/B Testing Dashboard",
         children: "📊"
       },
@@ -1879,7 +1879,7 @@ const MainApp = () => {
                   analytics.ctaClick("Show Me What's Broken in My Marketing", "hero");
                   setShowDropdownForm(true);
                 },
-                className: "cta-primary px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center gap-3",
+                className: "cta-primary px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl inline-flex items-center gap-3",
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-2xl", children: "🔍" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/App.tsx",
@@ -1907,7 +1907,7 @@ const MainApp = () => {
               columnNumber: 11
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group relative bg-white/90 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group relative bg-white/90 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-black text-important mb-1", children: "30X Growth" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/App.tsx",
                   lineNumber: 182,
@@ -1927,7 +1927,7 @@ const MainApp = () => {
                 lineNumber: 180,
                 columnNumber: 13
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group relative bg-white/90 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group relative bg-white/90 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-black text-slate-900 mb-1", children: "Stop the Bleed" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/App.tsx",
                   lineNumber: 191,
@@ -1947,7 +1947,7 @@ const MainApp = () => {
                 lineNumber: 189,
                 columnNumber: 13
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group relative bg-white/90 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "group relative bg-white/90 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-black text-slate-900 mb-1", children: "Sleep Better" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/App.tsx",
                   lineNumber: 200,
@@ -2265,7 +2265,7 @@ const MainApp = () => {
                 columnNumber: 15
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-6", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "text-lg font-bold mb-3", children: "Customer Perspective" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/App.tsx",
                     lineNumber: 316,
@@ -2285,7 +2285,7 @@ const MainApp = () => {
                   lineNumber: 314,
                   columnNumber: 17
                 }, void 0),
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "text-lg font-bold mb-3", children: "Question Everything" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/App.tsx",
                     lineNumber: 324,
@@ -2305,7 +2305,7 @@ const MainApp = () => {
                   lineNumber: 322,
                   columnNumber: 17
                 }, void 0),
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 hover:shadow-lg cursor-pointer", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "text-lg font-bold mb-3", children: "Executive Experience" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/App.tsx",
                     lineNumber: 332,
@@ -2870,7 +2870,7 @@ const MainApp = () => {
             columnNumber: 11
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid grid-cols-1 md:grid-cols-3 gap-8 mb-12", children: [
-            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-orange-200/30 dark:border-orange-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer", children: [
+            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-orange-200/30 dark:border-orange-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-12 h-12 bg-orange-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-6 h-6 text-orange-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M13 10V3L4 14h7v7l9-11h-7z" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/App.tsx",
                 lineNumber: 534,
@@ -2911,7 +2911,7 @@ const MainApp = () => {
               lineNumber: 531,
               columnNumber: 13
             }, void 0),
-            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-blue-200/30 dark:border-blue-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 hover:rotate-1 cursor-pointer", children: [
+            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-blue-200/30 dark:border-blue-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:rotate-1 focus-visible:rotate-1 cursor-pointer", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-12 h-12 bg-blue-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-6 h-6 text-blue-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/App.tsx",
                 lineNumber: 547,
@@ -2952,7 +2952,7 @@ const MainApp = () => {
               lineNumber: 544,
               columnNumber: 13
             }, void 0),
-            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-green-200/30 dark:border-green-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 hover:-rotate-1 cursor-pointer", children: [
+            /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-green-200/30 dark:border-green-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-12 h-12 bg-green-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-6 h-6 text-green-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/App.tsx",
                 lineNumber: 560,
@@ -3317,14 +3317,14 @@ const MainApp = () => {
                     analytics.ctaClick("Yes, Show Me What I'm Missing", "final-cta");
                     setShowDropdownForm(true);
                   },
-                  className: "bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 hover:via-orange-700 hover:to-red-600 text-white px-10 sm:px-14 py-5 rounded-xl font-black text-xl transition-all duration-300 transform hover:scale-105 shadow-2xl inline-flex items-center gap-3 group",
+                  className: "bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 focus-visible:from-orange-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-600 focus-visible:to-red-600 text-white px-10 sm:px-14 py-5 rounded-xl font-black text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl inline-flex items-center gap-3 group",
                   children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { children: "Yes, Show Me What I'm Missing" }, void 0, false, {
                       fileName: "/home/ian/projects/reboot/src/App.tsx",
                       lineNumber: 680,
                       columnNumber: 17
                     }, void 0),
-                    /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-6 h-6 group-hover:translate-x-1 transition-transform", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "3", d: "M13 7l5 5m0 0l-5 5m5-5H6" }, void 0, false, {
+                    /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-6 h-6 group-hover:translate-x-1 group-focus-visible:translate-x-1 focus-visible:translate-x-1 transition-transform", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "3", d: "M13 7l5 5m0 0l-5 5m5-5H6" }, void 0, false, {
                       fileName: "/home/ian/projects/reboot/src/App.tsx",
                       lineNumber: 682,
                       columnNumber: 19
@@ -3586,7 +3586,7 @@ const LazyLoadErrorFallback = ({
       "button",
       {
         onClick: retry,
-        className: "w-full bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium",
+        className: "w-full bg-blue-600 hover:bg-blue-700 focus-visible:bg-blue-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium",
         children: "Try Again"
       },
       void 0,
@@ -3602,7 +3602,7 @@ const LazyLoadErrorFallback = ({
       "button",
       {
         onClick: () => window.location.reload(),
-        className: "w-full bg-gray-200 hover:bg-gray-300 text-gray-700 px-4 py-2 rounded-lg transition-colors duration-200 font-medium",
+        className: "w-full bg-gray-200 hover:bg-gray-300 focus-visible:bg-gray-300 text-gray-700 px-4 py-2 rounded-lg transition-colors duration-200 font-medium",
         children: "Refresh Page"
       },
       void 0,
@@ -3618,7 +3618,7 @@ const LazyLoadErrorFallback = ({
       "button",
       {
         onClick: () => window.history.back(),
-        className: "text-blue-600 hover:text-blue-700 text-sm font-medium",
+        className: "text-blue-600 hover:text-blue-700 focus-visible:text-blue-700 text-sm font-medium",
         children: "← Go Back"
       },
       void 0,

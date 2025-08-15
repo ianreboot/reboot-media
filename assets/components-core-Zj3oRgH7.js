@@ -111,7 +111,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                   href: "/",
                   className: "group flex items-center text-xl sm:text-2xl font-black focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded-lg p-1",
                   "aria-label": "Reboot Media - Go to homepage",
-                  children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: `transition-all duration-300 group-hover:scale-105 ${scrollY > 50 ? "text-gray-900 dark:text-white" : "text-gray-800 dark:text-white"}`, children: [
+                  children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: `transition-all duration-300 group-hover:scale-105 group-focus-visible:scale-105 focus-visible:scale-105 ${scrollY > 50 ? "text-gray-900 dark:text-white" : "text-gray-800 dark:text-white"}`, children: [
                     "REBOOT ",
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-orange-500", children: "MEDIA" }, void 0, false, {
                       fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
@@ -138,7 +138,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                   "button",
                   {
                     onClick: () => setShowDevDropdown(!showDevDropdown),
-                    className: "px-3 py-2 text-sm bg-purple-600 text-white rounded-lg hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-all duration-200 font-medium flex items-center gap-2 shadow-md hover:shadow-lg",
+                    className: "px-3 py-2 text-sm bg-purple-600 text-white rounded-lg hover:bg-purple-700 focus-visible:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition-all duration-200 font-medium flex items-center gap-2 shadow-md hover:shadow-lg focus-visible:shadow-lg",
                     title: "Quick Navigation (Dev Only)",
                     "aria-expanded": showDevDropdown,
                     "aria-haspopup": "true",
@@ -206,7 +206,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                           {
                             href: "/",
                             onClick: handleMenuItemClick,
-                            className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1",
+                            className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1 focus-visible:translate-x-1",
                             role: "menuitem",
                             children: "🏠 Home"
                           },
@@ -224,7 +224,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                           {
                             href: `${"/reboot"}/about`,
                             onClick: handleMenuItemClick,
-                            className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1",
+                            className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1 focus-visible:translate-x-1",
                             role: "menuitem",
                             children: "👥 About"
                           },
@@ -242,7 +242,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                           {
                             href: `${"/reboot"}/contact`,
                             onClick: handleMenuItemClick,
-                            className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1",
+                            className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg transition-all duration-200 hover:translate-x-1 focus-visible:translate-x-1",
                             role: "menuitem",
                             children: "📧 Contact"
                           },
@@ -266,32 +266,32 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                           lineNumber: 253,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors", children: "🧠 Marketing Psychology" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors", children: "🧠 Marketing Psychology" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 254,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology/unaware-stage-customers`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Unaware Stage" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology/unaware-stage-customers`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Unaware Stage" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 255,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology/problem-aware-stage-customers`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Problem-Aware Stage" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology/problem-aware-stage-customers`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Problem-Aware Stage" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 256,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology/solution-aware-stage-customers`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Solution-Aware Stage" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology/solution-aware-stage-customers`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Solution-Aware Stage" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 257,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology/product-aware-stage-customers`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Product-Aware Stage" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology/product-aware-stage-customers`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Product-Aware Stage" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 258,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology/most-aware-stage-customers`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Most-Aware Stage" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology/most-aware-stage-customers`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Most-Aware Stage" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 259,
                           columnNumber: 29
@@ -307,42 +307,42 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                           lineNumber: 264,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors", children: "📈 Growth Plateau Solutions" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors", children: "📈 Growth Plateau Solutions" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 265,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/product-market-fit-erosion`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Product-Market Fit Erosion" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/product-market-fit-erosion`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Product-Market Fit Erosion" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 266,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Customer Acquisition Stall" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Customer Acquisition Stall" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 267,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/competitive-pressure-plateau`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Competitive Pressure" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/competitive-pressure-plateau`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Competitive Pressure" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 268,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/revenue-ceiling-breakthrough`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Revenue Ceiling" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/revenue-ceiling-breakthrough`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Revenue Ceiling" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 269,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/operational-scaling-crisis`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Operational Scaling" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/operational-scaling-crisis`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Operational Scaling" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 270,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/team-growth-bottlenecks`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Team Growth Bottlenecks" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/team-growth-bottlenecks`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Team Growth Bottlenecks" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 271,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/market-expansion-barriers`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Market Expansion" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/market-expansion-barriers`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Market Expansion" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 272,
                           columnNumber: 29
@@ -358,42 +358,42 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                           lineNumber: 277,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors", children: "💼 Fractional CMO Guide" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors", children: "💼 Fractional CMO Guide" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 278,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-marketing-agency`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ vs Agency" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-marketing-agency`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ vs Agency" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 279,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-full-time-cmo`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ vs Full-Time CMO" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-full-time-cmo`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ vs Full-Time CMO" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 280,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-consultant`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ vs Consultant" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-consultant`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ vs Consultant" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 281,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-in-house-team`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ vs In-House Team" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/vs-in-house-team`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ vs In-House Team" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 282,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/when-to-choose-each`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ When to Choose Each" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/when-to-choose-each`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ When to Choose Each" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 283,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Cost & ROI Analysis" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/cost-roi-analysis`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Cost & ROI Analysis" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 284,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/transition-strategies`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Transition Strategies" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide/transition-strategies`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors ml-4", children: "→ Transition Strategies" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 285,
                           columnNumber: 29
@@ -409,12 +409,12 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                           lineNumber: 290,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/privacy`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors", children: "🔒 Privacy Policy" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/privacy`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors", children: "🔒 Privacy Policy" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 291,
                           columnNumber: 29
                         }, void 0),
-                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/terms`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 dark:hover:bg-purple-900/20 rounded-md transition-colors", children: "📜 Terms of Service" }, void 0, false, {
+                        /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/terms`, onClick: () => setShowDevDropdown(false), className: "block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-md transition-colors", children: "📜 Terms of Service" }, void 0, false, {
                           fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                           lineNumber: 292,
                           columnNumber: 29
@@ -454,7 +454,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                 "a",
                 {
                   href: `${"/reboot"}${item.path}`,
-                  className: `relative px-3 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ${location.pathname === item.path ? "text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20" : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white"}`,
+                  className: `relative px-3 py-2 text-sm font-medium transition-all duration-200 rounded-lg hover:bg-gray-100 focus-visible:bg-gray-100 dark:hover:bg-gray-800 focus-visible:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ${location.pathname === item.path ? "text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20" : "text-gray-700 dark:text-gray-300 hover:text-gray-900 focus-visible:text-gray-900 dark:hover:text-white focus-visible:text-white"}`,
                   style: {
                     pointerEvents: "auto",
                     zIndex: 70,
@@ -494,7 +494,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                 "button",
                 {
                   onClick: onShowForm,
-                  className: "hidden md:flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-200 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2",
+                  className: "hidden md:flex items-center gap-2 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-200 shadow-lg hover:shadow-xl focus-visible:shadow-xl transform hover:scale-105 focus-visible:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2",
                   "aria-label": "Open growth analysis form",
                   style: {
                     pointerEvents: "auto",
@@ -527,7 +527,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                 "button",
                 {
                   onClick: () => setShowMobileMenu(!showMobileMenu),
-                  className: "lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-all duration-200",
+                  className: "lg:hidden p-2 rounded-lg text-gray-600 dark:text-gray-400 hover:text-gray-900 focus-visible:text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-100 focus-visible:bg-gray-100 dark:hover:bg-gray-800 focus-visible:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 transition-all duration-200",
                   "aria-expanded": showMobileMenu,
                   "aria-label": "Toggle mobile menu",
                   children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative w-6 h-6", children: [
@@ -659,7 +659,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
               "button",
               {
                 onClick: () => setShowMobileMenu(false),
-                className: "p-2 rounded-lg text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500",
+                className: "p-2 rounded-lg text-gray-500 hover:text-gray-700 focus-visible:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200 focus-visible:text-gray-200 hover:bg-gray-100 focus-visible:bg-gray-100 dark:hover:bg-gray-800 focus-visible:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500",
                 "aria-label": "Close mobile menu",
                 children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-6 h-6", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: 2, d: "M6 18L18 6M6 6l12 12" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
@@ -691,7 +691,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
               {
                 href: `${"/reboot"}${item.path}`,
                 onClick: handleMenuItemClick,
-                className: `flex items-center gap-3 px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 ${location.pathname === item.path ? "text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500" : "text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800"}`,
+                className: `flex items-center gap-3 px-4 py-3 text-base font-medium rounded-xl transition-all duration-200 ${location.pathname === item.path ? "text-orange-600 dark:text-orange-400 bg-orange-50 dark:bg-orange-900/20 border-l-4 border-orange-500" : "text-gray-700 dark:text-gray-300 hover:text-gray-900 focus-visible:text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-50 focus-visible:bg-gray-50 dark:hover:bg-gray-800 focus-visible:bg-gray-800"}`,
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-xl", children: item.icon }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
@@ -737,17 +737,17 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "space-y-1 dev-nav-links", children: [
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, onClick: handleMenuItemClick, className: "block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors", children: "🧠 Marketing Psychology" }, void 0, false, {
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, onClick: handleMenuItemClick, className: "block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 focus-visible:text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-50 focus-visible:bg-gray-50 dark:hover:bg-gray-800 focus-visible:bg-gray-800 rounded-lg transition-colors", children: "🧠 Marketing Psychology" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                   lineNumber: 451,
                   columnNumber: 21
                 }, void 0),
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, onClick: handleMenuItemClick, className: "block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors", children: "📈 Growth Plateau" }, void 0, false, {
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, onClick: handleMenuItemClick, className: "block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 focus-visible:text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-50 focus-visible:bg-gray-50 dark:hover:bg-gray-800 focus-visible:bg-gray-800 rounded-lg transition-colors", children: "📈 Growth Plateau" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                   lineNumber: 452,
                   columnNumber: 21
                 }, void 0),
-                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, onClick: handleMenuItemClick, className: "block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors", children: "💼 Fractional CMO" }, void 0, false, {
+                /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, onClick: handleMenuItemClick, className: "block px-3 py-2 text-sm text-gray-600 dark:text-gray-400 hover:text-gray-900 focus-visible:text-gray-900 dark:hover:text-white focus-visible:text-white hover:bg-gray-50 focus-visible:bg-gray-50 dark:hover:bg-gray-800 focus-visible:bg-gray-800 rounded-lg transition-colors", children: "💼 Fractional CMO" }, void 0, false, {
                   fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
                   lineNumber: 453,
                   columnNumber: 21
@@ -779,7 +779,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
                   onShowForm?.();
                   setShowMobileMenu(false);
                 },
-                className: "w-full flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-4 rounded-xl font-bold text-base transition-all duration-300 shadow-lg hover:shadow-xl transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2",
+                className: "w-full flex items-center justify-center gap-3 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-6 py-4 rounded-xl font-bold text-base transition-all duration-300 shadow-lg hover:shadow-xl focus-visible:shadow-xl transform hover:scale-105 focus-visible:scale-105 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2",
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-lg", children: "🚀" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/components/GlobalHeader.tsx",
@@ -831,7 +831,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }) => {
       "button",
       {
         onClick: onShowForm,
-        className: "w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all duration-200 shadow-lg hover:shadow-xl transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2",
+        className: "w-full bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all duration-200 shadow-lg hover:shadow-xl focus-visible:shadow-xl transform active:scale-95 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2",
         children: "🚀 Unlock Growth Now"
       },
       void 0,
@@ -908,7 +908,7 @@ const GlobalFooter = (_props) => {
               "a",
               {
                 href: "/",
-                className: "inline-block mb-6 hover:scale-105 transition-transform duration-300",
+                className: "inline-block mb-6 hover:scale-105 focus-visible:scale-105 transition-transform duration-300",
                 children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-5xl font-black", children: [
                   "REBOOT ",
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-orange-500", children: "MEDIA" }, void 0, false, {
@@ -1036,7 +1036,7 @@ const GlobalFooter = (_props) => {
                 "a",
                 {
                   href: `${"/reboot"}/about`,
-                  className: "text-sm text-gray-300 hover:text-white transition-colors",
+                  className: "text-sm text-gray-300 hover:text-white focus-visible:text-white transition-colors",
                   style: { pointerEvents: "auto", zIndex: 50, position: "relative" },
                   children: "About"
                 },
@@ -1058,7 +1058,7 @@ const GlobalFooter = (_props) => {
                 {
                   href: "#services",
                   onClick: (e) => handleHashNavigation(e, "services"),
-                  className: "text-sm text-gray-300 hover:text-white transition-colors cursor-pointer",
+                  className: "text-sm text-gray-300 hover:text-white focus-visible:text-white transition-colors cursor-pointer",
                   style: { pointerEvents: "auto", zIndex: 50, position: "relative" },
                   children: "Services"
                 },
@@ -1079,7 +1079,7 @@ const GlobalFooter = (_props) => {
                 "a",
                 {
                   href: `${"/reboot"}/contact`,
-                  className: "text-sm text-gray-300 hover:text-white transition-colors",
+                  className: "text-sm text-gray-300 hover:text-white focus-visible:text-white transition-colors",
                   style: { pointerEvents: "auto", zIndex: 50, position: "relative" },
                   children: "Contact"
                 },
@@ -1117,7 +1117,7 @@ const GlobalFooter = (_props) => {
                 "a",
                 {
                   href: `${"/reboot"}/privacy`,
-                  className: "text-sm text-gray-300 hover:text-white transition-colors",
+                  className: "text-sm text-gray-300 hover:text-white focus-visible:text-white transition-colors",
                   style: { pointerEvents: "auto", zIndex: 50, position: "relative" },
                   children: "Privacy Policy"
                 },
@@ -1138,7 +1138,7 @@ const GlobalFooter = (_props) => {
                 "a",
                 {
                   href: `${"/reboot"}/terms`,
-                  className: "text-sm text-gray-300 hover:text-white transition-colors",
+                  className: "text-sm text-gray-300 hover:text-white focus-visible:text-white transition-colors",
                   style: { pointerEvents: "auto", zIndex: 50, position: "relative" },
                   children: "Terms of Service"
                 },
@@ -1177,7 +1177,7 @@ const GlobalFooter = (_props) => {
                   "a",
                   {
                     href: `${"/reboot"}/marketing-psychology`,
-                    className: "text-sm text-gray-300 hover:text-white transition-colors",
+                    className: "text-sm text-gray-300 hover:text-white focus-visible:text-white transition-colors",
                     style: { pointerEvents: "auto", zIndex: 50, position: "relative" },
                     children: "Marketing Psychology Guide"
                   },
@@ -1198,7 +1198,7 @@ const GlobalFooter = (_props) => {
                   "a",
                   {
                     href: `${"/reboot"}/growth-plateau-solutions`,
-                    className: "text-sm text-gray-300 hover:text-white transition-colors",
+                    className: "text-sm text-gray-300 hover:text-white focus-visible:text-white transition-colors",
                     style: { pointerEvents: "auto", zIndex: 50, position: "relative" },
                     children: "Breaking Growth Plateaus"
                   },
@@ -1219,7 +1219,7 @@ const GlobalFooter = (_props) => {
                   "a",
                   {
                     href: `${"/reboot"}/fractional-cmo-guide`,
-                    className: "text-sm text-gray-300 hover:text-white transition-colors",
+                    className: "text-sm text-gray-300 hover:text-white focus-visible:text-white transition-colors",
                     style: { pointerEvents: "auto", zIndex: 50, position: "relative" },
                     children: "Fractional CMO vs Agency"
                   },
@@ -1284,7 +1284,7 @@ const GlobalFooter = (_props) => {
             "a",
             {
               href: "/",
-              className: "inline-block cursor-pointer hover:scale-105 transition-transform duration-300",
+              className: "inline-block cursor-pointer hover:scale-105 focus-visible:scale-105 transition-transform duration-300",
               style: { pointerEvents: "auto", zIndex: 50, position: "relative" },
               children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-3xl font-black mb-3", children: [
                 "REBOOT ",
@@ -1329,7 +1329,7 @@ const GlobalFooter = (_props) => {
               "button",
               {
                 onClick: () => toggleSection("services"),
-                className: "w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors",
+                className: "w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white focus-visible:bg-white/10 transition-colors",
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-white text-sm uppercase tracking-wider", children: "Fractional CMO Services" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
@@ -1370,7 +1370,7 @@ const GlobalFooter = (_props) => {
               void 0
             ),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `transition-all duration-300 ${expandedSections["services"] ? "max-h-96" : "max-h-0"} overflow-hidden`, children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("ul", { className: "px-4 py-3 space-y-2 bg-white/5", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: "#services", onClick: (e) => handleHashNavigation(e, "services"), className: "text-gray-400 hover:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Quick-Win Strategy" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: "#services", onClick: (e) => handleHashNavigation(e, "services"), className: "text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Quick-Win Strategy" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
                 lineNumber: 239,
                 columnNumber: 23
@@ -1379,7 +1379,7 @@ const GlobalFooter = (_props) => {
                 lineNumber: 238,
                 columnNumber: 21
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: "#services", onClick: (e) => handleHashNavigation(e, "services"), className: "text-gray-400 hover:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Growth Strategy" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: "#services", onClick: (e) => handleHashNavigation(e, "services"), className: "text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Growth Strategy" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
                 lineNumber: 244,
                 columnNumber: 23
@@ -1388,7 +1388,7 @@ const GlobalFooter = (_props) => {
                 lineNumber: 243,
                 columnNumber: 21
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: "#services", onClick: (e) => handleHashNavigation(e, "services"), className: "text-gray-400 hover:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Executive Leadership" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: "#services", onClick: (e) => handleHashNavigation(e, "services"), className: "text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Executive Leadership" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
                 lineNumber: 249,
                 columnNumber: 23
@@ -1416,7 +1416,7 @@ const GlobalFooter = (_props) => {
               "button",
               {
                 onClick: () => toggleSection("track"),
-                className: "w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors",
+                className: "w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white focus-visible:bg-white/10 transition-colors",
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-white text-sm uppercase tracking-wider", children: "Proven Track Record" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
@@ -1512,7 +1512,7 @@ const GlobalFooter = (_props) => {
               "button",
               {
                 onClick: () => toggleSection("resources"),
-                className: "w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors",
+                className: "w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white focus-visible:bg-white/10 transition-colors",
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-white text-sm uppercase tracking-wider", children: "Resources & Insights" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
@@ -1553,7 +1553,7 @@ const GlobalFooter = (_props) => {
               void 0
             ),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `transition-all duration-300 ${expandedSections["resources"] ? "max-h-96" : "max-h-0"} overflow-hidden`, children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("ul", { className: "px-4 py-3 space-y-2 bg-white/5", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "text-gray-400 hover:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Marketing Psychology Guide" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Marketing Psychology Guide" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
                 lineNumber: 310,
                 columnNumber: 23
@@ -1562,7 +1562,7 @@ const GlobalFooter = (_props) => {
                 lineNumber: 309,
                 columnNumber: 21
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "text-gray-400 hover:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Break Growth Plateaus" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Break Growth Plateaus" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
                 lineNumber: 315,
                 columnNumber: 23
@@ -1571,7 +1571,7 @@ const GlobalFooter = (_props) => {
                 lineNumber: 314,
                 columnNumber: 21
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "text-gray-400 hover:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Fractional CMO vs Agency" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Fractional CMO vs Agency" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
                 lineNumber: 320,
                 columnNumber: 23
@@ -1599,7 +1599,7 @@ const GlobalFooter = (_props) => {
               "button",
               {
                 onClick: () => toggleSection("company"),
-                className: "w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors",
+                className: "w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white focus-visible:bg-white/10 transition-colors",
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-white text-sm uppercase tracking-wider", children: "Company" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
@@ -1640,7 +1640,7 @@ const GlobalFooter = (_props) => {
               void 0
             ),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `transition-all duration-300 ${expandedSections["company"] ? "max-h-96" : "max-h-0"} overflow-hidden`, children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("ul", { className: "px-4 py-3 space-y-2 bg-white/5", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/about`, className: "text-gray-400 hover:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "About" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/about`, className: "text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "About" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
                 lineNumber: 347,
                 columnNumber: 23
@@ -1649,7 +1649,7 @@ const GlobalFooter = (_props) => {
                 lineNumber: 346,
                 columnNumber: 21
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: "#services", onClick: (e) => handleHashNavigation(e, "services"), className: "text-gray-400 hover:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Services" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: "#services", onClick: (e) => handleHashNavigation(e, "services"), className: "text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Services" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
                 lineNumber: 352,
                 columnNumber: 23
@@ -1658,7 +1658,7 @@ const GlobalFooter = (_props) => {
                 lineNumber: 351,
                 columnNumber: 21
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/contact`, className: "text-gray-400 hover:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Contact" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/contact`, className: "text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Contact" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
                 lineNumber: 357,
                 columnNumber: 23
@@ -1686,7 +1686,7 @@ const GlobalFooter = (_props) => {
               "button",
               {
                 onClick: () => toggleSection("legal"),
-                className: "w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white/10 transition-colors",
+                className: "w-full px-4 py-3 bg-white/5 backdrop-blur-sm flex items-center justify-between hover:bg-white focus-visible:bg-white/10 transition-colors",
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-white text-sm uppercase tracking-wider", children: "Legal" }, void 0, false, {
                     fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
@@ -1727,7 +1727,7 @@ const GlobalFooter = (_props) => {
               void 0
             ),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `transition-all duration-300 ${expandedSections["legal"] ? "max-h-96" : "max-h-0"} overflow-hidden`, children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("ul", { className: "px-4 py-3 space-y-2 bg-white/5", children: [
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/privacy`, className: "text-gray-400 hover:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Privacy Policy" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/privacy`, className: "text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Privacy Policy" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
                 lineNumber: 384,
                 columnNumber: 23
@@ -1736,7 +1736,7 @@ const GlobalFooter = (_props) => {
                 lineNumber: 383,
                 columnNumber: 21
               }, void 0),
-              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/terms`, className: "text-gray-400 hover:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Terms of Service" }, void 0, false, {
+              /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/terms`, className: "text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors text-sm", style: { pointerEvents: "auto", zIndex: 50, position: "relative" }, children: "Terms of Service" }, void 0, false, {
                 fileName: "/home/ian/projects/reboot/src/components/GlobalFooter.tsx",
                 lineNumber: 389,
                 columnNumber: 23
@@ -2104,7 +2104,7 @@ const PageErrorFallback = ({
         "button",
         {
           onClick: onRetry,
-          className: "bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2",
+          className: "bg-blue-600 hover:bg-blue-700 focus-visible:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2",
           children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/components/ErrorBoundary.tsx",
@@ -2131,7 +2131,7 @@ const PageErrorFallback = ({
         "button",
         {
           onClick: onRefresh,
-          className: "bg-gray-600 hover:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2",
+          className: "bg-gray-600 hover:bg-gray-700 focus-visible:bg-gray-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2",
           children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/components/ErrorBoundary.tsx",
@@ -2158,7 +2158,7 @@ const PageErrorFallback = ({
         "button",
         {
           onClick: onGoHome,
-          className: "bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2",
+          className: "bg-orange-600 hover:bg-orange-700 focus-visible:bg-orange-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-200 flex items-center gap-2",
           children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" }, void 0, false, {
               fileName: "/home/ian/projects/reboot/src/components/ErrorBoundary.tsx",
@@ -2187,7 +2187,7 @@ const PageErrorFallback = ({
       columnNumber: 11
     }, void 0),
     showDetails && error && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("details", { className: "bg-gray-50 rounded-lg", children: [
-      /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("summary", { className: "p-4 cursor-pointer font-medium text-gray-700 hover:bg-gray-100 rounded-lg", children: "Technical Details (for developers)" }, void 0, false, {
+      /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("summary", { className: "p-4 cursor-pointer font-medium text-gray-700 hover:bg-gray-100 focus-visible:bg-gray-100 rounded-lg", children: "Technical Details (for developers)" }, void 0, false, {
         fileName: "/home/ian/projects/reboot/src/components/ErrorBoundary.tsx",
         lineNumber: 359,
         columnNumber: 15
@@ -2381,7 +2381,7 @@ const ComponentErrorFallback = ({
       "button",
       {
         onClick: onRetry,
-        className: "bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded font-medium transition-colors duration-200 text-sm flex items-center gap-2",
+        className: "bg-red-600 hover:bg-red-700 focus-visible:bg-red-700 text-white px-4 py-2 rounded font-medium transition-colors duration-200 text-sm flex items-center gap-2",
         children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" }, void 0, false, {
             fileName: "/home/ian/projects/reboot/src/components/ErrorBoundary.tsx",
@@ -2405,7 +2405,7 @@ const ComponentErrorFallback = ({
       void 0
     ),
     showDetails && error && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("details", { className: "mt-4 bg-white rounded border", children: [
-      /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("summary", { className: "p-3 cursor-pointer text-sm font-medium text-gray-700 hover:bg-gray-50", children: "Technical Details" }, void 0, false, {
+      /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("summary", { className: "p-3 cursor-pointer text-sm font-medium text-gray-700 hover:bg-gray-50 focus-visible:bg-gray-50", children: "Technical Details" }, void 0, false, {
         fileName: "/home/ian/projects/reboot/src/components/ErrorBoundary.tsx",
         lineNumber: 470,
         columnNumber: 13

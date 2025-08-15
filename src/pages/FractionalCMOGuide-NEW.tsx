@@ -112,7 +112,7 @@ const FractionalCMOGuide = () => {
           <div className="grid md:grid-cols-2 gap-8">
             
             {/* Fractional CMO vs Agency */}
-            <div className="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <div className="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
               <div className="bg-gradient-to-r from-blue-500 to-orange-500 p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -129,14 +129,14 @@ const FractionalCMOGuide = () => {
                   Most companies think "we need execution help" when they really need strategy refinement. 
                   <strong className="text-blue-accessible"> Who's accountable when tactics fail?</strong>
                 </p>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-marketing-agency`} className="inline-flex items-center text-blue-accessible hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-marketing-agency`} className="inline-flex items-center text-blue-accessible hover:text-blue-700 focus-visible:text-blue-700 font-semibold transition-colors group-hover:text-blue-700 group-focus-visible:text-blue-700 focus-visible:text-blue-700">
                   See Why Agencies Fail at Strategy →
                 </a>
               </div>
             </div>
 
             {/* Fractional CMO vs Full-Time */}
-            <div className="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+            <div className="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
               <div className="bg-gradient-to-r from-blue-500 to-green-500 p-6">
                 <div className="flex items-center justify-between">
                   <div>
@@ -153,7 +153,7 @@ const FractionalCMOGuide = () => {
                   "We're big enough for a full-time CMO" is often ego talking. 
                   <strong className="text-green-600"> Can you give them $200K worth of meaningful work?</strong>
                 </p>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-full-time-cmo`} className="inline-flex items-center text-blue-accessible hover:text-blue-700 font-semibold transition-colors group-hover:text-blue-700">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/vs-full-time-cmo`} className="inline-flex items-center text-blue-accessible hover:text-blue-700 focus-visible:text-blue-700 font-semibold transition-colors group-hover:text-blue-700 group-focus-visible:text-blue-700 focus-visible:text-blue-700">
                   Calculate If You Need $200K CMO →
                 </a>
               </div>
@@ -172,15 +172,15 @@ const FractionalCMOGuide = () => {
             <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
               🚨 Stop Making the $47,000 Mistake
             </h3>
-            <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
+            <p className="text-lg text-standard-accessible dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
               Most companies choose marketing approaches based on status or emotion, not ROI analysis. Get your free decision analysis 
               and discover which approach delivers the fastest, most predictable growth for your specific situation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg">
+              <button className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg">
                 Get Free Decision Analysis
               </button>
-              <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-blue-500 text-blue-accessible hover:bg-blue-500 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+              <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-blue-500 text-blue-accessible hover:bg-blue-500 focus-visible:bg-blue-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                 Calculate Your $47K Mistake
               </a>
             </div>
@@ -192,9 +192,9 @@ const FractionalCMOGuide = () => {
         title: 'Related Marketing Leadership Resources',
         content: (
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
               <h3 className="text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-blue-accessible transition-colors">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                   8 Proven Plateau Breakthrough Patterns →
                 </a>
               </h3>
@@ -202,9 +202,9 @@ const FractionalCMOGuide = () => {
                 Marketing leadership choices often follow revenue plateaus. Discover psychology-driven solutions for breaking through growth ceilings.
               </p>
             </div>
-            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl transition-shadow">
+            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
               <h3 className="text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-blue-accessible transition-colors">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                   5 Awareness Stages That Convert →
                 </a>
               </h3>
