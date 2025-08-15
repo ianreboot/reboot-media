@@ -158,7 +158,7 @@ const MainApp = () => {
           
           {/* Subheadline */}
           <p className="text-xl text-standard max-w-4xl mx-auto mb-8">
-            <span className="text-white/90">Stop fumbling with amateur advice. Get</span> <span className="font-bold text-important">battle-tested strategies proven at Fortune 500 companies</span> <span className="text-white/90">that drive explosive growth</span>
+            <span className="text-white/90">Stop fumbling with amateur advice. Get</span> <span className="font-bold text-important-accessible">battle-tested strategies proven at Fortune 500 companies</span> <span className="text-white/90">that drive explosive growth</span>
           </p>
 
           {/* Single Primary CTA */}
@@ -179,7 +179,7 @@ const MainApp = () => {
           <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 cursor-pointer">
               <div className="text-center">
-                <div className="text-2xl font-black text-important mb-1">30X Growth</div>
+                <div className="text-2xl font-black text-important-accessible mb-1">30X Growth</div>
                 <div className="text-sm text-standard font-medium leading-tight">
                   Companies see explosive revenue growth when psychology replaces guesswork
                 </div>

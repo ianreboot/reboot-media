@@ -41,7 +41,7 @@ const MarketingPsychology = () => {
               <span className="block">Start Converting.</span>
               <span className="block text-orange-500 mt-2">Master Marketing Psychology</span>
             </h1>
-            <p className="text-xl text-important dark:replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-important-accessible dark:replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
               The 5 customer awareness stages and conversion psychology principles that transform scattered marketing into predictable revenue growth. Used by Fortune 500 companies and growth-stage businesses worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -110,7 +110,7 @@ const MarketingPsychology = () => {
                     <span className="text-red-600 font-bold text-lg">1</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Unaware Stage</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Unaware Stage</h3>
                     <p className="replace-text-gray-600 dark:replace-text-gray-400">They don't know they have a problem</p>
                   </div>
                 </div>
@@ -140,7 +140,7 @@ const MarketingPsychology = () => {
                     <span className="text-orange-accessible font-bold text-lg">2</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Problem-Aware Stage</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Problem-Aware Stage</h3>
                     <p className="replace-text-gray-600 dark:replace-text-gray-400">They know they have a problem but not the solution</p>
                   </div>
                 </div>
@@ -173,7 +173,7 @@ const MarketingPsychology = () => {
                     <span className="text-yellow-600 font-bold text-lg">3</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Solution-Aware Stage</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Solution-Aware Stage</h3>
                     <p className="replace-text-gray-600 dark:replace-text-gray-400">They know solutions exist and are comparing options</p>
                   </div>
                 </div>
@@ -207,7 +207,7 @@ const MarketingPsychology = () => {
                     <span className="text-green-600 font-bold text-lg">4</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Product-Aware Stage</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Product-Aware Stage</h3>
                     <p className="replace-text-gray-600 dark:replace-text-gray-400">They know your solution and are evaluating you specifically</p>
                   </div>
                 </div>
@@ -241,7 +241,7 @@ const MarketingPsychology = () => {
                     <span className="text-blue-accessible font-bold text-lg">5</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Most Aware Stage</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Most Aware Stage</h3>
                     <p className="replace-text-gray-600 dark:replace-text-gray-400">They're ready to buy and just need the final push</p>
                   </div>
                 </div>
@@ -338,7 +338,7 @@ const MarketingPsychology = () => {
 
             {/* Strategic CTA */}
             <div className="text-center bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8">
-              <h3 className="heading-lg text-important dark:text-white mb-4">
+              <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
                 Ready to Transform Your Marketing with Psychology?
               </h3>
               <p className="text-standard dark:replace-text-gray-300 mb-6 max-w-2xl mx-auto">

@@ -167,7 +167,11 @@
 }
 
 .text-important-accessible {
-  color: var(--luminescence-layer-2) !important;
+  color: var(--luminescence-layer-1) !important;
+  /* Enhanced for colored backgrounds - Pattern 7 fix */
+  text-shadow: 
+    0 1px 3px rgba(0, 0, 0, 0.4),
+    0 0 1px rgba(0, 0, 0, 0.3);
 }
 
 .text-standard-accessible {

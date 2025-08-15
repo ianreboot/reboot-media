@@ -215,13 +215,13 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
               )}
 
               {hero.subtitle && (
-                <h2 className="text-xl md:text-2xl text-important dark:replace-text-gray-300 mb-6 max-w-4xl mx-auto">
+                <h2 className="text-xl md:text-2xl text-important-accessible dark:replace-text-gray-300 mb-6 max-w-4xl mx-auto">
                   {hero.subtitle}
                 </h2>
               )}
 
               {hero.description && (
-                <p className="text-xl text-important dark:replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl text-important-accessible dark:replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                   {hero.description}
                 </p>
               )}

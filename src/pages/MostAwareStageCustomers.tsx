@@ -65,7 +65,7 @@ const MostAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important dark:replace-text-gray-300 mb-6 text-center">
+              <p className="text-lg text-important-accessible dark:replace-text-gray-300 mb-6 text-center">
                 Most aware customers are 95% sold. They believe in your solution, trust your expertise, and have budget approval. But that last 5%? That's where deals die. These final moments require finesse, not force.
               </p>
             </section>
@@ -81,7 +81,7 @@ const MostAwareStageCustomers = () => {
                 {/* Example 1 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Let me just run this by my partner/team one more time"</p>
                   </div>
                   
@@ -104,7 +104,7 @@ const MostAwareStageCustomers = () => {
                 {/* Example 2 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Can we start next month instead?"</p>
                   </div>
                   
@@ -127,7 +127,7 @@ const MostAwareStageCustomers = () => {
                 {/* Example 3 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"What if we need to pause or stop?"</p>
                   </div>
                   
@@ -150,7 +150,7 @@ const MostAwareStageCustomers = () => {
                 {/* Example 4 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Send me the contract and I'll review it"</p>
                   </div>
                   
@@ -173,7 +173,7 @@ const MostAwareStageCustomers = () => {
                 {/* Example 5 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Is there any flexibility on the price?"</p>
                   </div>
                   

@@ -65,7 +65,7 @@ const ProblemAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important dark:replace-text-gray-300 mb-6 text-center">
+              <p className="text-lg text-important-accessible dark:replace-text-gray-300 mb-6 text-center">
                 Problem-aware customers are dangerous to themselves. They know enough to be worried but not enough to make smart decisions. They're buying random tools, hiring random freelancers, and changing strategies every month—burning cash without understanding why nothing works.
               </p>
             </section>
@@ -82,7 +82,7 @@ const ProblemAwareStageCustomers = () => {
                 {/* Example 1 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Our marketing isn't working anymore"</p>
                   </div>
                   
@@ -105,7 +105,7 @@ const ProblemAwareStageCustomers = () => {
                 {/* Example 2 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"We're getting traffic but no one's buying"</p>
                   </div>
                   
@@ -128,7 +128,7 @@ const ProblemAwareStageCustomers = () => {
                 {/* Example 3 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Our customer acquisition cost keeps going up"</p>
                   </div>
                   
@@ -151,7 +151,7 @@ const ProblemAwareStageCustomers = () => {
                 {/* Example 4 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"We tried content marketing and it didn't work"</p>
                   </div>
                   
@@ -174,7 +174,7 @@ const ProblemAwareStageCustomers = () => {
                 {/* Example 5 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Social media isn't driving any sales"</p>
                   </div>
                   
@@ -197,7 +197,7 @@ const ProblemAwareStageCustomers = () => {
                 {/* Example 6 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Our sales team says leads are terrible"</p>
                   </div>
                   
@@ -220,7 +220,7 @@ const ProblemAwareStageCustomers = () => {
                 {/* Example 7 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Competitors keep stealing our customers"</p>
                   </div>
                   
@@ -260,7 +260,7 @@ const ProblemAwareStageCustomers = () => {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
-                  <h3 className="heading-lg text-important dark:text-white mb-3">What NOT to do:</h3>
+                  <h3 className="heading-lg text-important-accessible dark:text-white mb-3">What NOT to do:</h3>
                   <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
                     <li>• Jump straight to your solution</li>
                     <li>• Add to their confusion with more options</li>
@@ -271,7 +271,7 @@ const ProblemAwareStageCustomers = () => {
                 </div>
                 
                 <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
-                  <h3 className="heading-lg text-important dark:text-white mb-3">What TO do:</h3>
+                  <h3 className="heading-lg text-important-accessible dark:text-white mb-3">What TO do:</h3>
                   <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
                     <li>• Help them see the real root cause</li>
                     <li>• Connect symptoms to underlying problems</li>

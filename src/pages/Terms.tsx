@@ -223,20 +223,20 @@ const Terms = () => {
                   To protect against abusive litigation, the following provisions apply to all legal actions:
                 </p>
                 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Prevailing Party Attorney's Fees</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Prevailing Party Attorney's Fees</h3>
                 <p className="mb-4 text-standard dark:replace-text-gray-300">
                   In any legal proceeding, the prevailing party shall be entitled to recover reasonable attorney's fees and costs 
                   from the non-prevailing party. This applies to all disputes, including contract, tort, statutory, or constitutional claims.
                 </p>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Frivolous Claim Penalties</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Frivolous Claim Penalties</h3>
                 <ul className="list-disc list-inside space-y-2 mb-4 text-standard dark:replace-text-gray-300">
                   <li><strong>$10,000 Penalty:</strong> Claims determined to be frivolous, unreasonable, or brought primarily for harassment shall result in a $10,000 penalty plus attorney's fees</li>
                   <li><strong>Pre-Filing Requirements:</strong> Before filing any lawsuit, you must provide 30 days' written notice of the specific claims and an opportunity to cure</li>
                   <li><strong>Settlement Protection:</strong> Settlement offers made in good faith cannot be used as evidence of liability or wrongdoing</li>
                 </ul>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Anti-SLAPP Protection</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Anti-SLAPP Protection</h3>
                 <p className="mb-4 text-standard dark:replace-text-gray-300">
                   We reserve all rights under applicable anti-SLAPP (Strategic Lawsuit Against Public Participation) statutes. 
                   Claims targeting our business communications, marketing materials, or public statements may be subject to 
@@ -247,25 +247,25 @@ const Terms = () => {
               <section>
                 <h2 className="heading-xl text-gradient-critical mb-4">14. Specific Legal Compliance and Safe Harbors</h2>
                 
-                <h3 className="heading-lg text-important dark:text-white mb-3">New Law Grace Period</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">New Law Grace Period</h3>
                 <p className="mb-4 text-standard dark:replace-text-gray-300">
                   For any new laws, regulations, or legal requirements that take effect after the date of these Terms, 
                   we shall have a 90-day grace period to implement necessary compliance measures before any liability attaches.
                 </p>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Industry Standard Defense</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Industry Standard Defense</h3>
                 <p className="mb-4 text-standard dark:replace-text-gray-300">
                   Our practices conform to industry standards for fractional executive services and marketing consulting. 
                   Claims alleging substandard practices must demonstrate departure from accepted industry standards.
                 </p>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Accessibility Compliance</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Accessibility Compliance</h3>
                 <p className="mb-4 text-standard dark:replace-text-gray-300">
                   We strive to maintain website accessibility. For any accessibility-related claims under the ADA or similar laws, 
                   we shall have 90 days from written notice to implement reasonable accommodations before liability attaches.
                 </p>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Data Protection Safe Harbors</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Data Protection Safe Harbors</h3>
                 <ul className="list-disc list-inside space-y-2 text-standard dark:replace-text-gray-300">
                   <li><strong>BIPA Compliance:</strong> For biometric data claims, we provide a 90-day cure period from written notice</li>
                   <li><strong>TCPA Defense:</strong> All marketing communications are based on express consent or existing business relationships</li>
@@ -289,7 +289,7 @@ const Terms = () => {
                   If you have questions about these Terms or our services, please contact us:
                 </p>
                 <div className="bg-gray-50 dark:bg-slate-800 p-4 rounded-lg">
-                  <p className="font-medium text-important dark:text-white">Reboot Media, Inc.</p>
+                  <p className="font-medium text-important-accessible dark:text-white">Reboot Media, Inc.</p>
                   <p className="text-optional dark:replace-text-gray-400">17595 Harvard Ave C-738</p>
                   <p className="text-optional dark:replace-text-gray-400">Irvine, CA 92614, USA</p>
                   <p className="text-standard dark:replace-text-gray-300">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-accessible underline">Submit inquiry</a></p>

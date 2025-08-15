@@ -104,23 +104,23 @@ const GrowthPlateauSolutions = () => {
             <div className="grid md:grid-cols-3 gap-8 mb-16">
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-red-200/50 dark:border-red-800/50 p-8 text-center">
                 <div className="text-4xl font-black text-red-600 mb-4">67%</div>
-                <div className="text-lg font-semibold text-important dark:text-white mb-2">Companies Plateau</div>
+                <div className="text-lg font-semibold text-important-accessible dark:text-white mb-2">Companies Plateau</div>
                 <p className="text-optional dark:replace-text-gray-300">Between $500K-$1.5M revenue</p>
               </div>
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-orange-200/50 dark:border-orange-800/50 p-8 text-center">
                 <div className="text-4xl font-black text-orange-accessible mb-4">14mo</div>
-                <div className="text-lg font-semibold text-important dark:text-white mb-2">Average Stuck Time</div>
+                <div className="text-lg font-semibold text-important-accessible dark:text-white mb-2">Average Stuck Time</div>
                 <p className="text-optional dark:replace-text-gray-300">Before breaking through</p>
               </div>
               <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8 text-center">
                 <div className="text-4xl font-black text-green-600 mb-4">$47K</div>
-                <div className="text-lg font-semibold text-important dark:text-white mb-2">Monthly Cost</div>
+                <div className="text-lg font-semibold text-important-accessible dark:text-white mb-2">Monthly Cost</div>
                 <p className="text-optional dark:replace-text-gray-300">Of staying plateaued</p>
               </div>
             </div>
             
             <div className="bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-2xl p-8 border border-red-200/50 dark:border-red-800/50">
-              <h3 className="heading-lg text-important dark:text-white mb-4">
+              <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
                 🚨 Every Month You Wait Costs You $47,000+
               </h3>
               <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">
@@ -150,7 +150,7 @@ const GrowthPlateauSolutions = () => {
                   >
                     <div className="text-center mb-6">
                       <div className="text-4xl mb-4">{plateau.icon}</div>
-                      <h3 className="heading-md text-important dark:text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-red-500 group-hover:to-orange-500 transition-all duration-300">
+                      <h3 className="heading-md text-important-accessible dark:text-white mb-3 group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:bg-clip-text group-hover:from-red-500 group-hover:to-orange-500 transition-all duration-300">
                         {plateau.title}
                       </h3>
                     </div>
@@ -181,22 +181,22 @@ const GrowthPlateauSolutions = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="bg-gradient-to-r from-red-500 to-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4">1</div>
-                <h3 className="font-bold text-lg text-important dark:text-white mb-3">Customer Says</h3>
+                <h3 className="font-bold text-lg text-important-accessible dark:text-white mb-3">Customer Says</h3>
                 <p className="text-optional dark:replace-text-gray-400 text-sm">Exact language your stuck customers use</p>
               </div>
               <div className="text-center">
                 <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4">2</div>
-                <h3 className="font-bold text-lg text-important dark:text-white mb-3">Real Problem</h3>
+                <h3 className="font-bold text-lg text-important-accessible dark:text-white mb-3">Real Problem</h3>
                 <p className="text-optional dark:replace-text-gray-400 text-sm">Hidden psychological root cause</p>
               </div>
               <div className="text-center">
                 <div className="bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4">3</div>
-                <h3 className="font-bold text-lg text-important dark:text-white mb-3">Solution</h3>
+                <h3 className="font-bold text-lg text-important-accessible dark:text-white mb-3">Solution</h3>
                 <p className="text-optional dark:replace-text-gray-400 text-sm">Systems + psychology fix</p>
               </div>
               <div className="text-center">
                 <div className="bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4">4</div>
-                <h3 className="font-bold text-lg text-important dark:text-white mb-3">Why It Works</h3>
+                <h3 className="font-bold text-lg text-important-accessible dark:text-white mb-3">Why It Works</h3>
                 <p className="text-optional dark:replace-text-gray-400 text-sm">Psychology principle explained</p>
               </div>
             </div>
@@ -209,7 +209,7 @@ const GrowthPlateauSolutions = () => {
         content: (
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl transition-shadow">
-              <h3 className="heading-lg text-important dark:text-white mb-4">
+              <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
                 <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-red-600 transition-colors">
                   Marketing Psychology Fundamentals →
                 </a>
@@ -227,7 +227,7 @@ const GrowthPlateauSolutions = () => {
             </div>
             
             <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl transition-shadow">
-              <h3 className="heading-lg text-important dark:text-white mb-4">
+              <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
                 <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-red-600 transition-colors">
                   Need Strategic Marketing Leadership? →
                 </a>

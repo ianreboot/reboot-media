@@ -89,7 +89,7 @@ describe('About Page', () => {
       expect(heroHeading).toHaveClass('heading-hero', 'text-critical');
       
       const heroText = screen.getByText(/Fractional CMO services with proven C-level executive experience/);
-      expect(heroText).toHaveClass('text-xl', 'text-important');
+      expect(heroText).toHaveClass('text-xl', 'text-important-accessible');
     });
   });
 
@@ -204,7 +204,7 @@ describe('About Page', () => {
     it('text sizes are responsive', () => {
       const { container } = renderWithRouter(<About />);
       
-      const heroText = container.querySelector('.text-xl.text-important');
+      const heroText = container.querySelector('.text-xl.text-important-accessible');
       expect(heroText).toHaveClass('max-w-3xl', 'mx-auto', 'leading-relaxed');
     });
   });

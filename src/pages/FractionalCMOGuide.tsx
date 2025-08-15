@@ -87,7 +87,7 @@ const FractionalCMOGuide = () => {
               <span className="text-blue-400">Fractional CMO</span> vs 
               <span className="block text-white mt-2">Marketing Agency vs Full-Time CMO</span>
             </h1>
-            <p className="text-xl text-important dark:replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-important-accessible dark:replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
               The complete decision framework for $500K-$1.5M companies. Compare costs, results, timelines, and strategic impact to choose the approach that delivers faster, predictable growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -113,7 +113,7 @@ const FractionalCMOGuide = () => {
           {/* Introduction */}
           <section className="mb-16">
             <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-blue-200/50 dark:border-blue-800/50 p-8">
-              <h2 className="heading-lg text-important dark:text-white mb-6">
+              <h2 className="heading-lg text-important-accessible dark:text-white mb-6">
                 The Complete Marketing Leadership Decision Guide
               </h2>
               <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 leading-relaxed">
@@ -322,7 +322,7 @@ const FractionalCMOGuide = () => {
           {/* Call to Action */}
           <section className="mb-16">
             <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8 border border-blue-200/50 dark:border-blue-800/50">
-              <h3 className="heading-lg text-important dark:text-white mb-4">
+              <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
                 🚨 Stop Making the $47,000 Mistake
               </h3>
               <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">

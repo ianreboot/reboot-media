@@ -65,7 +65,7 @@ const UnawareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important dark:replace-text-gray-300 mb-6 text-center">
+              <p className="text-lg text-important-accessible dark:replace-text-gray-300 mb-6 text-center">
                 Unaware stage customers are the most dangerous for your business. They're convinced they're doing fine when they're actually hemorrhaging opportunities. Here are real examples of what they say and what's actually happening.
               </p>
             </section>
@@ -81,7 +81,7 @@ const UnawareStageCustomers = () => {
                 {/* Example 1 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"We built the best product but no one gets it"</p>
                   </div>
                   
@@ -104,7 +104,7 @@ const UnawareStageCustomers = () => {
                 {/* Example 2 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"We just need more traffic to our website"</p>
                   </div>
                   
@@ -127,7 +127,7 @@ const UnawareStageCustomers = () => {
                 {/* Example 3 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Our prices are competitive, I don't know why we're not winning deals"</p>
                   </div>
                   
@@ -150,7 +150,7 @@ const UnawareStageCustomers = () => {
                 {/* Example 4 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Everyone in our industry struggles with marketing"</p>
                   </div>
                   
@@ -173,7 +173,7 @@ const UnawareStageCustomers = () => {
                 {/* Example 5 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Our team is too busy to focus on marketing right now"</p>
                   </div>
                   
@@ -196,7 +196,7 @@ const UnawareStageCustomers = () => {
                 {/* Example 6 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"We've tried marketing before and it didn't work"</p>
                   </div>
                   
@@ -236,7 +236,7 @@ const UnawareStageCustomers = () => {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
-                  <h3 className="heading-lg text-important dark:text-white mb-3">What NOT to do:</h3>
+                  <h3 className="heading-lg text-important-accessible dark:text-white mb-3">What NOT to do:</h3>
                   <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
                     <li>• Lead with features or capabilities</li>
                     <li>• Assume they understand the problem</li>
@@ -247,7 +247,7 @@ const UnawareStageCustomers = () => {
                 </div>
                 
                 <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
-                  <h3 className="heading-lg text-important dark:text-white mb-3">What TO do:</h3>
+                  <h3 className="heading-lg text-important-accessible dark:text-white mb-3">What TO do:</h3>
                   <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
                     <li>• Start with the cost of their current situation</li>
                     <li>• Use their exact language and concerns</li>

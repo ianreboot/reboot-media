@@ -78,7 +78,7 @@ const FractionalCMOGuide = () => {
         variant: 'glass',
         content: (
           <div>
-            <h2 className="heading-lg text-important dark:text-white mb-6">
+            <h2 className="heading-lg text-important-accessible dark:text-white mb-6">
               The Complete Marketing Leadership Decision Guide
             </h2>
             <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 leading-relaxed">
@@ -169,7 +169,7 @@ const FractionalCMOGuide = () => {
         variant: 'highlight',
         content: (
           <div className="text-center">
-            <h3 className="heading-lg text-important dark:text-white mb-4">
+            <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
               🚨 Stop Making the $47,000 Mistake
             </h3>
             <p className="text-lg text-standard dark:replace-text-gray-300 mb-6 max-w-3xl mx-auto">

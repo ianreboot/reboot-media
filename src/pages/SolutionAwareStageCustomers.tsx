@@ -65,7 +65,7 @@ const SolutionAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important dark:replace-text-gray-300 mb-6 text-center">
+              <p className="text-lg text-important-accessible dark:replace-text-gray-300 mb-6 text-center">
                 Solution-aware customers are overwhelmed. They've got 10 browser tabs open, 5 sales calls scheduled, and a spreadsheet comparing options that all sound identical. They're not looking for another pitch—they're looking for clarity on why one option is actually different.
               </p>
             </section>
@@ -81,7 +81,7 @@ const SolutionAwareStageCustomers = () => {
                 {/* Example 1 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Should we hire an agency, a consultant, or build in-house?"</p>
                   </div>
                   
@@ -104,7 +104,7 @@ const SolutionAwareStageCustomers = () => {
                 {/* Example 2 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Everyone says they're data-driven and results-focused"</p>
                   </div>
                   
@@ -127,7 +127,7 @@ const SolutionAwareStageCustomers = () => {
                 {/* Example 3 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"How do we know this will work for us?"</p>
                   </div>
                   
@@ -150,7 +150,7 @@ const SolutionAwareStageCustomers = () => {
                 {/* Example 4 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"The expensive option must be better, right?"</p>
                   </div>
                   
@@ -173,7 +173,7 @@ const SolutionAwareStageCustomers = () => {
                 {/* Example 5 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"What if we pick the wrong partner?"</p>
                   </div>
                   
@@ -196,7 +196,7 @@ const SolutionAwareStageCustomers = () => {
                 {/* Example 6 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"They all have impressive portfolios"</p>
                   </div>
                   
@@ -236,7 +236,7 @@ const SolutionAwareStageCustomers = () => {
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
-                  <h3 className="heading-lg text-important dark:text-white mb-3">What NOT to do:</h3>
+                  <h3 className="heading-lg text-important-accessible dark:text-white mb-3">What NOT to do:</h3>
                   <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
                     <li>• List more features and capabilities</li>
                     <li>• Compete on price alone</li>
@@ -247,7 +247,7 @@ const SolutionAwareStageCustomers = () => {
                 </div>
                 
                 <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
-                  <h3 className="heading-lg text-important dark:text-white mb-3">What TO do:</h3>
+                  <h3 className="heading-lg text-important-accessible dark:text-white mb-3">What TO do:</h3>
                   <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
                     <li>• Show exactly how you're different</li>
                     <li>• Provide risk reversal mechanisms</li>

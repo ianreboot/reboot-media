@@ -65,7 +65,7 @@ const ProductAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important dark:replace-text-gray-300 mb-6 text-center">
+              <p className="text-lg text-important-accessible dark:replace-text-gray-300 mb-6 text-center">
                 Product-aware customers are close. They're seriously considering you but have specific concerns holding them back. They're not questioning if they need help—they're questioning if YOU'RE the right help.
               </p>
             </section>
@@ -82,7 +82,7 @@ const ProductAwareStageCustomers = () => {
                 {/* Example 1 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"Your case studies are impressive, but our business is different"</p>
                   </div>
                   
@@ -105,7 +105,7 @@ const ProductAwareStageCustomers = () => {
                 {/* Example 2 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"What if we don't see results as quickly as your other clients?"</p>
                   </div>
                   
@@ -128,7 +128,7 @@ const ProductAwareStageCustomers = () => {
                 {/* Example 3 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"How do we know you won't just disappear after signing?"</p>
                   </div>
                   
@@ -151,7 +151,7 @@ const ProductAwareStageCustomers = () => {
                 {/* Example 4 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"We need to run this by our board/CEO/team first"</p>
                   </div>
                   
@@ -174,7 +174,7 @@ const ProductAwareStageCustomers = () => {
                 {/* Example 5 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
                     <p className="text-standard dark:replace-text-gray-300 italic">"The price is higher than we budgeted"</p>
                   </div>
                   

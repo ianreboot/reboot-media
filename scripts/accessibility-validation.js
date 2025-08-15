@@ -58,7 +58,9 @@ class AccessibilityValidator {
       'text-gray-500',
       'text-gray-600',
       'dark:text-gray-300',
-      'dark:text-gray-400'
+      'dark:text-gray-400',
+      // Pattern 7: Text on colored backgrounds
+      'text-important',  // Very dark gray on colored backgrounds
     ];
 
     // Color mappings for Tailwind classes
@@ -159,8 +161,11 @@ class AccessibilityValidator {
         
         if (matches) {
           matches.forEach(match => {
-            // Additional check to ensure we're not matching replacement classes
-            if (!match.includes(`replace-${pattern}`) && !match.includes(`dark:replace-${pattern.replace('dark:', '')}`)) {
+            // Additional check to ensure we're not matching replacement classes or accessible versions
+            const isReplacement = match.includes(`replace-${pattern}`) || match.includes(`dark:replace-${pattern.replace('dark:', '')}`);
+            const isAccessibleVersion = match.includes(`${pattern}-accessible`);
+            
+            if (!isReplacement && !isAccessibleVersion) {
               this.violations.push({
                 type: 'PROBLEMATIC_COLOR_CLASS',
                 file: relativePath,
@@ -181,7 +186,9 @@ class AccessibilityValidator {
         'text-gradient-enhanced',
         'text-gradient-critical',
         'text-critical-accessible',
-        'text-important-accessible'
+        'text-important-accessible',  // Pattern 7 fix
+        'text-standard-accessible',
+        'text-optional-accessible'
       ];
 
       goodPatterns.forEach(pattern => {

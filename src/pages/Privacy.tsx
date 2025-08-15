@@ -54,7 +54,7 @@ const Privacy = () => {
                 <h2 className="heading-xl text-gradient-critical mb-4">2. Information We Collect</h2>
                 <div className="space-y-4">
                   <div>
-                    <h3 className="heading-lg text-important dark:text-white mb-3">Contact and Lead Generation Information:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Contact and Lead Generation Information:</h3>
                     <ul className="list-disc list-inside space-y-2 mb-4 text-standard dark:replace-text-gray-300">
                       <li><strong>Contact Forms:</strong> When you submit our contact form or request a consultation, we collect your name, email address, company information, website URL, and any additional details you provide about your business needs.</li>
                       <li><strong>Lead Qualification Data:</strong> Information about your business size, current marketing challenges, budget range, and strategic priorities to help us provide relevant marketing consulting services.</li>
@@ -63,7 +63,7 @@ const Privacy = () => {
                   </div>
 
                   <div>
-                    <h3 className="heading-lg text-important dark:text-white mb-3">Website Analytics and Technical Information:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Website Analytics and Technical Information:</h3>
                     <ul className="list-disc list-inside space-y-2 mb-4 text-standard dark:replace-text-gray-300">
                       <li><strong>Usage Analytics:</strong> We collect data about how visitors interact with our website, including page views, session duration, bounce rates, and conversion funnel performance using Google Analytics.</li>
                       <li><strong>Device and Browser Information:</strong> Technical details such as IP address, browser type, device type, operating system, and screen resolution to optimize our website experience.</li>
@@ -73,7 +73,7 @@ const Privacy = () => {
                   </div>
 
                   <div>
-                    <h3 className="heading-lg text-important dark:text-white mb-3">Business Relationship Information:</h3>
+                    <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Business Relationship Information:</h3>
                     <ul className="list-disc list-inside space-y-2 text-standard dark:replace-text-gray-300">
                       <li><strong>Client Project Data:</strong> For active consulting engagements, we collect and analyze your marketing data, campaign performance metrics, customer insights, and strategic business information necessary to deliver our services.</li>
                       <li><strong>Calendar and Scheduling:</strong> Meeting preferences, availability, and scheduling information for consultations and ongoing strategic sessions.</li>
@@ -128,7 +128,7 @@ const Privacy = () => {
               <section>
                 <h2 className="heading-xl text-gradient-critical mb-4">6. Regional Privacy Rights and Compliance</h2>
                 
-                <h3 className="heading-lg text-important dark:text-white mb-3">California Residents (CCPA/CPRA) - Enhanced Rights:</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">California Residents (CCPA/CPRA) - Enhanced Rights:</h3>
                 <ul className="list-disc list-inside space-y-2 mb-4 text-standard dark:replace-text-gray-300">
                   <li><strong>Right to Know:</strong> Request detailed information about categories and specific pieces of personal information we collect, sources, business purposes, and third parties with whom we share data</li>
                   <li><strong>Right to Delete:</strong> Request deletion of your personal information within 30 days (subject to legal retention requirements and ongoing business relationships)</li>
@@ -139,7 +139,7 @@ const Privacy = () => {
                   <li><strong>Authorized Agent Requests:</strong> Designate authorized agents to make requests on your behalf with proper verification</li>
                 </ul>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">EU/UK Residents (GDPR) - Comprehensive Rights:</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">EU/UK Residents (GDPR) - Comprehensive Rights:</h3>
                 <ul className="list-disc list-inside space-y-2 mb-4 text-standard dark:replace-text-gray-300">
                   <li><strong>Right to Access:</strong> Obtain confirmation of data processing and free access to your personal data within 30 days</li>
                   <li><strong>Right to Rectification:</strong> Correct inaccurate or incomplete personal data without undue delay</li>
@@ -151,7 +151,7 @@ const Privacy = () => {
                   <li><strong>Right to Lodge Complaints:</strong> File complaints with supervisory authorities if you believe GDPR has been violated</li>
                 </ul>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Response Timelines and Procedures:</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Response Timelines and Procedures:</h3>
                 <ul className="list-disc list-inside space-y-2 text-standard dark:replace-text-gray-300">
                   <li><strong>Standard Response:</strong> 30 days for most requests (may be extended by 60 days for complex requests)</li>
                   <li><strong>Identity Verification:</strong> Reasonable verification procedures to protect against fraudulent requests</li>
@@ -163,7 +163,7 @@ const Privacy = () => {
               <section>
                 <h2 className="heading-xl text-gradient-critical mb-4">7. Enhanced Data Security and Retention</h2>
                 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Security Measures</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Security Measures</h3>
                 <p className="mb-4 text-standard dark:replace-text-gray-300">
                   We implement comprehensive security measures to protect your information:
                 </p>
@@ -179,7 +179,7 @@ const Privacy = () => {
                   <em>Important:</em> While we implement robust security measures, no system is 100% secure. We cannot guarantee absolute security but commit to industry-leading practices.
                 </p>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Data Retention Policies</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Data Retention Policies</h3>
                 <ul className="list-disc list-inside space-y-2 mb-4 text-standard dark:replace-text-gray-300">
                   <li><strong>Active Client Data:</strong> Retained for the duration of our engagement plus seven years for business records</li>
                   <li><strong>Prospect Data:</strong> Retained for 36 months from last contact unless consent is withdrawn</li>
@@ -188,7 +188,7 @@ const Privacy = () => {
                   <li><strong>Deletion Upon Request:</strong> Data deleted within 30 days of verified deletion requests (subject to legal retention requirements)</li>
                 </ul>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Data Breach Response</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Data Breach Response</h3>
                 <p className="mb-4 text-standard dark:replace-text-gray-300">
                   In the event of a data breach that may compromise your personal information, we commit to:
                 </p>
@@ -223,7 +223,7 @@ const Privacy = () => {
               <section>
                 <h2 className="heading-xl text-gradient-critical mb-4">10. Cookies and Tracking Technologies</h2>
                 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Types of Cookies We Use</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Types of Cookies We Use</h3>
                 <ul className="list-disc list-inside space-y-2 mb-4 text-standard dark:replace-text-gray-300">
                   <li><strong>Essential Cookies:</strong> Necessary for website functionality, user preferences, and session management</li>
                   <li><strong>Analytics Cookies:</strong> Google Analytics cookies to understand website usage and improve user experience</li>
@@ -231,7 +231,7 @@ const Privacy = () => {
                   <li><strong>No Marketing Cookies:</strong> We do not use cookies for advertising or cross-site tracking</li>
                 </ul>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Cookie Control and Opt-Out</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Cookie Control and Opt-Out</h3>
                 <ul className="list-disc list-inside space-y-2 mb-4 text-standard dark:replace-text-gray-300">
                   <li><strong>Browser Settings:</strong> You can control cookies through your browser settings</li>
                   <li><strong>Google Analytics Opt-Out:</strong> Install the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-orange-500 hover:text-orange-accessible underline">Google Analytics Opt-out Browser Add-on</a></li>
@@ -239,7 +239,7 @@ const Privacy = () => {
                   <li><strong>Cookie Lifespan:</strong> Most cookies expire after 26 months of inactivity</li>
                 </ul>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Local Storage</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Local Storage</h3>
                 <p className="mb-4 text-standard dark:replace-text-gray-300">
                   We use browser local storage to remember your preferences (theme, language) and improve your experience. 
                   This data stays on your device and can be cleared through browser settings.
@@ -249,7 +249,7 @@ const Privacy = () => {
               <section>
                 <h2 className="heading-xl text-gradient-critical mb-4">11. Third-Party Services and Data Sharing</h2>
                 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Service Providers</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Service Providers</h3>
                 <ul className="list-disc list-inside space-y-2 mb-4 text-standard dark:replace-text-gray-300">
                   <li><strong>Google Analytics:</strong> Website usage analytics (data processed in US, subject to Google's privacy policy)</li>
                   <li><strong>Hosting Providers:</strong> Website hosting and content delivery (data processed in US/EU)</li>
@@ -258,7 +258,7 @@ const Privacy = () => {
                   <li><strong>Payment Processors:</strong> Secure payment processing (PCI DSS compliant)</li>
                 </ul>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">Data Processing Agreements</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">Data Processing Agreements</h3>
                 <p className="mb-4 text-standard dark:replace-text-gray-300">
                   All third-party service providers are required to:
                 </p>
@@ -270,7 +270,7 @@ const Privacy = () => {
                   <li>Delete or return data upon termination of services</li>
                 </ul>
 
-                <h3 className="heading-lg text-important dark:text-white mb-3">No Data Sales</h3>
+                <h3 className="heading-lg text-important-accessible dark:text-white mb-3">No Data Sales</h3>
                 <p className="text-standard dark:replace-text-gray-300">
                   <strong>We do not sell, rent, or trade your personal information to third parties.</strong> We may share 
                   aggregated, anonymized data for industry research or business development purposes that cannot identify individuals.
@@ -293,7 +293,7 @@ const Privacy = () => {
                   rights, please contact us:
                 </p>
                 <div className="bg-gray-50 dark:bg-slate-800 p-4 rounded-lg">
-                  <p className="font-medium text-important dark:text-white">Reboot Media, Inc.</p>
+                  <p className="font-medium text-important-accessible dark:text-white">Reboot Media, Inc.</p>
                   <p className="text-optional dark:replace-text-gray-400">17595 Harvard Ave C-738</p>
                   <p className="text-optional dark:replace-text-gray-400">Irvine, CA 92614, USA</p>
                   <p className="text-standard dark:replace-text-gray-300">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-accessible underline">Submit inquiry</a></p>
