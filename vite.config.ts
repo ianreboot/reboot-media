@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { securityPlugin } from './vite-plugin-security'
 import { visualizer } from 'rollup-plugin-visualizer'
+// @ts-ignore - Auto-healer plugin
+import accessibilityAutoHealer from './vite-plugin-accessibility-autohealer.js'
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
@@ -20,6 +22,11 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
       securityPlugin(),
+      // Strategic Amplification: Auto-healing accessibility system (temporarily disabled)
+      // accessibilityAutoHealer({
+      //   mode: 'auto-fix', // Automatically fix problematic classes
+      //   generateReport: true, // Generate accessibility report
+      // }),
       // Bundle analyzer (generates stats.html)
       visualizer({
         filename: 'bundle-stats.html',

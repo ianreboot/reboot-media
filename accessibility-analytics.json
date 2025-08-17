@@ -1,0 +1,385 @@
+{
+  "timestamp": "2025-08-17T09:21:20.252Z",
+  "totalFiles": 31,
+  "systematicClasses": {
+    "text-gradient-safe": 458,
+    "luminescence-layer-3": 71,
+    "text-gradient-critical": 281,
+    "text-gradient-enhanced": 14,
+    "text-black-critical": 35,
+    "text-black-important": 96,
+    "text-black-standard": 48,
+    "text-black-optional": 18
+  },
+  "problematicClasses": {},
+  "fileAnalysis": {
+    "About-NEW.tsx": {
+      "systematicCount": 15,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-safe": 8,
+        "luminescence-layer-3": 7
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "About.tsx": {
+      "systematicCount": 62,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 19,
+        "text-gradient-safe": 8,
+        "text-gradient-enhanced": 7,
+        "text-black-critical": 13,
+        "text-black-important": 14,
+        "text-black-standard": 1
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "CompetitivePressurePlateau.tsx": {
+      "systematicCount": 37,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 8,
+        "text-gradient-safe": 12,
+        "luminescence-layer-3": 3,
+        "text-black-important": 12,
+        "text-black-standard": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "Contact.tsx": {
+      "systematicCount": 4,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 2,
+        "text-gradient-safe": 1,
+        "text-black-critical": 1
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "CostROIAnalysis.tsx": {
+      "systematicCount": 22,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 10,
+        "text-gradient-safe": 10,
+        "text-black-standard": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "CustomerAcquisitionStall.tsx": {
+      "systematicCount": 37,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 8,
+        "text-gradient-safe": 12,
+        "luminescence-layer-3": 3,
+        "text-black-important": 12,
+        "text-black-standard": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "FractionalCMOGuide-NEW.tsx": {
+      "systematicCount": 12,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 2,
+        "text-gradient-safe": 7,
+        "luminescence-layer-3": 3
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "FractionalCMOGuide.tsx": {
+      "systematicCount": 29,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 9,
+        "text-gradient-safe": 13,
+        "luminescence-layer-3": 3,
+        "text-black-important": 3,
+        "text-black-standard": 1
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "FractionalCMOVsAgency.tsx": {
+      "systematicCount": 24,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 7,
+        "text-gradient-safe": 12,
+        "luminescence-layer-3": 3,
+        "text-black-standard": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "FractionalCMOVsConsultant.tsx": {
+      "systematicCount": 24,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 7,
+        "text-gradient-safe": 12,
+        "luminescence-layer-3": 3,
+        "text-black-standard": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "FractionalCMOVsFullTime.tsx": {
+      "systematicCount": 24,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 7,
+        "text-gradient-safe": 12,
+        "luminescence-layer-3": 3,
+        "text-black-standard": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "FractionalCMOVsInHouse.tsx": {
+      "systematicCount": 24,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 7,
+        "text-gradient-safe": 12,
+        "luminescence-layer-3": 3,
+        "text-black-standard": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "GrowthPlateauSolutions-NEW.tsx": {
+      "systematicCount": 13,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-safe": 9,
+        "luminescence-layer-3": 4
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "GrowthPlateauSolutions.tsx": {
+      "systematicCount": 23,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 5,
+        "text-gradient-safe": 11,
+        "luminescence-layer-3": 5,
+        "text-black-important": 1,
+        "text-black-standard": 1
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "MarketExpansionBarriers.tsx": {
+      "systematicCount": 37,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 8,
+        "text-gradient-safe": 12,
+        "luminescence-layer-3": 3,
+        "text-black-important": 12,
+        "text-black-standard": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "MarketingPsychology.tsx": {
+      "systematicCount": 142,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 36,
+        "text-gradient-safe": 41,
+        "text-black-critical": 21,
+        "text-black-important": 7,
+        "text-black-standard": 19,
+        "text-black-optional": 18
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "MostAwareStageCustomers.tsx": {
+      "systematicCount": 47,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 25,
+        "text-gradient-safe": 19,
+        "luminescence-layer-3": 3
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "OperationalScalingCrisis.tsx": {
+      "systematicCount": 37,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 8,
+        "text-gradient-safe": 12,
+        "luminescence-layer-3": 3,
+        "text-black-important": 12,
+        "text-black-standard": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "Privacy.tsx": {
+      "systematicCount": 48,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 14,
+        "text-gradient-safe": 31,
+        "luminescence-layer-3": 3
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "ProblemAwareStageCustomers.tsx": {
+      "systematicCount": 34,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 11,
+        "text-gradient-safe": 23
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "ProductAwareStageCustomers.tsx": {
+      "systematicCount": 25,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 9,
+        "text-gradient-safe": 15,
+        "luminescence-layer-3": 1
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "ProductMarketFitErosion.tsx": {
+      "systematicCount": 21,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 4,
+        "text-gradient-safe": 12,
+        "luminescence-layer-3": 3,
+        "text-black-standard": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "RevenueCeilingBreakthrough.tsx": {
+      "systematicCount": 35,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 7,
+        "text-gradient-safe": 12,
+        "luminescence-layer-3": 3,
+        "text-black-important": 11,
+        "text-black-standard": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "SolutionAwareStageCustomers.tsx": {
+      "systematicCount": 31,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 10,
+        "text-gradient-safe": 21
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "TeamGrowthBottlenecks.tsx": {
+      "systematicCount": 37,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 8,
+        "text-gradient-safe": 12,
+        "luminescence-layer-3": 3,
+        "text-black-important": 12,
+        "text-black-standard": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "Terms-NEW.tsx": {
+      "systematicCount": 16,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 4,
+        "text-gradient-safe": 10,
+        "luminescence-layer-3": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "Terms.tsx": {
+      "systematicCount": 57,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 17,
+        "text-gradient-safe": 38,
+        "luminescence-layer-3": 2
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "TransitionStrategies.tsx": {
+      "systematicCount": 29,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 8,
+        "text-gradient-safe": 17,
+        "luminescence-layer-3": 3,
+        "text-black-standard": 1
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "UnawareStageCustomers-NEW.tsx": {
+      "systematicCount": 10,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-safe": 9,
+        "luminescence-layer-3": 1
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "UnawareStageCustomers.tsx": {
+      "systematicCount": 40,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 13,
+        "text-gradient-safe": 19,
+        "text-gradient-enhanced": 7,
+        "luminescence-layer-3": 1
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    },
+    "WhenToChooseEach.tsx": {
+      "systematicCount": 25,
+      "problematicCount": 0,
+      "systematicClasses": {
+        "text-gradient-critical": 8,
+        "text-gradient-safe": 16,
+        "text-black-standard": 1
+      },
+      "problematicClasses": {},
+      "complianceScore": 100
+    }
+  },
+  "complianceScore": 100,
+  "totalSystematic": 1021,
+  "totalProblematic": 0
+}
