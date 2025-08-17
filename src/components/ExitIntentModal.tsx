@@ -20,9 +20,6 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
   const { isEligible, leadTier } = useExitIntentOptimization();
   const [isClosing, setIsClosing] = useState(false);
 
-  // Don't render if not eligible or not visible
-  if (!isEligible || !isVisible) return null;
-
   // Get tier-specific content
   const getTierContent = () => {
     switch (leadTier) {
@@ -197,6 +194,9 @@ const ExitIntentModal: React.FC<ExitIntentModalProps> = ({ isVisible, onClose, o
     
     handleClose();
   };
+
+  // Don't render if not eligible or not visible
+  if (!isEligible || !isVisible) return null;
 
   return (
     <div 
