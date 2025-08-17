@@ -303,33 +303,83 @@ body {
   .text-metadata { color: var(--black-metadata); }
   .text-decorative { color: var(--black-decorative); }
   
+  /* WCAG AA Compliant Accessible Text Classes */
+  .text-critical-accessible {
+    color: #000000;
+    text-shadow: 0 1px 3px rgba(255, 255, 255, 0.8);
+  }
+  
+  .text-important-accessible {
+    color: #1a1a1a;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
+  }
+  
+  .text-standard-accessible {
+    color: #2d2d2d;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.6);
+  }
+  
+  .text-white-critical {
+    color: #ffffff;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  
+  .text-white-important {
+    color: #ffffff;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7);
+  }
+  
+  .text-white-standard {
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Accessible overlays for text backgrounds */
+  .text-bg-overlay {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(8px);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .text-bg-overlay-dark {
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+  }
+  
   /* Override for dark backgrounds - trigger when dark background gradient is present */
   .homepage .text-critical,
   section[class*="bg-gradient-to-br"][class*="from-slate-9"] .text-critical,
   section[class*="bg-black"] .text-critical,
   .dark .text-critical {
-    color: white !important;
+    color: #ffffff !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8) !important;
   }
   
   .homepage .text-important,
   section[class*="bg-gradient-to-br"][class*="from-slate-9"] .text-important,
   section[class*="bg-black"] .text-important,
   .dark .text-important {
-    color: rgba(255, 255, 255, 0.95) !important;
+    color: #ffffff !important;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.7) !important;
   }
   
   .homepage .text-standard,
   section[class*="bg-gradient-to-br"][class*="from-slate-9"] .text-standard,
   section[class*="bg-black"] .text-standard,
   .dark .text-standard {
-    color: rgba(255, 255, 255, 0.85) !important;
+    color: #ffffff !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6) !important;
   }
   
   .homepage .text-optional,
   section[class*="bg-gradient-to-br"][class*="from-slate-9"] .text-optional,
   section[class*="bg-black"] .text-optional,
   .dark .text-optional {
-    color: rgba(255, 255, 255, 0.7) !important;
+    color: rgba(255, 255, 255, 0.9) !important;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6) !important;
   }
 
   .bg-critical { background-color: var(--white-critical); }

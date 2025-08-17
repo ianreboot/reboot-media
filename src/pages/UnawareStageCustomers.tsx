@@ -79,7 +79,7 @@ const UnawareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important-accessible dark:replace-text-gray-300 mb-6 text-center">
+              <p className="text-lg text-gradient-critical mb-6 text-center">
                 Unaware stage customers are the most dangerous for your business. They're convinced they're doing fine when they're actually hemorrhaging opportunities. Here are real examples of what they say and what's actually happening.
               </p>
             </section>
@@ -95,138 +95,150 @@ const UnawareStageCustomers = () => {
                 {/* Example 1 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:replace-text-gray-300 italic">"We built the best product but no one gets it"</p>
+                    <h3 className="heading-lg text-gradient-critical mb-2">Customer says:</h3>
+                    <blockquote className="text-gradient-enhanced italic text-lg font-medium bg-orange-50/20 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-500">
+                      "We built the best product but no one gets it"
+                    </blockquote>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">You're speaking engineer, they're thinking business results. Your "advanced features" sound like expensive complications to someone trying to solve a simple problem.</p>
+                    <p className="text-gradient-safe">You're speaking engineer, they're thinking business results. Your "advanced features" sound like expensive complications to someone trying to solve a simple problem.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">Start with the cost of their current broken process. Instead of "Our AI-powered analytics platform," try "Stop losing $3,000 monthly to decisions made on gut feeling instead of data."</p>
+                    <p className="text-gradient-safe">Start with the cost of their current broken process. Instead of "Our AI-powered analytics platform," try "Stop losing $3,000 monthly to decisions made on gut feeling instead of data."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
                     <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">People buy to solve pain, not to get features. When you lead with the financial impact of their current situation, you're speaking their language: business results.</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300 contrast-enhanced">People buy to solve pain, not to get features. When you lead with the financial impact of their current situation, you're speaking their language: business results.</p>
                   </div>
                 </div>
 
                 {/* Example 2 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:replace-text-gray-300 italic">"We just need more traffic to our website"</p>
+                    <h3 className="heading-lg text-gradient-critical mb-2">Customer says:</h3>
+                    <blockquote className="text-gradient-enhanced italic text-lg font-medium bg-orange-50/20 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-500">
+                      "We just need more traffic to our website"
+                    </blockquote>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">More traffic to a broken experience just means more people saying no. They're treating symptoms while the disease spreads.</p>
+                    <p className="text-gradient-safe">More traffic to a broken experience just means more people saying no. They're treating symptoms while the disease spreads.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">Help them see the real math. "Before sending more people to a site where 90% leave confused, let's figure out why your current visitors aren't buying. More confused people isn't the solution."</p>
+                    <p className="text-gradient-safe">Help them see the real math. "Before sending more people to a site where 90% leave confused, let's figure out why your current visitors aren't buying. More confused people isn't the solution."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
                     <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">It reframes their thinking from "more" to "better." Most businesses fail not from lack of traffic but from poor conversion of existing traffic.</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300 contrast-enhanced">It reframes their thinking from "more" to "better." Most businesses fail not from lack of traffic but from poor conversion of existing traffic.</p>
                   </div>
                 </div>
 
                 {/* Example 3 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:replace-text-gray-300 italic">"Our prices are competitive, I don't know why we're not winning deals"</p>
+                    <h3 className="heading-lg text-gradient-critical mb-2">Customer says:</h3>
+                    <blockquote className="text-gradient-enhanced italic text-lg font-medium bg-orange-50/20 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-500">
+                      "Our prices are competitive, I don't know why we're not winning deals"
+                    </blockquote>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">When price becomes the conversation, you've already lost. You're being compared like a commodity because you haven't shown unique value.</p>
+                    <p className="text-gradient-safe">When price becomes the conversation, you've already lost. You're being compared like a commodity because you haven't shown unique value.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">Change the conversation from cost to outcome. "The companies beating you aren't competing on price—they're making price irrelevant by showing specific results their solution delivers."</p>
+                    <p className="text-gradient-safe">Change the conversation from cost to outcome. "The companies beating you aren't competing on price—they're making price irrelevant by showing specific results their solution delivers."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
                     <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">Value-focused messaging shifts the conversation from "How much does it cost?" to "What will this accomplish?" Premium pricing becomes possible when you're solving important problems.</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300 contrast-enhanced">Value-focused messaging shifts the conversation from "How much does it cost?" to "What will this accomplish?" Premium pricing becomes possible when you're solving important problems.</p>
                   </div>
                 </div>
 
                 {/* Example 4 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:replace-text-gray-300 italic">"Everyone in our industry struggles with marketing"</p>
+                    <h3 className="heading-lg text-gradient-critical mb-2">Customer says:</h3>
+                    <blockquote className="text-gradient-enhanced italic text-lg font-medium bg-orange-50/20 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-500">
+                      "Everyone in our industry struggles with marketing"
+                    </blockquote>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">They're normalizing failure instead of recognizing opportunity. While they accept "everyone struggles," their smartest competitors are pulling ahead.</p>
+                    <p className="text-gradient-safe">They're normalizing failure instead of recognizing opportunity. While they accept "everyone struggles," their smartest competitors are pulling ahead.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">Show them the exception proves the rule. "While most companies in your space do struggle, the 15% that don't are capturing disproportionate market share. Here's what they do differently."</p>
+                    <p className="text-gradient-safe">Show them the exception proves the rule. "While most companies in your space do struggle, the 15% that don't are capturing disproportionate market share. Here's what they do differently."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
                     <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">It transforms resignation into opportunity. Instead of accepting industry-wide failure, you position your solution as the differentiator that creates competitive advantage.</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300 contrast-enhanced">It transforms resignation into opportunity. Instead of accepting industry-wide failure, you position your solution as the differentiator that creates competitive advantage.</p>
                   </div>
                 </div>
 
                 {/* Example 5 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:replace-text-gray-300 italic">"Our team is too busy to focus on marketing right now"</p>
+                    <h3 className="heading-lg text-gradient-critical mb-2">Customer says:</h3>
+                    <blockquote className="text-gradient-enhanced italic text-lg font-medium bg-orange-50/20 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-500">
+                      "Our team is too busy to focus on marketing right now"
+                    </blockquote>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">They're confusing activity with progress. Being "busy" often means working harder on the wrong things while competitors work smarter on the right things.</p>
+                    <p className="text-gradient-safe">They're confusing activity with progress. Being "busy" often means working harder on the wrong things while competitors work smarter on the right things.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">Reframe busy as expensive. "The cost of your team being too busy for marketing isn't just missed opportunities—it's working twice as hard for half the results because you're invisible to your best prospects."</p>
+                    <p className="text-gradient-safe">Reframe busy as expensive. "The cost of your team being too busy for marketing isn't just missed opportunities—it's working twice as hard for half the results because you're invisible to your best prospects."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
                     <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">It shows that "too busy for marketing" actually creates more work, not less. Effective marketing reduces the effort required to acquire customers, not increases it.</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300 contrast-enhanced">It shows that "too busy for marketing" actually creates more work, not less. Effective marketing reduces the effort required to acquire customers, not increases it.</p>
                   </div>
                 </div>
 
                 {/* Example 6 */}
                 <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
-                    <p className="text-standard dark:replace-text-gray-300 italic">"We've tried marketing before and it didn't work"</p>
+                    <h3 className="heading-lg text-gradient-critical mb-2">Customer says:</h3>
+                    <blockquote className="text-gradient-enhanced italic text-lg font-medium bg-orange-50/20 dark:bg-orange-900/30 p-4 rounded-lg border-l-4 border-orange-500">
+                      "We've tried marketing before and it didn't work"
+                    </blockquote>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">Real problem:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">They're treating marketing like a magic button instead of a systematic process. One failed attempt makes them think the entire discipline doesn't work.</p>
+                    <p className="text-gradient-safe">They're treating marketing like a magic button instead of a systematic process. One failed attempt makes them think the entire discipline doesn't work.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do instead:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">Separate strategy from tactics. "Marketing isn't one thing that either works or doesn't. The question is: did you have the right message, to the right people, at the right time? Most 'marketing failures' are actually messaging failures."</p>
+                    <p className="text-gradient-safe">Separate strategy from tactics. "Marketing isn't one thing that either works or doesn't. The question is: did you have the right message, to the right people, at the right time? Most 'marketing failures' are actually messaging failures."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg border border-blue-200 dark:border-blue-800">
                     <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">It shifts blame from "marketing doesn't work" to "we haven't found the right marketing approach yet." This opens the door to trying systematic, psychology-based approaches.</p>
+                    <p className="text-sm text-blue-700 dark:text-blue-300 contrast-enhanced">It shifts blame from "marketing doesn't work" to "we haven't found the right marketing approach yet." This opens the door to trying systematic, psychology-based approaches.</p>
                   </div>
                 </div>
 
@@ -239,35 +251,41 @@ const UnawareStageCustomers = () => {
                 The Pattern: What Unaware Customers Really Need
               </h2>
               
-              <div className="bg-orange-50 dark:bg-orange-900/20 rounded-xl p-6 mb-6">
-                <p className="text-orange-800 dark:text-orange-200 mb-4">
+              <div className="bg-orange-50 dark:bg-orange-900/20 rounded-xl p-6 mb-6 border border-orange-200 dark:border-orange-800">
+                <p className="text-orange-800 dark:text-orange-200 mb-4 text-gradient-enhanced">
                   <strong>The unaware customer's biggest enemy isn't competition—it's comfort with dysfunction.</strong>
                 </p>
-                <p className="text-orange-700 dark:text-orange-300">
+                <p className="text-orange-700 dark:text-orange-300 text-gradient-safe">
                   They've normalized problems that are costing them thousands monthly. Your job isn't to sell them a solution; it's to help them see the problem clearly for the first time.
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
-                  <h3 className="heading-lg text-important-accessible dark:text-white mb-3">What NOT to do:</h3>
-                  <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
-                    <li>• Lead with features or capabilities</li>
-                    <li>• Assume they understand the problem</li>
-                    <li>• Use industry jargon or technical terms</li>
-                    <li>• Push for immediate solutions</li>
-                    <li>• Compare yourself to competitors they don't know</li>
+                <div className="p-6 border border-red-200 dark:border-red-800 rounded-xl bg-red-50/20 dark:bg-red-900/20">
+                  <h3 className="heading-lg text-gradient-critical mb-3 flex items-center">
+                    <span className="text-red-600 dark:text-red-400 mr-2 text-2xl">✗</span>
+                    What NOT to do:
+                  </h3>
+                  <ul className="text-gradient-safe space-y-2 text-sm">
+                    <li className="flex items-start"><span className="text-red-500 mr-2 font-bold">•</span> Lead with features or capabilities</li>
+                    <li className="flex items-start"><span className="text-red-500 mr-2 font-bold">•</span> Assume they understand the problem</li>
+                    <li className="flex items-start"><span className="text-red-500 mr-2 font-bold">•</span> Use industry jargon or technical terms</li>
+                    <li className="flex items-start"><span className="text-red-500 mr-2 font-bold">•</span> Push for immediate solutions</li>
+                    <li className="flex items-start"><span className="text-red-500 mr-2 font-bold">•</span> Compare yourself to competitors they don't know</li>
                   </ul>
                 </div>
                 
-                <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
-                  <h3 className="heading-lg text-important-accessible dark:text-white mb-3">What TO do:</h3>
-                  <ul className="text-standard dark:replace-text-gray-300 space-y-2 text-sm">
-                    <li>• Start with the cost of their current situation</li>
-                    <li>• Use their exact language and concerns</li>
-                    <li>• Provide gentle education, not sales pressure</li>
-                    <li>• Show what success looks like for similar companies</li>
-                    <li>• Focus on business outcomes, not tools</li>
+                <div className="p-6 border border-green-200 dark:border-green-800 rounded-xl bg-green-50/20 dark:bg-green-900/20">
+                  <h3 className="heading-lg text-gradient-critical mb-3 flex items-center">
+                    <span className="text-green-600 dark:text-green-400 mr-2 text-2xl">✓</span>
+                    What TO do:
+                  </h3>
+                  <ul className="text-gradient-safe space-y-2 text-sm">
+                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Start with the cost of their current situation</li>
+                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Use their exact language and concerns</li>
+                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Provide gentle education, not sales pressure</li>
+                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Show what success looks like for similar companies</li>
+                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Focus on business outcomes, not tools</li>
                   </ul>
                 </div>
               </div>
@@ -278,7 +296,7 @@ const UnawareStageCustomers = () => {
               <h2 className="heading-xl text-gradient-critical mb-6">
                 Are You Struggling with Customers Who Don't Even Know You Exist?
               </h2>
-              <p className="replace-text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
+              <p className="text-gradient-safe mb-8 text-lg max-w-2xl mx-auto">
                 Stop wasting months trying to convince people who think everything is fine. Get our systematic approach to turning unaware prospects into eager customers who finally understand what they've been missing.
               </p>
               <button aria-label="Opens contact form for free marketing analysis" 
@@ -287,7 +305,7 @@ const UnawareStageCustomers = () => {
               >
                 Get Your Free Marketing Psychology Analysis →
               </button>
-              <p className="replace-text-gray-400 text-sm mt-4">
+              <p className="text-gradient-safe text-sm mt-4">
                 ✅ Identify your biggest unaware prospect problems • ✅ Custom messaging strategy • ✅ No obligation
               </p>
             </section>
@@ -297,7 +315,7 @@ const UnawareStageCustomers = () => {
               <div className="flex justify-between items-center">
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`}
-                  className="replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible focus-visible:text-orange-accessible dark:hover:text-orange-400 focus-visible:text-orange-400 transition-colors"
+                  className="text-gradient-safe hover:text-orange-accessible focus-visible:text-orange-accessible dark:hover:text-orange-400 focus-visible:text-orange-400 transition-colors"
                 >
                   ← Back to Marketing Psychology Overview
                 </a>

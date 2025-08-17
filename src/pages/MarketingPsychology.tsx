@@ -51,7 +51,7 @@ const MarketingPsychology = () => {
               <span className="block">Start Converting.</span>
               <span className="block text-orange-500 mt-2">Master Marketing Psychology</span>
             </h1>
-            <p className="text-xl text-important-accessible dark:replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gradient-critical mb-8 max-w-3xl mx-auto leading-relaxed">
               The 5 customer awareness stages and conversion psychology principles that transform scattered marketing into predictable revenue growth. Used by Fortune 500 companies and growth-stage businesses worldwide.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -85,10 +85,10 @@ const MarketingPsychology = () => {
               Why 73% of Marketing Campaigns Fail to Convert
             </h2>
             <div className="prose prose-lg max-w-none dark:prose-invert">
-              <p className="text-standard dark:replace-text-gray-300 mb-6 text-center">
+              <p className="text-gradient-safe mb-6 text-center">
                 Most businesses are throwing marketing messages at prospects without understanding <strong>where they are in the buying journey</strong>. They're using product-focused messaging for people who don't even know they have a problem yet. They're creating urgency for prospects who haven't built trust yet.
               </p>
-              <p className="text-standard dark:replace-text-gray-300 mb-8 text-center">
+              <p className="text-gradient-safe mb-8 text-center">
                 The result? Marketing that feels like shouting into the void. Campaigns that burn through budget without generating qualified leads. Teams frustrated by "marketing that doesn't work."
               </p>
             </div>

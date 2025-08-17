@@ -157,7 +157,7 @@ const Contact = () => {
             <h1 className="heading-hero text-gradient-critical mb-6">
               Contact Us
             </h1>
-            <p className="text-xl text-important-accessible dark:replace-text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gradient-safe max-w-3xl mx-auto leading-relaxed">
               Ready to transform your marketing strategy? Let's discuss how our fractional CMO services 
               can drive measurable growth for your business.
             </p>
@@ -165,10 +165,10 @@ const Contact = () => {
 
           {/* Form Usage Guidance */}
           <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-2xl p-6 mb-8 text-center">
-            <h2 className="heading-sm text-black-important dark:text-orange-100 mb-3">
+            <h2 className="heading-sm text-black-critical dark:text-orange-50 mb-3">
               Looking for Marketing Help?
             </h2>
-            <p className="text-orange-800 dark:text-orange-200 mb-4">
+            <p className="text-orange-900 dark:text-orange-100 mb-4">
               If you're looking to improve your marketing, grow your revenue, or get a free marketing analysis, 
               please use our Marketing Analysis form for the fastest response and personalized recommendations.
             </p>
@@ -184,9 +184,9 @@ const Contact = () => {
             
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6">
+              <div className="bg-white/90 dark:bg-slate-800/90 backdrop-blur-md rounded-2xl shadow-xl border border-white/30 dark:border-slate-700/30 p-6">
                 <h2 className="heading-lg text-gradient-critical mb-6">General Inquiries</h2>
-            <p className="text-standard dark:replace-text-gray-300 mb-4 text-sm">
+            <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">
               Use this form for legal inquiries, privacy questions, technical support, or other non-marketing matters.
             </p>
                 
@@ -215,7 +215,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-6" role="form" aria-label="Lead generation form">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
+                      <label htmlFor="name" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
                         Full Name *
                       </label>
                       <input
@@ -225,12 +225,12 @@ const Contact = () => {
                         value={formData.name}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 bg-white/50 dark:bg-slate-700/50 border border-gray-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:text-white"
+                        className="w-full px-4 py-3 bg-white dark:bg-slate-700 border border-gray-400 dark:border-slate-500 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 dark:text-white"
                         placeholder="Your full name"
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
+                      <label htmlFor="email" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
                         Email Address *
                       </label>
                       <input
@@ -240,7 +240,7 @@ const Contact = () => {
                         value={formData.email}
                         onChange={handleInputChange}
                         required
-                        className="w-full px-4 py-3 bg-white/50 dark:bg-slate-700/50 border border-gray-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:text-white"
+                        className="w-full px-4 py-3 bg-white dark:bg-slate-700 border border-gray-400 dark:border-slate-500 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 dark:text-white"
                         placeholder="your@email.com"
                       />
                     </div>
@@ -248,7 +248,7 @@ const Contact = () => {
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="company" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
+                      <label htmlFor="company" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
                         Company Name
                       </label>
                       <input
@@ -257,12 +257,12 @@ const Contact = () => {
                         name="company"
                         value={formData.company}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-white/50 dark:bg-slate-700/50 border border-gray-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:text-white"
+                        className="w-full px-4 py-3 bg-white dark:bg-slate-700 border border-gray-400 dark:border-slate-500 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 dark:text-white"
                         placeholder="Your company"
                       />
                     </div>
                     <div>
-                      <label htmlFor="website" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
+                      <label htmlFor="website" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
                         Website URL
                       </label>
                       <input
@@ -271,7 +271,7 @@ const Contact = () => {
                         name="website"
                         value={formData.website}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-white/50 dark:bg-slate-700/50 border border-gray-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:text-white"
+                        className="w-full px-4 py-3 bg-white dark:bg-slate-700 border border-gray-400 dark:border-slate-500 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 dark:text-white"
                         placeholder="https://yourwebsite.com"
                       />
                     </div>
@@ -279,7 +279,7 @@ const Contact = () => {
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
+                      <label htmlFor="phone" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
                         Phone Number
                       </label>
                       <input
@@ -288,12 +288,12 @@ const Contact = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-white/50 dark:bg-slate-700/50 border border-gray-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:text-white"
+                        className="w-full px-4 py-3 bg-white dark:bg-slate-700 border border-gray-400 dark:border-slate-500 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 dark:text-white"
                         placeholder="(555) 123-4567"
                       />
                     </div>
                     <div>
-                      <label htmlFor="serviceInterest" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
+                      <label htmlFor="serviceInterest" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
                         Service Interest
                       </label>
                       <select
@@ -301,7 +301,7 @@ const Contact = () => {
                         name="serviceInterest"
                         value={formData.serviceInterest}
                         onChange={handleInputChange}
-                        className="w-full px-4 py-3 bg-white/50 dark:bg-slate-700/50 border border-gray-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:text-white"
+                        className="w-full px-4 py-3 bg-white dark:bg-slate-700 border border-gray-400 dark:border-slate-500 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 dark:text-white"
                        aria-label="Select an option">
                         <option value="">Select a service</option>
                         <option value="quick-win">Quick-Win Strategy ($5K-8K/month)</option>
@@ -314,7 +314,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
+                    <label htmlFor="subject" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
                       Subject
                     </label>
                     <input
@@ -323,13 +323,13 @@ const Contact = () => {
                       name="subject"
                       value={formData.subject}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-white/50 dark:bg-slate-700/50 border border-gray-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:text-white"
+                      className="w-full px-4 py-3 bg-white dark:bg-slate-700 border border-gray-400 dark:border-slate-500 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 dark:text-white"
                       placeholder="What can we help you with?"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-standard dark:replace-text-gray-300 mb-2">
+                    <label htmlFor="message" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
                       Message *
                     </label>
                     <textarea
@@ -339,7 +339,7 @@ const Contact = () => {
                       onChange={handleInputChange}
                       required
                       rows={6}
-                      className="w-full px-4 py-3 bg-white/50 dark:bg-slate-700/50 border border-gray-300 dark:border-slate-600 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 dark:text-white"
+                      className="w-full px-4 py-3 bg-white dark:bg-slate-700 border border-gray-400 dark:border-slate-500 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 text-gray-900 dark:text-white"
                       placeholder="Tell us about your business challenges and goals..."
                       aria-label="Text input field">
                     </textarea>
@@ -385,14 +385,14 @@ const Contact = () => {
             <div className="space-y-6">
               
               {/* Company Info */}
-              <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6">
-                <h3 className="heading-md text-black-important dark:text-white mb-4">Get in Touch</h3>
+              <div className="bg-white/90 dark:bg-slate-800/90 backdrop-blur-md rounded-2xl shadow-xl border border-white/30 dark:border-slate-700/30 p-6">
+                <h3 className="heading-md text-gray-900 dark:text-white mb-4">Get in Touch</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <MapPin className="w-5 h-5 text-orange-500 mr-3 mt-1" />
                     <div>
-                      <p className="font-medium replace-text-gray-900 dark:text-white">Address</p>
-                      <p className="text-sm text-optional dark:replace-text-gray-300">
+                      <p className="font-semibold text-gray-800 dark:text-white">Address</p>
+                      <p className="text-sm text-gray-700 dark:text-gray-200">
                         17595 Harvard Ave C-738<br />
                         Irvine, CA 92614<br />
                         United States
@@ -402,8 +402,8 @@ const Contact = () => {
                   <div className="flex items-start">
                     <Globe className="w-5 h-5 text-orange-500 mr-3 mt-1" />
                     <div>
-                      <p className="font-medium replace-text-gray-900 dark:text-white">Service Areas</p>
-                      <p className="text-sm text-optional dark:replace-text-gray-300">
+                      <p className="font-semibold text-gray-800 dark:text-white">Service Areas</p>
+                      <p className="text-sm text-gray-700 dark:text-gray-200">
                         USA • Bangkok • Singapore<br />
                         Global services available
                       </p>

@@ -157,9 +157,11 @@ const MainApp = () => {
           </h1>
           
           {/* Subheadline */}
-          <p className="text-xl text-standard max-w-4xl mx-auto mb-8">
-            <span className="text-white/90">Stop fumbling with amateur advice. Get</span> <span className="font-bold text-important-accessible">battle-tested strategies proven at Fortune 500 companies</span> <span className="text-white/90">that drive explosive growth</span>
-          </p>
+          <div className="text-bg-overlay-dark mx-auto max-w-4xl mb-8 rounded-xl">
+            <p className="text-xl text-white-important">
+              <span className="text-white-standard">Stop fumbling with amateur advice. Get</span> <span className="font-bold text-white-critical">battle-tested strategies proven at Fortune 500 companies</span> <span className="text-white-standard">that drive explosive growth</span>
+            </p>
+          </div>
 
           {/* Single Primary CTA */}
           <div className="flex justify-center">
@@ -177,28 +179,28 @@ const MainApp = () => {
 
           {/* Benefits-Focused Proof Points */}
           <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
+            <div className="group relative bg-white/95 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
               <div className="text-center">
-                <div className="text-2xl font-black text-important-accessible mb-1">30X Growth</div>
-                <div className="text-sm text-standard font-medium leading-tight">
+                <div className="text-2xl font-black text-critical-accessible mb-1">30X Growth</div>
+                <div className="text-sm text-important-accessible font-medium leading-tight">
                   Companies see explosive revenue growth when psychology replaces guesswork
                 </div>
               </div>
             </div>
             
-            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
+            <div className="group relative bg-white/95 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
               <div className="text-center">
-                <div className="text-2xl font-black replace-text-slate-900 mb-1">Stop the Bleed</div>
-                <div className="text-sm replace-text-slate-700 font-medium leading-tight">
+                <div className="text-2xl font-black text-critical-accessible mb-1">Stop the Bleed</div>
+                <div className="text-sm text-important-accessible font-medium leading-tight">
                   Finally understand why customers don't buy, instead of wondering why
                 </div>
               </div>
             </div>
             
-            <div className="group relative bg-white/90 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
+            <div className="group relative bg-white/95 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
               <div className="text-center">
-                <div className="text-2xl font-black replace-text-slate-900 mb-1">Sleep Better</div>
-                <div className="text-sm replace-text-slate-700 font-medium leading-tight">
+                <div className="text-2xl font-black text-critical-accessible mb-1">Sleep Better</div>
+                <div className="text-sm text-important-accessible font-medium leading-tight">
                   No more throwing money at marketing that doesn't bring customers
                 </div>
               </div>
@@ -215,29 +217,31 @@ const MainApp = () => {
             <h2 className="heading-xl text-critical mb-6 sm:mb-8">
               The <span className="text-red-500">$200K</span> Marketing Mistake
             </h2>
-            <p className="text-xl replace-text-stone-700 max-w-3xl mx-auto leading-normal">
-              <span className="text-white/90"><span className="font-bold">73% of growing companies</span> can't explain their value clearly to customers. They suffer from the "Curse of Knowledge" - knowing too much about their product to communicate it simply.</span>
-            </p>
+            <div className="text-bg-overlay-dark mx-auto max-w-3xl rounded-xl">
+              <p className="text-xl text-white-important leading-normal">
+                <span className="text-white-critical font-bold">73% of growing companies</span> can't explain their value clearly to customers. They suffer from the "Curse of Knowledge" - knowing too much about their product to communicate it simply.
+              </p>
+            </div>
           </div>
 
           {/* Asymmetrical Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
               <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-xl border border-stone-200 transform -rotate-1">
-                <h3 className="text-2xl font-bold replace-text-slate-900 mb-6">What Business Owners Say:</h3>
-                <div className="space-y-4 replace-text-stone-700">
-                  <p className="italic">"Our advanced AI-powered customer management platform leverages machine learning algorithms to deliver personalized experiences..."</p>
+                <h3 className="text-2xl font-bold text-critical-accessible mb-6">What Business Owners Say:</h3>
+                <div className="space-y-4">
+                  <p className="italic text-standard-accessible">"Our advanced AI-powered customer management platform leverages machine learning algorithms to deliver personalized experiences..."</p>
                   <p className="text-red-600 font-semibold">❌ Customers don't understand this</p>
                 </div>
               </div>
             </div>
             
             <div className="order-1 lg:order-2">
-              <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-xl border border-orange-200/30 dark:border-orange-400/30 transform rotate-1">
-                <h3 className="text-2xl font-bold mb-6 text-white">What Customers Hear:</h3>
-                <div className="space-y-4 replace-text-stone-700">
-                  <p className="italic text-white/90">"We help you stop losing customers and make more money from the ones you have."</p>
-                  <p className="text-green-600 font-semibold">✅ Clear, benefits-focused</p>
+              <div className="bg-slate-800/90 backdrop-blur-md p-6 sm:p-8 rounded-2xl shadow-xl border border-orange-400/50 transform rotate-1">
+                <h3 className="text-2xl font-bold mb-6 text-white-critical">What Customers Hear:</h3>
+                <div className="space-y-4">
+                  <p className="italic text-white-important">"We help you stop losing customers and make more money from the ones you have."</p>
+                  <p className="text-green-400 font-semibold">✅ Clear, benefits-focused</p>
                 </div>
               </div>
             </div>
@@ -255,12 +259,14 @@ const MainApp = () => {
               </svg>
               <span className="text-blue-accessible text-sm font-semibold">Common Question</span>
             </div>
-            <h2 className="heading-xl replace-text-slate-900 mb-6" style={{ marginTop: '0.25rem' }}>
-              "Do You Have Experience in <span className="text-blue-accessible">My Industry</span>?"
-            </h2>
-            <p className="text-xl text-slate-600 mb-8">
-              <span className="text-white/90">This is the right question to ask. But the answer might surprise you...</span>
-            </p>
+            <div className="text-bg-overlay-dark rounded-xl">
+              <h2 className="heading-xl text-white-critical mb-6" style={{ marginTop: '0.25rem' }}>
+                "Do You Have Experience in <span className="text-blue-400">My Industry</span>?"
+              </h2>
+              <p className="text-xl text-white-important mb-8">
+                This is the right question to ask. But the answer might surprise you...
+              </p>
+            </div>
           </div>
 
           <div className="max-w-4xl mx-auto">
@@ -281,16 +287,16 @@ const MainApp = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl">
                   <div className="text-center">
-                    <h4 className="text-lg font-bold mb-3">The Curse of Knowledge</h4>
-                    <p className="replace-text-gray-300 text-base leading-relaxed">
+                    <h4 className="text-lg font-bold mb-3 text-white-critical">The Curse of Knowledge</h4>
+                    <p className="text-white-standard text-base leading-relaxed">
                       They're so deep in industry jargon they can't see what confuses customers
                     </p>
                   </div>
                 </div>
                 <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl">
                   <div className="text-center">
-                    <h4 className="text-lg font-bold mb-3">Replicate Not Customize</h4>
-                    <p className="replace-text-gray-300 text-base leading-relaxed">
+                    <h4 className="text-lg font-bold mb-3 text-white-critical">Replicate Not Customize</h4>
+                    <p className="text-white-standard text-base leading-relaxed">
                       They copy what worked elsewhere instead of customizing for your unique market
                     </p>
                   </div>
@@ -313,24 +319,24 @@ const MainApp = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer">
                   <div className="text-center">
-                    <h4 className="text-lg font-bold mb-3">Customer Perspective</h4>
-                    <p className="replace-text-gray-300 text-base leading-relaxed">
+                    <h4 className="text-lg font-bold mb-3 text-white-critical">Customer Perspective</h4>
+                    <p className="text-white-standard text-base leading-relaxed">
                       I ask the same questions your prospects do, spotting exactly where they get confused
                     </p>
                   </div>
                 </div>
                 <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer">
                   <div className="text-center">
-                    <h4 className="text-lg font-bold mb-3">Question Everything</h4>
-                    <p className="replace-text-gray-300 text-base leading-relaxed">
+                    <h4 className="text-lg font-bold mb-3 text-white-critical">Question Everything</h4>
+                    <p className="text-white-standard text-base leading-relaxed">
                       While experts accept "how we've always done it," I ask "why?" and find new opportunities
                     </p>
                   </div>
                 </div>
                 <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer">
                   <div className="text-center">
-                    <h4 className="text-lg font-bold mb-3">Executive Experience</h4>
-                    <p className="replace-text-gray-300 text-base leading-relaxed">
+                    <h4 className="text-lg font-bold mb-3 text-white-critical">Executive Experience</h4>
+                    <p className="text-white-standard text-base leading-relaxed">
                       C-level strategies that work across industries - proven at 20+ US companies
                     </p>
                   </div>

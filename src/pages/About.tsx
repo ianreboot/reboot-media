@@ -46,7 +46,7 @@ const About = () => {
             <h1 className="heading-hero text-gradient-critical mb-6">
               About Reboot Media
             </h1>
-            <p className="text-xl text-gradient-enhanced max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gradient-critical max-w-3xl mx-auto leading-relaxed text-shadow-sm">
               Fractional CMO services with proven C-level executive experience from Fortune 500 companies. 
               We don't just give advice – we deliver battle-tested strategies that drive measurable growth.
             </p>
@@ -56,28 +56,31 @@ const About = () => {
           <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8">
             <h2 className="heading-xl text-gradient-critical mb-6">Our Story</h2>
             <div className="grid lg:grid-cols-2 gap-8 items-center">
-              <div className="space-y-4 text-gradient-safe">
-                <p className="text-lg leading-relaxed">
+              <div className="space-y-4 text-black-standard dark:text-gradient-safe">
+                <p className="text-lg leading-relaxed text-shadow-sm">
                   Founded in 2020, Reboot Media was born from a simple realization: most growing companies struggle 
                   with marketing not because they lack resources, but because they lack proven strategic leadership.
                 </p>
-                <p>
+                <p className="text-shadow-sm">
                   After managing $2B+ in revenue across 20+ US companies and guiding Fortune 500 marketing strategies, 
                   our founder saw the same patterns repeatedly – talented teams trapped by amateur-hour decision making.
                 </p>
-                <p>
+                <p className="text-shadow-sm">
                   We created Reboot Media to bridge this gap, providing C-level marketing expertise without the 
                   full-time executive cost. Our fractional CMO model gives you access to Fortune 500-caliber 
                   strategy and execution at a fraction of traditional consulting costs.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900 dark:to-amber-900 p-6 rounded-xl">
-                <h3 className="heading-lg text-black-important dark:text-white mb-4">Why "Reboot" Media?</h3>
-                <p className="text-black-standard dark:replace-text-gray-300">
-                  Sometimes the best solution isn't to add more features – it's to restart with a clean, 
-                  proven foundation. We help companies "reboot" their marketing with strategies that actually work, 
-                  eliminating the guesswork and focusing on what drives real business results.
-                </p>
+              <div className="bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900 dark:to-amber-900 p-6 rounded-xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-white/20 dark:bg-black/20"></div>
+                <div className="relative z-10">
+                  <h3 className="heading-lg text-black-critical dark:text-gradient-critical mb-4 text-shadow-sm">Why "Reboot" Media?</h3>
+                  <p className="text-black-important dark:text-gradient-enhanced text-shadow-sm">
+                    Sometimes the best solution isn't to add more features – it's to restart with a clean, 
+                    proven foundation. We help companies "reboot" their marketing with strategies that actually work, 
+                    eliminating the guesswork and focusing on what drives real business results.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -93,13 +96,13 @@ const About = () => {
                   </div>
                 </div>
                 <div className="lg:w-2/3 space-y-4">
-                  <h3 className="heading-lg text-black-important dark:text-white">Ian Ho</h3>
-                  <p className="text-lg text-orange-accessible dark:text-orange-400 font-semibold">Founder & Fractional CMO</p>
-                  <p className="text-black-standard dark:replace-text-gray-300 leading-relaxed">
+                  <h3 className="heading-lg text-black-critical dark:text-gradient-critical text-shadow-sm">Ian Ho</h3>
+                  <p className="text-lg text-orange-accessible dark:text-orange-300 font-semibold text-shadow-sm">Founder & Fractional CMO</p>
+                  <p className="text-black-important dark:text-gradient-enhanced leading-relaxed text-shadow-sm">
                     With over 15 years of C-level marketing experience across Fortune 500 companies, Ian has managed 
                     marketing budgets exceeding $2B and driven growth strategies for companies from startup to enterprise scale.
                   </p>
-                  <p className="text-black-standard dark:replace-text-gray-300 leading-relaxed">
+                  <p className="text-black-important dark:text-gradient-enhanced leading-relaxed text-shadow-sm">
                     His expertise spans strategic planning, revenue optimization, digital transformation, and organizational 
                     scaling. Ian's hands-on approach combines analytical rigor with creative strategic thinking to deliver 
                     measurable business results.
