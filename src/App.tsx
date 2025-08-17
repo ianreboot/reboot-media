@@ -436,13 +436,13 @@ const MainApp = () => {
             <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-2xl p-6 max-w-4xl mx-auto mb-8">
               <div className="flex flex-col md:flex-row items-center justify-between text-center">
                 <div className="mb-4 md:mb-0">
-                  <h3 className="text-lg font-bold replace-text-slate-900 mb-2">Full-Time CMO Cost</h3>
+                  <h3 className="text-lg font-bold text-critical-accessible mb-2">Full-Time CMO Cost</h3>
                   <div className="text-3xl font-black text-red-600 line-through">$300K+</div>
                   <div className="text-sm text-red-700">+ benefits, recruiting, risk</div>
                 </div>
                 <div className="text-orange-500 text-4xl font-bold mx-8">VS</div>
                 <div>
-                  <h3 className="text-lg font-bold replace-text-slate-900 mb-2">Fractional CMO</h3>
+                  <h3 className="text-lg font-bold text-critical-accessible mb-2">Fractional CMO</h3>
                   <div className="text-3xl font-black text-orange-500">$5K-18K</div>
                   <div className="text-sm text-orange-700">immediate start, proven results</div>
                 </div>

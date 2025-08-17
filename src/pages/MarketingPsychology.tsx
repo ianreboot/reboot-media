@@ -256,21 +256,21 @@ const MarketingPsychology = () => {
                     <span className="text-blue-accessible font-bold text-lg">5</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-black-important dark:text-white mb-2">Most Aware Stage</h3>
-                    <p className="replace-text-gray-600 dark:replace-text-gray-400">They're ready to buy and just need the final push</p>
+                    <h3 className="heading-lg text-black-important dark:text-gradient-critical mb-2">Most Aware Stage</h3>
+                    <p className="text-black-optional dark:text-gradient-safe">They're ready to buy and just need the final push</p>
                   </div>
                 </div>
-                <p className="text-standard dark:replace-text-gray-300 mb-4">
+                <p className="text-black-standard dark:text-gradient-safe mb-4">
                   These prospects are ready. They say "Send me the contract" or "Let me run this by my team one more time." They want to move forward but need that final nudge.
                 </p>
                 
-                <p className="text-standard dark:replace-text-gray-300 mb-6">
+                <p className="text-black-standard dark:text-gradient-safe mb-6">
                   Don't oversell—they're already sold. Remove friction, make the next step tiny, and give them control. The difference between "thinking about it" and signing today? Usually just one small fear.
                 </p>
                 
-                <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
-                  <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Example Headline:</p>
-                  <p className="replace-text-gray-900 dark:text-white">"Get Your Free Marketing Analysis - Limited to 8 Clients This Quarter"</p>
+                <div className="mt-6 p-4 bg-white/80 dark:bg-slate-700/80 backdrop-blur-sm rounded-lg border border-white/30 dark:border-slate-600/30">
+                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Example Headline:</p>
+                  <p className="text-black-critical dark:text-gradient-critical">"Get Your Free Marketing Analysis - Limited to 8 Clients This Quarter"</p>
                 </div>
                 
                 <div className="mt-6">
