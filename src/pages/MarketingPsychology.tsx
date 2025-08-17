@@ -94,8 +94,8 @@ const MarketingPsychology = () => {
             </div>
             
             {/* Strategic CTA */}
-            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-orange-500/30 dark:border-orange-400/30 border-l-4 border-l-orange-500 p-6 mb-8">
-              <p className="text-standard dark:replace-text-gray-200 font-semibold mb-4">
+            <div className="bg-white/85 dark:bg-slate-800/85 backdrop-blur-md rounded-2xl shadow-xl border border-orange-500/50 dark:border-orange-400/50 border-l-4 border-l-orange-500 p-6 mb-8">
+              <p className="text-black-important dark:text-gradient-critical font-semibold mb-4">
                 🚨 <strong>Warning:</strong> Every day you use psychology-ignorant marketing costs you qualified prospects
               </p>
               <button aria-label="Opens contact form for free marketing analysis" 
@@ -112,29 +112,29 @@ const MarketingPsychology = () => {
             <h2 className="heading-xl text-gradient-critical mb-8 text-center">
               The 5 Customer Awareness Stages Framework
             </h2>
-            <p className="text-standard dark:replace-text-gray-300 mb-12 text-lg text-center">
+            <p className="text-gradient-safe mb-12 text-lg text-center">
               Created by legendary copywriter Eugene Schwartz, this framework reveals exactly how to match your message to your prospect's mindset. Master this, and marketing becomes predictable.
             </p>
 
             <div className="space-y-12">
               
               {/* Stage 1: Unaware */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="bg-red-100 dark:bg-red-900/30 rounded-full p-3">
                     <span className="text-red-600 font-bold text-lg">1</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-black-important dark:text-white mb-2">Unaware Stage</h3>
-                    <p className="replace-text-gray-600 dark:replace-text-gray-400">They don't know they have a problem</p>
+                    <h3 className="heading-lg text-black-important dark:text-gradient-critical mb-2">Unaware Stage</h3>
+                    <p className="text-black-optional dark:text-gradient-safe">They don't know they have a problem</p>
                   </div>
                 </div>
                 
-                <p className="text-standard dark:replace-text-gray-300 mb-4">
+                <p className="text-black-standard dark:text-gradient-safe mb-4">
                   These prospects think everything is fine. They're saying things like "We just need more leads" or "No one understands our product." The real issue? They're solving the wrong problem entirely.
                 </p>
                 
-                <p className="text-standard dark:replace-text-gray-300 mb-6">
+                <p className="text-black-standard dark:text-gradient-safe mb-6">
                   Most founders make the fatal mistake of talking features to people who don't even know they're bleeding money. Want to see exactly what customers are really thinking and how to turn that confusion into clarity?
                 </p>
 
@@ -149,26 +149,26 @@ const MarketingPsychology = () => {
               </div>
 
               {/* Stage 2: Problem-Aware */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="bg-orange-100 dark:bg-orange-900/30 rounded-full p-3">
                     <span className="text-orange-accessible font-bold text-lg">2</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-black-important dark:text-white mb-2">Problem-Aware Stage</h3>
-                    <p className="replace-text-gray-600 dark:replace-text-gray-400">They know they have a problem but not the solution</p>
+                    <h3 className="heading-lg text-black-important dark:text-gradient-critical mb-2">Problem-Aware Stage</h3>
+                    <p className="text-black-optional dark:text-gradient-safe">They know they have a problem but not the solution</p>
                   </div>
                 </div>
-                <p className="text-standard dark:replace-text-gray-300 mb-4">
+                <p className="text-black-standard dark:text-gradient-safe mb-4">
                   These prospects are frustrated. They say things like "Our marketing isn't working anymore" or "CAC keeps going up but we don't know why." They're throwing solutions at the wall hoping something sticks.
                 </p>
                 
-                <p className="text-standard dark:replace-text-gray-300 mb-6">
+                <p className="text-black-standard dark:text-gradient-safe mb-6">
                   The key? They don't need more tactics—they need a diagnosis. They're treating symptoms without understanding the disease. Want to see how to guide them from confusion to clarity?
                 </p>
-                <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
-                  <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Example Headline:</p>
-                  <p className="replace-text-gray-900 dark:text-white">"Why Your Marketing Feels Scattered (And the 3 Systems That Fix It)"</p>
+                <div className="mt-6 p-4 bg-white/80 dark:bg-slate-700/80 backdrop-blur-sm rounded-lg border border-white/30 dark:border-slate-600/30">
+                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Example Headline:</p>
+                  <p className="text-black-critical dark:text-gradient-critical">"Why Your Marketing Feels Scattered (And the 3 Systems That Fix It)"</p>
                 </div>
                 
                 <div className="mt-6">
@@ -182,27 +182,27 @@ const MarketingPsychology = () => {
               </div>
 
               {/* Stage 3: Solution-Aware */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="bg-yellow-100 dark:bg-yellow-900/30 rounded-full p-3">
                     <span className="text-yellow-600 font-bold text-lg">3</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-black-important dark:text-white mb-2">Solution-Aware Stage</h3>
-                    <p className="replace-text-gray-600 dark:replace-text-gray-400">They know solutions exist and are comparing options</p>
+                    <h3 className="heading-lg text-black-important dark:text-gradient-critical mb-2">Solution-Aware Stage</h3>
+                    <p className="text-black-optional dark:text-gradient-safe">They know solutions exist and are comparing options</p>
                   </div>
                 </div>
-                <p className="text-standard dark:replace-text-gray-300 mb-4">
+                <p className="text-black-standard dark:text-gradient-safe mb-4">
                   These prospects are comparison shopping. They say "Should we hire an agency or consultant?" and "Everyone looks the same." They have spreadsheets comparing options but can't figure out meaningful differences.
                 </p>
                 
-                <p className="text-standard dark:replace-text-gray-300 mb-6">
+                <p className="text-black-standard dark:text-gradient-safe mb-6">
                   The secret? They're not comparing features—they're managing risk. The winner is whoever makes success feel most certain. Want to see how to become the obvious choice?
                 </p>
                 
-                <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
-                  <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Example Headline:</p>
-                  <p className="replace-text-gray-900 dark:text-white">"Marketing Agency vs Fractional CMO: Which Drives Faster Growth?"</p>
+                <div className="mt-6 p-4 bg-white/80 dark:bg-slate-700/80 backdrop-blur-sm rounded-lg border border-white/30 dark:border-slate-600/30">
+                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Example Headline:</p>
+                  <p className="text-black-critical dark:text-gradient-critical">"Marketing Agency vs Fractional CMO: Which Drives Faster Growth?"</p>
                 </div>
                 
                 <div className="mt-6">
@@ -216,27 +216,27 @@ const MarketingPsychology = () => {
               </div>
 
               {/* Stage 4: Product-Aware */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="bg-green-100 dark:bg-green-900/30 rounded-full p-3">
                     <span className="text-green-600 font-bold text-lg">4</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-black-important dark:text-white mb-2">Product-Aware Stage</h3>
-                    <p className="replace-text-gray-600 dark:replace-text-gray-400">They know your solution and are evaluating you specifically</p>
+                    <h3 className="heading-lg text-black-important dark:text-gradient-critical mb-2">Product-Aware Stage</h3>
+                    <p className="text-black-optional dark:text-gradient-safe">They know your solution and are evaluating you specifically</p>
                   </div>
                 </div>
-                <p className="text-standard dark:replace-text-gray-300 mb-4">
+                <p className="text-black-standard dark:text-gradient-safe mb-4">
                   These prospects know about you specifically. They ask "Can you deliver for companies like us?" and "What if this doesn't work?" They're close to buying but need confidence.
                 </p>
                 
-                <p className="text-standard dark:replace-text-gray-300 mb-6">
+                <p className="text-black-standard dark:text-gradient-safe mb-6">
                   They don't need more features—they need reassurance. Address their hidden fears, show relevant success stories, and make saying yes feel safe. Ready to handle the real objections?
                 </p>
                 
-                <div className="mt-6 p-4 bg-white/50 dark:bg-slate-700/50 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-600/20">
-                  <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400 font-medium mb-2">Example Headline:</p>
-                  <p className="replace-text-gray-900 dark:text-white">"How We Helped Norton Antivirus Grow from $100K to $3M Monthly Revenue"</p>
+                <div className="mt-6 p-4 bg-white/80 dark:bg-slate-700/80 backdrop-blur-sm rounded-lg border border-white/30 dark:border-slate-600/30">
+                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Example Headline:</p>
+                  <p className="text-black-critical dark:text-gradient-critical">"How We Helped Norton Antivirus Grow from $100K to $3M Monthly Revenue"</p>
                 </div>
                 
                 <div className="mt-6">
@@ -250,7 +250,7 @@ const MarketingPsychology = () => {
               </div>
 
               {/* Stage 5: Most Aware */}
-              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow">
+              <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm">
                 <div className="flex items-start gap-4 mb-6">
                   <div className="bg-blue-100 dark:bg-blue-900/30 rounded-full p-3">
                     <span className="text-blue-accessible font-bold text-lg">5</span>

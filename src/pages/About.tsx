@@ -53,7 +53,9 @@ const About = () => {
           </div>
 
           {/* Company Story */}
-          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8">
+          <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
+            <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+            <div className="relative z-10">
             <h2 className="heading-xl text-gradient-critical mb-6">Our Story</h2>
             <div className="grid lg:grid-cols-2 gap-8 items-center">
               <div className="space-y-4 text-black-standard dark:text-gradient-safe">
@@ -83,10 +85,13 @@ const About = () => {
                 </div>
               </div>
             </div>
+            </div>
           </div>
 
           {/* Leadership */}
-          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8">
+          <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
+            <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+            <div className="relative z-10">
             <h2 className="heading-xl text-gradient-critical mb-8 text-center">Leadership</h2>
             <div className="max-w-4xl mx-auto">
               <div className="flex flex-col lg:flex-row items-center gap-8">
@@ -121,103 +126,122 @@ const About = () => {
                 </div>
               </div>
             </div>
+            </div>
           </div>
 
           {/* Company Stats */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center">
-              <TrendingUp className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-              <div className="text-2xl font-bold replace-text-gray-900 dark:text-white">$2B+</div>
-              <p className="text-optional dark:replace-text-gray-400">Revenue Managed</p>
+            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+              <div className="relative z-10">
+                <TrendingUp className="w-8 h-8 text-orange-500 mx-auto mb-3" />
+                <div className="text-2xl font-bold text-black-critical dark:text-gradient-critical text-shadow-sm">$2B+</div>
+                <p className="text-black-important dark:text-gradient-safe text-shadow-sm">Revenue Managed</p>
+              </div>
             </div>
-            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center">
-              <Briefcase className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-              <div className="text-2xl font-bold replace-text-gray-900 dark:text-white">20+</div>
-              <p className="text-optional dark:replace-text-gray-400">US Companies</p>
+            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+              <div className="relative z-10">
+                <Briefcase className="w-8 h-8 text-orange-500 mx-auto mb-3" />
+                <div className="text-2xl font-bold text-black-critical dark:text-gradient-critical text-shadow-sm">20+</div>
+                <p className="text-black-important dark:text-gradient-safe text-shadow-sm">US Companies</p>
+              </div>
             </div>
-            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center">
-              <Award className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-              <div className="text-2xl font-bold replace-text-gray-900 dark:text-white">3X</div>
-              <p className="text-optional dark:replace-text-gray-400">Average Revenue Growth</p>
+            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+              <div className="relative z-10">
+                <Award className="w-8 h-8 text-orange-500 mx-auto mb-3" />
+                <div className="text-2xl font-bold text-black-critical dark:text-gradient-critical text-shadow-sm">3X</div>
+                <p className="text-black-important dark:text-gradient-safe text-shadow-sm">Average Revenue Growth</p>
+              </div>
             </div>
-            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center">
-              <Globe className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-              <div className="text-2xl font-bold replace-text-gray-900 dark:text-white">Global</div>
-              <p className="text-sm replace-text-gray-600 dark:replace-text-gray-400">USA • Bangkok • Singapore</p>
+            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
+              <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+              <div className="relative z-10">
+                <Globe className="w-8 h-8 text-orange-500 mx-auto mb-3" />
+                <div className="text-2xl font-bold text-black-critical dark:text-gradient-critical text-shadow-sm">Global</div>
+                <p className="text-sm text-black-important dark:text-gradient-safe text-shadow-sm">USA • Bangkok • Singapore</p>
+              </div>
             </div>
           </div>
 
           {/* Our Approach */}
-          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8">
-            <h2 className="heading-xl text-gradient-critical mb-8 text-center">Our Approach</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="heading-md text-black-important dark:text-white mb-4 flex items-center">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                  The Fresh Eyes Advantage
-                </h3>
-                <p className="text-black-standard dark:replace-text-gray-300 leading-relaxed">
-                  Outside perspective cuts through internal assumptions and politics. We see opportunities 
-                  your team misses because they're too close to the problem. This objectivity is your competitive advantage.
-                </p>
-              </div>
-              <div>
-                <h3 className="heading-md text-black-important dark:text-white mb-4 flex items-center">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                  Battle-Tested Strategies
-                </h3>
-                <p className="text-black-standard dark:replace-text-gray-300 leading-relaxed">
-                  Every recommendation comes from proven Fortune 500 experience. We don't experiment with your business – 
-                  we apply strategies that have already worked at scale.
-                </p>
-              </div>
-              <div>
-                <h3 className="heading-md text-black-important dark:text-white mb-4 flex items-center">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                  C-Level Expertise
-                </h3>
-                <p className="text-black-standard dark:replace-text-gray-300 leading-relaxed">
-                  Access to executive-level strategic thinking without the $300K+ annual cost. Get Fortune 500 
-                  caliber marketing leadership at a fraction of traditional consulting rates.
-                </p>
-              </div>
-              <div>
-                <h3 className="heading-md text-black-important dark:text-white mb-4 flex items-center">
-                  <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
-                  Measurable Results
-                </h3>
-                <p className="text-black-standard dark:replace-text-gray-300 leading-relaxed">
-                  We focus on metrics that matter: revenue growth, market share expansion, and customer lifetime value. 
-                  Our success is measured by your business results, not vanity metrics.
-                </p>
+          <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
+            <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+            <div className="relative z-10">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">Our Approach</h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <div>
+                  <h3 className="heading-md text-black-critical dark:text-gradient-critical mb-4 flex items-center text-shadow-sm">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    The Fresh Eyes Advantage
+                  </h3>
+                  <p className="text-black-important dark:text-gradient-enhanced leading-relaxed text-shadow-sm">
+                    Outside perspective cuts through internal assumptions and politics. We see opportunities 
+                    your team misses because they're too close to the problem. This objectivity is your competitive advantage.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="heading-md text-black-critical dark:text-gradient-critical mb-4 flex items-center text-shadow-sm">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    Battle-Tested Strategies
+                  </h3>
+                  <p className="text-black-important dark:text-gradient-enhanced leading-relaxed text-shadow-sm">
+                    Every recommendation comes from proven Fortune 500 experience. We don't experiment with your business – 
+                    we apply strategies that have already worked at scale.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="heading-md text-black-critical dark:text-gradient-critical mb-4 flex items-center text-shadow-sm">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    C-Level Expertise
+                  </h3>
+                  <p className="text-black-important dark:text-gradient-enhanced leading-relaxed text-shadow-sm">
+                    Access to executive-level strategic thinking without the $300K+ annual cost. Get Fortune 500 
+                    caliber marketing leadership at a fraction of traditional consulting rates.
+                  </p>
+                </div>
+                <div>
+                  <h3 className="heading-md text-black-critical dark:text-gradient-critical mb-4 flex items-center text-shadow-sm">
+                    <CheckCircle className="w-5 h-5 text-green-500 mr-2" />
+                    Measurable Results
+                  </h3>
+                  <p className="text-black-important dark:text-gradient-enhanced leading-relaxed text-shadow-sm">
+                    We focus on metrics that matter: revenue growth, market share expansion, and customer lifetime value. 
+                    Our success is measured by your business results, not vanity metrics.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Values */}
-          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8">
-            <h2 className="heading-xl text-gradient-critical mb-8 text-center">Our Values</h2>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <TrendingUp className="w-8 h-8 text-orange-accessible dark:text-orange-400" />
+          <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
+            <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+            <div className="relative z-10">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">Our Values</h2>
+              <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <TrendingUp className="w-8 h-8 text-orange-accessible dark:text-orange-400" />
+                  </div>
+                  <h3 className="heading-md text-black-critical dark:text-gradient-critical mb-2 text-shadow-sm">Results-Driven</h3>
+                  <p className="text-black-important dark:text-gradient-safe text-sm text-shadow-sm">Every strategy must drive measurable business growth</p>
                 </div>
-                <h3 className="heading-md text-black-important dark:text-white mb-2">Results-Driven</h3>
-                <p className="text-optional dark:replace-text-gray-400 text-sm">Every strategy must drive measurable business growth</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <Award className="w-8 h-8 text-blue-accessible dark:text-blue-400" />
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Award className="w-8 h-8 text-blue-accessible dark:text-blue-400" />
+                  </div>
+                  <h3 className="heading-md text-black-critical dark:text-gradient-critical mb-2 text-shadow-sm">Excellence</h3>
+                  <p className="text-black-important dark:text-gradient-safe text-sm text-shadow-sm">Fortune 500 standards applied to every engagement</p>
                 </div>
-                <h3 className="heading-md text-black-important dark:text-white mb-2">Excellence</h3>
-                <p className="text-optional dark:replace-text-gray-400 text-sm">Fortune 500 standards applied to every engagement</p>
-              </div>
-              <div className="text-center">
-                <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400" />
+                <div className="text-center">
+                  <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400" />
+                  </div>
+                  <h3 className="heading-md text-black-critical dark:text-gradient-critical mb-2 text-shadow-sm">Transparency</h3>
+                  <p className="text-black-important dark:text-gradient-safe text-sm text-shadow-sm">Clear communication and honest feedback always</p>
                 </div>
-                <h3 className="heading-md text-black-important dark:text-white mb-2">Transparency</h3>
-                <p className="text-optional dark:replace-text-gray-400 text-sm">Clear communication and honest feedback always</p>
               </div>
             </div>
           </div>

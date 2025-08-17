@@ -366,15 +366,15 @@ const MainApp = () => {
                         </p>
                       </div>
                       
-                      <div className="bg-white/70 rounded-2xl p-6 backdrop-blur-sm">
+                      <div className="bg-white/95 rounded-2xl p-6 backdrop-blur-sm">
                         <div className="grid grid-cols-2 gap-4 text-center">
                           <div>
-                            <div className="text-2xl font-black replace-text-slate-700">20+</div>
-                            <div className="text-xs text-slate-600 font-medium">US Companies</div>
+                            <div className="text-2xl font-black text-critical-accessible">20+</div>
+                            <div className="text-xs text-important-accessible font-medium">US Companies</div>
                           </div>
                           <div>
-                            <div className="text-2xl font-black replace-text-slate-700">$2B+</div>
-                            <div className="text-xs text-slate-600 font-medium">Revenue Managed</div>
+                            <div className="text-2xl font-black text-critical-accessible">$2B+</div>
+                            <div className="text-xs text-important-accessible font-medium">Revenue Managed</div>
                           </div>
                         </div>
                       </div>
@@ -384,10 +384,12 @@ const MainApp = () => {
                   {/* Right Side - The Real Question */}
                   <div className="space-y-6">
                     <div>
-                      <h3 className="heading-lg replace-text-slate-900 mb-4 leading-tight">
-                        The Real Question Isn't<br />
-                        <span className="text-red-500 line-through decoration-4">"Industry Experience"</span>
-                      </h3>
+                      <div className="text-bg-overlay rounded-xl">
+                        <h3 className="heading-lg text-critical-accessible mb-4 leading-tight">
+                          The Real Question Isn't<br />
+                          <span className="text-red-500 line-through decoration-4">"Industry Experience"</span>
+                        </h3>
+                      </div>
                       
                       <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-6 text-white transform -rotate-1">
                         <p className="text-xl font-bold mb-3">
@@ -398,8 +400,8 @@ const MainApp = () => {
                         </div>
                       </div>
                       
-                      <div className="bg-white/50 rounded-xl p-4 border-l-4 border-orange-500">
-                        <p className="replace-text-slate-700 text-sm italic">
+                      <div className="bg-white/95 rounded-xl p-4 border-l-4 border-orange-500">
+                        <p className="text-standard-accessible text-sm italic">
                           "The best consultants don't know your industry inside-out. 
                           They know <strong>customers</strong> inside-out."
                         </p>
@@ -419,14 +421,16 @@ const MainApp = () => {
       <section id="services" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
-            <h2 className="heading-xl replace-text-slate-900 mb-6 sm:mb-8">
-              Fractional CMO
-              <br />
-              <span className="text-orange-500">Executive</span> Services
-            </h2>
-            <p className="text-xl replace-text-stone-700 max-w-3xl mx-auto mb-4">
-              <span className="text-white/90">Strategic marketing leadership without the $300K+ salary commitment</span>
-            </p>
+            <div className="text-bg-overlay-dark rounded-xl mx-auto max-w-5xl">
+              <h2 className="heading-xl text-white-critical mb-6 sm:mb-8">
+                Fractional CMO
+                <br />
+                <span className="text-orange-400">Executive</span> Services
+              </h2>
+              <p className="text-xl text-white-important max-w-3xl mx-auto mb-4">
+                Strategic marketing leadership without the $300K+ salary commitment
+              </p>
+            </div>
             
             {/* Price Anchoring Header */}
             <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-2xl p-6 max-w-4xl mx-auto mb-8">

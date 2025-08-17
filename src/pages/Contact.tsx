@@ -414,8 +414,8 @@ const Contact = () => {
 
               {/* Response Time */}
               <div className="bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900 dark:to-amber-900 rounded-2xl p-6">
-                <h3 className="heading-md text-black-important dark:text-white mb-2">Response Time</h3>
-                <p className="text-black-standard dark:replace-text-gray-300 text-sm">
+                <h3 className="heading-md text-orange-900 dark:text-orange-50 mb-2">Response Time</h3>
+                <p className="text-orange-800 dark:text-orange-100 text-sm">
                   We typically respond to all inquiries within 24 hours during business days. 
                   For urgent matters, please mention it in your message subject line.
                 </p>
@@ -423,14 +423,14 @@ const Contact = () => {
 
               {/* Free Consultation CTA */}
               <div className="bg-gradient-to-br from-blue-100 to-indigo-100 dark:from-blue-900 dark:to-indigo-900 rounded-2xl p-6">
-                <h3 className="heading-md text-black-important dark:text-white mb-2">Free Marketing Analysis</h3>
-                <p className="replace-text-gray-700 dark:replace-text-gray-300 text-sm mb-4">
+                <h3 className="heading-md text-blue-900 dark:text-blue-50 mb-2">Free Marketing Analysis</h3>
+                <p className="text-blue-800 dark:text-blue-100 text-sm mb-4">
                   Ready to transform your marketing? Get a personalized analysis 
                   that shows exactly how to accelerate your business growth.
                 </p>
                 <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="inline-block px-4 py-2 bg-blue-600 hover:bg-blue-700 focus-visible:bg-blue-700 text-white text-sm font-medium rounded-lg transition-colors"
+                  className="inline-block px-4 py-2 bg-blue-700 hover:bg-blue-800 focus-visible:bg-blue-800 text-white text-sm font-semibold rounded-lg transition-colors shadow-sm"
                 >
                   Get Your Free Analysis
                 </button>
