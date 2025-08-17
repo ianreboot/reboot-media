@@ -462,23 +462,23 @@ const MainApp = () => {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div>
                   <div className="text-3xl font-black text-orange-400 mb-2">⚡</div>
-                  <h4 className="font-bold mb-1">Immediate Impact</h4>
-                  <p className="replace-text-gray-300 text-sm">Start seeing results in weeks, not months</p>
+                  <h4 className="font-bold mb-1 text-white-critical">Immediate Impact</h4>
+                  <p className="text-white-standard text-sm">Start seeing results in weeks, not months</p>
                 </div>
                 <div>
                   <div className="text-3xl font-black text-orange-400 mb-2">💰</div>
-                  <h4 className="font-bold mb-1">Better ROI</h4>
-                  <p className="replace-text-gray-300 text-sm">Pay for expertise, not overhead and recruiting</p>
+                  <h4 className="font-bold mb-1 text-white-critical">Better ROI</h4>
+                  <p className="text-white-standard text-sm">Pay for expertise, not overhead and recruiting</p>
                 </div>
                 <div>
                   <div className="text-3xl font-black text-orange-400 mb-2">🎯</div>
-                  <h4 className="font-bold mb-1">Proven Systems</h4>
-                  <p className="replace-text-gray-300 text-sm">Battle-tested systems from 20+ years C-level experience</p>
+                  <h4 className="font-bold mb-1 text-white-critical">Proven Systems</h4>
+                  <p className="text-white-standard text-sm">Battle-tested systems from 20+ years C-level experience</p>
                 </div>
                 <div>
                   <div className="text-3xl font-black text-orange-400 mb-2">💎</div>
-                  <h4 className="font-bold mb-1">Equity Upside</h4>
-                  <p className="replace-text-gray-300 text-sm">Potential equity participation for long-term partnerships</p>
+                  <h4 className="font-bold mb-1 text-white-critical">Equity Upside</h4>
+                  <p className="text-white-standard text-sm">Potential equity participation for long-term partnerships</p>
                 </div>
               </div>
             </div>
@@ -490,12 +490,14 @@ const MainApp = () => {
       <section id="about" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="heading-xl replace-text-slate-900 mb-6">
-              Meet Your <span className="text-blue-accessible">C-Level Executive</span> Partner
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              <span className="text-white/95">20+ years C-level experience driving measurable revenue growth at US companies</span>
-            </p>
+            <div className="text-bg-overlay-dark rounded-xl mx-auto max-w-5xl">
+              <h2 className="heading-xl text-white-critical mb-6">
+                Meet Your <span className="text-blue-400">C-Level Executive</span> Partner
+              </h2>
+              <p className="text-xl text-white-important max-w-3xl mx-auto">
+                20+ years C-level experience driving measurable revenue growth at US companies
+              </p>
+            </div>
           </div>
 
           {/* Main Credibility Section */}
@@ -544,10 +546,10 @@ const MainApp = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-bold replace-text-slate-900 mb-3">Battle-Tested Results</h3>
-              <p className="replace-text-gray-600 text-sm leading-relaxed">
-                <span className="text-white/95">I've spent <strong>$500K/month of my own money</strong> testing what actually brings customers. 
-                Not theory - real results with real consequences.</span>
+              <h3 className="text-lg font-bold text-white-critical mb-3">Battle-Tested Results</h3>
+              <p className="text-white-standard text-sm leading-relaxed">
+                I've spent <strong>$500K/month of my own money</strong> testing what actually brings customers. 
+                Not theory - real results with real consequences.
               </p>
             </div>
 
@@ -557,10 +559,10 @@ const MainApp = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-bold replace-text-slate-900 mb-3">Global Reach</h3>
-              <p className="replace-text-gray-600 text-sm leading-relaxed">
-                <span className="text-white/95">Based in Bangkok, I serve companies worldwide who want <strong>proven marketing excellence</strong> 
-                at competitive rates. Perfect for US market expansion.</span>
+              <h3 className="text-lg font-bold text-white-critical mb-3">Global Reach</h3>
+              <p className="text-white-standard text-sm leading-relaxed">
+                Based in Bangkok, I serve companies worldwide who want <strong>proven marketing excellence</strong> 
+                at competitive rates. Perfect for US market expansion.
               </p>
             </div>
 
@@ -570,10 +572,10 @@ const MainApp = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
               </div>
-              <h3 className="text-lg font-bold replace-text-slate-900 mb-3">Proven Across Industries</h3>
-              <p className="replace-text-gray-600 text-sm leading-relaxed">
-                <span className="text-white/95">Software, Healthcare, E-commerce, Financial Services, Professional Services, 
-                and more. <strong>Psychology works universally.</strong></span>
+              <h3 className="text-lg font-bold text-white-critical mb-3">Proven Across Industries</h3>
+              <p className="text-white-standard text-sm leading-relaxed">
+                Software, Healthcare, E-commerce, Financial Services, Professional Services, 
+                and more. <strong>Psychology works universally.</strong>
               </p>
             </div>
           </div>
@@ -605,7 +607,7 @@ const MainApp = () => {
                 Every Month You Wait Costs You <span className="text-orange-400">$47,000</span> in Lost Revenue
               </h2>
               
-              <p className="text-xl mb-8 max-w-3xl mx-auto replace-text-gray-300">
+              <p className="text-xl mb-8 max-w-3xl mx-auto text-white-standard">
                 That's the average monthly opportunity cost for businesses operating without proper marketing strategy. 
                 Your competitors aren't waiting. <span className="text-orange-400 font-semibold">Neither should you.</span>
               </p>
@@ -620,15 +622,15 @@ const MainApp = () => {
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                 <div className="text-left">
                   <div className="text-red-400 font-bold mb-2">❌ What Others Say:</div>
-                  <p className="replace-text-gray-400 text-sm">"We'll grow your business" (with no specifics)</p>
+                  <p className="text-white-standard text-sm">"We'll grow your business" (with no specifics)</p>
                 </div>
                 <div className="text-left">
                   <div className="text-red-400 font-bold mb-2">❌ What They Do:</div>
-                  <p className="replace-text-gray-400 text-sm">Generic templates and hope for the best</p>
+                  <p className="text-white-standard text-sm">Generic templates and hope for the best</p>
                 </div>
                 <div className="text-left">
                   <div className="text-green-400 font-bold mb-2">✅ What We Do:</div>
-                  <p className="replace-text-gray-300 text-sm">Show you exactly what's broken before you pay a dime</p>
+                  <p className="text-white-important text-sm">Show you exactly what's broken before you pay a dime</p>
                 </div>
               </div>
 
@@ -636,7 +638,7 @@ const MainApp = () => {
                 <h4 className="text-lg font-bold text-white mb-3">
                   Here's Why This Analysis is Different:
                 </h4>
-                <ul className="text-left space-y-2 replace-text-gray-300 text-sm max-w-2xl mx-auto">
+                <ul className="text-left space-y-2 text-white-standard text-sm max-w-2xl mx-auto">
                   <li className="flex items-start">
                     <span className="text-green-400 mr-2 mt-0.5">✓</span>
                     <span><strong>No generic advice:</strong> Specific to YOUR business, YOUR industry, YOUR competition</span>
@@ -670,7 +672,7 @@ const MainApp = () => {
                 You Have Nothing to Lose (Except More Revenue)
               </h3>
               
-              <div className="replace-text-gray-300 space-y-0 max-w-2xl mx-auto">
+              <div className="text-white-standard space-y-0 max-w-2xl mx-auto">
                 <p className="py-0">🚫 No credit card required</p>
                 <p className="py-0">🚫 No sales pressure</p>
                 <p className="py-0">🚫 No spam emails</p>
@@ -693,9 +695,9 @@ const MainApp = () => {
                 </svg>
               </button>
               
-              <p className="replace-text-gray-400 text-sm mt-6">
+              <p className="text-white-standard text-sm mt-6">
                 <span className="text-orange-400 font-semibold">While you're reading this</span>, your competitors are fixing their marketing. 
-                <span className="text-white">What are you waiting for?</span>
+                <span className="text-white-critical">What are you waiting for?</span>
               </p>
             </div>
           </div>
