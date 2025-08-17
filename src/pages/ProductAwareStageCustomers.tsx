@@ -79,7 +79,7 @@ const ProductAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important-accessible dark:replace-text-gray-300 mb-6 text-center">
+              <p className="text-lg text-gradient-safe mb-6 text-center font-medium">
                 Product-aware customers are close. They're seriously considering you but have specific concerns holding them back. They're not questioning if they need help—they're questioning if YOU'RE the right help.
               </p>
             </section>
@@ -94,117 +94,117 @@ const ProductAwareStageCustomers = () => {
               <div className="space-y-8">
                 
                 {/* Example 1 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
-                    <p className="text-standard dark:replace-text-gray-300 italic">"Your case studies are impressive, but our business is different"</p>
+                    <p className="text-gradient-critical italic font-medium">"Your case studies are impressive, but our business is different"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What they're really saying:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">I don't see myself in your success stories. They need proof you understand their specific challenges, not just their industry.</p>
+                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-300 mb-2">What they're really saying:</h3>
+                    <p className="text-gradient-safe">I don't see myself in your success stories. They need proof you understand their specific challenges, not just their industry.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">How to handle it:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">Get granular about similarities. "You're right, you're not exactly like Client X. But you both sell to procurement teams with 6-month sales cycles. Here's how we adapted our approach for their specific situation..."</p>
+                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-300 mb-2">How to handle it:</h3>
+                    <p className="text-gradient-safe">Get granular about similarities. "You're right, you're not exactly like Client X. But you both sell to procurement teams with 6-month sales cycles. Here's how we adapted our approach for their specific situation..."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">Acknowledging differences while highlighting relevant similarities shows you're not using a cookie-cutter approach.</p>
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/40 rounded-lg border border-blue-200 dark:border-blue-700/50">
+                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-100 mb-2">Why this works:</h4>
+                    <p className="text-sm text-blue-700 dark:text-blue-200 font-medium">Acknowledging differences while highlighting relevant similarities shows you're not using a cookie-cutter approach.</p>
                   </div>
                 </div>
 
                 {/* Example 2 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
-                    <p className="text-standard dark:replace-text-gray-300 italic">"What if we don't see results as quickly as your other clients?"</p>
+                    <p className="text-gradient-critical italic font-medium">"What if we don't see results as quickly as your other clients?"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What they're really saying:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">I need to manage expectations internally. They're worried about looking bad if results don't come fast enough.</p>
+                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-300 mb-2">What they're really saying:</h3>
+                    <p className="text-gradient-safe">I need to manage expectations internally. They're worried about looking bad if results don't come fast enough.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">How to handle it:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">Set realistic milestones. "Month 1 is diagnosis and quick wins. Month 2 is foundation building. Month 3 is when you see momentum. By Month 6, transformation is obvious. Here's what to expect each step."</p>
+                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-300 mb-2">How to handle it:</h3>
+                    <p className="text-gradient-safe">Set realistic milestones. "Month 1 is diagnosis and quick wins. Month 2 is foundation building. Month 3 is when you see momentum. By Month 6, transformation is obvious. Here's what to expect each step."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">Clear timelines with specific milestones help them sell the patience required internally while building confidence.</p>
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/40 rounded-lg border border-blue-200 dark:border-blue-700/50">
+                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-100 mb-2">Why this works:</h4>
+                    <p className="text-sm text-blue-700 dark:text-blue-200 font-medium">Clear timelines with specific milestones help them sell the patience required internally while building confidence.</p>
                   </div>
                 </div>
 
                 {/* Example 3 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
-                    <p className="text-standard dark:replace-text-gray-300 italic">"How do we know you won't just disappear after signing?"</p>
+                    <p className="text-gradient-critical italic font-medium">"How do we know you won't just disappear after signing?"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What they're really saying:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">We've been burned before. Past vendors over-promised in sales then under-delivered in execution.</p>
+                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-300 mb-2">What they're really saying:</h3>
+                    <p className="text-gradient-safe">We've been burned before. Past vendors over-promised in sales then under-delivered in execution.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">How to handle it:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">Show your communication cadence. "You'll have my personal phone number. Weekly status calls. Monthly executive reviews. Slack access. Here's exactly how three current clients interact with us."</p>
+                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-300 mb-2">How to handle it:</h3>
+                    <p className="text-gradient-safe">Show your communication cadence. "You'll have my personal phone number. Weekly status calls. Monthly executive reviews. Slack access. Here's exactly how three current clients interact with us."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">Specific communication commitments backed by current client examples makes ongoing support tangible, not theoretical.</p>
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/40 rounded-lg border border-blue-200 dark:border-blue-700/50">
+                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-100 mb-2">Why this works:</h4>
+                    <p className="text-sm text-blue-700 dark:text-blue-200 font-medium">Specific communication commitments backed by current client examples makes ongoing support tangible, not theoretical.</p>
                   </div>
                 </div>
 
                 {/* Example 4 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
-                    <p className="text-standard dark:replace-text-gray-300 italic">"We need to run this by our board/CEO/team first"</p>
+                    <p className="text-gradient-critical italic font-medium">"We need to run this by our board/CEO/team first"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What they're really saying:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">I need help selling this internally. They believe in the solution but need ammunition for stakeholders.</p>
+                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-300 mb-2">What they're really saying:</h3>
+                    <p className="text-gradient-safe">I need help selling this internally. They believe in the solution but need ammunition for stakeholders.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">How to handle it:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">Arm them for internal sales. "I'll prepare a one-page executive summary with ROI projections. Want me to join the call to answer technical questions? Here's what convinced the board at Similar Company."</p>
+                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-300 mb-2">How to handle it:</h3>
+                    <p className="text-gradient-safe font-medium">Arm them for internal sales. "I'll prepare a one-page executive summary with ROI projections. Want me to join the call to answer technical questions? Here's what convinced the board at Similar Company."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">Becoming their partner in the internal sale shows confidence and makes their job easier, increasing close rates.</p>
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/40 rounded-lg border border-blue-200 dark:border-blue-700/50">
+                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-100 mb-2">Why this works:</h4>
+                    <p className="text-sm text-blue-700 dark:text-blue-200 font-medium">Becoming their partner in the internal sale shows confidence and makes their job easier, increasing close rates.</p>
                   </div>
                 </div>
 
                 {/* Example 5 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/50 dark:bg-slate-800/50 backdrop-blur-sm">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
-                    <p className="text-standard dark:replace-text-gray-300 italic">"The price is higher than we budgeted"</p>
+                    <p className="text-gradient-critical italic font-medium">"The price is higher than we budgeted"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What they're really saying:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">Help me justify this investment. They often have the money but need to defend the allocation.</p>
+                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-300 mb-2">What they're really saying:</h3>
+                    <p className="text-gradient-safe">Help me justify this investment. They often have the money but need to defend the allocation.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">How to handle it:</h3>
-                    <p className="text-standard dark:replace-text-gray-300">Reframe cost as investment. "The $10K monthly investment typically generates $50K in new monthly recurring revenue by month 6. But let's be conservative—even at 25% of typical results, you're profitable in 8 weeks."</p>
+                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-300 mb-2">How to handle it:</h3>
+                    <p className="text-gradient-safe font-medium">Reframe cost as investment. "The $10K monthly investment typically generates $50K in new monthly recurring revenue by month 6. But let's be conservative—even at 25% of typical results, you're profitable in 8 weeks."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300">Conservative ROI projections are more believable than aggressive ones. Under-promise and over-deliver builds trust.</p>
+                  <div className="p-4 bg-blue-50 dark:bg-blue-900/40 rounded-lg border border-blue-200 dark:border-blue-700/50">
+                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-100 mb-2">Why this works:</h4>
+                    <p className="text-sm text-blue-700 dark:text-blue-200 font-medium">Conservative ROI projections are more believable than aggressive ones. Under-promise and over-deliver builds trust.</p>
                   </div>
                 </div>
 
@@ -217,22 +217,22 @@ const ProductAwareStageCustomers = () => {
                 The Truth About Product-Aware Customers
               </h2>
               
-              <div className="bg-orange-50 dark:bg-orange-900/20 rounded-xl p-6 mb-6">
-                <p className="text-orange-800 dark:text-orange-200 mb-4">
+              <div className="bg-orange-50 dark:bg-orange-900/40 rounded-xl p-6 mb-6 border border-orange-200 dark:border-orange-700/50">
+                <p className="text-orange-800 dark:text-orange-100 mb-4 font-semibold">
                   <strong>Product-aware customers want to say yes—they just need you to make it safe.</strong>
                 </p>
-                <p className="text-orange-700 dark:text-orange-300">
+                <p className="text-orange-700 dark:text-orange-200 font-medium">
                   They've done the research. They see the value. Now they need confidence that choosing you won't make them look bad. Address the fear, not just the features.
                 </p>
               </div>
             </section>
 
             {/* Strong CTA Section */}
-            <section className="text-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white rounded-2xl p-12">
+            <section className="text-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white rounded-2xl p-12 border border-gray-700/50 shadow-2xl">
               <h2 className="heading-xl text-gradient-critical mb-6">
                 Turn "We Need to Think About It" Into "When Can We Start?"
               </h2>
-              <p className="replace-text-gray-300 mb-8 text-lg max-w-2xl mx-auto">
+              <p className="text-gradient-safe mb-8 text-lg max-w-2xl mx-auto font-medium">
                 Get the objection-handling framework that addresses their real concerns—not just surface questions. Close more deals without being pushy.
               </p>
               <button aria-label="Opens contact form for free marketing analysis" 
@@ -241,7 +241,7 @@ const ProductAwareStageCustomers = () => {
               >
                 Get Your Objection-Handling Playbook →
               </button>
-              <p className="replace-text-gray-400 text-sm mt-4">
+              <p className="text-gradient-safe text-sm mt-4 font-medium">
                 ✅ Address hidden concerns • ✅ Build decision confidence • ✅ Close without pressure
               </p>
             </section>
@@ -251,7 +251,7 @@ const ProductAwareStageCustomers = () => {
               <div className="flex justify-between items-center">
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/solution-aware-stage-customers`}
-                  className="replace-text-gray-600 dark:replace-text-gray-400 hover:text-orange-accessible focus-visible:text-orange-accessible dark:hover:text-orange-400 focus-visible:text-orange-400 transition-colors"
+                  className="text-gradient-safe hover:text-orange-accessible focus-visible:text-orange-accessible dark:hover:text-orange-400 focus-visible:text-orange-400 transition-colors"
                 >
                   ← Previous: Solution-Aware Stage
                 </a>
