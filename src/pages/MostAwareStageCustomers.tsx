@@ -217,14 +217,16 @@ const MostAwareStageCustomers = () => {
                     </div>
                   </div>
                   
-                  <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What's really happening:</h3>
-                    <p className="text-standard-accessible dark:replace-text-gray-300">They're ready to buy but feel obligated to negotiate. It's not about money—it's about feeling like they got a win.</p>
+                  <div className="mb-6">
+                    <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500">
+                      <h3 className="text-lg font-bold text-gradient-critical mb-2">What's really happening:</h3>
+                      <p className="text-gradient-safe font-medium">They're ready to buy but feel obligated to negotiate. It's not about money—it's about feeling like they got a win.</p>
+                    </div>
                   </div>
                   
-                  <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">What to do:</h3>
+                  <div className="mb-6">
                     <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border-l-4 border-green-500">
+                      <h3 className="text-lg font-bold text-gradient-critical mb-3">What to do:</h3>
                       <p className="text-gradient-safe font-medium">"The price is firm, but I can include an extra strategy session in month one to accelerate results. That's a $2,000 value. Would that work better for you?"</p>
                     </div>
                   </div>
