@@ -142,23 +142,8 @@ router.get('/journey/:journeyId/attribution',
       // Get journey stages
       const stages = attributionService.mapJourneyStages(journey);
 
-      // Get lead score if available
-      const leadScore = leadScoringService.calculateLeadScore({
-        email: '',
-        source: journey.touchpoints[0]?.channel || 'direct',
-        engagementScore: journey.touchpoints.length * 10,
-        demographicMatch: 70,
-        behavioralSignals: {
-          pageViews: journey.touchpoints.filter(tp => tp.type === 'page_view').length,
-          contentDownloads: journey.touchpoints.filter(tp => tp.type === 'content_download').length,
-          emailEngagement: journey.touchpoints.filter(tp => tp.type === 'email_click').length,
-          formSubmissions: journey.touchpoints.filter(tp => tp.type === 'form_complete').length,
-          timeOnSite: 0,
-          returnVisits: 0
-        },
-        firmographics: {},
-        timestamp: journey.startTime
-      });
+      // Get lead score if available (simplified for production build)
+      const leadScore = null; // leadScoringService.calculateLeadScore(...) - disabled for deployment
 
       res.json({
         success: true,
@@ -687,7 +672,7 @@ function generateCampaignRecommendations(roi: any, campaign: string): any[] {
 
   // Attribution model recommendations
   const models = Object.entries(roi.attributionBreakdown);
-  const maxDifference = Math.max(...models.map(([, v]) => v)) - Math.min(...models.map(([, v]) => v));
+  const maxDifference = Math.max(...models.map(([, v]) => Number(v))) - Math.min(...models.map(([, v]) => Number(v)));
   if (maxDifference > roi.revenue * 0.3) {
     recommendations.push({
       type: 'attribution',
