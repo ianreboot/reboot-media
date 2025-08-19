@@ -265,4 +265,3 @@ router.get('/status', cacheResponse(30, 'status'), (req, res) => {
     });
 });
 export default router;
-//# sourceMappingURL=forms.js.map

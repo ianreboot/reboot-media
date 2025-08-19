@@ -218,4 +218,3 @@ export const calculateSecurityScore = (data, req) => {
         score -= 5;
     return Math.max(0, score);
 };
-//# sourceMappingURL=sanitization.js.map

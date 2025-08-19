@@ -324,4 +324,3 @@ export class LeadScoringService {
     predictCustomerLifetimeValue = predictCustomerLifetimeValue;
 }
 export const leadScoringService = new LeadScoringService();
-//# sourceMappingURL=leadScoring.js.map

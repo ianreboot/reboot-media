@@ -68,4 +68,3 @@ export const processContactSubmission = async (data) => {
     const businessEmail = process.env.BUSINESS_EMAIL || 'contact@rebootmedia.com';
     return await sendEmail(businessEmail, subject, emailContent);
 };
-//# sourceMappingURL=emailService.js.map

@@ -306,4 +306,3 @@ export class UserManager {
 }
 export const userManager = new UserManager();
 export default userManager;
-//# sourceMappingURL=userManager.js.map

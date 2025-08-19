@@ -227,4 +227,3 @@ export const getPrometheusBusinessMetrics = (req, res) => {
     }
 };
 export { BusinessIntelligenceCollector, biCollector };
-//# sourceMappingURL=businessMetrics.js.map

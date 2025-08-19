@@ -119,4 +119,3 @@ export const csrfProtection = new CSRFProtection();
 export const generateCSRFToken = csrfProtection.generateMiddleware();
 export const validateCSRFToken = csrfProtection.validateMiddleware();
 export const getCSRFToken = csrfProtection.getTokenEndpoint();
-//# sourceMappingURL=csrf.js.map
