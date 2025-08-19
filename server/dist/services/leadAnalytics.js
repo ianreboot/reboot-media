@@ -323,3 +323,4 @@ export function generateOptimizationRecommendations(metrics, funnelMetrics) {
     });
 }
 export const journeyTracker = new CustomerJourneyTracker();
+//# sourceMappingURL=leadAnalytics.js.map

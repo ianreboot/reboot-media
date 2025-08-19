@@ -173,3 +173,4 @@ ${stats.suspiciousIPs.map((ip) => `- ${ip.address}: ${ip.events} events`).join('
     }
 }
 export const securityLogger = new SecurityLogger();
+//# sourceMappingURL=securityLogger.js.map

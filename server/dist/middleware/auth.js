@@ -268,3 +268,4 @@ export function validateOrigin(req, res, next) {
     }
     next();
 }
+//# sourceMappingURL=auth.js.map

@@ -1,3 +1,4 @@
+"use strict";
 const testPayloads = {
     xssAttempts: [
         "<script>alert('xss')</script>",
@@ -281,3 +282,4 @@ if (typeof require !== 'undefined' && require.main === module) {
     tester.runAllTests().catch(console.error);
 }
 module.exports = { SecurityTester, testPayloads };
+//# sourceMappingURL=security-tests.js.map

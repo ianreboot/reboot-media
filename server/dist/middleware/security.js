@@ -6,3 +6,4 @@ export const securityHeaders = (req, res, next) => {
     res.removeHeader('X-Powered-By');
     next();
 };
+//# sourceMappingURL=security.js.map

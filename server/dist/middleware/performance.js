@@ -227,3 +227,4 @@ export function resourceCleanup() {
         next();
     };
 }
+//# sourceMappingURL=performance.js.map

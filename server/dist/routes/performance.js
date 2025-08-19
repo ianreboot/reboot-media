@@ -349,3 +349,4 @@ router.post('/alerts', securityValidationStack, async (req, res) => {
     }
 });
 export default router;
+//# sourceMappingURL=performance.js.map

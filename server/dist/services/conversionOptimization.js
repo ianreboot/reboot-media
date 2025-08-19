@@ -448,3 +448,4 @@ export function generateConversionRecommendations(score, journey, currentConvers
         return priorityOrder[a.priority] - priorityOrder[b.priority];
     });
 }
+//# sourceMappingURL=conversionOptimization.js.map

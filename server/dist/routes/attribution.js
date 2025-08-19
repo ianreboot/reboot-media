@@ -591,3 +591,4 @@ function generateDashboardInsights(conversionRate, channels, interactions, stage
     return insights;
 }
 export default router;
+//# sourceMappingURL=attribution.js.map

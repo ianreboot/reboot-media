@@ -6,7 +6,7 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc",
+    "build": "tsc -p tsconfig.prod.json",
     "build:prod": "tsc -p tsconfig.prod.json",
     "start": "node dist/server.js",
     "start:dev": "npm run build && NODE_ENV=development npm start",

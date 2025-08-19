@@ -4,3 +4,4 @@ export const validateRequestId = (req, res, next) => {
     res.setHeader('X-Request-ID', req.requestId);
     next();
 };
+//# sourceMappingURL=requestId.js.map
