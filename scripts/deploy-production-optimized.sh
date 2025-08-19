@@ -38,7 +38,6 @@ tar czf /tmp/reboot-deploy-optimized.tar.gz \
     server/dist/ \
     server/package.json \
     package.json \
-    nginx-production.conf \
     .env.production.template
 
 echo "📦 Package created: $(du -h /tmp/reboot-deploy-optimized.tar.gz | cut -f1)"
@@ -72,11 +71,8 @@ if [ ! -f .env ]; then
     echo "⚠️  Basic .env created - please customize with production values"
 fi
 
-# Set up nginx configuration
-if [ -f nginx-production.conf ]; then
-    sudo cp nginx-production.conf /etc/nginx/sites-available/reboot-media 2>/dev/null || echo "Note: nginx config ready for manual setup"
-    sudo ln -sf /etc/nginx/sites-available/reboot-media /etc/nginx/sites-enabled/ 2>/dev/null || echo "Note: nginx symlink ready for manual setup"
-fi
+# Skip nginx configuration - DO NOT MODIFY NGINX during deployment
+echo "⚠️  Skipping nginx configuration - keeping existing working config"
 
 # Create systemd service file
 sudo tee /etc/systemd/system/reboot-media.service > /dev/null << 'SERVICE_EOF'
@@ -105,8 +101,8 @@ sudo systemctl daemon-reload
 sudo systemctl enable reboot-media 2>/dev/null || echo "Service setup ready"
 sudo systemctl start reboot-media 2>/dev/null || echo "Service start ready"
 
-# Test nginx config and reload
-sudo nginx -t 2>/dev/null && sudo systemctl reload nginx 2>/dev/null || echo "Nginx ready for manual configuration"
+# DO NOT touch nginx - keep existing configuration
+echo "⚠️  Nginx configuration left unchanged"
 
 # Cleanup
 rm -f /tmp/reboot-deploy-optimized.tar.gz
