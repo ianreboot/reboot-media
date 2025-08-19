@@ -24,6 +24,7 @@
     "deploy:prod": "./scripts/deploy-prod.sh",
     "deploy:legacy": "./scripts/deploy-prod-legacy.sh",
     "push-to-production": "./scripts/deploy-prod-simple.sh",
+    "deploy:production": "./scripts/deploy-production-optimized.sh",
     "accessibility:validate": "node scripts/accessibility-validation.js",
     "accessibility:full-pipeline": "npm run build:dev && npm run accessibility:validate",
     "accessibility:fix": "node scripts/accessibility-bulk-fix.js",
