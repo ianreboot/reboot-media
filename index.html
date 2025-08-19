@@ -2,12 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/avif" href="/reboot/reboot-media.avif" />
-    <link rel="apple-touch-icon" href="/reboot/reboot-media.avif" />
+    <link rel="icon" type="image/avif" href="/reboot-media.avif" />
+    <link rel="apple-touch-icon" href="/reboot-media.avif" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- Security Headers -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: https:; connect-src 'self'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://fonts.gstatic.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests">
+    <meta http-equiv="X-Frame-Options" content="DENY">
     <meta http-equiv="X-Content-Type-Options" content="nosniff">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     
@@ -122,21 +123,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Preload critical resources -->
-    <script type="module" crossorigin src="/reboot/assets/index-xFZTR8Qg.js"></script>
-    <link rel="modulepreload" crossorigin href="/reboot/assets/react-core-CWvNQPo6.js">
-    <link rel="modulepreload" crossorigin href="/reboot/assets/app-utils-B6wQ-etB.js">
-    <link rel="modulepreload" crossorigin href="/reboot/assets/router-Up7tU2vJ.js">
-    <link rel="modulepreload" crossorigin href="/reboot/assets/components-perf-CM0xHQj9.js">
-    <link rel="modulepreload" crossorigin href="/reboot/assets/components-core-CRhBXKAc.js">
-    <link rel="modulepreload" crossorigin href="/reboot/assets/swiper-tqzTYPmW.js">
-    <link rel="modulepreload" crossorigin href="/reboot/assets/vendor-WJZsBhsu.js">
-    <link rel="modulepreload" crossorigin href="/reboot/assets/app-state-BEk9Y_gq.js">
-    <link rel="modulepreload" crossorigin href="/reboot/assets/components-interactive-DQsh8t0X.js">
-    <link rel="modulepreload" crossorigin href="/reboot/assets/components-utils-B8LwQ22Q.js">
-    <link rel="stylesheet" crossorigin href="/reboot/assets/swiper-BXs30wic.css">
-    <link rel="stylesheet" crossorigin href="/reboot/assets/components-interactive-BQCE2_4o.css">
-    <link rel="stylesheet" crossorigin href="/reboot/assets/index-DEjgtZ0V.css">
+    <!-- Development script -->
+    <script type="module" src="/src/main.tsx"></script>
   </head>
   <body>
     <div id="root"></div>
