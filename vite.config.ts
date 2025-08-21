@@ -19,8 +19,9 @@ export default defineConfig(({ mode }) => {
   return {
     plugins: [
       react({
-        // Fix JSX runtime issues in production
-        jsxRuntime: 'automatic'
+        // Explicitly set JSX configuration for React 19 
+        jsxRuntime: 'automatic',
+        jsxImportSource: 'react'
       }),
       securityPlugin(),
       // Bundle analyzer (generates stats.html)

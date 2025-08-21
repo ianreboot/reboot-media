@@ -371,7 +371,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
 };
 
 const EnhancedPricingCards = () => {
-  const swiperRef = useRef<SwiperType>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
   const { leadScore, trackInteraction } = useConversionOptimization();
   const { 
     pricingStyle, 

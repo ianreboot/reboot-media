@@ -195,7 +195,7 @@ const PricingCard = ({ service }: { service: ServicePlan }) => {
 };
 
 const PricingCards = () => {
-  const swiperRef = useRef<SwiperType>(null);
+  const swiperRef = useRef<SwiperType | null>(null);
   useEffect(() => {
     const handleResize = () => {
       const newWidth = window.innerWidth;
