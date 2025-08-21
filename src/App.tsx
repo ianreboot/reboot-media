@@ -179,7 +179,7 @@ const MainApp = () => {
 
           {/* Benefits-Focused Proof Points */}
           <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="group relative bg-white/95 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
+            <div className="group relative bg-white/50 backdrop-blur-md border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer" style={{backdropFilter: 'blur(12px)'}}>
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">30X Growth</div>
                 <div className="text-sm text-important-accessible font-medium leading-tight">
@@ -188,7 +188,7 @@ const MainApp = () => {
               </div>
             </div>
             
-            <div className="group relative bg-white/95 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
+            <div className="group relative bg-white/50 backdrop-blur-md border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer" style={{backdropFilter: 'blur(12px)'}}>
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">Stop the Bleed</div>
                 <div className="text-sm text-important-accessible font-medium leading-tight">
@@ -197,7 +197,7 @@ const MainApp = () => {
               </div>
             </div>
             
-            <div className="group relative bg-white/95 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
+            <div className="group relative bg-white/50 backdrop-blur-md border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer" style={{backdropFilter: 'blur(12px)'}}>
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">Sleep Better</div>
                 <div className="text-sm text-important-accessible font-medium leading-tight">
