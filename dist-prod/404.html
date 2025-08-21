@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting... | Reboot Media</title>
+    <script type="text/javascript">
+      // GitHub Pages 404 redirect hack for single-page applications
+      // This script takes the current url and converts the path and query
+      // string into just a query string, and then redirects the browser
+      // to the new url with the query string that will be parsed by
+      // the application's router
+      var pathSegmentsToKeep = 1; // Change this if your site is hosted in a subdirectory
+
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + 
+        '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+    <noscript>
+      <p>This site requires JavaScript to function properly. Please enable JavaScript and try again.</p>
+      <p><a href="/reboot/">Return to homepage</a></p>
+    </noscript>
+  </body>
+</html>
