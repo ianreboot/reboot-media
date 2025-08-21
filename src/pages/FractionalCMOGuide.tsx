@@ -126,7 +126,7 @@ const FractionalCMOGuide = () => {
           
           {/* Introduction */}
           <section className="mb-16">
-            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-blue-200/50 dark:border-blue-800/50 p-8">
+            <div className="glass-card-light rounded-2xl shadow-xl border border-blue-200/50 dark:border-blue-800/50 p-8">
               <h2 className="heading-lg text-black-important dark:text-white mb-6">
                 The Complete Marketing Leadership Decision Guide
               </h2>
@@ -163,7 +163,7 @@ const FractionalCMOGuide = () => {
             <div className="grid md:grid-cols-2 gap-8">
               
               {/* Fractional CMO vs Agency */}
-              <div className="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
                 <div className="bg-gradient-to-r from-blue-500 to-orange-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -187,7 +187,7 @@ const FractionalCMOGuide = () => {
               </div>
 
               {/* Fractional CMO vs Full-Time */}
-              <div className="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
                 <div className="bg-gradient-to-r from-blue-500 to-green-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -211,7 +211,7 @@ const FractionalCMOGuide = () => {
               </div>
 
               {/* Fractional CMO vs Consultant */}
-              <div className="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
                 <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -235,7 +235,7 @@ const FractionalCMOGuide = () => {
               </div>
 
               {/* Fractional CMO vs In-House Team */}
-              <div className="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
                 <div className="bg-gradient-to-r from-blue-500 to-indigo-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -259,7 +259,7 @@ const FractionalCMOGuide = () => {
               </div>
 
               {/* When to Choose Each */}
-              <div className="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
                 <div className="bg-gradient-to-r from-yellow-500 to-red-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -283,7 +283,7 @@ const FractionalCMOGuide = () => {
               </div>
 
               {/* Cost-ROI Analysis */}
-              <div className="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
                 <div className="bg-gradient-to-r from-green-500 to-teal-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -307,7 +307,7 @@ const FractionalCMOGuide = () => {
               </div>
 
               {/* Transition Strategies */}
-              <div className="group bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 md:col-span-2">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 md:col-span-2">
                 <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -361,7 +361,7 @@ const FractionalCMOGuide = () => {
               Related Marketing Leadership Resources
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+              <div className="glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                 <h3 className="text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                     8 Proven Plateau Breakthrough Patterns →
@@ -371,7 +371,7 @@ const FractionalCMOGuide = () => {
                   Marketing leadership choices often follow revenue plateaus. Discover psychology-driven solutions for breaking through growth ceilings.
                 </p>
               </div>
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+              <div className="glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                 <h3 className="text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                     5 Awareness Stages That Convert →

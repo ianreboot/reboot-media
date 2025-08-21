@@ -183,7 +183,7 @@ const OperationalScalingCrisis = () => {
             
             {/* Introduction */}
             <section className="mb-16">
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
                 <h2 className="heading-xl text-gradient-critical text-2xl font-bold replace-text-gray-900 dark:text-white mb-6 text-center">
                   Why Growth Breaks Operations (And How to Fix It)
                 </h2>
@@ -220,7 +220,7 @@ const OperationalScalingCrisis = () => {
               
               <div className="space-y-8">
                 {scenarios.map((scenario) => (
-                  <div key={scenario.id} className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
+                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
@@ -232,7 +232,7 @@ const OperationalScalingCrisis = () => {
                             <span>Typical Time Stuck: {scenario.timeStuck}</span>
                           </div>
                         </div>
-                        <div className="bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl">
+                        <div className="glass-panel rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl">
                           {scenario.id}
                         </div>
                       </div>
@@ -335,7 +335,7 @@ const OperationalScalingCrisis = () => {
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-black-important dark:text-white text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} className="hover:text-green-600 focus-visible:text-green-600 transition-colors">
                       Team Growth Bottlenecks →
@@ -345,7 +345,7 @@ const OperationalScalingCrisis = () => {
                     Can't hire fast enough or new people aren't working out? The founder bottleneck kills scaling when everything goes through you.
                   </p>
                 </div>
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-black-important dark:text-white text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-green-600 focus-visible:text-green-600 transition-colors">
                       Need Strategic Marketing Leadership? →

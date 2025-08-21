@@ -183,7 +183,7 @@ const TeamGrowthBottlenecks = () => {
             
             {/* Introduction */}
             <section className="mb-16">
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-blue-200/50 dark:border-blue-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-blue-200/50 dark:border-blue-800/50 p-8">
                 <h2 className="heading-xl text-gradient-critical text-2xl font-bold replace-text-gray-900 dark:text-white mb-6 text-center">
                   Why Team Growth Gets Stuck (And How Culture Really Scales)
                 </h2>
@@ -220,7 +220,7 @@ const TeamGrowthBottlenecks = () => {
               
               <div className="space-y-8">
                 {scenarios.map((scenario) => (
-                  <div key={scenario.id} className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
+                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
@@ -232,7 +232,7 @@ const TeamGrowthBottlenecks = () => {
                             <span>Typical Time Stuck: {scenario.timeStuck}</span>
                           </div>
                         </div>
-                        <div className="bg-white/20 backdrop-blur-sm rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl">
+                        <div className="glass-panel rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl">
                           {scenario.id}
                         </div>
                       </div>
@@ -335,7 +335,7 @@ const TeamGrowthBottlenecks = () => {
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-black-important dark:text-white text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/operational-scaling-crisis`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                       Operational Scaling Crisis →
@@ -345,7 +345,7 @@ const TeamGrowthBottlenecks = () => {
                     Growth breaking operations? Manual processes that worked at $500K fail at $2M+ without systems thinking.
                   </p>
                 </div>
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-black-important dark:text-white text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                       Need Strategic Marketing Leadership? →

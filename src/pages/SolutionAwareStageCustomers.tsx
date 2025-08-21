@@ -58,7 +58,7 @@ const SolutionAwareStageCustomers = () => {
           </section>
 
           {/* Navigation Breadcrumb */}
-          <section className="bg-white/5 backdrop-blur-sm border-b border-white/10">
+          <section className="glass-panel border-b border-white/10">
             <div className="max-w-4xl mx-auto px-6 lg:px-8 py-4">
               <nav className="flex items-center space-x-2 text-sm">
                 <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="text-gradient-safe hover:text-orange-400 focus-visible:text-orange-400 transition-colors">

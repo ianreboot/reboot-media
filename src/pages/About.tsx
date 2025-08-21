@@ -53,7 +53,7 @@ const About = () => {
           </div>
 
           {/* Company Story */}
-          <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
             <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
             <div className="relative z-10">
             <h2 className="heading-xl text-gradient-critical mb-6">Our Story</h2>
@@ -89,7 +89,7 @@ const About = () => {
           </div>
 
           {/* Leadership */}
-          <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
             <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
             <div className="relative z-10">
             <h2 className="heading-xl text-gradient-critical mb-8 text-center">Leadership</h2>
@@ -131,7 +131,7 @@ const About = () => {
 
           {/* Company Stats */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
               <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
               <div className="relative z-10">
                 <TrendingUp className="w-8 h-8 text-orange-500 mx-auto mb-3" />
@@ -139,7 +139,7 @@ const About = () => {
                 <p className="text-black-important dark:text-gradient-safe text-shadow-sm">Revenue Managed</p>
               </div>
             </div>
-            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
               <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
               <div className="relative z-10">
                 <Briefcase className="w-8 h-8 text-orange-500 mx-auto mb-3" />
@@ -147,7 +147,7 @@ const About = () => {
                 <p className="text-black-important dark:text-gradient-safe text-shadow-sm">US Companies</p>
               </div>
             </div>
-            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
               <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
               <div className="relative z-10">
                 <Award className="w-8 h-8 text-orange-500 mx-auto mb-3" />
@@ -155,7 +155,7 @@ const About = () => {
                 <p className="text-black-important dark:text-gradient-safe text-shadow-sm">Average Revenue Growth</p>
               </div>
             </div>
-            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
               <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
               <div className="relative z-10">
                 <Globe className="w-8 h-8 text-orange-500 mx-auto mb-3" />
@@ -166,7 +166,7 @@ const About = () => {
           </div>
 
           {/* Our Approach */}
-          <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
             <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
             <div className="relative z-10">
               <h2 className="heading-xl text-gradient-critical mb-8 text-center">Our Approach</h2>
@@ -216,7 +216,7 @@ const About = () => {
           </div>
 
           {/* Values */}
-          <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
             <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
             <div className="relative z-10">
               <h2 className="heading-xl text-gradient-critical mb-8 text-center">Our Values</h2>

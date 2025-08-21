@@ -192,17 +192,17 @@ const GrowthPlateauSolutions = () => {
               The Revenue Plateau Crisis
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-red-200/50 dark:border-red-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-red-200/50 dark:border-red-800/50 p-8">
                 <div className="text-4xl font-black text-red-600 mb-4">67%</div>
                 <div className="text-lg font-semibold text-important-accessible dark:text-white mb-2">Companies Plateau</div>
                 <p className="text-optional dark:text-gradient-safe">Between $500K-$1.5M revenue</p>
               </div>
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-orange-200/50 dark:border-orange-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-orange-200/50 dark:border-orange-800/50 p-8">
                 <div className="text-4xl font-black text-orange-accessible mb-4">14mo</div>
                 <div className="text-lg font-semibold text-important-accessible dark:text-white mb-2">Average Stuck Time</div>
                 <p className="text-optional dark:text-gradient-safe">Before breaking through</p>
               </div>
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
                 <div className="text-4xl font-black text-green-600 mb-4">$47K</div>
                 <div className="text-lg font-semibold text-important-accessible dark:text-white mb-2">Monthly Cost</div>
                 <p className="text-optional dark:text-gradient-safe">Of staying plateaued</p>
@@ -241,7 +241,7 @@ const GrowthPlateauSolutions = () => {
                 <div key={plateau.id} className="group">
                   <a 
                     href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}${plateau.link}`}
-                    className="block bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-8 transition-all duration-300 hover:shadow-2xl focus-visible:shadow-2xl hover:scale-105 focus-visible:scale-105 hover:bg-white focus-visible:bg-white dark:hover:bg-slate-700 focus-visible:bg-slate-700/80"
+                    className="block glass-card-light rounded-2xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-8 transition-all duration-300 hover:shadow-2xl focus-visible:shadow-2xl hover:scale-105 focus-visible:scale-105 hover:bg-white focus-visible:bg-white dark:hover:bg-slate-700 focus-visible:bg-slate-700/80"
                   >
                     <div className="text-center mb-6">
                       <div className="text-4xl mb-4">{plateau.icon}</div>
@@ -263,7 +263,7 @@ const GrowthPlateauSolutions = () => {
 
           {/* How This Works */}
           <section className="mb-20">
-            <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-12">
+            <div className="glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-12">
               <h2 className="heading-xl text-gradient-critical mb-8 text-center">
                 The Psychology-Driven Breakthrough Framework
               </h2>
@@ -303,7 +303,7 @@ const GrowthPlateauSolutions = () => {
               Master the Psychology Behind Breakthrough Growth
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow">
                 <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                     Marketing Psychology Fundamentals →
@@ -321,7 +321,7 @@ const GrowthPlateauSolutions = () => {
                 </a>
               </div>
               
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow">
                 <h3 className="heading-lg text-important-accessible dark:text-white mb-4">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                     Need Strategic Marketing Leadership? →

@@ -58,7 +58,7 @@ const ProblemAwareStageCustomers = () => {
           </section>
 
           {/* Navigation Breadcrumb */}
-          <section className="bg-white/5 backdrop-blur-sm border-b border-white/10">
+          <section className="glass-panel border-b border-white/10">
             <div className="max-w-4xl mx-auto px-6 lg:px-8 py-4">
               <nav className="flex items-center space-x-2 text-sm">
                 <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="text-gradient-safe hover:text-orange-400 focus-visible:text-orange-400 transition-colors">
@@ -94,7 +94,7 @@ const ProblemAwareStageCustomers = () => {
               <div className="space-y-8">
                 
                 {/* Example 1 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md shadow-lg">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"Our marketing isn't working anymore"</p>
@@ -117,7 +117,7 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 2 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md shadow-lg">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"We're getting traffic but no one's buying"</p>
@@ -140,7 +140,7 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 3 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md shadow-lg">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"Our customer acquisition cost keeps going up"</p>
@@ -163,7 +163,7 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 4 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md shadow-lg">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"We tried content marketing and it didn't work"</p>
@@ -186,7 +186,7 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 5 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md shadow-lg">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"Social media isn't driving any sales"</p>
@@ -209,7 +209,7 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 6 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md shadow-lg">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"Our sales team says leads are terrible"</p>
@@ -232,7 +232,7 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 7 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/80 dark:bg-slate-800/80 backdrop-blur-md shadow-lg">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"Competitors keep stealing our customers"</p>

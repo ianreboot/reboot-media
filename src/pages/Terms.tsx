@@ -39,7 +39,7 @@ const Terms = () => {
       {/* Main Content */}
       <div className="pt-16 pb-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8">
+          <div className="glass-card rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8">
             
             <div className="text-center mb-8">
               <h1 className="heading-hero text-gradient-critical mb-4">
