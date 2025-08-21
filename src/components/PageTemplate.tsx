@@ -154,8 +154,8 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
   // Get content section classes
   const getContentSectionClasses = (section: ContentSection) => {
     const variantClasses = {
-      default: 'bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8',
-      glass: 'bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8',
+      default: 'glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8',
+      glass: 'glass-card rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8',
       highlight: `bg-gradient-to-r from-${hero.gradient || 'blue'}-50 to-${hero.gradient === 'blue' ? 'purple' : 'orange'}-50 dark:from-${hero.gradient || 'blue'}-900/20 dark:to-${hero.gradient === 'blue' ? 'purple' : 'orange'}-900/20 rounded-2xl p-8 border border-${hero.gradient || 'blue'}-200/50 dark:border-${hero.gradient || 'blue'}-800/50`,
       cta: `text-center bg-gradient-to-br from-${hero.gradient || 'blue'}-900 via-${hero.gradient || 'blue'}-950 to-black text-white rounded-2xl p-12`,
       warning: `bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-2xl p-6`,
@@ -184,7 +184,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
             hero.variant === 'gradient' 
               ? `bg-gradient-to-br ${getHeroGradientClasses(hero.gradient || 'blue')} relative overflow-hidden`
               : hero.variant === 'legal'
-                ? 'bg-white/5 backdrop-blur-sm'
+                ? 'glass-panel'
                 : ''
           }`}>
             {hero.variant === 'gradient' && (
@@ -245,7 +245,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
 
         {/* Breadcrumb Navigation */}
         {breadcrumbs && breadcrumbs.length > 0 && (
-          <section className="bg-white/5 backdrop-blur-sm border-b border-white/10">
+          <section className="glass-panel border-b border-white/10">
             <div className={`${containerClasses} py-4`}>
               <nav className="flex items-center space-x-2 text-sm">
                 {breadcrumbs.map((breadcrumb, index) => (
@@ -294,7 +294,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
             <div className={`text-center ${
               footerCTA.variant === 'gradient' 
                 ? `bg-gradient-to-br from-${footerCTA.gradient || hero.gradient || 'blue'}-900 via-${footerCTA.gradient || hero.gradient || 'blue'}-950 to-black text-white rounded-2xl p-12`
-                : 'bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-12'
+                : 'glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-12'
             }`}>
               <h2 className={`heading-xl mb-6 ${footerCTA.variant === 'gradient' ? 'text-white' : 'text-gradient-critical'}`}>
                 {footerCTA.title}

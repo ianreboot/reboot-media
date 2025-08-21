@@ -190,8 +190,8 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
       >
         <div className={`motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${
           scrollY > 50 
-            ? 'bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm shadow-xl border-b border-gray-200/50 dark:border-gray-700/50' 
-            : 'bg-white/90 backdrop-blur-sm border-b border-white/30'
+            ? 'glass-card-light shadow-xl border-b border-gray-200/50 dark:border-gray-700/50' 
+            : 'glass-card-light border-b border-white/30'
         }`} style={{
           // Browser-specific backdrop normalization
           backdropFilter: scrollY > 50 ? 'blur(8px) saturate(180%)' : 'blur(6px) saturate(150%)',
@@ -244,7 +244,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                     
                     {showDevDropdown && (
                       <div 
-                        className="absolute top-full left-0 mt-3 w-80 bg-white dark:bg-slate-800 rounded-xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 max-h-[70vh] overflow-y-auto z-[80] backdrop-blur-md"
+                        className="absolute top-full left-0 mt-3 w-80 bg-white dark:bg-slate-800 rounded-xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 max-h-[70vh] overflow-y-auto z-[80] glass-card"
                         role="menu"
                         aria-labelledby="dev-nav-button"
                         style={{ pointerEvents: 'auto' }}
@@ -516,7 +516,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
       <div className={`fixed bottom-0 left-0 right-0 z-40 md:hidden motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${
         showMobileMenu ? 'translate-y-full opacity-0' : 'translate-y-0 opacity-100'
       }`}>
-        <div className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-md border-t border-gray-200/50 dark:border-gray-700/50 shadow-lg">
+        <div className="glass-card-light border-t border-gray-200/50 dark:border-gray-700/50 shadow-lg">
           <div className="px-4 py-3">
             <button aria-label="Opens contact form for free marketing analysis"
               onClick={onShowForm}
