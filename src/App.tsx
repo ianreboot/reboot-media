@@ -179,7 +179,7 @@ const MainApp = () => {
 
           {/* Benefits-Focused Proof Points */}
           <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="group relative bg-white/50 backdrop-blur-md border-l-4 border-orange-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer" style={{backdropFilter: 'blur(12px)'}}>
+            <div className="group relative glass-card border-l-4 border-orange-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">30X Growth</div>
                 <div className="text-sm text-important-accessible font-medium leading-tight">
@@ -188,7 +188,7 @@ const MainApp = () => {
               </div>
             </div>
             
-            <div className="group relative bg-white/50 backdrop-blur-md border-l-4 border-blue-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer" style={{backdropFilter: 'blur(12px)'}}>
+            <div className="group relative glass-card border-l-4 border-blue-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">Stop the Bleed</div>
                 <div className="text-sm text-important-accessible font-medium leading-tight">
@@ -197,7 +197,7 @@ const MainApp = () => {
               </div>
             </div>
             
-            <div className="group relative bg-white/50 backdrop-blur-md border-l-4 border-green-500 rounded-r-xl p-5 shadow-lg hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer" style={{backdropFilter: 'blur(12px)'}}>
+            <div className="group relative glass-card border-l-4 border-green-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">Sleep Better</div>
                 <div className="text-sm text-important-accessible font-medium leading-tight">
@@ -502,7 +502,7 @@ const MainApp = () => {
 
           {/* Main Credibility Section */}
           <div className="mb-16">
-            <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md border border-white/20 dark:border-slate-700/20 rounded-3xl p-8 sm:p-12 shadow-2xl">
+            <div className="glass-panel dark:glass-card-dark rounded-3xl p-8 sm:p-12">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 {/* Primary Stat */}
                 <div className="text-center lg:col-span-1">
@@ -540,7 +540,7 @@ const MainApp = () => {
 
           {/* Story Section - Scannable Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-orange-200/30 dark:border-orange-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
+            <div className="glass-card border border-orange-200/30 dark:border-orange-400/30 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-orange-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-orange-accessible" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -553,7 +553,7 @@ const MainApp = () => {
               </p>
             </div>
 
-            <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-blue-200/30 dark:border-blue-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:rotate-1 focus-visible:rotate-1 cursor-pointer">
+            <div className="glass-card border border-blue-200/30 dark:border-blue-400/30 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:rotate-1 focus-visible:rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-blue-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-blue-accessible" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
@@ -566,7 +566,7 @@ const MainApp = () => {
               </p>
             </div>
 
-            <div className="bg-white/60 dark:bg-slate-800/60 backdrop-blur-md border border-green-200/30 dark:border-green-400/30 rounded-2xl p-6 shadow-xl transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
+            <div className="glass-card border border-green-200/30 dark:border-green-400/30 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-green-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -614,7 +614,7 @@ const MainApp = () => {
             </div>
 
             {/* For Skeptics */}
-            <div className="bg-white/5 backdrop-blur-md rounded-3xl p-8 md:p-10 border border-white/10 mb-10">
+            <div className="glass-panel rounded-3xl p-8 md:p-10 mb-10">
               <h3 className="text-2xl font-bold text-white mb-6">
                 "I've Heard It All Before" - <span className="text-blue-400">We Get It.</span>
               </h3>
