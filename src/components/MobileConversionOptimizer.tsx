@@ -20,12 +20,11 @@ export const MobileStickyBar: React.FC = () => {
   } = useConversionOptimization();
   const { ctaText, trackClick } = useCTAOptimization();
 
-  // Detect mobile device
-  const isMobile = window.innerWidth <= 768;
-  
-  if (!isMobile) return null;
-
+  // All hooks must be called before any conditional returns
   useEffect(() => {
+    // Detect mobile device inside effect
+    const isMobile = window.innerWidth <= 768;
+    if (!isMobile) return; // Early return inside effect is OK
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
       const scrollThreshold = 200; // Show after scrolling 200px
@@ -75,6 +74,10 @@ export const MobileStickyBar: React.FC = () => {
         return 'bg-gradient-to-r from-gray-600 to-gray-700';
     }
   };
+
+  // Check mobile after all hooks are called
+  const isMobile = window.innerWidth <= 768;
+  if (!isMobile) return null;
 
   return (
     <div 
@@ -342,8 +345,9 @@ export const MobileScrollProgress: React.FC = () => {
     return () => window.removeEventListener('scroll', throttledScroll);
   }, [trackScrollDepth]);
 
-  // Only show on mobile
-  if (window.innerWidth > 768) return null;
+  // Check mobile after all hooks are called
+  const isMobile = window.innerWidth <= 768;
+  if (!isMobile) return null;
 
   return (
     <div className="fixed top-0 left-0 right-0 z-40 h-1 bg-gray-200">
