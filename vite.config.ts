@@ -18,7 +18,10 @@ export default defineConfig(({ mode }) => {
   
   return {
     plugins: [
-      react(),
+      react({
+        // Fix JSX runtime issues in production
+        jsxRuntime: 'automatic'
+      }),
       securityPlugin(),
       // Bundle analyzer (generates stats.html)
       visualizer({
