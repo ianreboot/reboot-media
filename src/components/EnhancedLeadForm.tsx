@@ -268,7 +268,7 @@ const EnhancedLeadForm = () => {
             }}
             className="w-10 h-10 rounded-full bg-white/90 hover:bg-white focus-visible:bg-white shadow-lg flex items-center justify-center motion-safe:transition-all motion-reduce:transition-none"
           >
-            <svg className="w-6 h-6 replace-text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
             </svg>
           </button>
@@ -282,7 +282,7 @@ const EnhancedLeadForm = () => {
               <h3 className="text-2xl font-black replace-text-slate-900 mb-4">
                 {personalizedContent.title}
               </h3>
-              <p className="replace-text-gray-600 mb-4">
+              <p className="text-gray-600 mb-4">
                 {personalizedContent.subtitle}
               </p>
               {shouldShowUrgency() && personalizedContent.urgency && (
@@ -293,7 +293,7 @@ const EnhancedLeadForm = () => {
                 </div>
               )}
               
-              <p className="replace-text-gray-600 mb-8">
+              <p className="text-gray-600 mb-8">
                 87% of growth-stage companies struggle with these marketing challenges:
               </p>
               
@@ -318,7 +318,7 @@ const EnhancedLeadForm = () => {
                         });
                       }}
                     />
-                    <span className="replace-text-gray-700">
+                    <span className="text-gray-700">
                       <strong>{option.label}</strong> - {option.desc}
                     </span>
                   </label>
@@ -335,7 +335,7 @@ const EnhancedLeadForm = () => {
                 {ctaText || 'Yes, I Need Help With This'} →
               </button>
               
-              <p className="replace-text-gray-500 text-sm mt-6">
+              <p className="text-gray-500 text-sm mt-6">
                 Takes 60 seconds • No sales pressure • Get real solutions
               </p>
             </div>
@@ -346,7 +346,7 @@ const EnhancedLeadForm = () => {
             <div aria-current="step" aria-label="Step 2 of form">
               <button 
                 onClick={() => handleStepChange(1)}
-                className="replace-text-gray-500 hover:replace-text-gray-700 focus-visible:replace-text-gray-700 mb-4 flex items-center transition-colors"
+                className="text-gray-500 hover:text-gray-700 focus-visible:text-gray-700 mb-4 flex items-center transition-colors"
               >
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
@@ -358,7 +358,7 @@ const EnhancedLeadForm = () => {
                 <h3 className="text-2xl font-black replace-text-slate-900 mb-4">
                   Perfect! Let's <span className="text-orange-500">Identify</span> Your Growth Stage
                 </h3>
-                <p className="replace-text-gray-600 mb-6">
+                <p className="text-gray-600 mb-6">
                   Different revenue levels need different strategic approaches
                 </p>
                 
@@ -373,7 +373,7 @@ const EnhancedLeadForm = () => {
                       2
                     </div>
                     <div className="w-20 h-1 bg-gray-300"></div>
-                    <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center replace-text-gray-500 font-bold">
+                    <div className="w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-gray-500 font-bold">
                       3
                     </div>
                   </div>
@@ -396,8 +396,8 @@ const EnhancedLeadForm = () => {
                 )}
                 
                 <div className="mb-8">
-                  <h4 className="font-bold replace-text-gray-900 mb-4">Step 2: Your Revenue Stage</h4>
-                  <p className="text-sm replace-text-gray-600 mb-4">What's your current annual revenue?</p>
+                  <h4 className="font-bold text-gray-900 mb-4">Step 2: Your Revenue Stage</h4>
+                  <p className="text-sm text-gray-600 mb-4">What's your current annual revenue?</p>
                   
                   <div className="space-y-3">
                     {[
@@ -423,9 +423,9 @@ const EnhancedLeadForm = () => {
                           onFocus={() => handleFieldFocus('revenue')}
                           className="mr-3 w-4 h-4"
                         />
-                        <span className="replace-text-gray-700">
+                        <span className="text-gray-700">
                           <strong>{option.label}</strong><br />
-                          <span className="text-sm replace-text-gray-500 ml-7">{option.desc}</span>
+                          <span className="text-sm text-gray-500 ml-7">{option.desc}</span>
                         </span>
                       </label>
                     ))}
@@ -445,7 +445,7 @@ const EnhancedLeadForm = () => {
                   className={`w-full py-4 rounded-xl font-bold text-lg motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 motion-safe:transform motion-safe:hover:scale-105 motion-reduce:transform-none motion-safe:focus-visible:scale-105 motion-reduce:transform-none shadow-xl ${
                     formData.revenue 
                       ? 'bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white' 
-                      : 'bg-gray-300 replace-text-gray-500 cursor-not-allowed'
+                      : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                   }`}
                 >
                   Continue to {isProgressive ? 'Contact Info' : 'Final Step'} →
@@ -459,7 +459,7 @@ const EnhancedLeadForm = () => {
             <div aria-current="step" aria-label="Step 3 of form">
               <button 
                 onClick={() => handleStepChange(2)}
-                className="replace-text-gray-500 hover:replace-text-gray-700 focus-visible:replace-text-gray-700 mb-4 flex items-center transition-colors"
+                className="text-gray-500 hover:text-gray-700 focus-visible:text-gray-700 mb-4 flex items-center transition-colors"
               >
                 <svg className="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"/>
@@ -471,7 +471,7 @@ const EnhancedLeadForm = () => {
                 <h3 className="text-2xl font-black replace-text-slate-900 mb-4 text-center">
                   Perfect! Let's Get Your <span className="text-orange-500">Free Analysis</span>
                 </h3>
-                <p className="replace-text-gray-600 mb-8 text-center">
+                <p className="text-gray-600 mb-8 text-center">
                   {getRecommendedNextAction()}
                 </p>
                 
@@ -679,7 +679,7 @@ const EnhancedLeadForm = () => {
                             <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2">4</span>
                             Timeline
                           </h4>
-                          <p className="text-xs replace-text-gray-600 mb-3">When do you need to see marketing results?</p>
+                          <p className="text-xs text-gray-600 mb-3">When do you need to see marketing results?</p>
                           <div className="grid grid-cols-2 gap-2">
                             {[
                               { value: 'asap', label: 'ASAP' },
@@ -816,7 +816,7 @@ const EnhancedLeadForm = () => {
                           <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2">4</span>
                           Timeline
                         </h4>
-                        <p className="text-xs replace-text-gray-600 mb-3">When do you need to see marketing results?</p>
+                        <p className="text-xs text-gray-600 mb-3">When do you need to see marketing results?</p>
                         <div className="grid grid-cols-2 gap-2">
                           {[
                             { value: 'asap', label: 'ASAP' },
@@ -923,7 +923,7 @@ const EnhancedLeadForm = () => {
                   </button>
                 )}
                 
-                <p className="replace-text-gray-500 text-xs text-center mt-4">
+                <p className="text-gray-500 text-xs text-center mt-4">
                   🔒 Your information is 100% secure. No spam, ever.
                   {leadScorePrediction >= 80 && (
                     <>

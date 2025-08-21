@@ -19,10 +19,10 @@ export const PageLoadingSpinner: React.FC<{ pageName?: string }> = ({ pageName }
       
       {/* Loading text */}
       <div className="space-y-2">
-        <p className="replace-text-gray-700 font-medium">
+        <p className="text-gray-700 font-medium">
           {pageName ? `Loading ${pageName}...` : 'Loading page...'}
         </p>
-        <p className="replace-text-gray-500 text-sm">
+        <p className="text-gray-500 text-sm">
           Optimizing your experience
         </p>
       </div>
@@ -40,7 +40,7 @@ export const ComponentLoadingSpinner: React.FC = () => (
   <div className="flex items-center justify-center p-8">
     <div className="text-center">
       <div className="animate-spin rounded-full h-8 w-8 border-2 border-gray-200 border-t-blue-600 mx-auto mb-2"></div>
-      <p className="replace-text-gray-500 text-xs">Loading...</p>
+      <p className="text-gray-500 text-xs">Loading...</p>
     </div>
   </div>
 );
@@ -88,18 +88,18 @@ export const LazyLoadErrorFallback: React.FC<{ error?: Error; retry?: () => void
         <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
           <span className="text-red-600 text-2xl">⚠</span>
         </div>
-        <h2 className="text-xl font-semibold replace-text-gray-800 mb-2">
+        <h2 className="text-xl font-semibold text-gray-800 mb-2">
           Loading Failed
         </h2>
-        <p className="replace-text-gray-600 text-sm mb-4">
+        <p className="text-gray-600 text-sm mb-4">
           We encountered an issue loading this page. Please try again.
         </p>
         {error && process.env.NODE_ENV === 'development' && (
           <details className="text-left bg-gray-100 rounded p-3 mb-4">
-            <summary className="cursor-pointer text-xs font-medium replace-text-gray-700">
+            <summary className="cursor-pointer text-xs font-medium text-gray-700">
               Error Details
             </summary>
-            <pre className="text-xs replace-text-gray-600 mt-2 whitespace-pre-wrap">
+            <pre className="text-xs text-gray-600 mt-2 whitespace-pre-wrap">
               {error.message}
             </pre>
           </details>
@@ -117,7 +117,7 @@ export const LazyLoadErrorFallback: React.FC<{ error?: Error; retry?: () => void
         )}
         <button
           onClick={() => window.location.reload()}
-          className="w-full bg-gray-200 hover:bg-gray-300 focus-visible:bg-gray-300 replace-text-gray-700 px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
+          className="w-full bg-gray-200 hover:bg-gray-300 focus-visible:bg-gray-300 text-gray-700 px-4 py-2 rounded-lg transition-colors duration-200 font-medium"
         >
           Refresh Page
         </button>

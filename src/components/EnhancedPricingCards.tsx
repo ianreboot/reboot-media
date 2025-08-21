@@ -231,7 +231,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${
             service.color === 'orange' || service.color === 'blue' 
               ? 'bg-white/20 text-white'
-              : 'bg-gray-100 replace-text-gray-600'
+              : 'bg-gray-100 text-gray-600'
           }`}>
             {service.size} Business
           </div>
@@ -267,14 +267,14 @@ const PricingCard: React.FC<PricingCardProps> = ({
         {/* Pricing */}
         <div className="mb-4">
           <div className={`text-sm line-through mb-1 ${
-            service.color === 'gray' ? 'replace-text-gray-500' : 'text-white/60'
+            service.color === 'gray' ? 'text-gray-500' : 'text-white/60'
           }`}>{service.originalPrice}/mo</div>
           <div className="flex items-baseline justify-center gap-1">
             <span className={`text-3xl font-black ${
               service.color === 'gray' ? 'text-orange-accessible' : 'text-white'
             }`}>{service.price}</span>
             <span className={`text-sm ${
-              service.color === 'gray' ? 'replace-text-gray-600' : 'text-white/90'
+              service.color === 'gray' ? 'text-gray-600' : 'text-white/90'
             }`}>{service.priceNote}</span>
           </div>
           
@@ -361,7 +361,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
         {/* Guarantee */}
         <div className={`mt-4 text-center text-xs ${
-          service.color === 'orange' || service.color === 'blue' ? 'text-white/70' : 'replace-text-gray-500'
+          service.color === 'orange' || service.color === 'blue' ? 'text-white/70' : 'text-gray-500'
         }`}>
           90-day improvement guarantee
         </div>
@@ -483,7 +483,7 @@ const EnhancedPricingCards = () => {
         <h2 className="text-3xl md:text-4xl font-black replace-text-slate-900 mb-4">
           {sectionContent.title}
         </h2>
-        <p className="text-lg replace-text-gray-600 mb-8">
+        <p className="text-lg text-gray-600 mb-8">
           {sectionContent.subtitle}
         </p>
         
@@ -606,10 +606,10 @@ const EnhancedPricingCards = () => {
       {(leadScore?.tier === 'Warm' || leadScore?.tier === 'Cold') && (
         <div className="text-center mt-12">
           <div className="bg-gray-50 rounded-xl p-6 max-w-2xl mx-auto">
-            <p className="replace-text-gray-700 font-medium mb-2">
+            <p className="text-gray-700 font-medium mb-2">
               "We saw a 340% increase in qualified leads within 90 days"
             </p>
-            <p className="text-sm replace-text-gray-600">
+            <p className="text-sm text-gray-600">
               - Sarah Chen, CEO of TechScale (Similar company size and industry)
             </p>
             <div className="flex justify-center mt-4">

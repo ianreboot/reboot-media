@@ -31,13 +31,13 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
         <div className="flex items-center justify-between mb-4">
           <div>
             <h3 className="text-lg font-bold text-critical-accessible">{test.name}</h3>
-            <p className="text-sm replace-text-gray-600">{test.description}</p>
+            <p className="text-sm text-gray-600">{test.description}</p>
           </div>
           <div className="flex items-center space-x-2">
             <span className={`px-3 py-1 rounded-full text-xs font-bold ${
               test.status === 'running' ? 'bg-green-100 text-green-800' :
               test.status === 'paused' ? 'bg-yellow-100 text-yellow-800' :
-              'bg-gray-100 replace-text-gray-800'
+              'bg-gray-100 text-gray-800'
             }`}>
               {test.status.toUpperCase()}
             </span>
@@ -63,16 +63,16 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
               </div>
               <div className="flex items-center space-x-6">
                 <div className="text-center">
-                  <div className="text-sm replace-text-gray-500">Conversions</div>
+                  <div className="text-sm text-gray-500">Conversions</div>
                   <div className="font-bold">{variant.conversions}</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-sm replace-text-gray-500">Rate</div>
+                  <div className="text-sm text-gray-500">Rate</div>
                   <div className="font-bold">{variant.conversionRate.toFixed(2)}%</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-sm replace-text-gray-500">Significant</div>
-                  <div className={`font-bold ${variant.isSignificant ? 'text-green-600' : 'replace-text-gray-400'}`}>
+                  <div className="text-sm text-gray-500">Significant</div>
+                  <div className={`font-bold ${variant.isSignificant ? 'text-green-600' : 'text-gray-400'}`}>
                     {variant.isSignificant ? '✓ Yes' : '✗ No'}
                   </div>
                 </div>
@@ -141,7 +141,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
     return (
       <form onSubmit={handleSubmit} className="space-y-6">
         <div>
-          <label className="block text-sm font-medium replace-text-gray-700 mb-2">Test Name</label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">Test Name</label>
           <input
             type="text"
             value={formData.name}
@@ -152,7 +152,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
         </div>
         
         <div>
-          <label className="block text-sm font-medium replace-text-gray-700 mb-2">Description</label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">Description</label>
           <textarea
             value={formData.description}
             onChange={(e) => setFormData({ ...formData, description: e.target.value })}
@@ -163,7 +163,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
         </div>
 
         <div>
-          <label className="block text-sm font-medium replace-text-gray-700 mb-2">Variants</label>
+          <label className="block text-sm font-medium text-gray-700 mb-2">Variants</label>
           {formData.variants.map((variant, index) => (
             <div key={variant.id} className="flex items-center space-x-4 mb-3">
               <input
@@ -191,7 +191,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
                 min="0"
                 max="100"
               />
-              <span className="text-sm replace-text-gray-500">%</span>
+              <span className="text-sm text-gray-500">%</span>
             </div>
           ))}
         </div>
@@ -211,12 +211,12 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
       <div className="bg-white rounded-2xl shadow-2xl max-w-6xl w-full h-[90vh] flex flex-col">
         {/* Header */}
         <div className="flex items-center justify-between p-6 border-b border-gray-200">
-          <h2 className="text-2xl font-bold replace-text-gray-900">A/B Testing Dashboard</h2>
+          <h2 className="text-2xl font-bold text-gray-900">A/B Testing Dashboard</h2>
           <button
             onClick={onClose}
             className="w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 focus-visible:bg-gray-200 flex items-center justify-center transition-colors"
           >
-            <svg className="w-5 h-5 replace-text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
             </svg>
           </button>
@@ -236,7 +236,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
               className={`px-6 py-3 text-sm font-medium border-b-2 transition-colors ${
                 activeTab === tab.id
                   ? 'border-blue-500 text-blue-accessible'
-                  : 'border-transparent replace-text-gray-500 hover:replace-text-gray-700 focus-visible:replace-text-gray-700'
+                  : 'border-transparent text-gray-500 hover:text-gray-700 focus-visible:text-gray-700'
               }`}
             >
               <span className="mr-2">{tab.icon}</span>
@@ -281,22 +281,22 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
               {/* Current Session Info */}
               {session && (
                 <div className="bg-gray-50 border border-gray-200 rounded-lg p-6">
-                  <h3 className="text-lg font-bold replace-text-gray-900 mb-4">Current Session</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-4">Current Session</h3>
                   <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                     <div>
-                      <span className="font-medium replace-text-gray-600">Session ID:</span>
+                      <span className="font-medium text-gray-600">Session ID:</span>
                       <div className="font-mono text-xs">{session.id.slice(0, 8)}...</div>
                     </div>
                     <div>
-                      <span className="font-medium replace-text-gray-600">Lead Score:</span>
+                      <span className="font-medium text-gray-600">Lead Score:</span>
                       <div className="font-bold">{session.leadScore?.total || 'Not scored'}</div>
                     </div>
                     <div>
-                      <span className="font-medium replace-text-gray-600">Page Views:</span>
+                      <span className="font-medium text-gray-600">Page Views:</span>
                       <div className="font-bold">{session.behavioralData.pageViews}</div>
                     </div>
                     <div>
-                      <span className="font-medium replace-text-gray-600">Time on Site:</span>
+                      <span className="font-medium text-gray-600">Time on Site:</span>
                       <div className="font-bold">{Math.round(session.behavioralData.timeOnSite)}s</div>
                     </div>
                   </div>
@@ -309,7 +309,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
           {activeTab === 'tests' && (
             <div className="space-y-4">
               <div className="flex items-center justify-between">
-                <h3 className="text-xl font-bold replace-text-gray-900">Active A/B Tests</h3>
+                <h3 className="text-xl font-bold text-gray-900">Active A/B Tests</h3>
                 <button
                   onClick={() => setActiveTab('create')}
                   className="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 focus-visible:bg-blue-600 transition-colors"
@@ -327,25 +327,25 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
           {/* Analytics Tab */}
           {activeTab === 'analytics' && (
             <div className="space-y-6">
-              <h3 className="text-xl font-bold replace-text-gray-900">Conversion Analytics</h3>
+              <h3 className="text-xl font-bold text-gray-900">Conversion Analytics</h3>
               
               {/* Funnel Analysis */}
               <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <h4 className="text-lg font-bold replace-text-gray-900 mb-4">Conversion Funnel</h4>
+                <h4 className="text-lg font-bold text-gray-900 mb-4">Conversion Funnel</h4>
                 <div className="space-y-3">
                   {getConversionFunnelData().map((step, index) => (
                     <div key={step.id} className="flex items-center">
                       <div className={`w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold ${
-                        step.completed ? 'bg-green-500 text-white' : 'bg-gray-300 replace-text-gray-600'
+                        step.completed ? 'bg-green-500 text-white' : 'bg-gray-300 text-gray-600'
                       }`}>
                         {index + 1}
                       </div>
                       <div className="ml-4 flex-1">
                         <div className="font-medium">{step.name}</div>
-                        <div className="text-sm replace-text-gray-600">{step.description}</div>
+                        <div className="text-sm text-gray-600">{step.description}</div>
                       </div>
                       <div className={`px-3 py-1 rounded-full text-xs font-bold ${
-                        step.completed ? 'bg-green-100 text-green-800' : 'bg-gray-100 replace-text-gray-600'
+                        step.completed ? 'bg-green-100 text-green-800' : 'bg-gray-100 text-gray-600'
                       }`}>
                         {step.completed ? 'Completed' : 'Pending'}
                       </div>
@@ -356,7 +356,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
 
               {/* Behavioral Insights */}
               <div className="bg-white border border-gray-200 rounded-lg p-6">
-                <h4 className="text-lg font-bold replace-text-gray-900 mb-4">Behavioral Insights</h4>
+                <h4 className="text-lg font-bold text-gray-900 mb-4">Behavioral Insights</h4>
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {(() => {
                     const insights = getBehavioralInsights();
@@ -364,19 +364,19 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
                       <>
                         <div className="text-center">
                           <div className="text-2xl font-bold text-blue-accessible">{insights.pageViews}</div>
-                          <div className="text-sm replace-text-gray-600">Page Views</div>
+                          <div className="text-sm text-gray-600">Page Views</div>
                         </div>
                         <div className="text-center">
                           <div className="text-2xl font-bold text-green-600">{Math.round(insights.timeOnSite)}s</div>
-                          <div className="text-sm replace-text-gray-600">Time on Site</div>
+                          <div className="text-sm text-gray-600">Time on Site</div>
                         </div>
                         <div className="text-center">
                           <div className="text-2xl font-bold text-orange-accessible">{insights.scrollDepth}%</div>
-                          <div className="text-sm replace-text-gray-600">Scroll Depth</div>
+                          <div className="text-sm text-gray-600">Scroll Depth</div>
                         </div>
                         <div className="text-center">
                           <div className="text-2xl font-bold text-purple-600">{insights.interactions.length}</div>
-                          <div className="text-sm replace-text-gray-600">Interactions</div>
+                          <div className="text-sm text-gray-600">Interactions</div>
                         </div>
                       </>
                     );
@@ -389,7 +389,7 @@ const ABTestingDashboard: React.FC<DashboardProps> = ({ isVisible, onClose }) =>
           {/* Create Test Tab */}
           {activeTab === 'create' && (
             <div>
-              <h3 className="text-xl font-bold replace-text-gray-900 mb-6">Create New A/B Test</h3>
+              <h3 className="text-xl font-bold text-gray-900 mb-6">Create New A/B Test</h3>
               <CreateTestForm />
             </div>
           )}

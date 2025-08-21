@@ -295,7 +295,7 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
         {/* Content */}
         <div className="p-6">
           <div className="mb-6">
-            <p className="replace-text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4">
               Don't worry - this happens sometimes. We've been notified and are working on a fix.
               In the meantime, you can try one of the options below.
             </p>
@@ -356,7 +356,7 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
           {/* Error Details (Development/Debug Mode) */}
           {showDetails && error && (
             <details className="bg-gray-50 rounded-lg">
-              <summary className="p-4 cursor-pointer font-medium replace-text-gray-700 hover:bg-gray-100 focus-visible:bg-gray-100 rounded-lg">
+              <summary className="p-4 cursor-pointer font-medium text-gray-700 hover:bg-gray-100 focus-visible:bg-gray-100 rounded-lg">
                 Technical Details (for developers)
               </summary>
               <div className="p-4 pt-0">
@@ -367,8 +367,8 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
                 
                 {error.stack && (
                   <div className="bg-gray-100 rounded-lg p-4 mb-4">
-                    <h4 className="font-medium replace-text-gray-800 mb-2">Stack Trace</h4>
-                    <pre className="text-xs replace-text-gray-600 whitespace-pre-wrap break-all overflow-x-auto">
+                    <h4 className="font-medium text-gray-800 mb-2">Stack Trace</h4>
+                    <pre className="text-xs text-gray-600 whitespace-pre-wrap break-all overflow-x-auto">
                       {error.stack}
                     </pre>
                   </div>
@@ -384,7 +384,7 @@ const PageErrorFallback: React.FC<ErrorFallbackProps> = ({
                 )}
 
                 {errorBoundaryName && (
-                  <div className="mt-4 text-xs replace-text-gray-500">
+                  <div className="mt-4 text-xs text-gray-500">
                     Error Boundary: {errorBoundaryName}
                   </div>
                 )}
@@ -467,20 +467,20 @@ const ComponentErrorFallback: React.FC<Omit<ErrorFallbackProps, 'onRefresh' | 'o
         {/* Error Details for Component Level */}
         {showDetails && error && (
           <details className="mt-4 bg-white rounded border">
-            <summary className="p-3 cursor-pointer text-sm font-medium replace-text-gray-700 hover:bg-gray-50 focus-visible:bg-gray-50">
+            <summary className="p-3 cursor-pointer text-sm font-medium text-gray-700 hover:bg-gray-50 focus-visible:bg-gray-50">
               Technical Details
             </summary>
             <div className="p-3 pt-0 border-t">
-              <div className="text-xs replace-text-gray-600 mb-2">
+              <div className="text-xs text-gray-600 mb-2">
                 <strong>Error:</strong> {error.message}
               </div>
               {errorInfo && (
-                <div className="text-xs replace-text-gray-500 mb-2">
+                <div className="text-xs text-gray-500 mb-2">
                   Component Stack Available
                 </div>
               )}
               {errorBoundaryName && (
-                <div className="text-xs replace-text-gray-500">
+                <div className="text-xs text-gray-500">
                   Boundary: {errorBoundaryName}
                 </div>
               )}

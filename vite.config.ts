@@ -2,8 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { securityPlugin } from './vite-plugin-security'
 import { visualizer } from 'rollup-plugin-visualizer'
-// @ts-ignore - Auto-healer plugin
-import accessibilityAutoHealer from './vite-plugin-accessibility-autohealer.js'
 
 // https://vite.dev/config/
 export default defineConfig(({ mode }) => {
@@ -22,11 +20,6 @@ export default defineConfig(({ mode }) => {
     plugins: [
       react(),
       securityPlugin(),
-      // Strategic Amplification: Auto-healing accessibility system (temporarily disabled)
-      // accessibilityAutoHealer({
-      //   mode: 'auto-fix', // Automatically fix problematic classes
-      //   generateReport: true, // Generate accessibility report
-      // }),
       // Bundle analyzer (generates stats.html)
       visualizer({
         filename: 'bundle-stats.html',
@@ -42,7 +35,7 @@ export default defineConfig(({ mode }) => {
       'process.env.NODE_ENV': JSON.stringify(mode),
     },
     build: {
-      outDir: 'dist',
+      outDir: isDev ? 'dist' : 'dist-prod',
       assetsDir: 'assets',
       sourcemap: isDev ? true : false,
       target: 'es2020',
@@ -50,6 +43,7 @@ export default defineConfig(({ mode }) => {
       chunkSizeWarningLimit: 150, // Reduced from 200KB
       minify: mode === 'production' ? 'esbuild' : false,
       rollupOptions: {
+        input: isDev ? './index.dev.html' : './index.prod.html',
         // Tree shaking optimization
         treeshake: {
           preset: 'recommended',

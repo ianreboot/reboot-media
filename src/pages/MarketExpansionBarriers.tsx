@@ -184,7 +184,7 @@ const MarketExpansionBarriers = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="glass-card-light rounded-2xl shadow-xl border border-yellow-200/50 dark:border-yellow-800/50 p-8">
-                <h2 className="heading-xl text-gradient-critical text-2xl font-bold replace-text-gray-900 dark:text-white mb-6 text-center">
+                <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   Why Market "Saturation" is Usually a Positioning Problem
                 </h2>
                 <p className="text-black-important dark:text-gradient-critical text-lg text-standard dark:text-gradient-safe mb-6 leading-relaxed text-center">
@@ -213,7 +213,7 @@ const MarketExpansionBarriers = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold replace-text-gray-900 dark:text-white mb-12 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center">
                 <span className="block">7 Market Expansion Barriers</span>
                 <span className="block">(Which is Yours?)</span>
               </h2>
@@ -307,7 +307,7 @@ const MarketExpansionBarriers = () => {
             {/* Call to Action */}
             <section className="mb-16">
               <div className="text-center bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-2xl p-8 border border-yellow-200/50 dark:border-yellow-800/50">
-                <h3 className="text-2xl font-bold replace-text-gray-900 dark:text-white mb-4">
+                <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
                   🚨 Stop Accepting Market "Limitations" as Reality
                 </h3>
                 <p className="text-black-important dark:text-gradient-critical text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto">
@@ -331,12 +331,12 @@ const MarketExpansionBarriers = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical text-3xl font-bold replace-text-gray-900 dark:text-white mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-black-important dark:text-white text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
+                  <h3 className="heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/customer-acquisition-stall`} className="hover:text-yellow-600 focus-visible:text-yellow-600 transition-colors">
                       Customer Acquisition Stall →
                     </a>
@@ -346,7 +346,7 @@ const MarketExpansionBarriers = () => {
                   </p>
                 </div>
                 <div className="glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-black-important dark:text-white text-xl font-bold replace-text-gray-900 dark:text-white mb-3">
+                  <h3 className="heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-yellow-600 focus-visible:text-yellow-600 transition-colors">
                       Marketing Psychology Fundamentals →
                     </a>

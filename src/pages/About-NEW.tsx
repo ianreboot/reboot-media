@@ -128,22 +128,22 @@ const About = () => {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center">
               <TrendingUp className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-              <div className="text-2xl font-bold replace-text-gray-900 dark:text-white">$2B+</div>
+              <div className="text-2xl font-bold text-gray-900 dark:text-white">$2B+</div>
               <p className="text-optional dark:luminescence-layer-3">Revenue Managed</p>
             </div>
             <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center">
               <Briefcase className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-              <div className="text-2xl font-bold replace-text-gray-900 dark:text-white">20+</div>
+              <div className="text-2xl font-bold text-gray-900 dark:text-white">20+</div>
               <p className="text-optional dark:luminescence-layer-3">US Companies</p>
             </div>
             <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center">
               <Award className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-              <div className="text-2xl font-bold replace-text-gray-900 dark:text-white">3X</div>
+              <div className="text-2xl font-bold text-gray-900 dark:text-white">3X</div>
               <p className="text-optional dark:luminescence-layer-3">Average Revenue Growth</p>
             </div>
             <div className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center">
               <Globe className="w-8 h-8 text-orange-500 mx-auto mb-3" />
-              <div className="text-2xl font-bold replace-text-gray-900 dark:text-white">Global</div>
+              <div className="text-2xl font-bold text-gray-900 dark:text-white">Global</div>
               <p className="text-sm text-accessible-min dark:luminescence-layer-3">USA • Bangkok • Singapore</p>
             </div>
           </div>

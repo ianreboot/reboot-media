@@ -190,7 +190,7 @@ const CostROIAnalysis = () => {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b-2 border-gray-200 dark:border-gray-700">
-                      <th className="text-left py-3 px-2 font-bold replace-text-gray-900 dark:text-white">Cost Factor</th>
+                      <th className="text-left py-3 px-2 font-bold text-gray-900 dark:text-white">Cost Factor</th>
                       <th className="text-center py-3 px-2 text-blue-accessible">Fractional CMO</th>
                       <th className="text-center py-3 px-2 text-orange-accessible">Marketing Agency</th>
                       <th className="text-center py-3 px-2 text-purple-600">Full-Time CMO</th>

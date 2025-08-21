@@ -22,7 +22,7 @@ npm run build:prod
 echo "📤 Committing to GitHub..."
 git add index.html dist/ server/dist/
 git commit -m "Production build - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
-git push origin main
+git push origin master
 
 # Deploy directly to production server with full automation
 echo "🌐 Deploying to production server (44.247.64.96)..."

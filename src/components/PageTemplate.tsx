@@ -215,13 +215,13 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
               )}
 
               {hero.subtitle && (
-                <h2 className="text-xl md:text-2xl text-important-accessible dark:replace-text-gray-300 mb-6 max-w-4xl mx-auto">
+                <h2 className="text-xl md:text-2xl text-important-accessible dark:text-gray-300 mb-6 max-w-4xl mx-auto">
                   {hero.subtitle}
                 </h2>
               )}
 
               {hero.description && (
-                <p className="text-xl text-important-accessible dark:replace-text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl text-important-accessible dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
                   {hero.description}
                 </p>
               )}
@@ -253,17 +253,17 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
                     {breadcrumb.href ? (
                       <a 
                         href={breadcrumb.href} 
-                        className="replace-text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors"
+                        className="text-gray-400 hover:text-orange-400 focus-visible:text-orange-400 transition-colors"
                       >
                         {breadcrumb.text}
                       </a>
                     ) : (
-                      <span className={breadcrumb.isActive ? 'text-orange-400' : 'replace-text-gray-400'}>
+                      <span className={breadcrumb.isActive ? 'text-orange-400' : 'text-gray-400'}>
                         {breadcrumb.text}
                       </span>
                     )}
                     {index < breadcrumbs.length - 1 && (
-                      <span className="replace-text-gray-600">→</span>
+                      <span className="text-gray-600">→</span>
                     )}
                   </React.Fragment>
                 ))}
@@ -301,7 +301,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
               </h2>
               <p className={`text-lg mb-8 max-w-4xl mx-auto leading-relaxed ${
                 footerCTA.variant === 'gradient' 
-                  ? 'replace-text-gray-300' 
+                  ? 'text-gray-300' 
                   : 'text-standard dark:replace-'
               }`}>
                 {footerCTA.description}

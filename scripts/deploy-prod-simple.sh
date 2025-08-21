@@ -11,9 +11,9 @@ echo "🚀 Starting simple production deployment for Reboot Media..."
 echo "🔨 Building for production locally..."
 npm run build:prod
 
-# Commit to GitHub (for backup)
+# Commit to GitHub (for backup) - Note: dist-prod is used for production, dist preserved for dev
 echo "📤 Committing to GitHub..."
-git add -f dist/  # Force add despite .gitignore
+git add -f dist-prod/  # Force add production build (keeps dev dist/ separate)
 git commit -m "Production build - $(date +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
 git push origin master
 
@@ -31,10 +31,16 @@ tar czf /tmp/reboot-deploy.tar.gz \
     --exclude=real-cwv-* \
     --exclude=server-*.log \
     --exclude=*.pid \
+    --exclude=dist \
     .
 
-# Check for production server configuration
-if [ -z "$PROD_SERVER_IP" ]; then
+# Set production server configuration (hardcoded like syncup)
+PROD_SERVER_IP="44.247.64.96"
+PROD_SERVER_USER="ubuntu" 
+PROD_SERVER_PATH="/home/ubuntu/reboot"
+
+# Check for production server configuration (commented out - using hardcoded values)
+if false; then
   echo "📦 Deployment package created: /tmp/reboot-deploy.tar.gz"
   echo ""
   echo "⚠️  Production server not configured. Set environment variables:"
@@ -71,7 +77,7 @@ echo "📥 Extracting new deployment..."
 tar xzf /tmp/reboot-deploy.tar.gz
 
 echo "📦 Installing dependencies..."
-npm install --production
+npm install --legacy-peer-deps
 
 echo "🔨 Building application..."
 npm run build:prod

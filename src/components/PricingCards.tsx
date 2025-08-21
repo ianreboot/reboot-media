@@ -121,7 +121,7 @@ const PricingCard = ({ service }: { service: ServicePlan }) => {
           <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mb-3 ${
             service.color === 'orange' || service.color === 'blue' 
               ? 'bg-white/20 text-white'
-              : 'bg-gray-100 replace-text-gray-600'
+              : 'bg-gray-100 text-gray-600'
           }`}>
             {service.size} Business
           </div>
@@ -137,14 +137,14 @@ const PricingCard = ({ service }: { service: ServicePlan }) => {
         {/* Pricing */}
         <div className="mb-4">
           <div className={`text-sm line-through mb-1 ${
-            service.color === 'gray' ? 'replace-text-gray-500' : 'text-white/60'
+            service.color === 'gray' ? 'text-gray-500' : 'text-white/60'
           }`}>{service.originalPrice}/mo</div>
           <div className="flex items-baseline justify-center gap-1">
             <span className={`text-3xl font-black ${
               service.color === 'gray' ? 'text-orange-accessible' : 'text-white'
             }`}>{service.price}</span>
             <span className={`text-sm ${
-              service.color === 'gray' ? 'replace-text-gray-600' : 'text-white/90'
+              service.color === 'gray' ? 'text-gray-600' : 'text-white/90'
             }`}>{service.priceNote}</span>
           </div>
           <div className={`inline-block px-3 py-1 rounded-full text-xs font-bold mt-2 ${
@@ -185,7 +185,7 @@ const PricingCard = ({ service }: { service: ServicePlan }) => {
 
         {/* Guarantee */}
         <div className={`mt-4 text-center text-xs ${
-          service.color === 'orange' || service.color === 'blue' ? 'text-white/70' : 'replace-text-gray-500'
+          service.color === 'orange' || service.color === 'blue' ? 'text-white/70' : 'text-gray-500'
         }`}>
           90-day improvement guarantee
         </div>

@@ -227,7 +227,7 @@ const MainApp = () => {
           {/* Asymmetrical Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="bg-white p-6 sm:p-8 rounded-2xl shadow-xl border border-stone-200 transform -rotate-1">
+              <div className="glass-card-light p-6 sm:p-8 rounded-2xl shadow-xl transform -rotate-1">
                 <h3 className="text-2xl font-bold text-critical-accessible mb-6">What Business Owners Say:</h3>
                 <div className="space-y-4">
                   <p className="italic text-standard-accessible">"Our advanced AI-powered customer management platform leverages machine learning algorithms to deliver personalized experiences..."</p>
