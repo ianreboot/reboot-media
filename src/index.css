@@ -376,10 +376,13 @@ body {
   }
   
   .text-bg-overlay-dark {
-    background: rgba(0, 0, 0, 0.8);
-    backdrop-filter: blur(8px);
-    border-radius: 0.5rem;
-    padding: 0.5rem 1rem;
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem 0.75rem 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
   }
   
   /* Override for dark backgrounds - trigger when dark background gradient is present */
