@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import reactSWC from '@vitejs/plugin-react-swc'
 import { securityPlugin } from './vite-plugin-security'
 import { visualizer } from 'rollup-plugin-visualizer'
 
@@ -18,8 +19,8 @@ export default defineConfig(({ mode }) => {
   
   return {
     plugins: [
-      react({
-        // Explicitly set JSX configuration for React 19 
+      // Use SWC in production for proper JSX transform, Babel in development
+      mode === 'production' ? reactSWC() : react({
         jsxRuntime: 'automatic',
         jsxImportSource: 'react'
       }),
@@ -36,7 +37,9 @@ export default defineConfig(({ mode }) => {
     define: {
       // Remove dev-only code in production
       __DEV__: isDev,
-      'process.env.NODE_ENV': JSON.stringify(mode),
+      'process.env.NODE_ENV': JSON.stringify(mode === 'production' ? 'production' : 'development'),
+      // Explicitly disable development helpers
+      'process.env.DEV': JSON.stringify(isDev ? 'true' : 'false'),
     },
     build: {
       outDir: isDev ? 'dist' : 'dist-prod',
