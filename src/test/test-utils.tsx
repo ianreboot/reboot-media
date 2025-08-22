@@ -3,25 +3,19 @@ import { render, type RenderOptions } from '@testing-library/react'
 import { BrowserRouter } from 'react-router-dom'
 import { ErrorProvider } from '../contexts/ErrorContext'
 import { LeadFormProvider } from '../contexts/LeadFormContext'
-import { ABTestProvider } from '../contexts/ABTestContext'
-import { ConversionOptimizationProvider } from '../contexts/ConversionOptimizationContext'
 import ErrorBoundary from '../components/ErrorBoundary'
 
-// Test wrapper component that includes all necessary providers
+// Test wrapper component that includes necessary providers
 const TestProviders: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   return (
     <ErrorProvider enableErrorReporting={false}>
-      <ABTestProvider>
-        <ConversionOptimizationProvider>
-          <BrowserRouter>
-            <LeadFormProvider>
-              <ErrorBoundary level="page" name="TestBoundary" showDetails={true}>
-                {children}
-              </ErrorBoundary>
-            </LeadFormProvider>
-          </BrowserRouter>
-        </ConversionOptimizationProvider>
-      </ABTestProvider>
+      <BrowserRouter>
+        <LeadFormProvider>
+          <ErrorBoundary level="page" name="TestBoundary" showDetails={true}>
+            {children}
+          </ErrorBoundary>
+        </LeadFormProvider>
+      </BrowserRouter>
     </ErrorProvider>
   )
 }
