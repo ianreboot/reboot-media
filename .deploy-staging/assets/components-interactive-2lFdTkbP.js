@@ -1,6 +1,6 @@
 import { r as reactExports, j as jsxDevRuntimeExports } from "./react-core-BlMi_X7P.js";
 import { S as Swiper, a as SwiperSlide } from "./swiper-8Vh_Bhwg.js";
-import { u as useConversionOptimization, a as usePricingOptimization, b as useCTAOptimization, c as useLeadForm, d as useFormOptimization, e as useError } from "./app-state-6wTCWDxP.js";
+import { u as useConversionOptimization, a as usePricingOptimization, b as useCTAOptimization, c as useLeadForm, d as useFormOptimization, e as useError } from "./app-state-r1lWMrhg.js";
 const services = [
   {
     title: "STARTER",
@@ -146,20 +146,20 @@ const PricingCard = ({
       onMouseLeave: () => setHovered(false),
       children: [
         tierMessage && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex justify-center mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg ${leadTier === "Hot" ? "bg-gradient-to-r from-red-500 to-orange-500 animate-pulse" : "bg-orange-500"}`, children: tierMessage.badge }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
           lineNumber: 200,
           columnNumber: 11
         }, void 0) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
           lineNumber: 199,
           columnNumber: 9
         }, void 0),
         service.popular && !tierMessage && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex justify-center mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-orange-500 text-white px-5 py-2 rounded-full text-sm font-bold shadow-lg animate-pulse", children: "MOST POPULAR" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
           lineNumber: 212,
           columnNumber: 11
         }, void 0) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
           lineNumber: 211,
           columnNumber: 9
         }, void 0),
@@ -169,38 +169,38 @@ const PricingCard = ({
               service.size,
               " Business"
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
               lineNumber: 231,
               columnNumber: 11
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: `text-2xl font-black mb-1 ${service.color === "gray" ? "replace-text-slate-900" : "text-white"}`, children: service.title }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
               lineNumber: 239,
               columnNumber: 11
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: `text-sm ${service.color === "gray" ? "replace-" : "text-white/90"}`, children: service.subtitle }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
               lineNumber: 242,
               columnNumber: 11
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
             lineNumber: 230,
             columnNumber: 9
           }, void 0),
           pricingStyle === "value_first" && shouldEmphasizeValue && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `mb-4 p-3 rounded-lg ${service.color === "orange" || service.color === "blue" ? "bg-white/10 border border-white/20" : "bg-blue-50 border border-blue-200"}`, children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: `text-sm font-bold ${service.color === "gray" ? "text-blue-800" : "text-white"}`, children: service.valueProposition }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
               lineNumber: 254,
               columnNumber: 13
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: `text-xs mt-1 ${service.color === "gray" ? "text-blue-accessible" : "text-white/80"}`, children: service.roi }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
               lineNumber: 259,
               columnNumber: 13
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
             lineNumber: 249,
             columnNumber: 11
           }, void 0),
@@ -209,68 +209,68 @@ const PricingCard = ({
               service.originalPrice,
               "/mo"
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
               lineNumber: 269,
               columnNumber: 11
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-baseline justify-center gap-1", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: `text-3xl font-black ${service.color === "gray" ? "text-orange-accessible" : "text-white"}`, children: service.price }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
                 lineNumber: 273,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: `text-sm ${service.color === "gray" ? "text-gray-600" : "text-white/90"}`, children: service.priceNote }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
                 lineNumber: 276,
                 columnNumber: 13
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
               lineNumber: 272,
               columnNumber: 11
             }, void 0),
             shouldShowSavings && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `inline-block px-3 py-1 rounded-full text-xs font-bold mt-2 ${service.color === "orange" || service.color === "blue" ? "bg-green-400/20 text-green-100" : "bg-green-100 text-green-800"}`, children: service.savings }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
               lineNumber: 283,
               columnNumber: 13
             }, void 0),
             leadTier === "Hot" && service.popular && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `text-xs mt-2 p-2 rounded ${service.color === "orange" || service.color === "blue" ? "bg-white/10 text-white/90" : "bg-orange-50 text-orange-700"}`, children: "🎯 Enterprise pricing negotiable for qualified companies" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
               lineNumber: 294,
               columnNumber: 13
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
             lineNumber: 268,
             columnNumber: 9
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `text-xs mb-4 ${service.color === "gray" ? "replace-" : "text-white/80"}`, children: service.duration }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
             lineNumber: 304,
             columnNumber: 9
           }, void 0),
           tierMessage?.message && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `mb-4 p-3 rounded-lg text-sm ${service.color === "orange" || service.color === "blue" ? "bg-white/10 text-white/90" : "bg-blue-50 text-blue-700"}`, children: tierMessage.message }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
             lineNumber: 310,
             columnNumber: 11
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("ul", { className: `${service.popular ? "space-y-2 mb-6" : "space-y-1.5 mb-4"} text-left ${service.popular ? "flex-1" : ""}`, children: service.features.map((feature, idx) => /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("li", { className: `${service.popular ? "text-sm" : "text-xs"} flex items-start ${service.color === "orange" || service.color === "blue" ? "text-white/90" : "replace-text-slate-700"}`, children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2 flex-shrink-0", children: feature.split(" ")[0] }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
               lineNumber: 325,
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { children: feature.split(" ").slice(1).join(" ") }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
               lineNumber: 326,
               columnNumber: 15
             }, void 0)
           ] }, idx, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
             lineNumber: 322,
             columnNumber: 13
           }, void 0)) }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
             lineNumber: 320,
             columnNumber: 9
           }, void 0),
@@ -288,7 +288,7 @@ const PricingCard = ({
             void 0,
             false,
             {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
               lineNumber: 332,
               columnNumber: 9
             },
@@ -298,21 +298,21 @@ const PricingCard = ({
             "⚡ ",
             tierMessage.urgency
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
             lineNumber: 354,
             columnNumber: 13
           }, void 0) }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
             lineNumber: 353,
             columnNumber: 11
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `mt-4 text-center text-xs ${service.color === "orange" || service.color === "blue" ? "text-white/70" : "text-gray-500"}`, children: "90-day improvement guarantee" }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
             lineNumber: 363,
             columnNumber: 9
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
           lineNumber: 219,
           columnNumber: 7
         }, void 0)
@@ -321,7 +321,7 @@ const PricingCard = ({
     void 0,
     true,
     {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
       lineNumber: 182,
       columnNumber: 5
     },
@@ -420,49 +420,49 @@ const EnhancedPricingCards = () => {
   return /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "py-16", children: [
     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center mb-12", children: [
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "text-3xl md:text-4xl font-black replace-text-slate-900 mb-4", children: sectionContent.title }, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
         lineNumber: 483,
         columnNumber: 9
       }, void 0),
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-lg text-gray-600 mb-8", children: sectionContent.subtitle }, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
         lineNumber: 486,
         columnNumber: 9
       }, void 0),
       leadScore?.tier === "Hot" && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "inline-flex items-center bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-full px-6 py-2 mb-6", children: [
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-3 h-3 bg-red-500 rounded-full mr-3 animate-pulse" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
           lineNumber: 493,
           columnNumber: 13
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-red-800 font-bold text-sm", children: "High-Priority Lead - Priority Response Guaranteed" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
           lineNumber: 494,
           columnNumber: 13
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
         lineNumber: 492,
         columnNumber: 11
       }, void 0),
       pricingStyle === "value_first" && shouldEmphasizeValue && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-blue-50 border border-blue-200 rounded-lg p-4 mb-8 max-w-2xl mx-auto", children: [
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-lg font-bold text-blue-900 mb-2", children: "ROI-Focused Investment" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
           lineNumber: 503,
           columnNumber: 13
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-blue-700", children: "Our clients typically see 3-10x ROI on their fractional CMO investment. Compare that to a full-time CMO at $200K+ with no guarantee of results." }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
           lineNumber: 506,
           columnNumber: 13
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
         lineNumber: 502,
         columnNumber: 11
       }, void 0)
     ] }, void 0, true, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
       lineNumber: 482,
       columnNumber: 7
     }, void 0),
@@ -536,7 +536,7 @@ const EnhancedPricingCards = () => {
               void 0,
               false,
               {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
                 lineNumber: 571,
                 columnNumber: 13
               },
@@ -546,7 +546,7 @@ const EnhancedPricingCards = () => {
           index,
           false,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
             lineNumber: 567,
             columnNumber: 11
           },
@@ -556,7 +556,7 @@ const EnhancedPricingCards = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
         lineNumber: 515,
         columnNumber: 7
       },
@@ -564,12 +564,12 @@ const EnhancedPricingCards = () => {
     ),
     leadScore?.tier === "Hot" && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center mt-12", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-2xl p-6 max-w-lg mx-auto", children: [
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-xl font-black text-red-900 mb-3", children: "🔥 High-Priority Lead Detected" }, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
         lineNumber: 588,
         columnNumber: 13
       }, void 0),
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-red-700 mb-4", children: "Based on your profile, you qualify for our priority onboarding program. We'll have a custom strategy ready within 24 hours." }, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
         lineNumber: 591,
         columnNumber: 13
       }, void 0),
@@ -583,56 +583,56 @@ const EnhancedPricingCards = () => {
         void 0,
         false,
         {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
           lineNumber: 595,
           columnNumber: 13
         },
         void 0
       )
     ] }, void 0, true, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
       lineNumber: 587,
       columnNumber: 11
     }, void 0) }, void 0, false, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
       lineNumber: 586,
       columnNumber: 9
     }, void 0),
     (leadScore?.tier === "Warm" || leadScore?.tier === "Cold") && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center mt-12", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gray-50 rounded-xl p-6 max-w-2xl mx-auto", children: [
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-gray-700 font-medium mb-2", children: '"We saw a 340% increase in qualified leads within 90 days"' }, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
         lineNumber: 609,
         columnNumber: 13
       }, void 0),
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-gray-600", children: "- Sarah Chen, CEO of TechScale (Similar company size and industry)" }, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
         lineNumber: 612,
         columnNumber: 13
       }, void 0),
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex justify-center mt-4", children: [1, 2, 3, 4, 5].map((star) => /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-5 h-5 text-yellow-400", fill: "currentColor", viewBox: "0 0 20 20", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { d: "M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" }, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
         lineNumber: 618,
         columnNumber: 19
       }, void 0) }, star, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
         lineNumber: 617,
         columnNumber: 17
       }, void 0)) }, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
         lineNumber: 615,
         columnNumber: 13
       }, void 0)
     ] }, void 0, true, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
       lineNumber: 608,
       columnNumber: 11
     }, void 0) }, void 0, false, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
       lineNumber: 607,
       columnNumber: 9
     }, void 0)
   ] }, void 0, true, {
-    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedPricingCards.tsx",
+    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedPricingCards.tsx",
     lineNumber: 480,
     columnNumber: 5
   }, void 0);
@@ -817,7 +817,7 @@ const EnhancedLeadForm = () => {
       },
       children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white rounded-3xl shadow-2xl max-w-2xl w-full flex flex-col relative", style: { maxHeight: "92vh" }, children: [
         leadScorePrediction >= 80 && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gradient-to-r from-red-500 to-orange-500 text-white px-4 py-1 rounded-full text-xs font-bold motion-safe:animate-pulse motion-reduce:animate-none", children: "🔥 HIGH-PRIORITY LEAD" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
           lineNumber: 248,
           columnNumber: 11
         }, void 0),
@@ -847,11 +847,11 @@ const EnhancedLeadForm = () => {
             },
             className: "w-10 h-10 rounded-full bg-white/90 hover:bg-white focus-visible:bg-white shadow-lg flex items-center justify-center motion-safe:transition-all motion-reduce:transition-none",
             children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-6 h-6 text-gray-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6 18L18 6M6 6l12 12" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
               lineNumber: 272,
               columnNumber: 15
             }, void 0) }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
               lineNumber: 271,
               columnNumber: 13
             }, void 0)
@@ -859,39 +859,39 @@ const EnhancedLeadForm = () => {
           void 0,
           false,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
             lineNumber: 255,
             columnNumber: 11
           },
           void 0
         ) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
           lineNumber: 254,
           columnNumber: 9
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "p-4 md:p-6 overflow-y-auto", style: { scrollbarWidth: "thin", scrollbarColor: "#CBD5E0 transparent" }, children: [
           formStep === 1 && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", "aria-current": "step", "aria-label": "Step 1 of form", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-2xl font-black replace-text-slate-900 mb-4", children: personalizedContent.title }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
               lineNumber: 282,
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-gray-600 mb-4", children: personalizedContent.subtitle }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
               lineNumber: 285,
               columnNumber: 15
             }, void 0),
             shouldShowUrgency() && personalizedContent.urgency && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-orange-50 border border-orange-200 rounded-lg p-3 mb-6", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-orange-800 text-sm font-medium", children: personalizedContent.urgency }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
               lineNumber: 290,
               columnNumber: 19
             }, void 0) }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
               lineNumber: 289,
               columnNumber: 17
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-gray-600 mb-8", children: "87% of growth-stage companies struggle with these marketing challenges:" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
               lineNumber: 296,
               columnNumber: 15
             }, void 0),
@@ -919,7 +919,7 @@ const EnhancedLeadForm = () => {
                 void 0,
                 false,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 308,
                   columnNumber: 21
                 },
@@ -927,23 +927,23 @@ const EnhancedLeadForm = () => {
               ),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-gray-700", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("strong", { children: option.label }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 322,
                   columnNumber: 23
                 }, void 0),
                 " - ",
                 option.desc
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 321,
                 columnNumber: 21
               }, void 0)
             ] }, option.key, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
               lineNumber: 307,
               columnNumber: 19
             }, void 0)) }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
               lineNumber: 300,
               columnNumber: 15
             }, void 0),
@@ -963,19 +963,19 @@ const EnhancedLeadForm = () => {
               void 0,
               true,
               {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 328,
                 columnNumber: 15
               },
               void 0
             ),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-gray-500 text-sm mt-6", children: "Takes 60 seconds • No sales pressure • Get real solutions" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
               lineNumber: 338,
               columnNumber: 15
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
             lineNumber: 281,
             columnNumber: 13
           }, void 0),
@@ -987,11 +987,11 @@ const EnhancedLeadForm = () => {
                 className: "text-gray-500 hover:text-gray-700 focus-visible:text-gray-700 mb-4 flex items-center transition-colors",
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4 mr-1", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15 19l-7-7 7-7" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 352,
                     columnNumber: 19
                   }, void 0) }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 351,
                     columnNumber: 17
                   }, void 0),
@@ -1001,7 +1001,7 @@ const EnhancedLeadForm = () => {
               void 0,
               true,
               {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 347,
                 columnNumber: 15
               },
@@ -1011,60 +1011,60 @@ const EnhancedLeadForm = () => {
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-2xl font-black replace-text-slate-900 mb-4", children: [
                 "Perfect! Let's ",
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-orange-500", children: "Identify" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 359,
                   columnNumber: 34
                 }, void 0),
                 " Your Growth Stage"
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 358,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-gray-600 mb-6", children: "Different revenue levels need different strategic approaches" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 361,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-center mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold", children: "✓" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 368,
                   columnNumber: 21
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-20 h-1 bg-orange-500" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 371,
                   columnNumber: 21
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold", children: "2" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 372,
                   columnNumber: 21
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-20 h-1 bg-gray-300" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 375,
                   columnNumber: 21
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-gray-500 font-bold", children: "3" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 376,
                   columnNumber: 21
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 367,
                 columnNumber: 19
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 366,
                 columnNumber: 17
               }, void 0),
               leadScorePrediction > 40 && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-green-50 to-blue-50 border border-green-200 rounded-lg p-4 mb-6", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-between", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-sm font-medium text-green-800", children: "Lead Score Prediction" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 386,
                     columnNumber: 23
                   }, void 0),
@@ -1072,12 +1072,12 @@ const EnhancedLeadForm = () => {
                     leadScorePrediction,
                     "/100"
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 387,
                     columnNumber: 23
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 385,
                   columnNumber: 21
                 }, void 0),
@@ -1090,29 +1090,29 @@ const EnhancedLeadForm = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 390,
                     columnNumber: 23
                   },
                   void 0
                 ) }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 389,
                   columnNumber: 21
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 384,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-gray-900 mb-4", children: "Step 2: Your Revenue Stage" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 399,
                   columnNumber: 19
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-gray-600 mb-4", children: "What's your current annual revenue?" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 400,
                   columnNumber: 19
                 }, void 0),
@@ -1143,7 +1143,7 @@ const EnhancedLeadForm = () => {
                     void 0,
                     false,
                     {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 410,
                       columnNumber: 25
                     },
@@ -1151,36 +1151,36 @@ const EnhancedLeadForm = () => {
                   ),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-gray-700", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("strong", { children: option.label }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 427,
                       columnNumber: 27
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("br", {}, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 427,
                       columnNumber: 58
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-sm text-gray-500 ml-7", children: option.desc }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 428,
                       columnNumber: 27
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 426,
                     columnNumber: 25
                   }, void 0)
                 ] }, option.value, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 409,
                   columnNumber: 23
                 }, void 0)) }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 402,
                   columnNumber: 19
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 398,
                 columnNumber: 17
               }, void 0),
@@ -1206,19 +1206,19 @@ const EnhancedLeadForm = () => {
                 void 0,
                 true,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 435,
                   columnNumber: 17
                 },
                 void 0
               )
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
               lineNumber: 357,
               columnNumber: 15
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
             lineNumber: 346,
             columnNumber: 13
           }, void 0),
@@ -1230,11 +1230,11 @@ const EnhancedLeadForm = () => {
                 className: "text-gray-500 hover:text-gray-700 focus-visible:text-gray-700 mb-4 flex items-center transition-colors",
                 children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4 mr-1", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15 19l-7-7 7-7" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 465,
                     columnNumber: 19
                   }, void 0) }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 464,
                     columnNumber: 17
                   }, void 0),
@@ -1244,7 +1244,7 @@ const EnhancedLeadForm = () => {
               void 0,
               true,
               {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 460,
                 columnNumber: 15
               },
@@ -1254,59 +1254,59 @@ const EnhancedLeadForm = () => {
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-2xl font-black replace-text-slate-900 mb-4 text-center", children: [
                 "Perfect! Let's Get Your ",
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-orange-500", children: "Free Analysis" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 472,
                   columnNumber: 43
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 471,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-gray-600 mb-8 text-center", children: getRecommendedNextAction() }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 474,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-center mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold", children: "✓" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 481,
                   columnNumber: 21
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-20 h-1 bg-green-500" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 482,
                   columnNumber: 21
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold", children: "✓" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 483,
                   columnNumber: 21
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-20 h-1 bg-orange-500" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 484,
                   columnNumber: 21
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold", children: "3" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 485,
                   columnNumber: 21
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 480,
                 columnNumber: 19
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 479,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-blue-50 to-purple-50 border border-blue-200 rounded-lg p-4 mb-6", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-between mb-2", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-sm font-medium text-blue-800", children: "Your Lead Quality Score" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 492,
                     columnNumber: 21
                   }, void 0),
@@ -1314,12 +1314,12 @@ const EnhancedLeadForm = () => {
                     leadScorePrediction,
                     "/100"
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 493,
                     columnNumber: 21
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 491,
                   columnNumber: 19
                 }, void 0),
@@ -1332,23 +1332,23 @@ const EnhancedLeadForm = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 496,
                     columnNumber: 21
                   },
                   void 0
                 ) }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 495,
                   columnNumber: 19
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-xs text-blue-accessible mt-2", children: leadScorePrediction >= 80 ? "🔥 High Priority - Immediate Response" : leadScorePrediction >= 60 ? "⚡ Priority Response Within 4 Hours" : leadScorePrediction >= 40 ? "📈 Added to Growth Program" : "📚 Educational Resources Recommended" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 501,
                   columnNumber: 19
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 490,
                 columnNumber: 17
               }, void 0),
@@ -1356,20 +1356,20 @@ const EnhancedLeadForm = () => {
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-blue-900 mb-3 flex items-center", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs mr-2", children: "1" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 514,
                       columnNumber: 23
                     }, void 0),
                     "Contact Information"
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 513,
                     columnNumber: 21
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-3", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Your Name *" }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 519,
                         columnNumber: 25
                       }, void 0),
@@ -1387,20 +1387,20 @@ const EnhancedLeadForm = () => {
                         void 0,
                         false,
                         {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                           lineNumber: 520,
                           columnNumber: 25
                         },
                         void 0
                       )
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 518,
                       columnNumber: 23
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Company Name *" }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 531,
                         columnNumber: 25
                       }, void 0),
@@ -1418,25 +1418,25 @@ const EnhancedLeadForm = () => {
                         void 0,
                         false,
                         {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                           lineNumber: 532,
                           columnNumber: 25
                         },
                         void 0
                       )
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 530,
                       columnNumber: 23
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 517,
                     columnNumber: 21
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Business Email *" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 544,
                       columnNumber: 23
                     }, void 0),
@@ -1454,68 +1454,68 @@ const EnhancedLeadForm = () => {
                       void 0,
                       false,
                       {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 545,
                         columnNumber: 23
                       },
                       void 0
                     ),
                     fieldValidation.email === "valid" && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-xs text-green-600 mt-1", children: "✓ Valid email format" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 558,
                       columnNumber: 25
                     }, void 0),
                     fieldValidation.email === "invalid" && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-xs text-red-600 mt-1", children: "Please enter a valid email address" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 561,
                       columnNumber: 25
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 543,
                     columnNumber: 21
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 512,
                   columnNumber: 19
                 }, void 0),
                 isProgressive && formData.name && formData.email && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(jsxDevRuntimeExports.Fragment, { children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { "aria-live": "assertive", "aria-atomic": "true", className: "sr-only", id: "form-error-announcer", children: submitError && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { children: submitError }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 571,
                     columnNumber: 21
                   }, void 0) }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 570,
                     columnNumber: 3
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { "aria-live": "polite", "aria-atomic": "true", className: "sr-only", id: "form-status-announcer", children: isSubmitting && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { children: "Form is being submitted, please wait..." }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 574,
                     columnNumber: 22
                   }, void 0) }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 573,
                     columnNumber: 3
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-green-900 mb-3 flex items-center", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-2", children: "2" }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 580,
                         columnNumber: 27
                       }, void 0),
                       "Business Details"
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 579,
                       columnNumber: 25
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "space-y-3", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Website URL" }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                           lineNumber: 585,
                           columnNumber: 29
                         }, void 0),
@@ -1533,21 +1533,21 @@ const EnhancedLeadForm = () => {
                           void 0,
                           false,
                           {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                             lineNumber: 586,
                             columnNumber: 29
                           },
                           void 0
                         )
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 584,
                         columnNumber: 27
                       }, void 0),
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid grid-cols-2 gap-3", children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Industry" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                             lineNumber: 601,
                             columnNumber: 31
                           }, void 0),
@@ -1567,42 +1567,42 @@ const EnhancedLeadForm = () => {
                               className: "w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm",
                               children: [
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "", children: "Select industry" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 615,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "software", children: "Software/SaaS" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 616,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "healthcare", children: "Healthcare" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 617,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "ecommerce", children: "E-commerce" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 618,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "financial", children: "Financial Services" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 619,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "professional", children: "Professional Services" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 620,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "manufacturing", children: "Manufacturing" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 621,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "other", children: "Other" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 622,
                                   columnNumber: 33
                                 }, void 0)
@@ -1611,20 +1611,20 @@ const EnhancedLeadForm = () => {
                             void 0,
                             true,
                             {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                               lineNumber: 602,
                               columnNumber: 31
                             },
                             void 0
                           )
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                           lineNumber: 600,
                           columnNumber: 29
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Team Size" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                             lineNumber: 626,
                             columnNumber: 31
                           }, void 0),
@@ -1644,27 +1644,27 @@ const EnhancedLeadForm = () => {
                               className: "w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm",
                               children: [
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "", children: "Select size" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 640,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "1-10", children: "1-10 employees" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 641,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "11-50", children: "11-50 employees" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 642,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "51-200", children: "51-200 employees" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 643,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "200+", children: "200+ employees" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 644,
                                   columnNumber: 33
                                 }, void 0)
@@ -1673,48 +1673,48 @@ const EnhancedLeadForm = () => {
                             void 0,
                             true,
                             {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                               lineNumber: 627,
                               columnNumber: 31
                             },
                             void 0
                           )
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                           lineNumber: 625,
                           columnNumber: 29
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 599,
                         columnNumber: 27
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 583,
                       columnNumber: 25
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 578,
                     columnNumber: 23
                   }, void 0),
                   formData.industry && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-yellow-900 mb-3 flex items-center", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center text-white text-xs mr-2", children: "3" }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 655,
                         columnNumber: 29
                       }, void 0),
                       "Your Marketing Challenge"
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 654,
                       columnNumber: 27
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "space-y-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "What's your biggest marketing pain right now? *" }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 660,
                         columnNumber: 31
                       }, void 0),
@@ -1732,41 +1732,41 @@ const EnhancedLeadForm = () => {
                         void 0,
                         false,
                         {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                           lineNumber: 661,
                           columnNumber: 31
                         },
                         void 0
                       )
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 659,
                       columnNumber: 29
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 658,
                       columnNumber: 27
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 653,
                     columnNumber: 25
                   }, void 0),
                   formData.specificIssue && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-purple-900 mb-3 flex items-center", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2", children: "4" }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 679,
                         columnNumber: 29
                       }, void 0),
                       "Timeline"
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 678,
                       columnNumber: 27
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-xs text-gray-600 mb-3", children: "When do you need to see marketing results?" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 682,
                       columnNumber: 27
                     }, void 0),
@@ -1792,23 +1792,23 @@ const EnhancedLeadForm = () => {
                       option.value,
                       false,
                       {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 690,
                         columnNumber: 31
                       },
                       void 0
                     )) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 683,
                       columnNumber: 27
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 677,
                     columnNumber: 25
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 568,
                   columnNumber: 21
                 }, void 0),
@@ -1816,20 +1816,20 @@ const EnhancedLeadForm = () => {
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-green-900 mb-3 flex items-center", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-2", children: "2" }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 721,
                         columnNumber: 27
                       }, void 0),
                       "Business Details"
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 720,
                       columnNumber: 25
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "space-y-3", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Website URL" }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                           lineNumber: 727,
                           columnNumber: 29
                         }, void 0),
@@ -1847,21 +1847,21 @@ const EnhancedLeadForm = () => {
                           void 0,
                           false,
                           {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                             lineNumber: 728,
                             columnNumber: 29
                           },
                           void 0
                         )
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 726,
                         columnNumber: 27
                       }, void 0),
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid grid-cols-2 gap-3", children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Industry" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                             lineNumber: 743,
                             columnNumber: 31
                           }, void 0),
@@ -1874,42 +1874,42 @@ const EnhancedLeadForm = () => {
                               className: "w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm",
                               children: [
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "", children: "Select industry" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 750,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "software", children: "Software/SaaS" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 751,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "healthcare", children: "Healthcare" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 752,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "ecommerce", children: "E-commerce" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 753,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "financial", children: "Financial Services" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 754,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "professional", children: "Professional Services" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 755,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "manufacturing", children: "Manufacturing" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 756,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "other", children: "Other" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 757,
                                   columnNumber: 33
                                 }, void 0)
@@ -1918,20 +1918,20 @@ const EnhancedLeadForm = () => {
                             void 0,
                             true,
                             {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                               lineNumber: 744,
                               columnNumber: 31
                             },
                             void 0
                           )
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                           lineNumber: 742,
                           columnNumber: 29
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Team Size" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                             lineNumber: 761,
                             columnNumber: 31
                           }, void 0),
@@ -1944,27 +1944,27 @@ const EnhancedLeadForm = () => {
                               className: "w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm",
                               children: [
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "", children: "Select size" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 768,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "1-10", children: "1-10 employees" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 769,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "11-50", children: "11-50 employees" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 770,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "51-200", children: "51-200 employees" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 771,
                                   columnNumber: 33
                                 }, void 0),
                                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "200+", children: "200+ employees" }, void 0, false, {
-                                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                                   lineNumber: 772,
                                   columnNumber: 33
                                 }, void 0)
@@ -1973,49 +1973,49 @@ const EnhancedLeadForm = () => {
                             void 0,
                             true,
                             {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                               lineNumber: 762,
                               columnNumber: 31
                             },
                             void 0
                           )
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                           lineNumber: 760,
                           columnNumber: 29
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 741,
                         columnNumber: 27
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 725,
                       columnNumber: 25
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 719,
                     columnNumber: 23
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-yellow-900 mb-3 flex items-center", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center text-white text-xs mr-2", children: "3" }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 782,
                         columnNumber: 27
                       }, void 0),
                       "Your Marketing Challenge"
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 781,
                       columnNumber: 25
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "space-y-3", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "What's your biggest marketing pain right now? *" }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                           lineNumber: 787,
                           columnNumber: 29
                         }, void 0),
@@ -2033,20 +2033,20 @@ const EnhancedLeadForm = () => {
                           void 0,
                           false,
                           {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                             lineNumber: 788,
                             columnNumber: 29
                           },
                           void 0
                         )
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 786,
                         columnNumber: 27
                       }, void 0),
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "What marketing are you currently doing?" }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                           lineNumber: 799,
                           columnNumber: 29
                         }, void 0),
@@ -2064,42 +2064,42 @@ const EnhancedLeadForm = () => {
                           void 0,
                           false,
                           {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                             lineNumber: 800,
                             columnNumber: 29
                           },
                           void 0
                         )
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 798,
                         columnNumber: 27
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 785,
                       columnNumber: 25
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 780,
                     columnNumber: 23
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card transparency-normalized rounded-xl p-4 border border-white/30 dark:border-slate-600/30", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-purple-900 mb-3 flex items-center", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2", children: "4" }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 816,
                         columnNumber: 27
                       }, void 0),
                       "Timeline"
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 815,
                       columnNumber: 25
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-xs text-gray-600 mb-3", children: "When do you need to see marketing results?" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 819,
                       columnNumber: 25
                     }, void 0),
@@ -2118,37 +2118,37 @@ const EnhancedLeadForm = () => {
                       option.value,
                       false,
                       {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                         lineNumber: 827,
                         columnNumber: 29
                       },
                       void 0
                     )) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                       lineNumber: 820,
                       columnNumber: 25
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 814,
                     columnNumber: 23
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 717,
                   columnNumber: 21
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 510,
                 columnNumber: 17
               }, void 0),
               submitError && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm", children: submitError }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 848,
                 columnNumber: 21
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 847,
                 columnNumber: 19
               }, void 0),
@@ -2205,7 +2205,7 @@ const EnhancedLeadForm = () => {
                 void 0,
                 false,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 854,
                   columnNumber: 19
                 },
@@ -2215,42 +2215,42 @@ const EnhancedLeadForm = () => {
                 "🔒 Your information is 100% secure. No spam, ever.",
                 leadScorePrediction >= 80 && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(jsxDevRuntimeExports.Fragment, { children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("br", {}, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 930,
                     columnNumber: 23
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-orange-accessible font-medium", children: "⚡ Priority leads get response within 1 hour" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                     lineNumber: 931,
                     columnNumber: 23
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                   lineNumber: 929,
                   columnNumber: 21
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
                 lineNumber: 926,
                 columnNumber: 17
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
               lineNumber: 470,
               columnNumber: 15
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
             lineNumber: 459,
             columnNumber: 13
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
           lineNumber: 277,
           columnNumber: 9
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
         lineNumber: 244,
         columnNumber: 7
       }, void 0)
@@ -2258,7 +2258,7 @@ const EnhancedLeadForm = () => {
     void 0,
     false,
     {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/EnhancedLeadForm.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/EnhancedLeadForm.tsx",
       lineNumber: 235,
       columnNumber: 5
     },
@@ -2294,42 +2294,42 @@ const NotificationItem = ({ notification, onDismiss }) => {
     switch (type) {
       case "error":
         return /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-5 h-5 text-red-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.732 15.5c-.77.833.192 2.5 1.732 2.5z" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
           lineNumber: 49,
           columnNumber: 13
         }, void 0) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
           lineNumber: 48,
           columnNumber: 11
         }, void 0);
       case "warning":
         return /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-5 h-5 text-orange-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M12 9v2m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
           lineNumber: 55,
           columnNumber: 13
         }, void 0) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
           lineNumber: 54,
           columnNumber: 11
         }, void 0);
       case "success":
         return /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-5 h-5 text-green-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
           lineNumber: 61,
           columnNumber: 13
         }, void 0) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
           lineNumber: 60,
           columnNumber: 11
         }, void 0);
       case "info":
       default:
         return /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-5 h-5 text-blue-500", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
           lineNumber: 68,
           columnNumber: 13
         }, void 0) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
           lineNumber: 67,
           columnNumber: 11
         }, void 0);
@@ -2348,18 +2348,18 @@ const NotificationItem = ({ notification, onDismiss }) => {
       "aria-atomic": "true",
       children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "p-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-start gap-3", children: [
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex-shrink-0 mt-0.5", children: getIconForType(notification.type) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
           lineNumber: 93,
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex-1 min-w-0", children: [
           notification.title && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-semibold mb-1", children: notification.title }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
             lineNumber: 100,
             columnNumber: 15
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm opacity-90", children: notification.message }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
             lineNumber: 102,
             columnNumber: 13
           }, void 0),
@@ -2376,18 +2376,18 @@ const NotificationItem = ({ notification, onDismiss }) => {
             index,
             false,
             {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
               lineNumber: 108,
               columnNumber: 19
             },
             void 0
           )) }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
             lineNumber: 106,
             columnNumber: 15
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
           lineNumber: 98,
           columnNumber: 11
         }, void 0),
@@ -2398,11 +2398,11 @@ const NotificationItem = ({ notification, onDismiss }) => {
             className: "flex-shrink-0 ml-2 p-1 rounded-full hover:bg-black focus-visible:bg-black/5 transition-colors duration-200",
             "aria-label": "Dismiss notification",
             children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4 opacity-60 hover:opacity-100 focus-visible:opacity-100", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6 18L18 6M6 6l12 12" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
               lineNumber: 145,
               columnNumber: 15
             }, void 0) }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
               lineNumber: 144,
               columnNumber: 13
             }, void 0)
@@ -2410,18 +2410,18 @@ const NotificationItem = ({ notification, onDismiss }) => {
           void 0,
           false,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
             lineNumber: 139,
             columnNumber: 11
           },
           void 0
         )
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
         lineNumber: 91,
         columnNumber: 9
       }, void 0) }, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
         lineNumber: 90,
         columnNumber: 7
       }, void 0)
@@ -2429,7 +2429,7 @@ const NotificationItem = ({ notification, onDismiss }) => {
     void 0,
     false,
     {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
       lineNumber: 75,
       columnNumber: 5
     },
@@ -2468,7 +2468,7 @@ const NotificationSystem = () => {
           notification.id,
           false,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
             lineNumber: 200,
             columnNumber: 11
           },
@@ -2478,7 +2478,7 @@ const NotificationSystem = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
         lineNumber: 193,
         columnNumber: 7
       },
@@ -2493,26 +2493,26 @@ const NotificationSystem = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
         lineNumber: 214,
         columnNumber: 17
       },
       void 0
     ) }, `mobile-${notification.id}`, false, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
       lineNumber: 213,
       columnNumber: 15
     }, void 0)) }, void 0, false, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
       lineNumber: 211,
       columnNumber: 11
     }, void 0) }, void 0, false, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
       lineNumber: 210,
       columnNumber: 9
     }, void 0)
   ] }, void 0, true, {
-    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/NotificationSystem.tsx",
+    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/NotificationSystem.tsx",
     lineNumber: 191,
     columnNumber: 5
   }, void 0);
@@ -2595,11 +2595,11 @@ const LeadForm = () => {
         },
         className: "w-10 h-10 rounded-full bg-white/90 hover:bg-white focus-visible:bg-white shadow-lg flex items-center justify-center motion-safe:transition-all motion-reduce:transition-none",
         children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-6 h-6 text-gray-600", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M6 18L18 6M6 6l12 12" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
           lineNumber: 107,
           columnNumber: 15
         }, void 0) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
           lineNumber: 106,
           columnNumber: 13
         }, void 0)
@@ -2607,13 +2607,13 @@ const LeadForm = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
         lineNumber: 86,
         columnNumber: 11
       },
       void 0
     ) }, void 0, false, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
       lineNumber: 85,
       columnNumber: 9
     }, void 0),
@@ -2622,18 +2622,18 @@ const LeadForm = () => {
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-2xl font-black replace-text-slate-900 mb-4", children: [
           "Is Your Marketing ",
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-orange-500", children: "Keeping You" }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 116,
             columnNumber: 35
           }, void 0),
           " Up at Night?"
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
           lineNumber: 115,
           columnNumber: 15
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-gray-600 mb-8", children: "You're not alone. 87% of growth-stage companies struggle with the same marketing challenges." }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
           lineNumber: 118,
           columnNumber: 15
         }, void 0),
@@ -2650,7 +2650,7 @@ const LeadForm = () => {
               void 0,
               false,
               {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 124,
                 columnNumber: 19
               },
@@ -2658,18 +2658,18 @@ const LeadForm = () => {
             ),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-gray-700", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("strong", { children: "Marketing isn't working" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 131,
                 columnNumber: 21
               }, void 0),
               " - You're spending money but not seeing results"
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 130,
               columnNumber: 19
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 123,
             columnNumber: 17
           }, void 0),
@@ -2685,7 +2685,7 @@ const LeadForm = () => {
               void 0,
               false,
               {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 136,
                 columnNumber: 19
               },
@@ -2693,18 +2693,18 @@ const LeadForm = () => {
             ),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-gray-700", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("strong", { children: "Hit a growth plateau" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 143,
                 columnNumber: 21
               }, void 0),
               " - What worked before isn't working anymore"
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 142,
               columnNumber: 19
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 135,
             columnNumber: 17
           }, void 0),
@@ -2720,7 +2720,7 @@ const LeadForm = () => {
               void 0,
               false,
               {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 148,
                 columnNumber: 19
               },
@@ -2728,18 +2728,18 @@ const LeadForm = () => {
             ),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-gray-700", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("strong", { children: "Losing to competition" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 155,
                 columnNumber: 21
               }, void 0),
               " - Competitors are growing while you're stuck"
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 154,
               columnNumber: 19
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 147,
             columnNumber: 17
           }, void 0),
@@ -2755,7 +2755,7 @@ const LeadForm = () => {
               void 0,
               false,
               {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 160,
                 columnNumber: 19
               },
@@ -2763,23 +2763,23 @@ const LeadForm = () => {
             ),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-gray-700", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("strong", { children: "No clear strategy" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 167,
                 columnNumber: 21
               }, void 0),
               " - You're trying everything but nothing sticks"
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 166,
               columnNumber: 19
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 159,
             columnNumber: 17
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
           lineNumber: 122,
           columnNumber: 15
         }, void 0),
@@ -2793,19 +2793,19 @@ const LeadForm = () => {
           void 0,
           false,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 172,
             columnNumber: 15
           },
           void 0
         ),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-gray-500 text-sm mt-6", children: "Takes 60 seconds • No sales pressure • Get real solutions" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
           lineNumber: 179,
           columnNumber: 15
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
         lineNumber: 114,
         columnNumber: 13
       }, void 0),
@@ -2817,11 +2817,11 @@ const LeadForm = () => {
             className: "text-gray-500 hover:text-gray-700 focus-visible:text-gray-700 mb-4 flex items-center transition-colors",
             children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4 mr-1", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15 19l-7-7 7-7" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 193,
                 columnNumber: 19
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 192,
                 columnNumber: 17
               }, void 0),
@@ -2831,7 +2831,7 @@ const LeadForm = () => {
           void 0,
           true,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 188,
             columnNumber: 15
           },
@@ -2841,64 +2841,64 @@ const LeadForm = () => {
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-2xl font-black replace-text-slate-900 mb-4", children: [
             "I Feel You. Let's ",
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-orange-500", children: "Identify" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 200,
               columnNumber: 37
             }, void 0),
             " Your Growth Stage"
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 199,
             columnNumber: 17
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-gray-600 mb-6", children: "Different revenue levels need different psychology approaches" }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 202,
             columnNumber: 17
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-center mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold", children: "✓" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 209,
               columnNumber: 21
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-20 h-1 bg-orange-500" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 212,
               columnNumber: 21
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold", children: "2" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 213,
               columnNumber: 21
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-20 h-1 bg-gray-300" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 216,
               columnNumber: 21
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-10 h-10 bg-gray-300 rounded-full flex items-center justify-center text-gray-500 font-bold", children: "3" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 217,
               columnNumber: 21
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 208,
             columnNumber: 19
           }, void 0) }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 207,
             columnNumber: 17
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-gray-900 mb-4", children: "Step 2: Your Revenue Stage" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 224,
               columnNumber: 19
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-gray-600 mb-4", children: "What's your current annual revenue?" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 225,
               columnNumber: 19
             }, void 0),
@@ -2916,7 +2916,7 @@ const LeadForm = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 229,
                     columnNumber: 23
                   },
@@ -2924,27 +2924,27 @@ const LeadForm = () => {
                 ),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-gray-700", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("strong", { children: "$500K - $1M" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 237,
                     columnNumber: 25
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("br", {}, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 237,
                     columnNumber: 53
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-sm text-gray-500 ml-7", children: "Growing but hitting walls" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 238,
                     columnNumber: 25
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 236,
                   columnNumber: 23
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 228,
                 columnNumber: 21
               }, void 0),
@@ -2961,7 +2961,7 @@ const LeadForm = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 243,
                     columnNumber: 23
                   },
@@ -2969,27 +2969,27 @@ const LeadForm = () => {
                 ),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-gray-700", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("strong", { children: "$1M - $3M" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 251,
                     columnNumber: 25
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("br", {}, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 251,
                     columnNumber: 51
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-sm text-gray-500 ml-7", children: "Scaling but inconsistent" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 252,
                     columnNumber: 25
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 250,
                   columnNumber: 23
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 242,
                 columnNumber: 21
               }, void 0),
@@ -3006,7 +3006,7 @@ const LeadForm = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 257,
                     columnNumber: 23
                   },
@@ -3014,27 +3014,27 @@ const LeadForm = () => {
                 ),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-gray-700", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("strong", { children: "$3M - $10M" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 265,
                     columnNumber: 25
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("br", {}, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 265,
                     columnNumber: 52
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-sm text-gray-500 ml-7", children: "Need systematic growth" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 266,
                     columnNumber: 25
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 264,
                   columnNumber: 23
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 256,
                 columnNumber: 21
               }, void 0),
@@ -3051,7 +3051,7 @@ const LeadForm = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 271,
                     columnNumber: 23
                   },
@@ -3059,37 +3059,37 @@ const LeadForm = () => {
                 ),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-gray-700", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("strong", { children: "$10M+" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 279,
                     columnNumber: 25
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("br", {}, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 279,
                     columnNumber: 47
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-sm text-gray-500 ml-7", children: "Ready for transformation" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 280,
                     columnNumber: 25
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 278,
                   columnNumber: 23
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 270,
                 columnNumber: 21
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 227,
               columnNumber: 19
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 223,
             columnNumber: 17
           }, void 0),
@@ -3111,19 +3111,19 @@ const LeadForm = () => {
             void 0,
             false,
             {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 286,
               columnNumber: 17
             },
             void 0
           )
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
           lineNumber: 198,
           columnNumber: 15
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
         lineNumber: 187,
         columnNumber: 13
       }, void 0),
@@ -3135,11 +3135,11 @@ const LeadForm = () => {
             className: "text-gray-500 hover:text-gray-700 focus-visible:text-gray-700 mb-4 flex items-center transition-colors",
             children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("svg", { className: "w-4 h-4 mr-1", fill: "none", stroke: "currentColor", viewBox: "0 0 24 24", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("path", { strokeLinecap: "round", strokeLinejoin: "round", strokeWidth: "2", d: "M15 19l-7-7 7-7" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 317,
                 columnNumber: 19
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 316,
                 columnNumber: 17
               }, void 0),
@@ -3149,7 +3149,7 @@ const LeadForm = () => {
           void 0,
           true,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 312,
             columnNumber: 15
           },
@@ -3159,52 +3159,52 @@ const LeadForm = () => {
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-2xl font-black replace-text-slate-900 mb-4 text-center", children: [
             "Perfect! Let's Get Your ",
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-orange-500", children: "Free Analysis" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 324,
               columnNumber: 43
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 323,
             columnNumber: 17
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-gray-600 mb-8 text-center", children: "I'll personally review your situation and send you a custom growth strategy within 24 hours" }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 326,
             columnNumber: 17
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-center mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold", children: "✓" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 333,
               columnNumber: 21
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-20 h-1 bg-green-500" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 336,
               columnNumber: 21
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold", children: "✓" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 337,
               columnNumber: 21
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-20 h-1 bg-orange-500" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 340,
               columnNumber: 21
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "w-10 h-10 bg-orange-500 rounded-full flex items-center justify-center text-white font-bold", children: "3" }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 341,
               columnNumber: 21
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 332,
             columnNumber: 19
           }, void 0) }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 331,
             columnNumber: 17
           }, void 0),
@@ -3212,20 +3212,20 @@ const LeadForm = () => {
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/95 dark:bg-slate-700/95 rounded-xl p-4 border border-gray-200/30 dark:border-slate-600/30", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-blue-900 mb-3 flex items-center", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs mr-2", children: "1" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 351,
                   columnNumber: 23
                 }, void 0),
                 "Contact Information"
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 350,
                 columnNumber: 21
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-3", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Your Name *" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 356,
                     columnNumber: 25
                   }, void 0),
@@ -3241,20 +3241,20 @@ const LeadForm = () => {
                     void 0,
                     false,
                     {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                       lineNumber: 357,
                       columnNumber: 25
                     },
                     void 0
                   )
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 355,
                   columnNumber: 23
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Company Name *" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 366,
                     columnNumber: 25
                   }, void 0),
@@ -3270,25 +3270,25 @@ const LeadForm = () => {
                     void 0,
                     false,
                     {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                       lineNumber: 367,
                       columnNumber: 25
                     },
                     void 0
                   )
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 365,
                   columnNumber: 23
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 354,
                 columnNumber: 21
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Business Email *" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 377,
                   columnNumber: 23
                 }, void 0),
@@ -3304,39 +3304,39 @@ const LeadForm = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 378,
                     columnNumber: 23
                   },
                   void 0
                 )
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 376,
                 columnNumber: 21
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 349,
               columnNumber: 19
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/95 dark:bg-slate-700/95 rounded-xl p-4 border border-gray-200/30 dark:border-slate-600/30", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-green-900 mb-3 flex items-center", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-2", children: "2" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 391,
                   columnNumber: 23
                 }, void 0),
                 "Business Details"
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 390,
                 columnNumber: 21
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "space-y-3", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Website URL" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 396,
                     columnNumber: 25
                   }, void 0),
@@ -3353,21 +3353,21 @@ const LeadForm = () => {
                     void 0,
                     false,
                     {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                       lineNumber: 397,
                       columnNumber: 25
                     },
                     void 0
                   )
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 395,
                   columnNumber: 23
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid grid-cols-2 gap-3", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Industry" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                       lineNumber: 411,
                       columnNumber: 27
                     }, void 0),
@@ -3379,42 +3379,42 @@ const LeadForm = () => {
                         className: "w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm",
                         children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "", children: "Select industry" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 417,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "software", children: "Software/SaaS" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 418,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "healthcare", children: "Healthcare" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 419,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "ecommerce", children: "E-commerce" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 420,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "financial", children: "Financial Services" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 421,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "professional", children: "Professional Services" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 422,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "manufacturing", children: "Manufacturing" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 423,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "other", children: "Other" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 424,
                             columnNumber: 29
                           }, void 0)
@@ -3423,20 +3423,20 @@ const LeadForm = () => {
                       void 0,
                       true,
                       {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                         lineNumber: 412,
                         columnNumber: 27
                       },
                       void 0
                     )
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 410,
                     columnNumber: 25
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "Team Size" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                       lineNumber: 428,
                       columnNumber: 27
                     }, void 0),
@@ -3448,27 +3448,27 @@ const LeadForm = () => {
                         className: "w-full px-3 py-2.5 border-2 border-gray-200 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 text-sm",
                         children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "", children: "Select size" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 434,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "1-10", children: "1-10 employees" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 435,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "11-50", children: "11-50 employees" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 436,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "51-200", children: "51-200 employees" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 437,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("option", { value: "200+", children: "200+ employees" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                             lineNumber: 438,
                             columnNumber: 29
                           }, void 0)
@@ -3477,49 +3477,49 @@ const LeadForm = () => {
                       void 0,
                       true,
                       {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                         lineNumber: 429,
                         columnNumber: 27
                       },
                       void 0
                     )
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 427,
                     columnNumber: 25
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 409,
                   columnNumber: 23
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 394,
                 columnNumber: 21
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 389,
               columnNumber: 19
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/95 dark:bg-slate-700/95 rounded-xl p-4 border border-gray-200/30 dark:border-slate-600/30", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-yellow-900 mb-3 flex items-center", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center text-white text-xs mr-2", children: "3" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 448,
                   columnNumber: 23
                 }, void 0),
                 "Your Marketing Challenge"
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 447,
                 columnNumber: 21
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "space-y-3", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "What's your biggest marketing pain right now? *" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 453,
                     columnNumber: 25
                   }, void 0),
@@ -3535,20 +3535,20 @@ const LeadForm = () => {
                     void 0,
                     false,
                     {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                       lineNumber: 454,
                       columnNumber: 25
                     },
                     void 0
                   )
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 452,
                   columnNumber: 23
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("label", { className: "block text-xs font-bold replace-text-slate-700 mb-2", children: "What marketing are you currently doing?" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                     lineNumber: 463,
                     columnNumber: 25
                   }, void 0),
@@ -3564,42 +3564,42 @@ const LeadForm = () => {
                     void 0,
                     false,
                     {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                       lineNumber: 464,
                       columnNumber: 25
                     },
                     void 0
                   )
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 462,
                   columnNumber: 23
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 451,
                 columnNumber: 21
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 446,
               columnNumber: 19
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-white/95 dark:bg-slate-700/95 rounded-xl p-4 border border-gray-200/30 dark:border-slate-600/30", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "font-bold text-purple-900 mb-3 flex items-center", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2", children: "4" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 478,
                   columnNumber: 23
                 }, void 0),
                 "Timeline"
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 477,
                 columnNumber: 21
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-xs text-gray-600 mb-3", children: "When do you need to see marketing results?" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 481,
                 columnNumber: 21
               }, void 0),
@@ -3618,32 +3618,32 @@ const LeadForm = () => {
                 option.value,
                 false,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                   lineNumber: 489,
                   columnNumber: 25
                 },
                 void 0
               )) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
                 lineNumber: 482,
                 columnNumber: 21
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 476,
               columnNumber: 19
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 347,
             columnNumber: 17
           }, void 0),
           submitError && /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg mb-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm", children: submitError }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 508,
             columnNumber: 21
           }, void 0) }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 507,
             columnNumber: 19
           }, void 0),
@@ -3693,38 +3693,38 @@ const LeadForm = () => {
             void 0,
             false,
             {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
               lineNumber: 513,
               columnNumber: 17
             },
             void 0
           ),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-gray-500 text-xs text-center mt-4", children: "🔒 Your information is 100% secure. No spam, ever." }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
             lineNumber: 574,
             columnNumber: 17
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
           lineNumber: 322,
           columnNumber: 15
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
         lineNumber: 311,
         columnNumber: 13
       }, void 0)
     ] }, void 0, true, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
       lineNumber: 111,
       columnNumber: 9
     }, void 0)
   ] }, void 0, true, {
-    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
     lineNumber: 84,
     columnNumber: 7
   }, void 0) }, void 0, false, {
-    fileName: "/tmp/reboot-dev-build-20250821-142917/src/components/LeadForm.tsx",
+    fileName: "/tmp/reboot-dev-build-20250821-152047/src/components/LeadForm.tsx",
     lineNumber: 83,
     columnNumber: 5
   }, void 0);
@@ -3735,4 +3735,4 @@ export {
   NotificationSystem as N,
   EnhancedLeadForm as a
 };
-//# sourceMappingURL=components-interactive-CFjROO8I.js.map
+//# sourceMappingURL=components-interactive-2lFdTkbP.js.map

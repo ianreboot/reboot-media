@@ -1,8 +1,8 @@
 import { r as reactExports, j as jsxDevRuntimeExports } from "./react-core-BlMi_X7P.js";
 import { b as getCanonicalUrl } from "./app-utils-B6wQ-etB.js";
-import { B as BackgroundGradient, G as GlobalHeader, a as GlobalFooter } from "./components-core-BsN5xQFP.js";
+import { B as BackgroundGradient, G as GlobalHeader, a as GlobalFooter } from "./components-core-CHKRUzvV.js";
 import { S as SEOHead } from "./components-utils-BkTW-CfU.js";
-import { c as useLeadForm } from "./app-state-6wTCWDxP.js";
+import { c as useLeadForm } from "./app-state-r1lWMrhg.js";
 const GrowthPlateauSolutions = () => {
   const { setShowDropdownForm } = useLeadForm();
   reactExports.useEffect(() => {
@@ -114,7 +114,7 @@ const GrowthPlateauSolutions = () => {
         className: "sr-only",
         id: "status-announcer",
         children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "sr-only", children: "Content loaded successfully" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
           lineNumber: 131,
           columnNumber: 9
         }, void 0)
@@ -122,7 +122,7 @@ const GrowthPlateauSolutions = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
         lineNumber: 125,
         columnNumber: 7
       },
@@ -138,7 +138,7 @@ const GrowthPlateauSolutions = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
         lineNumber: 134,
         columnNumber: 7
       },
@@ -146,62 +146,62 @@ const GrowthPlateauSolutions = () => {
     ),
     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "growth-plateau-page min-h-screen relative overflow-hidden dark:bg-gray-900", children: [
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(BackgroundGradient, {}, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
         lineNumber: 142,
         columnNumber: 9
       }, void 0),
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative z-10", children: [
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalHeader, { onShowForm: () => setShowDropdownForm(true), showProgressBar: true }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
           lineNumber: 145,
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "pt-20 md:pt-24 pb-16 bg-gradient-to-br from-red-900 via-red-950 to-black relative overflow-hidden", children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(220,38,38,0.1)_0%,transparent_50%)]" }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
             lineNumber: 149,
             columnNumber: 11
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-6xl mx-auto px-6 lg:px-8 text-center", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "inline-flex items-center gap-2 bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 px-4 py-2 rounded-full text-sm font-semibold mb-6", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-2 h-2 bg-red-500 rounded-full animate-pulse" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                 lineNumber: 152,
                 columnNumber: 15
               }, void 0),
               "Revenue Stalled? You're Not Alone"
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
               lineNumber: 151,
               columnNumber: 13
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h1", { className: "heading-hero text-gradient-critical mb-6 leading-tight", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-red-400", children: "67% of Companies" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                 lineNumber: 156,
                 columnNumber: 15
               }, void 0),
               " Hit the",
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block text-white mt-2", children: "$1M Revenue Wall" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                 lineNumber: 157,
                 columnNumber: 15
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
               lineNumber: 155,
               columnNumber: 13
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-xl md:text-2xl text-important-accessible dark:text-gradient-safe mb-12 max-w-4xl mx-auto leading-relaxed", children: [
               "Your product works. Your team works hard. But revenue is stuck between $500K-$1.5M. The problem isn't your business model—it's your ",
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-red-400 font-semibold", children: "marketing psychology" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                 lineNumber: 161,
                 columnNumber: 63
               }, void 0),
               ". Here's how the 33% break through."
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
               lineNumber: 159,
               columnNumber: 13
             }, void 0),
@@ -217,7 +217,7 @@ const GrowthPlateauSolutions = () => {
                 void 0,
                 false,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 165,
                   columnNumber: 15
                 },
@@ -233,24 +233,24 @@ const GrowthPlateauSolutions = () => {
                 void 0,
                 false,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 171,
                   columnNumber: 15
                 },
                 void 0
               )
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
               lineNumber: 164,
               columnNumber: 13
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
             lineNumber: 150,
             columnNumber: 11
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
           lineNumber: 148,
           columnNumber: 9
         }, void 0),
@@ -264,87 +264,87 @@ const GrowthPlateauSolutions = () => {
             children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-20 text-center", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical mb-8", children: "The Revenue Plateau Crisis" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 191,
                   columnNumber: 13
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-3 gap-8 mb-16", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-red-200/50 dark:border-red-800/50 p-8", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-4xl font-black text-red-600 mb-4", children: "67%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 196,
                       columnNumber: 17
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-lg font-semibold text-important-accessible dark:text-white mb-2", children: "Companies Plateau" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 197,
                       columnNumber: 17
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-optional dark:text-gradient-safe", children: "Between $500K-$1.5M revenue" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 198,
                       columnNumber: 17
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 195,
                     columnNumber: 15
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-orange-200/50 dark:border-orange-800/50 p-8", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-4xl font-black text-orange-accessible mb-4", children: "14mo" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 201,
                       columnNumber: 17
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-lg font-semibold text-important-accessible dark:text-white mb-2", children: "Average Stuck Time" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 202,
                       columnNumber: 17
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-optional dark:text-gradient-safe", children: "Before breaking through" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 203,
                       columnNumber: 17
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 200,
                     columnNumber: 15
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-4xl font-black text-green-600 mb-4", children: "$47K" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 206,
                       columnNumber: 17
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-lg font-semibold text-important-accessible dark:text-white mb-2", children: "Monthly Cost" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 207,
                       columnNumber: 17
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-optional dark:text-gradient-safe", children: "Of staying plateaued" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 208,
                       columnNumber: 17
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 205,
                     columnNumber: 15
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 194,
                   columnNumber: 13
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-2xl p-8 border border-red-200/50 dark:border-red-800/50", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white mb-4", children: "🚨 Every Month You Wait Costs You $47,000+" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 213,
                     columnNumber: 15
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto", children: "While you're stuck at $1M, you should be at $1.5M+ with proper marketing psychology. That's $500K+ annual difference. Every month of delay costs you qualified opportunities competitors are capturing." }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 216,
                     columnNumber: 15
                   }, void 0),
@@ -359,30 +359,30 @@ const GrowthPlateauSolutions = () => {
                     void 0,
                     false,
                     {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 220,
                       columnNumber: 15
                     },
                     void 0
                   )
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 212,
                   columnNumber: 13
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                 lineNumber: 190,
                 columnNumber: 11
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { id: "plateau-types", className: "mb-20", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical mb-8 text-center", children: "7 Plateau Types (Which is Yours?)" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 231,
                   columnNumber: 13
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-xl text-important-accessible dark:text-gradient-safe mb-16 text-center max-w-4xl mx-auto", children: "After analyzing 200+ growth-stage companies, we've identified exactly why companies get stuck. Each plateau type has specific psychology fixes that unlock the next revenue level." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 234,
                   columnNumber: 13
                 }, void 0),
@@ -394,27 +394,27 @@ const GrowthPlateauSolutions = () => {
                     children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center mb-6", children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-4xl mb-4", children: plateau.icon }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                           lineNumber: 247,
                           columnNumber: 23
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-md text-important-accessible dark:text-white mb-3 group-hover:text-transparent group-focus-visible:text-transparent focus-visible:text-transparent group-hover:bg-gradient-to-r group-focus-visible:bg-gradient-to-r focus-visible:bg-gradient-to-r group-hover:bg-clip-text group-focus-visible:bg-clip-text focus-visible:bg-clip-text group-hover:from-red-500 group-focus-visible:from-red-500 focus-visible:from-red-500 group-hover:to-orange-500 group-focus-visible:to-orange-500 focus-visible:to-orange-500 transition-all duration-300", children: plateau.title }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                           lineNumber: 248,
                           columnNumber: 23
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                         lineNumber: 246,
                         columnNumber: 21
                       }, void 0),
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard-accessible dark:text-gradient-safe text-base leading-relaxed mb-6 text-center", children: plateau.description }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                         lineNumber: 252,
                         columnNumber: 21
                       }, void 0),
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex items-center justify-center text-red-600 dark:text-red-400 font-semibold group-hover:text-red-700 group-focus-visible:text-red-700 focus-visible:text-red-700 dark:group-hover:text-red-300 group-focus-visible:text-red-300 focus-visible:text-red-300 transition-colors", children: "Discover Your Breakthrough →" }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                         lineNumber: 255,
                         columnNumber: 21
                       }, void 0)
@@ -423,162 +423,162 @@ const GrowthPlateauSolutions = () => {
                   void 0,
                   true,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 242,
                     columnNumber: 19
                   },
                   void 0
                 ) }, plateau.id, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 241,
                   columnNumber: 17
                 }, void 0)) }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 239,
                   columnNumber: 13
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                 lineNumber: 230,
                 columnNumber: 11
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-20", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-12", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical mb-8 text-center", children: "The Psychology-Driven Breakthrough Framework" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 267,
                   columnNumber: 15
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-xl text-standard-accessible dark:text-gradient-safe mb-12 text-center max-w-4xl mx-auto", children: [
                   "The 33% of companies that break through plateaus use this systematic approach. It's not about working harder—it's about ",
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "font-semibold text-red-600 dark:text-red-400", children: "marketing psychology that actually converts" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 272,
                     columnNumber: 58
                   }, void 0),
                   "."
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 270,
                   columnNumber: 15
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 lg:grid-cols-4 gap-8", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-red-500 to-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4", children: "1" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 277,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "font-bold text-lg text-important-accessible dark:text-white mb-3", children: "Customer Says" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 278,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-optional dark:luminescence-layer-3 text-sm", children: "Exact language your stuck customers use" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 279,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 276,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4", children: "2" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 282,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "font-bold text-lg text-important-accessible dark:text-white mb-3", children: "Real Problem" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 283,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-optional dark:luminescence-layer-3 text-sm", children: "Hidden psychological root cause" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 284,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 281,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4", children: "3" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 287,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "font-bold text-lg text-important-accessible dark:text-white mb-3", children: "Solution" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 288,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-optional dark:luminescence-layer-3 text-sm", children: "Systems + psychology fix" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 289,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 286,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4", children: "4" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 292,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "font-bold text-lg text-important-accessible dark:text-white mb-3", children: "Why It Works" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 293,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-optional dark:luminescence-layer-3 text-sm", children: "Psychology principle explained" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 294,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 291,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 275,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                 lineNumber: 266,
                 columnNumber: 13
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                 lineNumber: 265,
                 columnNumber: 11
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical mb-12 text-center", children: "Master the Psychology Behind Breakthrough Growth" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 302,
                   columnNumber: 13
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-8", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important-accessible dark:text-white mb-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-red-600 focus-visible:text-red-600 transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 308,
                       columnNumber: 19
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 307,
                       columnNumber: 17
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-lg text-important-accessible dark:text-gradient-safe mb-6", children: "Master the 5 customer awareness stages and conversion psychology principles that transform scattered marketing into predictable revenue growth." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 312,
                       columnNumber: 17
                     }, void 0),
@@ -589,7 +589,7 @@ const GrowthPlateauSolutions = () => {
                         className: "flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 focus-visible:text-red-700 dark:hover:text-red-300 focus-visible:text-red-300 transition-colors",
                         children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "📚" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                             lineNumber: 319,
                             columnNumber: 19
                           }, void 0),
@@ -599,29 +599,29 @@ const GrowthPlateauSolutions = () => {
                       void 0,
                       true,
                       {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                         lineNumber: 315,
                         columnNumber: 17
                       },
                       void 0
                     )
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 306,
                     columnNumber: 15
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important-accessible dark:text-white mb-4", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-red-600 focus-visible:text-red-600 transition-colors", children: "Need Strategic Marketing Leadership? →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 326,
                       columnNumber: 19
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 325,
                       columnNumber: 17
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-lg text-important-accessible dark:text-gradient-safe mb-6", children: "Compare fractional CMO vs agency approaches and discover which delivers faster plateau breakthrough results for your specific situation." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                       lineNumber: 330,
                       columnNumber: 17
                     }, void 0),
@@ -632,13 +632,13 @@ const GrowthPlateauSolutions = () => {
                         className: "flex items-center text-red-600 dark:text-red-400 font-semibold hover:text-red-700 focus-visible:text-red-700 dark:hover:text-red-300 focus-visible:text-red-300 transition-colors group",
                         children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🎯" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                             lineNumber: 337,
                             columnNumber: 19
                           }, void 0),
                           "Get Your CMO vs Agency Answer",
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "ml-1 transform transition-transform group-hover:translate-x-1 group-focus-visible:translate-x-1 focus-visible:translate-x-1", children: "→" }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                             lineNumber: 339,
                             columnNumber: 19
                           }, void 0)
@@ -647,35 +647,35 @@ const GrowthPlateauSolutions = () => {
                       void 0,
                       true,
                       {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                         lineNumber: 333,
                         columnNumber: 17
                       },
                       void 0
                     )
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 324,
                     columnNumber: 15
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 305,
                   columnNumber: 13
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                 lineNumber: 301,
                 columnNumber: 11
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "text-center bg-gradient-to-br from-red-900 via-red-950 to-black text-white rounded-2xl p-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "text-3xl md:text-5xl font-bold mb-8", children: 'Stop Accepting Plateau Revenue as "Normal"' }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 347,
                   columnNumber: 13
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-xl text-gradient-safe mb-12 max-w-4xl mx-auto leading-relaxed", children: "The 33% who break through aren't smarter—they just understand marketing psychology. Every month you wait is another $47K+ of growth your competitors capture instead." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 350,
                   columnNumber: 13
                 }, void 0),
@@ -690,23 +690,23 @@ const GrowthPlateauSolutions = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                     lineNumber: 355,
                     columnNumber: 15
                   },
                   void 0
                 ) }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 354,
                   columnNumber: 13
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "luminescence-layer-3 text-lg", children: "✅ Free plateau analysis • ✅ Psychology-driven roadmap • ✅ No obligation • ✅ 67% breakthrough rate" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                   lineNumber: 362,
                   columnNumber: 13
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
                 lineNumber: 346,
                 columnNumber: 11
               }, void 0)
@@ -715,29 +715,29 @@ const GrowthPlateauSolutions = () => {
           void 0,
           true,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
             lineNumber: 182,
             columnNumber: 9
           },
           void 0
         ),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalFooter, { onShowForm: () => setShowDropdownForm(true) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
           lineNumber: 369,
           columnNumber: 9
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
         lineNumber: 144,
         columnNumber: 9
       }, void 0)
     ] }, void 0, true, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
       lineNumber: 140,
       columnNumber: 7
     }, void 0)
   ] }, void 0, true, {
-    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/GrowthPlateauSolutions.tsx",
+    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/GrowthPlateauSolutions.tsx",
     lineNumber: 123,
     columnNumber: 5
   }, void 0);
@@ -833,7 +833,7 @@ const RevenueCeilingBreakthrough = () => {
         className: "sr-only",
         id: "status-announcer",
         children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "sr-only", children: "Content loaded successfully" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
           lineNumber: 101,
           columnNumber: 9
         }, void 0)
@@ -841,7 +841,7 @@ const RevenueCeilingBreakthrough = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
         lineNumber: 95,
         columnNumber: 7
       },
@@ -857,7 +857,7 @@ const RevenueCeilingBreakthrough = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
         lineNumber: 104,
         columnNumber: 7
       },
@@ -865,87 +865,87 @@ const RevenueCeilingBreakthrough = () => {
     ),
     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "revenue-ceiling-page min-h-screen relative overflow-hidden dark:bg-gray-900", children: [
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(BackgroundGradient, {}, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
         lineNumber: 111,
         columnNumber: 9
       }, void 0),
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative z-10", children: [
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalHeader, { onShowForm: () => setShowDropdownForm(true), showProgressBar: true }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
           lineNumber: 114,
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "pt-20 md:pt-24 pb-16 bg-gradient-to-br from-red-900 via-red-950 to-black relative overflow-hidden", children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(220,38,38,0.1)_0%,transparent_50%)]" }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
             lineNumber: 118,
             columnNumber: 13
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gradient-safe", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-red-400 focus-visible:text-red-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 124,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { children: "→" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 125,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-red-400 font-semibold", children: "Revenue Ceiling Breakthrough" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 126,
                 columnNumber: 19
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
               lineNumber: 123,
               columnNumber: 17
             }, void 0) }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
               lineNumber: 122,
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "inline-flex items-center gap-2 bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 px-4 py-2 rounded-full text-sm font-semibold mb-6", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-2 h-2 bg-red-500 rounded-full motion-safe:animate-pulse motion-reduce:animate-none" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 132,
                   columnNumber: 19
                 }, void 0),
                 "Revenue Stuck at Predictable Milestones"
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 131,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h1", { className: "heading-hero text-gradient-critical text-4xl md:text-6xl font-black mb-6 leading-tight", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-red-400", children: "Revenue Ceiling" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 136,
                   columnNumber: 19
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block text-white mt-2", children: "Breakthrough Guide" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 137,
                   columnNumber: 19
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 135,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed", children: [
                 "Stuck at $500K, $1M, or $1.5M for months? The problem isn't your product or market—it's that",
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-red-400 font-semibold", children: " founder-led sales can't scale" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 141,
                   columnNumber: 19
                 }, void 0),
                 " without documented processes."
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 139,
                 columnNumber: 17
               }, void 0),
@@ -960,24 +960,24 @@ const RevenueCeilingBreakthrough = () => {
                 void 0,
                 false,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 143,
                   columnNumber: 17
                 },
                 void 0
               )
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
               lineNumber: 130,
               columnNumber: 15
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
             lineNumber: 119,
             columnNumber: 13
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
           lineNumber: 117,
           columnNumber: 11
         }, void 0),
@@ -991,97 +991,97 @@ const RevenueCeilingBreakthrough = () => {
             children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-red-200/50 dark:border-red-800/50 p-8", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center", children: "Why Revenue Gets Stuck at Predictable Dollar Amounts" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 163,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-lg text-standard dark:text-gradient-safe mb-6 leading-relaxed text-center", children: "After analyzing 200+ growth-stage companies, we discovered that revenue plateaus happen at predictable milestones: $500K, $1M, $1.2M, $1.5M, and $2M. Each ceiling has a specific psychological and systems cause." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 166,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-3 gap-6 mb-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-red-600 mb-1", children: "67%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 172,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Hit predictable ceilings" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 173,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                     lineNumber: 171,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-orange-accessible mb-1", children: "14mo" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 176,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Average time stuck" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 177,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                     lineNumber: 175,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-green-600 mb-1", children: "33%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 180,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Break through with systems" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 181,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                     lineNumber: 179,
                     columnNumber: 19
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 170,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-standard dark:text-gradient-safe font-semibold text-center", children: "The root cause? What works at $500K breaks at $1M. What works at $1M breaks at $2M." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 184,
                   columnNumber: 17
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 162,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 161,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block", children: "5 Revenue Ceiling Scenarios" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                     lineNumber: 193,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block", children: "(Which is Yours?)" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                     lineNumber: 194,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 192,
                   columnNumber: 15
                 }, void 0),
@@ -1089,7 +1089,7 @@ const RevenueCeilingBreakthrough = () => {
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `bg-gradient-to-r ${scenario.gradient} p-6`, children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex justify-between items-start", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-2xl font-bold text-white mb-2", children: scenario.title }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                         lineNumber: 203,
                         columnNumber: 27
                       }, void 0),
@@ -1098,7 +1098,7 @@ const RevenueCeilingBreakthrough = () => {
                           "Pain Level: ",
                           scenario.painLevel
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                           lineNumber: 207,
                           columnNumber: 29
                         }, void 0),
@@ -1106,31 +1106,31 @@ const RevenueCeilingBreakthrough = () => {
                           "Typical Time Stuck: ",
                           scenario.timeStuck
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                           lineNumber: 208,
                           columnNumber: 29
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                         lineNumber: 206,
                         columnNumber: 27
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 202,
                       columnNumber: 25
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-panel rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl", children: scenario.id }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 211,
                       columnNumber: 25
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                     lineNumber: 201,
                     columnNumber: 23
                   }, void 0) }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                     lineNumber: 200,
                     columnNumber: 21
                   }, void 0),
@@ -1140,13 +1140,13 @@ const RevenueCeilingBreakthrough = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-red-800 dark:text-red-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💬" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                               lineNumber: 224,
                               columnNumber: 31
                             }, void 0),
                             "Customer Says:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                             lineNumber: 223,
                             columnNumber: 29
                           }, void 0),
@@ -1155,40 +1155,40 @@ const RevenueCeilingBreakthrough = () => {
                             scenario.customerSays,
                             '"'
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                             lineNumber: 227,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                           lineNumber: 222,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border-l-4 border-orange-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-orange-800 dark:text-orange-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💭" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                               lineNumber: 234,
                               columnNumber: 31
                             }, void 0),
                             "Customer Thinks:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                             lineNumber: 233,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.customerThinks }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                             lineNumber: 237,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                           lineNumber: 232,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                         lineNumber: 221,
                         columnNumber: 25
                       }, void 0),
@@ -1196,109 +1196,109 @@ const RevenueCeilingBreakthrough = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4 border-l-4 border-yellow-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-yellow-800 dark:text-yellow-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🔍" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                               lineNumber: 247,
                               columnNumber: 31
                             }, void 0),
                             "Real Problem:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                             lineNumber: 246,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.realProblem }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                             lineNumber: 250,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                           lineNumber: 245,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border-l-4 border-green-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-green-800 dark:text-green-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "✅" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                               lineNumber: 257,
                               columnNumber: 31
                             }, void 0),
                             "Solution:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                             lineNumber: 256,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.solution }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                             lineNumber: 260,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                           lineNumber: 255,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                         lineNumber: 244,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 218,
                       columnNumber: 23
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mt-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-blue-800 dark:text-blue-300 mb-2 flex items-center", children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🧠" }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                           lineNumber: 270,
                           columnNumber: 27
                         }, void 0),
                         "Why This Works:"
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                         lineNumber: 269,
                         columnNumber: 25
                       }, void 0),
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-standard dark:text-gradient-safe font-medium", children: scenario.whyItWorks }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                         lineNumber: 273,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 268,
                       columnNumber: 23
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                     lineNumber: 217,
                     columnNumber: 21
                   }, void 0)
                 ] }, scenario.id, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 199,
                   columnNumber: 19
                 }, void 0)) }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 197,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 191,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-2xl p-8 border border-red-200/50 dark:border-red-800/50", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-2xl font-bold text-gray-900 dark:text-white mb-4", children: "🚨 Tired of Founder-Led Sales Bottlenecks?" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 286,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto", children: "Every month you stay stuck at your revenue ceiling, competitors with documented sales processes are capturing the growth that should be yours. Get your free plateau analysis and discover which ceiling scenario matches your situation." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 289,
                   columnNumber: 17
                 }, void 0),
@@ -1313,7 +1313,7 @@ const RevenueCeilingBreakthrough = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                     lineNumber: 293,
                     columnNumber: 17
                   },
@@ -1329,75 +1329,75 @@ const RevenueCeilingBreakthrough = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                     lineNumber: 299,
                     columnNumber: 17
                   },
                   void 0
                 )
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 285,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 284,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center", children: "Related Growth Plateau Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 310,
                   columnNumber: 15
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, className: "hover:text-red-600 focus-visible:text-red-600 transition-colors", children: "Customer Acquisition Stall →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 316,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 315,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "CAC keeps rising while conversion stays flat? You're competing on the same channels with the same message as everyone else." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 320,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                     lineNumber: 314,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-red-600 focus-visible:text-red-600 transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 326,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 325,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "Master the 5 customer awareness stages that transform scattered marketing into predictable revenue systems." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                       lineNumber: 330,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                     lineNumber: 324,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                   lineNumber: 313,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
                 lineNumber: 309,
                 columnNumber: 13
               }, void 0)
@@ -1406,29 +1406,29 @@ const RevenueCeilingBreakthrough = () => {
           void 0,
           true,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
             lineNumber: 154,
             columnNumber: 11
           },
           void 0
         ),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalFooter, { onShowForm: () => setShowDropdownForm(true) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
           lineNumber: 339,
           columnNumber: 11
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
         lineNumber: 113,
         columnNumber: 9
       }, void 0)
     ] }, void 0, true, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
       lineNumber: 110,
       columnNumber: 7
     }, void 0)
   ] }, void 0, true, {
-    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/RevenueCeilingBreakthrough.tsx",
+    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/RevenueCeilingBreakthrough.tsx",
     lineNumber: 93,
     columnNumber: 5
   }, void 0);
@@ -1548,7 +1548,7 @@ const CustomerAcquisitionStall = () => {
         className: "sr-only",
         id: "status-announcer",
         children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "sr-only", children: "Content loaded successfully" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
           lineNumber: 125,
           columnNumber: 9
         }, void 0)
@@ -1556,7 +1556,7 @@ const CustomerAcquisitionStall = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
         lineNumber: 119,
         columnNumber: 7
       },
@@ -1572,7 +1572,7 @@ const CustomerAcquisitionStall = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
         lineNumber: 128,
         columnNumber: 7
       },
@@ -1580,87 +1580,87 @@ const CustomerAcquisitionStall = () => {
     ),
     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "customer-acquisition-page min-h-screen relative overflow-hidden dark:bg-gray-900", children: [
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(BackgroundGradient, {}, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
         lineNumber: 135,
         columnNumber: 9
       }, void 0),
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative z-10", children: [
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalHeader, { onShowForm: () => setShowDropdownForm(true), showProgressBar: true }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
           lineNumber: 138,
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "pt-20 md:pt-24 pb-16 bg-gradient-to-br from-orange-900 via-orange-950 to-black relative overflow-hidden", children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(234,88,12,0.1)_0%,transparent_50%)]" }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
             lineNumber: 142,
             columnNumber: 13
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gradient-safe", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-orange-400 focus-visible:text-orange-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 148,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { children: "→" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 149,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-orange-400 font-semibold", children: "Customer Acquisition Stall" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 150,
                 columnNumber: 19
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
               lineNumber: 147,
               columnNumber: 17
             }, void 0) }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
               lineNumber: 146,
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "inline-flex items-center gap-2 bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300 px-4 py-2 rounded-full text-sm font-semibold mb-6", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-2 h-2 bg-orange-500 rounded-full animate-pulse" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 156,
                   columnNumber: 19
                 }, void 0),
                 "CAC Rising, Conversion Flat"
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 155,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h1", { className: "heading-hero text-gradient-critical text-4xl md:text-6xl font-black mb-6 leading-tight", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-orange-400", children: "Customer Acquisition" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 160,
                   columnNumber: 19
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block text-white mt-2", children: "Stall Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 161,
                   columnNumber: 19
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 159,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed", children: [
                 "CAC keeps rising while conversion stays flat? The problem isn't your product or budget—it's that you're",
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-orange-400 font-semibold", children: " competing on the same channels with the same message" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 165,
                   columnNumber: 19
                 }, void 0),
                 " as everyone else."
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 163,
                 columnNumber: 17
               }, void 0),
@@ -1675,24 +1675,24 @@ const CustomerAcquisitionStall = () => {
                 void 0,
                 false,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 167,
                   columnNumber: 17
                 },
                 void 0
               )
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
               lineNumber: 154,
               columnNumber: 15
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
             lineNumber: 143,
             columnNumber: 13
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
           lineNumber: 141,
           columnNumber: 11
         }, void 0),
@@ -1706,97 +1706,97 @@ const CustomerAcquisitionStall = () => {
             children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-orange-200/50 dark:border-orange-800/50 p-8", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center", children: "Why Customer Acquisition Costs Keep Rising" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 187,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-lg text-standard dark:text-gradient-safe mb-6 leading-relaxed text-center", children: "CAC inflation isn't random—it follows predictable patterns. When everyone competes on the same channels with similar messaging, costs go up and quality goes down. The solution isn't more budget; it's psychology-driven differentiation." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 190,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-3 gap-6 mb-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-orange-accessible mb-1", children: "73%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 196,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Experience CAC inflation" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 197,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                     lineNumber: 195,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-red-600 mb-1", children: "156%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 200,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Average CAC increase" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 201,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                     lineNumber: 199,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-green-600 mb-1", children: "27%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 204,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Break cycle with differentiation" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 205,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                     lineNumber: 203,
                     columnNumber: 19
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 194,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-standard dark:text-gradient-safe font-semibold text-center", children: "The pattern: Same channels → Same message → Same prospects → Price competition" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 208,
                   columnNumber: 17
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 186,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 185,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block", children: "7 CAC Inflation Patterns" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                     lineNumber: 217,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block", children: "(Which is Yours?)" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                     lineNumber: 218,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 216,
                   columnNumber: 15
                 }, void 0),
@@ -1804,7 +1804,7 @@ const CustomerAcquisitionStall = () => {
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `bg-gradient-to-r ${scenario.gradient} p-6`, children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex justify-between items-start", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-2xl font-bold text-white mb-2", children: scenario.title }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                         lineNumber: 227,
                         columnNumber: 27
                       }, void 0),
@@ -1813,7 +1813,7 @@ const CustomerAcquisitionStall = () => {
                           "Pain Level: ",
                           scenario.painLevel
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                           lineNumber: 231,
                           columnNumber: 29
                         }, void 0),
@@ -1821,31 +1821,31 @@ const CustomerAcquisitionStall = () => {
                           "Typical Time Stuck: ",
                           scenario.timeStuck
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                           lineNumber: 232,
                           columnNumber: 29
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                         lineNumber: 230,
                         columnNumber: 27
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 226,
                       columnNumber: 25
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-panel rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl", children: scenario.id }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 235,
                       columnNumber: 25
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                     lineNumber: 225,
                     columnNumber: 23
                   }, void 0) }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                     lineNumber: 224,
                     columnNumber: 21
                   }, void 0),
@@ -1855,13 +1855,13 @@ const CustomerAcquisitionStall = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-red-800 dark:text-red-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💬" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                               lineNumber: 248,
                               columnNumber: 31
                             }, void 0),
                             "Customer Says:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                             lineNumber: 247,
                             columnNumber: 29
                           }, void 0),
@@ -1870,40 +1870,40 @@ const CustomerAcquisitionStall = () => {
                             scenario.customerSays,
                             '"'
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                             lineNumber: 251,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                           lineNumber: 246,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border-l-4 border-orange-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-orange-800 dark:text-orange-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💭" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                               lineNumber: 258,
                               columnNumber: 31
                             }, void 0),
                             "Customer Thinks:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                             lineNumber: 257,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.customerThinks }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                             lineNumber: 261,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                           lineNumber: 256,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                         lineNumber: 245,
                         columnNumber: 25
                       }, void 0),
@@ -1911,109 +1911,109 @@ const CustomerAcquisitionStall = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4 border-l-4 border-yellow-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-yellow-800 dark:text-yellow-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🔍" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                               lineNumber: 271,
                               columnNumber: 31
                             }, void 0),
                             "Real Problem:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                             lineNumber: 270,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.realProblem }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                             lineNumber: 274,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                           lineNumber: 269,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border-l-4 border-green-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-green-800 dark:text-green-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "✅" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                               lineNumber: 281,
                               columnNumber: 31
                             }, void 0),
                             "Solution:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                             lineNumber: 280,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.solution }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                             lineNumber: 284,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                           lineNumber: 279,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                         lineNumber: 268,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 242,
                       columnNumber: 23
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mt-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-blue-800 dark:text-blue-300 mb-2 flex items-center", children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🧠" }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                           lineNumber: 294,
                           columnNumber: 27
                         }, void 0),
                         "Why This Works:"
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                         lineNumber: 293,
                         columnNumber: 25
                       }, void 0),
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-standard dark:text-gradient-safe font-medium", children: scenario.whyItWorks }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                         lineNumber: 297,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 292,
                       columnNumber: 23
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                     lineNumber: 241,
                     columnNumber: 21
                   }, void 0)
                 ] }, scenario.id, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 223,
                   columnNumber: 19
                 }, void 0)) }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 221,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 215,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center bg-gradient-to-r from-orange-50 to-red-50 dark:from-orange-900/20 dark:to-red-900/20 rounded-2xl p-8 border border-orange-200/50 dark:border-orange-800/50", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-2xl font-bold text-gray-900 dark:text-white mb-4", children: "🚨 Stop Competing on Price in Saturated Channels" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 310,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto", children: "Every month you compete on the same channels with the same message, your CAC gets worse while competitors with differentiated psychology capture qualified prospects. Get your free acquisition analysis and discover which pattern is killing your efficiency." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 313,
                   columnNumber: 17
                 }, void 0),
@@ -2028,7 +2028,7 @@ const CustomerAcquisitionStall = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                     lineNumber: 317,
                     columnNumber: 17
                   },
@@ -2044,75 +2044,75 @@ const CustomerAcquisitionStall = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                     lineNumber: 323,
                     columnNumber: 17
                   },
                   void 0
                 )
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 309,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 308,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center", children: "Related Growth Plateau Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 334,
                   columnNumber: 15
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/revenue-ceiling-breakthrough`, className: "hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors", children: "Revenue Ceiling Breakthrough →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 340,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 339,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "Revenue stuck at $500K, $1M, or $1.5M? The problem isn't your product—founder-led sales can't scale without documented processes." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 344,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                     lineNumber: 338,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 350,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 349,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "Master the 5 customer awareness stages that break through commodity competition with psychology-driven differentiation." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                       lineNumber: 354,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                     lineNumber: 348,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                   lineNumber: 337,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
                 lineNumber: 333,
                 columnNumber: 13
               }, void 0)
@@ -2121,29 +2121,29 @@ const CustomerAcquisitionStall = () => {
           void 0,
           true,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
             lineNumber: 178,
             columnNumber: 11
           },
           void 0
         ),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalFooter, { onShowForm: () => setShowDropdownForm(true) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
           lineNumber: 363,
           columnNumber: 11
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
         lineNumber: 137,
         columnNumber: 9
       }, void 0)
     ] }, void 0, true, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
       lineNumber: 134,
       columnNumber: 7
     }, void 0)
   ] }, void 0, true, {
-    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CustomerAcquisitionStall.tsx",
+    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CustomerAcquisitionStall.tsx",
     lineNumber: 117,
     columnNumber: 5
   }, void 0);
@@ -2263,7 +2263,7 @@ const MarketExpansionBarriers = () => {
         className: "sr-only",
         id: "status-announcer",
         children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "sr-only", children: "Content loaded successfully" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
           lineNumber: 125,
           columnNumber: 9
         }, void 0)
@@ -2271,7 +2271,7 @@ const MarketExpansionBarriers = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
         lineNumber: 119,
         columnNumber: 7
       },
@@ -2287,7 +2287,7 @@ const MarketExpansionBarriers = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
         lineNumber: 128,
         columnNumber: 7
       },
@@ -2295,87 +2295,87 @@ const MarketExpansionBarriers = () => {
     ),
     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "market-expansion-page min-h-screen relative overflow-hidden dark:bg-gray-900", children: [
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(BackgroundGradient, {}, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
         lineNumber: 135,
         columnNumber: 9
       }, void 0),
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative z-10", children: [
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalHeader, { onShowForm: () => setShowDropdownForm(true), showProgressBar: true }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
           lineNumber: 138,
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "pt-20 md:pt-24 pb-16 bg-gradient-to-br from-yellow-900 via-yellow-950 to-black relative overflow-hidden", children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(202,138,4,0.1)_0%,transparent_50%)]" }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
             lineNumber: 142,
             columnNumber: 13
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gradient-safe", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-yellow-400 focus-visible:text-yellow-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 148,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { children: "→" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 149,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-yellow-400 font-semibold", children: "Market Expansion Barriers" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 150,
                 columnNumber: 19
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
               lineNumber: 147,
               columnNumber: 17
             }, void 0) }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
               lineNumber: 146,
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "inline-flex items-center gap-2 bg-yellow-100 dark:bg-yellow-900/30 text-yellow-800 dark:text-yellow-300 px-4 py-2 rounded-full text-sm font-semibold mb-6", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-2 h-2 bg-yellow-500 rounded-full animate-pulse" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 156,
                   columnNumber: 19
                 }, void 0),
                 "Market Feels Saturated"
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 155,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h1", { className: "heading-hero text-gradient-critical text-4xl md:text-6xl font-black text-white mb-6 leading-tight", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-yellow-400", children: "Market Expansion" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 160,
                   columnNumber: 19
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block text-white mt-2", children: "Barrier Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 161,
                   columnNumber: 19
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 159,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed", children: [
                 "Core market feels saturated? The issue isn't market size—it's that you've",
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-yellow-400 font-semibold", children: " defined your market by product category" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 165,
                   columnNumber: 19
                 }, void 0),
                 " instead of problems solved."
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 163,
                 columnNumber: 17
               }, void 0),
@@ -2390,24 +2390,24 @@ const MarketExpansionBarriers = () => {
                 void 0,
                 false,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 167,
                   columnNumber: 17
                 },
                 void 0
               )
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
               lineNumber: 154,
               columnNumber: 15
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
             lineNumber: 143,
             columnNumber: 13
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
           lineNumber: 141,
           columnNumber: 11
         }, void 0),
@@ -2421,97 +2421,97 @@ const MarketExpansionBarriers = () => {
             children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-yellow-200/50 dark:border-yellow-800/50 p-8", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center", children: 'Why Market "Saturation" is Usually a Positioning Problem' }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 187,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-lg text-standard dark:text-gradient-safe mb-6 leading-relaxed text-center", children: `Most "saturated" markets aren't actually saturated—companies have just defined their addressable market too narrowly. The solution isn't finding new markets; it's redefining your current one through psychology and positioning.` }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 190,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-3 gap-6 mb-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-yellow-600 mb-1", children: "78%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 196,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Feel market constrained" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 197,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                     lineNumber: 195,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-red-600 mb-1", children: "3.4x" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 200,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Larger addressable market" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 201,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                     lineNumber: 199,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-green-600 mb-1", children: "22%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 204,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Succeed with repositioning" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 205,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                     lineNumber: 203,
                     columnNumber: 19
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 194,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-standard dark:text-gradient-safe font-semibold text-center", children: "Pattern: Same product → Different problems → New markets" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 208,
                   columnNumber: 17
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 186,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 185,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block", children: "7 Market Expansion Barriers" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                     lineNumber: 217,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block", children: "(Which is Yours?)" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                     lineNumber: 218,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 216,
                   columnNumber: 15
                 }, void 0),
@@ -2519,7 +2519,7 @@ const MarketExpansionBarriers = () => {
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `bg-gradient-to-r ${scenario.gradient} p-6`, children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex justify-between items-start", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-2xl font-bold text-white mb-2", children: scenario.title }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                         lineNumber: 227,
                         columnNumber: 27
                       }, void 0),
@@ -2528,7 +2528,7 @@ const MarketExpansionBarriers = () => {
                           "Pain Level: ",
                           scenario.painLevel
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                           lineNumber: 231,
                           columnNumber: 29
                         }, void 0),
@@ -2536,31 +2536,31 @@ const MarketExpansionBarriers = () => {
                           "Typical Time Stuck: ",
                           scenario.timeStuck
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                           lineNumber: 232,
                           columnNumber: 29
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                         lineNumber: 230,
                         columnNumber: 27
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 226,
                       columnNumber: 25
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-panel rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl", children: scenario.id }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 235,
                       columnNumber: 25
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                     lineNumber: 225,
                     columnNumber: 23
                   }, void 0) }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                     lineNumber: 224,
                     columnNumber: 21
                   }, void 0),
@@ -2570,13 +2570,13 @@ const MarketExpansionBarriers = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-red-800 dark:text-red-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💬" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                               lineNumber: 248,
                               columnNumber: 31
                             }, void 0),
                             "Customer Says:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                             lineNumber: 247,
                             columnNumber: 29
                           }, void 0),
@@ -2585,40 +2585,40 @@ const MarketExpansionBarriers = () => {
                             scenario.customerSays,
                             '"'
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                             lineNumber: 251,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                           lineNumber: 246,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4 border-l-4 border-yellow-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-yellow-800 dark:text-yellow-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💭" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                               lineNumber: 258,
                               columnNumber: 31
                             }, void 0),
                             "Customer Thinks:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                             lineNumber: 257,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.customerThinks }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                             lineNumber: 261,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                           lineNumber: 256,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                         lineNumber: 245,
                         columnNumber: 25
                       }, void 0),
@@ -2626,109 +2626,109 @@ const MarketExpansionBarriers = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border-l-4 border-orange-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-orange-800 dark:text-orange-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🔍" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                               lineNumber: 271,
                               columnNumber: 31
                             }, void 0),
                             "Real Problem:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                             lineNumber: 270,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.realProblem }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                             lineNumber: 274,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                           lineNumber: 269,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border-l-4 border-green-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-green-800 dark:text-green-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "✅" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                               lineNumber: 281,
                               columnNumber: 31
                             }, void 0),
                             "Solution:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                             lineNumber: 280,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.solution }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                             lineNumber: 284,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                           lineNumber: 279,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                         lineNumber: 268,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 242,
                       columnNumber: 23
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mt-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-blue-800 dark:text-blue-300 mb-2 flex items-center", children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🧠" }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                           lineNumber: 294,
                           columnNumber: 27
                         }, void 0),
                         "Why This Works:"
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                         lineNumber: 293,
                         columnNumber: 25
                       }, void 0),
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-standard dark:text-gradient-safe font-medium", children: scenario.whyItWorks }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                         lineNumber: 297,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 292,
                       columnNumber: 23
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                     lineNumber: 241,
                     columnNumber: 21
                   }, void 0)
                 ] }, scenario.id, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 223,
                   columnNumber: 19
                 }, void 0)) }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 221,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 215,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center bg-gradient-to-r from-yellow-50 to-orange-50 dark:from-yellow-900/20 dark:to-orange-900/20 rounded-2xl p-8 border border-yellow-200/50 dark:border-yellow-800/50", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-2xl font-bold text-gray-900 dark:text-white mb-4", children: '🚨 Stop Accepting Market "Limitations" as Reality' }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 310,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto", children: "Every month you stay trapped by narrow market definitions, competitors with better positioning psychology are capturing expansion opportunities you can't see. Get your free expansion analysis and discover which barriers are limiting your growth." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 313,
                   columnNumber: 17
                 }, void 0),
@@ -2743,7 +2743,7 @@ const MarketExpansionBarriers = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                     lineNumber: 317,
                     columnNumber: 17
                   },
@@ -2759,75 +2759,75 @@ const MarketExpansionBarriers = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                     lineNumber: 323,
                     columnNumber: 17
                   },
                   void 0
                 )
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 309,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 308,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center", children: "Related Growth Plateau Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 334,
                   columnNumber: 15
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, className: "hover:text-yellow-600 focus-visible:text-yellow-600 transition-colors", children: "Customer Acquisition Stall →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 340,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 339,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "CAC rising while conversion stays flat? Stop competing on the same channels with the same message as everyone else." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 344,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                     lineNumber: 338,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-yellow-600 focus-visible:text-yellow-600 transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 350,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 349,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "Master positioning psychology and awareness stages that reveal hidden market expansion opportunities." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                       lineNumber: 354,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                     lineNumber: 348,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                   lineNumber: 337,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
                 lineNumber: 333,
                 columnNumber: 13
               }, void 0)
@@ -2836,29 +2836,29 @@ const MarketExpansionBarriers = () => {
           void 0,
           true,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
             lineNumber: 178,
             columnNumber: 11
           },
           void 0
         ),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalFooter, { onShowForm: () => setShowDropdownForm(true) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
           lineNumber: 363,
           columnNumber: 11
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
         lineNumber: 137,
         columnNumber: 9
       }, void 0)
     ] }, void 0, true, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
       lineNumber: 134,
       columnNumber: 7
     }, void 0)
   ] }, void 0, true, {
-    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/MarketExpansionBarriers.tsx",
+    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/MarketExpansionBarriers.tsx",
     lineNumber: 117,
     columnNumber: 5
   }, void 0);
@@ -2978,7 +2978,7 @@ const OperationalScalingCrisis = () => {
         className: "sr-only",
         id: "status-announcer",
         children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "sr-only", children: "Content loaded successfully" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
           lineNumber: 125,
           columnNumber: 9
         }, void 0)
@@ -2986,7 +2986,7 @@ const OperationalScalingCrisis = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
         lineNumber: 119,
         columnNumber: 7
       },
@@ -3002,7 +3002,7 @@ const OperationalScalingCrisis = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
         lineNumber: 128,
         columnNumber: 7
       },
@@ -3010,87 +3010,87 @@ const OperationalScalingCrisis = () => {
     ),
     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "operational-scaling-page min-h-screen relative overflow-hidden dark:bg-gray-900", children: [
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(BackgroundGradient, {}, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
         lineNumber: 135,
         columnNumber: 9
       }, void 0),
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative z-10", children: [
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalHeader, { onShowForm: () => setShowDropdownForm(true), showProgressBar: true }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
           lineNumber: 138,
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "pt-20 md:pt-24 pb-16 bg-gradient-to-br from-green-900 via-green-950 to-black relative overflow-hidden", children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(34,197,94,0.1)_0%,transparent_50%)]" }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
             lineNumber: 142,
             columnNumber: 13
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gradient-safe", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-green-400 focus-visible:text-green-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 148,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { children: "→" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 149,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-green-400 font-semibold", children: "Operational Scaling Crisis" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 150,
                 columnNumber: 19
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
               lineNumber: 147,
               columnNumber: 17
             }, void 0) }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
               lineNumber: 146,
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 px-4 py-2 rounded-full text-sm font-semibold mb-6", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-2 h-2 bg-green-500 rounded-full animate-pulse" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 156,
                   columnNumber: 19
                 }, void 0),
                 "Growth Breaking Everything"
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 155,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h1", { className: "heading-hero text-gradient-critical text-4xl md:text-6xl font-black text-white mb-6 leading-tight", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-green-400", children: "Operational Scaling" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 160,
                   columnNumber: 19
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block text-white mt-2", children: "Crisis Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 161,
                   columnNumber: 19
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 159,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed", children: [
                 "Growth feels like everything's breaking? The problem isn't your team or timing—it's that",
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-green-400 font-semibold", children: " manual processes that worked at $500K" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 165,
                   columnNumber: 19
                 }, void 0),
                 " fail spectacularly at $2M+ without systems."
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 163,
                 columnNumber: 17
               }, void 0),
@@ -3105,24 +3105,24 @@ const OperationalScalingCrisis = () => {
                 void 0,
                 false,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 167,
                   columnNumber: 17
                 },
                 void 0
               )
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
               lineNumber: 154,
               columnNumber: 15
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
             lineNumber: 143,
             columnNumber: 13
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
           lineNumber: 141,
           columnNumber: 11
         }, void 0),
@@ -3136,97 +3136,97 @@ const OperationalScalingCrisis = () => {
             children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center", children: "Why Growth Breaks Operations (And How to Fix It)" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 187,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-lg text-standard dark:text-gradient-safe mb-6 leading-relaxed text-center", children: "Operational scaling crises aren't random—they follow predictable patterns. What works at $500K breaks at $2M+ because manual processes hit exponential complexity while systems thinking provides linear solutions." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 190,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-3 gap-6 mb-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-green-600 mb-1", children: "84%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 196,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Experience scaling crisis" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 197,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                     lineNumber: 195,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-red-600 mb-1", children: "267%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 200,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Complexity increase" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 201,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                     lineNumber: 199,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-blue-accessible mb-1", children: "16%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 204,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Solve with systems first" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 205,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                     lineNumber: 203,
                     columnNumber: 19
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 194,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-standard dark:text-gradient-safe font-semibold text-center", children: "The pattern: Manual processes → Exponential complexity → Systems breakdown" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 208,
                   columnNumber: 17
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 186,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 185,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block", children: "7 Operational Crisis Patterns" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                     lineNumber: 217,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block", children: "(Which is Yours?)" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                     lineNumber: 218,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 216,
                   columnNumber: 15
                 }, void 0),
@@ -3234,7 +3234,7 @@ const OperationalScalingCrisis = () => {
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `bg-gradient-to-r ${scenario.gradient} p-6`, children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex justify-between items-start", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-2xl font-bold text-white mb-2", children: scenario.title }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                         lineNumber: 227,
                         columnNumber: 27
                       }, void 0),
@@ -3243,7 +3243,7 @@ const OperationalScalingCrisis = () => {
                           "Pain Level: ",
                           scenario.painLevel
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                           lineNumber: 231,
                           columnNumber: 29
                         }, void 0),
@@ -3251,31 +3251,31 @@ const OperationalScalingCrisis = () => {
                           "Typical Time Stuck: ",
                           scenario.timeStuck
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                           lineNumber: 232,
                           columnNumber: 29
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                         lineNumber: 230,
                         columnNumber: 27
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 226,
                       columnNumber: 25
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-panel rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl", children: scenario.id }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 235,
                       columnNumber: 25
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                     lineNumber: 225,
                     columnNumber: 23
                   }, void 0) }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                     lineNumber: 224,
                     columnNumber: 21
                   }, void 0),
@@ -3285,13 +3285,13 @@ const OperationalScalingCrisis = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-red-800 dark:text-red-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💬" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                               lineNumber: 248,
                               columnNumber: 31
                             }, void 0),
                             "Customer Says:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                             lineNumber: 247,
                             columnNumber: 29
                           }, void 0),
@@ -3300,40 +3300,40 @@ const OperationalScalingCrisis = () => {
                             scenario.customerSays,
                             '"'
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                             lineNumber: 251,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                           lineNumber: 246,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border-l-4 border-green-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-green-800 dark:text-green-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💭" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                               lineNumber: 258,
                               columnNumber: 31
                             }, void 0),
                             "Customer Thinks:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                             lineNumber: 257,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.customerThinks }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                             lineNumber: 261,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                           lineNumber: 256,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                         lineNumber: 245,
                         columnNumber: 25
                       }, void 0),
@@ -3341,109 +3341,109 @@ const OperationalScalingCrisis = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border-l-4 border-orange-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-orange-800 dark:text-orange-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🔍" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                               lineNumber: 271,
                               columnNumber: 31
                             }, void 0),
                             "Real Problem:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                             lineNumber: 270,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.realProblem }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                             lineNumber: 274,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                           lineNumber: 269,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border-l-4 border-blue-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-blue-800 dark:text-blue-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "✅" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                               lineNumber: 281,
                               columnNumber: 31
                             }, void 0),
                             "Solution:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                             lineNumber: 280,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.solution }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                             lineNumber: 284,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                           lineNumber: 279,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                         lineNumber: 268,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 242,
                       columnNumber: 23
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mt-6 bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4 border border-purple-200 dark:border-purple-800", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-purple-800 dark:text-purple-300 mb-2 flex items-center", children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🧠" }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                           lineNumber: 294,
                           columnNumber: 27
                         }, void 0),
                         "Why This Works:"
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                         lineNumber: 293,
                         columnNumber: 25
                       }, void 0),
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-standard dark:text-gradient-safe font-medium", children: scenario.whyItWorks }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                         lineNumber: 297,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 292,
                       columnNumber: 23
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                     lineNumber: 241,
                     columnNumber: 21
                   }, void 0)
                 ] }, scenario.id, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 223,
                   columnNumber: 19
                 }, void 0)) }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 221,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 215,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center bg-gradient-to-r from-green-50 to-blue-50 dark:from-green-900/20 dark:to-blue-900/20 rounded-2xl p-8 border border-green-200/50 dark:border-green-800/50", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-2xl font-bold text-gray-900 dark:text-white mb-4", children: "🚨 Stop Letting Growth Break Your Operations" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 310,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto", children: "Every month you operate with manual processes designed for smaller scale, operational inefficiencies compound exponentially. Get your free scaling analysis and discover which crisis patterns are limiting your growth capacity." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 313,
                   columnNumber: 17
                 }, void 0),
@@ -3458,7 +3458,7 @@ const OperationalScalingCrisis = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                     lineNumber: 317,
                     columnNumber: 17
                   },
@@ -3474,75 +3474,75 @@ const OperationalScalingCrisis = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                     lineNumber: 323,
                     columnNumber: 17
                   },
                   void 0
                 )
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 309,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 308,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center", children: "Related Growth Plateau Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 334,
                   columnNumber: 15
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/team-growth-bottlenecks`, className: "hover:text-green-600 focus-visible:text-green-600 transition-colors", children: "Team Growth Bottlenecks →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 340,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 339,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "Can't hire fast enough or new people aren't working out? The founder bottleneck kills scaling when everything goes through you." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 344,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                     lineNumber: 338,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-green-600 focus-visible:text-green-600 transition-colors", children: "Need Strategic Marketing Leadership? →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 350,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 349,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "Systems thinking requires strategic leadership. Discover if fractional CMO services can accelerate your scaling solutions." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                       lineNumber: 354,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                     lineNumber: 348,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                   lineNumber: 337,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
                 lineNumber: 333,
                 columnNumber: 13
               }, void 0)
@@ -3551,29 +3551,29 @@ const OperationalScalingCrisis = () => {
           void 0,
           true,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
             lineNumber: 178,
             columnNumber: 11
           },
           void 0
         ),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalFooter, { onShowForm: () => setShowDropdownForm(true) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
           lineNumber: 363,
           columnNumber: 11
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
         lineNumber: 137,
         columnNumber: 9
       }, void 0)
     ] }, void 0, true, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
       lineNumber: 134,
       columnNumber: 7
     }, void 0)
   ] }, void 0, true, {
-    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/OperationalScalingCrisis.tsx",
+    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/OperationalScalingCrisis.tsx",
     lineNumber: 117,
     columnNumber: 5
   }, void 0);
@@ -3693,7 +3693,7 @@ const TeamGrowthBottlenecks = () => {
         className: "sr-only",
         id: "status-announcer",
         children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "sr-only", children: "Content loaded successfully" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
           lineNumber: 125,
           columnNumber: 9
         }, void 0)
@@ -3701,7 +3701,7 @@ const TeamGrowthBottlenecks = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
         lineNumber: 119,
         columnNumber: 7
       },
@@ -3717,7 +3717,7 @@ const TeamGrowthBottlenecks = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
         lineNumber: 128,
         columnNumber: 7
       },
@@ -3725,87 +3725,87 @@ const TeamGrowthBottlenecks = () => {
     ),
     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "team-growth-page min-h-screen relative overflow-hidden dark:bg-gray-900", children: [
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(BackgroundGradient, {}, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
         lineNumber: 135,
         columnNumber: 9
       }, void 0),
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative z-10", children: [
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalHeader, { onShowForm: () => setShowDropdownForm(true), showProgressBar: true }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
           lineNumber: 138,
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "pt-20 md:pt-24 pb-16 bg-gradient-to-br from-blue-900 via-blue-950 to-black relative overflow-hidden", children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(59,130,246,0.1)_0%,transparent_50%)]" }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
             lineNumber: 142,
             columnNumber: 13
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gradient-safe", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-blue-400 focus-visible:text-blue-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 148,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { children: "→" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 149,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-blue-400 font-semibold", children: "Team Growth Bottlenecks" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 150,
                 columnNumber: 19
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
               lineNumber: 147,
               columnNumber: 17
             }, void 0) }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
               lineNumber: 146,
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-semibold mb-6", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-2 h-2 bg-blue-500 rounded-full animate-pulse" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 156,
                   columnNumber: 19
                 }, void 0),
                 "Can't Hire Fast Enough"
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 155,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h1", { className: "heading-hero text-gradient-critical text-4xl md:text-6xl font-black text-white mb-6 leading-tight", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-blue-400", children: "Team Growth" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 160,
                   columnNumber: 19
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block text-white mt-2", children: "Bottleneck Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 161,
                   columnNumber: 19
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 159,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed", children: [
                 "Can't hire fast enough or new people aren't working out? The problem isn't talent availability—it's that",
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-blue-400 font-semibold", children: " the founder bottleneck" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 165,
                   columnNumber: 19
                 }, void 0),
                 " kills scaling when everything still goes through you."
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 163,
                 columnNumber: 17
               }, void 0),
@@ -3820,24 +3820,24 @@ const TeamGrowthBottlenecks = () => {
                 void 0,
                 false,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 167,
                   columnNumber: 17
                 },
                 void 0
               )
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
               lineNumber: 154,
               columnNumber: 15
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
             lineNumber: 143,
             columnNumber: 13
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
           lineNumber: 141,
           columnNumber: 11
         }, void 0),
@@ -3851,97 +3851,97 @@ const TeamGrowthBottlenecks = () => {
             children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-blue-200/50 dark:border-blue-800/50 p-8", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center", children: "Why Team Growth Gets Stuck (And How Culture Really Scales)" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 187,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-lg text-standard dark:text-gradient-safe mb-6 leading-relaxed text-center", children: `Team growth bottlenecks aren't about finding "good people"—they're about systems that enable people to succeed. Culture shifts with size, and what worked at 5 people breaks at 50 without intentional frameworks.` }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 190,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-3 gap-6 mb-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-blue-accessible mb-1", children: "89%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 196,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Struggle with team scaling" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 197,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                     lineNumber: 195,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-red-600 mb-1", children: "43%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 200,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "New hire failure rate" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 201,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                     lineNumber: 199,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-green-600 mb-1", children: "11%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 204,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Break founder dependency" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 205,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                     lineNumber: 203,
                     columnNumber: 19
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 194,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-standard dark:text-gradient-safe font-semibold text-center", children: "The pattern: Founder dependency → Team growth → Systems breakdown" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 208,
                   columnNumber: 17
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 186,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 185,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block", children: "7 Team Bottleneck Patterns" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                     lineNumber: 217,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block", children: "(Which is Yours?)" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                     lineNumber: 218,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 216,
                   columnNumber: 15
                 }, void 0),
@@ -3949,7 +3949,7 @@ const TeamGrowthBottlenecks = () => {
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `bg-gradient-to-r ${scenario.gradient} p-6`, children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex justify-between items-start", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-2xl font-bold text-white mb-2", children: scenario.title }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                         lineNumber: 227,
                         columnNumber: 27
                       }, void 0),
@@ -3958,7 +3958,7 @@ const TeamGrowthBottlenecks = () => {
                           "Pain Level: ",
                           scenario.painLevel
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                           lineNumber: 231,
                           columnNumber: 29
                         }, void 0),
@@ -3966,31 +3966,31 @@ const TeamGrowthBottlenecks = () => {
                           "Typical Time Stuck: ",
                           scenario.timeStuck
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                           lineNumber: 232,
                           columnNumber: 29
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                         lineNumber: 230,
                         columnNumber: 27
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 226,
                       columnNumber: 25
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-panel rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl", children: scenario.id }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 235,
                       columnNumber: 25
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                     lineNumber: 225,
                     columnNumber: 23
                   }, void 0) }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                     lineNumber: 224,
                     columnNumber: 21
                   }, void 0),
@@ -4000,13 +4000,13 @@ const TeamGrowthBottlenecks = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-red-800 dark:text-red-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💬" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                               lineNumber: 248,
                               columnNumber: 31
                             }, void 0),
                             "Customer Says:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                             lineNumber: 247,
                             columnNumber: 29
                           }, void 0),
@@ -4015,40 +4015,40 @@ const TeamGrowthBottlenecks = () => {
                             scenario.customerSays,
                             '"'
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                             lineNumber: 251,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                           lineNumber: 246,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border-l-4 border-blue-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-blue-800 dark:text-blue-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💭" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                               lineNumber: 258,
                               columnNumber: 31
                             }, void 0),
                             "Customer Thinks:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                             lineNumber: 257,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.customerThinks }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                             lineNumber: 261,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                           lineNumber: 256,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                         lineNumber: 245,
                         columnNumber: 25
                       }, void 0),
@@ -4056,109 +4056,109 @@ const TeamGrowthBottlenecks = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border-l-4 border-orange-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-orange-800 dark:text-orange-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🔍" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                               lineNumber: 271,
                               columnNumber: 31
                             }, void 0),
                             "Real Problem:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                             lineNumber: 270,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.realProblem }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                             lineNumber: 274,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                           lineNumber: 269,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border-l-4 border-green-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-green-800 dark:text-green-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "✅" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                               lineNumber: 281,
                               columnNumber: 31
                             }, void 0),
                             "Solution:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                             lineNumber: 280,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.solution }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                             lineNumber: 284,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                           lineNumber: 279,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                         lineNumber: 268,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 242,
                       columnNumber: 23
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mt-6 bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4 border border-purple-200 dark:border-purple-800", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-purple-800 dark:text-purple-300 mb-2 flex items-center", children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🧠" }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                           lineNumber: 294,
                           columnNumber: 27
                         }, void 0),
                         "Why This Works:"
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                         lineNumber: 293,
                         columnNumber: 25
                       }, void 0),
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-standard dark:text-gradient-safe font-medium", children: scenario.whyItWorks }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                         lineNumber: 297,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 292,
                       columnNumber: 23
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                     lineNumber: 241,
                     columnNumber: 21
                   }, void 0)
                 ] }, scenario.id, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 223,
                   columnNumber: 19
                 }, void 0)) }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 221,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 215,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8 border border-blue-200/50 dark:border-blue-800/50", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-2xl font-bold text-gray-900 dark:text-white mb-4", children: "🚨 Stop Being the Bottleneck to Your Own Growth" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 310,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto", children: "Every month you stay trapped in founder dependency patterns, your team's growth potential stagnates while competitors with documented systems scale efficiently. Get your free team analysis and discover which bottleneck patterns are limiting your scaling." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 313,
                   columnNumber: 17
                 }, void 0),
@@ -4173,7 +4173,7 @@ const TeamGrowthBottlenecks = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                     lineNumber: 317,
                     columnNumber: 17
                   },
@@ -4189,75 +4189,75 @@ const TeamGrowthBottlenecks = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                     lineNumber: 323,
                     columnNumber: 17
                   },
                   void 0
                 )
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 309,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 308,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center", children: "Related Growth Plateau Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 334,
                   columnNumber: 15
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/operational-scaling-crisis`, className: "hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors", children: "Operational Scaling Crisis →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 340,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 339,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "Growth breaking operations? Manual processes that worked at $500K fail at $2M+ without systems thinking." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 344,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                     lineNumber: 338,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors", children: "Need Strategic Marketing Leadership? →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 350,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 349,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "Team bottlenecks often start with marketing leadership gaps. Discover if fractional CMO services can break your founder dependency." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                       lineNumber: 354,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                     lineNumber: 348,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                   lineNumber: 337,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
                 lineNumber: 333,
                 columnNumber: 13
               }, void 0)
@@ -4266,29 +4266,29 @@ const TeamGrowthBottlenecks = () => {
           void 0,
           true,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
             lineNumber: 178,
             columnNumber: 11
           },
           void 0
         ),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalFooter, { onShowForm: () => setShowDropdownForm(true) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
           lineNumber: 363,
           columnNumber: 11
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
         lineNumber: 137,
         columnNumber: 9
       }, void 0)
     ] }, void 0, true, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
       lineNumber: 134,
       columnNumber: 7
     }, void 0)
   ] }, void 0, true, {
-    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/TeamGrowthBottlenecks.tsx",
+    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/TeamGrowthBottlenecks.tsx",
     lineNumber: 117,
     columnNumber: 5
   }, void 0);
@@ -4396,7 +4396,7 @@ const ProductMarketFitErosion = () => {
         className: "sr-only",
         id: "status-announcer",
         children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "sr-only", children: "Content loaded successfully" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
           lineNumber: 113,
           columnNumber: 9
         }, void 0)
@@ -4404,7 +4404,7 @@ const ProductMarketFitErosion = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
         lineNumber: 107,
         columnNumber: 7
       },
@@ -4420,7 +4420,7 @@ const ProductMarketFitErosion = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
         lineNumber: 116,
         columnNumber: 7
       },
@@ -4428,87 +4428,87 @@ const ProductMarketFitErosion = () => {
     ),
     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "pmf-erosion-page min-h-screen relative overflow-hidden dark:bg-gray-900", children: [
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(BackgroundGradient, {}, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
         lineNumber: 123,
         columnNumber: 9
       }, void 0),
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative z-10", children: [
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalHeader, { onShowForm: () => setShowDropdownForm(true), showProgressBar: true }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
           lineNumber: 126,
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "pt-20 md:pt-24 pb-16 bg-gradient-to-br from-purple-900 via-purple-950 to-black relative overflow-hidden", children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(147,51,234,0.1)_0%,transparent_50%)]" }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
             lineNumber: 130,
             columnNumber: 13
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gradient-safe", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-purple-400 focus-visible:text-purple-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 136,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { children: "→" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 137,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-purple-400 font-semibold", children: "Product-Market Fit Erosion" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 138,
                 columnNumber: 19
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
               lineNumber: 135,
               columnNumber: 17
             }, void 0) }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
               lineNumber: 134,
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "inline-flex items-center gap-2 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 px-4 py-2 rounded-full text-sm font-semibold mb-6", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-2 h-2 bg-purple-500 rounded-full motion-safe:animate-pulse motion-reduce:animate-none" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 144,
                   columnNumber: 19
                 }, void 0),
                 "What Worked Before Stopped Working"
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 143,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h1", { className: "heading-hero text-gradient-critical text-4xl md:text-6xl font-black mb-6 leading-tight", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-purple-400", children: "Product-Market Fit" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 148,
                   columnNumber: 19
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block text-white mt-2", children: "Erosion Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 149,
                   columnNumber: 19
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 147,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-important-accessible text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed", children: [
                 "What worked before isn't working now? The problem isn't your product losing relevance—it's that",
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-purple-400 font-semibold", children: " markets evolve faster than products" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 153,
                   columnNumber: 19
                 }, void 0),
                 ", and your messaging may be stuck in the past."
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 151,
                 columnNumber: 17
               }, void 0),
@@ -4523,24 +4523,24 @@ const ProductMarketFitErosion = () => {
                 void 0,
                 false,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 155,
                   columnNumber: 17
                 },
                 void 0
               )
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
               lineNumber: 142,
               columnNumber: 15
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
             lineNumber: 131,
             columnNumber: 13
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
           lineNumber: 129,
           columnNumber: 11
         }, void 0),
@@ -4554,97 +4554,97 @@ const ProductMarketFitErosion = () => {
             children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-8", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-2xl font-bold mb-6 text-center", children: "Why Product-Market Fit Erodes (And How to Restore It)" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 175,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-important-accessible text-lg text-standard dark:text-gradient-safe mb-6 leading-relaxed text-center", children: "Product-market fit isn't a permanent achievement—it requires ongoing maintenance. Markets, customers, and competitive landscapes evolve constantly, but many companies assume their initial PMF will last forever without iteration." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 178,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-3 gap-6 mb-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-purple-600 mb-1", children: "71%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 184,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Experience PMF erosion" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 185,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                     lineNumber: 183,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-red-600 mb-1", children: "18mo" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 188,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Average fit decay time" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 189,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                     lineNumber: 187,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-green-600 mb-1", children: "29%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 192,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Restore with repositioning" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 193,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                     lineNumber: 191,
                     columnNumber: 19
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 182,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-important-accessible text-standard dark:text-gradient-safe font-semibold text-center", children: "The pattern: Initial success → Market evolution → Messaging lag → Fit erosion" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 196,
                   columnNumber: 17
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 174,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 173,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl md:text-4xl font-bold mb-12 text-center", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block", children: "6 PMF Erosion Patterns" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                     lineNumber: 205,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block", children: "(Which is Yours?)" }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                     lineNumber: 206,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 204,
                   columnNumber: 15
                 }, void 0),
@@ -4652,7 +4652,7 @@ const ProductMarketFitErosion = () => {
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `bg-gradient-to-r ${scenario.gradient} p-6`, children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex justify-between items-start", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important-accessible dark:text-white text-2xl font-bold text-white mb-2", children: scenario.title }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                         lineNumber: 215,
                         columnNumber: 27
                       }, void 0),
@@ -4661,7 +4661,7 @@ const ProductMarketFitErosion = () => {
                           "Pain Level: ",
                           scenario.painLevel
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                           lineNumber: 219,
                           columnNumber: 29
                         }, void 0),
@@ -4669,31 +4669,31 @@ const ProductMarketFitErosion = () => {
                           "Typical Time Stuck: ",
                           scenario.timeStuck
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                           lineNumber: 220,
                           columnNumber: 29
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                         lineNumber: 218,
                         columnNumber: 27
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 214,
                       columnNumber: 25
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-panel rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl", children: scenario.id }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 223,
                       columnNumber: 25
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                     lineNumber: 213,
                     columnNumber: 23
                   }, void 0) }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                     lineNumber: 212,
                     columnNumber: 21
                   }, void 0),
@@ -4703,13 +4703,13 @@ const ProductMarketFitErosion = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-important-accessible dark:text-white font-bold text-red-800 dark:text-red-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💬" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                               lineNumber: 236,
                               columnNumber: 31
                             }, void 0),
                             "Customer Says:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                             lineNumber: 235,
                             columnNumber: 29
                           }, void 0),
@@ -4718,40 +4718,40 @@ const ProductMarketFitErosion = () => {
                             scenario.customerSays,
                             '"'
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                             lineNumber: 239,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                           lineNumber: 234,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4 border-l-4 border-purple-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-important-accessible dark:text-white font-bold text-purple-800 dark:text-purple-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💭" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                               lineNumber: 246,
                               columnNumber: 31
                             }, void 0),
                             "Customer Thinks:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                             lineNumber: 245,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.customerThinks }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                             lineNumber: 249,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                           lineNumber: 244,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                         lineNumber: 233,
                         columnNumber: 25
                       }, void 0),
@@ -4759,109 +4759,109 @@ const ProductMarketFitErosion = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border-l-4 border-orange-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-important-accessible dark:text-white font-bold text-orange-800 dark:text-orange-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🔍" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                               lineNumber: 259,
                               columnNumber: 31
                             }, void 0),
                             "Real Problem:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                             lineNumber: 258,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.realProblem }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                             lineNumber: 262,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                           lineNumber: 257,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border-l-4 border-green-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-important-accessible dark:text-white font-bold text-green-800 dark:text-green-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "✅" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                               lineNumber: 269,
                               columnNumber: 31
                             }, void 0),
                             "Solution:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                             lineNumber: 268,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.solution }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                             lineNumber: 272,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                           lineNumber: 267,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                         lineNumber: 256,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 230,
                       columnNumber: 23
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mt-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-important-accessible dark:text-white font-bold text-blue-800 dark:text-blue-300 mb-2 flex items-center", children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🧠" }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                           lineNumber: 282,
                           columnNumber: 27
                         }, void 0),
                         "Why This Works:"
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                         lineNumber: 281,
                         columnNumber: 25
                       }, void 0),
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-standard dark:text-gradient-safe font-medium", children: scenario.whyItWorks }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                         lineNumber: 285,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 280,
                       columnNumber: 23
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                     lineNumber: 229,
                     columnNumber: 21
                   }, void 0)
                 ] }, scenario.id, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 211,
                   columnNumber: 19
                 }, void 0)) }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 209,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 203,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-2xl p-8 border border-purple-200/50 dark:border-purple-800/50", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important-accessible dark:text-white text-2xl font-bold mb-4", children: "🚨 Stop Watching Your Market Fit Decay" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 298,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto", children: "Every month your messaging stays frozen while markets evolve, competitors with current positioning capture opportunities you're missing. Get your free PMF analysis and discover which erosion patterns are disconnecting you from your market." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 301,
                   columnNumber: 17
                 }, void 0),
@@ -4876,7 +4876,7 @@ const ProductMarketFitErosion = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                     lineNumber: 305,
                     columnNumber: 17
                   },
@@ -4892,75 +4892,75 @@ const ProductMarketFitErosion = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                     lineNumber: 311,
                     columnNumber: 17
                   },
                   void 0
                 )
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 297,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 296,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl font-bold mb-8 text-center", children: "Related Growth Plateau Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 322,
                   columnNumber: 15
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important-accessible dark:text-white text-xl font-bold mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/market-expansion-barriers`, className: "hover:text-purple-600 focus-visible:text-purple-600 transition-colors", children: "Market Expansion Barriers →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 328,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 327,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "Fit erosion often reveals expansion opportunities. Discover how positioning psychology unlocks adjacent markets." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 332,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                     lineNumber: 326,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-important-accessible dark:text-white text-xl font-bold mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/marketing-psychology`, className: "hover:text-purple-600 focus-visible:text-purple-600 transition-colors", children: "Marketing Psychology Fundamentals →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 338,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 337,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "Master customer awareness stages and positioning psychology that prevents and reverses market fit erosion." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                       lineNumber: 342,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                     lineNumber: 336,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                   lineNumber: 325,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
                 lineNumber: 321,
                 columnNumber: 13
               }, void 0)
@@ -4969,29 +4969,29 @@ const ProductMarketFitErosion = () => {
           void 0,
           true,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
             lineNumber: 166,
             columnNumber: 11
           },
           void 0
         ),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalFooter, { onShowForm: () => setShowDropdownForm(true) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
           lineNumber: 351,
           columnNumber: 11
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
         lineNumber: 125,
         columnNumber: 9
       }, void 0)
     ] }, void 0, true, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
       lineNumber: 122,
       columnNumber: 7
     }, void 0)
   ] }, void 0, true, {
-    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/ProductMarketFitErosion.tsx",
+    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/ProductMarketFitErosion.tsx",
     lineNumber: 105,
     columnNumber: 5
   }, void 0);
@@ -5099,7 +5099,7 @@ const CompetitivePressurePlateau = () => {
         className: "sr-only",
         id: "status-announcer",
         children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "sr-only", children: "Content loaded successfully" }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
           lineNumber: 113,
           columnNumber: 9
         }, void 0)
@@ -5107,7 +5107,7 @@ const CompetitivePressurePlateau = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
         lineNumber: 107,
         columnNumber: 7
       },
@@ -5123,7 +5123,7 @@ const CompetitivePressurePlateau = () => {
       void 0,
       false,
       {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
         lineNumber: 116,
         columnNumber: 7
       },
@@ -5131,87 +5131,87 @@ const CompetitivePressurePlateau = () => {
     ),
     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "competitive-pressure-page min-h-screen relative overflow-hidden dark:bg-gray-900", children: [
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(BackgroundGradient, {}, void 0, false, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
         lineNumber: 123,
         columnNumber: 9
       }, void 0),
       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative z-10", children: [
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalHeader, { onShowForm: () => setShowDropdownForm(true), showProgressBar: true }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
           lineNumber: 126,
           columnNumber: 11
         }, void 0),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "pt-20 md:pt-24 pb-16 bg-gradient-to-br from-red-900 via-red-950 to-black relative overflow-hidden", children: [
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(220,38,38,0.1)_0%,transparent_50%)]" }, void 0, false, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
             lineNumber: 130,
             columnNumber: 13
           }, void 0),
           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "relative max-w-5xl mx-auto px-6 lg:px-8", children: [
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mb-8", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("nav", { className: "flex items-center space-x-2 text-gradient-safe", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions`, className: "hover:text-red-400 focus-visible:text-red-400 transition-colors", children: "Growth Plateau Solutions" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 136,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { children: "→" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 137,
                 columnNumber: 19
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-red-400 font-semibold", children: "Competitive Pressure Plateau" }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 138,
                 columnNumber: 19
               }, void 0)
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
               lineNumber: 135,
               columnNumber: 17
             }, void 0) }, void 0, false, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
               lineNumber: 134,
               columnNumber: 15
             }, void 0),
             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center", children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "inline-flex items-center gap-2 bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 px-4 py-2 rounded-full text-sm font-semibold mb-6", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "w-2 h-2 bg-red-500 rounded-full animate-pulse" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 144,
                   columnNumber: 19
                 }, void 0),
                 "Bigger Competitors Winning"
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 143,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h1", { className: "heading-hero text-gradient-critical text-4xl md:text-6xl font-black mb-6 leading-tight", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-red-400", children: "Competitive Pressure" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 148,
                   columnNumber: 19
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "block text-white mt-2", children: "Plateau Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 149,
                   columnNumber: 19
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 147,
                 columnNumber: 17
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed", children: [
                 "Bigger competitors crushing you? The problem isn't their size or budget—it's that you're trying to",
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "text-red-400 font-semibold", children: " compete on their terms" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 153,
                   columnNumber: 19
                 }, void 0),
                 " instead of creating unique positioning where you win."
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 151,
                 columnNumber: 17
               }, void 0),
@@ -5226,24 +5226,24 @@ const CompetitivePressurePlateau = () => {
                 void 0,
                 false,
                 {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 155,
                   columnNumber: 17
                 },
                 void 0
               )
             ] }, void 0, true, {
-              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
               lineNumber: 142,
               columnNumber: 15
             }, void 0)
           ] }, void 0, true, {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
             lineNumber: 131,
             columnNumber: 13
           }, void 0)
         ] }, void 0, true, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
           lineNumber: 129,
           columnNumber: 11
         }, void 0),
@@ -5257,86 +5257,86 @@ const CompetitivePressurePlateau = () => {
             children: [
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-2xl shadow-xl border border-red-200/50 dark:border-red-800/50 p-8", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center", children: "Why David Beats Goliath (Strategic Positioning Over Brute Force)" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 175,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-lg text-standard dark:text-gradient-safe mb-6 leading-relaxed text-center", children: "Competitive pressure plateaus happen when smaller companies try to compete on bigger companies' terms—features, price, or scale. The solution isn't bigger budgets; it's smarter positioning that makes their advantages irrelevant." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 178,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-3 gap-6 mb-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-red-600 mb-1", children: "76%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 184,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Feel competitor pressure" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 185,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                     lineNumber: 183,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-orange-accessible mb-1", children: "38%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 188,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Try to match features" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 189,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                     lineNumber: 187,
                     columnNumber: 19
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-2xl font-bold text-green-600 mb-1", children: "14%" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 192,
                       columnNumber: 21
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-sm text-optional dark:luminescence-layer-3", children: "Win with unique positioning" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 193,
                       columnNumber: 21
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                     lineNumber: 191,
                     columnNumber: 19
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 182,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-standard dark:text-gradient-safe font-semibold text-center", children: "The pattern: Competitor pressure → Feature matching → Price competition → Plateau" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 196,
                   columnNumber: 17
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 174,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 173,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-12 text-center", children: "6 Competitive Pressure Patterns (Which is Yours?)" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 204,
                   columnNumber: 15
                 }, void 0),
@@ -5344,7 +5344,7 @@ const CompetitivePressurePlateau = () => {
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: `bg-gradient-to-r ${scenario.gradient} p-6`, children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "flex justify-between items-start", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-2xl font-bold text-white mb-2", children: scenario.title }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                         lineNumber: 214,
                         columnNumber: 27
                       }, void 0),
@@ -5353,7 +5353,7 @@ const CompetitivePressurePlateau = () => {
                           "Pain Level: ",
                           scenario.painLevel
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                           lineNumber: 218,
                           columnNumber: 29
                         }, void 0),
@@ -5361,31 +5361,31 @@ const CompetitivePressurePlateau = () => {
                           "Typical Time Stuck: ",
                           scenario.timeStuck
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                           lineNumber: 219,
                           columnNumber: 29
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                         lineNumber: 217,
                         columnNumber: 27
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 213,
                       columnNumber: 25
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-panel rounded-full w-12 h-12 flex items-center justify-center text-white font-bold text-xl", children: scenario.id }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 222,
                       columnNumber: 25
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                     lineNumber: 212,
                     columnNumber: 23
                   }, void 0) }, void 0, false, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                     lineNumber: 211,
                     columnNumber: 21
                   }, void 0),
@@ -5395,13 +5395,13 @@ const CompetitivePressurePlateau = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-red-800 dark:text-red-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💬" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                               lineNumber: 235,
                               columnNumber: 31
                             }, void 0),
                             "Customer Says:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                             lineNumber: 234,
                             columnNumber: 29
                           }, void 0),
@@ -5410,40 +5410,40 @@ const CompetitivePressurePlateau = () => {
                             scenario.customerSays,
                             '"'
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                             lineNumber: 238,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                           lineNumber: 233,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border-l-4 border-orange-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-orange-800 dark:text-orange-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "💭" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                               lineNumber: 245,
                               columnNumber: 31
                             }, void 0),
                             "Customer Thinks:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                             lineNumber: 244,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.customerThinks }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                             lineNumber: 248,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                           lineNumber: 243,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                         lineNumber: 232,
                         columnNumber: 25
                       }, void 0),
@@ -5451,109 +5451,109 @@ const CompetitivePressurePlateau = () => {
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4 border-l-4 border-yellow-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-yellow-800 dark:text-yellow-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🔍" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                               lineNumber: 258,
                               columnNumber: 31
                             }, void 0),
                             "Real Problem:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                             lineNumber: 257,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.realProblem }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                             lineNumber: 261,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                           lineNumber: 256,
                           columnNumber: 27
                         }, void 0),
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border-l-4 border-green-500", children: [
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-green-800 dark:text-green-300 mb-2 flex items-center", children: [
                             /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "✅" }, void 0, false, {
-                              fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                              fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                               lineNumber: 268,
                               columnNumber: 31
                             }, void 0),
                             "Solution:"
                           ] }, void 0, true, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                             lineNumber: 267,
                             columnNumber: 29
                           }, void 0),
                           /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: scenario.solution }, void 0, false, {
-                            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                             lineNumber: 271,
                             columnNumber: 29
                           }, void 0)
                         ] }, void 0, true, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                           lineNumber: 266,
                           columnNumber: 27
                         }, void 0)
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                         lineNumber: 255,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 229,
                       columnNumber: 23
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "mt-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800", children: [
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h4", { className: "heading-md text-black-important dark:text-white font-bold text-blue-800 dark:text-blue-300 mb-2 flex items-center", children: [
                         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("span", { className: "mr-2", children: "🧠" }, void 0, false, {
-                          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                           lineNumber: 281,
                           columnNumber: 27
                         }, void 0),
                         "Why This Works:"
                       ] }, void 0, true, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                         lineNumber: 280,
                         columnNumber: 25
                       }, void 0),
                       /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-standard dark:text-gradient-safe font-medium", children: scenario.whyItWorks }, void 0, false, {
-                        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                         lineNumber: 284,
                         columnNumber: 25
                       }, void 0)
                     ] }, void 0, true, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 279,
                       columnNumber: 23
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                     lineNumber: 228,
                     columnNumber: 21
                   }, void 0)
                 ] }, scenario.id, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 210,
                   columnNumber: 19
                 }, void 0)) }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 208,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 203,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "text-center bg-gradient-to-r from-red-50 to-orange-50 dark:from-red-900/20 dark:to-orange-900/20 rounded-2xl p-8 border border-red-200/50 dark:border-red-800/50", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "text-2xl font-bold text-gray-900 dark:text-white mb-4", children: "🚨 Stop Playing by Their Rules" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 297,
                   columnNumber: 17
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-black-important dark:text-gradient-critical text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto", children: "Every month you compete on their terms—features, price, scale—you're fighting a battle you can't win. Get your free competitive analysis and discover unique positioning angles that make their size irrelevant." }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 300,
                   columnNumber: 17
                 }, void 0),
@@ -5568,7 +5568,7 @@ const CompetitivePressurePlateau = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                     lineNumber: 304,
                     columnNumber: 17
                   },
@@ -5584,75 +5584,75 @@ const CompetitivePressurePlateau = () => {
                   void 0,
                   false,
                   {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                     lineNumber: 310,
                     columnNumber: 17
                   },
                   void 0
                 )
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 296,
                 columnNumber: 15
               }, void 0) }, void 0, false, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 295,
                 columnNumber: 13
               }, void 0),
               /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("section", { className: "mb-16", children: [
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h2", { className: "heading-xl text-gradient-critical text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center", children: "Related Growth Plateau Solutions" }, void 0, false, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 321,
                   columnNumber: 15
                 }, void 0),
                 /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "grid md:grid-cols-2 gap-6", children: [
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/growth-plateau-solutions/customer-acquisition-stall`, className: "hover:text-red-600 focus-visible:text-red-600 transition-colors", children: "Customer Acquisition Stall →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 327,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 326,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "Competitive pressure often drives CAC inflation. Learn psychology-driven acquisition that sidesteps competitor wars." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 331,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                     lineNumber: 325,
                     columnNumber: 17
                   }, void 0),
                   /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("div", { className: "glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow", children: [
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("h3", { className: "heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3", children: /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("a", { href: `${"/reboot"}/fractional-cmo-guide`, className: "hover:text-red-600 focus-visible:text-red-600 transition-colors", children: "Need Strategic Marketing Leadership? →" }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 337,
                       columnNumber: 21
                     }, void 0) }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 336,
                       columnNumber: 19
                     }, void 0),
                     /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV("p", { className: "text-standard dark:text-gradient-safe", children: "Competitive positioning requires strategic thinking. Discover if fractional CMO expertise can create winning differentiation." }, void 0, false, {
-                      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                       lineNumber: 341,
                       columnNumber: 19
                     }, void 0)
                   ] }, void 0, true, {
-                    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                     lineNumber: 335,
                     columnNumber: 17
                   }, void 0)
                 ] }, void 0, true, {
-                  fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                  fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                   lineNumber: 324,
                   columnNumber: 15
                 }, void 0)
               ] }, void 0, true, {
-                fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+                fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
                 lineNumber: 320,
                 columnNumber: 13
               }, void 0)
@@ -5661,29 +5661,29 @@ const CompetitivePressurePlateau = () => {
           void 0,
           true,
           {
-            fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+            fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
             lineNumber: 166,
             columnNumber: 11
           },
           void 0
         ),
         /* @__PURE__ */ jsxDevRuntimeExports.jsxDEV(GlobalFooter, { onShowForm: () => setShowDropdownForm(true) }, void 0, false, {
-          fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+          fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
           lineNumber: 350,
           columnNumber: 11
         }, void 0)
       ] }, void 0, true, {
-        fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+        fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
         lineNumber: 125,
         columnNumber: 9
       }, void 0)
     ] }, void 0, true, {
-      fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+      fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
       lineNumber: 122,
       columnNumber: 7
     }, void 0)
   ] }, void 0, true, {
-    fileName: "/tmp/reboot-dev-build-20250821-142917/src/pages/CompetitivePressurePlateau.tsx",
+    fileName: "/tmp/reboot-dev-build-20250821-152047/src/pages/CompetitivePressurePlateau.tsx",
     lineNumber: 105,
     columnNumber: 5
   }, void 0);
@@ -5702,4 +5702,4 @@ export {
   TeamGrowthBottlenecks$1 as T,
   CompetitivePressurePlateau$1 as a
 };
-//# sourceMappingURL=pages-solutions-0zVIhfQC.js.map
+//# sourceMappingURL=pages-solutions-5Ep-1M1l.js.map
