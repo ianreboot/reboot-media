@@ -2,15 +2,8 @@ import { useState, useEffect } from 'react';
 import { getCanonicalUrl } from './utils/urls';
 import GlobalHeader from './components/GlobalHeader';
 import GlobalFooter from './components/GlobalFooter';
-import EnhancedPricingCards from './components/EnhancedPricingCards';
-import EnhancedLeadForm from './components/EnhancedLeadForm';
-import ExitIntentManager from './components/ExitIntentModal';
-import { ABTestingDashboardTrigger } from './components/ABTestingDashboard';
-import { 
-  MobileStickyBar, 
-  MobileScrollProgress,
-  MobileExitIntentDetector 
-} from './components/MobileConversionOptimizer';
+import SimplePricingCards from './components/SimplePricingCards';
+import SimpleLeadForm from './components/SimpleLeadForm';
 import SchemaMarkup from './components/SchemaMarkup';
 import SEOHead from './components/SEOHead';
 import BackgroundGradient from './components/BackgroundGradient';
@@ -19,10 +12,6 @@ import analytics from './utils/simpleAnalytics';
 import ErrorBoundary from './components/ErrorBoundary';
 import { useLeadForm } from './contexts/LeadFormContext';
 import { useErrorReporter } from './contexts/ErrorContext';
-import { ABTestProvider } from './contexts/ABTestContext';
-import { ConversionOptimizationProvider } from './contexts/ConversionOptimizationContext';
-import { usePricingOptimization } from './hooks/useABTestHooks';
-import { useScrollOptimization, useTimeBasedOptimization, useClickHeatmap } from './hooks/useABTestHooks';
 
 // Words to cycle through - ordered by importance to target demographics
 const lostItems = [
@@ -56,10 +45,8 @@ const MainApp = () => {
   const reportError = useErrorReporter();
   
   // A/B Testing and Optimization Hooks
-  usePricingOptimization(); // Initialize pricing optimization
   
   // Initialize optimization hooks
-  useScrollOptimization();
   useTimeBasedOptimization();
   useClickHeatmap();
   
@@ -451,8 +438,8 @@ const MainApp = () => {
           </div>
 
           {/* Enhanced Pricing Cards with A/B Testing */}
-          <ErrorBoundary level="component" name="EnhancedPricingCards">
-            <EnhancedPricingCards />
+          <ErrorBoundary level="component" name="SimplePricingCards">
+            <SimplePricingCards />
           </ErrorBoundary>
 
           {/* Bottom Value Proposition */}
@@ -711,24 +698,18 @@ const MainApp = () => {
       </ErrorBoundary>
 
       {/* Enhanced Lead Form with A/B Testing */}
-      <ErrorBoundary level="component" name="EnhancedLeadForm">
-        <EnhancedLeadForm />
+      <ErrorBoundary level="component" name="SimpleLeadForm">
+        <SimpleLeadForm />
       </ErrorBoundary>
 
       {/* Exit Intent Management */}
-      <ErrorBoundary level="component" name="ExitIntentManager">
-        <ExitIntentManager />
-      </ErrorBoundary>
 
       {/* Mobile Conversion Optimizers */}
       <ErrorBoundary level="component" name="MobileOptimization">
-        <MobileStickyBar />
-        <MobileScrollProgress />
         <MobileExitIntentDetector />
       </ErrorBoundary>
 
       {/* A/B Testing Dashboard (Development Only) */}
-      <ABTestingDashboardTrigger />
         </div>
       </div>
     </>
@@ -738,11 +719,7 @@ const MainApp = () => {
 // App Wrapper with Context Providers
 function App() {
   return (
-    <ABTestProvider>
-      <ConversionOptimizationProvider>
-        <MainApp />
-      </ConversionOptimizationProvider>
-    </ABTestProvider>
+    <MainApp />
   );
 }
 

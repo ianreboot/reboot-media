@@ -9,8 +9,6 @@ import type { Swiper as SwiperType } from 'swiper';
 // @ts-expect-error - CSS import does not have TypeScript definitions
 import 'swiper/css';
 import '../styles/swiper-custom.css';
-import { useConversionOptimization } from '../contexts/ConversionOptimizationContext';
-import { usePricingOptimization, useCTAOptimization } from '../hooks/useABTestHooks';
 import { useLeadForm } from '../contexts/LeadFormContext';
 
 interface ServicePlan {
@@ -372,14 +370,12 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
 const EnhancedPricingCards = () => {
   const swiperRef = useRef<SwiperType | null>(null);
-  const { leadScore, trackInteraction } = useConversionOptimization();
   const { 
     pricingStyle, 
     shouldShowSavings, 
     shouldEmphasizeValue, 
     trackEngagement 
-  } = usePricingOptimization();
-  const { trackClick } = useCTAOptimization();
+  } = { pricingTestVariant: 'A', selectedTier: null, handleTierClick: () => {}, lastClickedTier: null, pricingConfidence: 0 }; // Simplified without A/B testing
   const { setShowDropdownForm } = useLeadForm();
 
   useEffect(() => {
@@ -401,27 +397,27 @@ const EnhancedPricingCards = () => {
 
   // Track pricing section view
   useEffect(() => {
-    trackInteraction({
+    // trackInteraction({
       type: 'scroll',
       element: 'pricing_section',
       metadata: { 
         pricingStyle, 
-        leadTier: leadScore?.tier || 'Unqualified',
+        leadTier: { tier: "Unqualified" }?.tier || 'Unqualified',
         shouldShowSavings,
         shouldEmphasizeValue
       }
     });
-  }, [trackInteraction, pricingStyle, leadScore, shouldShowSavings, shouldEmphasizeValue]);
+  }, [trackInteraction, pricingStyle, { tier: "Unqualified" }, shouldShowSavings, shouldEmphasizeValue]);
 
   const handleEngagement = (action: string, plan: string) => {
     trackEngagement(action, plan);
-    trackInteraction({
+    // trackInteraction({
       type: 'click',
       element: `pricing_${action}`,
       value: plan,
       metadata: { 
         pricingStyle, 
-        leadTier: leadScore?.tier || 'Unqualified',
+        leadTier: { tier: "Unqualified" }?.tier || 'Unqualified',
         action,
         plan
       }
@@ -430,27 +426,27 @@ const EnhancedPricingCards = () => {
 
   const handleCTAClick = (plan: string) => {
     handleEngagement('get_started', plan);
-    trackClick('pricing_cards');
+    // trackClick('pricing_cards');
     
     // Show lead form
     setShowDropdownForm(true);
     
     // Track high-intent behavior
-    trackInteraction({
+    // trackInteraction({
       type: 'click',
       element: 'pricing_cta',
       value: plan,
       metadata: { 
         source: 'pricing_cards',
         plan,
-        leadTier: leadScore?.tier || 'Unqualified'
+        leadTier: { tier: "Unqualified" }?.tier || 'Unqualified'
       }
     });
   };
 
   // Get personalized section title based on lead tier
   const getSectionTitle = () => {
-    switch (leadScore?.tier) {
+    switch ({ tier: "Unqualified" }?.tier) {
       case 'Hot':
         return {
           title: "Choose Your Growth Acceleration Plan",
@@ -488,7 +484,7 @@ const EnhancedPricingCards = () => {
         </p>
         
         {/* Lead Score Indicator for Hot Leads */}
-        {leadScore?.tier === 'Hot' && (
+        {{ tier: "Unqualified" }?.tier === 'Hot' && (
           <div className="inline-flex items-center bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-full px-6 py-2 mb-6">
             <span className="w-3 h-3 bg-red-500 rounded-full mr-3 animate-pulse"></span>
             <span className="text-red-800 font-bold text-sm">
@@ -555,7 +551,7 @@ const EnhancedPricingCards = () => {
         }}
         className="!py-12"
         onSlideChange={(swiper) => {
-          trackInteraction({
+          // trackInteraction({
             type: 'click',
             element: 'pricing_carousel',
             value: swiper.activeIndex,
@@ -570,7 +566,7 @@ const EnhancedPricingCards = () => {
           >
             <PricingCard 
               service={service}
-              leadTier={leadScore?.tier || 'Unqualified'}
+              leadTier={{ tier: "Unqualified" }?.tier || 'Unqualified'}
               pricingStyle={pricingStyle}
               shouldShowSavings={shouldShowSavings}
               shouldEmphasizeValue={shouldEmphasizeValue}
@@ -582,7 +578,7 @@ const EnhancedPricingCards = () => {
       </Swiper>
 
       {/* Bottom CTA for Hot Leads */}
-      {leadScore?.tier === 'Hot' && (
+      {{ tier: "Unqualified" }?.tier === 'Hot' && (
         <div className="text-center mt-12">
           <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-2xl p-6 max-w-lg mx-auto">
             <h3 className="text-xl font-black text-red-900 mb-3">
@@ -603,7 +599,7 @@ const EnhancedPricingCards = () => {
       )}
 
       {/* Social Proof for Warm/Cold Leads */}
-      {(leadScore?.tier === 'Warm' || leadScore?.tier === 'Cold') && (
+      {({ tier: "Unqualified" }?.tier === 'Warm' || { tier: "Unqualified" }?.tier === 'Cold') && (
         <div className="text-center mt-12">
           <div className="bg-gray-50 rounded-xl p-6 max-w-2xl mx-auto">
             <p className="text-gray-700 font-medium mb-2">
