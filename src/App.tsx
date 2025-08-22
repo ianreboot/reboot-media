@@ -44,11 +44,11 @@ const MainApp = () => {
   const { setShowDropdownForm } = useLeadForm();
   const reportError = useErrorReporter();
   
-  // A/B Testing and Optimization Hooks
+  // A/B Testing and Optimization Hooks - REMOVED (over-engineered for marketing site)
   
-  // Initialize optimization hooks
-  useTimeBasedOptimization();
-  useClickHeatmap();
+  // Initialize optimization hooks - COMMENTED OUT MISSING FUNCTIONS
+  // useTimeBasedOptimization();
+  // useClickHeatmap();
   
   // Simple Core Web Vitals tracking
   useCoreWebVitals();
@@ -704,10 +704,10 @@ const MainApp = () => {
 
       {/* Exit Intent Management */}
 
-      {/* Mobile Conversion Optimizers */}
-      <ErrorBoundary level="component" name="MobileOptimization">
+      {/* Mobile Conversion Optimizers - REMOVED (over-engineered component missing) */}
+      {/* <ErrorBoundary level="component" name="MobileOptimization">
         <MobileExitIntentDetector />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
 
       {/* A/B Testing Dashboard (Development Only) */}
         </div>
