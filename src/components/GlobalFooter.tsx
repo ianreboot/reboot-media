@@ -69,10 +69,10 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                 </a>
                 
                 <div className="max-w-2xl">
-                  <p className="text-2xl font-light text-gray-300 leading-relaxed mb-4">
+                  <p className="text-lg font-light text-gray-300 leading-relaxed mb-4">
                     Fortune 500 marketing expertise without the corporate price tag.
                   </p>
-                  <p className="text-base text-gray-400 leading-relaxed">
+                  <p className="text-sm text-gray-400 leading-relaxed">
                     We transform ambitious companies with proven C-level strategies that actually work. 
                     No fluff, no theory – just battle-tested approaches from managing $2B+ in revenue.
                   </p>
