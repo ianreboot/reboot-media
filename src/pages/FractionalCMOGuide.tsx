@@ -97,7 +97,7 @@ const FractionalCMOGuide = () => {
               <span className="text-blue-400">Fractional CMO</span> vs 
               <span className="block text-white mt-2">Marketing Agency vs Full-Time CMO</span>
             </h1>
-            <p className="text-xl text-black-important dark:text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
               The complete decision framework for $500K-$1.5M companies. Compare costs, results, timelines, and strategic impact to choose the approach that delivers faster, predictable growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -127,28 +127,28 @@ const FractionalCMOGuide = () => {
           {/* Introduction */}
           <section className="mb-16">
             <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8">
-              <h2 className="heading-lg text-black-important dark:text-white mb-6">
+              <h2 className="heading-lg text-white mb-6">
                 The Complete Marketing Leadership Decision Guide
               </h2>
-              <p className="text-lg text-standard dark:text-gradient-safe mb-6 leading-relaxed">
+              <p className="text-lg text-white/90 mb-6 leading-relaxed">
                 Most companies waste months and thousands of dollars choosing the wrong marketing approach. This guide reveals the real decision 
                 criteria behind fractional CMO, agency, full-time, and in-house options—plus when to transition between them.
               </p>
               <div className="grid md:grid-cols-3 gap-6 mb-6">
                 <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
                   <div className="text-2xl font-bold text-blue-accessible mb-1">73%</div>
-                  <p className="text-sm text-optional dark:luminescence-layer-3">Choose based on ego, not ROI</p>
+                  <p className="text-sm text-white/80">Choose based on ego, not ROI</p>
                 </div>
                 <div className="text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
                   <div className="text-2xl font-bold text-orange-accessible mb-1">$47K</div>
-                  <p className="text-sm text-optional dark:luminescence-layer-3">Average cost of wrong choice</p>
+                  <p className="text-sm text-white/80">Average cost of wrong choice</p>
                 </div>
                 <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
                   <div className="text-2xl font-bold text-green-600 mb-1">18mo</div>
-                  <p className="text-sm text-optional dark:luminescence-layer-3">Wasted with poor fit</p>
+                  <p className="text-sm text-white/80">Wasted with poor fit</p>
                 </div>
               </div>
-              <p className="text-standard dark:text-gradient-safe font-semibold">
+              <p className="text-white/90 font-semibold">
                 The pattern: Status decision → Wrong fit → Plateau → Switch → Growth
               </p>
             </div>
@@ -176,7 +176,7 @@ const FractionalCMOGuide = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-standard dark:text-gradient-safe mb-4 leading-relaxed">
+                  <p className="text-white/90 mb-4 leading-relaxed">
                     Most companies think "we need execution help" when they really need strategy refinement. 
                     <strong className="text-blue-accessible"> Who's accountable when tactics fail?</strong>
                   </p>
@@ -200,7 +200,7 @@ const FractionalCMOGuide = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-standard dark:text-gradient-safe mb-4 leading-relaxed">
+                  <p className="text-white/90 mb-4 leading-relaxed">
                     "We're big enough for a full-time CMO" is often ego talking. 
                     <strong className="text-green-600"> Can you give them $200K worth of meaningful work?</strong>
                   </p>
@@ -224,7 +224,7 @@ const FractionalCMOGuide = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-standard dark:text-gradient-safe mb-4 leading-relaxed">
+                  <p className="text-white/90 mb-4 leading-relaxed">
                     Consultants give great advice, but who implements? 
                     <strong className="text-purple-600"> Fractional CMOs own results, not just recommendations.</strong>
                   </p>
@@ -248,7 +248,7 @@ const FractionalCMOGuide = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-standard dark:text-gradient-safe mb-4 leading-relaxed">
+                  <p className="text-white/90 mb-4 leading-relaxed">
                     Building internal teams costs 2.5x base salaries. 
                     <strong className="text-indigo-600"> How long can you wait for competency?</strong>
                   </p>
@@ -272,7 +272,7 @@ const FractionalCMOGuide = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-standard dark:text-gradient-safe mb-4 leading-relaxed">
+                  <p className="text-white/90 mb-4 leading-relaxed">
                     Revenue stage, growth trajectory, and internal capabilities determine optimal choice. 
                     <strong className="text-red-600"> Use the decision matrix.</strong>
                   </p>
@@ -296,7 +296,7 @@ const FractionalCMOGuide = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-standard dark:text-gradient-safe mb-4 leading-relaxed">
+                  <p className="text-white/90 mb-4 leading-relaxed">
                     Hourly rates lie. True costs include management overhead, ramp time, and opportunity costs. 
                     <strong className="text-teal-600"> See the real numbers.</strong>
                   </p>
@@ -320,7 +320,7 @@ const FractionalCMOGuide = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <p className="text-standard dark:text-gradient-safe mb-4 leading-relaxed">
+                  <p className="text-white/90 mb-4 leading-relaxed">
                     Growth stages require different marketing approaches. Agency → Fractional → Full-time isn't always the path. 
                     <strong className="text-pink-600"> When to switch and how to do it right.</strong>
                   </p>
@@ -336,10 +336,10 @@ const FractionalCMOGuide = () => {
           {/* Call to Action */}
           <section className="mb-16">
             <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8 border border-white/20 dark:border-slate-700/20">
-              <h3 className="heading-lg text-black-important dark:text-white mb-4">
+              <h3 className="heading-lg text-white mb-4">
                 🚨 Stop Making the $47,000 Mistake
               </h3>
-              <p className="text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto">
+              <p className="text-lg text-white/90 mb-6 max-w-3xl mx-auto">
                 Most companies choose marketing approaches based on status or emotion, not ROI analysis. Get your free decision analysis 
                 and discover which approach delivers the fastest, most predictable growth for your specific situation.
               </p>
@@ -357,27 +357,27 @@ const FractionalCMOGuide = () => {
 
           {/* Related Resources */}
           <section className="mb-16">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-8 text-center">
+            <h2 className="text-3xl font-bold text-white mb-8 text-center">
               Related Marketing Leadership Resources
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-xl font-bold text-white mb-3">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                     8 Proven Plateau Breakthrough Patterns →
                   </a>
                 </h3>
-                <p className="text-standard dark:text-gradient-safe">
+                <p className="text-white/80">
                   Marketing leadership choices often follow revenue plateaus. Discover psychology-driven solutions for breaking through growth ceilings.
                 </p>
               </div>
               <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">
+                <h3 className="text-xl font-bold text-white mb-3">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                     5 Awareness Stages That Convert →
                   </a>
                 </h3>
-                <p className="text-standard dark:text-gradient-safe">
+                <p className="text-white/80">
                   Master the customer awareness stages and conversion psychology that separates great marketing leaders from tacticians.
                 </p>
               </div>

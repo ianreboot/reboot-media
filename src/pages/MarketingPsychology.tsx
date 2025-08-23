@@ -95,7 +95,7 @@ const MarketingPsychology = () => {
             
             {/* Strategic CTA */}
             <div className="glass-card-light rounded-2xl shadow-xl border border-orange-500/50 dark:border-orange-400/50 border-l-4 border-l-orange-500 p-6 mb-8">
-              <p className="text-black-important dark:text-gradient-critical font-semibold mb-4">
+              <p className="text-white font-semibold mb-4">
                 🚨 <strong>Warning:</strong> Every day you use psychology-ignorant marketing costs you qualified prospects
               </p>
               <button aria-label="Opens contact form for free marketing analysis" 
@@ -125,16 +125,16 @@ const MarketingPsychology = () => {
                     <span className="text-red-600 font-bold text-lg">1</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-black-important dark:text-gradient-critical mb-2">Unaware Stage</h3>
-                    <p className="text-black-optional dark:text-gradient-safe">They don't know they have a problem</p>
+                    <h3 className="heading-lg text-white mb-2">Unaware Stage</h3>
+                    <p className="text-white/80">They don't know they have a problem</p>
                   </div>
                 </div>
                 
-                <p className="text-black-standard dark:text-gradient-safe mb-4">
+                <p className="text-white/90 mb-4">
                   These prospects think everything is fine. They're saying things like "We just need more leads" or "No one understands our product." The real issue? They're solving the wrong problem entirely.
                 </p>
                 
-                <p className="text-black-standard dark:text-gradient-safe mb-6">
+                <p className="text-white/90 mb-6">
                   Most founders make the fatal mistake of talking features to people who don't even know they're bleeding money. Want to see exactly what customers are really thinking and how to turn that confusion into clarity?
                 </p>
 
@@ -155,20 +155,20 @@ const MarketingPsychology = () => {
                     <span className="text-orange-accessible font-bold text-lg">2</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-black-important dark:text-gradient-critical mb-2">Problem-Aware Stage</h3>
-                    <p className="text-black-optional dark:text-gradient-safe">They know they have a problem but not the solution</p>
+                    <h3 className="heading-lg text-white mb-2">Problem-Aware Stage</h3>
+                    <p className="text-white/80">They know they have a problem but not the solution</p>
                   </div>
                 </div>
-                <p className="text-black-standard dark:text-gradient-safe mb-4">
+                <p className="text-white/90 mb-4">
                   These prospects are frustrated. They say things like "Our marketing isn't working anymore" or "CAC keeps going up but we don't know why." They're throwing solutions at the wall hoping something sticks.
                 </p>
                 
-                <p className="text-black-standard dark:text-gradient-safe mb-6">
+                <p className="text-white/90 mb-6">
                   The key? They don't need more tactics—they need a diagnosis. They're treating symptoms without understanding the disease. Want to see how to guide them from confusion to clarity?
                 </p>
                 <div className="mt-6 p-4 bg-slate-800/60 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-700/20">
-                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Example Headline:</p>
-                  <p className="text-black-critical dark:text-gradient-critical">"Why Your Marketing Feels Scattered (And the 3 Systems That Fix It)"</p>
+                  <p className="text-sm text-white/80 font-medium mb-2">Example Headline:</p>
+                  <p className="text-white">"Why Your Marketing Feels Scattered (And the 3 Systems That Fix It)"</p>
                 </div>
                 
                 <div className="mt-6">
@@ -188,21 +188,21 @@ const MarketingPsychology = () => {
                     <span className="text-yellow-600 font-bold text-lg">3</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-black-important dark:text-gradient-critical mb-2">Solution-Aware Stage</h3>
-                    <p className="text-black-optional dark:text-gradient-safe">They know solutions exist and are comparing options</p>
+                    <h3 className="heading-lg text-white mb-2">Solution-Aware Stage</h3>
+                    <p className="text-white/80">They know solutions exist and are comparing options</p>
                   </div>
                 </div>
-                <p className="text-black-standard dark:text-gradient-safe mb-4">
+                <p className="text-white/90 mb-4">
                   These prospects are comparison shopping. They say "Should we hire an agency or consultant?" and "Everyone looks the same." They have spreadsheets comparing options but can't figure out meaningful differences.
                 </p>
                 
-                <p className="text-black-standard dark:text-gradient-safe mb-6">
+                <p className="text-white/90 mb-6">
                   The secret? They're not comparing features—they're managing risk. The winner is whoever makes success feel most certain. Want to see how to become the obvious choice?
                 </p>
                 
                 <div className="mt-6 p-4 bg-slate-800/60 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-700/20">
-                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Example Headline:</p>
-                  <p className="text-black-critical dark:text-gradient-critical">"Marketing Agency vs Fractional CMO: Which Drives Faster Growth?"</p>
+                  <p className="text-sm text-white/80 font-medium mb-2">Example Headline:</p>
+                  <p className="text-white">"Marketing Agency vs Fractional CMO: Which Drives Faster Growth?"</p>
                 </div>
                 
                 <div className="mt-6">
@@ -222,21 +222,21 @@ const MarketingPsychology = () => {
                     <span className="text-green-600 font-bold text-lg">4</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-black-important dark:text-gradient-critical mb-2">Product-Aware Stage</h3>
-                    <p className="text-black-optional dark:text-gradient-safe">They know your solution and are evaluating you specifically</p>
+                    <h3 className="heading-lg text-white mb-2">Product-Aware Stage</h3>
+                    <p className="text-white/80">They know your solution and are evaluating you specifically</p>
                   </div>
                 </div>
-                <p className="text-black-standard dark:text-gradient-safe mb-4">
+                <p className="text-white/90 mb-4">
                   These prospects know about you specifically. They ask "Can you deliver for companies like us?" and "What if this doesn't work?" They're close to buying but need confidence.
                 </p>
                 
-                <p className="text-black-standard dark:text-gradient-safe mb-6">
+                <p className="text-white/90 mb-6">
                   They don't need more features—they need reassurance. Address their hidden fears, show relevant success stories, and make saying yes feel safe. Ready to handle the real objections?
                 </p>
                 
                 <div className="mt-6 p-4 bg-slate-800/60 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-700/20">
-                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Example Headline:</p>
-                  <p className="text-black-critical dark:text-gradient-critical">"How We Helped Norton Antivirus Grow from $100K to $3M Monthly Revenue"</p>
+                  <p className="text-sm text-white/80 font-medium mb-2">Example Headline:</p>
+                  <p className="text-white">"How We Helped Norton Antivirus Grow from $100K to $3M Monthly Revenue"</p>
                 </div>
                 
                 <div className="mt-6">
@@ -256,21 +256,21 @@ const MarketingPsychology = () => {
                     <span className="text-blue-accessible font-bold text-lg">5</span>
                   </div>
                   <div>
-                    <h3 className="heading-lg text-black-important dark:text-gradient-critical mb-2">Most Aware Stage</h3>
-                    <p className="text-black-optional dark:text-gradient-safe">They're ready to buy and just need the final push</p>
+                    <h3 className="heading-lg text-white mb-2">Most Aware Stage</h3>
+                    <p className="text-white/80">They're ready to buy and just need the final push</p>
                   </div>
                 </div>
-                <p className="text-black-standard dark:text-gradient-safe mb-4">
+                <p className="text-white/90 mb-4">
                   These prospects are ready. They say "Send me the contract" or "Let me run this by my team one more time." They want to move forward but need that final nudge.
                 </p>
                 
-                <p className="text-black-standard dark:text-gradient-safe mb-6">
+                <p className="text-white/90 mb-6">
                   Don't oversell—they're already sold. Remove friction, make the next step tiny, and give them control. The difference between "thinking about it" and signing today? Usually just one small fear.
                 </p>
                 
                 <div className="mt-6 p-4 bg-slate-800/60 backdrop-blur-sm rounded-lg border border-white/20 dark:border-slate-700/20">
-                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Example Headline:</p>
-                  <p className="text-black-critical dark:text-gradient-critical">"Get Your Free Marketing Analysis - Limited to 8 Clients This Quarter"</p>
+                  <p className="text-sm text-white/80 font-medium mb-2">Example Headline:</p>
+                  <p className="text-white">"Get Your Free Marketing Analysis - Limited to 8 Clients This Quarter"</p>
                 </div>
                 
                 <div className="mt-6">
@@ -296,56 +296,56 @@ const MarketingPsychology = () => {
               
               {/* Loss Aversion */}
               <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 glass-card-light">
-                <h3 className="text-xl font-bold text-black-critical dark:text-gradient-critical mb-4">1. Loss Aversion</h3>
-                <p className="text-black-standard dark:text-gradient-safe mb-4">
+                <h3 className="text-xl font-bold text-white mb-4">1. Loss Aversion</h3>
+                <p className="text-white/90 mb-4">
                   People are 2.5x more motivated to avoid loss than gain benefit. Frame your value proposition around what they'll lose by not acting.
                 </p>
                 <div className="bg-slate-800/60 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-700/20">
-                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Instead of:</p>
-                  <p className="text-black-standard dark:text-gradient-safe mb-3">"Get 30% more leads"</p>
-                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Say:</p>
-                  <p className="text-black-critical dark:text-gradient-critical font-medium">"Don't lose 30% of potential leads to broken messaging"</p>
+                  <p className="text-sm text-white/80 font-medium mb-2">Instead of:</p>
+                  <p className="text-white/90 mb-3">"Get 30% more leads"</p>
+                  <p className="text-sm text-white/80 font-medium mb-2">Say:</p>
+                  <p className="text-white font-medium">"Don't lose 30% of potential leads to broken messaging"</p>
                 </div>
               </div>
 
               {/* Social Proof */}
               <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 glass-card-light">
-                <h3 className="text-xl font-bold text-black-critical dark:text-gradient-critical mb-4">2. Social Proof</h3>
-                <p className="text-black-standard dark:text-gradient-safe mb-4">
+                <h3 className="text-xl font-bold text-white mb-4">2. Social Proof</h3>
+                <p className="text-white/90 mb-4">
                   People follow what others like them are doing. Use peer testimonials, expert endorsements, and usage indicators strategically.
                 </p>
                 <div className="bg-slate-800/60 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-700/20">
-                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Hierarchy:</p>
-                  <p className="text-black-critical dark:text-gradient-critical">1. Peer testimonials</p>
-                  <p className="text-black-critical dark:text-gradient-critical">2. Expert endorsements</p>
-                  <p className="text-black-critical dark:text-gradient-critical">3. Media mentions</p>
-                  <p className="text-black-critical dark:text-gradient-critical">4. Usage statistics</p>
+                  <p className="text-sm text-white/80 font-medium mb-2">Hierarchy:</p>
+                  <p className="text-white">1. Peer testimonials</p>
+                  <p className="text-white">2. Expert endorsements</p>
+                  <p className="text-white">3. Media mentions</p>
+                  <p className="text-white">4. Usage statistics</p>
                 </div>
               </div>
 
               {/* Scarcity */}
               <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 glass-card-light">
-                <h3 className="text-xl font-bold text-black-critical dark:text-gradient-critical mb-4">3. Scarcity & Urgency</h3>
-                <p className="text-black-standard dark:text-gradient-safe mb-4">
+                <h3 className="text-xl font-bold text-white mb-4">3. Scarcity & Urgency</h3>
+                <p className="text-white/90 mb-4">
                   Limited availability creates urgency. But it must be authentic - fake scarcity destroys trust faster than any other mistake.
                 </p>
                 <div className="bg-slate-800/60 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-700/20">
-                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Authentic Example:</p>
-                  <p className="text-black-critical dark:text-gradient-critical">"Limited to 8 clients for personalized attention" (if actually true)</p>
+                  <p className="text-sm text-white/80 font-medium mb-2">Authentic Example:</p>
+                  <p className="text-white">"Limited to 8 clients for personalized attention" (if actually true)</p>
                 </div>
               </div>
 
               {/* Authority */}
               <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 glass-card-light">
-                <h3 className="text-xl font-bold text-black-critical dark:text-gradient-critical mb-4">4. Authority Positioning</h3>
-                <p className="text-black-standard dark:text-gradient-safe mb-4">
+                <h3 className="text-xl font-bold text-white mb-4">4. Authority Positioning</h3>
+                <p className="text-white/90 mb-4">
                   People trust experts. Build authority through expertise signals, process transparency, and educational content.
                 </p>
                 <div className="bg-slate-800/60 backdrop-blur-sm rounded-lg p-4 border border-white/20 dark:border-slate-700/20">
-                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium mb-2">Authority Signals:</p>
-                  <p className="text-black-critical dark:text-gradient-critical">• Years of experience</p>
-                  <p className="text-black-critical dark:text-gradient-critical">• Specific credentials</p>
-                  <p className="text-black-critical dark:text-gradient-critical">• Detailed case studies</p>
+                  <p className="text-sm text-white/80 font-medium mb-2">Authority Signals:</p>
+                  <p className="text-white">• Years of experience</p>
+                  <p className="text-white">• Specific credentials</p>
+                  <p className="text-white">• Detailed case studies</p>
                 </div>
               </div>
 
@@ -353,10 +353,10 @@ const MarketingPsychology = () => {
 
             {/* Strategic CTA */}
             <div className="text-center glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8">
-              <h3 className="heading-lg text-black-important dark:text-gradient-critical mb-4">
+              <h3 className="heading-lg text-white mb-4">
                 Ready to Transform Your Marketing with Psychology?
               </h3>
-              <p className="text-black-standard dark:text-gradient-safe mb-6 max-w-2xl mx-auto">
+              <p className="text-white/90 mb-6 max-w-2xl mx-auto">
                 Don't let another month pass with marketing that ignores how customers actually think. Get your free psychology audit and discover exactly where your messaging is missing the mark.
               </p>
               <button aria-label="Opens contact form for free marketing analysis" 
@@ -378,28 +378,28 @@ const MarketingPsychology = () => {
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-red-600 mb-2">$100K</div>
-                  <p className="text-black-optional dark:text-gradient-safe">Monthly Revenue (Before)</p>
+                  <p className="text-white/80">Monthly Revenue (Before)</p>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-green-600 mb-2">$3M</div>
-                  <p className="text-black-optional dark:text-gradient-safe">Monthly Revenue (After)</p>
+                  <p className="text-white/80">Monthly Revenue (After)</p>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-blue-accessible mb-2">30X</div>
-                  <p className="text-black-optional dark:text-gradient-safe">Growth Multiple</p>
+                  <p className="text-white/80">Growth Multiple</p>
                 </div>
               </div>
               <div className="prose prose-lg max-w-none dark:prose-invert">
-                <h3 className="text-xl font-semibold text-black-critical dark:text-gradient-critical mb-4">The Psychology Strategy That Worked:</h3>
-                <ul className="text-black-standard dark:text-gradient-safe space-y-2">
+                <h3 className="text-xl font-semibold text-white mb-4">The Psychology Strategy That Worked:</h3>
+                <ul className="text-white/90 space-y-2">
                   <li><strong>Customer Awareness Mapping:</strong> Identified that customers were Solution-Aware about antivirus, not Problem-Aware about cyber threats</li>
                   <li><strong>Loss Aversion Messaging:</strong> "Don't wait until after you're hacked - protect what matters now"</li>
                   <li><strong>Social Proof Hierarchy:</strong> Featured real customer stories of prevented attacks and saved data</li>
                   <li><strong>Authority Building:</strong> Positioned Norton as the trusted security expert with 30+ years protecting millions</li>
                 </ul>
                 <div className="mt-6 p-4 bg-white/80 dark:bg-slate-800/80 rounded-lg">
-                  <p className="text-sm text-black-optional dark:text-gradient-safe font-medium">Key Insight:</p>
-                  <p className="text-black-critical dark:text-gradient-critical">
+                  <p className="text-sm text-white/80 font-medium">Key Insight:</p>
+                  <p className="text-white">
                     "The breakthrough came when we stopped talking about antivirus features and started educating customers about why they need protection before it's too late."
                   </p>
                 </div>
@@ -414,22 +414,22 @@ const MarketingPsychology = () => {
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow glass-card-light">
-                <h3 className="text-xl font-semibold text-black-critical dark:text-gradient-critical mb-3">
+                <h3 className="text-xl font-semibold text-white mb-3">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors">
                     Stuck in a Growth Plateau? →
                   </a>
                 </h3>
-                <p className="text-black-standard dark:text-gradient-safe">
+                <p className="text-white/90">
                   Learn why 67% of companies hit revenue plateaus and the psychological triggers that break through them.
                 </p>
               </div>
               <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 hover:shadow-lg focus-visible:shadow-lg transition-shadow glass-card-light">
-                <h3 className="text-xl font-semibold text-black-critical dark:text-gradient-critical mb-3">
+                <h3 className="text-xl font-semibold text-white mb-3">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors">
                     Fractional CMO vs Agency →
                   </a>
                 </h3>
-                <p className="text-black-standard dark:text-gradient-safe">
+                <p className="text-white/90">
                   Discover which approach delivers faster results when you need strategic marketing psychology expertise.
                 </p>
               </div>
