@@ -568,21 +568,33 @@ body {
   /* Gold flare - smaller movement range */
   .light-source-gold {
     isolation: isolate;
-    animation: gold-orbit 10s ease-in-out infinite;
+    animation: gold-orbit 12s linear infinite;
   }
   
   @keyframes gold-orbit {
     0% {
       transform: translate(0vw, 0vh) scale(1);
     }
+    12.5% {
+      transform: translate(30vw, -20vh) scale(1.02);
+    }
     25% {
-      transform: translate(60vw, -40vh) scale(1.1);
+      transform: translate(60vw, -40vh) scale(1.04);
+    }
+    37.5% {
+      transform: translate(80vw, -10vh) scale(1.06);
     }
     50% {
-      transform: translate(80vw, 50vh) scale(1.05);
+      transform: translate(80vw, 30vh) scale(1.05);
+    }
+    62.5% {
+      transform: translate(60vw, 60vh) scale(1.07);
     }
     75% {
-      transform: translate(-40vw, 80vh) scale(1.08);
+      transform: translate(20vw, 80vh) scale(1.08);
+    }
+    87.5% {
+      transform: translate(-20vw, 60vh) scale(1.04);
     }
     100% {
       transform: translate(0vw, 0vh) scale(1);
@@ -592,21 +604,33 @@ body {
   /* Light Teal flare - top-right orbital movement */
   .light-source-blue {
     isolation: isolate;
-    animation: teal-orbit 9s ease-in-out infinite;
+    animation: teal-orbit 14s linear infinite;
   }
   
   @keyframes teal-orbit {
     0% {
       transform: translate(0vw, 0vh) scale(1);
     }
+    12.5% {
+      transform: translate(-20vw, 20vh) scale(1.01);
+    }
     25% {
-      transform: translate(-60vw, 60vh) scale(1.05);
+      transform: translate(-40vw, 40vh) scale(1.02);
+    }
+    37.5% {
+      transform: translate(-60vw, 50vh) scale(1.03);
     }
     50% {
-      transform: translate(-80vw, -50vh) scale(1.08);
+      transform: translate(-80vw, 30vh) scale(1.04);
+    }
+    62.5% {
+      transform: translate(-80vw, -10vh) scale(1.05);
     }
     75% {
-      transform: translate(-30vw, 90vh) scale(1.03);
+      transform: translate(-60vw, -40vh) scale(1.04);
+    }
+    87.5% {
+      transform: translate(-30vw, -20vh) scale(1.02);
     }
     100% {
       transform: translate(0vw, 0vh) scale(1);
