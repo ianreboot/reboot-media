@@ -22,16 +22,16 @@ export function BackgroundGradient({ className = '' }: BackgroundGradientProps) 
         className={`light-source-gold transparency-normalized ${className}`}
         style={{
           position: 'fixed',
-          width: '200vw',
-          height: '200vw',
+          width: '150vw',
+          height: '150vw',
           top: '-75vh',
           left: '-75vw',
           background: `radial-gradient(circle at 50% 50%, 
-            rgba(216, 201, 155, 0.7) 0%, 
-            rgba(216, 201, 155, 0.4) 15%, 
-            rgba(216, 201, 155, 0.2) 25%, 
-            rgba(216, 201, 155, 0.1) 35%, 
-            rgba(216, 201, 155, 0.05) 45%, 
+            rgba(216, 201, 155, 0.45) 0%, 
+            rgba(216, 201, 155, 0.25) 15%, 
+            rgba(216, 201, 155, 0.12) 25%, 
+            rgba(216, 201, 155, 0.06) 35%, 
+            rgba(216, 201, 155, 0.03) 45%, 
             transparent 55%)`,
           zIndex: -9
         }}

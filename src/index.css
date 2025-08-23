@@ -568,7 +568,7 @@ body {
   /* Gold flare - smaller movement range */
   .light-source-gold {
     isolation: isolate;
-    animation: gold-orbit 12s linear infinite;
+    animation: gold-orbit 24s linear infinite;
   }
   
   @keyframes gold-orbit {
@@ -604,19 +604,19 @@ body {
   /* Light Teal flare - diagonal crossing movement */
   .light-source-teal {
     isolation: isolate;
-    animation: teal-orbit 14s linear infinite;
+    animation: teal-orbit 20s linear infinite;
   }
 
   /* Light Purple flare - vertical sweep */
   .light-source-purple {
     isolation: isolate;
-    animation: purple-sweep 16s linear infinite;
+    animation: purple-sweep 18s linear infinite;
   }
 
   /* Light Orange flare - horizontal sweep */
   .light-source-orange {
     isolation: isolate;
-    animation: orange-sweep 18s linear infinite;
+    animation: orange-sweep 16s linear infinite;
   }
   
   @keyframes teal-orbit {
