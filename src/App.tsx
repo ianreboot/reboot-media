@@ -272,7 +272,7 @@ const MainApp = () => {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl">
+                <div className="bg-gradient-to-r from-white/20 to-blue-500/30 backdrop-blur-md border border-white/20 text-white p-6 rounded-2xl">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3 text-white-critical">The Curse of Knowledge</h4>
                     <p className="text-white-standard text-base leading-relaxed">
