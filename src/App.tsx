@@ -332,7 +332,7 @@ const MainApp = () => {
             </div>
 
             {/* Combined Proof & Real Question Section */}
-            <div className="bg-gradient-to-br from-slate-100 via-blue-50 to-indigo-100 rounded-3xl p-8 md:p-12">
+            <div className="bg-gradient-to-br from-slate-100/30 via-blue-50/30 to-indigo-100/30 rounded-3xl p-8 md:p-12">
               <div className="max-w-5xl mx-auto">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                   
@@ -353,7 +353,7 @@ const MainApp = () => {
                         </p>
                       </div>
                       
-                      <div className="bg-white/95 rounded-2xl p-6 backdrop-blur-sm">
+                      <div className="bg-white/40 rounded-2xl p-6 backdrop-blur-sm">
                         <div className="grid grid-cols-2 gap-4 text-center">
                           <div>
                             <div className="text-2xl font-black text-critical-accessible">20+</div>
@@ -371,14 +371,14 @@ const MainApp = () => {
                   {/* Right Side - The Real Question */}
                   <div className="space-y-6">
                     <div>
-                      <div className="glass-card rounded-xl p-4">
+                      <div>
                         <h3 className="heading-lg text-critical-accessible mb-4 leading-tight">
                           The Real Question Isn't<br />
                           <span className="text-red-500 line-through decoration-4">"Industry Experience"</span>
                         </h3>
                       </div>
                       
-                      <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-6 text-white transform -rotate-1">
+                      <div className="bg-gradient-to-br from-orange-500/70 to-orange-600/70 rounded-2xl p-6 text-white transform -rotate-1">
                         <p className="text-xl font-bold mb-3">
                           It's: "Can you see the opportunities I'm blind to?"
                         </p>
@@ -387,7 +387,7 @@ const MainApp = () => {
                         </div>
                       </div>
                       
-                      <div className="bg-white/95 rounded-xl p-4 border-l-4 border-orange-500">
+                      <div className="bg-white/40 rounded-xl p-4 border-l-4 border-orange-500/60">
                         <p className="text-standard-accessible text-sm italic">
                           "The best consultants don't know your industry inside-out. 
                           They know <strong>customers</strong> inside-out."
