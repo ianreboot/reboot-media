@@ -183,7 +183,7 @@ const FractionalCMOVsInHouse = () => {
             
             {/* Introduction */}
             <section className="mb-16">
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-indigo-200/50 dark:border-indigo-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-indigo-200/50 dark:border-indigo-800/50 p-8">
                 <h2 className="heading-xl text-gradient-critical mb-6">
                   Why Building Internal Teams Costs More Than You Think
                 </h2>
@@ -219,7 +219,7 @@ const FractionalCMOVsInHouse = () => {
               
               <div className="space-y-8">
                 {scenarios.map((scenario) => (
-                  <div key={scenario.id} className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
+                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden">
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
@@ -331,7 +331,7 @@ const FractionalCMOVsInHouse = () => {
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
                       Recover From 43% Turnover Disaster →
@@ -341,7 +341,7 @@ const FractionalCMOVsInHouse = () => {
                     Internal marketing not working? Learn how to transition from failed in-house teams to fractional CMO success.
                   </p>
                 </div>
-                <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
                       Fix 18-Month Competency Gap →

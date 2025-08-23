@@ -183,7 +183,7 @@ const FractionalCMOVsFullTime = () => {
             
             {/* Introduction */}
             <section className="mb-16">
-              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
                 <h2 className="heading-xl text-gradient-critical mb-6">
                   Why Status Decisions Cost You $200K+ Per Year
                 </h2>
@@ -219,7 +219,7 @@ const FractionalCMOVsFullTime = () => {
               
               <div className="space-y-8">
                 {scenarios.map((scenario) => (
-                  <div key={scenario.id} className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
+                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden">
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
@@ -331,7 +331,7 @@ const FractionalCMOVsFullTime = () => {
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-green-600 focus-visible:text-green-600 transition-colors">
                       When $200K CMO Actually Makes Sense →
@@ -341,7 +341,7 @@ const FractionalCMOVsFullTime = () => {
                     When and how to transition from fractional to full-time CMO. Growth triggers and transition strategies that work.
                   </p>
                 </div>
-                <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} className="hover:text-green-600 focus-visible:text-green-600 transition-colors">
                       Break Your $1M Revenue Ceiling →

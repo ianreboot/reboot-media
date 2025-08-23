@@ -94,9 +94,9 @@ const ProblemAwareStageCustomers = () => {
               <div className="space-y-8">
                 
                 {/* Example 1 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/90 backdrop-blur-sm shadow-lg">
+                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-white dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"Our marketing isn't working anymore"</p>
                   </div>
                   
@@ -117,9 +117,9 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 2 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/90 backdrop-blur-sm shadow-lg">
+                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-white dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"We're getting traffic but no one's buying"</p>
                   </div>
                   
@@ -140,9 +140,9 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 3 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/90 backdrop-blur-sm shadow-lg">
+                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-white dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"Our customer acquisition cost keeps going up"</p>
                   </div>
                   
@@ -163,9 +163,9 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 4 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/90 backdrop-blur-sm shadow-lg">
+                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-white dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"We tried content marketing and it didn't work"</p>
                   </div>
                   
@@ -186,9 +186,9 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 5 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/90 backdrop-blur-sm shadow-lg">
+                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-white dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"Social media isn't driving any sales"</p>
                   </div>
                   
@@ -209,9 +209,9 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 6 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/90 backdrop-blur-sm shadow-lg">
+                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-white dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"Our sales team says leads are terrible"</p>
                   </div>
                   
@@ -232,9 +232,9 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 7 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/90 backdrop-blur-sm shadow-lg">
+                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 glass-card-light shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-white dark:text-white mb-2">Customer says:</h3>
                     <p className="text-gradient-critical italic text-lg font-medium">"Competitors keep stealing our customers"</p>
                   </div>
                   
@@ -273,8 +273,8 @@ const ProblemAwareStageCustomers = () => {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
-                  <h3 className="heading-lg text-important-accessible dark:text-white mb-3">What NOT to do:</h3>
+                <div className="p-6 border border-white/20 dark:border-slate-700/20 rounded-xl">
+                  <h3 className="heading-lg text-white dark:text-white mb-3">What NOT to do:</h3>
                   <ul className="text-gradient-safe space-y-2 text-sm">
                     <li>• Jump straight to your solution</li>
                     <li>• Add to their confusion with more options</li>
@@ -284,8 +284,8 @@ const ProblemAwareStageCustomers = () => {
                   </ul>
                 </div>
                 
-                <div className="p-6 border border-gray-200 dark:border-gray-700 rounded-xl">
-                  <h3 className="heading-lg text-important-accessible dark:text-white mb-3">What TO do:</h3>
+                <div className="p-6 border border-white/20 dark:border-slate-700/20 rounded-xl">
+                  <h3 className="heading-lg text-white dark:text-white mb-3">What TO do:</h3>
                   <ul className="text-gradient-safe space-y-2 text-sm">
                     <li>• Help them see the real root cause</li>
                     <li>• Connect symptoms to underlying problems</li>

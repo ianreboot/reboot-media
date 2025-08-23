@@ -165,7 +165,7 @@ const Contact = () => {
 
           {/* Form Usage Guidance */}
           <div className="bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-2xl p-6 mb-8 text-center">
-            <h2 className="heading-sm text-black-critical dark:text-orange-50 mb-3">
+            <h2 className="heading-sm text-white dark:text-orange-50 mb-3">
               Looking for Marketing Help?
             </h2>
             <p className="text-orange-900 dark:text-orange-100 mb-4">
@@ -186,7 +186,7 @@ const Contact = () => {
             <div className="lg:col-span-2">
               <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6">
                 <h2 className="heading-lg text-gradient-critical mb-6">General Inquiries</h2>
-            <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">
+            <p className="text-white/90 dark:text-gray-200 mb-4 text-sm">
               Use this form for legal inquiries, privacy questions, technical support, or other non-marketing matters.
             </p>
                 
@@ -215,7 +215,7 @@ const Contact = () => {
                 <form onSubmit={handleSubmit} className="space-y-6" role="form" aria-label="Lead generation form">
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="name" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
+                      <label htmlFor="name" className="block text-sm font-semibold text-white dark:text-gray-100 mb-2">
                         Full Name *
                       </label>
                       <input
@@ -230,7 +230,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="email" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
+                      <label htmlFor="email" className="block text-sm font-semibold text-white dark:text-gray-100 mb-2">
                         Email Address *
                       </label>
                       <input
@@ -248,7 +248,7 @@ const Contact = () => {
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="company" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
+                      <label htmlFor="company" className="block text-sm font-semibold text-white dark:text-gray-100 mb-2">
                         Company Name
                       </label>
                       <input
@@ -262,7 +262,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="website" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
+                      <label htmlFor="website" className="block text-sm font-semibold text-white dark:text-gray-100 mb-2">
                         Website URL
                       </label>
                       <input
@@ -279,7 +279,7 @@ const Contact = () => {
 
                   <div className="grid sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
+                      <label htmlFor="phone" className="block text-sm font-semibold text-white dark:text-gray-100 mb-2">
                         Phone Number
                       </label>
                       <input
@@ -293,7 +293,7 @@ const Contact = () => {
                       />
                     </div>
                     <div>
-                      <label htmlFor="serviceInterest" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
+                      <label htmlFor="serviceInterest" className="block text-sm font-semibold text-white dark:text-gray-100 mb-2">
                         Service Interest
                       </label>
                       <select
@@ -314,7 +314,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="subject" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
+                    <label htmlFor="subject" className="block text-sm font-semibold text-white dark:text-gray-100 mb-2">
                       Subject
                     </label>
                     <input
@@ -329,7 +329,7 @@ const Contact = () => {
                   </div>
 
                   <div>
-                    <label htmlFor="message" className="block text-sm font-semibold text-gray-800 dark:text-gray-100 mb-2">
+                    <label htmlFor="message" className="block text-sm font-semibold text-white dark:text-gray-100 mb-2">
                       Message *
                     </label>
                     <textarea
@@ -386,13 +386,13 @@ const Contact = () => {
               
               {/* Company Info */}
               <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6">
-                <h3 className="heading-md text-gray-900 dark:text-white mb-4">Get in Touch</h3>
+                <h3 className="heading-md text-white dark:text-white mb-4">Get in Touch</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">
                     <MapPin className="w-5 h-5 text-orange-500 mr-3 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-800 dark:text-white">Address</p>
-                      <p className="text-sm text-gray-700 dark:text-gray-200">
+                      <p className="font-semibold text-white dark:text-white">Address</p>
+                      <p className="text-sm text-white/80 dark:text-gray-200">
                         17595 Harvard Ave C-738<br />
                         Irvine, CA 92614<br />
                         United States
@@ -402,8 +402,8 @@ const Contact = () => {
                   <div className="flex items-start">
                     <Globe className="w-5 h-5 text-orange-500 mr-3 mt-1" />
                     <div>
-                      <p className="font-semibold text-gray-800 dark:text-white">Service Areas</p>
-                      <p className="text-sm text-gray-700 dark:text-gray-200">
+                      <p className="font-semibold text-white dark:text-white">Service Areas</p>
+                      <p className="text-sm text-white/80 dark:text-gray-200">
                         USA • Bangkok • Singapore<br />
                         Global services available
                       </p>

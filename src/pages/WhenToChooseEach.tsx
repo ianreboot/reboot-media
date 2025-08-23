@@ -183,7 +183,7 @@ const WhenToChooseEach = () => {
             
             {/* Quick Decision Matrix */}
             <section className="mb-16">
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-indigo-200/50 dark:border-indigo-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-indigo-200/50 dark:border-indigo-800/50 p-8">
                 <h2 className="heading-xl text-gradient-critical mb-6">
                   Quick Decision Matrix (Your Situation → Best Model)
                 </h2>
@@ -224,7 +224,7 @@ const WhenToChooseEach = () => {
               
               <div className="space-y-8">
                 {scenarios.map((scenario) => (
-                  <div key={scenario.id} className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
+                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden">
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
@@ -310,14 +310,14 @@ const WhenToChooseEach = () => {
 
             {/* Model Comparison Table */}
             <section className="mb-16">
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-indigo-200/50 dark:border-indigo-800/50 p-8 overflow-x-auto">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8 overflow-x-auto">
                 <h2 className="heading-xl text-gradient-critical mb-6">
                   Marketing Model Comparison Matrix
                 </h2>
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-gray-200 dark:border-gray-700">
-                      <th className="text-left py-3 px-2 font-bold text-gray-900 dark:text-white">Factor</th>
+                      <th className="text-left py-3 px-2 font-bold text-white dark:text-white">Factor</th>
                       <th className="text-center py-3 px-2 text-blue-accessible">Fractional CMO</th>
                       <th className="text-center py-3 px-2 text-orange-accessible">Agency</th>
                       <th className="text-center py-3 px-2 text-purple-600">Consultant</th>
@@ -393,7 +393,7 @@ const WhenToChooseEach = () => {
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
                       How to Transition Between Models →
@@ -403,7 +403,7 @@ const WhenToChooseEach = () => {
                     Growth requires different models at different stages. Learn how to transition smoothly without losing momentum.
                   </p>
                 </div>
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
                       Stuck at Current Model? →

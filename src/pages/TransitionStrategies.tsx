@@ -183,7 +183,7 @@ const TransitionStrategies = () => {
             
             {/* Introduction */}
             <section className="mb-16">
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-8">
                 <h2 className="heading-xl text-gradient-critical mb-6">
                   Why Most Marketing Transitions Fail (And How to Succeed)
                 </h2>
@@ -219,7 +219,7 @@ const TransitionStrategies = () => {
               
               <div className="space-y-8">
                 {scenarios.map((scenario) => (
-                  <div key={scenario.id} className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
+                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden">
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
@@ -305,7 +305,7 @@ const TransitionStrategies = () => {
 
             {/* Transition Timeline */}
             <section className="mb-16">
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-8">
                 <h2 className="heading-xl text-gradient-critical mb-6">
                   Typical Marketing Evolution Timeline
                 </h2>
@@ -377,7 +377,7 @@ const TransitionStrategies = () => {
                 Related Transition Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="hover:text-purple-600 focus-visible:text-purple-600 transition-colors">
                       Save $200K During Transition →
@@ -387,7 +387,7 @@ const TransitionStrategies = () => {
                     Understanding the true costs and returns of switching marketing approaches. Make data-driven transition decisions.
                   </p>
                 </div>
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-purple-600 focus-visible:text-purple-600 transition-colors">
                       8 Plateau Patterns Forcing Change →

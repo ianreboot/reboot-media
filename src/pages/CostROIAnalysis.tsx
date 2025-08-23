@@ -183,7 +183,7 @@ const CostROIAnalysis = () => {
             
             {/* Cost Comparison Table */}
             <section className="mb-16">
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8 overflow-x-auto">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8 overflow-x-auto">
                 <h2 className="heading-xl text-gradient-critical mb-6">
                   True Cost Comparison (Including Hidden Costs)
                 </h2>
@@ -254,7 +254,7 @@ const CostROIAnalysis = () => {
 
             {/* ROI Comparison */}
             <section className="mb-16">
-              <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-green-200/50 dark:border-green-800/50 p-8">
                 <h2 className="heading-xl text-gradient-critical mb-6">
                   12-Month ROI Comparison (Real Client Data)
                 </h2>
@@ -313,7 +313,7 @@ const CostROIAnalysis = () => {
               
               <div className="space-y-8">
                 {scenarios.map((scenario) => (
-                  <div key={scenario.id} className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
+                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden">
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
@@ -453,7 +453,7 @@ const CostROIAnalysis = () => {
                 Related Financial Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/when-to-choose-each`} className="hover:text-green-600 focus-visible:text-green-600 transition-colors">
                       Revenue Stage Decision Matrix →
@@ -463,7 +463,7 @@ const CostROIAnalysis = () => {
                     Different revenue stages require different marketing investments. Find your optimal model based on your stage.
                   </p>
                 </div>
-                <div className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-md rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} className="hover:text-green-600 focus-visible:text-green-600 transition-colors">
                       Breaking Revenue Ceilings →
