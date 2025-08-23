@@ -680,34 +680,34 @@ body {
     }
   }
 
-  /* Orange flare - horizontal sweep covering left and right */
+  /* Orange flare - complex orbital spiral */
   @keyframes orange-sweep {
     0% {
-      transform: translate(40vw, -15vh) scale(1.02);
+      transform: translate(35vw, 25vh) scale(1.01);
     }
     12.5% {
-      transform: translate(35vw, -10vh) scale(1.02);
+      transform: translate(45vw, 10vh) scale(1.02);
     }
     25% {
-      transform: translate(25vw, -5vh) scale(1.02);
+      transform: translate(50vw, -10vh) scale(1.03);
     }
     37.5% {
-      transform: translate(10vw, 0vh) scale(1.03);
+      transform: translate(45vw, -35vh) scale(1.02);
     }
     50% {
-      transform: translate(-5vw, 5vh) scale(1.03);
+      transform: translate(25vw, -50vh) scale(1.01);
     }
     62.5% {
-      transform: translate(-20vw, 10vh) scale(1.02);
+      transform: translate(0vw, -40vh) scale(1.02);
     }
     75% {
-      transform: translate(-15vw, 5vh) scale(1.02);
+      transform: translate(-20vw, -20vh) scale(1.03);
     }
     87.5% {
-      transform: translate(10vw, -5vh) scale(1.01);
+      transform: translate(-10vw, 5vh) scale(1.02);
     }
     100% {
-      transform: translate(40vw, -15vh) scale(1.02);
+      transform: translate(35vw, 25vh) scale(1.01);
     }
   }
 
