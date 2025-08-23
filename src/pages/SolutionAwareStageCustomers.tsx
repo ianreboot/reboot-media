@@ -44,8 +44,8 @@ const SolutionAwareStageCustomers = () => {
           <GlobalHeader onShowForm={() => setShowDropdownForm(true)} showProgressBar={true} />
         
           {/* Hero Section */}
-          <section className="pt-20 md:pt-24 pb-8 bg-gradient-to-br from-slate-900 via-slate-950 to-black relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,165,0,0.1)_0%,transparent_50%)"></div>
+          <section className="pt-20 md:pt-24 pb-16 bg-gradient-to-br from-orange-900 via-orange-950 to-black relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,165,0,0.1)_0%,transparent_50%)"></div>
             <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
               <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
                 "Which One Should We Choose?"
@@ -57,18 +57,6 @@ const SolutionAwareStageCustomers = () => {
             </div>
           </section>
 
-          {/* Navigation Breadcrumb */}
-          <section className="glass-panel border-b border-white/10">
-            <div className="max-w-4xl mx-auto px-6 lg:px-8 py-4">
-              <nav className="flex items-center space-x-2 text-sm">
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="text-gradient-safe hover:text-orange-400 focus-visible:text-orange-400 transition-colors">
-                  Marketing Psychology
-                </a>
-                <span className="text-gradient-safe">→</span>
-                <span className="text-orange-400">Solution-Aware Stage Customers</span>
-              </nav>
-            </div>
-          </section>
 
           {/* Main Content */}
           <main 
