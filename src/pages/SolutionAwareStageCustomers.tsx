@@ -54,6 +54,14 @@ const SolutionAwareStageCustomers = () => {
               <p className="text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
                 These prospects know they need marketing help. They're comparing agencies, consultants, tools, and in-house options. But everyone's saying the same thing—"We drive growth." Here's what they're really thinking.
               </p>
+              <div className="flex justify-center">
+                <button aria-label="Opens contact form for free marketing analysis" 
+                  onClick={() => setShowDropdownForm(true)}
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                >
+                  Get Free Psychology Audit
+                </button>
+              </div>
             </div>
           </section>
 
