@@ -272,7 +272,7 @@ const MainApp = () => {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div className="bg-gradient-to-r from-white/20 to-blue-500/30 backdrop-blur-md border border-white/20 text-white p-6 rounded-2xl">
+                <div className="bg-gradient-to-r from-white/20 to-blue-500/85 backdrop-blur-md border border-white/20 text-white p-6 rounded-2xl">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3 text-white-critical">The Curse of Knowledge</h4>
                     <p className="text-white-standard text-base leading-relaxed">
@@ -280,7 +280,7 @@ const MainApp = () => {
                     </p>
                   </div>
                 </div>
-                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl">
+                <div className="bg-gradient-to-r from-white/20 to-blue-500/85 backdrop-blur-md border border-white/20 text-white p-6 rounded-2xl">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3 text-white-critical">Replicate Not Customize</h4>
                     <p className="text-white-standard text-base leading-relaxed">
@@ -304,7 +304,7 @@ const MainApp = () => {
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer">
+                <div className="bg-gradient-to-r from-white/20 to-blue-500/85 backdrop-blur-md border border-white/20 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3 text-white-critical">Customer Perspective</h4>
                     <p className="text-white-standard text-base leading-relaxed">
@@ -312,7 +312,7 @@ const MainApp = () => {
                     </p>
                   </div>
                 </div>
-                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer">
+                <div className="bg-gradient-to-r from-white/20 to-blue-500/85 backdrop-blur-md border border-white/20 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3 text-white-critical">Question Everything</h4>
                     <p className="text-white-standard text-base leading-relaxed">
@@ -320,7 +320,7 @@ const MainApp = () => {
                     </p>
                   </div>
                 </div>
-                <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer">
+                <div className="bg-gradient-to-r from-white/20 to-blue-500/85 backdrop-blur-md border border-white/20 text-white p-6 rounded-2xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 hover:shadow-lg focus-visible:shadow-lg cursor-pointer">
                   <div className="text-center">
                     <h4 className="text-lg font-bold mb-3 text-white-critical">Executive Experience</h4>
                     <p className="text-white-standard text-base leading-relaxed">
@@ -444,7 +444,7 @@ const MainApp = () => {
 
           {/* Bottom Value Proposition */}
           <div className="mt-12 text-center">
-            <div className="bg-gradient-to-r from-slate-800 to-blue-900 text-white p-8 rounded-3xl max-w-4xl mx-auto">
+            <div className="bg-gradient-to-r from-white/20 to-blue-500/85 backdrop-blur-md border border-white/20 text-white p-8 rounded-3xl max-w-4xl mx-auto">
               <h3 className="text-2xl font-bold mb-4">Why Fractional CMO Makes Sense</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div>
