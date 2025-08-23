@@ -93,7 +93,7 @@ const MostAwareStageCustomers = () => {
               <div className="space-y-8">
                 
                 {/* Example 1 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 glass-card">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/90 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <div className="bg-gradient-to-r from-orange-50 to-yellow-50 dark:from-orange-900/30 dark:to-yellow-900/30 rounded-lg p-4 border-l-4 border-orange-400">
@@ -122,7 +122,7 @@ const MostAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 2 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 glass-card">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/90 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <div className="bg-gradient-to-r from-orange-50 to-yellow-50 dark:from-orange-900/30 dark:to-yellow-900/30 rounded-lg p-4 border-l-4 border-orange-400">
@@ -151,7 +151,7 @@ const MostAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 3 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 glass-card">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/90 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <div className="bg-gradient-to-r from-orange-50 to-yellow-50 dark:from-orange-900/30 dark:to-yellow-900/30 rounded-lg p-4 border-l-4 border-orange-400">
@@ -180,7 +180,7 @@ const MostAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 4 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 glass-card">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/90 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <div className="bg-gradient-to-r from-orange-50 to-yellow-50 dark:from-orange-900/30 dark:to-yellow-900/30 rounded-lg p-4 border-l-4 border-orange-400">
@@ -209,7 +209,7 @@ const MostAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 5 */}
-                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 glass-card">
+                <div className="border border-gray-200 dark:border-gray-700 rounded-xl p-6 bg-white/90 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer says:</h3>
                     <div className="bg-gradient-to-r from-orange-50 to-yellow-50 dark:from-orange-900/30 dark:to-yellow-900/30 rounded-lg p-4 border-l-4 border-orange-400">
@@ -250,7 +250,7 @@ const MostAwareStageCustomers = () => {
                 <p className="text-gradient-critical text-xl font-bold mb-6 text-center">
                   Most aware customers don't need more convincing—they need permission to say yes.
                 </p>
-                <div className="glass-card rounded-lg p-6">
+                <div className="bg-white/90 backdrop-blur-sm rounded-lg p-6">
                   <p className="text-gradient-safe text-lg font-medium leading-relaxed">
                     Remove friction, not objections. Make the next step tiny. Give them control over timing. The sale is already made—your job is to make signing feel natural, not pressured.
                   </p>

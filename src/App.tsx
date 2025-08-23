@@ -144,7 +144,7 @@ const MainApp = () => {
           </h1>
           
           {/* Subheadline */}
-          <div className="text-bg-overlay-dark mx-auto max-w-4xl mb-8 rounded-xl">
+          <div className="mx-auto max-w-4xl mb-8">
             <p className="text-xl text-white-important">
               <span className="text-white-standard">Stop fumbling with amateur advice. Get</span> <span className="font-bold text-white-critical">battle-tested strategies proven at Fortune 500 companies</span> <span className="text-white-standard">that drive explosive growth</span>
             </p>
@@ -166,7 +166,7 @@ const MainApp = () => {
 
           {/* Benefits-Focused Proof Points */}
           <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="group relative glass-card border-l-4 border-orange-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
+            <div className="group relative bg-slate-800/60 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">30X Growth</div>
                 <div className="text-sm text-important-accessible font-medium leading-tight">
@@ -175,7 +175,7 @@ const MainApp = () => {
               </div>
             </div>
             
-            <div className="group relative glass-card border-l-4 border-blue-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
+            <div className="group relative bg-slate-800/60 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">Stop the Bleed</div>
                 <div className="text-sm text-important-accessible font-medium leading-tight">
@@ -184,7 +184,7 @@ const MainApp = () => {
               </div>
             </div>
             
-            <div className="group relative glass-card border-l-4 border-green-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
+            <div className="group relative bg-slate-800/60 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">Sleep Better</div>
                 <div className="text-sm text-important-accessible font-medium leading-tight">
@@ -204,7 +204,7 @@ const MainApp = () => {
             <h2 className="heading-xl text-critical mb-6 sm:mb-8">
               The <span className="text-red-500">$200K</span> Marketing Mistake
             </h2>
-            <div className="text-bg-overlay-dark mx-auto max-w-3xl rounded-xl">
+            <div className="mx-auto max-w-3xl">
               <p className="text-xl text-white-important leading-normal">
                 <span className="text-white-critical font-bold">73% of growing companies</span> can't explain their value clearly to customers. They suffer from the "Curse of Knowledge" - knowing too much about their product to communicate it simply.
               </p>
@@ -214,7 +214,7 @@ const MainApp = () => {
           {/* Asymmetrical Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="glass-card-light p-6 sm:p-8 rounded-2xl shadow-xl transform -rotate-1">
+              <div className="bg-white/90 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-xl transform -rotate-1 border border-white/30">
                 <h3 className="text-2xl font-bold text-critical-accessible mb-6">What Business Owners Say:</h3>
                 <div className="space-y-4">
                   <p className="italic text-standard-accessible">"Our advanced AI-powered customer management platform leverages machine learning algorithms to deliver personalized experiences..."</p>
@@ -246,7 +246,7 @@ const MainApp = () => {
               </svg>
               <span className="text-blue-accessible text-sm font-semibold">Common Question</span>
             </div>
-            <div className="text-bg-overlay-dark rounded-xl">
+            <div>
               <h2 className="heading-xl text-white-critical mb-6" style={{ marginTop: '0.25rem' }}>
                 "Do You Have Experience in <span className="text-blue-400">My Industry</span>?"
               </h2>
@@ -371,7 +371,7 @@ const MainApp = () => {
                   {/* Right Side - The Real Question */}
                   <div className="space-y-6">
                     <div>
-                      <div className="text-bg-overlay rounded-xl">
+                      <div>
                         <h3 className="heading-lg text-critical-accessible mb-4 leading-tight">
                           The Real Question Isn't<br />
                           <span className="text-red-500 line-through decoration-4">"Industry Experience"</span>
@@ -408,7 +408,7 @@ const MainApp = () => {
       <section id="services" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-6 sm:mb-8">
-            <div className="text-bg-overlay-dark rounded-xl mx-auto max-w-5xl">
+            <div className="mx-auto max-w-5xl">
               <h2 className="heading-xl text-white-critical mb-6 sm:mb-8">
                 Fractional CMO
                 <br />
@@ -477,7 +477,7 @@ const MainApp = () => {
       <section id="about" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(3rem, 8vw, 5rem)', paddingBottom: 'clamp(3rem, 8vw, 5rem)' }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <div className="text-bg-overlay-dark rounded-xl mx-auto max-w-5xl">
+            <div className="mx-auto max-w-5xl">
               <h2 className="heading-xl text-white-critical mb-6">
                 Meet Your <span className="text-blue-400">C-Level Executive</span> Partner
               </h2>
@@ -527,7 +527,7 @@ const MainApp = () => {
 
           {/* Story Section - Scannable Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="glass-card border border-orange-200/30 dark:border-orange-400/30 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
+            <div className="bg-slate-800/70 backdrop-blur-sm border border-orange-400/40 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-orange-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-orange-accessible" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -540,7 +540,7 @@ const MainApp = () => {
               </p>
             </div>
 
-            <div className="glass-card border border-blue-200/30 dark:border-blue-400/30 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:rotate-1 focus-visible:rotate-1 cursor-pointer">
+            <div className="bg-slate-800/70 backdrop-blur-sm border border-blue-400/40 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:rotate-1 focus-visible:rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-blue-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-blue-accessible" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
@@ -553,7 +553,7 @@ const MainApp = () => {
               </p>
             </div>
 
-            <div className="glass-card border border-green-200/30 dark:border-green-400/30 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
+            <div className="bg-slate-800/70 backdrop-blur-sm border border-green-400/40 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
               <div className="w-12 h-12 bg-green-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>

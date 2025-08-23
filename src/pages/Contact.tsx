@@ -184,7 +184,7 @@ const Contact = () => {
             
             {/* Contact Form */}
             <div className="lg:col-span-2">
-              <div className="glass-card-light rounded-2xl shadow-xl border border-white/30 dark:border-slate-700/30 p-6">
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 dark:border-slate-700/30 p-6">
                 <h2 className="heading-lg text-gradient-critical mb-6">General Inquiries</h2>
             <p className="text-gray-700 dark:text-gray-200 mb-4 text-sm">
               Use this form for legal inquiries, privacy questions, technical support, or other non-marketing matters.
@@ -385,7 +385,7 @@ const Contact = () => {
             <div className="space-y-6">
               
               {/* Company Info */}
-              <div className="glass-card-light rounded-2xl shadow-xl border border-white/30 dark:border-slate-700/30 p-6">
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/30 dark:border-slate-700/30 p-6">
                 <h3 className="heading-md text-gray-900 dark:text-white mb-4">Get in Touch</h3>
                 <div className="space-y-4">
                   <div className="flex items-start">

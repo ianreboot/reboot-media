@@ -183,7 +183,7 @@ const FractionalCMOVsAgency = () => {
             
             {/* Introduction */}
             <section className="mb-16">
-              <div className="glass-card-light rounded-2xl shadow-xl border border-blue-200/50 dark:border-blue-800/50 p-8">
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-blue-200/50 dark:border-blue-800/50 p-8">
                 <h2 className="heading-xl text-gradient-critical mb-6">
                   Why Strategy vs Execution Is the Wrong Question
                 </h2>
@@ -219,7 +219,7 @@ const FractionalCMOVsAgency = () => {
               
               <div className="space-y-8">
                 {scenarios.map((scenario) => (
-                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
+                  <div key={scenario.id} className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
@@ -331,7 +331,7 @@ const FractionalCMOVsAgency = () => {
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                       Why Agencies Cost More Than Expected →
@@ -341,7 +341,7 @@ const FractionalCMOVsAgency = () => {
                     Hidden costs of agency relationships vs fractional CMO engagements. See the real numbers behind the hourly rate illusion.
                   </p>
                 </div>
-                <div className="glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/customer-acquisition-stall`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                       Fix Your $8K CAC Problem →

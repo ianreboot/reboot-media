@@ -183,7 +183,7 @@ const MarketExpansionBarriers = () => {
             
             {/* Introduction */}
             <section className="mb-16">
-              <div className="glass-card-light rounded-2xl shadow-xl border border-yellow-200/50 dark:border-yellow-800/50 p-8">
+              <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-yellow-200/50 dark:border-yellow-800/50 p-8">
                 <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-gray-900 dark:text-white mb-6 text-center">
                   Why Market "Saturation" is Usually a Positioning Problem
                 </h2>
@@ -220,7 +220,7 @@ const MarketExpansionBarriers = () => {
               
               <div className="space-y-8">
                 {scenarios.map((scenario) => (
-                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
+                  <div key={scenario.id} className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden">
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
@@ -335,7 +335,7 @@ const MarketExpansionBarriers = () => {
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/customer-acquisition-stall`} className="hover:text-yellow-600 focus-visible:text-yellow-600 transition-colors">
                       Customer Acquisition Stall →
@@ -345,7 +345,7 @@ const MarketExpansionBarriers = () => {
                     CAC rising while conversion stays flat? Stop competing on the same channels with the same message as everyone else.
                   </p>
                 </div>
-                <div className="glass-card-light rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg border border-gray-200/50 dark:border-gray-700/50 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-black-important dark:text-white text-xl font-bold text-gray-900 dark:text-white mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-yellow-600 focus-visible:text-yellow-600 transition-colors">
                       Marketing Psychology Fundamentals →
