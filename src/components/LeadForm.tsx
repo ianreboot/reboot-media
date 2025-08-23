@@ -82,7 +82,7 @@ const LeadForm = () => {
   return (
     <div className="fixed inset-0 modal-backdrop-dark z-[60] flex items-start justify-center pt-4 md:pt-10 px-4">
       <div className="bg-white rounded-3xl shadow-2xl max-w-2xl w-full flex flex-col relative" style={{ maxHeight: '92vh' }}>
-        <div className="absolute top-4 right-4 z-10">
+        <div className="absolute top-2 right-2 z-10">
           <button 
             onClick={() => {
               setShowDropdownForm(false);
@@ -101,9 +101,9 @@ const LeadForm = () => {
                 currentMarketing: ''
               });
             }}
-            className="w-10 h-10 rounded-full bg-white/90 hover:bg-white focus-visible:bg-white shadow-lg flex items-center justify-center motion-safe:transition-all motion-reduce:transition-none"
+            className="w-8 h-8 flex items-center justify-center hover:bg-gray-100 focus-visible:bg-gray-100 transition-colors"
           >
-            <svg className="w-6 h-6 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"/>
             </svg>
           </button>

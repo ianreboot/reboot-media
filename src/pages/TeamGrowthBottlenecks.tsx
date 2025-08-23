@@ -156,19 +156,13 @@ const TeamGrowthBottlenecks = () => {
                   Can't hire fast enough or new people aren't working out? The problem isn't talent availability—it's that 
                   <span className="text-blue-400 font-semibold"> the founder bottleneck</span> kills scaling when everything still goes through you.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex justify-center">
                   <button aria-label="Opens contact form for free marketing analysis" 
                     onClick={() => setShowDropdownForm(true)}
-                    className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                    className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
                   >
                     Break Through Your Plateau
                   </button>
-                  <a 
-                    href="#main-content" 
-                    className="border-2 border-blue-500 text-blue-400 hover:bg-blue-500 focus-visible:bg-blue-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
-                  >
-                    Read Case Studies
-                  </a>
                 </div>
               </div>
             </div>

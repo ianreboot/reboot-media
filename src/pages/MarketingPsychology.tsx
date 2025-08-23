@@ -43,8 +43,8 @@ const MarketingPsychology = () => {
           <GlobalHeader onShowForm={() => setShowDropdownForm(true)} showProgressBar={true} />
         
         {/* Hero Section */}
-        <section className="pt-20 md:pt-24 pb-8 bg-gradient-to-br from-slate-900 via-slate-950 to-black relative overflow-hidden">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,165,0,0.1)_0%,transparent_50%)]"></div>
+        <section className="pt-20 md:pt-24 pb-16 bg-gradient-to-br from-orange-900 via-orange-950 to-black relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,165,0,0.1)_0%,transparent_50%)]"></div>
           <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
             <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
               <span className="block">Stop Guessing.</span>
@@ -54,19 +54,13 @@ const MarketingPsychology = () => {
             <p className="text-xl text-gradient-critical mb-8 max-w-3xl mx-auto leading-relaxed">
               The 5 customer awareness stages and conversion psychology principles that transform scattered marketing into predictable revenue growth. Used by Fortune 500 companies and growth-stage businesses worldwide.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <button aria-label="Opens contact form for free marketing analysis" 
                 onClick={() => setShowDropdownForm(true)}
-                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 motion-safe:transform motion-safe:hover:scale-105 motion-reduce:transform-none motion-safe:focus-visible:scale-105 motion-reduce:transform-none shadow-xl"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
               >
                 Get Free Psychology Audit
               </button>
-              <a 
-                href="#awareness-stages" 
-                className="border-2 border-orange-500 text-orange-500 hover:bg-orange-500 focus-visible:bg-orange-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0"
-              >
-                Learn the Framework
-              </a>
             </div>
           </div>
         </section>

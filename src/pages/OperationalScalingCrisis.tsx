@@ -156,19 +156,13 @@ const OperationalScalingCrisis = () => {
                   Growth feels like everything's breaking? The problem isn't your team or timing—it's that 
                   <span className="text-green-400 font-semibold"> manual processes that worked at $500K</span> fail spectacularly at $2M+ without systems.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex justify-center">
                   <button aria-label="Opens contact form for free marketing analysis" 
                     onClick={() => setShowDropdownForm(true)}
-                    className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 focus-visible:from-green-600 hover:to-green-700 focus-visible:to-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                    className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
                   >
                     Break Through Your Plateau
                   </button>
-                  <a 
-                    href="#main-content" 
-                    className="border-2 border-green-500 text-green-400 hover:bg-green-500 focus-visible:bg-green-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
-                  >
-                    Read Case Studies
-                  </a>
                 </div>
               </div>
             </div>

@@ -132,19 +132,13 @@ const RevenueCeilingBreakthrough = () => {
                   Stuck at $500K, $1M, or $1.5M for months? The problem isn't your product or market—it's that 
                   <span className="text-red-400 font-semibold"> founder-led sales can't scale</span> without documented processes.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex justify-center">
                   <button aria-label="Opens contact form for free marketing analysis" 
                     onClick={() => setShowDropdownForm(true)}
                     className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
                   >
                     Break Through Your Plateau
                   </button>
-                  <a 
-                    href="#main-content" 
-                    className="border-2 border-red-500 text-red-400 hover:bg-red-500 focus-visible:bg-red-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
-                  >
-                    Read Case Studies
-                  </a>
                 </div>
               </div>
             </div>

@@ -1,43 +1,52 @@
 import React from 'react';
 
-// Enhanced loading component with skeleton UI
+// Completely rewritten loading component - self-contained, no external dependencies
 export const PageLoadingSpinner: React.FC<{ pageName?: string }> = ({ pageName }) => (
-  <div className="fixed inset-0 z-[9999]" style={{ 
-    backgroundColor: '#ffffff !important', 
-    background: '#ffffff !important',
-    opacity: '1 !important',
-    zIndex: 9999
+  <div style={{
+    position: 'fixed',
+    top: 0,
+    left: 0,
+    right: 0,
+    bottom: 0,
+    backgroundColor: '#ffffff',
+    zIndex: 99999,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    fontFamily: 'system-ui, -apple-system, sans-serif'
   }}>
-    <div className="relative flex items-center justify-center min-h-screen">
-      <div className="text-center max-w-md mx-auto px-6">
-      {/* Logo area skeleton */}
-      <div className="mb-8 animate-pulse">
-        <div className="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-4"></div>
-        <div className="h-4 bg-gray-200 rounded w-32 mx-auto mb-2"></div>
-        <div className="h-3 bg-gray-100 rounded w-48 mx-auto"></div>
-      </div>
-      
-      {/* Loading spinner */}
-      <div className="relative mb-6">
-        <div className="animate-spin rounded-full h-12 w-12 border-2 border-gray-200 border-t-blue-600 mx-auto"></div>
-        <div className="absolute inset-0 rounded-full bg-blue-50 opacity-20 animate-pulse"></div>
-      </div>
+    <div style={{
+      textAlign: 'center',
+      maxWidth: '300px',
+      padding: '20px'
+    }}>
+      {/* Simple spinner - no external assets */}
+      <div style={{
+        width: '40px',
+        height: '40px',
+        border: '3px solid #e5e7eb',
+        borderTop: '3px solid #3b82f6',
+        borderRadius: '50%',
+        margin: '0 auto 20px',
+        animation: 'spin 1s linear infinite'
+      }}></div>
       
       {/* Loading text */}
-      <div className="space-y-2">
-        <p className="text-gray-700 font-medium">
-          {pageName ? `Loading ${pageName}...` : 'Loading page...'}
-        </p>
-        <p className="text-gray-500 text-sm">
-          Optimizing your experience
-        </p>
+      <div style={{
+        color: '#374151',
+        fontSize: '20px',
+        fontWeight: '500'
+      }}>
+        {pageName ? `Loading ${pageName}...` : 'Loading...'}
       </div>
       
-      {/* Progress indicator */}
-      <div className="mt-6 w-full bg-gray-200 rounded-full h-1">
-        <div className="bg-blue-600 h-1 rounded-full animate-pulse" style={{ width: '45%' }}></div>
-      </div>
-      </div>
+      {/* Inline CSS for spinner animation */}
+      <style>{`
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+      `}</style>
     </div>
   </div>
 );

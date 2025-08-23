@@ -144,19 +144,13 @@ const ProductMarketFitErosion = () => {
                   What worked before isn't working now? The problem isn't your product losing relevance—it's that 
                   <span className="text-purple-400 font-semibold"> markets evolve faster than products</span>, and your messaging may be stuck in the past.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex justify-center">
                   <button aria-label="Opens contact form for free marketing analysis" 
                     onClick={() => setShowDropdownForm(true)}
-                    className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                    className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
                   >
                     Break Through Your Plateau
                   </button>
-                  <a 
-                    href="#main-content" 
-                    className="border-2 border-purple-500 text-purple-400 hover:bg-purple-500 focus-visible:bg-purple-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
-                  >
-                    Read Case Studies
-                  </a>
                 </div>
               </div>
             </div>
