@@ -53,8 +53,7 @@ const About = () => {
           </div>
 
           {/* Company Story */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
-            <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
             <div className="relative z-10">
             <h2 className="heading-xl text-gradient-critical mb-6">Our Story</h2>
             <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -89,8 +88,7 @@ const About = () => {
           </div>
 
           {/* Leadership */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
-            <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
             <div className="relative z-10">
             <h2 className="heading-xl text-gradient-critical mb-8 text-center">Leadership</h2>
             <div className="max-w-4xl mx-auto">
@@ -131,32 +129,28 @@ const About = () => {
 
           {/* Company Stats */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
               <div className="relative z-10">
                 <TrendingUp className="w-8 h-8 text-orange-500 mx-auto mb-3" />
                 <div className="text-2xl font-bold text-black-critical dark:text-gradient-critical text-shadow-sm">$2B+</div>
                 <p className="text-black-important dark:text-gradient-safe text-shadow-sm">Revenue Managed</p>
               </div>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
               <div className="relative z-10">
                 <Briefcase className="w-8 h-8 text-orange-500 mx-auto mb-3" />
                 <div className="text-2xl font-bold text-black-critical dark:text-gradient-critical text-shadow-sm">20+</div>
                 <p className="text-black-important dark:text-gradient-safe text-shadow-sm">US Companies</p>
               </div>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
               <div className="relative z-10">
                 <Award className="w-8 h-8 text-orange-500 mx-auto mb-3" />
                 <div className="text-2xl font-bold text-black-critical dark:text-gradient-critical text-shadow-sm">3X</div>
                 <p className="text-black-important dark:text-gradient-safe text-shadow-sm">Average Revenue Growth</p>
               </div>
             </div>
-            <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
-              <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
               <div className="relative z-10">
                 <Globe className="w-8 h-8 text-orange-500 mx-auto mb-3" />
                 <div className="text-2xl font-bold text-black-critical dark:text-gradient-critical text-shadow-sm">Global</div>
@@ -166,8 +160,7 @@ const About = () => {
           </div>
 
           {/* Our Approach */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
-            <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
             <div className="relative z-10">
               <h2 className="heading-xl text-gradient-critical mb-8 text-center">Our Approach</h2>
               <div className="grid md:grid-cols-2 gap-8">
@@ -216,8 +209,7 @@ const About = () => {
           </div>
 
           {/* Values */}
-          <div className="bg-white/90 backdrop-blur-sm rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
-            <div className="absolute inset-0 bg-white/10 dark:bg-black/10"></div>
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
             <div className="relative z-10">
               <h2 className="heading-xl text-gradient-critical mb-8 text-center">Our Values</h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
