@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import { useLocation } from 'react-router-dom';
+import { getBasePath } from '../utils/navigation';
 
 interface GlobalHeaderProps {
   onShowForm?: () => void;
@@ -181,9 +182,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
       {/* Main Navigation Header */}
       <nav 
         id="navigation-menu"
-        className={`fixed top-0 left-0 right-0 z-[60] motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-500 motion-reduce:duration-0 ease-out ${
-          !isScrollingUp && scrollY > 100 ? '-translate-y-full' : 'translate-y-0'
-        }`}
+        className="fixed top-0 left-0 right-0 z-[60] translate-y-0"
         role="banner"
         aria-label="Main navigation and site header"
         style={{ pointerEvents: 'auto' }}
@@ -207,7 +206,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
               {/* Left Side: Logo and Dev Navigation */}
               <div className="flex items-center gap-6">
                 <a 
-                  href="/"
+                  href={`${getBasePath()}/`}
                   className="group flex items-center text-xl sm:text-2xl font-black focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 rounded-lg p-1"
                   aria-label="Reboot Media - Go to homepage"
                 >
@@ -244,7 +243,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                     
                     {showDevDropdown && (
                       <div 
-                        className="absolute top-full left-0 mt-3 w-80 bg-white dark:bg-slate-800 rounded-xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 max-h-[70vh] overflow-y-auto z-[80] glass-card"
+                        className="absolute top-full left-0 mt-3 w-80 bg-white dark:bg-slate-800 rounded-xl shadow-2xl border border-gray-200/50 dark:border-gray-700/50 max-h-[70vh] overflow-y-auto z-[80]"
                         role="menu"
                         aria-labelledby="dev-nav-button"
                         style={{ pointerEvents: 'auto' }}
@@ -258,7 +257,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                           <div className="mb-3">
                             <div className="text-xs font-semibold text-gray-500 dark:text-gray-400 px-3 py-1">MAIN</div>
                             <a 
-                              href="/" 
+                              href={`${getBasePath()}/`} 
                               onClick={handleMenuItemClick} 
                               className="block px-3 py-2 text-sm text-gray-700 dark:text-gray-300 hover:bg-purple-50 focus-visible:bg-purple-50 dark:hover:bg-purple-900 focus-visible:bg-purple-900/20 rounded-lg motion-safe:transition-all motion-reduce:transition-none duration-200 hover:translate-x-1 focus-visible:translate-x-1"
                               role="menuitem"

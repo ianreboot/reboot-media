@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import BackToTopButton from './BackToTopButton';
+import { getBasePath } from '../utils/navigation';
 
 interface GlobalFooterProps {
   onShowForm?: () => void;
@@ -59,7 +60,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
               {/* Brand Statement - Left */}
               <div className="col-span-8">
                 <a 
-                  href="/" 
+                  href={`${getBasePath()}/`} 
                   className="inline-block mb-6 hover:scale-105 motion-safe:focus-visible:scale-105 motion-reduce:transform-none transition-transform motion-safe:duration-300 motion-reduce:duration-0"
                 >
                   <h3 className="text-5xl font-black">
@@ -198,7 +199,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
           <div className="px-6 py-8">
             <div className="mb-6">
               <a 
-                href="/" 
+                href={`${getBasePath()}/`} 
                 className="inline-block cursor-pointer hover:scale-105 motion-safe:focus-visible:scale-105 motion-reduce:transform-none transition-transform motion-safe:duration-300 motion-reduce:duration-0"
                 style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}
               >
