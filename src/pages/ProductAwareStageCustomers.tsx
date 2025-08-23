@@ -54,6 +54,20 @@ const ProductAwareStageCustomers = () => {
               <p className="text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
                 These prospects know about you. They've read your case studies, maybe had a call. Now they're in the final evaluation—looking for reasons to trust you or walk away.
               </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button aria-label="Opens contact form for free marketing analysis" 
+                  onClick={() => setShowDropdownForm(true)}
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                >
+                  Get Free Psychology Audit
+                </button>
+                <a 
+                  href="#main-content" 
+                  className="border-2 border-orange-500 text-orange-400 hover:bg-orange-500 focus-visible:bg-orange-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
+                >
+                  Read Case Studies
+                </a>
+              </div>
             </div>
           </section>
 

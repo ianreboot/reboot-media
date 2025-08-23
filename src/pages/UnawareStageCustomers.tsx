@@ -44,8 +44,8 @@ const UnawareStageCustomers = () => {
           <GlobalHeader onShowForm={() => setShowDropdownForm(true)} showProgressBar={true} />
         
           {/* Hero Section */}
-          <section className="pt-20 md:pt-24 pb-8 bg-gradient-to-br from-slate-900 via-slate-950 to-black relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,rgba(255,165,0,0.1)_0%,transparent_50%)]"></div>
+          <section className="pt-20 md:pt-24 pb-16 bg-gradient-to-br from-orange-900 via-orange-950 to-black relative overflow-hidden">
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,165,0,0.1)_0%,transparent_50%)]"></div>
             <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
               <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
                 "Everything Is Fine"
@@ -54,21 +54,23 @@ const UnawareStageCustomers = () => {
               <p className="text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
                 These prospects think their biggest problem is getting more leads. The reality? They're solving the wrong problem entirely, and every day of confusion costs them customers.
               </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <button aria-label="Opens contact form for free marketing analysis" 
+                  onClick={() => setShowDropdownForm(true)}
+                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                >
+                  Get Free Psychology Audit
+                </button>
+                <a 
+                  href="#main-content" 
+                  className="border-2 border-orange-500 text-orange-400 hover:bg-orange-500 focus-visible:bg-orange-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
+                >
+                  Read Case Studies
+                </a>
+              </div>
             </div>
           </section>
 
-          {/* Navigation Breadcrumb */}
-          <section className="glass-panel border-b border-white/10">
-            <div className="max-w-4xl mx-auto px-6 lg:px-8 py-4">
-              <nav className="flex items-center space-x-2 text-sm">
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="luminescence-layer-3 hover:text-orange-400 focus-visible:text-orange-400 transition-colors">
-                  Marketing Psychology
-                </a>
-                <span className="text-accessible-min">→</span>
-                <span className="text-orange-400">Unaware Stage Customers</span>
-              </nav>
-            </div>
-          </section>
 
           {/* Main Content */}
           <main 
