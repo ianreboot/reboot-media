@@ -218,7 +218,7 @@ const MainApp = () => {
                 <h3 className="text-2xl font-bold text-critical-accessible mb-6">What Business Owners Say:</h3>
                 <div className="space-y-4">
                   <p className="italic text-standard-accessible">"Our advanced AI-powered customer management platform leverages machine learning algorithms to deliver personalized experiences..."</p>
-                  <p className="text-red-600 font-semibold">❌ Customers don't understand this</p>
+                  <p className="text-red-200 font-semibold">❌ Customers don't understand this</p>
                 </div>
               </div>
             </div>
@@ -240,11 +240,11 @@ const MainApp = () => {
       <section id="psychology" className="px-4 sm:px-6 lg:px-8" style={{ paddingTop: 'clamp(4rem, 10vw, 6rem)', paddingBottom: 'clamp(4rem, 10vw, 6rem)' }}>
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <div className="inline-flex items-center bg-blue-500/10 backdrop-blur-sm border border-blue-400/20 rounded-full px-4 py-2 mb-4">
+            <div className="inline-flex items-center bg-blue-500/80 backdrop-blur-sm border border-blue-400/40 rounded-full px-4 py-2 mb-4">
               <svg className="w-4 h-4 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
-              <span className="text-blue-accessible text-sm font-semibold">Common Question</span>
+              <span className="text-white text-sm font-semibold">Common Question</span>
             </div>
             <div>
               <h2 className="heading-xl text-white-critical mb-6" style={{ marginTop: '0.25rem' }}>
@@ -424,14 +424,14 @@ const MainApp = () => {
               <div className="flex flex-col md:flex-row items-center justify-between text-center">
                 <div className="mb-4 md:mb-0">
                   <h3 className="text-lg font-bold text-critical-accessible mb-2">Full-Time CMO Cost</h3>
-                  <div className="text-3xl font-black text-red-600 line-through">$300K+</div>
-                  <div className="text-sm text-red-700">+ benefits, recruiting, risk</div>
+                  <div className="text-3xl font-black text-red-200 line-through">$300K+</div>
+                  <div className="text-sm text-red-100">+ benefits, recruiting, risk</div>
                 </div>
-                <div className="text-orange-500 text-4xl font-bold mx-8">VS</div>
+                <div className="text-orange-300 text-4xl font-bold mx-8">VS</div>
                 <div>
                   <h3 className="text-lg font-bold text-critical-accessible mb-2">Fractional CMO</h3>
-                  <div className="text-3xl font-black text-orange-500">$5K-18K</div>
-                  <div className="text-sm text-orange-700">immediate start, proven results</div>
+                  <div className="text-3xl font-black text-orange-300">$5K-18K</div>
+                  <div className="text-sm text-orange-200">immediate start, proven results</div>
                 </div>
               </div>
             </div>

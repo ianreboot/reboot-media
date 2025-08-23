@@ -251,19 +251,19 @@ const SimplePricingCards = () => {
     <section className="py-16">
       {/* Section Header */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-black text-slate-900 mb-4">
+        <h2 className="text-3xl md:text-4xl font-black text-white mb-4">
           Fractional CMO Services
         </h2>
-        <p className="text-lg text-gray-600 mb-8">
+        <p className="text-lg text-white/80 mb-8">
           Choose the right level of strategic marketing support
         </p>
         
         {/* Value Messaging */}
         <div className="glass-card-light border border-blue-200/50 rounded-lg p-4 mb-8 max-w-2xl mx-auto">
-          <h3 className="text-lg font-bold text-blue-900 mb-2">
+          <h3 className="text-lg font-bold text-white mb-2">
             ROI-Focused Investment
           </h3>
-          <p className="text-blue-700">
+          <p className="text-white/90">
             Our clients typically see 3-10x ROI on their fractional CMO investment. 
             Compare that to a full-time CMO at $200K+ with no guarantee of results.
           </p>
