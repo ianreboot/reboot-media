@@ -142,14 +142,6 @@ const CustomerAcquisitionStall = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(234,88,12,0.1)_0%,transparent_50%)]"></div>
             <div className="relative max-w-5xl mx-auto px-6 lg:px-8">
               
-              {/* Breadcrumb */}
-              <div className="mb-8">
-                <nav className="flex items-center space-x-2 text-gradient-safe">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-orange-400 focus-visible:text-orange-400 transition-colors">Growth Plateau Solutions</a>
-                  <span>→</span>
-                  <span className="text-orange-400 font-semibold">Customer Acquisition Stall</span>
-                </nav>
-              </div>
 
               <div className="text-center">
                 <div className="inline-flex items-center gap-2 bg-orange-100 dark:bg-orange-900/30 text-orange-800 dark:text-orange-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -164,12 +156,20 @@ const CustomerAcquisitionStall = () => {
                   CAC keeps rising while conversion stays flat? The problem isn't your product or budget—it's that you're 
                   <span className="text-orange-400 font-semibold"> competing on the same channels with the same message</span> as everyone else.
                 </p>
-                <button aria-label="Opens contact form for free marketing analysis" 
-                  onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
-                >
-                  Fix Your CAC Inflation
-                </button>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <button aria-label="Opens contact form for free marketing analysis" 
+                    onClick={() => setShowDropdownForm(true)}
+                    className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 focus-visible:from-orange-600 hover:to-orange-700 focus-visible:to-orange-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                  >
+                    Break Through Your Plateau
+                  </button>
+                  <a 
+                    href="#main-content" 
+                    className="border-2 border-orange-500 text-orange-400 hover:bg-orange-500 focus-visible:bg-orange-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
+                  >
+                    Read Case Studies
+                  </a>
+                </div>
               </div>
             </div>
           </section>

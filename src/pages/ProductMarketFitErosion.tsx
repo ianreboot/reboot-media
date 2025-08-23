@@ -130,14 +130,6 @@ const ProductMarketFitErosion = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(147,51,234,0.1)_0%,transparent_50%)]"></div>
             <div className="relative max-w-5xl mx-auto px-6 lg:px-8">
               
-              {/* Breadcrumb */}
-              <div className="mb-8">
-                <nav className="flex items-center space-x-2 text-gradient-safe">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-purple-400 focus-visible:text-purple-400 transition-colors">Growth Plateau Solutions</a>
-                  <span>→</span>
-                  <span className="text-purple-400 font-semibold">Product-Market Fit Erosion</span>
-                </nav>
-              </div>
 
               <div className="text-center">
                 <div className="inline-flex items-center gap-2 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -152,12 +144,20 @@ const ProductMarketFitErosion = () => {
                   What worked before isn't working now? The problem isn't your product losing relevance—it's that 
                   <span className="text-purple-400 font-semibold"> markets evolve faster than products</span>, and your messaging may be stuck in the past.
                 </p>
-                <button aria-label="Opens contact form for free marketing analysis" 
-                  onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 motion-safe:transform motion-safe:hover:scale-105 motion-reduce:transform-none motion-safe:focus-visible:scale-105 motion-reduce:transform-none shadow-xl"
-                >
-                  Restore Your Market Fit
-                </button>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <button aria-label="Opens contact form for free marketing analysis" 
+                    onClick={() => setShowDropdownForm(true)}
+                    className="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                  >
+                    Break Through Your Plateau
+                  </button>
+                  <a 
+                    href="#main-content" 
+                    className="border-2 border-purple-500 text-purple-400 hover:bg-purple-500 focus-visible:bg-purple-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
+                  >
+                    Read Case Studies
+                  </a>
+                </div>
               </div>
             </div>
           </section>

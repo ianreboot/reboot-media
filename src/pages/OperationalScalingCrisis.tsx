@@ -142,14 +142,6 @@ const OperationalScalingCrisis = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(34,197,94,0.1)_0%,transparent_50%)]"></div>
             <div className="relative max-w-5xl mx-auto px-6 lg:px-8">
               
-              {/* Breadcrumb */}
-              <div className="mb-8">
-                <nav className="flex items-center space-x-2 text-gradient-safe">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-green-400 focus-visible:text-green-400 transition-colors">Growth Plateau Solutions</a>
-                  <span>→</span>
-                  <span className="text-green-400 font-semibold">Operational Scaling Crisis</span>
-                </nav>
-              </div>
 
               <div className="text-center">
                 <div className="inline-flex items-center gap-2 bg-green-100 dark:bg-green-900/30 text-green-800 dark:text-green-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -164,12 +156,20 @@ const OperationalScalingCrisis = () => {
                   Growth feels like everything's breaking? The problem isn't your team or timing—it's that 
                   <span className="text-green-400 font-semibold"> manual processes that worked at $500K</span> fail spectacularly at $2M+ without systems.
                 </p>
-                <button aria-label="Opens contact form for free marketing analysis" 
-                  onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 focus-visible:from-green-600 hover:to-green-700 focus-visible:to-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
-                >
-                  Fix Your Scaling Crisis
-                </button>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <button aria-label="Opens contact form for free marketing analysis" 
+                    onClick={() => setShowDropdownForm(true)}
+                    className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 focus-visible:from-green-600 hover:to-green-700 focus-visible:to-green-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                  >
+                    Break Through Your Plateau
+                  </button>
+                  <a 
+                    href="#main-content" 
+                    className="border-2 border-green-500 text-green-400 hover:bg-green-500 focus-visible:bg-green-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
+                  >
+                    Read Case Studies
+                  </a>
+                </div>
               </div>
             </div>
           </section>

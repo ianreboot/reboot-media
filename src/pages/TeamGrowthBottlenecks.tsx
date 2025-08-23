@@ -142,14 +142,6 @@ const TeamGrowthBottlenecks = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(59,130,246,0.1)_0%,transparent_50%)]"></div>
             <div className="relative max-w-5xl mx-auto px-6 lg:px-8">
               
-              {/* Breadcrumb */}
-              <div className="mb-8">
-                <nav className="flex items-center space-x-2 text-gradient-safe">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-blue-400 focus-visible:text-blue-400 transition-colors">Growth Plateau Solutions</a>
-                  <span>→</span>
-                  <span className="text-blue-400 font-semibold">Team Growth Bottlenecks</span>
-                </nav>
-              </div>
 
               <div className="text-center">
                 <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -164,12 +156,20 @@ const TeamGrowthBottlenecks = () => {
                   Can't hire fast enough or new people aren't working out? The problem isn't talent availability—it's that 
                   <span className="text-blue-400 font-semibold"> the founder bottleneck</span> kills scaling when everything still goes through you.
                 </p>
-                <button aria-label="Opens contact form for free marketing analysis" 
-                  onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
-                >
-                  Fix Your Team Bottlenecks
-                </button>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <button aria-label="Opens contact form for free marketing analysis" 
+                    onClick={() => setShowDropdownForm(true)}
+                    className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 focus-visible:from-blue-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                  >
+                    Break Through Your Plateau
+                  </button>
+                  <a 
+                    href="#main-content" 
+                    className="border-2 border-blue-500 text-blue-400 hover:bg-blue-500 focus-visible:bg-blue-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
+                  >
+                    Read Case Studies
+                  </a>
+                </div>
               </div>
             </div>
           </section>

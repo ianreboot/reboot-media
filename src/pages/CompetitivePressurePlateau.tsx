@@ -130,14 +130,6 @@ const CompetitivePressurePlateau = () => {
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(220,38,38,0.1)_0%,transparent_50%)]"></div>
             <div className="relative max-w-5xl mx-auto px-6 lg:px-8">
               
-              {/* Breadcrumb */}
-              <div className="mb-8">
-                <nav className="flex items-center space-x-2 text-gradient-safe">
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-red-400 focus-visible:text-red-400 transition-colors">Growth Plateau Solutions</a>
-                  <span>→</span>
-                  <span className="text-red-400 font-semibold">Competitive Pressure Plateau</span>
-                </nav>
-              </div>
 
               <div className="text-center">
                 <div className="inline-flex items-center gap-2 bg-red-100 dark:bg-red-900/30 text-red-800 dark:text-red-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
@@ -152,12 +144,20 @@ const CompetitivePressurePlateau = () => {
                   Bigger competitors crushing you? The problem isn't their size or budget—it's that you're trying to 
                   <span className="text-red-400 font-semibold"> compete on their terms</span> instead of creating unique positioning where you win.
                 </p>
-                <button aria-label="Opens contact form for free marketing analysis" 
-                  onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
-                >
-                  Beat Bigger Competitors
-                </button>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                  <button aria-label="Opens contact form for free marketing analysis" 
+                    onClick={() => setShowDropdownForm(true)}
+                    className="bg-gradient-to-r from-red-500 to-red-600 hover:from-red-600 focus-visible:from-red-600 hover:to-red-700 focus-visible:to-red-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-xl"
+                  >
+                    Break Through Your Plateau
+                  </button>
+                  <a 
+                    href="#main-content" 
+                    className="border-2 border-red-500 text-red-400 hover:bg-red-500 focus-visible:bg-red-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300"
+                  >
+                    Read Case Studies
+                  </a>
+                </div>
               </div>
             </div>
           </section>
