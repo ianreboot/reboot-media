@@ -2,8 +2,11 @@ import React from 'react';
 
 // Enhanced loading component with skeleton UI
 export const PageLoadingSpinner: React.FC<{ pageName?: string }> = ({ pageName }) => (
-  <div className="fixed inset-0 z-[100] flex items-center justify-center bg-gradient-to-br from-slate-50 to-gray-100">
-    <div className="text-center max-w-md mx-auto px-6">
+  <div className="fixed inset-0 z-[100] bg-slate-50" style={{ backgroundColor: '#f8fafc' }}>
+    {/* Ensure complete background coverage */}
+    <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-gray-100"></div>
+    <div className="relative flex items-center justify-center min-h-screen">
+      <div className="text-center max-w-md mx-auto px-6">
       {/* Logo area skeleton */}
       <div className="mb-8 animate-pulse">
         <div className="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-4"></div>
@@ -30,6 +33,7 @@ export const PageLoadingSpinner: React.FC<{ pageName?: string }> = ({ pageName }
       {/* Progress indicator */}
       <div className="mt-6 w-full bg-gray-200 rounded-full h-1">
         <div className="bg-blue-600 h-1 rounded-full animate-pulse" style={{ width: '45%' }}></div>
+      </div>
       </div>
     </div>
   </div>
@@ -82,7 +86,10 @@ export const LazyLoadErrorFallback: React.FC<{ error?: Error; retry?: () => void
   error, 
   retry 
 }) => (
-  <div className="fixed inset-0 z-[100] flex items-center justify-center bg-gradient-to-br from-red-50 to-pink-50">
+  <div className="fixed inset-0 z-[100] bg-red-50" style={{ backgroundColor: '#fef2f2' }}>
+    {/* Ensure complete background coverage */}
+    <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-pink-50"></div>
+    <div className="relative flex items-center justify-center min-h-screen">
     <div className="text-center max-w-md mx-auto px-6">
       <div className="mb-6">
         <div className="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -128,6 +135,7 @@ export const LazyLoadErrorFallback: React.FC<{ error?: Error; retry?: () => void
           ← Go Back
         </button>
       </div>
+    </div>
     </div>
   </div>
 );
