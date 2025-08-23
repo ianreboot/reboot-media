@@ -601,10 +601,22 @@ body {
     }
   }
 
-  /* Light Teal flare - top-right orbital movement */
-  .light-source-blue {
+  /* Light Teal flare - diagonal crossing movement */
+  .light-source-teal {
     isolation: isolate;
     animation: teal-orbit 14s linear infinite;
+  }
+
+  /* Light Purple flare - vertical sweep */
+  .light-source-purple {
+    isolation: isolate;
+    animation: purple-sweep 16s linear infinite;
+  }
+
+  /* Light Orange flare - horizontal sweep */
+  .light-source-orange {
+    isolation: isolate;
+    animation: orange-sweep 18s linear infinite;
   }
   
   @keyframes teal-orbit {
@@ -637,10 +649,74 @@ body {
     }
   }
 
+  /* Purple flare - vertical sweep covering top and bottom */
+  @keyframes purple-sweep {
+    0% {
+      transform: translate(60vw, -100vh) scale(1.02);
+    }
+    12.5% {
+      transform: translate(40vw, -60vh) scale(1.04);
+    }
+    25% {
+      transform: translate(20vw, -10vh) scale(1.03);
+    }
+    37.5% {
+      transform: translate(0vw, 40vh) scale(1.02);
+    }
+    50% {
+      transform: translate(-20vw, 90vh) scale(1.05);
+    }
+    62.5% {
+      transform: translate(-40vw, 110vh) scale(1.04);
+    }
+    75% {
+      transform: translate(-60vw, 70vh) scale(1.03);
+    }
+    87.5% {
+      transform: translate(-40vw, 20vh) scale(1.02);
+    }
+    100% {
+      transform: translate(60vw, -100vh) scale(1.02);
+    }
+  }
+
+  /* Orange flare - horizontal sweep covering left and right */
+  @keyframes orange-sweep {
+    0% {
+      transform: translate(-120vw, 30vh) scale(1.03);
+    }
+    12.5% {
+      transform: translate(-80vw, 10vh) scale(1.04);
+    }
+    25% {
+      transform: translate(-30vw, -10vh) scale(1.05);
+    }
+    37.5% {
+      transform: translate(20vw, -30vh) scale(1.04);
+    }
+    50% {
+      transform: translate(70vw, -20vh) scale(1.03);
+    }
+    62.5% {
+      transform: translate(120vw, 0vh) scale(1.02);
+    }
+    75% {
+      transform: translate(90vw, 40vh) scale(1.04);
+    }
+    87.5% {
+      transform: translate(40vw, 60vh) scale(1.03);
+    }
+    100% {
+      transform: translate(-120vw, 30vh) scale(1.03);
+    }
+  }
+
   /* Accessibility: Respect user's motion preferences */
   @media (prefers-reduced-motion: reduce) {
     .light-source-gold, 
-    .light-source-blue {
+    .light-source-teal,
+    .light-source-purple,
+    .light-source-orange {
       animation: none !important;
       transform: translate(0vw, 0vh) scale(1) !important;
     }
