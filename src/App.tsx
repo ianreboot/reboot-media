@@ -214,7 +214,7 @@ const MainApp = () => {
           {/* Asymmetrical Layout */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div className="order-2 lg:order-1">
-              <div className="bg-white/90 backdrop-blur-sm p-6 sm:p-8 rounded-2xl shadow-xl transform -rotate-1 border border-white/30">
+              <div className="glass-card-light p-6 sm:p-8 rounded-2xl shadow-xl transform -rotate-1">
                 <h3 className="text-2xl font-bold text-critical-accessible mb-6">What Business Owners Say:</h3>
                 <div className="space-y-4">
                   <p className="italic text-standard-accessible">"Our advanced AI-powered customer management platform leverages machine learning algorithms to deliver personalized experiences..."</p>
@@ -371,7 +371,7 @@ const MainApp = () => {
                   {/* Right Side - The Real Question */}
                   <div className="space-y-6">
                     <div>
-                      <div>
+                      <div className="glass-card rounded-xl p-4">
                         <h3 className="heading-lg text-critical-accessible mb-4 leading-tight">
                           The Real Question Isn't<br />
                           <span className="text-red-500 line-through decoration-4">"Industry Experience"</span>
@@ -420,7 +420,7 @@ const MainApp = () => {
             </div>
             
             {/* Price Anchoring Header */}
-            <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-2xl p-6 max-w-4xl mx-auto mb-8">
+            <div className="glass-card-light border border-red-200/50 rounded-2xl p-6 max-w-4xl mx-auto mb-8">
               <div className="flex flex-col md:flex-row items-center justify-between text-center">
                 <div className="mb-4 md:mb-0">
                   <h3 className="text-lg font-bold text-critical-accessible mb-2">Full-Time CMO Cost</h3>
