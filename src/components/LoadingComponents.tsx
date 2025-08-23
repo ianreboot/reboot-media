@@ -2,9 +2,12 @@ import React from 'react';
 
 // Enhanced loading component with skeleton UI
 export const PageLoadingSpinner: React.FC<{ pageName?: string }> = ({ pageName }) => (
-  <div className="fixed inset-0 z-[100] bg-slate-50" style={{ backgroundColor: '#f8fafc' }}>
-    {/* Ensure complete background coverage */}
-    <div className="absolute inset-0 bg-gradient-to-br from-slate-50 to-gray-100"></div>
+  <div className="fixed inset-0 z-[9999]" style={{ 
+    backgroundColor: '#ffffff !important', 
+    background: '#ffffff !important',
+    opacity: '1 !important',
+    zIndex: 9999
+  }}>
     <div className="relative flex items-center justify-center min-h-screen">
       <div className="text-center max-w-md mx-auto px-6">
       {/* Logo area skeleton */}
@@ -86,9 +89,12 @@ export const LazyLoadErrorFallback: React.FC<{ error?: Error; retry?: () => void
   error, 
   retry 
 }) => (
-  <div className="fixed inset-0 z-[100] bg-red-50" style={{ backgroundColor: '#fef2f2' }}>
-    {/* Ensure complete background coverage */}
-    <div className="absolute inset-0 bg-gradient-to-br from-red-50 to-pink-50"></div>
+  <div className="fixed inset-0 z-[9999]" style={{ 
+    backgroundColor: '#fef2f2 !important', 
+    background: '#fef2f2 !important',
+    opacity: '1 !important',
+    zIndex: 9999
+  }}>
     <div className="relative flex items-center justify-center min-h-screen">
     <div className="text-center max-w-md mx-auto px-6">
       <div className="mb-6">
