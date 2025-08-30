@@ -489,7 +489,7 @@ const MainApp = () => {
 
           {/* Main Credibility Section */}
           <div className="mb-16">
-            <div className="glass-panel dark:glass-card-dark rounded-3xl p-8 sm:p-12">
+            <div className="glass-panel rounded-3xl p-8 sm:p-12">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 {/* Primary Stat */}
                 <div className="text-center lg:col-span-1">
@@ -503,21 +503,21 @@ const MainApp = () => {
                 {/* Supporting Stats */}
                 <div className="lg:col-span-2">
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-gradient-to-br from-blue-50/60 to-blue-100/40 dark:from-blue-900/30 dark:to-blue-800/20 backdrop-blur-sm border border-blue-400/50 dark:border-blue-400/40 rounded-xl p-6 text-center shadow-lg">
+                    <div className="bg-gradient-to-br from-blue-50/60 to-blue-100/40 backdrop-blur-sm border border-blue-400/50 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-blue-accessible mb-1">20+</div>
-                      <div className="text-blue-700 dark:text-blue-300 font-medium text-sm">Years Experience</div>
+                      <div className="text-blue-700 font-medium text-sm">Years Experience</div>
                     </div>
-                    <div className="bg-gradient-to-br from-green-50/60 to-green-100/40 dark:from-green-900/30 dark:to-green-800/20 backdrop-blur-sm border border-green-400/50 dark:border-green-400/40 rounded-xl p-6 text-center shadow-lg">
+                    <div className="bg-gradient-to-br from-green-50/60 to-green-100/40 backdrop-blur-sm border border-green-400/50 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-green-600 mb-1">$500K</div>
-                      <div className="text-green-700 dark:text-green-300 font-medium text-sm">Monthly Ad Testing</div>
+                      <div className="text-green-700 font-medium text-sm">Monthly Ad Testing</div>
                     </div>
-                    <div className="bg-gradient-to-br from-purple-50/60 to-purple-100/40 dark:from-purple-900/30 dark:to-purple-800/20 backdrop-blur-sm border border-purple-400/50 dark:border-purple-400/40 rounded-xl p-6 text-center shadow-lg">
+                    <div className="bg-gradient-to-br from-purple-50/60 to-purple-100/40 backdrop-blur-sm border border-purple-400/50 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-purple-600 mb-1">7+</div>
-                      <div className="text-purple-700 dark:text-purple-300 font-medium text-sm">Industries Proven</div>
+                      <div className="text-purple-700 font-medium text-sm">Industries Proven</div>
                     </div>
-                    <div className="bg-gradient-to-br from-red-50/60 to-red-100/40 dark:from-red-900/30 dark:to-red-800/20 backdrop-blur-sm border border-red-400/50 dark:border-red-400/40 rounded-xl p-6 text-center shadow-lg">
+                    <div className="bg-gradient-to-br from-red-50/60 to-red-100/40 backdrop-blur-sm border border-red-400/50 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-red-600 mb-1">8</div>
-                      <div className="text-red-700 dark:text-red-300 font-medium text-sm">Client Limit</div>
+                      <div className="text-red-700 font-medium text-sm">Client Limit</div>
                     </div>
                   </div>
                 </div>

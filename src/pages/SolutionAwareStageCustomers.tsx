@@ -37,7 +37,7 @@ const SolutionAwareStageCustomers = () => {
         canonicalUrl={getCanonicalUrl('solution-aware-stage-customers')}
       />
 
-      <div className="solution-aware-stage-page min-h-screen relative overflow-hidden dark:bg-gray-900">
+      <div className="solution-aware-stage-page min-h-screen relative overflow-hidden">
         <BackgroundGradient />
         
         <div className="relative z-10">
@@ -75,7 +75,7 @@ const SolutionAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <div className="bg-white/10 dark:bg-slate-800/20 backdrop-blur-lg rounded-xl p-8 border border-white/20">
+              <div className="bg-white/10 backdrop-blur-lg rounded-xl p-8 border border-white/20">
                 <p className="text-lg text-gradient-safe mb-6 text-center font-medium">
                   Solution-aware customers are overwhelmed. They've got 10 browser tabs open, 5 sales calls scheduled, and a spreadsheet comparing options that all sound identical. They're not looking for another pitch—they're looking for clarity on why one option is actually different.
                 </p>
@@ -91,140 +91,140 @@ const SolutionAwareStageCustomers = () => {
               <div className="space-y-8">
                 
                 {/* Example 1 */}
-                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 bg-white/90 backdrop-blur-md shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible mb-2">Customer thinks:</h3>
                     <p className="text-gradient-critical italic font-medium">"Should we hire an agency, a consultant, or build in-house?"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What they're really asking:</h3>
+                    <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really asking:</h3>
                     <p className="text-gradient-safe">Who can actually deliver results without creating more work for us? They're weighing speed, control, expertise, and internal politics.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">How to position yourself:</h3>
+                    <h3 className="text-lg font-semibold text-green-600 mb-2">How to position yourself:</h3>
                     <p className="text-gradient-safe">Show the hidden costs of each option. "Agencies give you execution but not strategy. In-house gives you control but takes 6 months to ramp. A fractional CMO gives you both strategy and execution starting week one."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50/90 dark:bg-blue-900/30 rounded-lg backdrop-blur-sm">
-                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300 font-medium">It moves beyond features to outcomes. You're not selling a service category—you're selling the fastest path to their specific goal.</p>
+                  <div className="p-4 bg-blue-50/90 rounded-lg backdrop-blur-sm">
+                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
+                    <p className="text-sm text-blue-700 font-medium">It moves beyond features to outcomes. You're not selling a service category—you're selling the fastest path to their specific goal.</p>
                   </div>
                 </div>
 
                 {/* Example 2 */}
-                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 bg-white/90 backdrop-blur-md shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible mb-2">Customer thinks:</h3>
                     <p className="text-gradient-critical italic font-medium">"Everyone says they're data-driven and results-focused"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What they're really asking:</h3>
+                    <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really asking:</h3>
                     <p className="text-gradient-safe">Show me proof that works for companies exactly like mine. Generic case studies mean nothing—they want to see themselves in your success stories.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">How to position yourself:</h3>
+                    <h3 className="text-lg font-semibold text-green-600 mb-2">How to position yourself:</h3>
                     <p className="text-gradient-safe">Get specific about your sweet spot. "We specifically help B2B SaaS companies between $1M-$5M ARR double their qualified pipeline in 6 months. Here's how we did it for three companies just like yours."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50/90 dark:bg-blue-900/30 rounded-lg backdrop-blur-sm">
-                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300 font-medium">Specificity creates believability. When you narrow your claim, it becomes more credible and relevant to your exact target customer.</p>
+                  <div className="p-4 bg-blue-50/90 rounded-lg backdrop-blur-sm">
+                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
+                    <p className="text-sm text-blue-700 font-medium">Specificity creates believability. When you narrow your claim, it becomes more credible and relevant to your exact target customer.</p>
                   </div>
                 </div>
 
                 {/* Example 3 */}
-                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 bg-white/90 backdrop-blur-md shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible mb-2">Customer thinks:</h3>
                     <p className="text-gradient-critical italic font-medium">"How do we know this will work for us?"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What they're really asking:</h3>
+                    <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really asking:</h3>
                     <p className="text-gradient-safe">What happens if this fails? They're risk-assessing, thinking about their reputation, budget waste, and opportunity cost.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">How to position yourself:</h3>
+                    <h3 className="text-lg font-semibold text-green-600 mb-2">How to position yourself:</h3>
                     <p className="text-gradient-safe">Remove the risk entirely. "Start with a paid pilot project. We'll fix one specific problem in 30 days. If it works, we continue. If not, you've got a solution and we part ways."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50/90 dark:bg-blue-900/30 rounded-lg backdrop-blur-sm">
-                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300 font-medium">It changes the conversation from "Will this work?" to "What should we fix first?" Lower commitment means faster decisions.</p>
+                  <div className="p-4 bg-blue-50/90 rounded-lg backdrop-blur-sm">
+                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
+                    <p className="text-sm text-blue-700 font-medium">It changes the conversation from "Will this work?" to "What should we fix first?" Lower commitment means faster decisions.</p>
                   </div>
                 </div>
 
                 {/* Example 4 */}
-                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 bg-white/90 backdrop-blur-md shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible mb-2">Customer thinks:</h3>
                     <p className="text-gradient-critical italic font-medium">"The expensive option must be better, right?"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What they're really asking:</h3>
+                    <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really asking:</h3>
                     <p className="text-gradient-safe">How do we justify the cost internally? They need ammunition to sell this decision to their boss, board, or team.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">How to position yourself:</h3>
+                    <h3 className="text-lg font-semibold text-green-600 mb-2">How to position yourself:</h3>
                     <p className="text-gradient-safe">Show ROI in their language. "The $10K/month investment typically returns $50K in monthly recurring revenue within 6 months. But more importantly, you're buying back 20 hours of your week."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50/90 dark:bg-blue-900/30 rounded-lg backdrop-blur-sm">
-                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300 font-medium">You're not selling cost—you're selling value. When you quantify both money AND time saved, the decision becomes obvious.</p>
+                  <div className="p-4 bg-blue-50/90 rounded-lg backdrop-blur-sm">
+                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
+                    <p className="text-sm text-blue-700 font-medium">You're not selling cost—you're selling value. When you quantify both money AND time saved, the decision becomes obvious.</p>
                   </div>
                 </div>
 
                 {/* Example 5 */}
-                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 bg-white/90 backdrop-blur-md shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible mb-2">Customer thinks:</h3>
                     <p className="text-gradient-critical italic font-medium">"What if we pick the wrong partner?"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What they're really asking:</h3>
+                    <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really asking:</h3>
                     <p className="text-gradient-safe">How painful will it be to switch if this doesn't work out? They're thinking about contracts, knowledge transfer, and sunk costs.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">How to position yourself:</h3>
+                    <h3 className="text-lg font-semibold text-green-600 mb-2">How to position yourself:</h3>
                     <p className="text-gradient-safe">Make leaving easy. "Everything we build is yours. All strategies documented. All campaigns transferable. If you ever want to bring it in-house, we'll train your team."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50/90 dark:bg-blue-900/30 rounded-lg backdrop-blur-sm">
-                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300 font-medium">Paradoxically, making it easy to leave makes them more likely to stay. It shows confidence and removes the fear of being trapped.</p>
+                  <div className="p-4 bg-blue-50/90 rounded-lg backdrop-blur-sm">
+                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
+                    <p className="text-sm text-blue-700 font-medium">Paradoxically, making it easy to leave makes them more likely to stay. It shows confidence and removes the fear of being trapped.</p>
                   </div>
                 </div>
 
                 {/* Example 6 */}
-                <div className="border border-white/20 dark:border-slate-700/20 rounded-xl p-6 bg-white/90 dark:bg-slate-800/90 backdrop-blur-md shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 bg-white/90 backdrop-blur-md shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible dark:text-white mb-2">Customer thinks:</h3>
+                    <h3 className="heading-lg text-important-accessible mb-2">Customer thinks:</h3>
                     <p className="text-gradient-critical italic font-medium">"They all have impressive portfolios"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 dark:text-red-400 mb-2">What they're really asking:</h3>
+                    <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really asking:</h3>
                     <p className="text-gradient-safe">But can they replicate that success for us? Past performance doesn't guarantee future results, especially in different industries.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 dark:text-green-400 mb-2">How to position yourself:</h3>
+                    <h3 className="text-lg font-semibold text-green-600 mb-2">How to position yourself:</h3>
                     <p className="text-gradient-safe">Show your process, not just results. "Here's the exact 90-day playbook we'll run for you. We've refined it across 50+ implementations. Let me show you what weeks 1-12 look like."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50/90 dark:bg-blue-900/30 rounded-lg backdrop-blur-sm">
-                    <h4 className="heading-md font-semibold text-blue-800 dark:text-blue-200 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 dark:text-blue-300 font-medium">Process creates confidence. When they can visualize exactly what will happen, success feels inevitable rather than hopeful.</p>
+                  <div className="p-4 bg-blue-50/90 rounded-lg backdrop-blur-sm">
+                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
+                    <p className="text-sm text-blue-700 font-medium">Process creates confidence. When they can visualize exactly what will happen, success feels inevitable rather than hopeful.</p>
                   </div>
                 </div>
 
@@ -237,18 +237,18 @@ const SolutionAwareStageCustomers = () => {
                 The Pattern: How Solution-Aware Customers Actually Decide
               </h2>
               
-              <div className="bg-orange-50/95 dark:bg-orange-900/30 rounded-xl p-6 mb-6 backdrop-blur-sm border border-orange-200/50">
-                <p className="text-orange-800 dark:text-orange-200 mb-4 font-semibold">
+              <div className="bg-orange-50/95 rounded-xl p-6 mb-6 backdrop-blur-sm border border-orange-200/50">
+                <p className="text-orange-800 mb-4 font-semibold">
                   <strong>Solution-aware customers aren't comparing features—they're managing risk.</strong>
                 </p>
-                <p className="text-orange-700 dark:text-orange-300 font-medium">
+                <p className="text-orange-700 font-medium">
                   Every vendor looks qualified on paper. The winner is whoever makes the decision feel safest, clearest, and most likely to succeed.
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="p-6 border border-white/20 dark:border-slate-700/20 rounded-xl bg-white/90 dark:bg-slate-800/90 backdrop-blur-md">
-                  <h3 className="heading-lg text-important-accessible dark:text-white mb-3">What NOT to do:</h3>
+                <div className="p-6 border border-white/20 rounded-xl bg-white/90 backdrop-blur-md">
+                  <h3 className="heading-lg text-important-accessible mb-3">What NOT to do:</h3>
                   <ul className="text-gradient-safe space-y-2 text-sm font-medium">
                     <li>• List more features and capabilities</li>
                     <li>• Compete on price alone</li>
@@ -258,8 +258,8 @@ const SolutionAwareStageCustomers = () => {
                   </ul>
                 </div>
                 
-                <div className="p-6 border border-white/20 dark:border-slate-700/20 rounded-xl bg-white/90 dark:bg-slate-800/90 backdrop-blur-md">
-                  <h3 className="heading-lg text-important-accessible dark:text-white mb-3">What TO do:</h3>
+                <div className="p-6 border border-white/20 rounded-xl bg-white/90 backdrop-blur-md">
+                  <h3 className="heading-lg text-important-accessible mb-3">What TO do:</h3>
                   <ul className="text-gradient-safe space-y-2 text-sm font-medium">
                     <li>• Show exactly how you're different</li>
                     <li>• Provide risk reversal mechanisms</li>
@@ -291,7 +291,7 @@ const SolutionAwareStageCustomers = () => {
             </section>
 
             {/* Navigation to Next Stage */}
-            <section className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
+            <section className="mt-12 pt-8 border-t border-gray-200">
               <div className="flex justify-between items-center">
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/problem-aware-stage-customers`}
@@ -301,7 +301,7 @@ const SolutionAwareStageCustomers = () => {
                 </a>
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/product-aware-stage-customers`}
-                  className="text-orange-accessible dark:text-orange-400 hover:text-orange-700 focus-visible:text-orange-700 dark:hover:text-orange-300 focus-visible:text-orange-300 font-semibold transition-colors"
+                  className="text-orange-accessible hover:text-orange-700 focus-visible:text-orange-700 focus-visible:text-orange-300 font-semibold transition-colors"
                 >
                   Next: Product-Aware Stage →
                 </a>

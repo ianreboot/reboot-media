@@ -131,7 +131,7 @@ const WhenToChooseEach = () => {
         canonicalUrl={getCanonicalUrl('when-to-choose-each')}
       />
 
-      <div className="when-to-choose-page min-h-screen relative overflow-hidden dark:bg-gray-900">
+      <div className="when-to-choose-page min-h-screen relative overflow-hidden">
         <BackgroundGradient />
         
         <div className="relative z-10">
@@ -152,7 +152,7 @@ const WhenToChooseEach = () => {
               </div>
 
               <div className="text-center">
-                <div className="inline-flex items-center gap-2 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                   <span className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></span>
                   Clear Decision Matrix for Every Situation
                 </div>
@@ -183,34 +183,34 @@ const WhenToChooseEach = () => {
             
             {/* Quick Decision Matrix */}
             <section className="mb-16">
-              <div className="glass-card-light rounded-2xl shadow-xl border border-indigo-200/50 dark:border-indigo-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-indigo-200/50 p-8">
                 <h2 className="heading-xl text-gradient-critical mb-6">
                   Quick Decision Matrix (Your Situation → Best Model)
                 </h2>
                 <div className="grid md:grid-cols-2 gap-4 text-sm">
-                  <div className="p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
-                    <strong className="text-yellow-800 dark:text-yellow-300">Pre-revenue/MVP Stage:</strong>
-                    <p className="text-standard dark:text-gradient-safe mt-1">DIY → Consultant for validation</p>
+                  <div className="p-4 bg-yellow-50 rounded-lg">
+                    <strong className="text-yellow-800">Pre-revenue/MVP Stage:</strong>
+                    <p className="text-standard mt-1">DIY → Consultant for validation</p>
                   </div>
-                  <div className="p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-                    <strong className="text-blue-800 dark:text-blue-300">$500K-1M Revenue:</strong>
-                    <p className="text-standard dark:text-gradient-safe mt-1">Fractional CMO + Tactical agency</p>
+                  <div className="p-4 bg-blue-50 rounded-lg">
+                    <strong className="text-blue-800">$500K-1M Revenue:</strong>
+                    <p className="text-standard mt-1">Fractional CMO + Tactical agency</p>
                   </div>
-                  <div className="p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
-                    <strong className="text-green-800 dark:text-green-300">$1M-3M Scaling:</strong>
-                    <p className="text-standard dark:text-gradient-safe mt-1">Fractional CMO leading strategy</p>
+                  <div className="p-4 bg-green-50 rounded-lg">
+                    <strong className="text-green-800">$1M-3M Scaling:</strong>
+                    <p className="text-standard mt-1">Fractional CMO leading strategy</p>
                   </div>
-                  <div className="p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
-                    <strong className="text-purple-800 dark:text-purple-300">$3M-5M Growth:</strong>
-                    <p className="text-standard dark:text-gradient-safe mt-1">Fractional + In-house team</p>
+                  <div className="p-4 bg-purple-50 rounded-lg">
+                    <strong className="text-purple-800">$3M-5M Growth:</strong>
+                    <p className="text-standard mt-1">Fractional + In-house team</p>
                   </div>
-                  <div className="p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
-                    <strong className="text-red-800 dark:text-red-300">Crisis/Turnaround:</strong>
-                    <p className="text-standard dark:text-gradient-safe mt-1">Fractional CMO immediately</p>
+                  <div className="p-4 bg-red-50 rounded-lg">
+                    <strong className="text-red-800">Crisis/Turnaround:</strong>
+                    <p className="text-standard mt-1">Fractional CMO immediately</p>
                   </div>
-                  <div className="p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg">
-                    <strong className="text-indigo-800 dark:text-indigo-300">$5M+ Established:</strong>
-                    <p className="text-standard dark:text-gradient-safe mt-1">Full-time CMO + complete team</p>
+                  <div className="p-4 bg-indigo-50 rounded-lg">
+                    <strong className="text-indigo-800">$5M+ Established:</strong>
+                    <p className="text-standard mt-1">Full-time CMO + complete team</p>
                   </div>
                 </div>
               </div>
@@ -224,7 +224,7 @@ const WhenToChooseEach = () => {
               
               <div className="space-y-8">
                 {scenarios.map((scenario) => (
-                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden">
+                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden">
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
@@ -247,22 +247,22 @@ const WhenToChooseEach = () => {
                         
                         {/* Company Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500">
-                            <h4 className="heading-md text-red-800 dark:text-red-300 mb-2 flex items-center">
+                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                            <h4 className="heading-md text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Company Says:
                             </h4>
-                            <p className="text-standard dark:text-gradient-safe italic">
+                            <p className="text-standard italic">
                               "{scenario.companySays}"
                             </p>
                           </div>
                           
-                          <div className="bg-indigo-50 dark:bg-indigo-900/20 rounded-lg p-4 border-l-4 border-indigo-500">
-                            <h4 className="heading-md text-indigo-800 dark:text-indigo-300 mb-2 flex items-center">
+                          <div className="bg-indigo-50 rounded-lg p-4 border-l-4 border-indigo-500">
+                            <h4 className="heading-md text-indigo-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
                             </h4>
-                            <p className="text-standard dark:text-gradient-safe">
+                            <p className="text-standard">
                               {scenario.companyThinks}
                             </p>
                           </div>
@@ -270,22 +270,22 @@ const WhenToChooseEach = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4 border-l-4 border-yellow-500">
-                            <h4 className="heading-md text-yellow-800 dark:text-yellow-300 mb-2 flex items-center">
+                          <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
+                            <h4 className="heading-md text-yellow-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
                             </h4>
-                            <p className="text-standard dark:text-gradient-safe">
+                            <p className="text-standard">
                               {scenario.realConsideration}
                             </p>
                           </div>
                           
-                          <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4 border-l-4 border-purple-500">
-                            <h4 className="heading-md text-purple-800 dark:text-purple-300 mb-2 flex items-center">
+                          <div className="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
+                            <h4 className="heading-md text-purple-800 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
                             </h4>
-                            <p className="text-standard dark:text-gradient-safe">
+                            <p className="text-standard">
                               {scenario.evaluationFramework}
                             </p>
                           </div>
@@ -293,12 +293,12 @@ const WhenToChooseEach = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border border-green-200 dark:border-green-800">
-                        <h4 className="heading-md text-green-800 dark:text-green-300 mb-2 flex items-center">
+                      <div className="mt-6 bg-green-50 rounded-lg p-4 border border-green-200">
+                        <h4 className="heading-md text-green-800 mb-2 flex items-center">
                           <span className="mr-2">🎯</span>
                           Clear Recommendation:
                         </h4>
-                        <p className="text-standard dark:text-gradient-safe font-medium">
+                        <p className="text-standard font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -310,14 +310,14 @@ const WhenToChooseEach = () => {
 
             {/* Model Comparison Table */}
             <section className="mb-16">
-              <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8 overflow-x-auto">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-8 overflow-x-auto">
                 <h2 className="heading-xl text-gradient-critical mb-6">
                   Marketing Model Comparison Matrix
                 </h2>
                 <table className="w-full text-sm">
                   <thead>
-                    <tr className="border-b border-gray-200 dark:border-gray-700">
-                      <th className="text-left py-3 px-2 font-bold text-white dark:text-white">Factor</th>
+                    <tr className="border-b border-gray-200">
+                      <th className="text-left py-3 px-2 font-bold text-white">Factor</th>
                       <th className="text-center py-3 px-2 text-blue-accessible">Fractional CMO</th>
                       <th className="text-center py-3 px-2 text-orange-accessible">Agency</th>
                       <th className="text-center py-3 px-2 text-purple-600">Consultant</th>
@@ -325,28 +325,28 @@ const WhenToChooseEach = () => {
                     </tr>
                   </thead>
                   <tbody>
-                    <tr className="border-b border-gray-100 dark:border-gray-800">
+                    <tr className="border-b border-gray-100">
                       <td className="py-3 px-2 font-medium">Best For Revenue</td>
                       <td className="text-center py-3 px-2">$500K-5M</td>
                       <td className="text-center py-3 px-2">Any</td>
                       <td className="text-center py-3 px-2">$1M+</td>
                       <td className="text-center py-3 px-2">$3M+</td>
                     </tr>
-                    <tr className="border-b border-gray-100 dark:border-gray-800">
+                    <tr className="border-b border-gray-100">
                       <td className="py-3 px-2 font-medium">Primary Value</td>
                       <td className="text-center py-3 px-2">Strategy + Execution</td>
                       <td className="text-center py-3 px-2">Execution</td>
                       <td className="text-center py-3 px-2">Analysis</td>
                       <td className="text-center py-3 px-2">Continuity</td>
                     </tr>
-                    <tr className="border-b border-gray-100 dark:border-gray-800">
+                    <tr className="border-b border-gray-100">
                       <td className="py-3 px-2 font-medium">Time to Impact</td>
                       <td className="text-center py-3 px-2">30-60 days</td>
                       <td className="text-center py-3 px-2">60-90 days</td>
                       <td className="text-center py-3 px-2">90-120 days</td>
                       <td className="text-center py-3 px-2">180+ days</td>
                     </tr>
-                    <tr className="border-b border-gray-100 dark:border-gray-800">
+                    <tr className="border-b border-gray-100">
                       <td className="py-3 px-2 font-medium">Cost Structure</td>
                       <td className="text-center py-3 px-2">$5-15K/month</td>
                       <td className="text-center py-3 px-2">$3-20K/month</td>
@@ -367,11 +367,11 @@ const WhenToChooseEach = () => {
 
             {/* Call to Action */}
             <section className="mb-16">
-              <div className="text-center bg-gradient-to-r from-indigo-50 to-purple-50 dark:from-indigo-900/20 dark:to-purple-900/20 rounded-2xl p-8 border border-indigo-200/50 dark:border-indigo-800/50">
+              <div className="text-center bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-8 border border-indigo-200/50">
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Choosing the Wrong Marketing Model
                 </h3>
-                <p className="text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-black-standard mb-6 max-w-3xl mx-auto">
                   Every month with the wrong model costs you growth, money, and momentum. 
                   Get your personalized recommendation based on your specific situation, budget, and goals.
                 </p>
@@ -393,23 +393,23 @@ const WhenToChooseEach = () => {
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
                       How to Transition Between Models →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gradient-safe">
+                  <p className="text-standard">
                     Growth requires different models at different stages. Learn how to transition smoothly without losing momentum.
                   </p>
                 </div>
-                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
                       Stuck at Current Model? →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gradient-safe">
+                  <p className="text-standard">
                     Growth plateaus often signal the need for a different marketing model. Identify your plateau and solution.
                   </p>
                 </div>

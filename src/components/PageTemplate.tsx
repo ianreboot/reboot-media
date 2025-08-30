@@ -144,7 +144,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
     };
     const variantClasses = {
       primary: `bg-gradient-to-r from-${hero.gradient || 'blue'}-500 to-${hero.gradient || 'blue'}-600 hover:from-${hero.gradient || 'blue'}-600 hover:to-${hero.gradient || 'blue'}-700 text-white`,
-      secondary: `bg-white dark:bg-slate-800 text-${hero.gradient || 'blue'}-600 dark:text-${hero.gradient || 'blue'}-400 hover:bg- focus-visible:bg-gray-50 focus-visible:bg-gray-50 dark:hover:bg- focus-visible:bg-slate-700 focus-visible:bg-slate-700`,
+      secondary: `bg-white text-${hero.gradient || 'blue'}-600 hover:bg-gray-50 focus-visible:bg-gray-50`,
       outline: `border-2 border-${hero.gradient || 'blue'}-500 text-${hero.gradient || 'blue'}-400 hover:bg-${hero.gradient || 'blue'}-500 hover:text-white focus-visible:text-white`,
     };
 
@@ -154,11 +154,11 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
   // Get content section classes
   const getContentSectionClasses = (section: ContentSection) => {
     const variantClasses = {
-      default: 'glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-8',
-      glass: 'glass-card rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8',
-      highlight: `bg-gradient-to-r from-${hero.gradient || 'blue'}-50 to-${hero.gradient === 'blue' ? 'purple' : 'orange'}-50 dark:from-${hero.gradient || 'blue'}-900/20 dark:to-${hero.gradient === 'blue' ? 'purple' : 'orange'}-900/20 rounded-2xl p-8 border border-${hero.gradient || 'blue'}-200/50 dark:border-${hero.gradient || 'blue'}-800/50`,
+      default: 'glass-card-light rounded-2xl shadow-xl border border-gray-200/50 p-8',
+      glass: 'glass-card rounded-2xl shadow-xl border border-white/20 p-6 sm:p-8',
+      highlight: `bg-gradient-to-r from-${hero.gradient || 'blue'}-50 to-${hero.gradient === 'blue' ? 'purple' : 'orange'}-50 rounded-2xl p-8 border border-${hero.gradient || 'blue'}-200/50`,
       cta: `text-center bg-gradient-to-br from-${hero.gradient || 'blue'}-900 via-${hero.gradient || 'blue'}-950 to-black text-white rounded-2xl p-12`,
-      warning: `bg-orange-50 dark:bg-orange-900/20 border border-orange-200 dark:border-orange-800 rounded-2xl p-6`,
+      warning: `bg-orange-50 border border-orange-200 rounded-2xl p-6`,
     };
 
     return `${variantClasses[section.variant || 'default']} ${section.className || ''}`;
@@ -167,7 +167,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
   const containerClasses = `max-w-${containerMaxWidth} mx-auto px-6 lg:px-8`;
 
   return (
-    <div className={`page-template min-h-screen relative overflow-hidden dark:bg-gray-900 ${className}`}>
+    <div className={`page-template min-h-screen relative overflow-hidden ${className}`}>
       {/* Background Gradient */}
       <BackgroundGradient />
       
@@ -196,7 +196,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
             
             <div className={`relative ${containerClasses} ${hero.variant === 'legal' ? 'py-4' : 'text-center'}`}>
               {hero.badge && (
-                <div className={`inline-flex items-center gap-2 bg-${hero.gradient || 'blue'}-100 dark:bg-${hero.gradient || 'blue'}-900/30 text-${hero.gradient || 'blue'}-800 dark:text-${hero.gradient || 'blue'}-300 px-4 py-2 rounded-full text-sm font-semibold mb-6`}>
+                <div className={`inline-flex items-center gap-2 bg-${hero.gradient || 'blue'}-100 text-${hero.gradient || 'blue'}-800 px-4 py-2 rounded-full text-sm font-semibold mb-6`}>
                   {hero.badge.icon && (
                     <span className={`w-2 h-2 bg-${hero.gradient || 'blue'}-500 rounded-full ${hero.badge.animated ? 'animate-pulse' : ''}`}></span>
                   )}
@@ -215,13 +215,13 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
               )}
 
               {hero.subtitle && (
-                <h2 className="text-xl md:text-2xl text-important-accessible dark:text-gray-300 mb-6 max-w-4xl mx-auto">
+                <h2 className="text-xl md:text-2xl text-important-accessible mb-6 max-w-4xl mx-auto">
                   {hero.subtitle}
                 </h2>
               )}
 
               {hero.description && (
-                <p className="text-xl text-important-accessible dark:text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-xl text-important-accessible mb-8 max-w-3xl mx-auto leading-relaxed">
                   {hero.description}
                 </p>
               )}
@@ -294,7 +294,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
             <div className={`text-center ${
               footerCTA.variant === 'gradient' 
                 ? `bg-gradient-to-br from-${footerCTA.gradient || hero.gradient || 'blue'}-900 via-${footerCTA.gradient || hero.gradient || 'blue'}-950 to-black text-white rounded-2xl p-12`
-                : 'glass-card-light rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 p-12'
+                : 'glass-card-light rounded-2xl shadow-xl border border-gray-200/50 p-12'
             }`}>
               <h2 className={`heading-xl mb-6 ${footerCTA.variant === 'gradient' ? 'text-white' : 'text-gradient-critical'}`}>
                 {footerCTA.title}
@@ -302,7 +302,7 @@ const PageTemplate: React.FC<PageTemplateProps> = ({
               <p className={`text-lg mb-8 max-w-4xl mx-auto leading-relaxed ${
                 footerCTA.variant === 'gradient' 
                   ? 'text-gray-300' 
-                  : 'text-standard dark:replace-'
+                  : 'text-standard'
               }`}>
                 {footerCTA.description}
               </p>

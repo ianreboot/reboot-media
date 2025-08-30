@@ -24,7 +24,7 @@
   --orange-accessible: #ea580c;      /* Orange-600 - 4.5:1 on white */
   --blue-accessible: #1d4ed8;       /* Blue-700 - 4.5:1 on white */
   --gray-accessible-light: #374151; /* Gray-700 - safe on white */
-  --gray-accessible-dark: #d1d5db;  /* Gray-300 - safe on dark only */
+  --gray-accessible-removed-dark-mode #d1d5db;  /* Gray-300 - safe on dark only */
 }
 
 /* Semantic contrast utilities - replace all problematic color classes */

@@ -131,7 +131,7 @@ const FractionalCMOVsInHouse = () => {
         canonicalUrl={getCanonicalUrl('fractional-cmo-vs-in-house')}
       />
 
-      <div className="fractional-vs-inhouse-page min-h-screen relative overflow-hidden dark:bg-gray-900">
+      <div className="fractional-vs-inhouse-page min-h-screen relative overflow-hidden">
         <BackgroundGradient />
         
         <div className="relative z-10">
@@ -152,7 +152,7 @@ const FractionalCMOVsInHouse = () => {
               </div>
 
               <div className="text-center">
-                <div className="inline-flex items-center gap-2 bg-indigo-100 dark:bg-indigo-900/30 text-indigo-800 dark:text-indigo-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                   <span className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></span>
                   Build vs Buy Marketing Expertise
                 </div>
@@ -183,29 +183,29 @@ const FractionalCMOVsInHouse = () => {
             
             {/* Introduction */}
             <section className="mb-16">
-              <div className="glass-card-light rounded-2xl shadow-xl border border-indigo-200/50 dark:border-indigo-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-indigo-200/50 p-8">
                 <h2 className="heading-xl text-gradient-critical mb-6">
                   Why Building Internal Teams Costs More Than You Think
                 </h2>
-                <p className="text-lg text-standard dark:text-gradient-safe mb-6 leading-relaxed">
+                <p className="text-lg text-standard mb-6 leading-relaxed">
                   The "build vs buy" decision for marketing expertise is often made with incomplete math. Companies calculate salaries 
                   but miss recruitment costs, training time, management overhead, turnover risk, and the 18-month learning curve.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 bg-indigo-50 dark:bg-indigo-900/20 rounded-lg">
+                  <div className="text-center p-4 bg-indigo-50 rounded-lg">
                     <div className="text-2xl font-bold text-indigo-600 mb-1">2.5x</div>
-                    <p className="text-sm text-optional dark:luminescence-layer-3">True cost multiplier</p>
+                    <p className="text-sm text-optional">True cost multiplier</p>
                   </div>
-                  <div className="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
+                  <div className="text-center p-4 bg-red-50 rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">43%</div>
-                    <p className="text-sm text-optional dark:luminescence-layer-3">Marketing turnover rate</p>
+                    <p className="text-sm text-optional">Marketing turnover rate</p>
                   </div>
-                  <div className="text-center p-4 bg-yellow-50 dark:bg-yellow-900/20 rounded-lg">
+                  <div className="text-center p-4 bg-yellow-50 rounded-lg">
                     <div className="text-2xl font-bold text-yellow-600 mb-1">18mo</div>
-                    <p className="text-sm text-optional dark:luminescence-layer-3">To reach competency</p>
+                    <p className="text-sm text-optional">To reach competency</p>
                   </div>
                 </div>
-                <p className="text-standard dark:text-gradient-safe font-semibold">
+                <p className="text-standard font-semibold">
                   The pattern: Underestimate costs → Hire junior → Struggle with results → Start over
                 </p>
               </div>
@@ -219,7 +219,7 @@ const FractionalCMOVsInHouse = () => {
               
               <div className="space-y-8">
                 {scenarios.map((scenario) => (
-                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden">
+                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden">
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
@@ -242,22 +242,22 @@ const FractionalCMOVsInHouse = () => {
                         
                         {/* Company Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500">
-                            <h4 className="heading-md text-red-800 dark:text-red-300 mb-2 flex items-center">
+                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                            <h4 className="heading-md text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Company Says:
                             </h4>
-                            <p className="text-standard dark:text-gradient-safe italic">
+                            <p className="text-standard italic">
                               "{scenario.companySays}"
                             </p>
                           </div>
                           
-                          <div className="bg-indigo-50 dark:bg-indigo-900/20 rounded-lg p-4 border-l-4 border-indigo-500">
-                            <h4 className="heading-md text-indigo-800 dark:text-indigo-300 mb-2 flex items-center">
+                          <div className="bg-indigo-50 rounded-lg p-4 border-l-4 border-indigo-500">
+                            <h4 className="heading-md text-indigo-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
                             </h4>
-                            <p className="text-standard dark:text-gradient-safe">
+                            <p className="text-standard">
                               {scenario.companyThinks}
                             </p>
                           </div>
@@ -265,22 +265,22 @@ const FractionalCMOVsInHouse = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-yellow-50 dark:bg-yellow-900/20 rounded-lg p-4 border-l-4 border-yellow-500">
-                            <h4 className="heading-md text-yellow-800 dark:text-yellow-300 mb-2 flex items-center">
+                          <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
+                            <h4 className="heading-md text-yellow-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
                             </h4>
-                            <p className="text-standard dark:text-gradient-safe">
+                            <p className="text-standard">
                               {scenario.realConsideration}
                             </p>
                           </div>
                           
-                          <div className="bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border-l-4 border-blue-500">
-                            <h4 className="heading-md text-blue-800 dark:text-blue-300 mb-2 flex items-center">
+                          <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                            <h4 className="heading-md text-blue-800 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
                             </h4>
-                            <p className="text-standard dark:text-gradient-safe">
+                            <p className="text-standard">
                               {scenario.evaluationFramework}
                             </p>
                           </div>
@@ -288,12 +288,12 @@ const FractionalCMOVsInHouse = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border border-green-200 dark:border-green-800">
-                        <h4 className="heading-md text-green-800 dark:text-green-300 mb-2 flex items-center">
+                      <div className="mt-6 bg-green-50 rounded-lg p-4 border border-green-200">
+                        <h4 className="heading-md text-green-800 mb-2 flex items-center">
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-black-standard dark:text-gradient-safe font-medium">
+                        <p className="text-black-standard font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -305,11 +305,11 @@ const FractionalCMOVsInHouse = () => {
 
             {/* Call to Action */}
             <section className="mb-16">
-              <div className="text-center bg-gradient-to-r from-indigo-50 to-blue-50 dark:from-indigo-900/20 dark:to-blue-900/20 rounded-2xl p-8 border border-indigo-200/50 dark:border-indigo-800/50">
+              <div className="text-center bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl p-8 border border-indigo-200/50">
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Underestimating Team Building Costs
                 </h3>
-                <p className="text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-black-standard mb-6 max-w-3xl mx-auto">
                   Every month you delay expertise while building internal teams costs you opportunities and revenue. 
                   Get your free team cost analysis and discover the true investment required for marketing competency.
                 </p>
@@ -331,23 +331,23 @@ const FractionalCMOVsInHouse = () => {
                 Related Decision Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
                       Recover From 43% Turnover Disaster →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gradient-safe">
+                  <p className="text-standard">
                     Internal marketing not working? Learn how to transition from failed in-house teams to fractional CMO success.
                   </p>
                 </div>
-                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                   <h3 className="heading-lg text-gradient-critical mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
                       Fix 18-Month Competency Gap →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gradient-safe">
+                  <p className="text-standard">
                     When building teams becomes the bottleneck to growth. Break through with the right expertise model.
                   </p>
                 </div>

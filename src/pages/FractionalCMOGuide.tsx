@@ -78,7 +78,7 @@ const FractionalCMOGuide = () => {
         canonicalUrl={getCanonicalUrl('fractional-cmo-guide')}
       />
 
-      <div className="fractional-cmo-page min-h-screen relative overflow-hidden dark:bg-gray-900">
+      <div className="fractional-cmo-page min-h-screen relative overflow-hidden">
         {/* Sophisticated Background Gradient */}
         <BackgroundGradient />
         
@@ -89,7 +89,7 @@ const FractionalCMOGuide = () => {
         <section className="pt-20 md:pt-24 pb-8 bg-gradient-to-br from-blue-900 via-blue-950 to-black relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_40%_60%,rgba(59,130,246,0.1)_0%,transparent_50%)]"></div>
           <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-            <div className="inline-flex items-center gap-2 bg-blue-100 dark:bg-blue-900/30 text-blue-800 dark:text-blue-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+            <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
               <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
               Decision Guide for Growth-Stage Companies
             </div>
@@ -126,7 +126,7 @@ const FractionalCMOGuide = () => {
           
           {/* Introduction */}
           <section className="mb-16">
-            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-8">
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-8">
               <h2 className="heading-lg text-white mb-6">
                 The Complete Marketing Leadership Decision Guide
               </h2>
@@ -135,15 +135,15 @@ const FractionalCMOGuide = () => {
                 criteria behind fractional CMO, agency, full-time, and in-house options—plus when to transition between them.
               </p>
               <div className="grid md:grid-cols-3 gap-6 mb-6">
-                <div className="text-center p-4 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
+                <div className="text-center p-4 bg-blue-50 rounded-lg">
                   <div className="text-2xl font-bold text-blue-accessible mb-1">73%</div>
                   <p className="text-sm text-white/80">Choose based on ego, not ROI</p>
                 </div>
-                <div className="text-center p-4 bg-orange-50 dark:bg-orange-900/20 rounded-lg">
+                <div className="text-center p-4 bg-orange-50 rounded-lg">
                   <div className="text-2xl font-bold text-orange-accessible mb-1">$47K</div>
                   <p className="text-sm text-white/80">Average cost of wrong choice</p>
                 </div>
-                <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                <div className="text-center p-4 bg-green-50 rounded-lg">
                   <div className="text-2xl font-bold text-green-600 mb-1">18mo</div>
                   <p className="text-sm text-white/80">Wasted with poor fit</p>
                 </div>
@@ -163,7 +163,7 @@ const FractionalCMOGuide = () => {
             <div className="grid md:grid-cols-2 gap-8">
               
               {/* Fractional CMO vs Agency */}
-              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
                 <div className="bg-gradient-to-r from-blue-500 to-orange-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -187,7 +187,7 @@ const FractionalCMOGuide = () => {
               </div>
 
               {/* Fractional CMO vs Full-Time */}
-              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
                 <div className="bg-gradient-to-r from-blue-500 to-green-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -211,7 +211,7 @@ const FractionalCMOGuide = () => {
               </div>
 
               {/* Fractional CMO vs Consultant */}
-              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
                 <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -235,7 +235,7 @@ const FractionalCMOGuide = () => {
               </div>
 
               {/* Fractional CMO vs In-House Team */}
-              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
                 <div className="bg-gradient-to-r from-blue-500 to-indigo-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -259,7 +259,7 @@ const FractionalCMOGuide = () => {
               </div>
 
               {/* When to Choose Each */}
-              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
                 <div className="bg-gradient-to-r from-yellow-500 to-red-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -283,7 +283,7 @@ const FractionalCMOGuide = () => {
               </div>
 
               {/* Cost-ROI Analysis */}
-              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
                 <div className="bg-gradient-to-r from-green-500 to-teal-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -307,7 +307,7 @@ const FractionalCMOGuide = () => {
               </div>
 
               {/* Transition Strategies */}
-              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 md:col-span-2">
+              <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 md:col-span-2">
                 <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-6">
                   <div className="flex items-center justify-between">
                     <div>
@@ -335,7 +335,7 @@ const FractionalCMOGuide = () => {
 
           {/* Call to Action */}
           <section className="mb-16">
-            <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 dark:from-blue-900/20 dark:to-purple-900/20 rounded-2xl p-8 border border-white/20 dark:border-slate-700/20">
+            <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 border border-white/20">
               <h3 className="heading-lg text-white mb-4">
                 🚨 Stop Making the $47,000 Mistake
               </h3>
@@ -361,7 +361,7 @@ const FractionalCMOGuide = () => {
               Related Marketing Leadership Resources
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+              <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                 <h3 className="text-xl font-bold text-white mb-3">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                     8 Proven Plateau Breakthrough Patterns →
@@ -371,7 +371,7 @@ const FractionalCMOGuide = () => {
                   Marketing leadership choices often follow revenue plateaus. Discover psychology-driven solutions for breaking through growth ceilings.
                 </p>
               </div>
-              <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+              <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
                 <h3 className="text-xl font-bold text-white mb-3">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                     5 Awareness Stages That Convert →

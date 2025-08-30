@@ -11,7 +11,7 @@ const Terms = () => {
   // Structured data now handled automatically by SEOHead component
 
   return (
-    <div className="terms-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+    <div className="terms-page min-h-screen relative overflow-hidden">
       {/* Screen Reader Status Announcements */}
       <div 
         aria-live="polite" 
@@ -39,13 +39,13 @@ const Terms = () => {
       {/* Main Content */}
       <div className="pt-16 pb-8">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8">
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-6 sm:p-8">
             
             <div className="text-center mb-8">
               <h1 className="heading-hero text-gradient-critical mb-4">
                 Terms of Service for Reboot Media
               </h1>
-              <p className="text-optional dark:text-gradient-safe">Effective Date: January 8, 2025</p>
+              <p className="text-optional">Effective Date: January 8, 2025</p>
             </div>
 
             <div className="space-y-8">
@@ -298,10 +298,10 @@ const Terms = () => {
                 <p className="mb-4 text-white/90">
                   If you have questions about these Terms or our services, please contact us:
                 </p>
-                <div className="bg-gray-50 dark:bg-slate-800 p-4 rounded-lg">
+                <div className="bg-gray-50 p-4 rounded-lg">
                   <p className="font-medium text-white">Reboot Media, Inc.</p>
-                  <p className="text-optional dark:luminescence-layer-3">17595 Harvard Ave C-738</p>
-                  <p className="text-optional dark:luminescence-layer-3">Irvine, CA 92614, USA</p>
+                  <p className="text-optional">17595 Harvard Ave C-738</p>
+                  <p className="text-optional">Irvine, CA 92614, USA</p>
                   <p className="text-white/90">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-accessible focus-visible:text-orange-accessible underline">Submit inquiry</a></p>
                 </div>
               </section>

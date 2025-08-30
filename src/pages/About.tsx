@@ -12,7 +12,7 @@ const About = () => {
 
 
   return (
-    <div className="about-page min-h-screen relative overflow-hidden dark:from-slate-900 dark:via-blue-900 dark:to-indigo-900">
+    <div className="about-page min-h-screen relative overflow-hidden">
       {/* Screen Reader Status Announcements */}
       <div 
         aria-live="polite" 
@@ -53,7 +53,7 @@ const About = () => {
           </div>
 
           {/* Company Story */}
-          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
             <div className="relative z-10">
             <h2 className="heading-xl text-gradient-critical mb-6">Our Story</h2>
             <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -72,11 +72,11 @@ const About = () => {
                   strategy and execution at a fraction of traditional consulting costs.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-orange-100 to-amber-100 dark:from-orange-900 dark:to-amber-900 p-6 rounded-xl relative overflow-hidden">
-                <div className="absolute inset-0 bg-white/20 dark:bg-black/20"></div>
+              <div className="bg-gradient-to-br from-orange-100 to-amber-100 p-6 rounded-xl relative overflow-hidden">
+                <div className="absolute inset-0 bg-white/20"></div>
                 <div className="relative z-10">
-                  <h3 className="heading-lg text-black dark:text-white mb-4">Why "Reboot" Media?</h3>
-                  <p className="text-black/80 dark:text-white/90">
+                  <h3 className="heading-lg text-black mb-4">Why "Reboot" Media?</h3>
+                  <p className="text-black/80">
                     Sometimes the best solution isn't to add more features – it's to restart with a clean, 
                     proven foundation. We help companies "reboot" their marketing with strategies that actually work, 
                     eliminating the guesswork and focusing on what drives real business results.
@@ -88,7 +88,7 @@ const About = () => {
           </div>
 
           {/* Leadership */}
-          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
             <div className="relative z-10">
             <h2 className="heading-xl text-gradient-critical mb-8 text-center">Leadership</h2>
             <div className="max-w-4xl mx-auto">
@@ -129,28 +129,28 @@ const About = () => {
 
           {/* Company Stats */}
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-6 text-center relative overflow-hidden">
               <div className="relative z-10">
                 <TrendingUp className="w-8 h-8 text-orange-500 mx-auto mb-3" />
                 <div className="text-2xl font-bold text-white">$2B+</div>
                 <p className="text-white/90">Revenue Managed</p>
               </div>
             </div>
-            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-6 text-center relative overflow-hidden">
               <div className="relative z-10">
                 <Briefcase className="w-8 h-8 text-orange-500 mx-auto mb-3" />
                 <div className="text-2xl font-bold text-white">20+</div>
                 <p className="text-white/90">US Companies</p>
               </div>
             </div>
-            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-6 text-center relative overflow-hidden">
               <div className="relative z-10">
                 <Award className="w-8 h-8 text-orange-500 mx-auto mb-3" />
                 <div className="text-2xl font-bold text-white">3X</div>
                 <p className="text-white/90">Average Revenue Growth</p>
               </div>
             </div>
-            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 text-center relative overflow-hidden">
+            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-6 text-center relative overflow-hidden">
               <div className="relative z-10">
                 <Globe className="w-8 h-8 text-orange-500 mx-auto mb-3" />
                 <div className="text-2xl font-bold text-white">Global</div>
@@ -160,7 +160,7 @@ const About = () => {
           </div>
 
           {/* Our Approach */}
-          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
             <div className="relative z-10">
               <h2 className="heading-xl text-gradient-critical mb-8 text-center">Our Approach</h2>
               <div className="grid md:grid-cols-2 gap-8">
@@ -209,27 +209,27 @@ const About = () => {
           </div>
 
           {/* Values */}
-          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
+          <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-6 sm:p-8 mb-8 relative overflow-hidden">
             <div className="relative z-10">
               <h2 className="heading-xl text-gradient-critical mb-8 text-center">Our Values</h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-orange-100 dark:bg-orange-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <TrendingUp className="w-8 h-8 text-orange-accessible dark:text-orange-400" />
+                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <TrendingUp className="w-8 h-8 text-orange-accessible" />
                   </div>
                   <h3 className="heading-md text-white mb-2 text-shadow-sm">Results-Driven</h3>
                   <p className="text-white/90 text-sm text-shadow-sm">Every strategy must drive measurable business growth</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-blue-100 dark:bg-blue-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Award className="w-8 h-8 text-blue-accessible dark:text-blue-400" />
+                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Award className="w-8 h-8 text-blue-accessible" />
                   </div>
                   <h3 className="heading-md text-white mb-2 text-shadow-sm">Excellence</h3>
                   <p className="text-white/90 text-sm text-shadow-sm">Fortune 500 standards applied to every engagement</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-green-100 dark:bg-green-900 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <CheckCircle className="w-8 h-8 text-green-600 dark:text-green-400" />
+                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <CheckCircle className="w-8 h-8 text-green-600" />
                   </div>
                   <h3 className="heading-md text-white mb-2 text-shadow-sm">Transparency</h3>
                   <p className="text-white/90 text-sm text-shadow-sm">Clear communication and honest feedback always</p>

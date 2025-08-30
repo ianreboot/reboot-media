@@ -119,7 +119,7 @@ const ProductMarketFitErosion = () => {
         canonicalUrl={getCanonicalUrl('product-market-fit-erosion')}
       />
 
-      <div className="pmf-erosion-page min-h-screen relative overflow-hidden dark:bg-gray-900">
+      <div className="pmf-erosion-page min-h-screen relative overflow-hidden">
         <BackgroundGradient />
         
         <div className="relative z-10">
@@ -132,7 +132,7 @@ const ProductMarketFitErosion = () => {
               
 
               <div className="text-center">
-                <div className="inline-flex items-center gap-2 bg-purple-100 dark:bg-purple-900/30 text-purple-800 dark:text-purple-300 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                   <span className="w-2 h-2 bg-purple-500 rounded-full motion-safe:animate-pulse motion-reduce:animate-none"></span>
                   What Worked Before Stopped Working
                 </div>
@@ -165,29 +165,29 @@ const ProductMarketFitErosion = () => {
             
             {/* Introduction */}
             <section className="mb-16">
-              <div className="glass-card-light rounded-2xl shadow-xl border border-purple-200/50 dark:border-purple-800/50 p-8">
+              <div className="glass-card-light rounded-2xl shadow-xl border border-purple-200/50 p-8">
                 <h2 className="heading-xl text-gradient-critical text-2xl font-bold mb-6 text-center">
                   Why Product-Market Fit Erodes (And How to Restore It)
                 </h2>
-                <p className="text-important-accessible text-lg text-standard dark:text-gradient-safe mb-6 leading-relaxed text-center">
+                <p className="text-important-accessible text-lg text-standard mb-6 leading-relaxed text-center">
                   Product-market fit isn't a permanent achievement—it requires ongoing maintenance. Markets, customers, and competitive landscapes evolve 
                   constantly, but many companies assume their initial PMF will last forever without iteration.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 bg-purple-50 dark:bg-purple-900/20 rounded-lg">
+                  <div className="text-center p-4 bg-purple-50 rounded-lg">
                     <div className="text-2xl font-bold text-purple-600 mb-1">71%</div>
-                    <p className="text-sm text-optional dark:luminescence-layer-3">Experience PMF erosion</p>
+                    <p className="text-sm text-optional">Experience PMF erosion</p>
                   </div>
-                  <div className="text-center p-4 bg-red-50 dark:bg-red-900/20 rounded-lg">
+                  <div className="text-center p-4 bg-red-50 rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">18mo</div>
-                    <p className="text-sm text-optional dark:luminescence-layer-3">Average fit decay time</p>
+                    <p className="text-sm text-optional">Average fit decay time</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 dark:bg-green-900/20 rounded-lg">
+                  <div className="text-center p-4 bg-green-50 rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">29%</div>
-                    <p className="text-sm text-optional dark:luminescence-layer-3">Restore with repositioning</p>
+                    <p className="text-sm text-optional">Restore with repositioning</p>
                   </div>
                 </div>
-                <p className="text-important-accessible text-standard dark:text-gradient-safe font-semibold text-center">
+                <p className="text-important-accessible text-standard font-semibold text-center">
                   The pattern: Initial success → Market evolution → Messaging lag → Fit erosion
                 </p>
               </div>
@@ -202,11 +202,11 @@ const ProductMarketFitErosion = () => {
               
               <div className="space-y-8">
                 {scenarios.map((scenario) => (
-                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-white/20 dark:border-slate-700/20 overflow-hidden">
+                  <div key={scenario.id} className="glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden">
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="heading-lg text-important-accessible dark:text-white text-2xl font-bold text-white mb-2">
+                          <h3 className="heading-lg text-important-accessible text-2xl font-bold text-white mb-2">
                             {scenario.title}
                           </h3>
                           <div className="flex gap-4 text-sm text-purple-100">
@@ -225,22 +225,22 @@ const ProductMarketFitErosion = () => {
                         
                         {/* Customer Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 dark:bg-red-900/20 rounded-lg p-4 border-l-4 border-red-500">
-                            <h4 className="heading-md text-important-accessible dark:text-white font-bold text-red-800 dark:text-red-300 mb-2 flex items-center">
+                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                            <h4 className="heading-md text-important-accessible font-bold text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Customer Says:
                             </h4>
-                            <p className="text-standard dark:text-gradient-safe italic">
+                            <p className="text-standard italic">
                               "{scenario.customerSays}"
                             </p>
                           </div>
                           
-                          <div className="bg-purple-50 dark:bg-purple-900/20 rounded-lg p-4 border-l-4 border-purple-500">
-                            <h4 className="heading-md text-important-accessible dark:text-white font-bold text-purple-800 dark:text-purple-300 mb-2 flex items-center">
+                          <div className="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
+                            <h4 className="heading-md text-important-accessible font-bold text-purple-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Customer Thinks:
                             </h4>
-                            <p className="text-standard dark:text-gradient-safe">
+                            <p className="text-standard">
                               {scenario.customerThinks}
                             </p>
                           </div>
@@ -248,22 +248,22 @@ const ProductMarketFitErosion = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-orange-50 dark:bg-orange-900/20 rounded-lg p-4 border-l-4 border-orange-500">
-                            <h4 className="heading-md text-important-accessible dark:text-white font-bold text-orange-800 dark:text-orange-300 mb-2 flex items-center">
+                          <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
+                            <h4 className="heading-md text-important-accessible font-bold text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Problem:
                             </h4>
-                            <p className="text-standard dark:text-gradient-safe">
+                            <p className="text-standard">
                               {scenario.realProblem}
                             </p>
                           </div>
                           
-                          <div className="bg-green-50 dark:bg-green-900/20 rounded-lg p-4 border-l-4 border-green-500">
-                            <h4 className="heading-md text-important-accessible dark:text-white font-bold text-green-800 dark:text-green-300 mb-2 flex items-center">
+                          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                            <h4 className="heading-md text-important-accessible font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-standard dark:text-gradient-safe">
+                            <p className="text-standard">
                               {scenario.solution}
                             </p>
                           </div>
@@ -271,12 +271,12 @@ const ProductMarketFitErosion = () => {
                       </div>
                       
                       {/* Why It Works */}
-                      <div className="mt-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800">
-                        <h4 className="heading-md text-important-accessible dark:text-white font-bold text-blue-800 dark:text-blue-300 mb-2 flex items-center">
+                      <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
+                        <h4 className="heading-md text-important-accessible font-bold text-blue-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-black-standard dark:text-gradient-safe font-medium">
+                        <p className="text-black-standard font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -288,11 +288,11 @@ const ProductMarketFitErosion = () => {
 
             {/* Call to Action */}
             <section className="mb-16">
-              <div className="text-center bg-gradient-to-r from-purple-50 to-pink-50 dark:from-purple-900/20 dark:to-pink-900/20 rounded-2xl p-8 border border-purple-200/50 dark:border-purple-800/50">
-                <h3 className="heading-lg text-important-accessible dark:text-white text-2xl font-bold mb-4">
+              <div className="text-center bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-200/50">
+                <h3 className="heading-lg text-important-accessible text-2xl font-bold mb-4">
                   🚨 Stop Watching Your Market Fit Decay
                 </h3>
-                <p className="text-lg text-black-standard dark:text-gradient-safe mb-6 max-w-3xl mx-auto">
+                <p className="text-lg text-black-standard mb-6 max-w-3xl mx-auto">
                   Every month your messaging stays frozen while markets evolve, competitors with current positioning capture opportunities you're missing. 
                   Get your free PMF analysis and discover which erosion patterns are disconnecting you from your market.
                 </p>
@@ -317,23 +317,23 @@ const ProductMarketFitErosion = () => {
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-important-accessible dark:text-white text-xl font-bold mb-3">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                  <h3 className="heading-lg text-important-accessible text-xl font-bold mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/market-expansion-barriers`} className="hover:text-purple-600 focus-visible:text-purple-600 transition-colors">
                       Market Expansion Barriers →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gradient-safe">
+                  <p className="text-standard">
                     Fit erosion often reveals expansion opportunities. Discover how positioning psychology unlocks adjacent markets.
                   </p>
                 </div>
-                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 dark:border-slate-700/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-important-accessible dark:text-white text-xl font-bold mb-3">
+                <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
+                  <h3 className="heading-lg text-important-accessible text-xl font-bold mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-purple-600 focus-visible:text-purple-600 transition-colors">
                       Marketing Psychology Fundamentals →
                     </a>
                   </h3>
-                  <p className="text-standard dark:text-gradient-safe">
+                  <p className="text-standard">
                     Master customer awareness stages and positioning psychology that prevents and reverses market fit erosion.
                   </p>
                 </div>
