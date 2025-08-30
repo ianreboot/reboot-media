@@ -133,7 +133,7 @@ const MainApp = () => {
         </div>
 
         <div className="w-full py-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 mt-20 sm:mt-0">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 mt-32 sm:mt-0">
           {/* Main Headline - Natural Spacing */}
           <h1 className="heading-hero text-critical mb-6">
             <span className="block">Stop Losing</span>
