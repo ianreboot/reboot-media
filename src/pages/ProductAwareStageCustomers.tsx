@@ -94,115 +94,115 @@ const ProductAwareStageCustomers = () => {
                 {/* Example 1 */}
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-gray-900 mb-2">Customer thinks:</h3>
-                    <p className="text-gray-800 italic font-medium">"Your case studies are impressive, but our business is different"</p>
+                    <h3 className="heading-lg text-white mb-2">Customer thinks:</h3>
+                    <p className="text-white/90 italic font-medium">"Your case studies are impressive, but our business is different"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really saying:</h3>
-                    <p className="text-gray-700">I don't see myself in your success stories. They need proof you understand their specific challenges, not just their industry.</p>
+                    <h3 className="text-lg font-semibold text-red-400 mb-2">What they're really saying:</h3>
+                    <p className="text-white/90">I don't see myself in your success stories. They need proof you understand their specific challenges, not just their industry.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 mb-2">How to handle it:</h3>
-                    <p className="text-gray-700">Get granular about similarities. "You're right, you're not exactly like Client X. But you both sell to procurement teams with 6-month sales cycles. Here's how we adapted our approach for their specific situation..."</p>
+                    <h3 className="text-lg font-semibold text-green-400 mb-2">How to handle it:</h3>
+                    <p className="text-white/90">Get granular about similarities. "You're right, you're not exactly like Client X. But you both sell to procurement teams with 6-month sales cycles. Here's how we adapted our approach for their specific situation..."</p>
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 font-medium">Acknowledging differences while highlighting relevant similarities shows you're not using a cookie-cutter approach.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90 font-medium">Acknowledging differences while highlighting relevant similarities shows you're not using a cookie-cutter approach.</p>
                   </div>
                 </div>
 
                 {/* Example 2 */}
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-gray-900 mb-2">Customer thinks:</h3>
-                    <p className="text-gray-800 italic font-medium">"What if we don't see results as quickly as your other clients?"</p>
+                    <h3 className="heading-lg text-white mb-2">Customer thinks:</h3>
+                    <p className="text-white/90 italic font-medium">"What if we don't see results as quickly as your other clients?"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really saying:</h3>
-                    <p className="text-gray-700">I need to manage expectations internally. They're worried about looking bad if results don't come fast enough.</p>
+                    <h3 className="text-lg font-semibold text-red-400 mb-2">What they're really saying:</h3>
+                    <p className="text-white/90">I need to manage expectations internally. They're worried about looking bad if results don't come fast enough.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 mb-2">How to handle it:</h3>
-                    <p className="text-gray-700">Set realistic milestones. "Month 1 is diagnosis and quick wins. Month 2 is foundation building. Month 3 is when you see momentum. By Month 6, transformation is obvious. Here's what to expect each step."</p>
+                    <h3 className="text-lg font-semibold text-green-400 mb-2">How to handle it:</h3>
+                    <p className="text-white/90">Set realistic milestones. "Month 1 is diagnosis and quick wins. Month 2 is foundation building. Month 3 is when you see momentum. By Month 6, transformation is obvious. Here's what to expect each step."</p>
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 font-medium">Clear timelines with specific milestones help them sell the patience required internally while building confidence.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90 font-medium">Clear timelines with specific milestones help them sell the patience required internally while building confidence.</p>
                   </div>
                 </div>
 
                 {/* Example 3 */}
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-gray-900 mb-2">Customer thinks:</h3>
-                    <p className="text-gray-800 italic font-medium">"How do we know you won't just disappear after signing?"</p>
+                    <h3 className="heading-lg text-white mb-2">Customer thinks:</h3>
+                    <p className="text-white/90 italic font-medium">"How do we know you won't just disappear after signing?"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really saying:</h3>
-                    <p className="text-gray-700">We've been burned before. Past vendors over-promised in sales then under-delivered in execution.</p>
+                    <h3 className="text-lg font-semibold text-red-400 mb-2">What they're really saying:</h3>
+                    <p className="text-white/90">We've been burned before. Past vendors over-promised in sales then under-delivered in execution.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 mb-2">How to handle it:</h3>
-                    <p className="text-gray-700">Show your communication cadence. "You'll have my personal phone number. Weekly status calls. Monthly executive reviews. Slack access. Here's exactly how three current clients interact with us."</p>
+                    <h3 className="text-lg font-semibold text-green-400 mb-2">How to handle it:</h3>
+                    <p className="text-white/90">Show your communication cadence. "You'll have my personal phone number. Weekly status calls. Monthly executive reviews. Slack access. Here's exactly how three current clients interact with us."</p>
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 font-medium">Specific communication commitments backed by current client examples makes ongoing support tangible, not theoretical.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90 font-medium">Specific communication commitments backed by current client examples makes ongoing support tangible, not theoretical.</p>
                   </div>
                 </div>
 
                 {/* Example 4 */}
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-gray-900 mb-2">Customer thinks:</h3>
-                    <p className="text-gray-800 italic font-medium">"We need to run this by our board/CEO/team first"</p>
+                    <h3 className="heading-lg text-white mb-2">Customer thinks:</h3>
+                    <p className="text-white/90 italic font-medium">"We need to run this by our board/CEO/team first"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really saying:</h3>
-                    <p className="text-gray-700">I need help selling this internally. They believe in the solution but need ammunition for stakeholders.</p>
+                    <h3 className="text-lg font-semibold text-red-400 mb-2">What they're really saying:</h3>
+                    <p className="text-white/90">I need help selling this internally. They believe in the solution but need ammunition for stakeholders.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 mb-2">How to handle it:</h3>
-                    <p className="text-gray-700 font-medium">Arm them for internal sales. "I'll prepare a one-page executive summary with ROI projections. Want me to join the call to answer technical questions? Here's what convinced the board at Similar Company."</p>
+                    <h3 className="text-lg font-semibold text-green-400 mb-2">How to handle it:</h3>
+                    <p className="text-white/90 font-medium">Arm them for internal sales. "I'll prepare a one-page executive summary with ROI projections. Want me to join the call to answer technical questions? Here's what convinced the board at Similar Company."</p>
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 font-medium">Becoming their partner in the internal sale shows confidence and makes their job easier, increasing close rates.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90 font-medium">Becoming their partner in the internal sale shows confidence and makes their job easier, increasing close rates.</p>
                   </div>
                 </div>
 
                 {/* Example 5 */}
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-gray-900 mb-2">Customer thinks:</h3>
-                    <p className="text-gray-800 italic font-medium">"The price is higher than we budgeted"</p>
+                    <h3 className="heading-lg text-white mb-2">Customer thinks:</h3>
+                    <p className="text-white/90 italic font-medium">"The price is higher than we budgeted"</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really saying:</h3>
-                    <p className="text-gray-700">Help me justify this investment. They often have the money but need to defend the allocation.</p>
+                    <h3 className="text-lg font-semibold text-red-400 mb-2">What they're really saying:</h3>
+                    <p className="text-white/90">Help me justify this investment. They often have the money but need to defend the allocation.</p>
                   </div>
                   
                   <div className="mb-4">
-                    <h3 className="text-lg font-semibold text-green-600 mb-2">How to handle it:</h3>
-                    <p className="text-gray-700 font-medium">Reframe cost as investment. "The $10K monthly investment typically generates $50K in new monthly recurring revenue by month 6. But let's be conservative—even at 25% of typical results, you're profitable in 8 weeks."</p>
+                    <h3 className="text-lg font-semibold text-green-400 mb-2">How to handle it:</h3>
+                    <p className="text-white/90 font-medium">Reframe cost as investment. "The $10K monthly investment typically generates $50K in new monthly recurring revenue by month 6. But let's be conservative—even at 25% of typical results, you're profitable in 8 weeks."</p>
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700 font-medium">Conservative ROI projections are more believable than aggressive ones. Under-promise and over-deliver builds trust.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90 font-medium">Conservative ROI projections are more believable than aggressive ones. Under-promise and over-deliver builds trust.</p>
                   </div>
                 </div>
 

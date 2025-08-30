@@ -152,7 +152,7 @@ const CustomerAcquisitionStall = () => {
                   <span className="text-orange-400">Customer Acquisition</span>
                   <span className="block text-white mt-2">Stall Solutions</span>
                 </h1>
-                <p className="text-black-important text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-white text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
                   CAC keeps rising while conversion stays flat? The problem isn't your product or budget—it's that you're 
                   <span className="text-orange-400 font-semibold"> competing on the same channels with the same message</span> as everyone else.
                 </p>
@@ -200,7 +200,7 @@ const CustomerAcquisitionStall = () => {
                   </div>
                 </div>
                 <div className="glass-card-solid rounded-lg p-4 text-center">
-                  <p className="text-black-important font-semibold">
+                  <p className="text-gray-900 font-semibold">
                     The pattern: Same channels → Same message → Same prospects → Price competition
                   </p>
                 </div>
@@ -240,7 +240,7 @@ const CustomerAcquisitionStall = () => {
                         {/* Customer Says */}
                         <div className="space-y-6">
                           <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
-                            <h4 className="heading-md text-black-important font-bold text-red-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-red-800 font-bold text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Customer Says:
                             </h4>
@@ -263,7 +263,7 @@ const CustomerAcquisitionStall = () => {
                         {/* Solutions */}
                         <div className="space-y-6">
                           <div className="glass-card-light rounded-lg p-4 border-l-4 border-yellow-500">
-                            <h4 className="heading-md text-black-important font-bold text-yellow-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-yellow-800 font-bold text-yellow-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Problem:
                             </h4>
@@ -273,11 +273,11 @@ const CustomerAcquisitionStall = () => {
                           </div>
                           
                           <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
-                            <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-green-800 font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-black-important">
+                            <p className="text-gray-900">
                               {scenario.solution}
                             </p>
                           </div>
@@ -286,11 +286,11 @@ const CustomerAcquisitionStall = () => {
                       
                       {/* Why It Works */}
                       <div className="mt-6 glass-card-solid rounded-lg p-4 border border-blue-200">
-                        <h4 className="heading-md text-black-important font-bold text-blue-800 mb-2 flex items-center">
+                        <h4 className="heading-md text-blue-800 font-bold text-blue-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-black-important font-medium">
+                        <p className="text-gray-900 font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -306,7 +306,7 @@ const CustomerAcquisitionStall = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   🚨 Stop Competing on Price in Saturated Channels
                 </h3>
-                <p className="text-black-important text-lg text-black-standard mb-6 max-w-3xl mx-auto">
+                <p className="text-gray-900 text-lg text-black-standard mb-6 max-w-3xl mx-auto">
                   Every month you compete on the same channels with the same message, your CAC gets worse while competitors with 
                   differentiated psychology capture qualified prospects. Get your free acquisition analysis and discover which pattern is killing your efficiency.
                 </p>
@@ -327,12 +327,12 @@ const CustomerAcquisitionStall = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-gray-900 mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-white mb-8 text-center">
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-black-important text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="heading-lg text-gray-900 text-xl font-bold text-gray-900 mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} className="hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors">
                       Revenue Ceiling Breakthrough →
                     </a>
@@ -342,7 +342,7 @@ const CustomerAcquisitionStall = () => {
                   </p>
                 </div>
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-black-important text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="heading-lg text-gray-900 text-xl font-bold text-gray-900 mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors">
                       Marketing Psychology Fundamentals →
                     </a>
