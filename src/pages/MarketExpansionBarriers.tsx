@@ -194,7 +194,7 @@ const MarketExpansionBarriers = () => {
                     <div className="text-2xl font-bold text-red-600 mb-1">3.4x</div>
                     <p className="text-sm text-optional">Larger addressable market</p>
                   </div>
-                  <div className="text-center p-4 glass-card-green rounded-lg">
+                  <div className="text-center p-4 bg-green-50 rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">22%</div>
                     <p className="text-sm text-optional">Succeed with repositioning</p>
                   </div>
@@ -237,7 +237,7 @@ const MarketExpansionBarriers = () => {
                         
                         {/* Customer Says */}
                         <div className="space-y-6">
-                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-black-important font-bold text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Customer Says:
@@ -300,7 +300,7 @@ const MarketExpansionBarriers = () => {
 
             {/* Call to Action */}
             <section className="mb-16">
-              <div className="text-center bg-gradient-to-r from-yellow-50 to-orange-50 rounded-2xl p-8 border border-yellow-200/50">
+              <div className="text-center glass-card-solid rounded-2xl p-8 border border-yellow-200/50">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   🚨 Stop Accepting Market "Limitations" as Reality
                 </h3>

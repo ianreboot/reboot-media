@@ -186,7 +186,7 @@ const TeamGrowthBottlenecks = () => {
                   Culture shifts with size, and what worked at 5 people breaks at 50 without intentional frameworks.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 glass-card-blue rounded-lg">
+                  <div className="text-center p-4 bg-blue-50 rounded-lg">
                     <div className="text-2xl font-bold text-blue-accessible mb-1">89%</div>
                     <p className="text-sm text-optional">Struggle with team scaling</p>
                   </div>
@@ -194,7 +194,7 @@ const TeamGrowthBottlenecks = () => {
                     <div className="text-2xl font-bold text-red-600 mb-1">43%</div>
                     <p className="text-sm text-optional">New hire failure rate</p>
                   </div>
-                  <div className="text-center p-4 glass-card-green rounded-lg">
+                  <div className="text-center p-4 bg-green-50 rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">11%</div>
                     <p className="text-sm text-optional">Break founder dependency</p>
                   </div>
@@ -237,7 +237,7 @@ const TeamGrowthBottlenecks = () => {
                         
                         {/* Customer Says */}
                         <div className="space-y-6">
-                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-black-important font-bold text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Customer Says:
@@ -247,7 +247,7 @@ const TeamGrowthBottlenecks = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-blue rounded-lg p-4 border-l-4 border-blue-500">
+                          <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
                             <h4 className="heading-md text-black-important font-bold text-blue-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Customer Thinks:
@@ -283,7 +283,7 @@ const TeamGrowthBottlenecks = () => {
                       </div>
                       
                       {/* Why It Works */}
-                      <div className="mt-6 bg-purple-50 rounded-lg p-4 border border-purple-200">
+                      <div className="mt-6 glass-card-blue rounded-lg p-4 border border-blue-200">
                         <h4 className="heading-md text-black-important font-bold text-purple-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
@@ -300,7 +300,7 @@ const TeamGrowthBottlenecks = () => {
 
             {/* Call to Action */}
             <section className="mb-16">
-              <div className="text-center bg-gradient-to-r from-blue-50 to-purple-50 rounded-2xl p-8 border border-blue-200/50">
+              <div className="text-center glass-card-solid rounded-2xl p-8 border border-blue-200/50">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   🚨 Stop Being the Bottleneck to Your Own Growth
                 </h3>

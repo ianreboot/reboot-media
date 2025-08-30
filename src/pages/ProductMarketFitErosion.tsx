@@ -258,7 +258,7 @@ const ProductMarketFitErosion = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-important-accessible font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
@@ -271,7 +271,7 @@ const ProductMarketFitErosion = () => {
                       </div>
                       
                       {/* Why It Works */}
-                      <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
+                      <div className="mt-6 glass-card-blue rounded-lg p-4 border border-blue-200">
                         <h4 className="heading-md text-important-accessible font-bold text-blue-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
@@ -288,7 +288,7 @@ const ProductMarketFitErosion = () => {
 
             {/* Call to Action */}
             <section className="mb-16">
-              <div className="text-center bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-200/50">
+              <div className="text-center glass-card-solid rounded-2xl p-8 border border-purple-200/50">
                 <h3 className="heading-lg text-important-accessible text-2xl font-bold mb-4">
                   🚨 Stop Watching Your Market Fit Decay
                 </h3>

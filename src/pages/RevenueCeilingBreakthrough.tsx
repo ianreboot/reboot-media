@@ -246,7 +246,7 @@ const RevenueCeilingBreakthrough = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
@@ -259,7 +259,7 @@ const RevenueCeilingBreakthrough = () => {
                       </div>
                       
                       {/* Why It Works */}
-                      <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
+                      <div className="mt-6 glass-card-blue rounded-lg p-4 border border-blue-200">
                         <h4 className="heading-md text-black-important font-bold text-blue-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
@@ -276,7 +276,7 @@ const RevenueCeilingBreakthrough = () => {
 
             {/* Call to Action */}
             <section className="mb-16">
-              <div className="text-center bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl p-8 border border-red-200/50">
+              <div className="text-center glass-card-solid rounded-2xl p-8 border border-red-200/50">
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   🚨 Tired of Founder-Led Sales Bottlenecks?
                 </h3>

@@ -203,7 +203,7 @@ const GrowthPlateauSolutions = () => {
               </div>
             </div>
             
-            <div className="bg-gradient-to-r from-red-50 to-orange-50 rounded-2xl p-8 border border-red-200/50">
+            <div className="glass-card-solid rounded-2xl p-8 border border-red-200/50">
               <h3 className="heading-lg text-white mb-4">
                 🚨 Every Month You Wait Costs You $47,000+
               </h3>
@@ -257,7 +257,7 @@ const GrowthPlateauSolutions = () => {
 
           {/* How This Works */}
           <section className="mb-20">
-            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-12">
+            <div className="glass-card-medium rounded-2xl shadow-xl border border-white/20 p-12">
               <h2 className="heading-xl text-gradient-critical mb-8 text-center">
                 The Psychology-Driven Breakthrough Framework
               </h2>
