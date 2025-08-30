@@ -346,7 +346,7 @@ const LeadForm = () => {
                 
                 <div className="space-y-4">
                   {/* Contact Information */}
-                  <div className="bg-white/95 rounded-xl p-4 border border-gray-200/30">
+                  <div className="glass-card-solid rounded-xl p-4 border border-gray-200/30">
                     <h4 className="font-bold text-blue-900 mb-3 flex items-center">
                       <span className="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs mr-2">1</span>
                       Contact Information
@@ -386,7 +386,7 @@ const LeadForm = () => {
                   </div>
 
                   {/* Business Details */}
-                  <div className="bg-white/95 rounded-xl p-4 border border-gray-200/30">
+                  <div className="glass-card-solid rounded-xl p-4 border border-gray-200/30">
                     <h4 className="font-bold text-green-900 mb-3 flex items-center">
                       <span className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center text-white text-xs mr-2">2</span>
                       Business Details
@@ -443,7 +443,7 @@ const LeadForm = () => {
                   </div>
 
                   {/* Marketing Challenge */}
-                  <div className="bg-white/95 rounded-xl p-4 border border-gray-200/30">
+                  <div className="glass-card-solid rounded-xl p-4 border border-gray-200/30">
                     <h4 className="font-bold text-yellow-900 mb-3 flex items-center">
                       <span className="w-6 h-6 bg-yellow-500 rounded-full flex items-center justify-center text-white text-xs mr-2">3</span>
                       Your Marketing Challenge
@@ -473,7 +473,7 @@ const LeadForm = () => {
                   </div>
 
                   {/* Timeline */}
-                  <div className="bg-white/95 rounded-xl p-4 border border-gray-200/30">
+                  <div className="glass-card-solid rounded-xl p-4 border border-gray-200/30">
                     <h4 className="font-bold text-purple-900 mb-3 flex items-center">
                       <span className="w-6 h-6 bg-purple-500 rounded-full flex items-center justify-center text-white text-xs mr-2">4</span>
                       Timeline
