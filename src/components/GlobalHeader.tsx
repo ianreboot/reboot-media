@@ -343,7 +343,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                       href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}${item.path}`}
                       className={`relative px-3 py-2 text-sm font-medium motion-safe:transition-all motion-reduce:transition-none duration-200 rounded-lg hover:bg-gray-100 focus-visible:bg-gray-100 focus-visible:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ${
                         location.pathname === item.path
-                          ? 'text-orange-accessible bg-orange-50
+                          ? 'text-orange-accessible bg-orange-50'
                           : 'text-gray-700 hover:text-gray-900 focus-visible:text-gray-900 focus-visible:text-white'
                       }`}
                       style={{ 
