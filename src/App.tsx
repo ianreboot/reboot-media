@@ -170,8 +170,7 @@ const MainApp = () => {
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">30X Growth</div>
                 <div className="text-sm text-important-accessible font-medium leading-tight responsive-truncate">
-                  <span className="sr-only">Companies see explosive revenue growth when psychology replaces guesswork</span>
-                  <span aria-hidden="true">Companies see explosive revenue growth when psychology replaces guesswork</span>
+                  Companies see explosive revenue growth when psychology replaces guesswork
                 </div>
               </div>
             </div>
@@ -180,8 +179,7 @@ const MainApp = () => {
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">Stop the Bleed</div>
                 <div className="text-sm text-important-accessible font-medium leading-tight responsive-truncate">
-                  <span className="sr-only">Finally understand why customers don't buy, instead of wondering why</span>
-                  <span aria-hidden="true">Finally understand why customers don't buy, instead of wondering why</span>
+                  Finally understand why customers don't buy, instead of wondering why
                 </div>
               </div>
             </div>
@@ -190,8 +188,7 @@ const MainApp = () => {
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">Sleep Better</div>
                 <div className="text-sm text-important-accessible font-medium leading-tight responsive-truncate">
-                  <span className="sr-only">No more throwing money at marketing that doesn't bring customers</span>
-                  <span aria-hidden="true">No more throwing money at marketing that doesn't bring customers</span>
+                  No more throwing money at marketing that doesn't bring customers
                 </div>
               </div>
             </div>
