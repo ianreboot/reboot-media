@@ -192,12 +192,12 @@ const TransitionStrategies = () => {
                   proactively, using growth triggers and strategic milestones to guide evolution from one model to another.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 bg-purple-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-purple-600 mb-1">82%</div>
                     <p className="text-sm text-optional">Switch reactively in crisis</p>
                   </div>
-                  <div className="text-center p-4 bg-pink-50 rounded-lg">
-                    <div className="text-2xl font-bold text-pink-600 mb-1">6mo</div>
+                  <div className="text-center p-4 glass-card-orange rounded-lg">
+                    <div className="text-2xl font-bold text-orange-accessible mb-1">6mo</div>
                     <p className="text-sm text-optional">Lost during transitions</p>
                   </div>
                   <div className="text-center p-4 glass-card-green rounded-lg">
@@ -252,7 +252,7 @@ const TransitionStrategies = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
+                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-purple-500">
                             <h4 className="heading-md text-purple-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
@@ -275,7 +275,7 @@ const TransitionStrategies = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-pink-50 rounded-lg p-4 border-l-4 border-pink-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-pink-500">
                             <h4 className="heading-md text-pink-800 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
@@ -351,7 +351,7 @@ const TransitionStrategies = () => {
 
             {/* Call to Action */}
             <section className="mb-16">
-              <div className="text-center bg-gradient-to-r from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-200/50">
+              <div className="text-center glass-card-light rounded-2xl p-8 border border-purple-200/50">
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Losing Momentum During Transitions
                 </h3>

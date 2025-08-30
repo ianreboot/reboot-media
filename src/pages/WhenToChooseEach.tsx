@@ -188,8 +188,8 @@ const WhenToChooseEach = () => {
                   Quick Decision Matrix (Your Situation → Best Model)
                 </h2>
                 <div className="grid md:grid-cols-2 gap-4 text-sm">
-                  <div className="p-4 bg-yellow-50 rounded-lg">
-                    <strong className="text-yellow-800">Pre-revenue/MVP Stage:</strong>
+                  <div className="p-4 glass-card-orange rounded-lg">
+                    <strong className="text-orange-800">Pre-revenue/MVP Stage:</strong>
                     <p className="text-standard mt-1">DIY → Consultant for validation</p>
                   </div>
                   <div className="p-4 glass-card-blue rounded-lg">
@@ -200,15 +200,15 @@ const WhenToChooseEach = () => {
                     <strong className="text-green-800">$1M-3M Scaling:</strong>
                     <p className="text-standard mt-1">Fractional CMO leading strategy</p>
                   </div>
-                  <div className="p-4 bg-purple-50 rounded-lg">
+                  <div className="p-4 glass-card-medium rounded-lg">
                     <strong className="text-purple-800">$3M-5M Growth:</strong>
                     <p className="text-standard mt-1">Fractional + In-house team</p>
                   </div>
-                  <div className="p-4 glass-card-light rounded-lg">
+                  <div className="p-4 glass-card-solid rounded-lg">
                     <strong className="text-red-800">Crisis/Turnaround:</strong>
                     <p className="text-standard mt-1">Fractional CMO immediately</p>
                   </div>
-                  <div className="p-4 bg-indigo-50 rounded-lg">
+                  <div className="p-4 glass-card-light rounded-lg">
                     <strong className="text-indigo-800">$5M+ Established:</strong>
                     <p className="text-standard mt-1">Full-time CMO + complete team</p>
                   </div>
@@ -257,7 +257,7 @@ const WhenToChooseEach = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-indigo-50 rounded-lg p-4 border-l-4 border-indigo-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-indigo-500">
                             <h4 className="heading-md text-indigo-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
@@ -270,8 +270,8 @@ const WhenToChooseEach = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
-                            <h4 className="heading-md text-yellow-800 mb-2 flex items-center">
+                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
+                            <h4 className="heading-md text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
                             </h4>
@@ -280,7 +280,7 @@ const WhenToChooseEach = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
+                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-purple-500">
                             <h4 className="heading-md text-purple-800 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
@@ -367,7 +367,7 @@ const WhenToChooseEach = () => {
 
             {/* Call to Action */}
             <section className="mb-16">
-              <div className="text-center bg-gradient-to-r from-indigo-50 to-purple-50 rounded-2xl p-8 border border-indigo-200/50">
+              <div className="text-center glass-card-light rounded-2xl p-8 border border-indigo-200/50">
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Choosing the Wrong Marketing Model
                 </h3>

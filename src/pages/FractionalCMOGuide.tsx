@@ -335,11 +335,11 @@ const FractionalCMOGuide = () => {
 
           {/* Call to Action */}
           <section className="mb-16">
-            <div className="text-center glass-card-light rounded-2xl p-8">
-              <h3 className="heading-lg text-white mb-4">
+            <div className="text-center glass-card-solid rounded-2xl p-8">
+              <h3 className="heading-lg text-gradient-critical mb-4">
                 🚨 Stop Making the $47,000 Mistake
               </h3>
-              <p className="text-lg text-white/90 mb-6 max-w-3xl mx-auto">
+              <p className="text-lg text-black-standard mb-6 max-w-3xl mx-auto">
                 Most companies choose marketing approaches based on status or emotion, not ROI analysis. Get your free decision analysis 
                 and discover which approach delivers the fastest, most predictable growth for your specific situation.
               </p>

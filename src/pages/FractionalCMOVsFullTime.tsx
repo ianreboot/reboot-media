@@ -196,8 +196,8 @@ const FractionalCMOVsFullTime = () => {
                     <div className="text-2xl font-bold text-green-600 mb-1">71%</div>
                     <p className="text-sm text-optional">Hire for status, not workload</p>
                   </div>
-                  <div className="text-center p-4 glass-card-light rounded-lg">
-                    <div className="text-2xl font-bold text-red-600 mb-1">$250K+</div>
+                  <div className="text-center p-4 glass-card-orange rounded-lg">
+                    <div className="text-2xl font-bold text-orange-accessible mb-1">$250K+</div>
                     <p className="text-sm text-optional">True full-time cost</p>
                   </div>
                   <div className="text-center p-4 glass-card-blue rounded-lg">
@@ -242,7 +242,7 @@ const FractionalCMOVsFullTime = () => {
                         
                         {/* Company Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Company Says:
@@ -252,7 +252,7 @@ const FractionalCMOVsFullTime = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-green-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
@@ -265,8 +265,8 @@ const FractionalCMOVsFullTime = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
-                            <h4 className="heading-md text-yellow-800 mb-2 flex items-center">
+                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
+                            <h4 className="heading-md text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
                             </h4>
@@ -275,7 +275,7 @@ const FractionalCMOVsFullTime = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                          <div className="glass-card-blue rounded-lg p-4 border-l-4 border-blue-500">
                             <h4 className="heading-md text-blue-800 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
@@ -288,7 +288,7 @@ const FractionalCMOVsFullTime = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 bg-purple-50 rounded-lg p-4 border border-purple-200">
+                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-purple-200">
                         <h4 className="heading-md text-purple-800 mb-2 flex items-center">
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
@@ -305,7 +305,7 @@ const FractionalCMOVsFullTime = () => {
 
             {/* Call to Action */}
             <section className="mb-16">
-              <div className="text-center bg-gradient-to-r from-blue-50 to-green-50 rounded-2xl p-8 border border-green-200/50">
+              <div className="text-center glass-card-light rounded-2xl p-8 border border-green-200/50">
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Stop Overpaying for Underutilized Talent
                 </h3>

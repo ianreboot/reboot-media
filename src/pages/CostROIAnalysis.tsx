@@ -270,7 +270,7 @@ const CostROIAnalysis = () => {
                         <span className="font-medium">Agency</span>
                         <span className="font-bold text-orange-accessible">+23% growth</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 bg-purple-50 rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-medium rounded-lg">
                         <span className="font-medium">Consultant</span>
                         <span className="font-bold text-purple-600">+12% growth</span>
                       </div>
@@ -291,7 +291,7 @@ const CostROIAnalysis = () => {
                         <span className="font-medium">Agency</span>
                         <span className="font-bold text-orange-accessible">1.8x ROI</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 bg-purple-50 rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-medium rounded-lg">
                         <span className="font-medium">Consultant</span>
                         <span className="font-bold text-purple-600">0.9x ROI</span>
                       </div>
@@ -346,7 +346,7 @@ const CostROIAnalysis = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-green-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
@@ -359,8 +359,8 @@ const CostROIAnalysis = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
-                            <h4 className="heading-md text-yellow-800 mb-2 flex items-center">
+                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
+                            <h4 className="heading-md text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
                             </h4>
@@ -382,7 +382,7 @@ const CostROIAnalysis = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 bg-emerald-50 rounded-lg p-4 border border-emerald-200">
+                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-emerald-200">
                         <h4 className="heading-md text-emerald-800 mb-2 flex items-center">
                           <span className="mr-2">💰</span>
                           Financial Reality:
@@ -427,7 +427,7 @@ const CostROIAnalysis = () => {
 
             {/* Call to Action */}
             <section className="mb-16">
-              <div className="text-center bg-gradient-to-r from-green-50 to-emerald-50 rounded-2xl p-8 border border-green-200/50">
+              <div className="text-center glass-card-light rounded-2xl p-8 border border-green-200/50">
                 <h3 className="heading-lg text-gradient-critical mb-4">
                   🚨 Every Month You Delay Costs You $26,000+
                 </h3>
