@@ -47,11 +47,11 @@ const SolutionAwareStageCustomers = () => {
           <section className="pt-20 md:pt-24 pb-16 bg-gradient-to-br from-orange-900 via-orange-950 to-black relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,165,0,0.1)_0%,transparent_50%)"></div>
             <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-              <h1 className="heading-hero text-gray-800 mb-6 leading-tight">
+              <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
                 "Which One Should We Choose?"
                 <span className="block text-orange-500 mt-2">When Every Option Looks the Same (And Why They Don't)</span>
               </h1>
-              <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
                 These prospects know they need marketing help. They're comparing agencies, consultants, tools, and in-house options. But everyone's saying the same thing—"We drive growth." Here's what they're really thinking.
               </p>
               <div className="flex justify-center">
@@ -84,7 +84,7 @@ const SolutionAwareStageCustomers = () => {
 
             {/* Real Customer Examples */}
             <section className="mb-12">
-              <h2 className="heading-xl text-gray-800 mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
                 What Solution-Aware Customers Actually Think (And How to Win Them)
               </h2>
 
@@ -231,13 +231,78 @@ const SolutionAwareStageCustomers = () => {
               </div>
             </section>
 
+            {/* Stage Metrics Section */}
+            <section className="mb-16">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
+                Solution-Aware Stage Customer Metrics
+              </h2>
+              
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-orange-400 mb-2">20%</h3>
+                  <p className="text-white font-semibold mb-1">Market Percentage</p>
+                  <p className="text-white/80 text-sm">Prospects actively comparing solutions</p>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-green-400 mb-2">2-8 weeks</h3>
+                  <p className="text-white font-semibold mb-1">Decision Timeline</p>
+                  <p className="text-white/80 text-sm">Average time to make final selection</p>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-blue-400 mb-2">3x ROI</h3>
+                  <p className="text-white font-semibold mb-1">Differentiation Value</p>
+                  <p className="text-white/80 text-sm">Return on clear positioning strategy</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="p-6 glass-card-medium rounded-xl border border-orange/30 shadow-lg">
+                  <h3 className="text-xl font-bold text-orange-300 mb-4">Conversion Rates</h3>
+                  <ul className="space-y-3 text-white">
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Generic Positioning</span>
+                      <span className="font-bold text-red-300">10-15%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Price Competition</span>
+                      <span className="font-bold text-red-300">8-12%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Clear Differentiation</span>
+                      <span className="font-bold text-green-300">35-45%</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-blue/30 shadow-lg">
+                  <h3 className="text-xl font-bold text-blue-300 mb-4">Decision Factors</h3>
+                  <ul className="space-y-3 text-white">
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Risk Mitigation</span>
+                      <span className="font-bold text-blue-300">45%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Relevant Experience</span>
+                      <span className="font-bold text-blue-300">30%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Price/Value</span>
+                      <span className="font-bold text-orange-300">25%</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="heading-xl text-gray-800 mb-6 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-6 text-center">
                 The Pattern: How Solution-Aware Customers Actually Decide
               </h2>
               
-              <div className="bg-orange-50/95 rounded-xl p-6 mb-6 backdrop-blur-sm border border-orange-200/50">
+              <div className="glass-card-orange rounded-xl p-6 mb-6">
                 <p className="text-orange-800 mb-4 font-semibold">
                   <strong>Solution-aware customers aren't comparing features—they're managing risk.</strong>
                 </p>
@@ -273,10 +338,10 @@ const SolutionAwareStageCustomers = () => {
 
             {/* Strong CTA Section */}
             <section className="text-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white rounded-2xl p-12">
-              <h2 className="heading-xl text-gray-800 mb-6">
+              <h2 className="heading-xl text-gradient-critical mb-6">
                 Stop Sounding Like Every Other Marketing Option
               </h2>
-              <p className="text-gray-700 mb-8 text-lg max-w-2xl mx-auto font-medium">
+              <p className="text-gradient-safe mb-8 text-lg max-w-2xl mx-auto font-medium">
                 Get the positioning strategy that makes you the obvious choice—not just another option in their spreadsheet. We'll show you exactly how to differentiate when everyone claims the same benefits.
               </p>
               <button aria-label="Opens contact form for free marketing analysis" 
@@ -285,7 +350,7 @@ const SolutionAwareStageCustomers = () => {
               >
                 Get Your Differentiation Strategy →
               </button>
-              <p className="text-gray-700 text-sm mt-4 font-medium">
+              <p className="text-gradient-safe text-sm mt-4 font-medium">
                 ✅ Stand out from competitors • ✅ Win without competing on price • ✅ Close deals faster
               </p>
             </section>
@@ -295,7 +360,7 @@ const SolutionAwareStageCustomers = () => {
               <div className="flex justify-between items-center">
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/problem-aware-stage-customers`}
-                  className="text-gray-700 hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors"
+                  className="text-gradient-safe hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors"
                 >
                   ← Previous: Problem-Aware Stage
                 </a>

@@ -51,7 +51,7 @@ const ProblemAwareStageCustomers = () => {
                 "Something Isn't Working"
                 <span className="block text-orange-500 mt-2">The Frustration of Knowing You're Stuck Without Knowing Why</span>
               </h1>
-              <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
                 These prospects know their marketing is broken. They see competitors pulling ahead. But they're throwing solutions at the wall hoping something sticks—because they haven't diagnosed the real problem yet.
               </p>
               <div className="flex justify-center">
@@ -253,6 +253,71 @@ const ProblemAwareStageCustomers = () => {
               </div>
             </section>
 
+            {/* Stage Metrics Section */}
+            <section className="mb-16">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
+                Problem-Aware Stage Customer Metrics
+              </h2>
+              
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-orange-400 mb-2">25%</h3>
+                  <p className="text-white font-semibold mb-1">Market Percentage</p>
+                  <p className="text-white/80 text-sm">Prospects who know something's wrong</p>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-green-400 mb-2">1-3 months</h3>
+                  <p className="text-white font-semibold mb-1">Solution Timeline</p>
+                  <p className="text-white/80 text-sm">Average time to find right solution approach</p>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-blue-400 mb-2">8x ROI</h3>
+                  <p className="text-white font-semibold mb-1">Diagnosis Value</p>
+                  <p className="text-white/80 text-sm">Return on proper problem diagnosis</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="p-6 glass-card-medium rounded-xl border border-orange/30 shadow-lg">
+                  <h3 className="text-xl font-bold text-orange-300 mb-4">Conversion Rates</h3>
+                  <ul className="space-y-3 text-white">
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Problem → Solution-Aware</span>
+                      <span className="font-bold text-orange-300">15-20%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Random Solution Buying</span>
+                      <span className="font-bold text-red-300">5-8%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">With Clear Diagnosis</span>
+                      <span className="font-bold text-green-300">35-40%</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-blue/30 shadow-lg">
+                  <h3 className="text-xl font-bold text-blue-300 mb-4">Stage Progression</h3>
+                  <ul className="space-y-3 text-white">
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Week 1-2</span>
+                      <span className="font-bold text-blue-300">Problem Definition</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Week 3-6</span>
+                      <span className="font-bold text-blue-300">Root Cause Analysis</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Week 7-12</span>
+                      <span className="font-bold text-green-300">Solution Research</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
             {/* Key Insights Section */}
             <section className="mb-12">
               <h2 className="heading-xl text-gradient-critical mb-6 text-center">
@@ -269,25 +334,31 @@ const ProblemAwareStageCustomers = () => {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="p-6 border border-white/20 rounded-xl glass-card-light">
-                  <h3 className="heading-lg text-white mb-3">What NOT to do:</h3>
+                <div className="p-6 border border-white/20 rounded-xl glass-card-medium">
+                  <h3 className="heading-lg text-white mb-3 flex items-center">
+                    <span className="text-red-400 mr-2 text-2xl">✗</span>
+                    What NOT to do:
+                  </h3>
                   <ul className="text-white/90 space-y-2 text-sm">
-                    <li>• Jump straight to your solution</li>
-                    <li>• Add to their confusion with more options</li>
-                    <li>• Validate their self-diagnosis (often wrong)</li>
-                    <li>• Overwhelm them with complex frameworks</li>
-                    <li>• Promise quick fixes for systematic problems</li>
+                    <li className="flex items-start"><span className="text-red-400 mr-2 font-bold">•</span> Jump straight to your solution</li>
+                    <li className="flex items-start"><span className="text-red-400 mr-2 font-bold">•</span> Add to their confusion with more options</li>
+                    <li className="flex items-start"><span className="text-red-400 mr-2 font-bold">•</span> Validate their self-diagnosis (often wrong)</li>
+                    <li className="flex items-start"><span className="text-red-400 mr-2 font-bold">•</span> Overwhelm them with complex frameworks</li>
+                    <li className="flex items-start"><span className="text-red-400 mr-2 font-bold">•</span> Promise quick fixes for systematic problems</li>
                   </ul>
                 </div>
                 
-                <div className="p-6 border border-white/20 rounded-xl glass-card-light">
-                  <h3 className="heading-lg text-white mb-3">What TO do:</h3>
-                  <ul className="text-white/90 space-y-2 text-sm">
-                    <li>• Help them see the real root cause</li>
-                    <li>• Connect symptoms to underlying problems</li>
-                    <li>• Provide clarity before solutions</li>
-                    <li>• Use their language to explain complex issues</li>
-                    <li>• Show them what "good" actually looks like</li>
+                <div className="p-6 border border-white/20 rounded-xl glass-card-green">
+                  <h3 className="heading-lg text-green-800 mb-3 flex items-center">
+                    <span className="text-green-600 mr-2 text-2xl">✓</span>
+                    What TO do:
+                  </h3>
+                  <ul className="text-green-700 space-y-2 text-sm">
+                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Help them see the real root cause</li>
+                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Connect symptoms to underlying problems</li>
+                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Provide clarity before solutions</li>
+                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Use their language to explain complex issues</li>
+                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Show them what "good" actually looks like</li>
                   </ul>
                 </div>
               </div>

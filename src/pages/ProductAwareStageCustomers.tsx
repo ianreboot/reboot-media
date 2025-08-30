@@ -47,11 +47,11 @@ const ProductAwareStageCustomers = () => {
           <section className="pt-20 md:pt-24 pb-16 bg-gradient-to-br from-orange-900 via-orange-950 to-black relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,165,0,0.1)_0%,transparent_50%)"></div>
             <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-              <h1 className="heading-hero text-gray-800 mb-6 leading-tight">
+              <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
                 "Can YOU Actually Deliver?"
                 <span className="block text-orange-500 mt-2">The Final Questions Before They Say Yes</span>
               </h1>
-              <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
                 These prospects know about you. They've read your case studies, maybe had a call. Now they're in the final evaluation—looking for reasons to trust you or walk away.
               </p>
               <div className="flex justify-center">
@@ -209,9 +209,74 @@ const ProductAwareStageCustomers = () => {
               </div>
             </section>
 
+            {/* Stage Metrics Section */}
+            <section className="mb-16">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
+                Product-Aware Stage Customer Metrics
+              </h2>
+              
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-orange-400 mb-2">10%</h3>
+                  <p className="text-white font-semibold mb-1">Market Percentage</p>
+                  <p className="text-white/80 text-sm">Prospects evaluating your specific solution</p>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-green-400 mb-2">1-4 weeks</h3>
+                  <p className="text-white font-semibold mb-1">Evaluation Timeline</p>
+                  <p className="text-white/80 text-sm">Average time from interest to decision</p>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-blue-400 mb-2">10x ROI</h3>
+                  <p className="text-white font-semibold mb-1">Trust Building</p>
+                  <p className="text-white/80 text-sm">Return on addressing specific objections</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="p-6 glass-card-medium rounded-xl border border-orange/30 shadow-lg">
+                  <h3 className="text-xl font-bold text-orange-300 mb-4">Conversion Rates</h3>
+                  <ul className="space-y-3 text-white">
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Generic Responses</span>
+                      <span className="font-bold text-red-300">15-25%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Pushy Sales Tactics</span>
+                      <span className="font-bold text-red-300">10-18%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Addressing Real Concerns</span>
+                      <span className="font-bold text-green-300">55-70%</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-blue/30 shadow-lg">
+                  <h3 className="text-xl font-bold text-blue-300 mb-4">Common Objections</h3>
+                  <ul className="space-y-3 text-white">
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">"Will it work for us?"</span>
+                      <span className="font-bold text-blue-300">40%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">"Can we trust you?"</span>
+                      <span className="font-bold text-blue-300">35%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">"Is the price worth it?"</span>
+                      <span className="font-bold text-orange-300">25%</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="heading-xl text-gray-800 mb-6 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-6 text-center">
                 The Truth About Product-Aware Customers
               </h2>
               
@@ -227,10 +292,10 @@ const ProductAwareStageCustomers = () => {
 
             {/* Strong CTA Section */}
             <section className="text-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white rounded-2xl p-12 border border-gray-700/50 shadow-2xl">
-              <h2 className="heading-xl text-gray-800 mb-6">
+              <h2 className="heading-xl text-gradient-critical mb-6">
                 Turn "We Need to Think About It" Into "When Can We Start?"
               </h2>
-              <p className="text-gray-700 mb-8 text-lg max-w-2xl mx-auto font-medium">
+              <p className="text-gradient-safe mb-8 text-lg max-w-2xl mx-auto font-medium">
                 Get the objection-handling framework that addresses their real concerns—not just surface questions. Close more deals without being pushy.
               </p>
               <button aria-label="Opens contact form for free marketing analysis" 
@@ -239,7 +304,7 @@ const ProductAwareStageCustomers = () => {
               >
                 Get Your Objection-Handling Playbook →
               </button>
-              <p className="text-gray-700 text-sm mt-4 font-medium">
+              <p className="text-gradient-safe text-sm mt-4 font-medium">
                 ✅ Address hidden concerns • ✅ Build decision confidence • ✅ Close without pressure
               </p>
             </section>
@@ -249,7 +314,7 @@ const ProductAwareStageCustomers = () => {
               <div className="flex justify-between items-center">
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/solution-aware-stage-customers`}
-                  className="text-gray-700 hover:text-orange-accessible focus-visible:text-orange-accessible focus-visible:text-orange-400 transition-colors"
+                  className="text-gradient-safe hover:text-orange-accessible focus-visible:text-orange-accessible focus-visible:text-orange-400 transition-colors"
                 >
                   ← Previous: Solution-Aware Stage
                 </a>

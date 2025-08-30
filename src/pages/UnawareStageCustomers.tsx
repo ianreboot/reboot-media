@@ -241,6 +241,71 @@ const UnawareStageCustomers = () => {
               </div>
             </section>
 
+            {/* Stage Metrics Section */}
+            <section className="mb-16">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
+                Unaware Stage Customer Metrics
+              </h2>
+              
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-orange-400 mb-2">40%</h3>
+                  <p className="text-white font-semibold mb-1">Market Percentage</p>
+                  <p className="text-white/80 text-sm">Most prospects are unaware of their real problems</p>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-green-400 mb-2">3-6 months</h3>
+                  <p className="text-white font-semibold mb-1">Education Timeline</p>
+                  <p className="text-white/80 text-sm">Average time to move to problem-aware</p>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-blue-400 mb-2">5x ROI</h3>
+                  <p className="text-white font-semibold mb-1">Education Investment</p>
+                  <p className="text-white/80 text-sm">Return on nurturing unaware prospects properly</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="p-6 glass-card-medium rounded-xl border border-orange/30 shadow-lg">
+                  <h3 className="text-xl font-bold text-orange-300 mb-4">Conversion Rates</h3>
+                  <ul className="space-y-3 text-white">
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Unaware → Problem-Aware</span>
+                      <span className="font-bold text-orange-300">8-12%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Direct to Solution</span>
+                      <span className="font-bold text-red-300">2-3%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">With Proper Nurturing</span>
+                      <span className="font-bold text-green-300">25-30%</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-blue/30 shadow-lg">
+                  <h3 className="text-xl font-bold text-blue-300 mb-4">Stage Progression</h3>
+                  <ul className="space-y-3 text-white">
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Month 1-2</span>
+                      <span className="font-bold text-blue-300">Problem Recognition</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Month 3-4</span>
+                      <span className="font-bold text-blue-300">Solution Exploration</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Month 5-6</span>
+                      <span className="font-bold text-green-300">Ready to Evaluate</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
             {/* Key Insights Section */}
             <section className="mb-12">
               <h2 className="heading-xl text-gradient-critical mb-6 text-center">

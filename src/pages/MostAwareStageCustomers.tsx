@@ -238,14 +238,79 @@ const MostAwareStageCustomers = () => {
               </div>
             </section>
 
+            {/* Stage Metrics Section */}
+            <section className="mb-16">
+              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
+                Most Aware Stage Customer Metrics
+              </h2>
+              
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-orange-400 mb-2">5%</h3>
+                  <p className="text-white font-semibold mb-1">Market Percentage</p>
+                  <p className="text-white/80 text-sm">Prospects ready to buy immediately</p>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-green-400 mb-2">1-7 days</h3>
+                  <p className="text-white font-semibold mb-1">Close Timeline</p>
+                  <p className="text-white/80 text-sm">Average time from final objection to signature</p>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-white/30 shadow-lg">
+                  <h3 className="text-2xl font-bold text-blue-400 mb-2">15x ROI</h3>
+                  <p className="text-white font-semibold mb-1">Friction Removal</p>
+                  <p className="text-white/80 text-sm">Return on removing final barriers smoothly</p>
+                </div>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <div className="p-6 glass-card-medium rounded-xl border border-orange/30 shadow-lg">
+                  <h3 className="text-xl font-bold text-orange-300 mb-4">Conversion Rates</h3>
+                  <ul className="space-y-3 text-white">
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">High-pressure Tactics</span>
+                      <span className="font-bold text-red-300">30-40%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Standard Process</span>
+                      <span className="font-bold text-orange-300">60-70%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Friction Removal Focus</span>
+                      <span className="font-bold text-green-300">85-95%</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="p-6 glass-card-medium rounded-xl border border-blue/30 shadow-lg">
+                  <h3 className="text-xl font-bold text-blue-300 mb-4">Final Hesitations</h3>
+                  <ul className="space-y-3 text-white">
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Timing/Internal Approval</span>
+                      <span className="font-bold text-blue-300">50%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Final Price Negotiation</span>
+                      <span className="font-bold text-blue-300">30%</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span className="text-white/90">Contract/Terms Review</span>
+                      <span className="font-bold text-orange-300">20%</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="heading-xl text-white mb-6 text-center">
+              <h2 className="heading-xl text-gradient-critical mb-6 text-center">
                 The Secret to Closing Most Aware Customers
               </h2>
               
-              <div className="bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-100 rounded-xl p-8 mb-6 border-2 border-orange-200 shadow-lg">
-                <p className="text-white text-xl font-bold mb-6 text-center">
+              <div className="glass-card-orange rounded-xl p-8 mb-6 border-2 border-orange-400 shadow-lg">
+                <p className="text-orange-800 text-xl font-bold mb-6 text-center">
                   Most aware customers don't need more convincing—they need permission to say yes.
                 </p>
                 <div className="glass-card-light rounded-lg p-6">
@@ -258,7 +323,7 @@ const MostAwareStageCustomers = () => {
 
             {/* Strong CTA Section */}
             <section className="text-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white rounded-2xl p-12">
-              <h2 className="heading-xl text-white mb-6">
+              <h2 className="heading-xl text-gradient-critical mb-6">
                 Stop Losing Deals at the Finish Line
               </h2>
               <p className="text-white/90 mb-8 text-lg max-w-2xl mx-auto">
@@ -270,7 +335,7 @@ const MostAwareStageCustomers = () => {
               >
                 Get Your Closing Psychology Guide →
               </button>
-              <p className="luminescence-layer-3 text-sm mt-4">
+              <p className="text-gradient-safe text-sm mt-4">
                 ✅ Remove final friction • ✅ Close without pressure • ✅ Increase conversion rates
               </p>
             </section>
@@ -280,7 +345,7 @@ const MostAwareStageCustomers = () => {
               <div className="flex justify-between items-center">
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/product-aware-stage-customers`}
-                  className="text-accessible-min hover:text-orange-accessible focus-visible:text-orange-accessible focus-visible:text-orange-400 transition-colors"
+                  className="text-gradient-safe hover:text-orange-accessible focus-visible:text-orange-accessible focus-visible:text-orange-400 transition-colors"
                 >
                   ← Previous: Product-Aware Stage
                 </a>
