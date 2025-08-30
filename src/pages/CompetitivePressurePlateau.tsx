@@ -140,7 +140,7 @@ const CompetitivePressurePlateau = () => {
                   <span className="text-red-400">Competitive Pressure</span>
                   <span className="block text-white mt-2">Plateau Solutions</span>
                 </h1>
-                <p className="text-black-important text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-white text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
                   Bigger competitors crushing you? The problem isn't their size or budget—it's that you're trying to 
                   <span className="text-red-400 font-semibold"> compete on their terms</span> instead of creating unique positioning where you win.
                 </p>
@@ -166,10 +166,10 @@ const CompetitivePressurePlateau = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="glass-card-light rounded-2xl shadow-xl border border-red-200/50 p-8">
-                <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-gray-900 mb-6 text-center">
+                <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-white mb-6 text-center">
                   Why David Beats Goliath (Strategic Positioning Over Brute Force)
                 </h2>
-                <p className="text-black-important text-lg text-standard mb-6 leading-relaxed text-center">
+                <p className="text-white/90 text-lg text-standard mb-6 leading-relaxed text-center">
                   Competitive pressure plateaus happen when smaller companies try to compete on bigger companies' terms—features, price, or scale. 
                   The solution isn't bigger budgets; it's smarter positioning that makes their advantages irrelevant.
                 </p>
@@ -187,7 +187,7 @@ const CompetitivePressurePlateau = () => {
                     <p className="text-sm text-optional">Win with unique positioning</p>
                   </div>
                 </div>
-                <p className="text-black-important text-standard font-semibold text-center">
+                <p className="text-white text-standard font-semibold text-center">
                   The pattern: Competitor pressure → Feature matching → Price competition → Plateau
                 </p>
               </div>
@@ -195,7 +195,7 @@ const CompetitivePressurePlateau = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-white mb-12 text-center">
                 6 Competitive Pressure Patterns (Which is Yours?)
               </h2>
               
@@ -205,7 +205,7 @@ const CompetitivePressurePlateau = () => {
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="heading-lg text-black-important text-2xl font-bold text-white mb-2">
+                          <h3 className="heading-lg text-white text-2xl font-bold text-white mb-2">
                             {scenario.title}
                           </h3>
                           <div className="flex gap-4 text-sm text-red-100">
@@ -225,7 +225,7 @@ const CompetitivePressurePlateau = () => {
                         {/* Customer Says */}
                         <div className="space-y-6">
                           <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                            <h4 className="heading-md text-black-important font-bold text-red-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-red-800 font-bold text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Customer Says:
                             </h4>
@@ -235,7 +235,7 @@ const CompetitivePressurePlateau = () => {
                           </div>
                           
                           <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
-                            <h4 className="heading-md text-black-important font-bold text-orange-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-orange-800 font-bold text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Customer Thinks:
                             </h4>
@@ -248,7 +248,7 @@ const CompetitivePressurePlateau = () => {
                         {/* Solutions */}
                         <div className="space-y-6">
                           <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
-                            <h4 className="heading-md text-black-important font-bold text-yellow-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-yellow-800 font-bold text-yellow-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Problem:
                             </h4>
@@ -258,7 +258,7 @@ const CompetitivePressurePlateau = () => {
                           </div>
                           
                           <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
-                            <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-green-800 font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
@@ -271,11 +271,11 @@ const CompetitivePressurePlateau = () => {
                       
                       {/* Why It Works */}
                       <div className="mt-6 glass-card-blue rounded-lg p-4 border border-blue-200">
-                        <h4 className="heading-md text-black-important font-bold text-blue-800 mb-2 flex items-center">
+                        <h4 className="heading-md text-blue-800 font-bold text-blue-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-black-standard font-medium">
+                        <p className="text-gray-900 font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -291,7 +291,7 @@ const CompetitivePressurePlateau = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   🚨 Stop Playing by Their Rules
                 </h3>
-                <p className="text-black-important text-lg text-black-standard mb-6 max-w-3xl mx-auto">
+                <p className="text-gray-900 text-lg text-black-standard mb-6 max-w-3xl mx-auto">
                   Every month you compete on their terms—features, price, scale—you're fighting a battle you can't win. 
                   Get your free competitive analysis and discover unique positioning angles that make their size irrelevant.
                 </p>
@@ -312,12 +312,12 @@ const CompetitivePressurePlateau = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-gray-900 mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-white mb-8 text-center">
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-black-important text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="heading-lg text-gray-900 text-xl font-bold text-gray-900 mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/customer-acquisition-stall`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                       Customer Acquisition Stall →
                     </a>
@@ -327,7 +327,7 @@ const CompetitivePressurePlateau = () => {
                   </p>
                 </div>
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-black-important text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="heading-lg text-gray-900 text-xl font-bold text-gray-900 mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                       Need Strategic Marketing Leadership? →
                     </a>

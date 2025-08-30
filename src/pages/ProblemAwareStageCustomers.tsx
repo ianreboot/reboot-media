@@ -111,8 +111,8 @@ const ProblemAwareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">It reframes their problem from "everything is broken" to "we just need better visibility." This makes the solution feel achievable instead of overwhelming.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">It reframes their problem from "everything is broken" to "we just need better visibility." This makes the solution feel achievable instead of overwhelming.</p>
                   </div>
                 </div>
 
@@ -136,8 +136,8 @@ const ProblemAwareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">It shifts focus from volume (which feels good but means nothing) to quality (which actually drives revenue). This insight alone can transform their business.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">It shifts focus from volume (which feels good but means nothing) to quality (which actually drives revenue). This insight alone can transform their business.</p>
                   </div>
                 </div>
 
@@ -161,8 +161,8 @@ const ProblemAwareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">It reveals that high CAC isn't about spending more on ads—it's about having a differentiated message that converts better at any spend level.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">It reveals that high CAC isn't about spending more on ads—it's about having a differentiated message that converts better at any spend level.</p>
                   </div>
                 </div>
 
@@ -186,8 +186,8 @@ const ProblemAwareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">It reveals the difference between content (writing stuff) and content marketing (solving customer problems publicly). One builds traffic, the other builds revenue.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">It reveals the difference between content (writing stuff) and content marketing (solving customer problems publicly). One builds traffic, the other builds revenue.</p>
                   </div>
                 </div>
 
@@ -211,8 +211,8 @@ const ProblemAwareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">It shifts social media from a publishing platform to a relationship platform. This change alone can turn social from time-waster to revenue-driver.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">It shifts social media from a publishing platform to a relationship platform. This change alone can turn social from time-waster to revenue-driver.</p>
                   </div>
                 </div>
 
@@ -236,8 +236,8 @@ const ProblemAwareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">It stops the blame game between marketing and sales, focusing instead on creating a system where both teams win together.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">It stops the blame game between marketing and sales, focusing instead on creating a system where both teams win together.</p>
                   </div>
                 </div>
 
@@ -261,8 +261,8 @@ const ProblemAwareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">It shifts focus from defending against competitors to creating such value that competition becomes irrelevant.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">It shifts focus from defending against competitors to creating such value that competition becomes irrelevant.</p>
                   </div>
                 </div>
 
@@ -364,17 +364,17 @@ const ProblemAwareStageCustomers = () => {
                   </ul>
                 </div>
                 
-                <div className="p-6 border border-white/20 rounded-xl glass-card-green">
-                  <h3 className="heading-lg text-green-800 mb-3 flex items-center">
-                    <span className="text-green-600 mr-2 text-2xl">✓</span>
+                <div className="p-6 border border-white/20 rounded-xl glass-card-medium">
+                  <h3 className="heading-lg text-white mb-3 flex items-center">
+                    <span className="text-green-400 mr-2 text-2xl">✓</span>
                     What TO do:
                   </h3>
-                  <ul className="text-green-700 space-y-2 text-sm">
-                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Help them see the real root cause</li>
-                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Connect symptoms to underlying problems</li>
-                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Provide clarity before solutions</li>
-                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Use their language to explain complex issues</li>
-                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Show them what "good" actually looks like</li>
+                  <ul className="text-white/90 space-y-2 text-sm">
+                    <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Help them see the real root cause</li>
+                    <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Connect symptoms to underlying problems</li>
+                    <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Provide clarity before solutions</li>
+                    <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Use their language to explain complex issues</li>
+                    <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Show them what "good" actually looks like</li>
                   </ul>
                 </div>
               </div>

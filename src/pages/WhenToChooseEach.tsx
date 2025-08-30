@@ -189,28 +189,28 @@ const WhenToChooseEach = () => {
                 </h2>
                 <div className="grid md:grid-cols-2 gap-4 text-sm">
                   <div className="p-4 glass-card-medium rounded-lg">
-                    <strong className="text-orange-800">Pre-revenue/MVP Stage:</strong>
-                    <p className="text-standard mt-1">DIY → Consultant for validation</p>
+                    <strong className="text-orange-200">Pre-revenue/MVP Stage:</strong>
+                    <p className="text-white mt-1">DIY → Consultant for validation</p>
                   </div>
                   <div className="p-4 glass-card-solid rounded-lg">
-                    <strong className="text-blue-800">$500K-1M Revenue:</strong>
-                    <p className="text-standard mt-1">Fractional CMO + Tactical agency</p>
+                    <strong className="text-blue-200">$500K-1M Revenue:</strong>
+                    <p className="text-white mt-1">Fractional CMO + Tactical agency</p>
                   </div>
                   <div className="p-4 glass-card-solid rounded-lg">
-                    <strong className="text-green-800">$1M-3M Scaling:</strong>
-                    <p className="text-standard mt-1">Fractional CMO leading strategy</p>
+                    <strong className="text-green-200">$1M-3M Scaling:</strong>
+                    <p className="text-white mt-1">Fractional CMO leading strategy</p>
                   </div>
                   <div className="p-4 glass-card-solid rounded-lg">
-                    <strong className="text-purple-800">$3M-5M Growth:</strong>
-                    <p className="text-standard mt-1">Fractional + In-house team</p>
+                    <strong className="text-purple-200">$3M-5M Growth:</strong>
+                    <p className="text-white mt-1">Fractional + In-house team</p>
                   </div>
                   <div className="p-4 glass-card-solid rounded-lg">
-                    <strong className="text-red-800">Crisis/Turnaround:</strong>
-                    <p className="text-standard mt-1">Fractional CMO immediately</p>
+                    <strong className="text-red-200">Crisis/Turnaround:</strong>
+                    <p className="text-white mt-1">Fractional CMO immediately</p>
                   </div>
                   <div className="p-4 glass-card-medium rounded-lg">
-                    <strong className="text-indigo-800">$5M+ Established:</strong>
-                    <p className="text-standard mt-1">Full-time CMO + complete team</p>
+                    <strong className="text-indigo-200">$5M+ Established:</strong>
+                    <p className="text-white mt-1">Full-time CMO + complete team</p>
                   </div>
                 </div>
               </div>
@@ -340,18 +340,18 @@ const WhenToChooseEach = () => {
                       <td className="text-center py-3 px-2">Continuity</td>
                     </tr>
                     <tr className="border-b border-gray-100 glass-card-solid">
-                      <td className="py-3 px-2 font-medium">Time to Impact</td>
-                      <td className="text-center py-3 px-2 font-semibold">30-60 days</td>
-                      <td className="text-center py-3 px-2 font-semibold">60-90 days</td>
-                      <td className="text-center py-3 px-2 font-semibold">90-120 days</td>
-                      <td className="text-center py-3 px-2 font-semibold">180+ days</td>
+                      <td className="py-3 px-2 font-medium text-white">Time to Impact</td>
+                      <td className="text-center py-3 px-2 font-semibold text-white">30-60 days</td>
+                      <td className="text-center py-3 px-2 font-semibold text-white">60-90 days</td>
+                      <td className="text-center py-3 px-2 font-semibold text-white">90-120 days</td>
+                      <td className="text-center py-3 px-2 font-semibold text-white">180+ days</td>
                     </tr>
                     <tr className="border-b border-gray-100 glass-card-solid">
-                      <td className="py-3 px-2 font-medium">Cost Structure</td>
-                      <td className="text-center py-3 px-2 font-semibold">$5-15K/month</td>
-                      <td className="text-center py-3 px-2 font-semibold">$3-20K/month</td>
-                      <td className="text-center py-3 px-2 font-semibold">$25-75K project</td>
-                      <td className="text-center py-3 px-2 font-semibold">$8-25K/month</td>
+                      <td className="py-3 px-2 font-medium text-white">Cost Structure</td>
+                      <td className="text-center py-3 px-2 font-semibold text-white">$5-15K/month</td>
+                      <td className="text-center py-3 px-2 font-semibold text-white">$3-20K/month</td>
+                      <td className="text-center py-3 px-2 font-semibold text-white">$25-75K project</td>
+                      <td className="text-center py-3 px-2 font-semibold text-white">$8-25K/month</td>
                     </tr>
                     <tr>
                       <td className="py-3 px-2 font-medium">Accountability</td>

@@ -110,8 +110,8 @@ const UnawareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">People buy to solve pain, not to get features. When you lead with the financial impact of their current situation, you're speaking their language: business results.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">People buy to solve pain, not to get features. When you lead with the financial impact of their current situation, you're speaking their language: business results.</p>
                   </div>
                 </div>
 
@@ -135,8 +135,8 @@ const UnawareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">It reframes their thinking from "more" to "better." Most businesses fail not from lack of traffic but from poor conversion of existing traffic.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">It reframes their thinking from "more" to "better." Most businesses fail not from lack of traffic but from poor conversion of existing traffic.</p>
                   </div>
                 </div>
 
@@ -160,8 +160,8 @@ const UnawareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">Value-focused messaging shifts the conversation from "How much does it cost?" to "What will this accomplish?" Premium pricing becomes possible when you're solving important problems.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">Value-focused messaging shifts the conversation from "How much does it cost?" to "What will this accomplish?" Premium pricing becomes possible when you're solving important problems.</p>
                   </div>
                 </div>
 
@@ -185,8 +185,8 @@ const UnawareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">It transforms resignation into opportunity. Instead of accepting industry-wide failure, you position your solution as the differentiator that creates competitive advantage.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">It transforms resignation into opportunity. Instead of accepting industry-wide failure, you position your solution as the differentiator that creates competitive advantage.</p>
                   </div>
                 </div>
 
@@ -210,8 +210,8 @@ const UnawareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">It shows that "too busy for marketing" actually creates more work, not less. Effective marketing reduces the effort required to acquire customers, not increases it.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">It shows that "too busy for marketing" actually creates more work, not less. Effective marketing reduces the effort required to acquire customers, not increases it.</p>
                   </div>
                 </div>
 
@@ -235,8 +235,8 @@ const UnawareStageCustomers = () => {
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
-                    <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
-                    <p className="text-sm text-blue-700">It shifts blame from "marketing doesn't work" to "we haven't found the right marketing approach yet." This opens the door to trying systematic, psychology-based approaches.</p>
+                    <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
+                    <p className="text-sm text-white/90">It shifts blame from "marketing doesn't work" to "we haven't found the right marketing approach yet." This opens the door to trying systematic, psychology-based approaches.</p>
                   </div>
                 </div>
 
@@ -338,17 +338,17 @@ const UnawareStageCustomers = () => {
                   </ul>
                 </div>
                 
-                <div className="p-6 border border-green-200 rounded-xl glass-card-solid">
-                  <h3 className="heading-lg text-green-800 mb-3 flex items-center">
-                    <span className="text-green-600 mr-2 text-2xl">✓</span>
+                <div className="p-6 border border-green-200 rounded-xl glass-card-medium">
+                  <h3 className="heading-lg text-white mb-3 flex items-center">
+                    <span className="text-green-400 mr-2 text-2xl">✓</span>
                     What TO do:
                   </h3>
-                  <ul className="text-green-700 space-y-2 text-sm">
-                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Start with the cost of their current situation</li>
-                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Use their exact language and concerns</li>
-                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Provide gentle education, not sales pressure</li>
-                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Show what success looks like for similar companies</li>
-                    <li className="flex items-start"><span className="text-green-500 mr-2 font-bold">•</span> Focus on business outcomes, not tools</li>
+                  <ul className="text-white/90 space-y-2 text-sm">
+                    <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Start with the cost of their current situation</li>
+                    <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Use their exact language and concerns</li>
+                    <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Provide gentle education, not sales pressure</li>
+                    <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Show what success looks like for similar companies</li>
+                    <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Focus on business outcomes, not tools</li>
                   </ul>
                 </div>
               </div>

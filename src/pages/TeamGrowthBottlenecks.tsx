@@ -152,7 +152,7 @@ const TeamGrowthBottlenecks = () => {
                   <span className="text-blue-400">Team Growth</span>
                   <span className="block text-white mt-2">Bottleneck Solutions</span>
                 </h1>
-                <p className="text-black-important text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-white text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
                   Can't hire fast enough or new people aren't working out? The problem isn't talent availability—it's that 
                   <span className="text-blue-400 font-semibold"> the founder bottleneck</span> kills scaling when everything still goes through you.
                 </p>
@@ -178,10 +178,10 @@ const TeamGrowthBottlenecks = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="glass-card-light rounded-2xl shadow-xl border border-blue-200/50 p-8">
-                <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-gray-900 mb-6 text-center">
+                <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-white mb-6 text-center">
                   Why Team Growth Gets Stuck (And How Culture Really Scales)
                 </h2>
-                <p className="text-black-important text-lg text-standard mb-6 leading-relaxed text-center">
+                <p className="text-white/90 text-lg text-standard mb-6 leading-relaxed text-center">
                   Team growth bottlenecks aren't about finding "good people"—they're about systems that enable people to succeed. 
                   Culture shifts with size, and what worked at 5 people breaks at 50 without intentional frameworks.
                 </p>
@@ -209,7 +209,7 @@ const TeamGrowthBottlenecks = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-white mb-12 text-center">
                 <span className="block">7 Team Bottleneck Patterns</span>
                 <span className="block">(Which is Yours?)</span>
               </h2>
@@ -220,7 +220,7 @@ const TeamGrowthBottlenecks = () => {
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="heading-lg text-black-important text-2xl font-bold text-white mb-2">
+                          <h3 className="heading-lg text-white text-2xl font-bold text-white mb-2">
                             {scenario.title}
                           </h3>
                           <div className="flex gap-4 text-sm text-blue-100">
@@ -240,7 +240,7 @@ const TeamGrowthBottlenecks = () => {
                         {/* Customer Says */}
                         <div className="space-y-6">
                           <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                            <h4 className="heading-md text-black-important font-bold text-red-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-red-800 font-bold text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Customer Says:
                             </h4>
@@ -250,7 +250,7 @@ const TeamGrowthBottlenecks = () => {
                           </div>
                           
                           <div className="glass-card-light rounded-lg p-4 border-l-4 border-blue-500">
-                            <h4 className="heading-md text-black-important font-bold text-blue-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-blue-800 font-bold text-blue-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Customer Thinks:
                             </h4>
@@ -263,7 +263,7 @@ const TeamGrowthBottlenecks = () => {
                         {/* Solutions */}
                         <div className="space-y-6">
                           <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
-                            <h4 className="heading-md text-black-important font-bold text-orange-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-orange-800 font-bold text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Problem:
                             </h4>
@@ -273,11 +273,11 @@ const TeamGrowthBottlenecks = () => {
                           </div>
                           
                           <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
-                            <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-green-800 font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-black-important">
+                            <p className="text-gray-900">
                               {scenario.solution}
                             </p>
                           </div>
@@ -286,11 +286,11 @@ const TeamGrowthBottlenecks = () => {
                       
                       {/* Why It Works */}
                       <div className="mt-6 glass-card-solid rounded-lg p-4 border border-blue-200">
-                        <h4 className="heading-md text-black-important font-bold text-purple-800 mb-2 flex items-center">
+                        <h4 className="heading-md text-purple-800 font-bold text-purple-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-black-important font-medium">
+                        <p className="text-gray-900 font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -306,7 +306,7 @@ const TeamGrowthBottlenecks = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   🚨 Stop Being the Bottleneck to Your Own Growth
                 </h3>
-                <p className="text-black-important text-lg text-black-standard mb-6 max-w-3xl mx-auto">
+                <p className="text-gray-900 text-lg text-black-standard mb-6 max-w-3xl mx-auto">
                   Every month you stay trapped in founder dependency patterns, your team's growth potential stagnates while competitors 
                   with documented systems scale efficiently. Get your free team analysis and discover which bottleneck patterns are limiting your scaling.
                 </p>
@@ -327,12 +327,12 @@ const TeamGrowthBottlenecks = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-gray-900 mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-white mb-8 text-center">
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-black-important text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="heading-lg text-gray-900 text-xl font-bold text-gray-900 mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/operational-scaling-crisis`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                       Operational Scaling Crisis →
                     </a>
@@ -342,7 +342,7 @@ const TeamGrowthBottlenecks = () => {
                   </p>
                 </div>
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-black-important text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="heading-lg text-gray-900 text-xl font-bold text-gray-900 mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-blue-accessible focus-visible:text-blue-accessible transition-colors">
                       Need Strategic Marketing Leadership? →
                     </a>
