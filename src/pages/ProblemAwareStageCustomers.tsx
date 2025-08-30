@@ -106,7 +106,7 @@ const ProblemAwareStageCustomers = () => {
                     <p className="text-gradient-safe">Help them see the measurement gap. "Most companies think their marketing is broken when really their measurement is. Let me show you the three numbers that actually predict revenue growth."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700">It reframes their problem from "everything is broken" to "we just need better visibility." This makes the solution feel achievable instead of overwhelming.</p>
                   </div>
@@ -129,7 +129,7 @@ const ProblemAwareStageCustomers = () => {
                     <p className="text-gradient-safe">Show them the quality vs quantity truth. "You don't have a traffic problem, you have a targeting problem. Would you rather have 10,000 visitors and 10 sales, or 500 visitors and 50 sales?"</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700">It shifts focus from volume (which feels good but means nothing) to quality (which actually drives revenue). This insight alone can transform their business.</p>
                   </div>
@@ -152,7 +152,7 @@ const ProblemAwareStageCustomers = () => {
                     <p className="text-gradient-safe">Help them find their unique angle. "CAC goes up when you're fighting for the same customers with the same message. What if we targeted a slightly different problem that only you solve well?"</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700">It reveals that high CAC isn't about spending more on ads—it's about having a differentiated message that converts better at any spend level.</p>
                   </div>
@@ -175,7 +175,7 @@ const ProblemAwareStageCustomers = () => {
                     <p className="text-gradient-safe">Shift to problem-focused content. "Content marketing fails when it's about you. It succeeds when it's about your customer's expensive problems. What's the #1 question prospects ask before buying?"</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700">It reveals the difference between content (writing stuff) and content marketing (solving customer problems publicly). One builds traffic, the other builds revenue.</p>
                   </div>
@@ -198,7 +198,7 @@ const ProblemAwareStageCustomers = () => {
                     <p className="text-gradient-safe">Teach them engagement over reach. "Social media doesn't drive sales through posts—it drives sales through relationships. Are you spending more time posting or responding to ideal customers?"</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700">It shifts social media from a publishing platform to a relationship platform. This change alone can turn social from time-waster to revenue-driver.</p>
                   </div>
@@ -221,7 +221,7 @@ const ProblemAwareStageCustomers = () => {
                     <p className="text-gradient-safe">Create a shared definition of success. "The leads aren't terrible—the handoff is. What are the three things sales needs to know about a lead to have a successful first conversation?"</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700">It stops the blame game between marketing and sales, focusing instead on creating a system where both teams win together.</p>
                   </div>
@@ -244,7 +244,7 @@ const ProblemAwareStageCustomers = () => {
                     <p className="text-gradient-safe">Build switching costs through value. "Competitors can't steal customers who don't want to leave. What would make leaving you so painful that customers wouldn't even consider it?"</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700">It shifts focus from defending against competitors to creating such value that competition becomes irrelevant.</p>
                   </div>
@@ -259,7 +259,7 @@ const ProblemAwareStageCustomers = () => {
                 The Pattern: How to Help Problem-Aware Customers
               </h2>
               
-              <div className="bg-orange-50 rounded-xl p-6 mb-6">
+              <div className="glass-card-orange rounded-xl p-6 mb-6">
                 <p className="text-orange-800 mb-4">
                   <strong>Problem-aware customers don't need more tactics—they need a diagnosis.</strong>
                 </p>

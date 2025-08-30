@@ -200,7 +200,7 @@ const TransitionStrategies = () => {
                     <div className="text-2xl font-bold text-pink-600 mb-1">6mo</div>
                     <p className="text-sm text-optional">Lost during transitions</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-green rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">31%</div>
                     <p className="text-sm text-optional">Have transition plan</p>
                   </div>
@@ -242,7 +242,7 @@ const TransitionStrategies = () => {
                         
                         {/* Company Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Company Says:
@@ -265,7 +265,7 @@ const TransitionStrategies = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
+                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
                             <h4 className="heading-md text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
@@ -288,7 +288,7 @@ const TransitionStrategies = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 bg-green-50 rounded-lg p-4 border border-green-200">
+                      <div className="mt-6 glass-card-green rounded-lg p-4 border border-green-200">
                         <h4 className="heading-md text-green-800 mb-2 flex items-center">
                           <span className="mr-2">🎯</span>
                           Transition Strategy:
@@ -311,21 +311,21 @@ const TransitionStrategies = () => {
                 </h2>
                 <div className="space-y-4">
                   <div className="flex items-center">
-                    <div className="bg-yellow-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">1</div>
+                    <div className="glass-card-orange0 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">1</div>
                     <div>
                       <strong className="text-gray-900">$0-500K:</strong>
                       <span className="text-standard ml-2">Founder-led marketing or DIY approach</span>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">2</div>
+                    <div className="glass-card-orange0 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">2</div>
                     <div>
                       <strong className="text-gray-900">$500K-1M:</strong>
                       <span className="text-standard ml-2">First agency or consultant engagement</span>
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">3</div>
+                    <div className="glass-card-blue0 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">3</div>
                     <div>
                       <strong className="text-gray-900">$1M-3M:</strong>
                       <span className="text-standard ml-2">Fractional CMO for strategic growth</span>
@@ -339,7 +339,7 @@ const TransitionStrategies = () => {
                     </div>
                   </div>
                   <div className="flex items-center">
-                    <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">5</div>
+                    <div className="glass-card-green0 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">5</div>
                     <div>
                       <strong className="text-gray-900">$5M+:</strong>
                       <span className="text-standard ml-2">Full-time CMO with complete team</span>

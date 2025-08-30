@@ -106,7 +106,7 @@ const ProductAwareStageCustomers = () => {
                     <p className="text-gradient-safe">Get granular about similarities. "You're right, you're not exactly like Client X. But you both sell to procurement teams with 6-month sales cycles. Here's how we adapted our approach for their specific situation..."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 font-medium">Acknowledging differences while highlighting relevant similarities shows you're not using a cookie-cutter approach.</p>
                   </div>
@@ -129,7 +129,7 @@ const ProductAwareStageCustomers = () => {
                     <p className="text-gradient-safe">Set realistic milestones. "Month 1 is diagnosis and quick wins. Month 2 is foundation building. Month 3 is when you see momentum. By Month 6, transformation is obvious. Here's what to expect each step."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 font-medium">Clear timelines with specific milestones help them sell the patience required internally while building confidence.</p>
                   </div>
@@ -152,7 +152,7 @@ const ProductAwareStageCustomers = () => {
                     <p className="text-gradient-safe">Show your communication cadence. "You'll have my personal phone number. Weekly status calls. Monthly executive reviews. Slack access. Here's exactly how three current clients interact with us."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 font-medium">Specific communication commitments backed by current client examples makes ongoing support tangible, not theoretical.</p>
                   </div>
@@ -175,7 +175,7 @@ const ProductAwareStageCustomers = () => {
                     <p className="text-gradient-safe font-medium">Arm them for internal sales. "I'll prepare a one-page executive summary with ROI projections. Want me to join the call to answer technical questions? Here's what convinced the board at Similar Company."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 font-medium">Becoming their partner in the internal sale shows confidence and makes their job easier, increasing close rates.</p>
                   </div>
@@ -198,7 +198,7 @@ const ProductAwareStageCustomers = () => {
                     <p className="text-gradient-safe font-medium">Reframe cost as investment. "The $10K monthly investment typically generates $50K in new monthly recurring revenue by month 6. But let's be conservative—even at 25% of typical results, you're profitable in 8 weeks."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 font-medium">Conservative ROI projections are more believable than aggressive ones. Under-promise and over-deliver builds trust.</p>
                   </div>
@@ -213,7 +213,7 @@ const ProductAwareStageCustomers = () => {
                 The Truth About Product-Aware Customers
               </h2>
               
-              <div className="bg-orange-50 rounded-xl p-6 mb-6 border border-orange-200">
+              <div className="glass-card-orange rounded-xl p-6 mb-6">
                 <p className="text-orange-800 mb-4 font-semibold">
                   <strong>Product-aware customers want to say yes—they just need you to make it safe.</strong>
                 </p>

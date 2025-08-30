@@ -145,7 +145,7 @@ const TeamGrowthBottlenecks = () => {
 
               <div className="text-center">
                 <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+                  <span className="w-2 h-2 glass-card-blue0 rounded-full animate-pulse"></span>
                   Can't Hire Fast Enough
                 </div>
                 <h1 className="heading-hero text-gradient-critical text-4xl md:text-6xl font-black text-white mb-6 leading-tight">
@@ -186,15 +186,15 @@ const TeamGrowthBottlenecks = () => {
                   Culture shifts with size, and what worked at 5 people breaks at 50 without intentional frameworks.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-blue rounded-lg">
                     <div className="text-2xl font-bold text-blue-accessible mb-1">89%</div>
                     <p className="text-sm text-optional">Struggle with team scaling</p>
                   </div>
-                  <div className="text-center p-4 bg-red-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-light rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">43%</div>
                     <p className="text-sm text-optional">New hire failure rate</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-green rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">11%</div>
                     <p className="text-sm text-optional">Break founder dependency</p>
                   </div>
@@ -237,7 +237,7 @@ const TeamGrowthBottlenecks = () => {
                         
                         {/* Customer Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-black-important font-bold text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Customer Says:
@@ -247,7 +247,7 @@ const TeamGrowthBottlenecks = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                          <div className="glass-card-blue rounded-lg p-4 border-l-4 border-blue-500">
                             <h4 className="heading-md text-black-important font-bold text-blue-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Customer Thinks:
@@ -260,7 +260,7 @@ const TeamGrowthBottlenecks = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
+                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
                             <h4 className="heading-md text-black-important font-bold text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Problem:
@@ -270,7 +270,7 @@ const TeamGrowthBottlenecks = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
@@ -316,7 +316,7 @@ const TeamGrowthBottlenecks = () => {
                 </button>
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} 
-                  className="border-2 border-blue-500 text-blue-accessible hover:bg-blue-500 focus-visible:bg-blue-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
+                  className="border-2 border-blue-500 text-blue-accessible hover:glass-card-blue0 focus-visible:glass-card-blue0 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
                 >
                   See All Plateau Types
                 </a>

@@ -152,7 +152,7 @@ const FractionalCMOVsFullTime = () => {
               </div>
 
               <div className="text-center">
-                <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                <div className="inline-flex items-center gap-2 glass-card-green text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
                   <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                   Cost Efficiency vs Status Symbolism
                 </div>
@@ -192,15 +192,15 @@ const FractionalCMOVsFullTime = () => {
                   Companies hire full-time for the title, then wonder why they're paying executive salaries for director-level work.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-green rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">71%</div>
                     <p className="text-sm text-optional">Hire for status, not workload</p>
                   </div>
-                  <div className="text-center p-4 bg-red-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-light rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">$250K+</div>
                     <p className="text-sm text-optional">True full-time cost</p>
                   </div>
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-blue rounded-lg">
                     <div className="text-2xl font-bold text-blue-accessible mb-1">40%</div>
                     <p className="text-sm text-optional">Underutilized capacity</p>
                   </div>

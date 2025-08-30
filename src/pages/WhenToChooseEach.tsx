@@ -192,11 +192,11 @@ const WhenToChooseEach = () => {
                     <strong className="text-yellow-800">Pre-revenue/MVP Stage:</strong>
                     <p className="text-standard mt-1">DIY → Consultant for validation</p>
                   </div>
-                  <div className="p-4 bg-blue-50 rounded-lg">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <strong className="text-blue-800">$500K-1M Revenue:</strong>
                     <p className="text-standard mt-1">Fractional CMO + Tactical agency</p>
                   </div>
-                  <div className="p-4 bg-green-50 rounded-lg">
+                  <div className="p-4 glass-card-green rounded-lg">
                     <strong className="text-green-800">$1M-3M Scaling:</strong>
                     <p className="text-standard mt-1">Fractional CMO leading strategy</p>
                   </div>
@@ -204,7 +204,7 @@ const WhenToChooseEach = () => {
                     <strong className="text-purple-800">$3M-5M Growth:</strong>
                     <p className="text-standard mt-1">Fractional + In-house team</p>
                   </div>
-                  <div className="p-4 bg-red-50 rounded-lg">
+                  <div className="p-4 glass-card-light rounded-lg">
                     <strong className="text-red-800">Crisis/Turnaround:</strong>
                     <p className="text-standard mt-1">Fractional CMO immediately</p>
                   </div>
@@ -247,7 +247,7 @@ const WhenToChooseEach = () => {
                         
                         {/* Company Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Company Says:
@@ -293,7 +293,7 @@ const WhenToChooseEach = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 bg-green-50 rounded-lg p-4 border border-green-200">
+                      <div className="mt-6 glass-card-green rounded-lg p-4 ">
                         <h4 className="heading-md text-green-800 mb-2 flex items-center">
                           <span className="mr-2">🎯</span>
                           Clear Recommendation:

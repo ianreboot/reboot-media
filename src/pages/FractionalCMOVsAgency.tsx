@@ -153,7 +153,7 @@ const FractionalCMOVsAgency = () => {
 
               <div className="text-center">
                 <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+                  <span className="w-2 h-2 glass-card-blue0 rounded-full animate-pulse"></span>
                   Strategy Leadership vs Execution Power
                 </div>
                 <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
@@ -192,15 +192,15 @@ const FractionalCMOVsAgency = () => {
                   Agencies execute your ideas; Fractional CMOs take responsibility for outcomes.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-blue rounded-lg">
                     <div className="text-2xl font-bold text-blue-accessible mb-1">84%</div>
                     <p className="text-sm text-optional">Blame execution, not strategy</p>
                   </div>
-                  <div className="text-center p-4 bg-orange-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-orange rounded-lg">
                     <div className="text-2xl font-bold text-orange-accessible mb-1">67%</div>
                     <p className="text-sm text-optional">Switch within 18 months</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-green rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">23%</div>
                     <p className="text-sm text-optional">Consider strategy first</p>
                   </div>
@@ -242,7 +242,7 @@ const FractionalCMOVsAgency = () => {
                         
                         {/* Company Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Company Says:
@@ -252,7 +252,7 @@ const FractionalCMOVsAgency = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
+                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
                             <h4 className="heading-md text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
@@ -275,7 +275,7 @@ const FractionalCMOVsAgency = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-green-800 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
@@ -288,7 +288,7 @@ const FractionalCMOVsAgency = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
+                      <div className="mt-6 glass-card-blue rounded-lg p-4 border border-blue-200">
                         <h4 className="heading-md text-blue-800 mb-2 flex items-center">
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
@@ -319,7 +319,7 @@ const FractionalCMOVsAgency = () => {
                 >
                   Get Free Strategy Analysis
                 </button>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-blue-500 text-blue-accessible hover:bg-blue-500 focus-visible:bg-blue-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-blue-500 text-blue-accessible hover:glass-card-blue0 focus-visible:glass-card-blue0 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Compare vs Full-Time & Consultant
                 </a>
               </div>

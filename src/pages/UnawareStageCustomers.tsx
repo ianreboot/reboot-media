@@ -92,7 +92,7 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 rounded-xl p-6 bg-white/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-gradient-critical mb-2">Customer says:</h3>
-                    <blockquote className="text-gradient-enhanced italic text-lg font-medium bg-orange-50/20 p-4 rounded-lg border-l-4 border-orange-500">
+                    <blockquote className="text-gradient-enhanced italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
                       "We built the best product but no one gets it"
                     </blockquote>
                   </div>
@@ -107,7 +107,7 @@ const UnawareStageCustomers = () => {
                     <p className="text-gradient-safe">Start with the cost of their current broken process. Instead of "Our AI-powered analytics platform," try "Stop losing $3,000 monthly to decisions made on gut feeling instead of data."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 contrast-enhanced">People buy to solve pain, not to get features. When you lead with the financial impact of their current situation, you're speaking their language: business results.</p>
                   </div>
@@ -117,7 +117,7 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 rounded-xl p-6 bg-white/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-gradient-critical mb-2">Customer says:</h3>
-                    <blockquote className="text-gradient-enhanced italic text-lg font-medium bg-orange-50/20 p-4 rounded-lg border-l-4 border-orange-500">
+                    <blockquote className="text-gradient-enhanced italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
                       "We just need more traffic to our website"
                     </blockquote>
                   </div>
@@ -132,7 +132,7 @@ const UnawareStageCustomers = () => {
                     <p className="text-gradient-safe">Help them see the real math. "Before sending more people to a site where 90% leave confused, let's figure out why your current visitors aren't buying. More confused people isn't the solution."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 contrast-enhanced">It reframes their thinking from "more" to "better." Most businesses fail not from lack of traffic but from poor conversion of existing traffic.</p>
                   </div>
@@ -142,7 +142,7 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 rounded-xl p-6 bg-white/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-gradient-critical mb-2">Customer says:</h3>
-                    <blockquote className="text-gradient-enhanced italic text-lg font-medium bg-orange-50/20 p-4 rounded-lg border-l-4 border-orange-500">
+                    <blockquote className="text-gradient-enhanced italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
                       "Our prices are competitive, I don't know why we're not winning deals"
                     </blockquote>
                   </div>
@@ -157,7 +157,7 @@ const UnawareStageCustomers = () => {
                     <p className="text-gradient-safe">Change the conversation from cost to outcome. "The companies beating you aren't competing on price—they're making price irrelevant by showing specific results their solution delivers."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 contrast-enhanced">Value-focused messaging shifts the conversation from "How much does it cost?" to "What will this accomplish?" Premium pricing becomes possible when you're solving important problems.</p>
                   </div>
@@ -167,7 +167,7 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 rounded-xl p-6 bg-white/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-gradient-critical mb-2">Customer says:</h3>
-                    <blockquote className="text-gradient-enhanced italic text-lg font-medium bg-orange-50/20 p-4 rounded-lg border-l-4 border-orange-500">
+                    <blockquote className="text-gradient-enhanced italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
                       "Everyone in our industry struggles with marketing"
                     </blockquote>
                   </div>
@@ -182,7 +182,7 @@ const UnawareStageCustomers = () => {
                     <p className="text-gradient-safe">Show them the exception proves the rule. "While most companies in your space do struggle, the 15% that don't are capturing disproportionate market share. Here's what they do differently."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 contrast-enhanced">It transforms resignation into opportunity. Instead of accepting industry-wide failure, you position your solution as the differentiator that creates competitive advantage.</p>
                   </div>
@@ -192,7 +192,7 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 rounded-xl p-6 bg-white/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-gradient-critical mb-2">Customer says:</h3>
-                    <blockquote className="text-gradient-enhanced italic text-lg font-medium bg-orange-50/20 p-4 rounded-lg border-l-4 border-orange-500">
+                    <blockquote className="text-gradient-enhanced italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
                       "Our team is too busy to focus on marketing right now"
                     </blockquote>
                   </div>
@@ -207,7 +207,7 @@ const UnawareStageCustomers = () => {
                     <p className="text-gradient-safe">Reframe busy as expensive. "The cost of your team being too busy for marketing isn't just missed opportunities—it's working twice as hard for half the results because you're invisible to your best prospects."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 contrast-enhanced">It shows that "too busy for marketing" actually creates more work, not less. Effective marketing reduces the effort required to acquire customers, not increases it.</p>
                   </div>
@@ -217,7 +217,7 @@ const UnawareStageCustomers = () => {
                 <div className="border border-gray-200 rounded-xl p-6 bg-white/50 backdrop-blur-sm">
                   <div className="mb-4">
                     <h3 className="heading-lg text-gradient-critical mb-2">Customer says:</h3>
-                    <blockquote className="text-gradient-enhanced italic text-lg font-medium bg-orange-50/20 p-4 rounded-lg border-l-4 border-orange-500">
+                    <blockquote className="text-gradient-enhanced italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
                       "We've tried marketing before and it didn't work"
                     </blockquote>
                   </div>
@@ -232,7 +232,7 @@ const UnawareStageCustomers = () => {
                     <p className="text-gradient-safe">Separate strategy from tactics. "Marketing isn't one thing that either works or doesn't. The question is: did you have the right message, to the right people, at the right time? Most 'marketing failures' are actually messaging failures."</p>
                   </div>
                   
-                  <div className="p-4 bg-blue-50 rounded-lg border border-blue-200">
+                  <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-blue-800 mb-2">Why this works:</h4>
                     <p className="text-sm text-blue-700 contrast-enhanced">It shifts blame from "marketing doesn't work" to "we haven't found the right marketing approach yet." This opens the door to trying systematic, psychology-based approaches.</p>
                   </div>
@@ -247,7 +247,7 @@ const UnawareStageCustomers = () => {
                 The Pattern: What Unaware Customers Really Need
               </h2>
               
-              <div className="bg-orange-50 rounded-xl p-6 mb-6 border border-orange-200">
+              <div className="glass-card-orange rounded-xl p-6 mb-6">
                 <p className="text-orange-800 mb-4 text-gradient-enhanced">
                   <strong>The unaware customer's biggest enemy isn't competition—it's comfort with dysfunction.</strong>
                 </p>
@@ -257,7 +257,7 @@ const UnawareStageCustomers = () => {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="p-6 border border-red-200 rounded-xl bg-red-50/20">
+                <div className="p-6 border border-red-200 rounded-xl glass-card-light">
                   <h3 className="heading-lg text-gradient-critical mb-3 flex items-center">
                     <span className="text-red-600 mr-2 text-2xl">✗</span>
                     What NOT to do:
@@ -271,7 +271,7 @@ const UnawareStageCustomers = () => {
                   </ul>
                 </div>
                 
-                <div className="p-6 border border-green-200 rounded-xl bg-green-50/20">
+                <div className="p-6 border border-green-200 rounded-xl glass-card-green">
                   <h3 className="heading-lg text-gradient-critical mb-3 flex items-center">
                     <span className="text-green-600 mr-2 text-2xl">✓</span>
                     What TO do:

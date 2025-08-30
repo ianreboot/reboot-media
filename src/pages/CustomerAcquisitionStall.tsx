@@ -145,7 +145,7 @@ const CustomerAcquisitionStall = () => {
 
               <div className="text-center">
                 <div className="inline-flex items-center gap-2 bg-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                  <span className="w-2 h-2 bg-orange-500 rounded-full animate-pulse"></span>
+                  <span className="w-2 h-2 glass-card-orange0 rounded-full animate-pulse"></span>
                   CAC Rising, Conversion Flat
                 </div>
                 <h1 className="heading-hero text-gradient-critical text-4xl md:text-6xl font-black mb-6 leading-tight">
@@ -186,15 +186,15 @@ const CustomerAcquisitionStall = () => {
                   costs go up and quality goes down. The solution isn't more budget; it's psychology-driven differentiation.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 bg-orange-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-orange rounded-lg">
                     <div className="text-2xl font-bold text-orange-accessible mb-1">73%</div>
                     <p className="text-sm text-optional">Experience CAC inflation</p>
                   </div>
-                  <div className="text-center p-4 bg-red-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-light rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">156%</div>
                     <p className="text-sm text-optional">Average CAC increase</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-green rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">27%</div>
                     <p className="text-sm text-optional">Break cycle with differentiation</p>
                   </div>
@@ -237,7 +237,7 @@ const CustomerAcquisitionStall = () => {
                         
                         {/* Customer Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-white font-bold text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Customer Says:
@@ -247,7 +247,7 @@ const CustomerAcquisitionStall = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
+                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
                             <h4 className="heading-md text-white font-bold text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Customer Thinks:
@@ -270,7 +270,7 @@ const CustomerAcquisitionStall = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-white font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
@@ -283,7 +283,7 @@ const CustomerAcquisitionStall = () => {
                       </div>
                       
                       {/* Why It Works */}
-                      <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
+                      <div className="mt-6 glass-card-blue rounded-lg p-4 border border-blue-200">
                         <h4 className="heading-md text-white font-bold text-blue-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
@@ -316,7 +316,7 @@ const CustomerAcquisitionStall = () => {
                 </button>
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} 
-                  className="border-2 border-orange-500 text-orange-accessible hover:bg-orange-500 focus-visible:bg-orange-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
+                  className="border-2 border-orange-500 text-orange-accessible hover:glass-card-orange0 focus-visible:glass-card-orange0 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block"
                 >
                   See All Plateau Types
                 </a>

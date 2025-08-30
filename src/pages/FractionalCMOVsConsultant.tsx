@@ -196,11 +196,11 @@ const FractionalCMOVsConsultant = () => {
                     <div className="text-2xl font-bold text-purple-600 mb-1">87%</div>
                     <p className="text-sm text-optional">Strategies never fully implemented</p>
                   </div>
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-blue rounded-lg">
                     <div className="text-2xl font-bold text-blue-accessible mb-1">$75K</div>
                     <p className="text-sm text-optional">Average consulting project cost</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-green rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">14%</div>
                     <p className="text-sm text-optional">Achieve promised ROI</p>
                   </div>
@@ -242,7 +242,7 @@ const FractionalCMOVsConsultant = () => {
                         
                         {/* Company Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Company Says:
@@ -265,7 +265,7 @@ const FractionalCMOVsConsultant = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
+                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
                             <h4 className="heading-md text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
@@ -275,7 +275,7 @@ const FractionalCMOVsConsultant = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                          <div className="glass-card-blue rounded-lg p-4 border-l-4 border-blue-500">
                             <h4 className="heading-md text-blue-800 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
@@ -288,7 +288,7 @@ const FractionalCMOVsConsultant = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 bg-green-50 rounded-lg p-4 border border-green-200">
+                      <div className="mt-6 glass-card-green rounded-lg p-4 border border-green-200">
                         <h4 className="heading-md text-green-800 mb-2 flex items-center">
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:

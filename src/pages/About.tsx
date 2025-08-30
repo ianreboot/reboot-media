@@ -72,8 +72,7 @@ const About = () => {
                   strategy and execution at a fraction of traditional consulting costs.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-orange-100 to-amber-100 p-6 rounded-xl relative overflow-hidden">
-                <div className="absolute inset-0 bg-white/20"></div>
+              <div className="glass-card-orange p-6 rounded-xl relative overflow-hidden">
                 <div className="relative z-10">
                   <h3 className="heading-lg text-black mb-4">Why "Reboot" Media?</h3>
                   <p className="text-black/80">
@@ -214,21 +213,21 @@ const About = () => {
               <h2 className="heading-xl text-gradient-critical mb-8 text-center">Our Values</h2>
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 glass-card-orange rounded-full flex items-center justify-center mx-auto mb-4">
                     <TrendingUp className="w-8 h-8 text-orange-accessible" />
                   </div>
                   <h3 className="heading-md text-white mb-2 text-shadow-sm">Results-Driven</h3>
                   <p className="text-white/90 text-sm text-shadow-sm">Every strategy must drive measurable business growth</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 glass-card-blue rounded-full flex items-center justify-center mx-auto mb-4">
                     <Award className="w-8 h-8 text-blue-accessible" />
                   </div>
                   <h3 className="heading-md text-white mb-2 text-shadow-sm">Excellence</h3>
                   <p className="text-white/90 text-sm text-shadow-sm">Fortune 500 standards applied to every engagement</p>
                 </div>
                 <div className="text-center">
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 glass-card-green rounded-full flex items-center justify-center mx-auto mb-4">
                     <CheckCircle className="w-8 h-8 text-green-600" />
                   </div>
                   <h3 className="heading-md text-white mb-2 text-shadow-sm">Transparency</h3>

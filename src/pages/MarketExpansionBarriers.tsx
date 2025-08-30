@@ -190,11 +190,11 @@ const MarketExpansionBarriers = () => {
                     <div className="text-2xl font-bold text-yellow-600 mb-1">78%</div>
                     <p className="text-sm text-optional">Feel market constrained</p>
                   </div>
-                  <div className="text-center p-4 bg-red-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-light rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">3.4x</div>
                     <p className="text-sm text-optional">Larger addressable market</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-green rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">22%</div>
                     <p className="text-sm text-optional">Succeed with repositioning</p>
                   </div>
@@ -237,7 +237,7 @@ const MarketExpansionBarriers = () => {
                         
                         {/* Customer Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-black-important font-bold text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Customer Says:
@@ -260,7 +260,7 @@ const MarketExpansionBarriers = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
+                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
                             <h4 className="heading-md text-black-important font-bold text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Problem:
@@ -270,7 +270,7 @@ const MarketExpansionBarriers = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
@@ -283,7 +283,7 @@ const MarketExpansionBarriers = () => {
                       </div>
                       
                       {/* Why It Works */}
-                      <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
+                      <div className="mt-6 glass-card-blue rounded-lg p-4 border border-blue-200">
                         <h4 className="heading-md text-black-important font-bold text-blue-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:

@@ -164,7 +164,7 @@ const Contact = () => {
           </div>
 
           {/* Form Usage Guidance */}
-          <div className="bg-orange-50 border border-orange-200 rounded-2xl p-6 mb-8 text-center">
+          <div className="glass-card-orange rounded-2xl p-6 mb-8 text-center">
             <h2 className="heading-sm text-white mb-3">
               Looking for Marketing Help?
             </h2>
@@ -413,7 +413,7 @@ const Contact = () => {
               </div>
 
               {/* Response Time */}
-              <div className="bg-gradient-to-br from-orange-100 to-amber-100 rounded-2xl p-6">
+              <div className="glass-card-orange rounded-2xl p-6">
                 <h3 className="heading-md text-orange-900 mb-2">Response Time</h3>
                 <p className="text-orange-800 text-sm">
                   We typically respond to all inquiries within 24 hours during business days. 
@@ -422,7 +422,7 @@ const Contact = () => {
               </div>
 
               {/* Free Consultation CTA */}
-              <div className="bg-gradient-to-br from-blue-100 to-indigo-100 rounded-2xl p-6">
+              <div className="glass-card-blue rounded-2xl p-6">
                 <h3 className="heading-md text-blue-900 mb-2">Free Marketing Analysis</h3>
                 <p className="text-blue-800 text-sm mb-4">
                   Ready to transform your marketing? Get a personalized analysis 

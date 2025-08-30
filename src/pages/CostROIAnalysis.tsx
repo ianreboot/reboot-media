@@ -153,7 +153,7 @@ const CostROIAnalysis = () => {
 
               <div className="text-center">
                 <div className="inline-flex items-center gap-2 bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-6">
-                  <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                  <span className="w-2 h-2 glass-card-green0 rounded-full animate-pulse"></span>
                   Real Numbers, Hidden Costs, True ROI
                 </div>
                 <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
@@ -205,42 +205,42 @@ const CostROIAnalysis = () => {
                       <td className="text-center py-3 px-2">$15-25K/mo</td>
                       <td className="text-center py-3 px-2">$12-18K/mo</td>
                     </tr>
-                    <tr className="border-b border-gray-100 bg-red-50">
+                    <tr className="border-b border-gray-100 glass-card-light">
                       <td className="py-3 px-2 font-medium">+ Recruitment Cost</td>
                       <td className="text-center py-3 px-2">$0</td>
                       <td className="text-center py-3 px-2">$2-5K</td>
                       <td className="text-center py-3 px-2">$20-40K</td>
                       <td className="text-center py-3 px-2">$15-25K</td>
                     </tr>
-                    <tr className="border-b border-gray-100 bg-red-50">
+                    <tr className="border-b border-gray-100 glass-card-light">
                       <td className="py-3 px-2 font-medium">+ Benefits/Overhead</td>
                       <td className="text-center py-3 px-2">$0</td>
                       <td className="text-center py-3 px-2">$0</td>
                       <td className="text-center py-3 px-2">$5-8K/mo</td>
                       <td className="text-center py-3 px-2">$4-6K/mo</td>
                     </tr>
-                    <tr className="border-b border-gray-100 bg-red-50">
+                    <tr className="border-b border-gray-100 glass-card-light">
                       <td className="py-3 px-2 font-medium">+ Management Time</td>
                       <td className="text-center py-3 px-2">5 hrs/mo</td>
                       <td className="text-center py-3 px-2">20 hrs/mo</td>
                       <td className="text-center py-3 px-2">10 hrs/mo</td>
                       <td className="text-center py-3 px-2">40 hrs/mo</td>
                     </tr>
-                    <tr className="border-b border-gray-100 bg-red-50">
+                    <tr className="border-b border-gray-100 glass-card-light">
                       <td className="py-3 px-2 font-medium">+ Ramp-Up Time</td>
                       <td className="text-center py-3 px-2">2-4 weeks</td>
                       <td className="text-center py-3 px-2">6-8 weeks</td>
                       <td className="text-center py-3 px-2">12-16 weeks</td>
                       <td className="text-center py-3 px-2">16-24 weeks</td>
                     </tr>
-                    <tr className="border-b border-gray-100 bg-red-50">
+                    <tr className="border-b border-gray-100 glass-card-light">
                       <td className="py-3 px-2 font-medium">+ Turnover Risk</td>
                       <td className="text-center py-3 px-2">Low</td>
                       <td className="text-center py-3 px-2">Medium</td>
                       <td className="text-center py-3 px-2">High (18mo avg)</td>
                       <td className="text-center py-3 px-2">Very High (43%)</td>
                     </tr>
-                    <tr className="border-t-2 border-gray-200 bg-green-50">
+                    <tr className="border-t-2 border-gray-200 glass-card-green">
                       <td className="py-3 px-2 font-bold">TRUE ANNUAL COST</td>
                       <td className="text-center py-3 px-2 font-bold text-green-600">$96-180K</td>
                       <td className="text-center py-3 px-2 font-bold text-orange-accessible">$84-300K</td>
@@ -262,11 +262,11 @@ const CostROIAnalysis = () => {
                   <div>
                     <h3 className="heading-lg text-gradient-critical mb-4">Average Revenue Impact</h3>
                     <div className="space-y-3">
-                      <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-green rounded-lg">
                         <span className="font-medium">Fractional CMO</span>
                         <span className="font-bold text-green-600">+42% growth</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 bg-orange-50 rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-orange rounded-lg">
                         <span className="font-medium">Agency</span>
                         <span className="font-bold text-orange-accessible">+23% growth</span>
                       </div>
@@ -274,7 +274,7 @@ const CostROIAnalysis = () => {
                         <span className="font-medium">Consultant</span>
                         <span className="font-bold text-purple-600">+12% growth</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-blue rounded-lg">
                         <span className="font-medium">In-House</span>
                         <span className="font-bold text-blue-accessible">+18% growth</span>
                       </div>
@@ -283,11 +283,11 @@ const CostROIAnalysis = () => {
                   <div>
                     <h3 className="heading-lg text-gradient-critical mb-4">ROI Multiplier</h3>
                     <div className="space-y-3">
-                      <div className="flex justify-between items-center p-3 bg-green-50 rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-green rounded-lg">
                         <span className="font-medium">Fractional CMO</span>
                         <span className="font-bold text-green-600">3.2x ROI</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 bg-orange-50 rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-orange rounded-lg">
                         <span className="font-medium">Agency</span>
                         <span className="font-bold text-orange-accessible">1.8x ROI</span>
                       </div>
@@ -295,7 +295,7 @@ const CostROIAnalysis = () => {
                         <span className="font-medium">Consultant</span>
                         <span className="font-bold text-purple-600">0.9x ROI</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 bg-blue-50 rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-blue rounded-lg">
                         <span className="font-medium">In-House</span>
                         <span className="font-bold text-blue-accessible">1.4x ROI</span>
                       </div>
@@ -336,7 +336,7 @@ const CostROIAnalysis = () => {
                         
                         {/* Company Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Company Says:
@@ -346,7 +346,7 @@ const CostROIAnalysis = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-green-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
@@ -369,7 +369,7 @@ const CostROIAnalysis = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
+                          <div className="glass-card-blue rounded-lg p-4 border-l-4 border-blue-500">
                             <h4 className="heading-md text-blue-800 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
@@ -441,7 +441,7 @@ const CostROIAnalysis = () => {
                 >
                   Get Your ROI Analysis
                 </button>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-green-500 text-green-600 hover:bg-green-500 focus-visible:bg-green-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-green-500 text-green-600 hover:glass-card-green0 focus-visible:glass-card-green0 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
                   Back to Guide
                 </a>
               </div>
