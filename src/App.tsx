@@ -157,38 +157,41 @@ const MainApp = () => {
                 analytics.ctaClick('Show Me What\'s Broken in My Marketing', 'hero');
                 setShowDropdownForm(true);
               }}
-              className="cta-primary px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl inline-flex items-center gap-3"
+              className="cta-primary px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl inline-flex items-center gap-3 touch-target"
             >
-              <span className="text-2xl">🔍</span>
+              <span className="text-2xl hidden sm:inline" aria-hidden="true">🔍</span>
               <span>Show Me What's Broken in My Marketing</span>
             </button>
           </div>
 
           {/* Benefits-Focused Proof Points */}
           <div className="mt-8 sm:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            <div className="group relative bg-slate-800/60 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
+            <div className="group relative bg-slate-800/60 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer touch-target">
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">30X Growth</div>
-                <div className="text-sm text-important-accessible font-medium leading-tight">
-                  Companies see explosive revenue growth when psychology replaces guesswork
+                <div className="text-sm text-important-accessible font-medium leading-tight line-clamp-2 sm:line-clamp-none">
+                  <span className="sr-only">Companies see explosive revenue growth when psychology replaces guesswork</span>
+                  <span aria-hidden="true">Companies see explosive revenue growth when psychology replaces guesswork</span>
                 </div>
               </div>
             </div>
             
-            <div className="group relative bg-slate-800/60 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
+            <div className="group relative bg-slate-800/60 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer touch-target">
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">Stop the Bleed</div>
-                <div className="text-sm text-important-accessible font-medium leading-tight">
-                  Finally understand why customers don't buy, instead of wondering why
+                <div className="text-sm text-important-accessible font-medium leading-tight line-clamp-2 sm:line-clamp-none">
+                  <span className="sr-only">Finally understand why customers don't buy, instead of wondering why</span>
+                  <span aria-hidden="true">Finally understand why customers don't buy, instead of wondering why</span>
                 </div>
               </div>
             </div>
             
-            <div className="group relative bg-slate-800/60 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer">
+            <div className="group relative bg-slate-800/60 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer touch-target">
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">Sleep Better</div>
-                <div className="text-sm text-important-accessible font-medium leading-tight">
-                  No more throwing money at marketing that doesn't bring customers
+                <div className="text-sm text-important-accessible font-medium leading-tight line-clamp-2 sm:line-clamp-none">
+                  <span className="sr-only">No more throwing money at marketing that doesn't bring customers</span>
+                  <span aria-hidden="true">No more throwing money at marketing that doesn't bring customers</span>
                 </div>
               </div>
             </div>
@@ -241,7 +244,7 @@ const MainApp = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center bg-blue-500/80 backdrop-blur-sm border border-blue-400/40 rounded-full px-4 py-2 mb-4">
-              <svg className="w-4 h-4 text-blue-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-4 h-4 text-blue-500 mr-2 hidden sm:inline-block" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
               <span className="text-white text-sm font-semibold">Common Question</span>
@@ -263,7 +266,7 @@ const MainApp = () => {
             <div className="mb-12">
               <div className="text-center mb-8">
                 <div className="inline-flex items-center bg-red-100 rounded-full px-4 py-2 mb-4">
-                  <svg className="w-4 h-4 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-red-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-label="Warning">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
                   </svg>
                   <span className="text-red-700 text-sm font-semibold">The Problem</span>
@@ -295,7 +298,7 @@ const MainApp = () => {
             <div className="mb-12">
               <div className="text-center mb-8">
                 <div className="inline-flex items-center bg-green-100 rounded-full px-4 py-2 mb-4">
-                  <svg className="w-4 h-4 text-green-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-green-600 mr-2 hidden sm:inline-block" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                   </svg>
                   <span className="text-green-700 text-sm font-semibold">The Solution</span>
@@ -339,7 +342,7 @@ const MainApp = () => {
                   {/* Left Side - Statistics */}
                   <div className="text-center lg:text-left">
                     <div className="inline-flex items-center bg-blue-600 text-white px-4 py-2 rounded-full text-sm font-bold mb-6">
-                      <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                      <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-label="Verified">
                         <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                       </svg>
                       Track Record
@@ -452,24 +455,24 @@ const MainApp = () => {
               <h3 className="text-2xl font-bold mb-4">Why Fractional CMO Makes Sense</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div>
-                  <div className="text-3xl font-black text-orange-400 mb-2">⚡</div>
+                  <div className="text-3xl font-black text-orange-400 mb-2 hidden sm:block" aria-hidden="true">⚡</div>
                   <h4 className="font-bold mb-1 text-white-critical">Immediate Impact</h4>
-                  <p className="text-white-standard text-sm">Start seeing results in weeks, not months</p>
+                  <p className="text-white-standard text-sm line-clamp-2 sm:line-clamp-none">Start seeing results in weeks, not months</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-black text-orange-400 mb-2">💰</div>
+                  <div className="text-3xl font-black text-orange-400 mb-2 hidden sm:block" aria-hidden="true">💰</div>
                   <h4 className="font-bold mb-1 text-white-critical">Better ROI</h4>
-                  <p className="text-white-standard text-sm">Pay for expertise, not overhead and recruiting</p>
+                  <p className="text-white-standard text-sm line-clamp-2 sm:line-clamp-none">Pay for expertise, not overhead and recruiting</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-black text-orange-400 mb-2">🎯</div>
+                  <div className="text-3xl font-black text-orange-400 mb-2 hidden sm:block" aria-hidden="true">🎯</div>
                   <h4 className="font-bold mb-1 text-white-critical">Proven Systems</h4>
-                  <p className="text-white-standard text-sm">Battle-tested systems from 20+ years C-level experience</p>
+                  <p className="text-white-standard text-sm line-clamp-2 sm:line-clamp-none">Battle-tested systems from 20+ years C-level experience</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-black text-orange-400 mb-2">💎</div>
+                  <div className="text-3xl font-black text-orange-400 mb-2 hidden sm:block" aria-hidden="true">💎</div>
                   <h4 className="font-bold mb-1 text-white-critical">Equity Upside</h4>
-                  <p className="text-white-standard text-sm">Potential equity participation for long-term partnerships</p>
+                  <p className="text-white-standard text-sm line-clamp-2 sm:line-clamp-none">Potential equity participation for long-term partnerships</p>
                 </div>
               </div>
             </div>
@@ -532,7 +535,7 @@ const MainApp = () => {
           {/* Story Section - Scannable Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-slate-800/70 backdrop-blur-sm border border-orange-400/40 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
-              <div className="w-12 h-12 bg-orange-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-orange-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 hidden sm:flex" aria-hidden="true">
                 <svg className="w-6 h-6 text-orange-accessible" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                 </svg>
@@ -545,7 +548,7 @@ const MainApp = () => {
             </div>
 
             <div className="bg-slate-800/70 backdrop-blur-sm border border-blue-400/40 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:rotate-1 focus-visible:rotate-1 cursor-pointer">
-              <div className="w-12 h-12 bg-blue-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-blue-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 hidden sm:flex" aria-hidden="true">
                 <svg className="w-6 h-6 text-blue-accessible" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
                 </svg>
@@ -558,7 +561,7 @@ const MainApp = () => {
             </div>
 
             <div className="bg-slate-800/70 backdrop-blur-sm border border-green-400/40 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
-              <div className="w-12 h-12 bg-green-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4">
+              <div className="w-12 h-12 bg-green-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4" aria-label="Verified">
                 <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
@@ -588,7 +591,7 @@ const MainApp = () => {
             {/* For Procrastinators */}
             <div className="mb-12">
               <div className="inline-flex items-center bg-orange-500/20 backdrop-blur-sm border border-orange-400/30 rounded-full px-4 py-2 mb-6">
-                <svg className="w-4 h-4 text-orange-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-orange-400 mr-2 hidden sm:inline-block" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/>
                 </svg>
                 <span className="text-orange-300 text-sm font-semibold">Still Thinking About It?</span>
@@ -653,7 +656,7 @@ const MainApp = () => {
             {/* Risk Reversal */}
             <div className="mb-10">
               <div className="inline-flex items-center bg-green-500/20 backdrop-blur-sm border border-green-400/30 rounded-full px-6 py-3 mb-6">
-                <svg className="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-5 h-5 text-green-400 mr-2" fill="currentColor" viewBox="0 0 20 20" aria-label="Guaranteed">
                   <path fillRule="evenodd" d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                 </svg>
                 <span className="text-green-300 font-bold">Zero Risk Guarantee</span>
@@ -678,7 +681,7 @@ const MainApp = () => {
                   analytics.ctaClick('Yes, Show Me What I\'m Missing', 'final-cta');
                   setShowDropdownForm(true);
                 }}
-                className="bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 focus-visible:from-orange-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-600 focus-visible:to-red-600 text-white px-10 sm:px-14 py-5 rounded-xl font-black text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl inline-flex items-center gap-3 group"
+                className="bg-gradient-to-r from-orange-500 via-orange-600 to-red-500 hover:from-orange-600 focus-visible:from-orange-600 hover:via-orange-700 focus-visible:via-orange-700 hover:to-red-600 focus-visible:to-red-600 text-white px-10 sm:px-14 py-5 rounded-xl font-black text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl inline-flex items-center gap-3 group touch-target"
               >
                 <span>Yes, Show Me What I'm Missing</span>
                 <svg className="w-6 h-6 group-hover:translate-x-1 group-focus-visible:translate-x-1 focus-visible:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
