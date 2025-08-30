@@ -152,7 +152,7 @@ const OperationalScalingCrisis = () => {
                   <span className="text-green-400">Operational Scaling</span>
                   <span className="block text-white mt-2">Crisis Solutions</span>
                 </h1>
-                <p className="text-black-important text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
+                <p className="text-white text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
                   Growth feels like everything's breaking? The problem isn't your team or timing—it's that 
                   <span className="text-green-400 font-semibold"> manual processes that worked at $500K</span> fail spectacularly at $2M+ without systems.
                 </p>
@@ -178,10 +178,10 @@ const OperationalScalingCrisis = () => {
             {/* Introduction */}
             <section className="mb-16">
               <div className="glass-card-light rounded-2xl shadow-xl border border-green-200/50 p-8">
-                <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-gray-900 mb-6 text-center">
+                <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-white mb-6 text-center">
                   Why Growth Breaks Operations (And How to Fix It)
                 </h2>
-                <p className="text-black-important text-lg text-standard mb-6 leading-relaxed text-center">
+                <p className="text-white/90 text-lg text-standard mb-6 leading-relaxed text-center">
                   Operational scaling crises aren't random—they follow predictable patterns. What works at $500K breaks at $2M+ 
                   because manual processes hit exponential complexity while systems thinking provides linear solutions.
                 </p>
@@ -209,7 +209,7 @@ const OperationalScalingCrisis = () => {
 
             {/* Scenarios */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-gray-900 mb-12 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl md:text-4xl font-bold text-white mb-12 text-center">
                 <span className="block">7 Operational Crisis Patterns</span>
                 <span className="block">(Which is Yours?)</span>
               </h2>
@@ -220,7 +220,7 @@ const OperationalScalingCrisis = () => {
                     <div className={`bg-gradient-to-r ${scenario.gradient} p-6`}>
                       <div className="flex justify-between items-start">
                         <div>
-                          <h3 className="heading-lg text-black-important text-2xl font-bold text-white mb-2">
+                          <h3 className="heading-lg text-white text-2xl font-bold text-white mb-2">
                             {scenario.title}
                           </h3>
                           <div className="flex gap-4 text-sm text-green-100">
@@ -240,7 +240,7 @@ const OperationalScalingCrisis = () => {
                         {/* Customer Says */}
                         <div className="space-y-6">
                           <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                            <h4 className="heading-md text-black-important font-bold text-red-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-red-800 font-bold text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Customer Says:
                             </h4>
@@ -250,7 +250,7 @@ const OperationalScalingCrisis = () => {
                           </div>
                           
                           <div className="glass-card-light rounded-lg p-4 border-l-4 border-green-500">
-                            <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-green-800 font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Customer Thinks:
                             </h4>
@@ -263,7 +263,7 @@ const OperationalScalingCrisis = () => {
                         {/* Solutions */}
                         <div className="space-y-6">
                           <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
-                            <h4 className="heading-md text-black-important font-bold text-orange-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-orange-800 font-bold text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Problem:
                             </h4>
@@ -273,11 +273,11 @@ const OperationalScalingCrisis = () => {
                           </div>
                           
                           <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
-                            <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
+                            <h4 className="heading-md text-green-800 font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-black-important">
+                            <p className="text-gray-900">
                               {scenario.solution}
                             </p>
                           </div>
@@ -286,11 +286,11 @@ const OperationalScalingCrisis = () => {
                       
                       {/* Why It Works */}
                       <div className="mt-6 glass-card-solid rounded-lg p-4 border border-blue-200">
-                        <h4 className="heading-md text-black-important font-bold text-purple-800 mb-2 flex items-center">
+                        <h4 className="heading-md text-purple-800 font-bold text-purple-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-black-important font-medium">
+                        <p className="text-gray-900 font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -306,7 +306,7 @@ const OperationalScalingCrisis = () => {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   🚨 Stop Letting Growth Break Your Operations
                 </h3>
-                <p className="text-black-important text-lg text-black-standard mb-6 max-w-3xl mx-auto">
+                <p className="text-gray-900 text-lg text-black-standard mb-6 max-w-3xl mx-auto">
                   Every month you operate with manual processes designed for smaller scale, operational inefficiencies compound exponentially. 
                   Get your free scaling analysis and discover which crisis patterns are limiting your growth capacity.
                 </p>
@@ -327,12 +327,12 @@ const OperationalScalingCrisis = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-gray-900 mb-8 text-center">
+              <h2 className="heading-xl text-gradient-critical text-3xl font-bold text-white mb-8 text-center">
                 Related Growth Plateau Solutions
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-black-important text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="heading-lg text-gray-900 text-xl font-bold text-gray-900 mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} className="hover:text-green-600 focus-visible:text-green-600 transition-colors">
                       Team Growth Bottlenecks →
                     </a>
@@ -342,7 +342,7 @@ const OperationalScalingCrisis = () => {
                   </p>
                 </div>
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-black-important text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="heading-lg text-gray-900 text-xl font-bold text-gray-900 mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-green-600 focus-visible:text-green-600 transition-colors">
                       Need Strategic Marketing Leadership? →
                     </a>
