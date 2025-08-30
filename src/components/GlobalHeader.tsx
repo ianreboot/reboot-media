@@ -335,31 +335,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
               {/* Right Side: Desktop Navigation & Mobile Menu Toggle */}
               <div className="flex items-center gap-4">
                 
-                {/* Desktop Navigation Links */}
-                <div className="hidden lg:flex items-center gap-6" style={{ pointerEvents: 'auto' }}>
-                  {navigationItems.map((item) => (
-                    <a
-                      key={item.path}
-                      href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}${item.path}`}
-                      className={`relative px-3 py-2 text-sm font-medium motion-safe:transition-all motion-reduce:transition-none duration-200 rounded-lg hover:bg-gray-100 focus-visible:bg-gray-100 focus-visible:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 ${
-                        location.pathname === item.path
-                          ? 'text-orange-accessible bg-orange-50'
-                          : 'text-gray-700 hover:text-gray-900 focus-visible:text-gray-900 focus-visible:text-white'
-                      }`}
-                      style={{ 
-                        pointerEvents: 'auto',
-                        zIndex: 70,
-                        position: 'relative'
-                      }}
-                    >
-                      <span className="hidden xl:inline">{item.icon} </span>
-                      {item.label}
-                      {location.pathname === item.path && (
-                        <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-1 h-1 bg-orange-500 rounded-full"></div>
-                      )}
-                    </a>
-                  ))}
-                </div>
+                {/* Desktop Navigation Links - Removed as site has 30+ pages now */}
 
                 {/* CTA Button - Hidden on Mobile */}
                 <button 
@@ -453,26 +429,7 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
 
           {/* Mobile Menu Content */}
           <div className="flex-1 overflow-y-auto py-6">
-            <nav className="px-6 space-y-2">
-              {navigationItems.map((item) => (
-                <a
-                  key={item.path}
-                  href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}${item.path}`}
-                  onClick={handleMenuItemClick}
-                  className={`flex items-center gap-3 px-4 py-3 text-base font-medium rounded-xl motion-safe:transition-all motion-reduce:transition-none duration-200 ${
-                    location.pathname === item.path
-                      ? 'text-orange-accessible bg-orange-50 border-l-4 border-orange-500'
-                      : 'text-gray-700 hover:text-gray-900 focus-visible:text-gray-900 focus-visible:text-white hover:bg-gray-50 focus-visible:bg-gray-50 focus-visible:bg-gray-800'
-                  }`}
-                >
-                  <span className="text-xl">{item.icon}</span>
-                  <span>{item.label}</span>
-                  {location.pathname === item.path && (
-                    <div className="ml-auto w-2 h-2 bg-orange-500 rounded-full"></div>
-                  )}
-                </a>
-              ))}
-            </nav>
+            {/* Mobile Navigation Links - Removed as site has 30+ pages now */}
 
             {/* Mobile Dev Navigation */}
             {isDev && (
