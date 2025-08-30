@@ -125,7 +125,7 @@ const MainApp = () => {
           </ErrorBoundary>
 
       {/* Hero Section - Vertically Centered in Viewport */}
-      <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
+      <section id="home" className="min-h-screen flex items-center relative overflow-hidden pt-16 sm:pt-0">
         {/* Simple Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-10 w-20 h-20 bg-orange-400/20 rounded-full blur-xl"></div>

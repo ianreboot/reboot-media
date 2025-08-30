@@ -359,15 +359,15 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
                   aria-expanded={showMobileMenu}
                   aria-label="Toggle mobile menu"
                 >
-                  <div className="relative w-6 h-6">
+                  <div className="relative w-6 h-6 flex items-center justify-center">
                     <span className={`absolute block w-6 h-0.5 bg-current transform motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${
-                      showMobileMenu ? 'rotate-45 translate-y-0' : '-translate-y-2'
+                      showMobileMenu ? 'rotate-45' : '-translate-y-2'
                     }`}></span>
                     <span className={`absolute block w-6 h-0.5 bg-current transform motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${
                       showMobileMenu ? 'opacity-0' : 'opacity-100'
                     }`}></span>
                     <span className={`absolute block w-6 h-0.5 bg-current transform motion-safe:transition-all motion-reduce:transition-none motion-safe:duration-300 motion-reduce:duration-0 ${
-                      showMobileMenu ? '-rotate-45 translate-y-0' : 'translate-y-2'
+                      showMobileMenu ? '-rotate-45' : 'translate-y-2'
                     }`}></span>
                   </div>
                 </button>
