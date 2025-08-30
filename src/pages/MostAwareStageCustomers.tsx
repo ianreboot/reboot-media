@@ -47,11 +47,11 @@ const MostAwareStageCustomers = () => {
           <section className="pt-20 md:pt-24 pb-16 bg-gradient-to-br from-orange-900 via-orange-950 to-black relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,165,0,0.1)_0%,transparent_50%)"></div>
             <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-              <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
+              <h1 className="heading-hero text-white mb-6 leading-tight">
                 "We Want to Move Forward"
                 <span className="block text-orange-500 mt-2">The Final Push That Turns Decision Into Action</span>
               </h1>
-              <p className="text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto leading-relaxed">
                 These prospects have decided. They want to work with you. But something small is holding them back from signing. Here's what that final friction really is—and how to remove it.
               </p>
               <div className="flex justify-center">
@@ -75,9 +75,11 @@ const MostAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-important-accessible mb-6 text-center">
-                Most aware customers are 95% sold. They believe in your solution, trust your expertise, and have budget approval. But that last 5%? That's where deals die. These final moments require finesse, not force.
-              </p>
+              <div className="glass-card-minimal rounded-xl p-6 border border-white/20">
+                <p className="text-lg text-white/90 mb-6 text-center">
+                  Most aware customers are 95% sold. They believe in your solution, trust your expertise, and have budget approval. But that last 5%? That's where deals die. These final moments require finesse, not force.
+                </p>
+              </div>
             </section>
 
             {/* Real Customer Examples */}
@@ -91,145 +93,145 @@ const MostAwareStageCustomers = () => {
                 {/* Example 1 */}
                 <div className="border border-white/20 rounded-xl p-6 glass-card-light">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-400">
-                      <p className="text-gradient-critical font-medium italic text-lg">"Let me just run this by my partner/team one more time"</p>
+                      <p className="text-white font-medium italic text-lg">"Let me just run this by my partner/team one more time"</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
                     <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
-                      <h3 className="text-lg font-bold text-gradient-critical mb-2">What's really happening:</h3>
-                      <p className="text-gradient-safe font-medium">They're sold but need social proof they're making the right choice. They want reassurance, not more selling.</p>
+                      <h3 className="text-lg font-bold text-white mb-2">What's really happening:</h3>
+                      <p className="text-white/90 font-medium">They're sold but need social proof they're making the right choice. They want reassurance, not more selling.</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
                     <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
-                      <h3 className="text-lg font-bold text-gradient-critical mb-3">What to do:</h3>
-                      <p className="text-gradient-safe font-medium">"Of course. Would it help if I provided a summary you can share? Also, happy to do a quick call with them to answer any specific concerns. Most clients find that speeds up the process."</p>
+                      <h3 className="text-lg font-bold text-white mb-3">What to do:</h3>
+                      <p className="text-white/90 font-medium">"Of course. Would it help if I provided a summary you can share? Also, happy to do a quick call with them to answer any specific concerns. Most clients find that speeds up the process."</p>
                     </div>
                   </div>
                   
                   <div className="p-5 glass-card-blue rounded-lg border-l-4 border-blue-500 shadow-sm">
-                    <h4 className="heading-md font-semibold text-gradient-critical mb-3">Why this works:</h4>
-                    <p className="text-gradient-safe font-medium leading-relaxed">You're facilitating their process, not pushing against it. This supportive approach often leads to immediate signing.</p>
+                    <h4 className="heading-md font-semibold text-white mb-3">Why this works:</h4>
+                    <p className="text-white/90 font-medium leading-relaxed">You're facilitating their process, not pushing against it. This supportive approach often leads to immediate signing.</p>
                   </div>
                 </div>
 
                 {/* Example 2 */}
                 <div className="border border-white/20 rounded-xl p-6 glass-card-light">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-400">
-                      <p className="text-gradient-critical font-medium italic text-lg">"Can we start next month instead?"</p>
+                      <p className="text-white font-medium italic text-lg">"Can we start next month instead?"</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
                     <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
-                      <h3 className="text-lg font-bold text-gradient-critical mb-2">What's really happening:</h3>
-                      <p className="text-gradient-safe font-medium">They're ready but overwhelmed. Starting feels like adding more to their plate right now.</p>
+                      <h3 className="text-lg font-bold text-white mb-2">What's really happening:</h3>
+                      <p className="text-white/90 font-medium">They're ready but overwhelmed. Starting feels like adding more to their plate right now.</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
                     <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
-                      <h3 className="text-lg font-bold text-gradient-critical mb-3">What to do:</h3>
-                      <p className="text-gradient-safe font-medium">"We can officially start next month, but I can begin the background research now so we hit the ground running. This actually saves you time—you won't need to be involved until you're ready."</p>
+                      <h3 className="text-lg font-bold text-white mb-3">What to do:</h3>
+                      <p className="text-white/90 font-medium">"We can officially start next month, but I can begin the background research now so we hit the ground running. This actually saves you time—you won't need to be involved until you're ready."</p>
                     </div>
                   </div>
                   
                   <div className="p-5 glass-card-blue rounded-lg border-l-4 border-blue-500 shadow-sm">
-                    <h4 className="heading-md font-semibold text-gradient-critical mb-3">Why this works:</h4>
-                    <p className="text-gradient-safe font-medium leading-relaxed">You're respecting their timeline while creating value immediately. This removes the pressure while maintaining momentum.</p>
+                    <h4 className="heading-md font-semibold text-white mb-3">Why this works:</h4>
+                    <p className="text-white/90 font-medium leading-relaxed">You're respecting their timeline while creating value immediately. This removes the pressure while maintaining momentum.</p>
                   </div>
                 </div>
 
                 {/* Example 3 */}
                 <div className="border border-white/20 rounded-xl p-6 glass-card-light">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-400">
-                      <p className="text-gradient-critical font-medium italic text-lg">"What if we need to pause or stop?"</p>
+                      <p className="text-white font-medium italic text-lg">"What if we need to pause or stop?"</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
                     <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
-                      <h3 className="text-lg font-bold text-gradient-critical mb-2">What's really happening:</h3>
-                      <p className="text-gradient-safe font-medium">Fear of commitment. They want an escape route even though they don't plan to use it.</p>
+                      <h3 className="text-lg font-bold text-white mb-2">What's really happening:</h3>
+                      <p className="text-white/90 font-medium">Fear of commitment. They want an escape route even though they don't plan to use it.</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
                     <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
-                      <h3 className="text-lg font-bold text-gradient-critical mb-3">What to do:</h3>
-                      <p className="text-gradient-safe font-medium">"We work month-to-month after the first 90 days. You can pause or stop with 30 days notice. Everything we build is yours to keep. My goal is results that make you never want to leave."</p>
+                      <h3 className="text-lg font-bold text-white mb-3">What to do:</h3>
+                      <p className="text-white/90 font-medium">"We work month-to-month after the first 90 days. You can pause or stop with 30 days notice. Everything we build is yours to keep. My goal is results that make you never want to leave."</p>
                     </div>
                   </div>
                   
                   <div className="p-5 glass-card-blue rounded-lg border-l-4 border-blue-500 shadow-sm">
-                    <h4 className="heading-md font-semibold text-gradient-critical mb-3">Why this works:</h4>
-                    <p className="text-gradient-safe font-medium leading-relaxed">Flexibility reduces fear. When leaving is easy, staying becomes a choice rather than an obligation.</p>
+                    <h4 className="heading-md font-semibold text-white mb-3">Why this works:</h4>
+                    <p className="text-white/90 font-medium leading-relaxed">Flexibility reduces fear. When leaving is easy, staying becomes a choice rather than an obligation.</p>
                   </div>
                 </div>
 
                 {/* Example 4 */}
                 <div className="border border-white/20 rounded-xl p-6 glass-card-light">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-400">
-                      <p className="text-gradient-critical font-medium italic text-lg">"Send me the contract and I'll review it"</p>
+                      <p className="text-white font-medium italic text-lg">"Send me the contract and I'll review it"</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
                     <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
-                      <h3 className="text-lg font-bold text-gradient-critical mb-2">What's really happening:</h3>
-                      <p className="text-gradient-safe font-medium">They're ready but want to feel in control of the timing. Sending and waiting creates dead space where doubt creeps in.</p>
+                      <h3 className="text-lg font-bold text-white mb-2">What's really happening:</h3>
+                      <p className="text-white/90 font-medium">They're ready but want to feel in control of the timing. Sending and waiting creates dead space where doubt creeps in.</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
                     <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
-                      <h3 className="text-lg font-bold text-gradient-critical mb-3">What to do:</h3>
-                      <p className="text-gradient-safe font-medium">"I'll send it right now. Want to do a quick screen share to walk through it together? Takes 5 minutes and you can sign right then if everything looks good. Much faster than email tag."</p>
+                      <h3 className="text-lg font-bold text-white mb-3">What to do:</h3>
+                      <p className="text-white/90 font-medium">"I'll send it right now. Want to do a quick screen share to walk through it together? Takes 5 minutes and you can sign right then if everything looks good. Much faster than email tag."</p>
                     </div>
                   </div>
                   
                   <div className="p-5 glass-card-blue rounded-lg border-l-4 border-blue-500 shadow-sm">
-                    <h4 className="heading-md font-semibold text-gradient-critical mb-3">Why this works:</h4>
-                    <p className="text-gradient-safe font-medium leading-relaxed">Maintaining momentum while they're emotionally ready prevents second-guessing and accelerates the close.</p>
+                    <h4 className="heading-md font-semibold text-white mb-3">Why this works:</h4>
+                    <p className="text-white/90 font-medium leading-relaxed">Maintaining momentum while they're emotionally ready prevents second-guessing and accelerates the close.</p>
                   </div>
                 </div>
 
                 {/* Example 5 */}
                 <div className="border border-white/20 rounded-xl p-6 glass-card-light">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible mb-2">Customer says:</h3>
+                    <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-400">
-                      <p className="text-gradient-critical font-medium italic text-lg">"Is there any flexibility on the price?"</p>
+                      <p className="text-white font-medium italic text-lg">"Is there any flexibility on the price?"</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
                     <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
-                      <h3 className="text-lg font-bold text-gradient-critical mb-2">What's really happening:</h3>
-                      <p className="text-gradient-safe font-medium">They're ready to buy but feel obligated to negotiate. It's not about money—it's about feeling like they got a win.</p>
+                      <h3 className="text-lg font-bold text-white mb-2">What's really happening:</h3>
+                      <p className="text-white/90 font-medium">They're ready to buy but feel obligated to negotiate. It's not about money—it's about feeling like they got a win.</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
                     <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
-                      <h3 className="text-lg font-bold text-gradient-critical mb-3">What to do:</h3>
-                      <p className="text-gradient-safe font-medium">"The price is firm, but I can include an extra strategy session in month one to accelerate results. That's a $2,000 value. Would that work better for you?"</p>
+                      <h3 className="text-lg font-bold text-white mb-3">What to do:</h3>
+                      <p className="text-white/90 font-medium">"The price is firm, but I can include an extra strategy session in month one to accelerate results. That's a $2,000 value. Would that work better for you?"</p>
                     </div>
                   </div>
                   
                   <div className="p-5 glass-card-blue rounded-lg border-l-4 border-blue-500 shadow-sm">
-                    <h4 className="heading-md font-semibold text-gradient-critical mb-3">Why this works:</h4>
-                    <p className="text-gradient-safe font-medium leading-relaxed">Adding value instead of cutting price maintains your positioning while giving them the "win" they need to feel good about the decision.</p>
+                    <h4 className="heading-md font-semibold text-white mb-3">Why this works:</h4>
+                    <p className="text-white/90 font-medium leading-relaxed">Adding value instead of cutting price maintains your positioning while giving them the "win" they need to feel good about the decision.</p>
                   </div>
                 </div>
 
@@ -238,16 +240,16 @@ const MostAwareStageCustomers = () => {
 
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="heading-xl text-gradient-critical mb-6 text-center">
+              <h2 className="heading-xl text-white mb-6 text-center">
                 The Secret to Closing Most Aware Customers
               </h2>
               
               <div className="bg-gradient-to-br from-orange-50 via-yellow-50 to-orange-100 rounded-xl p-8 mb-6 border-2 border-orange-200 shadow-lg">
-                <p className="text-gradient-critical text-xl font-bold mb-6 text-center">
+                <p className="text-white text-xl font-bold mb-6 text-center">
                   Most aware customers don't need more convincing—they need permission to say yes.
                 </p>
                 <div className="glass-card-light rounded-lg p-6">
-                  <p className="text-gradient-safe text-lg font-medium leading-relaxed">
+                  <p className="text-white/90 text-lg font-medium leading-relaxed">
                     Remove friction, not objections. Make the next step tiny. Give them control over timing. The sale is already made—your job is to make signing feel natural, not pressured.
                   </p>
                 </div>
@@ -256,10 +258,10 @@ const MostAwareStageCustomers = () => {
 
             {/* Strong CTA Section */}
             <section className="text-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white rounded-2xl p-12">
-              <h2 className="heading-xl text-gradient-critical mb-6">
+              <h2 className="heading-xl text-white mb-6">
                 Stop Losing Deals at the Finish Line
               </h2>
-              <p className="text-gradient-safe mb-8 text-lg max-w-2xl mx-auto">
+              <p className="text-white/90 mb-8 text-lg max-w-2xl mx-auto">
                 Master the subtle art of closing without pressure. Get the psychological framework that turns "I need to think about it" into signed contracts—today.
               </p>
               <button aria-label="Opens contact form for free marketing analysis" 

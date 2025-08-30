@@ -47,11 +47,11 @@ const ProductAwareStageCustomers = () => {
           <section className="pt-20 md:pt-24 pb-16 bg-gradient-to-br from-orange-900 via-orange-950 to-black relative overflow-hidden">
             <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_30%,rgba(255,165,0,0.1)_0%,transparent_50%)"></div>
             <div className="relative max-w-4xl mx-auto px-6 lg:px-8 text-center">
-              <h1 className="heading-hero text-gradient-critical mb-6 leading-tight">
+              <h1 className="heading-hero text-gray-800 mb-6 leading-tight">
                 "Can YOU Actually Deliver?"
                 <span className="block text-orange-500 mt-2">The Final Questions Before They Say Yes</span>
               </h1>
-              <p className="text-xl text-gradient-safe mb-8 max-w-3xl mx-auto leading-relaxed">
+              <p className="text-xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
                 These prospects know about you. They've read your case studies, maybe had a call. Now they're in the final evaluation—looking for reasons to trust you or walk away.
               </p>
               <div className="flex justify-center">
@@ -75,9 +75,11 @@ const ProductAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-gradient-safe mb-6 text-center font-medium">
-                Product-aware customers are close. They're seriously considering you but have specific concerns holding them back. They're not questioning if they need help—they're questioning if YOU'RE the right help.
-              </p>
+              <div className="glass-card-minimal rounded-xl p-6 border border-white/20">
+                <p className="text-lg text-white/90 mb-6 text-center font-medium">
+                  Product-aware customers are close. They're seriously considering you but have specific concerns holding them back. They're not questioning if they need help—they're questioning if YOU'RE the right help.
+                </p>
+              </div>
             </section>
 
             {/* Real Customer Examples */}
@@ -90,20 +92,20 @@ const ProductAwareStageCustomers = () => {
               <div className="space-y-8">
                 
                 {/* Example 1 */}
-                <div className="border border-white/20 rounded-xl p-6 bg-white/80 backdrop-blur-sm shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible mb-2">Customer thinks:</h3>
-                    <p className="text-gradient-critical italic font-medium">"Your case studies are impressive, but our business is different"</p>
+                    <h3 className="heading-lg text-gray-900 mb-2">Customer thinks:</h3>
+                    <p className="text-gray-800 italic font-medium">"Your case studies are impressive, but our business is different"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really saying:</h3>
-                    <p className="text-gradient-safe">I don't see myself in your success stories. They need proof you understand their specific challenges, not just their industry.</p>
+                    <p className="text-gray-700">I don't see myself in your success stories. They need proof you understand their specific challenges, not just their industry.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 mb-2">How to handle it:</h3>
-                    <p className="text-gradient-safe">Get granular about similarities. "You're right, you're not exactly like Client X. But you both sell to procurement teams with 6-month sales cycles. Here's how we adapted our approach for their specific situation..."</p>
+                    <p className="text-gray-700">Get granular about similarities. "You're right, you're not exactly like Client X. But you both sell to procurement teams with 6-month sales cycles. Here's how we adapted our approach for their specific situation..."</p>
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
@@ -113,20 +115,20 @@ const ProductAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 2 */}
-                <div className="border border-white/20 rounded-xl p-6 bg-white/80 backdrop-blur-sm shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible mb-2">Customer thinks:</h3>
-                    <p className="text-gradient-critical italic font-medium">"What if we don't see results as quickly as your other clients?"</p>
+                    <h3 className="heading-lg text-gray-900 mb-2">Customer thinks:</h3>
+                    <p className="text-gray-800 italic font-medium">"What if we don't see results as quickly as your other clients?"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really saying:</h3>
-                    <p className="text-gradient-safe">I need to manage expectations internally. They're worried about looking bad if results don't come fast enough.</p>
+                    <p className="text-gray-700">I need to manage expectations internally. They're worried about looking bad if results don't come fast enough.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 mb-2">How to handle it:</h3>
-                    <p className="text-gradient-safe">Set realistic milestones. "Month 1 is diagnosis and quick wins. Month 2 is foundation building. Month 3 is when you see momentum. By Month 6, transformation is obvious. Here's what to expect each step."</p>
+                    <p className="text-gray-700">Set realistic milestones. "Month 1 is diagnosis and quick wins. Month 2 is foundation building. Month 3 is when you see momentum. By Month 6, transformation is obvious. Here's what to expect each step."</p>
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
@@ -136,20 +138,20 @@ const ProductAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 3 */}
-                <div className="border border-white/20 rounded-xl p-6 bg-white/80 backdrop-blur-sm shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible mb-2">Customer thinks:</h3>
-                    <p className="text-gradient-critical italic font-medium">"How do we know you won't just disappear after signing?"</p>
+                    <h3 className="heading-lg text-gray-900 mb-2">Customer thinks:</h3>
+                    <p className="text-gray-800 italic font-medium">"How do we know you won't just disappear after signing?"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really saying:</h3>
-                    <p className="text-gradient-safe">We've been burned before. Past vendors over-promised in sales then under-delivered in execution.</p>
+                    <p className="text-gray-700">We've been burned before. Past vendors over-promised in sales then under-delivered in execution.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 mb-2">How to handle it:</h3>
-                    <p className="text-gradient-safe">Show your communication cadence. "You'll have my personal phone number. Weekly status calls. Monthly executive reviews. Slack access. Here's exactly how three current clients interact with us."</p>
+                    <p className="text-gray-700">Show your communication cadence. "You'll have my personal phone number. Weekly status calls. Monthly executive reviews. Slack access. Here's exactly how three current clients interact with us."</p>
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
@@ -159,20 +161,20 @@ const ProductAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 4 */}
-                <div className="border border-white/20 rounded-xl p-6 bg-white/80 backdrop-blur-sm shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible mb-2">Customer thinks:</h3>
-                    <p className="text-gradient-critical italic font-medium">"We need to run this by our board/CEO/team first"</p>
+                    <h3 className="heading-lg text-gray-900 mb-2">Customer thinks:</h3>
+                    <p className="text-gray-800 italic font-medium">"We need to run this by our board/CEO/team first"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really saying:</h3>
-                    <p className="text-gradient-safe">I need help selling this internally. They believe in the solution but need ammunition for stakeholders.</p>
+                    <p className="text-gray-700">I need help selling this internally. They believe in the solution but need ammunition for stakeholders.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 mb-2">How to handle it:</h3>
-                    <p className="text-gradient-safe font-medium">Arm them for internal sales. "I'll prepare a one-page executive summary with ROI projections. Want me to join the call to answer technical questions? Here's what convinced the board at Similar Company."</p>
+                    <p className="text-gray-700 font-medium">Arm them for internal sales. "I'll prepare a one-page executive summary with ROI projections. Want me to join the call to answer technical questions? Here's what convinced the board at Similar Company."</p>
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
@@ -182,20 +184,20 @@ const ProductAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 5 */}
-                <div className="border border-white/20 rounded-xl p-6 bg-white/80 backdrop-blur-sm shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
-                    <h3 className="heading-lg text-important-accessible mb-2">Customer thinks:</h3>
-                    <p className="text-gradient-critical italic font-medium">"The price is higher than we budgeted"</p>
+                    <h3 className="heading-lg text-gray-900 mb-2">Customer thinks:</h3>
+                    <p className="text-gray-800 italic font-medium">"The price is higher than we budgeted"</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-red-600 mb-2">What they're really saying:</h3>
-                    <p className="text-gradient-safe">Help me justify this investment. They often have the money but need to defend the allocation.</p>
+                    <p className="text-gray-700">Help me justify this investment. They often have the money but need to defend the allocation.</p>
                   </div>
                   
                   <div className="mb-4">
                     <h3 className="text-lg font-semibold text-green-600 mb-2">How to handle it:</h3>
-                    <p className="text-gradient-safe font-medium">Reframe cost as investment. "The $10K monthly investment typically generates $50K in new monthly recurring revenue by month 6. But let's be conservative—even at 25% of typical results, you're profitable in 8 weeks."</p>
+                    <p className="text-gray-700 font-medium">Reframe cost as investment. "The $10K monthly investment typically generates $50K in new monthly recurring revenue by month 6. But let's be conservative—even at 25% of typical results, you're profitable in 8 weeks."</p>
                   </div>
                   
                   <div className="p-4 glass-card-blue rounded-lg">
@@ -209,7 +211,7 @@ const ProductAwareStageCustomers = () => {
 
             {/* Key Insights Section */}
             <section className="mb-12">
-              <h2 className="heading-xl text-gradient-critical mb-6 text-center">
+              <h2 className="heading-xl text-gray-800 mb-6 text-center">
                 The Truth About Product-Aware Customers
               </h2>
               
@@ -225,10 +227,10 @@ const ProductAwareStageCustomers = () => {
 
             {/* Strong CTA Section */}
             <section className="text-center bg-gradient-to-br from-slate-900 via-slate-950 to-black text-white rounded-2xl p-12 border border-gray-700/50 shadow-2xl">
-              <h2 className="heading-xl text-gradient-critical mb-6">
+              <h2 className="heading-xl text-gray-800 mb-6">
                 Turn "We Need to Think About It" Into "When Can We Start?"
               </h2>
-              <p className="text-gradient-safe mb-8 text-lg max-w-2xl mx-auto font-medium">
+              <p className="text-gray-700 mb-8 text-lg max-w-2xl mx-auto font-medium">
                 Get the objection-handling framework that addresses their real concerns—not just surface questions. Close more deals without being pushy.
               </p>
               <button aria-label="Opens contact form for free marketing analysis" 
@@ -237,7 +239,7 @@ const ProductAwareStageCustomers = () => {
               >
                 Get Your Objection-Handling Playbook →
               </button>
-              <p className="text-gradient-safe text-sm mt-4 font-medium">
+              <p className="text-gray-700 text-sm mt-4 font-medium">
                 ✅ Address hidden concerns • ✅ Build decision confidence • ✅ Close without pressure
               </p>
             </section>
@@ -247,7 +249,7 @@ const ProductAwareStageCustomers = () => {
               <div className="flex justify-between items-center">
                 <a 
                   href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology/solution-aware-stage-customers`}
-                  className="text-gradient-safe hover:text-orange-accessible focus-visible:text-orange-accessible focus-visible:text-orange-400 transition-colors"
+                  className="text-gray-700 hover:text-orange-accessible focus-visible:text-orange-accessible focus-visible:text-orange-400 transition-colors"
                 >
                   ← Previous: Solution-Aware Stage
                 </a>

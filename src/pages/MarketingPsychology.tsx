@@ -88,13 +88,13 @@ const MarketingPsychology = () => {
             </div>
             
             {/* Strategic CTA */}
-            <div className="glass-card-light rounded-2xl shadow-xl border border-orange-500/50 border-l-4 border-l-orange-500 p-6 mb-8">
-              <p className="text-white font-semibold mb-4">
+            <div className="glass-card-solid rounded-2xl shadow-xl border border-orange-500/50 border-l-4 border-l-orange-500 p-6 mb-8">
+              <p className="text-gray-900 font-semibold mb-4">
                 🚨 <strong>Warning:</strong> Every day you use psychology-ignorant marketing costs you qualified prospects
               </p>
               <button aria-label="Opens contact form for free marketing analysis" 
                 onClick={() => setShowDropdownForm(true)}
-                className="text-orange-accessible font-semibold hover:underline focus-visible:underline"
+                className="text-orange-600 font-semibold hover:underline focus-visible:underline hover:text-orange-700 focus-visible:text-orange-700"
               >
                 Get your free marketing psychology audit →
               </button>
@@ -368,32 +368,32 @@ const MarketingPsychology = () => {
               <span className="block">Real Results:</span>
               <span className="block">Norton Antivirus Case Study</span>
             </h2>
-            <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-8">
+            <div className="glass-card-medium rounded-2xl shadow-xl border border-white/20 p-8">
               <div className="grid md:grid-cols-3 gap-6 mb-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-red-600 mb-2">$100K</div>
-                  <p className="text-white/80">Monthly Revenue (Before)</p>
+                  <p className="text-gray-700">Monthly Revenue (Before)</p>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-bold text-green-600 mb-2">$3M</div>
-                  <p className="text-white/80">Monthly Revenue (After)</p>
+                  <p className="text-gray-700">Monthly Revenue (After)</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-blue-accessible mb-2">30X</div>
-                  <p className="text-white/80">Growth Multiple</p>
+                  <div className="text-3xl font-bold text-blue-600 mb-2">30X</div>
+                  <p className="text-gray-700">Growth Multiple</p>
                 </div>
               </div>
               <div className="prose prose-lg max-w-none">
-                <h3 className="text-xl font-semibold text-white mb-4">The Psychology Strategy That Worked:</h3>
-                <ul className="text-white/90 space-y-2">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">The Psychology Strategy That Worked:</h3>
+                <ul className="text-gray-800 space-y-2">
                   <li><strong>Customer Awareness Mapping:</strong> Identified that customers were Solution-Aware about antivirus, not Problem-Aware about cyber threats</li>
                   <li><strong>Loss Aversion Messaging:</strong> "Don't wait until after you're hacked - protect what matters now"</li>
                   <li><strong>Social Proof Hierarchy:</strong> Featured real customer stories of prevented attacks and saved data</li>
                   <li><strong>Authority Building:</strong> Positioned Norton as the trusted security expert with 30+ years protecting millions</li>
                 </ul>
-                <div className="mt-6 p-4 bg-white/80 rounded-lg">
-                  <p className="text-sm text-white/80 font-medium">Key Insight:</p>
-                  <p className="text-white">
+                <div className="mt-6 p-4 glass-card-solid rounded-lg">
+                  <p className="text-sm text-gray-800 font-medium">Key Insight:</p>
+                  <p className="text-gray-900">
                     "The breakthrough came when we stopped talking about antivirus features and started educating customers about why they need protection before it's too late."
                   </p>
                 </div>
