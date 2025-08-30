@@ -497,7 +497,7 @@ const MainApp = () => {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 {/* Primary Stat */}
                 <div className="text-center lg:col-span-1">
-                  <div className="glass-card-solid bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 text-white shadow-xl">
+                  <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 text-white shadow-xl">
                     <div className="text-5xl font-black mb-2">$3M+</div>
                     <div className="text-lg font-bold text-orange-100 mb-1">Monthly Revenue Generated</div>
                     <div className="text-orange-200 text-sm">From Leading US Companies</div>
