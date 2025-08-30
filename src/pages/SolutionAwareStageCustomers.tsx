@@ -75,8 +75,8 @@ const SolutionAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <div className="glass-card-minimal rounded-xl p-8 border border-white/20">
-                <p className="text-lg text-white/90 mb-6 text-center font-medium">
+              <div className="glass-card-medium rounded-xl p-8 border border-white/20">
+                <p className="text-lg text-white mb-6 text-center font-medium">
                   Solution-aware customers are overwhelmed. They've got 10 browser tabs open, 5 sales calls scheduled, and a spreadsheet comparing options that all sound identical. They're not looking for another pitch—they're looking for clarity on why one option is actually different.
                 </p>
               </div>
@@ -302,11 +302,11 @@ const SolutionAwareStageCustomers = () => {
                 The Pattern: How Solution-Aware Customers Actually Decide
               </h2>
               
-              <div className="glass-card-orange rounded-xl p-6 mb-6">
-                <p className="text-orange-800 mb-4 font-semibold">
+              <div className="glass-card-solid rounded-xl p-6 mb-6 border-l-4 border-orange-500 shadow-lg">
+                <p className="text-white mb-4 font-bold text-lg">
                   <strong>Solution-aware customers aren't comparing features—they're managing risk.</strong>
                 </p>
-                <p className="text-orange-700 font-medium">
+                <p className="text-white/90 font-medium text-base leading-relaxed">
                   Every vendor looks qualified on paper. The winner is whoever makes the decision feel safest, clearest, and most likely to succeed.
                 </p>
               </div>

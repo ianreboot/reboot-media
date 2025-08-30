@@ -75,8 +75,8 @@ const MostAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <div className="glass-card-minimal rounded-xl p-6 border border-white/20">
-                <p className="text-lg text-white/90 mb-6 text-center">
+              <div className="glass-card-medium rounded-xl p-8 border border-white/20">
+                <p className="text-lg text-white mb-6 text-center font-medium">
                   Most aware customers are 95% sold. They believe in your solution, trust your expertise, and have budget approval. But that last 5%? That's where deals die. These final moments require finesse, not force.
                 </p>
               </div>
@@ -91,7 +91,7 @@ const MostAwareStageCustomers = () => {
               <div className="space-y-8">
                 
                 {/* Example 1 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-400">
@@ -100,14 +100,14 @@ const MostAwareStageCustomers = () => {
                   </div>
                   
                   <div className="mb-6">
-                    <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
+                    <div className="glass-card-medium rounded-lg p-4 border-l-4 border-red-500">
                       <h3 className="text-lg font-bold text-white mb-2">What's really happening:</h3>
                       <p className="text-white/90 font-medium">They're sold but need social proof they're making the right choice. They want reassurance, not more selling.</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
-                    <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
+                    <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
                       <h3 className="text-lg font-bold text-white mb-3">What to do:</h3>
                       <p className="text-white/90 font-medium">"Of course. Would it help if I provided a summary you can share? Also, happy to do a quick call with them to answer any specific concerns. Most clients find that speeds up the process."</p>
                     </div>
@@ -120,7 +120,7 @@ const MostAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 2 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-400">
@@ -129,14 +129,14 @@ const MostAwareStageCustomers = () => {
                   </div>
                   
                   <div className="mb-6">
-                    <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
+                    <div className="glass-card-medium rounded-lg p-4 border-l-4 border-red-500">
                       <h3 className="text-lg font-bold text-white mb-2">What's really happening:</h3>
                       <p className="text-white/90 font-medium">They're ready but overwhelmed. Starting feels like adding more to their plate right now.</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
-                    <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
+                    <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
                       <h3 className="text-lg font-bold text-white mb-3">What to do:</h3>
                       <p className="text-white/90 font-medium">"We can officially start next month, but I can begin the background research now so we hit the ground running. This actually saves you time—you won't need to be involved until you're ready."</p>
                     </div>
@@ -149,7 +149,7 @@ const MostAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 3 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-400">
@@ -158,14 +158,14 @@ const MostAwareStageCustomers = () => {
                   </div>
                   
                   <div className="mb-6">
-                    <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
+                    <div className="glass-card-medium rounded-lg p-4 border-l-4 border-red-500">
                       <h3 className="text-lg font-bold text-white mb-2">What's really happening:</h3>
                       <p className="text-white/90 font-medium">Fear of commitment. They want an escape route even though they don't plan to use it.</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
-                    <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
+                    <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
                       <h3 className="text-lg font-bold text-white mb-3">What to do:</h3>
                       <p className="text-white/90 font-medium">"We work month-to-month after the first 90 days. You can pause or stop with 30 days notice. Everything we build is yours to keep. My goal is results that make you never want to leave."</p>
                     </div>
@@ -178,7 +178,7 @@ const MostAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 4 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-400">
@@ -187,14 +187,14 @@ const MostAwareStageCustomers = () => {
                   </div>
                   
                   <div className="mb-6">
-                    <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
+                    <div className="glass-card-medium rounded-lg p-4 border-l-4 border-red-500">
                       <h3 className="text-lg font-bold text-white mb-2">What's really happening:</h3>
                       <p className="text-white/90 font-medium">They're ready but want to feel in control of the timing. Sending and waiting creates dead space where doubt creeps in.</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
-                    <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
+                    <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
                       <h3 className="text-lg font-bold text-white mb-3">What to do:</h3>
                       <p className="text-white/90 font-medium">"I'll send it right now. Want to do a quick screen share to walk through it together? Takes 5 minutes and you can sign right then if everything looks good. Much faster than email tag."</p>
                     </div>
@@ -207,7 +207,7 @@ const MostAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 5 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-400">
@@ -216,14 +216,14 @@ const MostAwareStageCustomers = () => {
                   </div>
                   
                   <div className="mb-6">
-                    <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
+                    <div className="glass-card-medium rounded-lg p-4 border-l-4 border-red-500">
                       <h3 className="text-lg font-bold text-white mb-2">What's really happening:</h3>
                       <p className="text-white/90 font-medium">They're ready to buy but feel obligated to negotiate. It's not about money—it's about feeling like they got a win.</p>
                     </div>
                   </div>
                   
                   <div className="mb-6">
-                    <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
+                    <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
                       <h3 className="text-lg font-bold text-white mb-3">What to do:</h3>
                       <p className="text-white/90 font-medium">"The price is firm, but I can include an extra strategy session in month one to accelerate results. That's a $2,000 value. Would that work better for you?"</p>
                     </div>
@@ -309,12 +309,12 @@ const MostAwareStageCustomers = () => {
                 The Secret to Closing Most Aware Customers
               </h2>
               
-              <div className="glass-card-orange rounded-xl p-8 mb-6 border-2 border-orange-400 shadow-lg">
-                <p className="text-orange-800 text-xl font-bold mb-6 text-center">
+              <div className="glass-card-solid rounded-xl p-8 mb-6 border-l-4 border-orange-500 shadow-lg">
+                <p className="text-white text-xl font-bold mb-6 text-center">
                   Most aware customers don't need more convincing—they need permission to say yes.
                 </p>
-                <div className="glass-card-light rounded-lg p-6">
-                  <p className="text-white/90 text-lg font-medium leading-relaxed">
+                <div className="glass-card-medium rounded-lg p-6">
+                  <p className="text-white text-lg font-medium leading-relaxed">
                     Remove friction, not objections. Make the next step tiny. Give them control over timing. The sale is already made—your job is to make signing feel natural, not pressured.
                   </p>
                 </div>

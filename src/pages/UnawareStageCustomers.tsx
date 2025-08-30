@@ -75,9 +75,11 @@ const UnawareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-gradient-critical mb-6 text-center">
-                Unaware stage customers are the most dangerous for your business. They're convinced they're doing fine when they're actually hemorrhaging opportunities. Here are real examples of what they say and what's actually happening.
-              </p>
+              <div className="glass-card-medium rounded-xl p-8 border border-white/20">
+                <p className="text-lg text-white mb-6 text-center font-medium">
+                  Unaware stage customers are the most dangerous for your business. They're convinced they're doing fine when they're actually hemorrhaging opportunities. Here are real examples of what they say and what's actually happening.
+                </p>
+              </div>
             </section>
 
             {/* Real Customer Examples */}
@@ -89,7 +91,7 @@ const UnawareStageCustomers = () => {
               <div className="space-y-8">
                 
                 {/* Example 1 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <blockquote className="text-white italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
@@ -114,7 +116,7 @@ const UnawareStageCustomers = () => {
                 </div>
 
                 {/* Example 2 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <blockquote className="text-white italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
@@ -139,7 +141,7 @@ const UnawareStageCustomers = () => {
                 </div>
 
                 {/* Example 3 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <blockquote className="text-white italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
@@ -164,7 +166,7 @@ const UnawareStageCustomers = () => {
                 </div>
 
                 {/* Example 4 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <blockquote className="text-white italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
@@ -189,7 +191,7 @@ const UnawareStageCustomers = () => {
                 </div>
 
                 {/* Example 5 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <blockquote className="text-white italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
@@ -214,7 +216,7 @@ const UnawareStageCustomers = () => {
                 </div>
 
                 {/* Example 6 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
                     <blockquote className="text-white italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
@@ -312,17 +314,17 @@ const UnawareStageCustomers = () => {
                 The Pattern: What Unaware Customers Really Need
               </h2>
               
-              <div className="glass-card-orange rounded-xl p-6 mb-6">
-                <p className="text-orange-800 mb-4">
+              <div className="glass-card-solid rounded-xl p-6 mb-6 border-l-4 border-orange-500 shadow-lg">
+                <p className="text-white mb-4 font-bold text-lg">
                   <strong>The unaware customer's biggest enemy isn't competition—it's comfort with dysfunction.</strong>
                 </p>
-                <p className="text-orange-700">
+                <p className="text-white/90 font-medium text-base leading-relaxed">
                   They've normalized problems that are costing them thousands monthly. Your job isn't to sell them a solution; it's to help them see the problem clearly for the first time.
                 </p>
               </div>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="p-6 border border-red-200 rounded-xl glass-card-light">
+                <div className="p-6 border border-red-200 rounded-xl glass-card-medium">
                   <h3 className="heading-lg text-white mb-3 flex items-center">
                     <span className="text-red-400 mr-2 text-2xl">✗</span>
                     What NOT to do:
@@ -336,7 +338,7 @@ const UnawareStageCustomers = () => {
                   </ul>
                 </div>
                 
-                <div className="p-6 border border-green-200 rounded-xl glass-card-green">
+                <div className="p-6 border border-green-200 rounded-xl glass-card-solid">
                   <h3 className="heading-lg text-green-800 mb-3 flex items-center">
                     <span className="text-green-600 mr-2 text-2xl">✓</span>
                     What TO do:

@@ -75,9 +75,11 @@ const ProblemAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <p className="text-lg text-white/90 mb-6 text-center">
-                Problem-aware customers are dangerous to themselves. They know enough to be worried but not enough to make smart decisions. They're buying random tools, hiring random freelancers, and changing strategies every month—burning cash without understanding why nothing works.
-              </p>
+              <div className="glass-card-medium rounded-xl p-8 border border-white/20">
+                <p className="text-lg text-white mb-6 text-center font-medium">
+                  Problem-aware customers are dangerous to themselves. They know enough to be worried but not enough to make smart decisions. They're buying random tools, hiring random freelancers, and changing strategies every month—burning cash without understanding why nothing works.
+                </p>
+              </div>
             </section>
 
             {/* Real Customer Examples */}
@@ -90,10 +92,12 @@ const ProblemAwareStageCustomers = () => {
               <div className="space-y-8">
                 
                 {/* Example 1 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <p className="text-gradient-critical italic text-lg font-medium">"Our marketing isn't working anymore"</p>
+                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
+                      <p className="text-white italic text-lg font-medium">"Our marketing isn't working anymore"</p>
+                    </div>
                   </div>
                   
                   <div className="mb-4">
@@ -113,10 +117,12 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 2 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <p className="text-gradient-critical italic text-lg font-medium">"We're getting traffic but no one's buying"</p>
+                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
+                      <p className="text-white italic text-lg font-medium">"We're getting traffic but no one's buying"</p>
+                    </div>
                   </div>
                   
                   <div className="mb-4">
@@ -136,10 +142,12 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 3 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <p className="text-gradient-critical italic text-lg font-medium">"Our customer acquisition cost keeps going up"</p>
+                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
+                      <p className="text-white italic text-lg font-medium">"Our customer acquisition cost keeps going up"</p>
+                    </div>
                   </div>
                   
                   <div className="mb-4">
@@ -159,10 +167,12 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 4 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <p className="text-gradient-critical italic text-lg font-medium">"We tried content marketing and it didn't work"</p>
+                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
+                      <p className="text-white italic text-lg font-medium">"We tried content marketing and it didn't work"</p>
+                    </div>
                   </div>
                   
                   <div className="mb-4">
@@ -182,10 +192,12 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 5 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <p className="text-gradient-critical italic text-lg font-medium">"Social media isn't driving any sales"</p>
+                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
+                      <p className="text-white italic text-lg font-medium">"Social media isn't driving any sales"</p>
+                    </div>
                   </div>
                   
                   <div className="mb-4">
@@ -205,10 +217,12 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 6 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <p className="text-gradient-critical italic text-lg font-medium">"Our sales team says leads are terrible"</p>
+                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
+                      <p className="text-white italic text-lg font-medium">"Our sales team says leads are terrible"</p>
+                    </div>
                   </div>
                   
                   <div className="mb-4">
@@ -228,10 +242,12 @@ const ProblemAwareStageCustomers = () => {
                 </div>
 
                 {/* Example 7 */}
-                <div className="border border-white/20 rounded-xl p-6 glass-card-light shadow-lg">
+                <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <p className="text-gradient-critical italic text-lg font-medium">"Competitors keep stealing our customers"</p>
+                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
+                      <p className="text-white italic text-lg font-medium">"Competitors keep stealing our customers"</p>
+                    </div>
                   </div>
                   
                   <div className="mb-4">
@@ -324,11 +340,11 @@ const ProblemAwareStageCustomers = () => {
                 The Pattern: How to Help Problem-Aware Customers
               </h2>
               
-              <div className="glass-card-orange rounded-xl p-6 mb-6">
-                <p className="text-orange-800 mb-4">
+              <div className="glass-card-solid rounded-xl p-6 mb-6 border-l-4 border-orange-500 shadow-lg">
+                <p className="text-white mb-4 font-bold text-lg">
                   <strong>Problem-aware customers don't need more tactics—they need a diagnosis.</strong>
                 </p>
-                <p className="text-orange-700">
+                <p className="text-white/90 font-medium text-base leading-relaxed">
                   They're drowning in symptoms without understanding the disease. Your job is to help them see the root cause clearly, so they stop wasting money on band-aid solutions.
                 </p>
               </div>

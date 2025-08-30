@@ -252,7 +252,7 @@ const FractionalCMOVsInHouse = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-blue rounded-lg p-4 border-l-4 border-indigo-500">
+                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-indigo-500">
                             <h4 className="heading-md text-indigo-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
@@ -265,7 +265,7 @@ const FractionalCMOVsInHouse = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
+                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-orange-500">
                             <h4 className="heading-md text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
@@ -275,7 +275,7 @@ const FractionalCMOVsInHouse = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-blue-500">
+                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-blue-500">
                             <h4 className="heading-md text-blue-800 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
@@ -293,7 +293,7 @@ const FractionalCMOVsInHouse = () => {
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-black-standard font-medium">
+                        <p className="text-gray-900 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>

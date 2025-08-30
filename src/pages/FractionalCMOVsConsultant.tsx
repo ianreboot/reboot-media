@@ -252,7 +252,7 @@ const FractionalCMOVsConsultant = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-purple-500">
+                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-purple-500">
                             <h4 className="heading-md text-purple-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
@@ -265,7 +265,7 @@ const FractionalCMOVsConsultant = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
+                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-orange-500">
                             <h4 className="heading-md text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
@@ -275,7 +275,7 @@ const FractionalCMOVsConsultant = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-blue rounded-lg p-4 border-l-4 border-blue-500">
+                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-blue-500">
                             <h4 className="heading-md text-blue-800 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
@@ -288,12 +288,12 @@ const FractionalCMOVsConsultant = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 glass-card-green rounded-lg p-4 border border-green-200">
+                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-green-200">
                         <h4 className="heading-md text-green-800 mb-2 flex items-center">
                           <span className="mr-2">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-black-standard font-medium">
+                        <p className="text-gray-900 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>

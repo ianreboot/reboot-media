@@ -257,7 +257,7 @@ const WhenToChooseEach = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-indigo-500">
+                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-indigo-500">
                             <h4 className="heading-md text-indigo-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
@@ -270,7 +270,7 @@ const WhenToChooseEach = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
+                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-orange-500">
                             <h4 className="heading-md text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Consideration:
@@ -280,7 +280,7 @@ const WhenToChooseEach = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-purple-500">
+                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-purple-500">
                             <h4 className="heading-md text-purple-800 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
@@ -293,12 +293,12 @@ const WhenToChooseEach = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 glass-card-green rounded-lg p-4 ">
+                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-green-200">
                         <h4 className="heading-md text-green-800 mb-2 flex items-center">
                           <span className="mr-2">🎯</span>
                           Clear Recommendation:
                         </h4>
-                        <p className="text-standard font-medium">
+                        <p className="text-gray-900 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -317,7 +317,7 @@ const WhenToChooseEach = () => {
                 <table className="w-full text-sm">
                   <thead>
                     <tr className="border-b border-gray-200">
-                      <th className="text-left py-3 px-2 font-bold text-white">Factor</th>
+                      <th className="text-left py-3 px-2 font-bold text-gray-900">Factor</th>
                       <th className="text-center py-3 px-2 text-blue-accessible">Fractional CMO</th>
                       <th className="text-center py-3 px-2 text-orange-accessible">Agency</th>
                       <th className="text-center py-3 px-2 text-purple-600">Consultant</th>
@@ -339,14 +339,14 @@ const WhenToChooseEach = () => {
                       <td className="text-center py-3 px-2">Analysis</td>
                       <td className="text-center py-3 px-2">Continuity</td>
                     </tr>
-                    <tr className="border-b border-gray-100 glass-card-medium">
+                    <tr className="border-b border-gray-100 glass-card-solid">
                       <td className="py-3 px-2 font-medium">Time to Impact</td>
                       <td className="text-center py-3 px-2 font-semibold">30-60 days</td>
                       <td className="text-center py-3 px-2 font-semibold">60-90 days</td>
                       <td className="text-center py-3 px-2 font-semibold">90-120 days</td>
                       <td className="text-center py-3 px-2 font-semibold">180+ days</td>
                     </tr>
-                    <tr className="border-b border-gray-100 glass-card-medium">
+                    <tr className="border-b border-gray-100 glass-card-solid">
                       <td className="py-3 px-2 font-medium">Cost Structure</td>
                       <td className="text-center py-3 px-2 font-semibold">$5-15K/month</td>
                       <td className="text-center py-3 px-2 font-semibold">$3-20K/month</td>

@@ -75,8 +75,8 @@ const ProductAwareStageCustomers = () => {
             
             {/* Introduction */}
             <section className="mb-12">
-              <div className="glass-card-minimal rounded-xl p-6 border border-white/20">
-                <p className="text-lg text-white/90 mb-6 text-center font-medium">
+              <div className="glass-card-medium rounded-xl p-8 border border-white/20">
+                <p className="text-lg text-white mb-6 text-center font-medium">
                   Product-aware customers are close. They're seriously considering you but have specific concerns holding them back. They're not questioning if they need help—they're questioning if YOU'RE the right help.
                 </p>
               </div>
@@ -280,11 +280,11 @@ const ProductAwareStageCustomers = () => {
                 The Truth About Product-Aware Customers
               </h2>
               
-              <div className="glass-card-orange rounded-xl p-6 mb-6">
-                <p className="text-orange-800 mb-4 font-semibold">
+              <div className="glass-card-solid rounded-xl p-6 mb-6 border-l-4 border-orange-500 shadow-lg">
+                <p className="text-white mb-4 font-bold text-lg">
                   <strong>Product-aware customers want to say yes—they just need you to make it safe.</strong>
                 </p>
-                <p className="text-orange-700 font-medium">
+                <p className="text-white/90 font-medium text-base leading-relaxed">
                   They've done the research. They see the value. Now they need confidence that choosing you won't make them look bad. Address the fear, not just the features.
                 </p>
               </div>

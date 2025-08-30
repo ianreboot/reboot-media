@@ -189,17 +189,17 @@ const GrowthPlateauSolutions = () => {
               <div className="glass-card-medium rounded-2xl shadow-xl border border-white/20 p-8">
                 <div className="text-4xl font-black text-red-600 mb-4">67%</div>
                 <div className="text-lg font-semibold text-white mb-2">Companies Plateau</div>
-                <p className="text-white/80">Between $500K-$1.5M revenue</p>
+                <p className="text-white">Between $500K-$1.5M revenue</p>
               </div>
               <div className="glass-card-medium rounded-2xl shadow-xl border border-white/20 p-8">
                 <div className="text-4xl font-black text-orange-accessible mb-4">14mo</div>
                 <div className="text-lg font-semibold text-white mb-2">Average Stuck Time</div>
-                <p className="text-white/80">Before breaking through</p>
+                <p className="text-white">Before breaking through</p>
               </div>
               <div className="glass-card-medium rounded-2xl shadow-xl border border-white/20 p-8">
                 <div className="text-4xl font-black text-green-600 mb-4">$47K</div>
                 <div className="text-lg font-semibold text-white mb-2">Monthly Cost</div>
-                <p className="text-white/80">Of staying plateaued</p>
+                <p className="text-white">Of staying plateaued</p>
               </div>
             </div>
             
@@ -207,7 +207,7 @@ const GrowthPlateauSolutions = () => {
               <h3 className="heading-lg text-white mb-4">
                 🚨 Every Month You Wait Costs You $47,000+
               </h3>
-              <p className="text-lg text-white/90 mb-6 max-w-3xl mx-auto">
+              <p className="text-lg text-white mb-6 max-w-3xl mx-auto">
                 While you're stuck at $1M, you should be at $1.5M+ with proper marketing psychology. That's $500K+ annual difference. 
                 Every month of delay costs you qualified opportunities competitors are capturing.
               </p>
@@ -225,7 +225,7 @@ const GrowthPlateauSolutions = () => {
             <h2 className="heading-xl text-gradient-critical mb-8 text-center">
               7 Plateau Types (Which is Yours?)
             </h2>
-            <p className="text-xl text-important-accessible mb-16 text-center max-w-4xl mx-auto">
+            <p className="text-xl text-white mb-16 text-center max-w-4xl mx-auto">
               After analyzing 200+ growth-stage companies, we've identified exactly why companies get stuck. 
               Each plateau type has specific psychology fixes that unlock the next revenue level.
             </p>
@@ -235,7 +235,7 @@ const GrowthPlateauSolutions = () => {
                 <div key={plateau.id} className="group">
                   <a 
                     href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}${plateau.link}`}
-                    className="block glass-card-light rounded-2xl shadow-lg border border-white/20 p-8 transition-all duration-300 hover:shadow-2xl focus-visible:shadow-2xl hover:scale-105 focus-visible:scale-105 hover:bg-white focus-visible:bg-white focus-visible:bg-slate-700/80"
+                    className="block glass-card-medium rounded-2xl shadow-lg border border-white/20 p-8 transition-all duration-300 hover:shadow-2xl focus-visible:shadow-2xl hover:scale-105 focus-visible:scale-105 hover:glass-card-solid focus-visible:glass-card-solid"
                   >
                     <div className="text-center mb-6">
                       <div className="text-4xl mb-4">{plateau.icon}</div>
@@ -243,10 +243,10 @@ const GrowthPlateauSolutions = () => {
                         {plateau.title}
                       </h3>
                     </div>
-                    <p className="text-white/90 text-base leading-relaxed mb-6 text-center">
+                    <p className="text-white text-base leading-relaxed mb-6 text-center">
                       {plateau.description}
                     </p>
-                    <div className="flex items-center justify-center text-red-600 font-semibold group-hover:text-red-700 group-focus-visible:text-red-700 focus-visible:text-red-700 group-focus-visible:text-red-300 focus-visible:text-red-300 transition-colors">
+                    <div className="flex items-center justify-center text-red-600 font-semibold group-hover:text-red-700 group-focus-visible:text-red-700 focus-visible:text-red-700 transition-colors">
                       Discover Your Breakthrough →
                     </div>
                   </a>
@@ -261,7 +261,7 @@ const GrowthPlateauSolutions = () => {
               <h2 className="heading-xl text-gradient-critical mb-8 text-center">
                 The Psychology-Driven Breakthrough Framework
               </h2>
-              <p className="text-xl text-white/90 mb-12 text-center max-w-4xl mx-auto">
+              <p className="text-xl text-white mb-12 text-center max-w-4xl mx-auto">
                 The 33% of companies that break through plateaus use this systematic approach. 
                 It's not about working harder—it's about <span className="font-semibold text-red-600">marketing psychology that actually converts</span>.
               </p>
@@ -270,22 +270,22 @@ const GrowthPlateauSolutions = () => {
                 <div className="text-center">
                   <div className="bg-gradient-to-r from-red-500 to-red-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4">1</div>
                   <h3 className="font-bold text-lg text-white mb-3">Customer Says</h3>
-                  <p className="text-optional text-sm">Exact language your stuck customers use</p>
+                  <p className="text-white text-sm">Exact language your stuck customers use</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-gradient-to-r from-orange-500 to-orange-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4">2</div>
                   <h3 className="font-bold text-lg text-white mb-3">Real Problem</h3>
-                  <p className="text-optional text-sm">Hidden psychological root cause</p>
+                  <p className="text-white text-sm">Hidden psychological root cause</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-gradient-to-r from-green-500 to-green-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4">3</div>
                   <h3 className="font-bold text-lg text-white mb-3">Solution</h3>
-                  <p className="text-optional text-sm">Systems + psychology fix</p>
+                  <p className="text-white text-sm">Systems + psychology fix</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-gradient-to-r from-purple-500 to-purple-600 text-white rounded-full w-12 h-12 flex items-center justify-center font-bold text-lg mx-auto mb-4">4</div>
                   <h3 className="font-bold text-lg text-white mb-3">Why It Works</h3>
-                  <p className="text-optional text-sm">Psychology principle explained</p>
+                  <p className="text-white text-sm">Psychology principle explained</p>
                 </div>
               </div>
             </div>
@@ -297,13 +297,13 @@ const GrowthPlateauSolutions = () => {
               Master the Psychology Behind Breakthrough Growth
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow">
+              <div className="glass-card-medium rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow">
                 <h3 className="heading-lg text-white mb-4">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                     Marketing Psychology Fundamentals →
                   </a>
                 </h3>
-                <p className="text-lg text-white/90 mb-6">
+                <p className="text-lg text-white mb-6">
                   Master the 5 customer awareness stages and conversion psychology principles that transform scattered marketing into predictable revenue growth.
                 </p>
                 <a 
@@ -315,13 +315,13 @@ const GrowthPlateauSolutions = () => {
                 </a>
               </div>
               
-              <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow">
+              <div className="glass-card-medium rounded-2xl shadow-xl border border-white/20 p-8 hover:shadow-2xl focus-visible:shadow-2xl transition-shadow">
                 <h3 className="heading-lg text-white mb-4">
                   <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                     Need Strategic Marketing Leadership? →
                   </a>
                 </h3>
-                <p className="text-lg text-white/90 mb-6">
+                <p className="text-lg text-white mb-6">
                   Compare fractional CMO vs agency approaches and discover which delivers faster plateau breakthrough results for your specific situation.
                 </p>
                 <a 
