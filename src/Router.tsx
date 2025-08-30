@@ -10,6 +10,7 @@ const About = lazy(() => import('./pages/About'));
 const Contact = lazy(() => import('./pages/Contact'));
 const Privacy = lazy(() => import('./pages/Privacy'));
 const Terms = lazy(() => import('./pages/Terms'));
+const Sitemap = lazy(() => import('./pages/Sitemap'));
 
 // Lazy-loaded page chunks for code splitting
 const MarketingPsychology = lazy(() => import('./pages/MarketingPsychology'));
@@ -114,6 +115,14 @@ const Router = () => {
                     element={
                       <ErrorBoundary level="page" name="TermsPage">
                         <Terms />
+                      </ErrorBoundary>
+                    } 
+                  />
+                  <Route 
+                    path="/sitemap" 
+                    element={
+                      <ErrorBoundary level="page" name="SitemapPage">
+                        <Sitemap />
                       </ErrorBoundary>
                     } 
                   />

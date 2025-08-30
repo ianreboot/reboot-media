@@ -176,15 +176,20 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
                         <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} 
                               className="text-sm text-gray-300 hover:text-white focus-visible:text-white transition-colors"
                               style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
-                          Fractional CMO vs Agency
+                          Fractional CMO Guide
                         </a>
                       </li>
                     </ul>
                   </div>
                   <div>
-                    {/* Space for future resources */}
                     <ul className="space-y-2">
-                      {/* Future resource links will go here */}
+                      <li>
+                        <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/sitemap`} 
+                              className="text-sm text-orange-400 hover:text-orange-300 focus-visible:text-orange-300 transition-colors font-medium"
+                              style={{ pointerEvents: 'auto', zIndex: 50, position: 'relative' }}>
+                          📍 View All Topics
+                        </a>
+                      </li>
                     </ul>
                   </div>
                 </div>

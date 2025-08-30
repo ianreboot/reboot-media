@@ -335,7 +335,27 @@ const GlobalHeader = ({ onShowForm, showProgressBar = false }: GlobalHeaderProps
               {/* Right Side: Desktop Navigation & Mobile Menu Toggle */}
               <div className="flex items-center gap-4">
                 
-                {/* Desktop Navigation Links - Removed as site has 30+ pages now */}
+                {/* Desktop Navigation Links */}
+                <div className="hidden lg:flex items-center gap-6">
+                  <a 
+                    href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/sitemap`}
+                    className="text-sm font-medium text-gray-700 hover:text-orange-500 focus-visible:text-orange-500 transition-colors"
+                  >
+                    Resources
+                  </a>
+                  <a 
+                    href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/about`}
+                    className="text-sm font-medium text-gray-700 hover:text-orange-500 focus-visible:text-orange-500 transition-colors"
+                  >
+                    About
+                  </a>
+                  <a 
+                    href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`}
+                    className="text-sm font-medium text-gray-700 hover:text-orange-500 focus-visible:text-orange-500 transition-colors"
+                  >
+                    Contact
+                  </a>
+                </div>
 
                 {/* CTA Button - Hidden on Mobile */}
                 <button 

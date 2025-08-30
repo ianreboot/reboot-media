@@ -122,10 +122,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- Vite will inject assets here during build -->
+    <!-- Preload critical resources -->
+    <script type="module" crossorigin src="/reboot/assets/index.dev-hzxZlwYx.js"></script>
+    <link rel="stylesheet" crossorigin href="/reboot/assets/index-BhcASSVT.css">
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
