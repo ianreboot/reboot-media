@@ -433,7 +433,7 @@ const MainApp = () => {
                 <div>
                   <h3 className="text-lg font-bold text-critical-accessible mb-2">Fractional CMO</h3>
                   <div className="glass-card-solid rounded-lg px-4 py-2 inline-block">
-                    <div className="text-3xl font-black text-orange-300">$5K-18K</div>
+                    <div className="text-3xl font-black text-orange-700">$5K-18K</div>
                   </div>
                   <div className="text-sm text-orange-200 mt-2">immediate start, proven results</div>
                 </div>

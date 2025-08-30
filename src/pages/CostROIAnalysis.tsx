@@ -241,11 +241,11 @@ const CostROIAnalysis = () => {
                       <td className="text-center py-3 px-2 text-white">Very High (43%)</td>
                     </tr>
                     <tr className="border-t-2 border-gray-200 glass-card-solid">
-                      <td className="py-3 px-2 font-bold text-white">TRUE ANNUAL COST</td>
-                      <td className="text-center py-3 px-2 font-bold text-green-300">$96-180K</td>
-                      <td className="text-center py-3 px-2 font-bold text-orange-300">$84-300K</td>
-                      <td className="text-center py-3 px-2 font-bold text-red-300">$260-436K</td>
-                      <td className="text-center py-3 px-2 font-bold text-purple-300">$216-384K</td>
+                      <td className="py-3 px-2 font-bold text-gray-900">TRUE ANNUAL COST</td>
+                      <td className="text-center py-3 px-2 font-bold text-green-700">$96-180K</td>
+                      <td className="text-center py-3 px-2 font-bold text-orange-700">$84-300K</td>
+                      <td className="text-center py-3 px-2 font-bold text-red-700">$260-436K</td>
+                      <td className="text-center py-3 px-2 font-bold text-purple-700">$216-384K</td>
                     </tr>
                   </tbody>
                 </table>
@@ -284,20 +284,20 @@ const CostROIAnalysis = () => {
                     <h3 className="heading-lg text-gradient-critical mb-4">ROI Multiplier</h3>
                     <div className="space-y-3">
                       <div className="flex justify-between items-center p-3 glass-card-solid rounded-lg">
-                        <span className="font-medium text-white">Fractional CMO</span>
-                        <span className="font-bold text-green-300">3.2x ROI</span>
+                        <span className="font-medium text-gray-900">Fractional CMO</span>
+                        <span className="font-bold text-green-700">3.2x ROI</span>
                       </div>
                       <div className="flex justify-between items-center p-3 glass-card-solid rounded-lg">
-                        <span className="font-medium text-white">Agency</span>
-                        <span className="font-bold text-orange-300">1.8x ROI</span>
+                        <span className="font-medium text-gray-900">Agency</span>
+                        <span className="font-bold text-orange-700">1.8x ROI</span>
                       </div>
                       <div className="flex justify-between items-center p-3 glass-card-solid rounded-lg">
-                        <span className="font-medium text-white">Consultant</span>
-                        <span className="font-bold text-purple-300">0.9x ROI</span>
+                        <span className="font-medium text-gray-900">Consultant</span>
+                        <span className="font-bold text-purple-700">0.9x ROI</span>
                       </div>
                       <div className="flex justify-between items-center p-3 glass-card-solid rounded-lg">
-                        <span className="font-medium text-white">In-House</span>
-                        <span className="font-bold text-blue-300">1.4x ROI</span>
+                        <span className="font-medium text-gray-900">In-House</span>
+                        <span className="font-bold text-blue-700">1.4x ROI</span>
                       </div>
                     </div>
                   </div>
