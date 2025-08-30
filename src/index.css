@@ -36,6 +36,21 @@
     justify-content: center;
   }
   
+  /* URCM Responsive Content Utilities */
+  /* Decorative elements hidden on mobile, visible on desktop */
+  .decorative-icon {
+    @apply hidden sm:inline-block;
+  }
+  
+  .decorative-icon-flex {
+    @apply hidden sm:flex;
+  }
+  
+  /* Smart content truncation */
+  .responsive-truncate {
+    @apply line-clamp-2 sm:line-clamp-none;
+  }
+  
   /* Glassmorphism utility classes */
   .glass-card {
     background: rgba(255, 255, 255, 0.1);

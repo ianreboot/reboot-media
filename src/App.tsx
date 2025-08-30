@@ -159,7 +159,7 @@ const MainApp = () => {
               }}
               className="cta-primary px-8 sm:px-12 py-4 rounded-xl font-black text-lg sm:text-xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-2xl inline-flex items-center gap-3 touch-target"
             >
-              <span className="text-2xl hidden sm:inline" aria-hidden="true">🔍</span>
+              <span className="text-2xl decorative-icon" aria-hidden="true">🔍</span>
               <span>Show Me What's Broken in My Marketing</span>
             </button>
           </div>
@@ -169,7 +169,7 @@ const MainApp = () => {
             <div className="group relative bg-slate-800/60 backdrop-blur-sm border-l-4 border-orange-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer touch-target">
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">30X Growth</div>
-                <div className="text-sm text-important-accessible font-medium leading-tight line-clamp-2 sm:line-clamp-none">
+                <div className="text-sm text-important-accessible font-medium leading-tight responsive-truncate">
                   <span className="sr-only">Companies see explosive revenue growth when psychology replaces guesswork</span>
                   <span aria-hidden="true">Companies see explosive revenue growth when psychology replaces guesswork</span>
                 </div>
@@ -179,7 +179,7 @@ const MainApp = () => {
             <div className="group relative bg-slate-800/60 backdrop-blur-sm border-l-4 border-blue-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer touch-target">
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">Stop the Bleed</div>
-                <div className="text-sm text-important-accessible font-medium leading-tight line-clamp-2 sm:line-clamp-none">
+                <div className="text-sm text-important-accessible font-medium leading-tight responsive-truncate">
                   <span className="sr-only">Finally understand why customers don't buy, instead of wondering why</span>
                   <span aria-hidden="true">Finally understand why customers don't buy, instead of wondering why</span>
                 </div>
@@ -189,7 +189,7 @@ const MainApp = () => {
             <div className="group relative bg-slate-800/60 backdrop-blur-sm border-l-4 border-green-500 rounded-r-xl p-5 hover:shadow-xl focus-visible:shadow-xl transition-all duration-300 hover:scale-105 focus-visible:scale-105 cursor-pointer touch-target">
               <div className="text-center">
                 <div className="text-2xl font-black text-critical-accessible mb-1">Sleep Better</div>
-                <div className="text-sm text-important-accessible font-medium leading-tight line-clamp-2 sm:line-clamp-none">
+                <div className="text-sm text-important-accessible font-medium leading-tight responsive-truncate">
                   <span className="sr-only">No more throwing money at marketing that doesn't bring customers</span>
                   <span aria-hidden="true">No more throwing money at marketing that doesn't bring customers</span>
                 </div>
@@ -244,7 +244,7 @@ const MainApp = () => {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
             <div className="inline-flex items-center bg-blue-500/80 backdrop-blur-sm border border-blue-400/40 rounded-full px-4 py-2 mb-4">
-              <svg className="w-4 h-4 text-blue-500 mr-2 hidden sm:inline-block" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-4 h-4 text-blue-500 mr-2 decorative-icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
               </svg>
               <span className="text-white text-sm font-semibold">Common Question</span>
@@ -298,7 +298,7 @@ const MainApp = () => {
             <div className="mb-12">
               <div className="text-center mb-8">
                 <div className="inline-flex items-center bg-green-100 rounded-full px-4 py-2 mb-4">
-                  <svg className="w-4 h-4 text-green-600 mr-2 hidden sm:inline-block" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 text-green-600 mr-2 decorative-icon" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
                   </svg>
                   <span className="text-green-700 text-sm font-semibold">The Solution</span>
@@ -455,24 +455,24 @@ const MainApp = () => {
               <h3 className="text-2xl font-bold mb-4">Why Fractional CMO Makes Sense</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div>
-                  <div className="text-3xl font-black text-orange-400 mb-2 hidden sm:block" aria-hidden="true">⚡</div>
+                  <div className="text-3xl font-black text-orange-400 mb-2 decorative-icon" aria-hidden="true">⚡</div>
                   <h4 className="font-bold mb-1 text-white-critical">Immediate Impact</h4>
-                  <p className="text-white-standard text-sm line-clamp-2 sm:line-clamp-none">Start seeing results in weeks, not months</p>
+                  <p className="text-white-standard text-sm responsive-truncate">Start seeing results in weeks, not months</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-black text-orange-400 mb-2 hidden sm:block" aria-hidden="true">💰</div>
+                  <div className="text-3xl font-black text-orange-400 mb-2 decorative-icon" aria-hidden="true">💰</div>
                   <h4 className="font-bold mb-1 text-white-critical">Better ROI</h4>
-                  <p className="text-white-standard text-sm line-clamp-2 sm:line-clamp-none">Pay for expertise, not overhead and recruiting</p>
+                  <p className="text-white-standard text-sm responsive-truncate">Pay for expertise, not overhead and recruiting</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-black text-orange-400 mb-2 hidden sm:block" aria-hidden="true">🎯</div>
+                  <div className="text-3xl font-black text-orange-400 mb-2 decorative-icon" aria-hidden="true">🎯</div>
                   <h4 className="font-bold mb-1 text-white-critical">Proven Systems</h4>
-                  <p className="text-white-standard text-sm line-clamp-2 sm:line-clamp-none">Battle-tested systems from 20+ years C-level experience</p>
+                  <p className="text-white-standard text-sm responsive-truncate">Battle-tested systems from 20+ years C-level experience</p>
                 </div>
                 <div>
-                  <div className="text-3xl font-black text-orange-400 mb-2 hidden sm:block" aria-hidden="true">💎</div>
+                  <div className="text-3xl font-black text-orange-400 mb-2 decorative-icon" aria-hidden="true">💎</div>
                   <h4 className="font-bold mb-1 text-white-critical">Equity Upside</h4>
-                  <p className="text-white-standard text-sm line-clamp-2 sm:line-clamp-none">Potential equity participation for long-term partnerships</p>
+                  <p className="text-white-standard text-sm responsive-truncate">Potential equity participation for long-term partnerships</p>
                 </div>
               </div>
             </div>
@@ -535,7 +535,7 @@ const MainApp = () => {
           {/* Story Section - Scannable Cards */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
             <div className="bg-slate-800/70 backdrop-blur-sm border border-orange-400/40 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
-              <div className="w-12 h-12 bg-orange-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 hidden sm:flex" aria-hidden="true">
+              <div className="w-12 h-12 bg-orange-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 decorative-icon-flex" aria-hidden="true">
                 <svg className="w-6 h-6 text-orange-accessible" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                 </svg>
@@ -548,7 +548,7 @@ const MainApp = () => {
             </div>
 
             <div className="bg-slate-800/70 backdrop-blur-sm border border-blue-400/40 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:rotate-1 focus-visible:rotate-1 cursor-pointer">
-              <div className="w-12 h-12 bg-blue-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 hidden sm:flex" aria-hidden="true">
+              <div className="w-12 h-12 bg-blue-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 decorative-icon-flex" aria-hidden="true">
                 <svg className="w-6 h-6 text-blue-accessible" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064"/>
                 </svg>
@@ -561,7 +561,7 @@ const MainApp = () => {
             </div>
 
             <div className="bg-slate-800/70 backdrop-blur-sm border border-green-400/40 rounded-2xl p-6 transition-all duration-500 hover:scale-105 focus-visible:scale-105 hover:-rotate-1 focus-visible:-rotate-1 cursor-pointer">
-              <div className="w-12 h-12 bg-green-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 hidden sm:flex" aria-hidden="true">
+              <div className="w-12 h-12 bg-green-100/70 backdrop-blur-sm rounded-lg flex items-center justify-center mb-4 decorative-icon-flex" aria-hidden="true">
                 <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                 </svg>
@@ -591,7 +591,7 @@ const MainApp = () => {
             {/* For Procrastinators */}
             <div className="mb-12">
               <div className="inline-flex items-center bg-orange-500/20 backdrop-blur-sm border border-orange-400/30 rounded-full px-4 py-2 mb-6">
-                <svg className="w-4 h-4 text-orange-400 mr-2 hidden sm:inline-block" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
+                <svg className="w-4 h-4 text-orange-400 mr-2 decorative-icon" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd"/>
                 </svg>
                 <span className="text-orange-300 text-sm font-semibold">Still Thinking About It?</span>
