@@ -347,13 +347,15 @@ const MainApp = () => {
                     
                     <div className="space-y-6">
                       <div>
-                        <div className="text-7xl font-black text-blue-accessible mb-2">85%</div>
+                        <div className="glass-card-medium rounded-xl p-4 mb-4">
+                          <div className="text-7xl font-black text-blue-accessible mb-2">85%</div>
+                        </div>
                         <p className="text-blue-800 text-lg font-semibold leading-tight">
                           of breakthrough results come from questioning "industry standards"
                         </p>
                       </div>
                       
-                      <div className="bg-white/40 rounded-2xl p-6 backdrop-blur-sm">
+                      <div className="glass-card-medium rounded-2xl p-6 backdrop-blur-sm">
                         <div className="grid grid-cols-2 gap-4 text-center">
                           <div>
                             <div className="text-2xl font-black text-critical-accessible">20+</div>
@@ -387,7 +389,7 @@ const MainApp = () => {
                         </div>
                       </div>
                       
-                      <div className="bg-white/40 rounded-xl p-4 border-l-4 border-orange-500/60">
+                      <div className="glass-card-light rounded-xl p-4 border-l-4 border-orange-500/60">
                         <p className="text-standard-accessible text-sm italic">
                           "The best consultants don't know your industry inside-out. 
                           They know <strong>customers</strong> inside-out."
@@ -420,7 +422,7 @@ const MainApp = () => {
             </div>
             
             {/* Price Anchoring Header */}
-            <div className="glass-card-light border border-red-200/50 rounded-2xl p-6 max-w-4xl mx-auto mb-8">
+            <div className="glass-card-medium border border-red-200/50 rounded-2xl p-6 max-w-4xl mx-auto mb-8">
               <div className="flex flex-col md:flex-row items-center justify-between text-center">
                 <div className="mb-4 md:mb-0">
                   <h3 className="text-lg font-bold text-critical-accessible mb-2">Full-Time CMO Cost</h3>
@@ -430,8 +432,10 @@ const MainApp = () => {
                 <div className="text-orange-300 text-4xl font-bold mx-8">VS</div>
                 <div>
                   <h3 className="text-lg font-bold text-critical-accessible mb-2">Fractional CMO</h3>
-                  <div className="text-3xl font-black text-orange-300">$5K-18K</div>
-                  <div className="text-sm text-orange-200">immediate start, proven results</div>
+                  <div className="glass-card-solid rounded-lg px-4 py-2 inline-block">
+                    <div className="text-3xl font-black text-orange-300">$5K-18K</div>
+                  </div>
+                  <div className="text-sm text-orange-200 mt-2">immediate start, proven results</div>
                 </div>
               </div>
             </div>
@@ -493,7 +497,7 @@ const MainApp = () => {
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 {/* Primary Stat */}
                 <div className="text-center lg:col-span-1">
-                  <div className="bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 text-white shadow-xl">
+                  <div className="glass-card-solid bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl p-8 text-white shadow-xl">
                     <div className="text-5xl font-black mb-2">$3M+</div>
                     <div className="text-lg font-bold text-orange-100 mb-1">Monthly Revenue Generated</div>
                     <div className="text-orange-200 text-sm">From Leading US Companies</div>
@@ -503,19 +507,19 @@ const MainApp = () => {
                 {/* Supporting Stats */}
                 <div className="lg:col-span-2">
                   <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-gradient-to-br from-blue-50/60 to-blue-100/40 backdrop-blur-sm border border-blue-400/50 rounded-xl p-6 text-center shadow-lg">
+                    <div className="glass-card-medium border border-blue-400/50 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-blue-accessible mb-1">20+</div>
                       <div className="text-blue-700 font-medium text-sm">Years Experience</div>
                     </div>
-                    <div className="bg-gradient-to-br from-green-50/60 to-green-100/40 backdrop-blur-sm border border-green-400/50 rounded-xl p-6 text-center shadow-lg">
+                    <div className="glass-card-medium border border-green-400/50 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-green-600 mb-1">$500K</div>
                       <div className="text-green-700 font-medium text-sm">Monthly Ad Testing</div>
                     </div>
-                    <div className="bg-gradient-to-br from-purple-50/60 to-purple-100/40 backdrop-blur-sm border border-purple-400/50 rounded-xl p-6 text-center shadow-lg">
+                    <div className="glass-card-medium border border-purple-400/50 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-purple-600 mb-1">7+</div>
                       <div className="text-purple-700 font-medium text-sm">Industries Proven</div>
                     </div>
-                    <div className="bg-gradient-to-br from-red-50/60 to-red-100/40 backdrop-blur-sm border border-red-400/50 rounded-xl p-6 text-center shadow-lg">
+                    <div className="glass-card-medium border border-red-400/50 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-red-600 mb-1">8</div>
                       <div className="text-red-700 font-medium text-sm">Client Limit</div>
                     </div>
@@ -591,7 +595,7 @@ const MainApp = () => {
               </div>
               
               <h2 className="heading-xl mb-6 text-white" style={{ marginTop: '0.25rem', color: 'white' }}>
-                Every Month You Wait Costs You <span className="text-orange-400">$47,000</span> in Lost Revenue
+                Every Month You Wait Costs You <span className="glass-card-medium rounded-lg px-3 py-1 text-orange-400 font-black">$47,000</span> in Lost Revenue
               </h2>
               
               <p className="text-xl mb-8 max-w-3xl mx-auto text-white-standard">

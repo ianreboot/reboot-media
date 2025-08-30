@@ -205,42 +205,42 @@ const CostROIAnalysis = () => {
                       <td className="text-center py-3 px-2">$15-25K/mo</td>
                       <td className="text-center py-3 px-2">$12-18K/mo</td>
                     </tr>
-                    <tr className="border-b border-gray-100 glass-card-light">
+                    <tr className="border-b border-gray-100 glass-card-medium">
                       <td className="py-3 px-2 font-medium">+ Recruitment Cost</td>
                       <td className="text-center py-3 px-2">$0</td>
                       <td className="text-center py-3 px-2">$2-5K</td>
                       <td className="text-center py-3 px-2">$20-40K</td>
                       <td className="text-center py-3 px-2">$15-25K</td>
                     </tr>
-                    <tr className="border-b border-gray-100 glass-card-light">
+                    <tr className="border-b border-gray-100 glass-card-medium">
                       <td className="py-3 px-2 font-medium">+ Benefits/Overhead</td>
                       <td className="text-center py-3 px-2">$0</td>
                       <td className="text-center py-3 px-2">$0</td>
                       <td className="text-center py-3 px-2">$5-8K/mo</td>
                       <td className="text-center py-3 px-2">$4-6K/mo</td>
                     </tr>
-                    <tr className="border-b border-gray-100 glass-card-light">
+                    <tr className="border-b border-gray-100 glass-card-medium">
                       <td className="py-3 px-2 font-medium">+ Management Time</td>
                       <td className="text-center py-3 px-2">5 hrs/mo</td>
                       <td className="text-center py-3 px-2">20 hrs/mo</td>
                       <td className="text-center py-3 px-2">10 hrs/mo</td>
                       <td className="text-center py-3 px-2">40 hrs/mo</td>
                     </tr>
-                    <tr className="border-b border-gray-100 glass-card-light">
+                    <tr className="border-b border-gray-100 glass-card-medium">
                       <td className="py-3 px-2 font-medium">+ Ramp-Up Time</td>
                       <td className="text-center py-3 px-2">2-4 weeks</td>
                       <td className="text-center py-3 px-2">6-8 weeks</td>
                       <td className="text-center py-3 px-2">12-16 weeks</td>
                       <td className="text-center py-3 px-2">16-24 weeks</td>
                     </tr>
-                    <tr className="border-b border-gray-100 glass-card-light">
+                    <tr className="border-b border-gray-100 glass-card-medium">
                       <td className="py-3 px-2 font-medium">+ Turnover Risk</td>
                       <td className="text-center py-3 px-2">Low</td>
                       <td className="text-center py-3 px-2">Medium</td>
                       <td className="text-center py-3 px-2">High (18mo avg)</td>
                       <td className="text-center py-3 px-2">Very High (43%)</td>
                     </tr>
-                    <tr className="border-t-2 border-gray-200 glass-card-green">
+                    <tr className="border-t-2 border-gray-200 glass-card-solid">
                       <td className="py-3 px-2 font-bold">TRUE ANNUAL COST</td>
                       <td className="text-center py-3 px-2 font-bold text-green-600">$96-180K</td>
                       <td className="text-center py-3 px-2 font-bold text-orange-accessible">$84-300K</td>
@@ -262,11 +262,11 @@ const CostROIAnalysis = () => {
                   <div>
                     <h3 className="heading-lg text-gradient-critical mb-4">Average Revenue Impact</h3>
                     <div className="space-y-3">
-                      <div className="flex justify-between items-center p-3 glass-card-green rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-medium rounded-lg">
                         <span className="font-medium">Fractional CMO</span>
                         <span className="font-bold text-green-600">+42% growth</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 glass-card-orange rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-medium rounded-lg">
                         <span className="font-medium">Agency</span>
                         <span className="font-bold text-orange-accessible">+23% growth</span>
                       </div>
@@ -274,7 +274,7 @@ const CostROIAnalysis = () => {
                         <span className="font-medium">Consultant</span>
                         <span className="font-bold text-purple-600">+12% growth</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 glass-card-blue rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-medium rounded-lg">
                         <span className="font-medium">In-House</span>
                         <span className="font-bold text-blue-accessible">+18% growth</span>
                       </div>
@@ -283,19 +283,19 @@ const CostROIAnalysis = () => {
                   <div>
                     <h3 className="heading-lg text-gradient-critical mb-4">ROI Multiplier</h3>
                     <div className="space-y-3">
-                      <div className="flex justify-between items-center p-3 glass-card-green rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-solid rounded-lg">
                         <span className="font-medium">Fractional CMO</span>
                         <span className="font-bold text-green-600">3.2x ROI</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 glass-card-orange rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-solid rounded-lg">
                         <span className="font-medium">Agency</span>
                         <span className="font-bold text-orange-accessible">1.8x ROI</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 glass-card-medium rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-solid rounded-lg">
                         <span className="font-medium">Consultant</span>
                         <span className="font-bold text-purple-600">0.9x ROI</span>
                       </div>
-                      <div className="flex justify-between items-center p-3 glass-card-blue rounded-lg">
+                      <div className="flex justify-between items-center p-3 glass-card-solid rounded-lg">
                         <span className="font-medium">In-House</span>
                         <span className="font-bold text-blue-accessible">1.4x ROI</span>
                       </div>
@@ -404,21 +404,21 @@ const CostROIAnalysis = () => {
                   Quick ROI Calculator
                 </h2>
                 <div className="grid md:grid-cols-2 gap-8">
-                  <div>
+                  <div className="glass-card-medium rounded-lg p-4">
                     <p className="mb-4">If your current revenue is <strong>$1M</strong> and you're growing at <strong>10%/year</strong>:</p>
-                    <ul className="space-y-2 text-green-100">
+                    <ul className="space-y-2 text-gray-900">
                       <li>• With current growth: $1.1M next year</li>
                       <li>• With Agency (23% growth): $1.23M next year</li>
                       <li>• With Fractional CMO (42% growth): $1.42M next year</li>
                     </ul>
                   </div>
-                  <div>
+                  <div className="glass-card-solid rounded-lg p-4">
                     <p className="mb-4">That's an additional revenue difference of:</p>
-                    <ul className="space-y-2 text-green-100">
-                      <li className="font-bold text-yellow-300">• +$320,000 with Fractional CMO</li>
+                    <ul className="space-y-2 text-gray-900">
+                      <li className="font-bold text-yellow-700">• +$320,000 with Fractional CMO</li>
                       <li>• +$130,000 with Agency</li>
                       <li>• Investment: $120-180K for Fractional CMO</li>
-                      <li className="font-bold text-green-300">• Net gain: $140-200K in year one</li>
+                      <li className="font-bold text-green-700">• Net gain: $140-200K in year one</li>
                     </ul>
                   </div>
                 </div>

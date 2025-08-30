@@ -135,17 +135,17 @@ const FractionalCMOGuide = () => {
                 criteria behind fractional CMO, agency, full-time, and in-house options—plus when to transition between them.
               </p>
               <div className="grid md:grid-cols-3 gap-6 mb-6">
-                <div className="text-center p-4 glass-card-blue rounded-lg">
+                <div className="text-center p-4 glass-card-medium rounded-lg">
                   <div className="text-2xl font-bold text-blue-accessible mb-1">73%</div>
-                  <p className="text-sm text-white/80">Choose based on ego, not ROI</p>
+                  <p className="text-sm text-gray-900">Choose based on ego, not ROI</p>
                 </div>
-                <div className="text-center p-4 glass-card-orange rounded-lg">
+                <div className="text-center p-4 glass-card-solid rounded-lg">
                   <div className="text-2xl font-bold text-orange-accessible mb-1">$47K</div>
-                  <p className="text-sm text-white/80">Average cost of wrong choice</p>
+                  <p className="text-sm text-gray-900">Average cost of wrong choice</p>
                 </div>
-                <div className="text-center p-4 glass-card-green rounded-lg">
+                <div className="text-center p-4 glass-card-medium rounded-lg">
                   <div className="text-2xl font-bold text-green-600 mb-1">18mo</div>
-                  <p className="text-sm text-white/80">Wasted with poor fit</p>
+                  <p className="text-sm text-gray-900">Wasted with poor fit</p>
                 </div>
               </div>
               <p className="text-white/90 font-semibold">

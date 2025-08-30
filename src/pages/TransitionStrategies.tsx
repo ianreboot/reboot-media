@@ -192,17 +192,17 @@ const TransitionStrategies = () => {
                   proactively, using growth triggers and strategic milestones to guide evolution from one model to another.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 glass-card-medium rounded-lg">
+                  <div className="text-center p-4 glass-card-solid rounded-lg">
                     <div className="text-2xl font-bold text-purple-600 mb-1">82%</div>
-                    <p className="text-sm text-optional">Switch reactively in crisis</p>
+                    <p className="text-sm text-gray-900">Switch reactively in crisis</p>
                   </div>
-                  <div className="text-center p-4 glass-card-orange rounded-lg">
+                  <div className="text-center p-4 glass-card-solid rounded-lg">
                     <div className="text-2xl font-bold text-orange-accessible mb-1">6mo</div>
-                    <p className="text-sm text-optional">Lost during transitions</p>
+                    <p className="text-sm text-gray-900">Lost during transitions</p>
                   </div>
-                  <div className="text-center p-4 glass-card-green rounded-lg">
+                  <div className="text-center p-4 glass-card-solid rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">31%</div>
-                    <p className="text-sm text-optional">Have transition plan</p>
+                    <p className="text-sm text-gray-900">Have transition plan</p>
                   </div>
                 </div>
                 <p className="text-standard font-semibold">
@@ -252,7 +252,7 @@ const TransitionStrategies = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-purple-500">
+                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-purple-500">
                             <h4 className="heading-md text-purple-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Company Thinks:
@@ -275,7 +275,7 @@ const TransitionStrategies = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-pink-500">
+                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-pink-500">
                             <h4 className="heading-md text-pink-800 mb-2 flex items-center">
                               <span className="mr-2">⚖️</span>
                               Evaluation Framework:
@@ -310,39 +310,39 @@ const TransitionStrategies = () => {
                   Typical Marketing Evolution Timeline
                 </h2>
                 <div className="space-y-4">
-                  <div className="flex items-center">
-                    <div className="glass-card-orange0 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">1</div>
+                  <div className="flex items-center glass-card-medium rounded-lg p-3 mb-2">
+                    <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">1</div>
                     <div>
                       <strong className="text-gray-900">$0-500K:</strong>
-                      <span className="text-standard ml-2">Founder-led marketing or DIY approach</span>
+                      <span className="text-gray-800 ml-2">Founder-led marketing or DIY approach</span>
                     </div>
                   </div>
-                  <div className="flex items-center">
-                    <div className="glass-card-orange0 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">2</div>
+                  <div className="flex items-center glass-card-medium rounded-lg p-3 mb-2">
+                    <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">2</div>
                     <div>
                       <strong className="text-gray-900">$500K-1M:</strong>
-                      <span className="text-standard ml-2">First agency or consultant engagement</span>
+                      <span className="text-gray-800 ml-2">First agency or consultant engagement</span>
                     </div>
                   </div>
-                  <div className="flex items-center">
-                    <div className="glass-card-blue0 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">3</div>
+                  <div className="flex items-center glass-card-medium rounded-lg p-3 mb-2">
+                    <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">3</div>
                     <div>
                       <strong className="text-gray-900">$1M-3M:</strong>
-                      <span className="text-standard ml-2">Fractional CMO for strategic growth</span>
+                      <span className="text-gray-800 ml-2">Fractional CMO for strategic growth</span>
                     </div>
                   </div>
-                  <div className="flex items-center">
+                  <div className="flex items-center glass-card-medium rounded-lg p-3 mb-2">
                     <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">4</div>
                     <div>
                       <strong className="text-gray-900">$3M-5M:</strong>
-                      <span className="text-standard ml-2">Hybrid: Fractional CMO + internal team</span>
+                      <span className="text-gray-800 ml-2">Hybrid: Fractional CMO + internal team</span>
                     </div>
                   </div>
-                  <div className="flex items-center">
-                    <div className="glass-card-green0 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">5</div>
+                  <div className="flex items-center glass-card-medium rounded-lg p-3 mb-2">
+                    <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">5</div>
                     <div>
                       <strong className="text-gray-900">$5M+:</strong>
-                      <span className="text-standard ml-2">Full-time CMO with complete team</span>
+                      <span className="text-gray-800 ml-2">Full-time CMO with complete team</span>
                     </div>
                   </div>
                 </div>
