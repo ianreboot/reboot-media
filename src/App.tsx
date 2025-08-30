@@ -125,7 +125,7 @@ const MainApp = () => {
           </ErrorBoundary>
 
       {/* Hero Section - Vertically Centered in Viewport */}
-      <section id="home" className="min-h-screen flex items-center relative overflow-hidden pt-16 sm:pt-0">
+      <section id="home" className="min-h-screen flex items-center relative overflow-hidden">
         {/* Simple Background Elements */}
         <div className="absolute inset-0 pointer-events-none">
           <div className="absolute top-20 left-10 w-20 h-20 bg-orange-400/20 rounded-full blur-xl"></div>
@@ -133,7 +133,7 @@ const MainApp = () => {
         </div>
 
         <div className="w-full py-8">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 mt-20 sm:mt-0">
           {/* Main Headline - Natural Spacing */}
           <h1 className="heading-hero text-critical mb-6">
             <span className="block">Stop Losing</span>
