@@ -162,17 +162,17 @@ const RevenueCeilingBreakthrough = () => {
                   $500K, $1M, $1.2M, $1.5M, and $2M. Each ceiling has a specific psychological and systems cause.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 bg-red-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">67%</div>
-                    <p className="text-sm text-optional">Hit predictable ceilings</p>
+                    <p className="text-sm text-white/80">Hit predictable ceilings</p>
                   </div>
-                  <div className="text-center p-4 bg-orange-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-orange-accessible mb-1">14mo</div>
-                    <p className="text-sm text-optional">Average time stuck</p>
+                    <p className="text-sm text-white/80">Average time stuck</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">33%</div>
-                    <p className="text-sm text-optional">Break through with systems</p>
+                    <p className="text-sm text-white/80">Break through with systems</p>
                   </div>
                 </div>
                 <p className="text-black-important text-standard font-semibold text-center">

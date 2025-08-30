@@ -186,20 +186,20 @@ const GrowthPlateauSolutions = () => {
               The Revenue Plateau Crisis
             </h2>
             <div className="grid md:grid-cols-3 gap-8 mb-16">
-              <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-8">
+              <div className="glass-card-medium rounded-2xl shadow-xl border border-white/20 p-8">
                 <div className="text-4xl font-black text-red-600 mb-4">67%</div>
                 <div className="text-lg font-semibold text-white mb-2">Companies Plateau</div>
-                <p className="text-optional">Between $500K-$1.5M revenue</p>
+                <p className="text-white/80">Between $500K-$1.5M revenue</p>
               </div>
-              <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-8">
+              <div className="glass-card-medium rounded-2xl shadow-xl border border-white/20 p-8">
                 <div className="text-4xl font-black text-orange-accessible mb-4">14mo</div>
                 <div className="text-lg font-semibold text-white mb-2">Average Stuck Time</div>
-                <p className="text-optional">Before breaking through</p>
+                <p className="text-white/80">Before breaking through</p>
               </div>
-              <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-8">
+              <div className="glass-card-medium rounded-2xl shadow-xl border border-white/20 p-8">
                 <div className="text-4xl font-black text-green-600 mb-4">$47K</div>
                 <div className="text-lg font-semibold text-white mb-2">Monthly Cost</div>
-                <p className="text-optional">Of staying plateaued</p>
+                <p className="text-white/80">Of staying plateaued</p>
               </div>
             </div>
             

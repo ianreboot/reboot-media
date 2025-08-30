@@ -186,17 +186,17 @@ const TeamGrowthBottlenecks = () => {
                   Culture shifts with size, and what worked at 5 people breaks at 50 without intentional frameworks.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-blue-accessible mb-1">89%</div>
-                    <p className="text-sm text-optional">Struggle with team scaling</p>
+                    <p className="text-sm text-white/80">Struggle with team scaling</p>
                   </div>
-                  <div className="text-center p-4 glass-card-light rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">43%</div>
-                    <p className="text-sm text-optional">New hire failure rate</p>
+                    <p className="text-sm text-white/80">New hire failure rate</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">11%</div>
-                    <p className="text-sm text-optional">Break founder dependency</p>
+                    <p className="text-sm text-white/80">Break founder dependency</p>
                   </div>
                 </div>
                 <p className="text-black-important text-standard font-semibold text-center">

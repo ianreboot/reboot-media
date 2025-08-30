@@ -186,17 +186,17 @@ const CustomerAcquisitionStall = () => {
                   costs go up and quality goes down. The solution isn't more budget; it's psychology-driven differentiation.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 bg-orange-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-orange-accessible mb-1">73%</div>
-                    <p className="text-sm text-optional">Experience CAC inflation</p>
+                    <p className="text-sm text-white/80">Experience CAC inflation</p>
                   </div>
-                  <div className="text-center p-4 glass-card-light rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">156%</div>
-                    <p className="text-sm text-optional">Average CAC increase</p>
+                    <p className="text-sm text-white/80">Average CAC increase</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">27%</div>
-                    <p className="text-sm text-optional">Break cycle with differentiation</p>
+                    <p className="text-sm text-white/80">Break cycle with differentiation</p>
                   </div>
                 </div>
                 <p className="text-white/90 text-standard font-semibold text-center">

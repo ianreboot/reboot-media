@@ -186,17 +186,17 @@ const MarketExpansionBarriers = () => {
                   The solution isn't finding new markets; it's redefining your current one through psychology and positioning.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 bg-yellow-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-yellow-600 mb-1">78%</div>
-                    <p className="text-sm text-optional">Feel market constrained</p>
+                    <p className="text-sm text-white/80">Feel market constrained</p>
                   </div>
-                  <div className="text-center p-4 glass-card-light rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">3.4x</div>
-                    <p className="text-sm text-optional">Larger addressable market</p>
+                    <p className="text-sm text-white/80">Larger addressable market</p>
                   </div>
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">22%</div>
-                    <p className="text-sm text-optional">Succeed with repositioning</p>
+                    <p className="text-sm text-white/80">Succeed with repositioning</p>
                   </div>
                 </div>
                 <p className="text-black-important text-standard font-semibold text-center">
