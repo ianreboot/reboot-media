@@ -199,9 +199,11 @@ const MarketExpansionBarriers = () => {
                     <p className="text-sm text-white/80">Succeed with repositioning</p>
                   </div>
                 </div>
-                <p className="text-black-important text-standard font-semibold text-center">
-                  Pattern: Same product → Different problems → New markets
-                </p>
+                <div className="glass-card-medium rounded-lg p-4 text-center">
+                  <p className="text-white font-semibold">
+                    Pattern: Same product → Different problems → New markets
+                  </p>
+                </div>
               </div>
             </section>
 
@@ -247,7 +249,7 @@ const MarketExpansionBarriers = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-yellow-500">
                             <h4 className="heading-md text-black-important font-bold text-yellow-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Customer Thinks:
@@ -270,12 +272,12 @@ const MarketExpansionBarriers = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-black-important">
                               {scenario.solution}
                             </p>
                           </div>
@@ -283,12 +285,12 @@ const MarketExpansionBarriers = () => {
                       </div>
                       
                       {/* Why It Works */}
-                      <div className="mt-6 glass-card-blue rounded-lg p-4 border border-blue-200">
+                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-blue-200">
                         <h4 className="heading-md text-black-important font-bold text-blue-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-black-standard font-medium">
+                        <p className="text-black-important font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>

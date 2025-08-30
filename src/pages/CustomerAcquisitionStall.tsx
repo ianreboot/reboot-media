@@ -177,11 +177,11 @@ const CustomerAcquisitionStall = () => {
             
             {/* Introduction */}
             <section className="mb-16">
-              <div className="glass-card-light rounded-2xl shadow-xl border border-white/20 p-8">
+              <div className="glass-card-medium rounded-2xl shadow-xl border border-white/20 p-8">
                 <h2 className="heading-xl text-gradient-critical text-2xl font-bold text-white mb-6 text-center">
                   Why Customer Acquisition Costs Keep Rising
                 </h2>
-                <p className="text-white/90 text-lg text-standard mb-6 leading-relaxed text-center">
+                <p className="text-white text-lg text-standard mb-6 leading-relaxed text-center">
                   CAC inflation isn't random—it follows predictable patterns. When everyone competes on the same channels with similar messaging, 
                   costs go up and quality goes down. The solution isn't more budget; it's psychology-driven differentiation.
                 </p>
@@ -199,9 +199,11 @@ const CustomerAcquisitionStall = () => {
                     <p className="text-sm text-white/80">Break cycle with differentiation</p>
                   </div>
                 </div>
-                <p className="text-white/90 text-standard font-semibold text-center">
-                  The pattern: Same channels → Same message → Same prospects → Price competition
-                </p>
+                <div className="glass-card-solid rounded-lg p-4 text-center">
+                  <p className="text-black-important font-semibold">
+                    The pattern: Same channels → Same message → Same prospects → Price competition
+                  </p>
+                </div>
               </div>
             </section>
 
@@ -237,8 +239,8 @@ const CustomerAcquisitionStall = () => {
                         
                         {/* Customer Says */}
                         <div className="space-y-6">
-                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
-                            <h4 className="heading-md text-white font-bold text-red-800 mb-2 flex items-center">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
+                            <h4 className="heading-md text-black-important font-bold text-red-800 mb-2 flex items-center">
                               <span className="mr-2">💬</span>
                               Customer Says:
                             </h4>
@@ -260,8 +262,8 @@ const CustomerAcquisitionStall = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
-                            <h4 className="heading-md text-white font-bold text-yellow-800 mb-2 flex items-center">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-yellow-500">
+                            <h4 className="heading-md text-black-important font-bold text-yellow-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Problem:
                             </h4>
@@ -270,12 +272,12 @@ const CustomerAcquisitionStall = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
-                            <h4 className="heading-md text-white font-bold text-green-800 mb-2 flex items-center">
+                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
+                            <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-black-important">
                               {scenario.solution}
                             </p>
                           </div>
@@ -283,12 +285,12 @@ const CustomerAcquisitionStall = () => {
                       </div>
                       
                       {/* Why It Works */}
-                      <div className="mt-6 glass-card-blue rounded-lg p-4 border border-blue-200">
-                        <h4 className="heading-md text-white font-bold text-blue-800 mb-2 flex items-center">
+                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-blue-200">
+                        <h4 className="heading-md text-black-important font-bold text-blue-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-white/90 font-medium">
+                        <p className="text-black-important font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>

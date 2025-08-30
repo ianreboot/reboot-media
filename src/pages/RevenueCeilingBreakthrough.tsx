@@ -175,9 +175,11 @@ const RevenueCeilingBreakthrough = () => {
                     <p className="text-sm text-white/80">Break through with systems</p>
                   </div>
                 </div>
-                <p className="text-black-important text-standard font-semibold text-center">
-                  The root cause? What works at $500K breaks at $1M. What works at $1M breaks at $2M.
-                </p>
+                <div className="glass-card-medium rounded-lg p-4 text-center">
+                  <p className="text-white font-semibold">
+                    The root cause? What works at $500K breaks at $1M. What works at $1M breaks at $2M.
+                  </p>
+                </div>
               </div>
             </section>
 
@@ -223,7 +225,7 @@ const RevenueCeilingBreakthrough = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-orange-500">
                             <h4 className="heading-md text-black-important font-bold text-orange-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Customer Thinks:
@@ -236,7 +238,7 @@ const RevenueCeilingBreakthrough = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-yellow-500">
                             <h4 className="heading-md text-black-important font-bold text-yellow-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Problem:
@@ -246,12 +248,12 @@ const RevenueCeilingBreakthrough = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-black-important">
                               {scenario.solution}
                             </p>
                           </div>
@@ -259,12 +261,12 @@ const RevenueCeilingBreakthrough = () => {
                       </div>
                       
                       {/* Why It Works */}
-                      <div className="mt-6 glass-card-blue rounded-lg p-4 border border-blue-200">
+                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-blue-200">
                         <h4 className="heading-md text-black-important font-bold text-blue-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-black-standard font-medium">
+                        <p className="text-black-important font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>

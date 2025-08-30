@@ -186,22 +186,24 @@ const OperationalScalingCrisis = () => {
                   because manual processes hit exponential complexity while systems thinking provides linear solutions.
                 </p>
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
-                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">84%</div>
-                    <p className="text-sm text-optional">Experience scaling crisis</p>
+                    <p className="text-sm text-white/80">Experience scaling crisis</p>
                   </div>
-                  <div className="text-center p-4 bg-red-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-red-600 mb-1">267%</div>
-                    <p className="text-sm text-optional">Complexity increase</p>
+                    <p className="text-sm text-white/80">Complexity increase</p>
                   </div>
-                  <div className="text-center p-4 bg-blue-50 rounded-lg">
+                  <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-blue-accessible mb-1">16%</div>
-                    <p className="text-sm text-optional">Solve with systems first</p>
+                    <p className="text-sm text-white/80">Solve with systems first</p>
                   </div>
                 </div>
-                <p className="text-black-important text-standard font-semibold text-center">
-                  The pattern: Manual processes → Exponential complexity → Systems breakdown
-                </p>
+                <div className="glass-card-medium rounded-lg p-4 text-center">
+                  <p className="text-white font-semibold">
+                    The pattern: Manual processes → Exponential complexity → Systems breakdown
+                  </p>
+                </div>
               </div>
             </section>
 
@@ -247,7 +249,7 @@ const OperationalScalingCrisis = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">💭</span>
                               Customer Thinks:
@@ -270,12 +272,12 @@ const OperationalScalingCrisis = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-green rounded-lg p-4 border-l-4 border-green-500">
-                            <h4 className="heading-md text-black-important font-bold text-blue-800 mb-2 flex items-center">
+                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
+                            <h4 className="heading-md text-black-important font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-black-important">
                               {scenario.solution}
                             </p>
                           </div>
@@ -283,12 +285,12 @@ const OperationalScalingCrisis = () => {
                       </div>
                       
                       {/* Why It Works */}
-                      <div className="mt-6 glass-card-blue rounded-lg p-4 border border-blue-200">
+                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-blue-200">
                         <h4 className="heading-md text-black-important font-bold text-purple-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-black-standard font-medium">
+                        <p className="text-black-important font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
