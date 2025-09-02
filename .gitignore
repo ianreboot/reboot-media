@@ -91,3 +91,45 @@ dev.pid
 vite.svg
 reboot-logo-white.svg
 reboot-media.avif
+# Build outputs - DO NOT COMMIT
+dist/
+build/
+.next/
+out/
+*.min.js
+*.min.css
+*.map
+
+# Environment files
+.env.local
+.env.production
+.env.development
+
+# IDE and OS files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependencies
+node_modules/
+bower_components/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+.cache/
+
