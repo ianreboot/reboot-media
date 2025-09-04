@@ -268,7 +268,7 @@ const MainApp = () => {
                   </svg>
                   <span className="text-red-700 text-sm font-semibold">The Problem</span>
                 </div>
-                <h3 className="heading-md text-red-700 mb-4" style={{ marginTop: '0.25rem' }}>Why Industry Experts Often Fail</h3>
+                <h3 className="heading-md text-red-900 mb-4" style={{ marginTop: '0.25rem' }}>Why Industry Experts Often Fail</h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -300,7 +300,7 @@ const MainApp = () => {
                   </svg>
                   <span className="text-green-700 text-sm font-semibold">The Solution</span>
                 </div>
-                <h3 className="heading-md text-green-800 mb-4" style={{ marginTop: '0.25rem' }}>The Fresh Eyes Advantage</h3>
+                <h3 className="heading-md text-green-900 mb-4" style={{ marginTop: '0.25rem' }}>The Fresh Eyes Advantage</h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -332,9 +332,9 @@ const MainApp = () => {
             </div>
 
             {/* Combined Proof & Real Question Section */}
-            <div className="bg-gradient-to-br from-slate-100/30 via-blue-50/30 to-indigo-100/30 rounded-3xl p-8 md:p-12">
-              <div className="max-w-5xl mx-auto">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <div className="bg-gradient-to-br from-slate-100/30 via-blue-50/30 to-indigo-100/30 rounded-3xl p-6 md:p-8">
+              <div className="max-w-4xl mx-auto">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
                   
                   {/* Left Side - Statistics */}
                   <div className="text-center lg:text-left">
@@ -423,13 +423,13 @@ const MainApp = () => {
             
             {/* Price Anchoring Header */}
             <div className="glass-card-medium border border-red-200/50 rounded-2xl p-6 max-w-4xl mx-auto mb-8">
-              <div className="flex flex-col md:flex-row items-center justify-between text-center">
+              <div className="flex flex-col md:flex-row items-center justify-center text-center gap-6 md:gap-12">
                 <div className="mb-4 md:mb-0">
                   <h3 className="text-lg font-bold text-critical-accessible mb-2">Full-Time CMO Cost</h3>
                   <div className="text-3xl font-black text-red-200 line-through">$300K+</div>
                   <div className="text-sm text-red-100">+ benefits, recruiting, risk</div>
                 </div>
-                <div className="text-orange-300 text-4xl font-bold mx-8">VS</div>
+                <div className="text-orange-300 text-4xl font-bold">VS</div>
                 <div>
                   <h3 className="text-lg font-bold text-critical-accessible mb-2">Fractional CMO</h3>
                   <div className="glass-card-solid rounded-lg px-4 py-2 inline-block">
@@ -512,8 +512,8 @@ const MainApp = () => {
                       <div className="text-blue-700 font-medium text-sm">Years Experience</div>
                     </div>
                     <div className="glass-card-medium border border-green-400/50 rounded-xl p-6 text-center shadow-lg">
-                      <div className="text-3xl font-black text-green-600 mb-1">$500K</div>
-                      <div className="text-green-700 font-medium text-sm">Monthly Ad Testing</div>
+                      <div className="text-3xl font-black text-green-800 mb-1">$500K</div>
+                      <div className="text-green-900 font-medium text-sm">Monthly Ad Testing</div>
                     </div>
                     <div className="glass-card-medium border border-purple-400/50 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-purple-600 mb-1">7+</div>
@@ -672,7 +672,7 @@ const MainApp = () => {
             </div>
 
             {/* Final CTA */}
-            <div>
+            <div className="flex flex-col items-center">
               <button 
                 onClick={() => {
                   analytics.ctaClick('Yes, Show Me What I\'m Missing', 'final-cta');
@@ -686,7 +686,7 @@ const MainApp = () => {
                 </svg>
               </button>
               
-              <p className="text-white-standard text-sm mt-6">
+              <p className="text-white-standard text-sm mt-6 text-center">
                 <span className="text-orange-400 font-semibold">While you're reading this</span>, your competitors are fixing their marketing. 
                 <span className="text-white-critical">What are you waiting for?</span>
               </p>

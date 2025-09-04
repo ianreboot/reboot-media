@@ -1,0 +1,56 @@
+{
+  "project": "reboot",
+  "build": {
+    "production": {
+      "command": "NODE_ENV=production npm run build:prod",
+      "outputDir": "dist-prod",
+      "validation": {
+        "checkForJsxDev": true,
+        "requiredFiles": ["index.prod.html", "assets/"],
+        "postBuildFixes": [
+          "cp dist-prod/index.prod.html dist-prod/index.html"
+        ]
+      }
+    },
+    "development": {
+      "command": "npm run build:dev",
+      "outputDir": "dist",
+      "validation": {
+        "checkForJsxDev": false,
+        "requiredFiles": ["index.dev.html", "assets/"]
+      }
+    }
+  },
+  "deploy": {
+    "production": {
+      "server": "44.247.64.96",
+      "path": "/home/ubuntu/reboot/dist-prod",
+      "postDeploy": [
+        "if [ -f index.prod.html ] && [ ! -f index.html ]; then cp index.prod.html index.html; fi"
+      ],
+      "verification": {
+        "url": "https://www.rebootmedia.net/",
+        "checkStrings": ["<div id=\"root\"></div>", "index.prod-"]
+      }
+    },
+    "development": {
+      "server": "44.246.156.202",
+      "path": "/var/www/reboot",
+      "requiresSudo": true,
+      "verification": {
+        "url": "https://dev.rebootmedia.net/reboot/",
+        "checkStrings": ["<div id=\"root\"></div>"]
+      }
+    }
+  },
+  "git": {
+    "autoCommit": true,
+    "commitMessage": "Auto-deploy to {environment}",
+    "pullBeforeDeploy": true,
+    "pushAfterCommit": true
+  },
+  "notifications": {
+    "onSuccess": "echo '✅ Reboot deployed successfully to {environment}'",
+    "onFailure": "echo '❌ Reboot deployment failed to {environment}'"
+  }
+}

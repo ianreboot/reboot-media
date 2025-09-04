@@ -311,12 +311,12 @@ const SimplePricingCards = () => {
             centeredSlides: false
           }
         }}
-        className="!py-12"
+        className="!py-12 !px-6"
       >
         {services.map((service, index) => (
           <SwiperSlide 
             key={index} 
-            className="!flex !items-stretch !h-auto !pb-4"
+            className="!flex !items-stretch !h-auto !pb-4 !px-2"
           >
             <PricingCard 
               service={service}

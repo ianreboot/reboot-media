@@ -409,7 +409,7 @@ const GlobalFooter = (_props: GlobalFooterProps) => {
           <div className="max-w-7xl mx-auto px-6 lg:px-8 py-4">
             <div className="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
               <div className="text-gray-500 text-xs">
-                © 2025 Reboot Media, Inc. All rights reserved, worldwide.
+                © 2025 Reboot Media, Inc. All rights reserved worldwide.
               </div>
               <div className="flex items-center space-x-4 text-gray-500 text-xs">
                 <span>A Global Marketing Leadership Company</span>
