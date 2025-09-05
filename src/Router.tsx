@@ -45,8 +45,16 @@ import { PageLoadingSpinner, LazyLoadErrorFallback } from './components/LoadingC
 // Analytics dashboards removed - were making 404 API calls to over-engineered endpoints
 
 const Router = () => {
-  // Determine base path based on environment
-  const basename = import.meta.env.MODE === 'development' ? '/reboot' : '';
+  // AI: Router basename configuration - determines URL prefix for React Router
+  // Determine base path based on environment and actual URL
+  let basename = '';
+  if (import.meta.env.MODE === 'development') {
+    // For dev environment, check if we're under /reboot/ path
+    const currentPath = window.location.pathname;
+    if (currentPath.startsWith('/reboot')) {
+      basename = '/reboot';
+    }
+  }
 
   return (
     <ErrorProvider enableErrorReporting={true}>
