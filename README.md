@@ -18,19 +18,6 @@ npm run dev
 npm run dev:frontend
 ```
 
-### Deployment
-
-#### Development Deployment
-Deploy to https://dev.rebootmedia.net/reboot/:
-```bash
-npm run deploy:dev:simple
-```
-
-#### Production Deployment  
-Deploy to https://www.rebootmedia.net/:
-```bash
-npm run deploy:prod:isolated
-```
 
 ## Development Commands
 
@@ -80,19 +67,6 @@ npm run server:build:prod
 └── dist/              # Built frontend assets (auto-generated)
 ```
 
-## Deployment Architecture
-
-### Development Environment
-- **Method**: Git-based deployment
-- **URL**: https://dev.rebootmedia.net/reboot/
-- **Base Path**: `/reboot/`
-- **Update Process**: Files copied to project root → git commit/push → auto-sync
-
-### Production Environment  
-- **Method**: SSH-based deployment with isolated builds
-- **URL**: https://www.rebootmedia.net/
-- **Base Path**: `/`
-- **Update Process**: Isolated build in temp directory → SSH transfer → server restart
 
 ## Environment Configuration
 
@@ -123,20 +97,7 @@ Reboot Media specializes in:
 - Business growth strategies and revenue optimization
 - Educational content on customer acquisition psychology
 
-## Deployment Isolation
 
-Both environments deploy independently with complete isolation:
-- ✅ Cross-contamination prevention through isolated builds
-- ✅ Environment-specific configurations and asset paths
-- ✅ Verified through comprehensive testing protocol
-- ✅ Git-based dev deployment + SSH-based production deployment
-
-## Support
-
-For deployment issues or questions:
-1. Check `/home/ian/DEPLOYMENT_METHOD_FOR_DEV_AND_PROD.md` for detailed troubleshooting
-2. Review `CLAUDE.md` for AI assistant deployment protocols
-3. Examine working reference patterns in `/home/ian/projects/syncup/`
 
 ## License
 
