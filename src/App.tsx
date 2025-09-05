@@ -268,7 +268,7 @@ const MainApp = () => {
                   </svg>
                   <span className="text-red-700 text-sm font-semibold">The Problem</span>
                 </div>
-                <h3 className="heading-md text-red-900 mb-4" style={{ marginTop: '0.25rem' }}>Why Industry Experts Often Fail</h3>
+                <h3 className="heading-md text-red-600 mb-4" style={{ marginTop: '0.25rem' }}>Why Industry Experts Often Fail</h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -300,7 +300,7 @@ const MainApp = () => {
                   </svg>
                   <span className="text-green-700 text-sm font-semibold">The Solution</span>
                 </div>
-                <h3 className="heading-md text-green-900 mb-4" style={{ marginTop: '0.25rem' }}>The Fresh Eyes Advantage</h3>
+                <h3 className="heading-md text-green-600 mb-4" style={{ marginTop: '0.25rem' }}>The Fresh Eyes Advantage</h3>
               </div>
               
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -423,14 +423,14 @@ const MainApp = () => {
             
             {/* Price Anchoring Header */}
             <div className="glass-card-medium border border-red-200/50 rounded-2xl p-6 max-w-4xl mx-auto mb-8">
-              <div className="flex flex-col md:flex-row items-center justify-center text-center gap-6 md:gap-12">
-                <div className="mb-4 md:mb-0">
+              <div className="flex flex-col md:flex-row items-center justify-center text-center gap-4 md:gap-8">
+                <div className="mb-4 md:mb-0 flex-1">
                   <h3 className="text-lg font-bold text-critical-accessible mb-2">Full-Time CMO Cost</h3>
                   <div className="text-3xl font-black text-red-200 line-through">$300K+</div>
                   <div className="text-sm text-red-100">+ benefits, recruiting, risk</div>
                 </div>
-                <div className="text-orange-300 text-4xl font-bold">VS</div>
-                <div>
+                <div className="text-orange-300 text-4xl font-bold px-4">VS</div>
+                <div className="flex-1">
                   <h3 className="text-lg font-bold text-critical-accessible mb-2">Fractional CMO</h3>
                   <div className="glass-card-solid rounded-lg px-4 py-2 inline-block">
                     <div className="text-3xl font-black text-orange-700">$5K-18K</div>
@@ -493,7 +493,7 @@ const MainApp = () => {
 
           {/* Main Credibility Section */}
           <div className="mb-16">
-            <div className="glass-panel rounded-3xl p-8 sm:p-12">
+            <div className="glass-panel rounded-3xl p-6 sm:p-8">
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center">
                 {/* Primary Stat */}
                 <div className="text-center lg:col-span-1">
@@ -512,8 +512,8 @@ const MainApp = () => {
                       <div className="text-blue-700 font-medium text-sm">Years Experience</div>
                     </div>
                     <div className="glass-card-medium border border-green-400/50 rounded-xl p-6 text-center shadow-lg">
-                      <div className="text-3xl font-black text-green-800 mb-1">$500K</div>
-                      <div className="text-green-900 font-medium text-sm">Monthly Ad Testing</div>
+                      <div className="text-3xl font-black text-green-600 mb-1">$500K</div>
+                      <div className="text-green-700 font-medium text-sm">Monthly Ad Testing</div>
                     </div>
                     <div className="glass-card-medium border border-purple-400/50 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-purple-600 mb-1">7+</div>
@@ -605,7 +605,7 @@ const MainApp = () => {
             </div>
 
             {/* For Skeptics */}
-            <div className="glass-panel rounded-3xl p-8 md:p-10 mb-10">
+            <div className="glass-panel rounded-3xl p-6 md:p-8 mb-8">
               <h3 className="text-2xl font-bold text-white mb-6">
                 "I've Heard It All Before" - <span className="text-blue-400">We Get It.</span>
               </h3>

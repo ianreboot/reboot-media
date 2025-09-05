@@ -127,7 +127,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ service, onCTAClick }) => {
       )}
       
       {/* Card */}
-      <div className={`rounded-3xl border-2 ${service.popular ? 'p-6' : 'p-5'} text-center flex flex-col transition-all duration-500 ${
+      <div className={`rounded-3xl border-2 ${service.popular ? 'p-6 mx-4' : 'p-5 mx-2'} text-center flex flex-col transition-all duration-500 ${
         service.popular ? 'flex-1' : ''
       } ${
         service.color === 'orange' 
@@ -316,7 +316,7 @@ const SimplePricingCards = () => {
         {services.map((service, index) => (
           <SwiperSlide 
             key={index} 
-            className="!flex !items-stretch !h-auto !pb-4 !px-2"
+            className="!flex !items-stretch !h-auto !pb-4 !px-4"
           >
             <PricingCard 
               service={service}
