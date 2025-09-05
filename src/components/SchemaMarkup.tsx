@@ -255,7 +255,7 @@ const generateLegacySchemas = (type: string) => {
 
   switch(type) {
     case 'organization':
-      return [baseOrganization, serviceSchema, faqSchema, localBusinessSchema];
+      return [baseOrganization, serviceSchema, localBusinessSchema];
     case 'service':
       return [serviceSchema];
     case 'faq':
