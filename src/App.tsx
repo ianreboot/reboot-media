@@ -513,7 +513,7 @@ const MainApp = () => {
                     </div>
                     <div className="glass-card-medium border border-green-400/50 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-green-600 mb-1">$500K</div>
-                      <div className="text-green-700 font-medium text-sm">Monthly Ad Testing</div>
+                      <div className="text-green-900 font-medium text-sm">Monthly Ad Testing</div>
                     </div>
                     <div className="glass-card-medium border border-purple-400/50 rounded-xl p-6 text-center shadow-lg">
                       <div className="text-3xl font-black text-purple-600 mb-1">7+</div>
