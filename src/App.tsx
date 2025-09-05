@@ -687,8 +687,7 @@ const MainApp = () => {
               </button>
               
               <p className="text-white-standard text-sm mt-6 text-center">
-                <span className="text-orange-400 font-semibold">While you're reading this</span>, your competitors are fixing their marketing. 
-                <span className="text-white-critical">What are you waiting for?</span>
+                <span className="text-orange-400 font-semibold">While you're reading this</span>, your competitors are fixing their marketing. What are you waiting for?
               </p>
             </div>
           </div>
