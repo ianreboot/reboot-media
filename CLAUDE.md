@@ -3,6 +3,14 @@
 **INHERITS**: `/home/CLAUDE.md` (All universal protocols and AI intelligence patterns apply)
 **TECH STACK**: TypeScript + React + Vite + Express.js (Full-stack application)
 
+### **⚠️ DEPLOYMENT WARNING FOR AI**
+**MAKING CODE CHANGES IS NOT ENOUGH!**
+- This project has **automated deployment scripts** but you must run them
+- **Source code changes** do NOT automatically update the live website  
+- **You MUST run deployment scripts** after ANY code change
+- **Users will NOT see changes** until deployment is complete
+- **Use `npm run deploy:dev` for development** deployment
+
 ### 🚨 **SERVER ENVIRONMENT REMINDER**
 **You are running ON dev.rebootmedia.net server**
 - **DEV Access URL**: https://dev.rebootmedia.net/reboot/ (ONLY way to test during development)
@@ -27,19 +35,60 @@
 - Build failures are usually vite config issues, NOT path prefix issues
 - Both `index.dev.html` and `index.html` MUST maintain these prefixes for dev environment
 
-## 🚀 DEPLOYMENT PROTOCOL
+## 🚀 DEPLOYMENT PROTOCOL - AUTOMATED SCRIPTS
+
+**CRITICAL FOR AI: CODE CHANGES ≠ LIVE WEBSITE**
+- This project uses **automated deployment scripts** 
+- **Pushing source code** only updates the repository
+- **Website deployment** requires running deployment scripts
+- **You must ALWAYS deploy after code changes** or users won't see changes
+
+#### **Two-Step Process Required:**
+
+**STEP 1: Source Code Changes**
+```bash
+# Make code changes, then commit source
+git add src/ 
+git commit -m "Update source code"
+git push
+# ⚠️ WEBSITE STILL SHOWS OLD VERSION - DEPLOYMENT REQUIRED
+```
+
+**STEP 2: Automated Deployment (MANDATORY)**
 
 **Development Environment** (https://dev.rebootmedia.net/reboot/):
 ```bash
-npm run build:dev
+# Build and deploy in one command (automated script)
 npm run deploy:dev
+# This script does: build:dev + copy assets + git commit + git push
 ```
 
 **Production Environment** (https://www.rebootmedia.net/):
-```bash
-npm run build:prod
+```bash  
+# Build and deploy in one command (automated script)
 npm run deploy:prod
+# This script does: build:prod + deploy to hosting + verify
 ```
+
+#### **🚨 DEPLOYMENT CHECKLIST FOR AI**
+Before considering any task "complete":
+- [ ] Source code changes committed and pushed
+- [ ] **Deployment script executed** (`npm run deploy:dev` or `deploy:prod`)
+- [ ] **Script completed successfully** (no errors in output)
+- [ ] **Website verified** at target URL
+- [ ] All functionality tested on live site
+
+#### **Deployment Script Details:**
+- **`npm run deploy:dev`**: Runs `./scripts/deploy-dev-simple.sh`
+- **`npm run deploy:prod`**: Runs `./scripts/deploy-isolated-production.sh`  
+- **Scripts handle**: Build, asset copying, git operations automatically
+- **Manual steps**: Only run the npm command, scripts do the rest
+
+#### **Common Deployment Mistakes (AI Patterns)**
+1. **"I pushed the code"** → Did you run the deployment script?
+2. **"Build completed"** → Did you run `npm run deploy:dev` after building?
+3. **"Changes not visible"** → Deployment script may have failed, check output
+4. **"Task complete"** → Did you verify the live website shows changes?
 
 ## 🔧 DEVELOPMENT COMMANDS
 
