@@ -280,12 +280,12 @@ const WhenToChooseEach = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-purple-500">
-                            <h4 className="heading-md text-purple-800 mb-2 flex items-center">
-                              <span className="mr-2">⚖️</span>
+                          <div className="bg-green-50 border-l-4 border-green-500 rounded-lg p-4">
+                            <h4 className="heading-md text-green-800 mb-2 flex items-center">
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">⚖️</span>
                               Evaluation Framework:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-green-900">
                               {scenario.evaluationFramework}
                             </p>
                           </div>
@@ -293,12 +293,12 @@ const WhenToChooseEach = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-green-200">
-                        <h4 className="heading-md text-green-800 mb-2 flex items-center">
-                          <span className="mr-2">🎯</span>
-                          Clear Recommendation:
+                      <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 rounded-lg p-4">
+                        <h4 className="heading-md text-blue-800 mb-2 flex items-center">
+                          <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">🎯</span>
+                          Recommended Outcome:
                         </h4>
-                        <p className="text-gray-900 font-medium">
+                        <p className="text-blue-900 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>

@@ -288,12 +288,12 @@ const TransitionStrategies = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 glass-card-green rounded-lg p-4 border border-green-200">
-                        <h4 className="heading-md text-green-800 mb-2 flex items-center">
-                          <span className="mr-2">🎯</span>
-                          Transition Strategy:
+                      <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 rounded-lg p-4">
+                        <h4 className="heading-md text-blue-800 mb-2 flex items-center">
+                          <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">🎯</span>
+                          Recommended Outcome:
                         </h4>
-                        <p className="text-standard font-medium">
+                        <p className="text-blue-900 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
