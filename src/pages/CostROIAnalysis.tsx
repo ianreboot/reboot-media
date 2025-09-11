@@ -37,7 +37,7 @@ const CostROIAnalysis = () => {
       outcome: "20 strategic hours worth more than 160 tactical hours",
       painLevel: "High",
       timeStuck: "6-12 months",
-      gradient: "from-green-500 to-emerald-500"
+      gradient: "from-indigo-500 to-indigo-600"
     },
     {
       id: 2,
@@ -49,7 +49,7 @@ const CostROIAnalysis = () => {
       outcome: "In-house: $250K+, Agency: $180K+, Fractional CMO: $120K",
       painLevel: "Very High",
       timeStuck: "12-18 months",
-      gradient: "from-red-500 to-orange-500"
+      gradient: "from-green-500 to-green-600"
     },
     {
       id: 3,
@@ -61,7 +61,7 @@ const CostROIAnalysis = () => {
       outcome: "Fractional CMO: 30 days, Agency: 90 days, In-house: 180 days",
       painLevel: "High",
       timeStuck: "8-14 months",
-      gradient: "from-blue-500 to-indigo-500"
+      gradient: "from-blue-500 to-blue-600"
     },
     {
       id: 4,
@@ -73,7 +73,7 @@ const CostROIAnalysis = () => {
       outcome: "DIY costs $200K+ in lost opportunities vs fractional expertise",
       painLevel: "Very High",
       timeStuck: "18-24 months",
-      gradient: "from-purple-500 to-pink-500"
+      gradient: "from-orange-500 to-orange-600"
     },
     {
       id: 5,
@@ -85,7 +85,7 @@ const CostROIAnalysis = () => {
       outcome: "Fractional CMO: 3.2x ROI, Agency: 1.8x, Consultant: 0.9x",
       painLevel: "Critical",
       timeStuck: "12-20 months",
-      gradient: "from-yellow-500 to-amber-500"
+      gradient: "from-red-500 to-red-600"
     },
     {
       id: 6,
@@ -97,7 +97,7 @@ const CostROIAnalysis = () => {
       outcome: "Full-time justified at $200K+ monthly marketing spend",
       painLevel: "Medium",
       timeStuck: "6-10 months",
-      gradient: "from-teal-500 to-cyan-500"
+      gradient: "from-purple-500 to-purple-600"
     },
     {
       id: 7,
@@ -109,7 +109,7 @@ const CostROIAnalysis = () => {
       outcome: "Fractional: Month-to-month flex, Employee: 6-month severance risk",
       painLevel: "High",
       timeStuck: "8-12 months",
-      gradient: "from-gray-500 to-slate-500"
+      gradient: "from-pink-500 to-pink-600"
     }
   ];
 

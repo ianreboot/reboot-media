@@ -242,22 +242,22 @@ const FractionalCMOVsInHouse = () => {
                         
                         {/* Company Says */}
                         <div className="space-y-6">
-                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="bg-red-50 border-l-4 border-red-500 rounded-lg p-4">
                             <h4 className="heading-md text-red-800 mb-2 flex items-center">
-                              <span className="mr-2">💬</span>
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">💬</span>
                               Company Says:
                             </h4>
-                            <p className="text-standard italic">
+                            <p className="text-red-900 italic">
                               "{scenario.companySays}"
                             </p>
                           </div>
                           
-                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-indigo-500">
-                            <h4 className="heading-md text-indigo-800 mb-2 flex items-center">
-                              <span className="mr-2">💭</span>
+                          <div className="bg-orange-50 border-l-4 border-orange-500 rounded-lg p-4">
+                            <h4 className="heading-md text-orange-800 mb-2 flex items-center">
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">💭</span>
                               Company Thinks:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-orange-900">
                               {scenario.companyThinks}
                             </p>
                           </div>
@@ -265,22 +265,22 @@ const FractionalCMOVsInHouse = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-orange-500">
-                            <h4 className="heading-md text-orange-800 mb-2 flex items-center">
-                              <span className="mr-2">🔍</span>
+                          <div className="bg-yellow-50 border-l-4 border-yellow-500 rounded-lg p-4">
+                            <h4 className="heading-md text-yellow-800 mb-2 flex items-center">
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">🔍</span>
                               Real Consideration:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-yellow-900">
                               {scenario.realConsideration}
                             </p>
                           </div>
                           
-                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-blue-500">
-                            <h4 className="heading-md text-blue-800 mb-2 flex items-center">
-                              <span className="mr-2">⚖️</span>
+                          <div className="bg-green-50 border-l-4 border-green-500 rounded-lg p-4">
+                            <h4 className="heading-md text-green-800 mb-2 flex items-center">
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">⚖️</span>
                               Evaluation Framework:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-green-900">
                               {scenario.evaluationFramework}
                             </p>
                           </div>
@@ -288,12 +288,12 @@ const FractionalCMOVsInHouse = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-green-200">
-                        <h4 className="heading-md text-green-800 mb-2 flex items-center">
-                          <span className="mr-2">🎯</span>
+                      <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 rounded-lg p-4">
+                        <h4 className="heading-md text-blue-800 mb-2 flex items-center">
+                          <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-gray-900 font-medium">
+                        <p className="text-blue-900 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>

@@ -37,7 +37,7 @@ const TransitionStrategies = () => {
       outcome: "Keep agency for execution, add fractional CMO for strategy",
       painLevel: "High",
       timeStuck: "8-14 months",
-      gradient: "from-orange-500 to-blue-500"
+      gradient: "from-indigo-500 to-indigo-600"
     },
     {
       id: 2,
@@ -49,7 +49,7 @@ const TransitionStrategies = () => {
       outcome: "Fractional CMO helps hire and transition to full-time successor",
       painLevel: "Medium",
       timeStuck: "6-12 months",
-      gradient: "from-blue-500 to-green-500"
+      gradient: "from-green-500 to-green-600"
     },
     {
       id: 3,
@@ -61,7 +61,7 @@ const TransitionStrategies = () => {
       outcome: "Fractional CMO refines strategy while implementing",
       painLevel: "Very High",
       timeStuck: "10-16 months",
-      gradient: "from-purple-500 to-blue-500"
+      gradient: "from-blue-500 to-blue-600"
     },
     {
       id: 4,
@@ -73,7 +73,7 @@ const TransitionStrategies = () => {
       outcome: "Fractional CMO diagnoses and fixes systemic issues",
       painLevel: "Very High",
       timeStuck: "12-20 months",
-      gradient: "from-red-500 to-orange-500"
+      gradient: "from-orange-500 to-orange-600"
     },
     {
       id: 5,
@@ -85,7 +85,7 @@ const TransitionStrategies = () => {
       outcome: "Fractional CMO builds on founder insights, adds professional systems",
       painLevel: "High",
       timeStuck: "8-14 months",
-      gradient: "from-yellow-500 to-green-500"
+      gradient: "from-red-500 to-red-600"
     },
     {
       id: 6,
@@ -97,7 +97,7 @@ const TransitionStrategies = () => {
       outcome: "Fractional CMO becomes quarterback for all marketing efforts",
       painLevel: "High",
       timeStuck: "6-12 months",
-      gradient: "from-pink-500 to-purple-500"
+      gradient: "from-purple-500 to-purple-600"
     },
     {
       id: 7,
@@ -109,7 +109,7 @@ const TransitionStrategies = () => {
       outcome: "Fractional CMO maintains strategic continuity at lower cost",
       painLevel: "Medium",
       timeStuck: "3-6 months",
-      gradient: "from-gray-500 to-blue-500"
+      gradient: "from-pink-500 to-pink-600"
     }
   ];
 
