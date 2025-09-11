@@ -4,8 +4,10 @@ import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
 import BackgroundGradient from '../components/BackgroundGradient';
+import { useLeadForm } from '../contexts/LeadFormContext';
 
 const Privacy = () => {
+  const { setShowDropdownForm } = useLeadForm();
   // Structured data now handled automatically by SEOHead component
 
   return (
@@ -32,7 +34,7 @@ const Privacy = () => {
         enableCoreWebVitalsOptimization={true}
       />
         {/* Global Header with Progress Bar */}
-        <GlobalHeader showProgressBar={true} />
+        <GlobalHeader onShowForm={() => setShowDropdownForm(true)} showProgressBar={true} />
 
       {/* Main Content */}
       <div className="pt-16 pb-8">
@@ -43,7 +45,7 @@ const Privacy = () => {
               <h1 className="heading-hero text-gradient-critical mb-4">
                 Privacy Policy for Reboot Media
               </h1>
-              <p className="text-optional">Effective Date: January 8, 2025</p>
+              <p className="text-white/80">Effective Date: January 8, 2025</p>
             </div>
 
             <div className="space-y-8">
@@ -55,7 +57,7 @@ const Privacy = () => {
                   This Privacy Policy explains how we collect, use, and disclose information about you when you use our 
                   fractional CMO services and website at https://www.rebootmedia.net/ (the "Service").
                 </p>
-                <p className="text-sm text-optional">
+                <p className="text-sm text-white/80">
                   Our Company Address: 17595 Harvard Ave C-738, Irvine, CA 92614, USA.
                 </p>
               </section>
@@ -131,7 +133,7 @@ const Privacy = () => {
                 </ul>
                 <p className="mt-4 text-white/90">
                   To exercise these rights, please contact us through our{' '}
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="transparent-link">contact form</a>.
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-400 focus-visible:text-orange-400 underline">contact form</a>.
                 </p>
               </section>
 
@@ -302,11 +304,11 @@ const Privacy = () => {
                   If you have questions about this Privacy Policy, your data rights, or wish to exercise any of your privacy 
                   rights, please contact us:
                 </p>
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="bg-black/20 border border-white/20 p-4 rounded-lg">
                   <p className="font-medium text-white">Reboot Media, Inc.</p>
-                  <p className="text-optional">17595 Harvard Ave C-738</p>
-                  <p className="text-optional">Irvine, CA 92614, USA</p>
-                  <p className="text-white/90">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-accessible focus-visible:text-orange-accessible underline">Submit inquiry</a></p>
+                  <p className="text-white/80">17595 Harvard Ave C-738</p>
+                  <p className="text-white/80">Irvine, CA 92614, USA</p>
+                  <p className="text-white/90">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-400 focus-visible:text-orange-400 underline">Submit inquiry</a></p>
                 </div>
               </section>
             </div>

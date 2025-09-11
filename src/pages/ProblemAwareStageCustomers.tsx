@@ -95,9 +95,7 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
-                      <p className="text-white italic text-lg font-medium">"Our marketing isn't working anymore"</p>
-                    </div>
+                    <p className="text-white/90 italic font-medium">"Our marketing isn't working anymore"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -112,7 +110,7 @@ const ProblemAwareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">It reframes their problem from "everything is broken" to "we just need better visibility." This makes the solution feel achievable instead of overwhelming.</p>
+                    <p className="text-sm text-white/90 font-medium">It reframes their problem from "everything is broken" to "we just need better visibility." This makes the solution feel achievable instead of overwhelming.</p>
                   </div>
                 </div>
 
@@ -120,9 +118,7 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
-                      <p className="text-white italic text-lg font-medium">"We're getting traffic but no one's buying"</p>
-                    </div>
+                    <p className="text-white/90 italic font-medium">"We're getting traffic but no one's buying"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -137,7 +133,7 @@ const ProblemAwareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">It shifts focus from volume (which feels good but means nothing) to quality (which actually drives revenue). This insight alone can transform their business.</p>
+                    <p className="text-sm text-white/90 font-medium">It shifts focus from volume (which feels good but means nothing) to quality (which actually drives revenue). This insight alone can transform their business.</p>
                   </div>
                 </div>
 
@@ -145,9 +141,7 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
-                      <p className="text-white italic text-lg font-medium">"Our customer acquisition cost keeps going up"</p>
-                    </div>
+                    <p className="text-white/90 italic font-medium">"Our customer acquisition cost keeps going up"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -162,7 +156,7 @@ const ProblemAwareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">It reveals that high CAC isn't about spending more on ads—it's about having a differentiated message that converts better at any spend level.</p>
+                    <p className="text-sm text-white/90 font-medium">It reveals that high CAC isn't about spending more on ads—it's about having a differentiated message that converts better at any spend level.</p>
                   </div>
                 </div>
 
@@ -170,9 +164,7 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
-                      <p className="text-white italic text-lg font-medium">"We tried content marketing and it didn't work"</p>
-                    </div>
+                    <p className="text-white/90 italic font-medium">"We tried content marketing and it didn't work"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -187,7 +179,7 @@ const ProblemAwareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">It reveals the difference between content (writing stuff) and content marketing (solving customer problems publicly). One builds traffic, the other builds revenue.</p>
+                    <p className="text-sm text-white/90 font-medium">It reveals the difference between content (writing stuff) and content marketing (solving customer problems publicly). One builds traffic, the other builds revenue.</p>
                   </div>
                 </div>
 
@@ -195,9 +187,7 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
-                      <p className="text-white italic text-lg font-medium">"Social media isn't driving any sales"</p>
-                    </div>
+                    <p className="text-white/90 italic font-medium">"Social media isn't driving any sales"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -212,7 +202,7 @@ const ProblemAwareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">It shifts social media from a publishing platform to a relationship platform. This change alone can turn social from time-waster to revenue-driver.</p>
+                    <p className="text-sm text-white/90 font-medium">It shifts social media from a publishing platform to a relationship platform. This change alone can turn social from time-waster to revenue-driver.</p>
                   </div>
                 </div>
 
@@ -220,9 +210,7 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
-                      <p className="text-white italic text-lg font-medium">"Our sales team says leads are terrible"</p>
-                    </div>
+                    <p className="text-white/90 italic font-medium">"Our sales team says leads are terrible"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -237,7 +225,7 @@ const ProblemAwareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">It stops the blame game between marketing and sales, focusing instead on creating a system where both teams win together.</p>
+                    <p className="text-sm text-white/90 font-medium">It stops the blame game between marketing and sales, focusing instead on creating a system where both teams win together.</p>
                   </div>
                 </div>
 
@@ -245,9 +233,7 @@ const ProblemAwareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500 shadow-sm">
-                      <p className="text-white italic text-lg font-medium">"Competitors keep stealing our customers"</p>
-                    </div>
+                    <p className="text-white/90 italic font-medium">"Competitors keep stealing our customers"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -262,7 +248,7 @@ const ProblemAwareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">It shifts focus from defending against competitors to creating such value that competition becomes irrelevant.</p>
+                    <p className="text-sm text-white/90 font-medium">It shifts focus from defending against competitors to creating such value that competition becomes irrelevant.</p>
                   </div>
                 </div>
 
@@ -355,7 +341,7 @@ const ProblemAwareStageCustomers = () => {
                     <span className="text-red-400 mr-2 text-2xl">✗</span>
                     What NOT to do:
                   </h3>
-                  <ul className="text-white/90 space-y-2 text-sm">
+                  <ul className="text-white/90 space-y-2 text-sm font-medium">
                     <li className="flex items-start"><span className="text-red-400 mr-2 font-bold">•</span> Jump straight to your solution</li>
                     <li className="flex items-start"><span className="text-red-400 mr-2 font-bold">•</span> Add to their confusion with more options</li>
                     <li className="flex items-start"><span className="text-red-400 mr-2 font-bold">•</span> Validate their self-diagnosis (often wrong)</li>
@@ -369,7 +355,7 @@ const ProblemAwareStageCustomers = () => {
                     <span className="text-green-400 mr-2 text-2xl">✓</span>
                     What TO do:
                   </h3>
-                  <ul className="text-white/90 space-y-2 text-sm">
+                  <ul className="text-white/90 space-y-2 text-sm font-medium">
                     <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Help them see the real root cause</li>
                     <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Connect symptoms to underlying problems</li>
                     <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Provide clarity before solutions</li>

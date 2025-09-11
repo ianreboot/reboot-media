@@ -4,10 +4,10 @@ import GlobalHeader from '../components/GlobalHeader';
 import GlobalFooter from '../components/GlobalFooter';
 import SEOHead from '../components/SEOHead';
 import BackgroundGradient from '../components/BackgroundGradient';
-// import { useLeadForm } from '../contexts/LeadFormContext';
+import { useLeadForm } from '../contexts/LeadFormContext';
 
 const Terms = () => {
-  // const { setShowDropdownForm } = useLeadForm();
+  const { setShowDropdownForm } = useLeadForm();
   // Structured data now handled automatically by SEOHead component
 
   return (
@@ -34,7 +34,7 @@ const Terms = () => {
         enableCoreWebVitalsOptimization={true}
       />
         {/* Global Header with Progress Bar */}
-        <GlobalHeader showProgressBar={true} />
+        <GlobalHeader onShowForm={() => setShowDropdownForm(true)} showProgressBar={true} />
 
       {/* Main Content */}
       <div className="pt-16 pb-8">
@@ -45,7 +45,7 @@ const Terms = () => {
               <h1 className="heading-hero text-gradient-critical mb-4">
                 Terms of Service for Reboot Media
               </h1>
-              <p className="text-optional">Effective Date: January 8, 2025</p>
+              <p className="text-white/80">Effective Date: January 8, 2025</p>
             </div>
 
             <div className="space-y-8">
@@ -160,7 +160,7 @@ const Terms = () => {
                 <h2 className="heading-xl text-gradient-critical mb-4">7. Data and Privacy</h2>
                 <p className="text-white/90">
                   Your privacy and business confidentiality are important to us. All your information is governed by our{' '}
-                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/privacy`} className="transparent-link">comprehensive Privacy Policy</a>. 
+                  <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/privacy`} className="text-orange-500 hover:text-orange-400 focus-visible:text-orange-400 underline">comprehensive Privacy Policy</a>. 
                   By engaging our services, you consent to the collection and use of information as described in the Privacy Policy.
                 </p>
               </section>
@@ -298,11 +298,11 @@ const Terms = () => {
                 <p className="mb-4 text-white/90">
                   If you have questions about these Terms or our services, please contact us:
                 </p>
-                <div className="bg-gray-50 p-4 rounded-lg">
+                <div className="bg-black/20 border border-white/20 p-4 rounded-lg">
                   <p className="font-medium text-white">Reboot Media, Inc.</p>
-                  <p className="text-optional">17595 Harvard Ave C-738</p>
-                  <p className="text-optional">Irvine, CA 92614, USA</p>
-                  <p className="text-white/90">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-accessible focus-visible:text-orange-accessible underline">Submit inquiry</a></p>
+                  <p className="text-white/80">17595 Harvard Ave C-738</p>
+                  <p className="text-white/80">Irvine, CA 92614, USA</p>
+                  <p className="text-white/90">Contact Form: <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/contact`} className="text-orange-500 hover:text-orange-400 focus-visible:text-orange-400 underline">Submit inquiry</a></p>
                 </div>
               </section>
 

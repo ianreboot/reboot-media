@@ -135,7 +135,7 @@ const MainApp = () => {
         <div className="w-full py-8">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 mt-32 sm:mt-0">
           {/* Main Headline - Natural Spacing */}
-          <h1 className="heading-hero text-critical mb-6">
+          <h1 className="heading-hero text-critical mb-6 text-shadow-sm">
             <span className="block">Stop Losing</span>
             <span className="block text-orange-500">
               {typedWord}<span className="animate-blink">|</span>
@@ -145,7 +145,7 @@ const MainApp = () => {
           
           {/* Subheadline */}
           <div className="mx-auto max-w-4xl mb-8">
-            <p className="text-xl text-white-important">
+            <p className="text-xl text-white-important text-shadow-sm">
               <span className="text-white-standard">Stop fumbling with amateur advice. Get</span> <span className="font-bold text-white-critical">battle-tested strategies proven at Fortune 500 companies</span> <span className="text-white-standard">that drive explosive growth</span>
             </p>
           </div>

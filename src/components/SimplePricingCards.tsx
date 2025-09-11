@@ -111,8 +111,8 @@ const PricingCard: React.FC<PricingCardProps> = ({ service, onCTAClick }) => {
       style={{ 
         height: service.popular ? '100%' : 'auto', 
         alignSelf: service.popular ? 'stretch' : 'center',
-        marginTop: service.popular ? '0' : '3rem',
-        marginBottom: service.popular ? '1rem' : '2rem'
+        marginTop: service.popular ? '0' : '4rem',
+        marginBottom: service.popular ? '2rem' : '2rem'
       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
@@ -275,39 +275,39 @@ const SimplePricingCards = () => {
         onSwiper={(swiper) => {
           swiperRef.current = swiper;
         }}
-        spaceBetween={24}
+        spaceBetween={16}
         slidesPerView="auto"
         centeredSlides={true}
         initialSlide={1}
         breakpoints={{
           320: {
             slidesPerView: 1.1,
-            spaceBetween: 16,
+            spaceBetween: 12,
             centeredSlides: true
           },
           480: {
             slidesPerView: 1.3,
-            spaceBetween: 20,
+            spaceBetween: 16,
             centeredSlides: true
           },
           640: {
             slidesPerView: 1.6,
-            spaceBetween: 24,
+            spaceBetween: 16,
             centeredSlides: true
           },
           768: {
             slidesPerView: 2.2,
-            spaceBetween: 24,
+            spaceBetween: 16,
             centeredSlides: true
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 24,
+            spaceBetween: 16,
             centeredSlides: false
           },
           1280: {
             slidesPerView: 3,
-            spaceBetween: 32,
+            spaceBetween: 20,
             centeredSlides: false
           }
         }}

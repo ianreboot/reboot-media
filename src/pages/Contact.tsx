@@ -75,8 +75,8 @@ const Contact = () => {
 
       // Submit to server endpoint
       const apiUrl = import.meta.env.DEV 
-        ? 'http://localhost:3002/api/forms/contact'
-        : '/api/forms/contact';
+        ? 'http://localhost:3002/api/contact'
+        : '/api/contact';
 
       const response = await fetch(apiUrl, {
         method: 'POST',
@@ -168,7 +168,7 @@ const Contact = () => {
             <h2 className="heading-sm text-white mb-3">
               Looking for Marketing Help?
             </h2>
-            <p className="text-orange-900 mb-4">
+            <p className="text-white/90 mb-4">
               If you're looking to improve your marketing, grow your revenue, or get a free marketing analysis, 
               please use our Marketing Analysis form for the fastest response and personalized recommendations.
             </p>
@@ -414,8 +414,8 @@ const Contact = () => {
 
               {/* Response Time */}
               <div className="glass-card-orange rounded-2xl p-6">
-                <h3 className="heading-md text-orange-900 mb-2">Response Time</h3>
-                <p className="text-orange-800 text-sm">
+                <h3 className="heading-md text-white mb-2">Response Time</h3>
+                <p className="text-white/90 text-sm">
                   We typically respond to all inquiries within 24 hours during business days. 
                   For urgent matters, please mention it in your message subject line.
                 </p>
@@ -423,8 +423,8 @@ const Contact = () => {
 
               {/* Free Consultation CTA */}
               <div className="glass-card-blue rounded-2xl p-6">
-                <h3 className="heading-md text-blue-900 mb-2">Free Marketing Analysis</h3>
-                <p className="text-blue-800 text-sm mb-4">
+                <h3 className="heading-md text-white mb-2">Free Marketing Analysis</h3>
+                <p className="text-white/90 text-sm mb-4">
                   Ready to transform your marketing? Get a personalized analysis 
                   that shows exactly how to accelerate your business growth.
                 </p>

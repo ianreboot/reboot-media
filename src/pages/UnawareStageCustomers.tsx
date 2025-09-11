@@ -94,9 +94,7 @@ const UnawareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <blockquote className="text-white italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
-                      "We built the best product but no one gets it"
-                    </blockquote>
+                    <p className="text-white/90 italic font-medium">"We built the best product but no one gets it"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -111,7 +109,7 @@ const UnawareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">People buy to solve pain, not to get features. When you lead with the financial impact of their current situation, you're speaking their language: business results.</p>
+                    <p className="text-sm text-white/90 font-medium">People buy to solve pain, not to get features. When you lead with the financial impact of their current situation, you're speaking their language: business results.</p>
                   </div>
                 </div>
 
@@ -119,9 +117,7 @@ const UnawareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <blockquote className="text-white italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
-                      "We just need more traffic to our website"
-                    </blockquote>
+                    <p className="text-white/90 italic font-medium">"We just need more traffic to our website"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -136,7 +132,7 @@ const UnawareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">It reframes their thinking from "more" to "better." Most businesses fail not from lack of traffic but from poor conversion of existing traffic.</p>
+                    <p className="text-sm text-white/90 font-medium">It reframes their thinking from "more" to "better." Most businesses fail not from lack of traffic but from poor conversion of existing traffic.</p>
                   </div>
                 </div>
 
@@ -144,9 +140,7 @@ const UnawareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <blockquote className="text-white italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
-                      "Our prices are competitive, I don't know why we're not winning deals"
-                    </blockquote>
+                    <p className="text-white/90 italic font-medium">"Our prices are competitive, I don't know why we're not winning deals"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -161,7 +155,7 @@ const UnawareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">Value-focused messaging shifts the conversation from "How much does it cost?" to "What will this accomplish?" Premium pricing becomes possible when you're solving important problems.</p>
+                    <p className="text-sm text-white/90 font-medium">Value-focused messaging shifts the conversation from "How much does it cost?" to "What will this accomplish?" Premium pricing becomes possible when you're solving important problems.</p>
                   </div>
                 </div>
 
@@ -169,9 +163,7 @@ const UnawareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <blockquote className="text-white italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
-                      "Everyone in our industry struggles with marketing"
-                    </blockquote>
+                    <p className="text-white/90 italic font-medium">"Everyone in our industry struggles with marketing"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -186,7 +178,7 @@ const UnawareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">It transforms resignation into opportunity. Instead of accepting industry-wide failure, you position your solution as the differentiator that creates competitive advantage.</p>
+                    <p className="text-sm text-white/90 font-medium">It transforms resignation into opportunity. Instead of accepting industry-wide failure, you position your solution as the differentiator that creates competitive advantage.</p>
                   </div>
                 </div>
 
@@ -194,9 +186,7 @@ const UnawareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <blockquote className="text-white italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
-                      "Our team is too busy to focus on marketing right now"
-                    </blockquote>
+                    <p className="text-white/90 italic font-medium">"Our team is too busy to focus on marketing right now"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -211,7 +201,7 @@ const UnawareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">It shows that "too busy for marketing" actually creates more work, not less. Effective marketing reduces the effort required to acquire customers, not increases it.</p>
+                    <p className="text-sm text-white/90 font-medium">It shows that "too busy for marketing" actually creates more work, not less. Effective marketing reduces the effort required to acquire customers, not increases it.</p>
                   </div>
                 </div>
 
@@ -219,9 +209,7 @@ const UnawareStageCustomers = () => {
                 <div className="border border-white/20 rounded-xl p-6 glass-card-medium shadow-lg">
                   <div className="mb-4">
                     <h3 className="heading-lg text-white mb-2">Customer says:</h3>
-                    <blockquote className="text-white italic text-lg font-medium glass-card-orange p-4 rounded-lg border-l-4 border-orange-500">
-                      "We've tried marketing before and it didn't work"
-                    </blockquote>
+                    <p className="text-white/90 italic font-medium">"We've tried marketing before and it didn't work"</p>
                   </div>
                   
                   <div className="mb-4">
@@ -236,7 +224,7 @@ const UnawareStageCustomers = () => {
                   
                   <div className="p-4 glass-card-blue rounded-lg">
                     <h4 className="heading-md font-semibold text-white mb-2">Why this works:</h4>
-                    <p className="text-sm text-white/90">It shifts blame from "marketing doesn't work" to "we haven't found the right marketing approach yet." This opens the door to trying systematic, psychology-based approaches.</p>
+                    <p className="text-sm text-white/90 font-medium">It shifts blame from "marketing doesn't work" to "we haven't found the right marketing approach yet." This opens the door to trying systematic, psychology-based approaches.</p>
                   </div>
                 </div>
 
@@ -329,7 +317,7 @@ const UnawareStageCustomers = () => {
                     <span className="text-red-400 mr-2 text-2xl">✗</span>
                     What NOT to do:
                   </h3>
-                  <ul className="text-white/90 space-y-2 text-sm">
+                  <ul className="text-white/90 space-y-2 text-sm font-medium">
                     <li className="flex items-start"><span className="text-red-400 mr-2 font-bold">•</span> Lead with features or capabilities</li>
                     <li className="flex items-start"><span className="text-red-400 mr-2 font-bold">•</span> Assume they understand the problem</li>
                     <li className="flex items-start"><span className="text-red-400 mr-2 font-bold">•</span> Use industry jargon or technical terms</li>
@@ -343,7 +331,7 @@ const UnawareStageCustomers = () => {
                     <span className="text-green-400 mr-2 text-2xl">✓</span>
                     What TO do:
                   </h3>
-                  <ul className="text-white/90 space-y-2 text-sm">
+                  <ul className="text-white/90 space-y-2 text-sm font-medium">
                     <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Start with the cost of their current situation</li>
                     <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Use their exact language and concerns</li>
                     <li className="flex items-start"><span className="text-green-400 mr-2 font-bold">•</span> Provide gentle education, not sales pressure</li>
