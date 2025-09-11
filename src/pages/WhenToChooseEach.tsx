@@ -37,7 +37,7 @@ const WhenToChooseEach = () => {
       outcome: "DIY until MVP proven; Consultant for validation; Fractional CMO at $500K revenue",
       painLevel: "Medium",
       timeStuck: "3-6 months",
-      gradient: "from-yellow-500 to-orange-500"
+      gradient: "from-indigo-500 to-indigo-600"
     },
     {
       id: 2,
@@ -49,7 +49,7 @@ const WhenToChooseEach = () => {
       outcome: "Agency for more tactics; Fractional CMO for breakthrough strategy",
       painLevel: "High",
       timeStuck: "8-12 months",
-      gradient: "from-blue-500 to-indigo-500"
+      gradient: "from-green-500 to-green-600"
     },
     {
       id: 3,
@@ -61,7 +61,7 @@ const WhenToChooseEach = () => {
       outcome: "Fractional CMO to build strategy + Agency for execution speed",
       painLevel: "Very High",
       timeStuck: "6-10 months",
-      gradient: "from-green-500 to-emerald-500"
+      gradient: "from-blue-500 to-blue-600"
     },
     {
       id: 4,
@@ -73,7 +73,7 @@ const WhenToChooseEach = () => {
       outcome: "Consultant for audit; Fractional CMO for turnaround; New agency for fresh tactics",
       painLevel: "Critical",
       timeStuck: "2-4 months",
-      gradient: "from-red-500 to-pink-500"
+      gradient: "from-orange-500 to-orange-600"
     },
     {
       id: 5,
@@ -85,7 +85,7 @@ const WhenToChooseEach = () => {
       outcome: "Full-time CMO for transformation; Fractional for targeted breakthrough",
       painLevel: "High",
       timeStuck: "24-36 months",
-      gradient: "from-purple-500 to-violet-500"
+      gradient: "from-red-500 to-red-600"
     },
     {
       id: 6,
@@ -97,7 +97,7 @@ const WhenToChooseEach = () => {
       outcome: "Consultant for market research; Fractional CMO for strategy; Local agency for execution",
       painLevel: "Medium",
       timeStuck: "12-18 months",
-      gradient: "from-teal-500 to-cyan-500"
+      gradient: "from-purple-500 to-purple-600"
     },
     {
       id: 7,
@@ -109,7 +109,7 @@ const WhenToChooseEach = () => {
       outcome: "In-house for daily digital; Fractional CMO for transformation strategy",
       painLevel: "High",
       timeStuck: "18-24 months",
-      gradient: "from-gray-500 to-slate-500"
+      gradient: "from-pink-500 to-pink-600"
     }
   ];
 
