@@ -194,15 +194,15 @@ const FractionalCMOVsInHouse = () => {
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="text-center p-4 glass-card-blue rounded-lg">
                     <div className="text-2xl font-bold text-blue-accessible mb-1">2.5x</div>
-                    <p className="text-sm text-optional">True cost multiplier</p>
+                    <p className="text-sm text-white">True cost multiplier</p>
                   </div>
                   <div className="text-center p-4 glass-card-orange rounded-lg">
                     <div className="text-2xl font-bold text-orange-accessible mb-1">43%</div>
-                    <p className="text-sm text-optional">Marketing turnover rate</p>
+                    <p className="text-sm text-white">Marketing turnover rate</p>
                   </div>
                   <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-yellow-600 mb-1">18mo</div>
-                    <p className="text-sm text-optional">To reach competency</p>
+                    <p className="text-sm text-white">To reach competency</p>
                   </div>
                 </div>
                 <p className="text-standard font-semibold">
@@ -315,11 +315,11 @@ const FractionalCMOVsInHouse = () => {
                 </p>
                 <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 focus-visible:from-indigo-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4"
+                  className="bg-gradient-to-r from-indigo-500 to-blue-600 hover:from-indigo-600 focus-visible:from-indigo-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4 ring-2 ring-indigo-300/50"
                 >
                   Get Free Team Cost Analysis
                 </button>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 focus-visible:bg-indigo-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 focus-visible:bg-indigo-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block ring-2 ring-indigo-300/50">
                   Calculate Your 2.5x Hidden Costs
                 </a>
               </div>
@@ -327,27 +327,27 @@ const FractionalCMOVsInHouse = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
-                Related Decision Resources
+              <h2 className="heading-xl text-white mb-8 text-center">
+                Related Transition Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
+                  <h3 className="heading-lg text-white mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="text-white hover:text-indigo-400 focus-visible:text-indigo-400 transition-colors">
                       Recover From 43% Turnover Disaster →
                     </a>
                   </h3>
-                  <p className="text-standard">
+                  <p className="text-white">
                     Internal marketing not working? Learn how to transition from failed in-house teams to fractional CMO success.
                   </p>
                 </div>
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
+                  <h3 className="heading-lg text-white mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/team-growth-bottlenecks`} className="text-white hover:text-indigo-400 focus-visible:text-indigo-400 transition-colors">
                       Fix 18-Month Competency Gap →
                     </a>
                   </h3>
-                  <p className="text-standard">
+                  <p className="text-white">
                     When building teams becomes the bottleneck to growth. Break through with the right expertise model.
                   </p>
                 </div>

@@ -188,28 +188,28 @@ const WhenToChooseEach = () => {
                   Quick Decision Matrix (Your Situation → Best Model)
                 </h2>
                 <div className="grid md:grid-cols-2 gap-4 text-sm">
-                  <div className="p-4 glass-card-medium rounded-lg">
-                    <strong className="text-orange-200">Pre-revenue/MVP Stage:</strong>
+                  <div className="p-4 bg-orange-500/20 backdrop-blur-sm border border-orange-300/30 rounded-lg">
+                    <strong className="text-orange-100">Pre-revenue/MVP Stage:</strong>
                     <p className="text-white mt-1">DIY → Consultant for validation</p>
                   </div>
-                  <div className="p-4 glass-card-solid rounded-lg">
-                    <strong className="text-blue-200">$500K-1M Revenue:</strong>
+                  <div className="p-4 bg-blue-500/20 backdrop-blur-sm border border-blue-300/30 rounded-lg">
+                    <strong className="text-blue-100">$500K-1M Revenue:</strong>
                     <p className="text-white mt-1">Fractional CMO + Tactical agency</p>
                   </div>
-                  <div className="p-4 glass-card-solid rounded-lg">
-                    <strong className="text-green-200">$1M-3M Scaling:</strong>
+                  <div className="p-4 bg-green-500/20 backdrop-blur-sm border border-green-300/30 rounded-lg">
+                    <strong className="text-green-100">$1M-3M Scaling:</strong>
                     <p className="text-white mt-1">Fractional CMO leading strategy</p>
                   </div>
-                  <div className="p-4 glass-card-solid rounded-lg">
-                    <strong className="text-purple-200">$3M-5M Growth:</strong>
+                  <div className="p-4 bg-purple-500/20 backdrop-blur-sm border border-purple-300/30 rounded-lg">
+                    <strong className="text-purple-100">$3M-5M Growth:</strong>
                     <p className="text-white mt-1">Fractional + In-house team</p>
                   </div>
-                  <div className="p-4 glass-card-solid rounded-lg">
-                    <strong className="text-red-200">Crisis/Turnaround:</strong>
+                  <div className="p-4 bg-red-500/20 backdrop-blur-sm border border-red-300/30 rounded-lg">
+                    <strong className="text-red-100">Crisis/Turnaround:</strong>
                     <p className="text-white mt-1">Fractional CMO immediately</p>
                   </div>
-                  <div className="p-4 glass-card-medium rounded-lg">
-                    <strong className="text-indigo-200">$5M+ Established:</strong>
+                  <div className="p-4 bg-indigo-500/20 backdrop-blur-sm border border-indigo-300/30 rounded-lg">
+                    <strong className="text-indigo-100">$5M+ Established:</strong>
                     <p className="text-white mt-1">Full-time CMO + complete team</p>
                   </div>
                 </div>
@@ -339,14 +339,14 @@ const WhenToChooseEach = () => {
                       <td className="text-center py-3 px-2">Analysis</td>
                       <td className="text-center py-3 px-2">Continuity</td>
                     </tr>
-                    <tr className="border-b border-gray-100 glass-card-solid">
+                    <tr className="border-b border-gray-100 bg-gray-700/50">
                       <td className="py-3 px-2 font-medium text-white">Time to Impact</td>
                       <td className="text-center py-3 px-2 font-semibold text-white">30-60 days</td>
                       <td className="text-center py-3 px-2 font-semibold text-white">60-90 days</td>
                       <td className="text-center py-3 px-2 font-semibold text-white">90-120 days</td>
                       <td className="text-center py-3 px-2 font-semibold text-white">180+ days</td>
                     </tr>
-                    <tr className="border-b border-gray-100 glass-card-solid">
+                    <tr className="border-b border-gray-100 bg-gray-700/50">
                       <td className="py-3 px-2 font-medium text-white">Cost Structure</td>
                       <td className="text-center py-3 px-2 font-semibold text-white">$5-15K/month</td>
                       <td className="text-center py-3 px-2 font-semibold text-white">$3-20K/month</td>
@@ -377,11 +377,11 @@ const WhenToChooseEach = () => {
                 </p>
                 <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 focus-visible:from-indigo-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4"
+                  className="bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 focus-visible:from-indigo-600 hover:to-purple-700 focus-visible:to-purple-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4 ring-2 ring-indigo-300/50"
                 >
                   Get Personalized Recommendation
                 </button>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 focus-visible:bg-indigo-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="border-2 border-indigo-500 text-indigo-600 hover:bg-indigo-500 focus-visible:bg-indigo-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block ring-2 ring-indigo-300/50">
                   See Cost Analysis
                 </a>
               </div>
@@ -389,27 +389,27 @@ const WhenToChooseEach = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
-                Related Decision Resources
+              <h2 className="heading-xl text-white mb-8 text-center">
+                Related Transition Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
+                  <h3 className="heading-lg text-white mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="text-white hover:text-indigo-400 focus-visible:text-indigo-400 transition-colors">
                       How to Transition Between Models →
                     </a>
                   </h3>
-                  <p className="text-standard">
+                  <p className="text-white">
                     Growth requires different models at different stages. Learn how to transition smoothly without losing momentum.
                   </p>
                 </div>
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-indigo-600 focus-visible:text-indigo-600 transition-colors">
+                  <h3 className="heading-lg text-white mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="text-white hover:text-indigo-400 focus-visible:text-indigo-400 transition-colors">
                       Stuck at Current Model? →
                     </a>
                   </h3>
-                  <p className="text-standard">
+                  <p className="text-white">
                     Growth plateaus often signal the need for a different marketing model. Identify your plateau and solution.
                   </p>
                 </div>

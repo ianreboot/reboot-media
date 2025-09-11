@@ -310,35 +310,35 @@ const TransitionStrategies = () => {
                   Typical Marketing Evolution Timeline
                 </h2>
                 <div className="space-y-4">
-                  <div className="flex items-center glass-card-medium rounded-lg p-3 mb-2">
+                  <div className="flex items-center bg-orange-500/20 backdrop-blur-sm border border-orange-300/30 rounded-lg p-3 mb-2">
                     <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">1</div>
                     <div>
                       <strong className="text-white">$0-500K:</strong>
                       <span className="text-white ml-2">Founder-led marketing or DIY approach</span>
                     </div>
                   </div>
-                  <div className="flex items-center glass-card-medium rounded-lg p-3 mb-2">
+                  <div className="flex items-center bg-orange-500/20 backdrop-blur-sm border border-orange-300/30 rounded-lg p-3 mb-2">
                     <div className="bg-orange-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">2</div>
                     <div>
                       <strong className="text-white">$500K-1M:</strong>
                       <span className="text-white ml-2">First agency or consultant engagement</span>
                     </div>
                   </div>
-                  <div className="flex items-center glass-card-medium rounded-lg p-3 mb-2">
+                  <div className="flex items-center bg-blue-500/20 backdrop-blur-sm border border-blue-300/30 rounded-lg p-3 mb-2">
                     <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">3</div>
                     <div>
                       <strong className="text-white">$1M-3M:</strong>
                       <span className="text-white ml-2">Fractional CMO for strategic growth</span>
                     </div>
                   </div>
-                  <div className="flex items-center glass-card-medium rounded-lg p-3 mb-2">
+                  <div className="flex items-center bg-purple-500/20 backdrop-blur-sm border border-purple-300/30 rounded-lg p-3 mb-2">
                     <div className="bg-purple-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">4</div>
                     <div>
                       <strong className="text-white">$3M-5M:</strong>
                       <span className="text-white ml-2">Hybrid: Fractional CMO + internal team</span>
                     </div>
                   </div>
-                  <div className="flex items-center glass-card-medium rounded-lg p-3 mb-2">
+                  <div className="flex items-center bg-green-500/20 backdrop-blur-sm border border-green-300/30 rounded-lg p-3 mb-2">
                     <div className="bg-green-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold mr-4">5</div>
                     <div>
                       <strong className="text-white">$5M+:</strong>
@@ -361,11 +361,11 @@ const TransitionStrategies = () => {
                 </p>
                 <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-pink-700 focus-visible:to-pink-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4"
+                  className="bg-gradient-to-r from-purple-500 to-pink-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-pink-700 focus-visible:to-pink-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4 ring-2 ring-purple-300/50"
                 >
                   Get Free Transition Roadmap
                 </button>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 focus-visible:bg-purple-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 focus-visible:bg-purple-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block ring-2 ring-purple-300/50">
                   Choose Your Marketing Model
                 </a>
               </div>
@@ -373,27 +373,27 @@ const TransitionStrategies = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
+              <h2 className="heading-xl text-white mb-8 text-center">
                 Related Transition Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="hover:text-purple-600 focus-visible:text-purple-600 transition-colors">
+                  <h3 className="heading-lg text-white mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/cost-roi-analysis`} className="text-white hover:text-purple-400 focus-visible:text-purple-400 transition-colors">
                       Save $200K During Transition →
                     </a>
                   </h3>
-                  <p className="text-standard">
+                  <p className="text-white">
                     Understanding the true costs and returns of switching marketing approaches. Make data-driven transition decisions.
                   </p>
                 </div>
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="hover:text-purple-600 focus-visible:text-purple-600 transition-colors">
+                  <h3 className="heading-lg text-white mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions`} className="text-white hover:text-purple-400 focus-visible:text-purple-400 transition-colors">
                       8 Plateau Patterns Forcing Change →
                     </a>
                   </h3>
-                  <p className="text-standard">
+                  <p className="text-white">
                     Revenue plateaus often signal the need for marketing leadership transitions. Identify your plateau pattern.
                   </p>
                 </div>

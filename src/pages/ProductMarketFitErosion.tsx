@@ -227,7 +227,7 @@ const ProductMarketFitErosion = () => {
                         <div className="space-y-6">
                           <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-important-accessible font-bold text-red-800 mb-2 flex items-center">
-                              <span className="mr-2">💬</span>
+                              <span className="mr-2" style={{textShadow: '0 0 1px #666'}}>💬</span>
                               Customer Says:
                             </h4>
                             <p className="text-standard italic">
@@ -235,9 +235,9 @@ const ProductMarketFitErosion = () => {
                             </p>
                           </div>
                           
-                          <div className="bg-purple-50 rounded-lg p-4 border-l-4 border-purple-500">
-                            <h4 className="heading-md text-important-accessible font-bold text-purple-800 mb-2 flex items-center">
-                              <span className="mr-2">💭</span>
+                          <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
+                            <h4 className="heading-md text-orange-800 font-bold text-orange-800 mb-2 flex items-center">
+                              <span className="mr-2" style={{textShadow: '0 0 1px #666'}}>💭</span>
                               Customer Thinks:
                             </h4>
                             <p className="text-standard">
@@ -248,8 +248,8 @@ const ProductMarketFitErosion = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
-                            <h4 className="heading-md text-important-accessible font-bold text-orange-800 mb-2 flex items-center">
+                          <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
+                            <h4 className="heading-md text-yellow-800 font-bold text-yellow-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Problem:
                             </h4>
@@ -318,8 +318,8 @@ const ProductMarketFitErosion = () => {
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-important-accessible text-xl font-bold mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/market-expansion-barriers`} className="hover:text-purple-600 focus-visible:text-purple-600 transition-colors">
+                  <h3 className="heading-lg text-white text-xl font-bold text-white mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/market-expansion-barriers`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                       Market Expansion Barriers →
                     </a>
                   </h3>
@@ -328,8 +328,8 @@ const ProductMarketFitErosion = () => {
                   </p>
                 </div>
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-important-accessible text-xl font-bold mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-purple-600 focus-visible:text-purple-600 transition-colors">
+                  <h3 className="heading-lg text-white text-xl font-bold text-white mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                       Marketing Psychology Fundamentals →
                     </a>
                   </h3>

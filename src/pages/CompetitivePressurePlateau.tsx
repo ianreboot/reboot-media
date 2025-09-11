@@ -226,7 +226,7 @@ const CompetitivePressurePlateau = () => {
                         <div className="space-y-6">
                           <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-red-800 font-bold text-red-800 mb-2 flex items-center">
-                              <span className="mr-2">💬</span>
+                              <span className="mr-2" style={{textShadow: '0 0 1px #666'}}>💬</span>
                               Customer Says:
                             </h4>
                             <p className="text-standard italic">
@@ -236,7 +236,7 @@ const CompetitivePressurePlateau = () => {
                           
                           <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
                             <h4 className="heading-md text-orange-800 font-bold text-orange-800 mb-2 flex items-center">
-                              <span className="mr-2">💭</span>
+                              <span className="mr-2" style={{textShadow: '0 0 1px #666'}}>💭</span>
                               Customer Thinks:
                             </h4>
                             <p className="text-standard">
@@ -317,7 +317,7 @@ const CompetitivePressurePlateau = () => {
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-gray-900 text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="heading-lg text-white text-xl font-bold text-white mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/customer-acquisition-stall`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                       Customer Acquisition Stall →
                     </a>
@@ -327,7 +327,7 @@ const CompetitivePressurePlateau = () => {
                   </p>
                 </div>
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-gray-900 text-xl font-bold text-gray-900 mb-3">
+                  <h3 className="heading-lg text-white text-xl font-bold text-white mb-3">
                     <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                       Need Strategic Marketing Leadership? →
                     </a>

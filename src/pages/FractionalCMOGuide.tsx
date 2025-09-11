@@ -135,7 +135,7 @@ const FractionalCMOGuide = () => {
                 criteria behind fractional CMO, agency, full-time, and in-house options—plus when to transition between them.
               </p>
               <div className="grid md:grid-cols-3 gap-6 mb-6">
-                <div className="text-center p-4 glass-card-medium rounded-lg">
+                <div className="text-center p-4 glass-card-solid rounded-lg">
                   <div className="text-2xl font-bold text-blue-accessible mb-1">73%</div>
                   <p className="text-sm text-gray-900">Choose based on ego, not ROI</p>
                 </div>
@@ -143,12 +143,12 @@ const FractionalCMOGuide = () => {
                   <div className="text-2xl font-bold text-orange-accessible mb-1">$47K</div>
                   <p className="text-sm text-gray-900">Average cost of wrong choice</p>
                 </div>
-                <div className="text-center p-4 glass-card-medium rounded-lg">
+                <div className="text-center p-4 glass-card-solid rounded-lg">
                   <div className="text-2xl font-bold text-green-600 mb-1">18mo</div>
                   <p className="text-sm text-gray-900">Wasted with poor fit</p>
                 </div>
               </div>
-              <p className="text-white/90 font-semibold">
+              <p className="text-white/90 font-semibold text-center">
                 The pattern: Status decision → Wrong fit → Plateau → Switch → Growth
               </p>
             </div>
@@ -164,7 +164,7 @@ const FractionalCMOGuide = () => {
               
               {/* Fractional CMO vs Agency */}
               <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
-                <div className="bg-gradient-to-r from-blue-500 to-orange-500 p-6">
+                <div className="bg-gray-800 p-6">
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="heading-lg text-gradient-critical mb-2">
@@ -188,7 +188,7 @@ const FractionalCMOGuide = () => {
 
               {/* Fractional CMO vs Full-Time */}
               <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
-                <div className="bg-gradient-to-r from-blue-500 to-green-500 p-6">
+                <div className="bg-gray-800 p-6">
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="heading-lg text-gradient-critical mb-2">
@@ -212,7 +212,7 @@ const FractionalCMOGuide = () => {
 
               {/* Fractional CMO vs Consultant */}
               <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
-                <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-6">
+                <div className="bg-gray-800 p-6">
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="heading-lg text-gradient-critical mb-2">
@@ -236,7 +236,7 @@ const FractionalCMOGuide = () => {
 
               {/* Fractional CMO vs In-House Team */}
               <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
-                <div className="bg-gradient-to-r from-blue-500 to-indigo-500 p-6">
+                <div className="bg-gray-800 p-6">
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="heading-lg text-gradient-critical mb-2">
@@ -260,7 +260,7 @@ const FractionalCMOGuide = () => {
 
               {/* When to Choose Each */}
               <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
-                <div className="bg-gradient-to-r from-yellow-500 to-red-500 p-6">
+                <div className="bg-gray-800 p-6">
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="heading-lg text-gradient-critical mb-2">
@@ -284,7 +284,7 @@ const FractionalCMOGuide = () => {
 
               {/* Cost-ROI Analysis */}
               <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105">
-                <div className="bg-gradient-to-r from-green-500 to-teal-500 p-6">
+                <div className="bg-gray-800 p-6">
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="heading-lg text-gradient-critical mb-2">
@@ -308,7 +308,7 @@ const FractionalCMOGuide = () => {
 
               {/* Transition Strategies */}
               <div className="group glass-card-light rounded-2xl shadow-xl border border-white/20 overflow-hidden hover:shadow-2xl focus-visible:shadow-2xl transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 md:col-span-2">
-                <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-6">
+                <div className="bg-gray-800 p-6">
                   <div className="flex items-center justify-between">
                     <div>
                       <h3 className="heading-lg text-gradient-critical mb-2">
@@ -336,7 +336,7 @@ const FractionalCMOGuide = () => {
           {/* Call to Action */}
           <section className="mb-16">
             <div className="text-center glass-card-solid rounded-2xl p-8">
-              <h3 className="heading-lg text-gradient-critical mb-4">
+              <h3 className="heading-lg text-black mb-4">
                 🚨 Stop Making the $47,000 Mistake
               </h3>
               <p className="text-lg text-black-standard mb-6 max-w-3xl mx-auto">

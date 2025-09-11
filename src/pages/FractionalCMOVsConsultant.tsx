@@ -37,7 +37,7 @@ const FractionalCMOVsConsultant = () => {
       outcome: "Consultant for frameworks; Fractional CMO for strategy + execution",
       painLevel: "Very High",
       timeStuck: "12-18 months",
-      gradient: "from-purple-500 to-purple-600"
+      gradient: "from-indigo-500 to-indigo-600"
     },
     {
       id: 2,
@@ -49,7 +49,7 @@ const FractionalCMOVsConsultant = () => {
       outcome: "Consultant for audits; Fractional CMO for dynamic growth",
       painLevel: "High",
       timeStuck: "8-14 months",
-      gradient: "from-blue-500 to-blue-600"
+      gradient: "from-green-500 to-green-600"
     },
     {
       id: 3,
@@ -61,7 +61,7 @@ const FractionalCMOVsConsultant = () => {
       outcome: "Consultant for workshops; Fractional CMO for hands-on mentoring",
       painLevel: "Medium",
       timeStuck: "6-10 months",
-      gradient: "from-green-500 to-green-600"
+      gradient: "from-blue-500 to-blue-600"
     },
     {
       id: 4,
@@ -73,7 +73,7 @@ const FractionalCMOVsConsultant = () => {
       outcome: "Consultant for analysis; Fractional CMO for growth targets",
       painLevel: "Very High",
       timeStuck: "10-16 months",
-      gradient: "from-red-500 to-red-600"
+      gradient: "from-orange-500 to-orange-600"
     },
     {
       id: 5,
@@ -85,7 +85,7 @@ const FractionalCMOVsConsultant = () => {
       outcome: "Consultant for industry insights; Fractional CMO for psychology application",
       painLevel: "Medium",
       timeStuck: "8-12 months",
-      gradient: "from-orange-500 to-orange-600"
+      gradient: "from-red-500 to-red-600"
     },
     {
       id: 6,
@@ -97,7 +97,7 @@ const FractionalCMOVsConsultant = () => {
       outcome: "Consultant for diagnostics; Fractional CMO for growth engine building",
       painLevel: "High",
       timeStuck: "6-12 months",
-      gradient: "from-yellow-500 to-yellow-600"
+      gradient: "from-purple-500 to-purple-600"
     },
     {
       id: 7,
@@ -194,15 +194,15 @@ const FractionalCMOVsConsultant = () => {
                 <div className="grid md:grid-cols-3 gap-6 mb-6">
                   <div className="text-center p-4 glass-card-medium rounded-lg">
                     <div className="text-2xl font-bold text-purple-600 mb-1">87%</div>
-                    <p className="text-sm text-optional">Strategies never fully implemented</p>
+                    <p className="text-sm text-white">Strategies never fully implemented</p>
                   </div>
                   <div className="text-center p-4 glass-card-blue rounded-lg">
                     <div className="text-2xl font-bold text-blue-accessible mb-1">$75K</div>
-                    <p className="text-sm text-optional">Average consulting project cost</p>
+                    <p className="text-sm text-white">Average consulting project cost</p>
                   </div>
                   <div className="text-center p-4 glass-card-green rounded-lg">
                     <div className="text-2xl font-bold text-green-600 mb-1">14%</div>
-                    <p className="text-sm text-optional">Achieve promised ROI</p>
+                    <p className="text-sm text-white">Achieve promised ROI</p>
                   </div>
                 </div>
                 <p className="text-standard font-semibold">
@@ -242,22 +242,22 @@ const FractionalCMOVsConsultant = () => {
                         
                         {/* Company Says */}
                         <div className="space-y-6">
-                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="bg-red-50 border-l-4 border-red-500 rounded-lg p-4">
                             <h4 className="heading-md text-red-800 mb-2 flex items-center">
-                              <span className="mr-2">💬</span>
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">💬</span>
                               Company Says:
                             </h4>
-                            <p className="text-standard italic">
+                            <p className="text-red-900 italic">
                               "{scenario.companySays}"
                             </p>
                           </div>
                           
-                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-purple-500">
-                            <h4 className="heading-md text-purple-800 mb-2 flex items-center">
-                              <span className="mr-2">💭</span>
+                          <div className="bg-orange-50 border-l-4 border-orange-500 rounded-lg p-4">
+                            <h4 className="heading-md text-orange-800 mb-2 flex items-center">
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">💭</span>
                               Company Thinks:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-orange-900">
                               {scenario.companyThinks}
                             </p>
                           </div>
@@ -265,22 +265,22 @@ const FractionalCMOVsConsultant = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-orange-500">
-                            <h4 className="heading-md text-orange-800 mb-2 flex items-center">
-                              <span className="mr-2">🔍</span>
+                          <div className="bg-yellow-50 border-l-4 border-yellow-500 rounded-lg p-4">
+                            <h4 className="heading-md text-yellow-800 mb-2 flex items-center">
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">🔍</span>
                               Real Consideration:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-yellow-900">
                               {scenario.realConsideration}
                             </p>
                           </div>
                           
-                          <div className="glass-card-medium rounded-lg p-4 border-l-4 border-blue-500">
-                            <h4 className="heading-md text-blue-800 mb-2 flex items-center">
-                              <span className="mr-2">⚖️</span>
+                          <div className="bg-green-50 border-l-4 border-green-500 rounded-lg p-4">
+                            <h4 className="heading-md text-green-800 mb-2 flex items-center">
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">⚖️</span>
                               Evaluation Framework:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-green-900">
                               {scenario.evaluationFramework}
                             </p>
                           </div>
@@ -288,12 +288,12 @@ const FractionalCMOVsConsultant = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-green-200">
-                        <h4 className="heading-md text-green-800 mb-2 flex items-center">
-                          <span className="mr-2">🎯</span>
+                      <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 rounded-lg p-4">
+                        <h4 className="heading-md text-blue-800 mb-2 flex items-center">
+                          <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">🎯</span>
                           Recommended Outcome:
                         </h4>
-                        <p className="text-gray-900 font-medium">
+                        <p className="text-blue-900 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
@@ -315,11 +315,11 @@ const FractionalCMOVsConsultant = () => {
                 </p>
                 <button aria-label="Opens contact form for free marketing analysis" 
                   onClick={() => setShowDropdownForm(true)}
-                  className="bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4"
+                  className="bg-gradient-to-r from-purple-500 to-blue-600 hover:from-purple-600 focus-visible:from-purple-600 hover:to-blue-700 focus-visible:to-blue-700 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 transform hover:scale-105 focus-visible:scale-105 shadow-lg mr-4 ring-2 ring-purple-300/50"
                 >
                   Get Free Implementation Assessment
                 </button>
-                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 focus-visible:bg-purple-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block">
+                <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide`} className="border-2 border-purple-500 text-purple-600 hover:bg-purple-500 focus-visible:bg-purple-500 hover:text-white focus-visible:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 inline-block ring-2 ring-purple-300/50">
                   Compare vs Agency & In-House
                 </a>
               </div>
@@ -327,27 +327,27 @@ const FractionalCMOVsConsultant = () => {
 
             {/* Related Resources */}
             <section className="mb-16">
-              <h2 className="heading-xl text-gradient-critical mb-8 text-center">
-                Related Decision Resources
+              <h2 className="heading-xl text-white mb-8 text-center">
+                Related Transition Resources
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="hover:text-purple-600 focus-visible:text-purple-600 transition-colors">
+                  <h3 className="heading-lg text-white mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/fractional-cmo-guide/transition-strategies`} className="text-white hover:text-purple-400 focus-visible:text-purple-400 transition-colors">
                       Stop Wasting $75K on Unimplemented Strategy →
                     </a>
                   </h3>
-                  <p className="text-standard">
+                  <p className="text-white">
                     Have great strategy but can't execute? Learn how to transition from consultant advice to fractional CMO implementation.
                   </p>
                 </div>
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-gradient-critical mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-purple-600 focus-visible:text-purple-600 transition-colors">
+                  <h3 className="heading-lg text-white mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="text-white hover:text-purple-400 focus-visible:text-purple-400 transition-colors">
                       Psychology That Beats Industry Tactics →
                     </a>
                   </h3>
-                  <p className="text-standard">
+                  <p className="text-white">
                     Consultants give industry tactics. Fractional CMOs apply universal psychology. Learn the principles that drive results.
                   </p>
                 </div>

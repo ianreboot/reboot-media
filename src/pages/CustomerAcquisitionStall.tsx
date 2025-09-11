@@ -239,9 +239,9 @@ const CustomerAcquisitionStall = () => {
                         
                         {/* Customer Says */}
                         <div className="space-y-6">
-                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="bg-red-50 rounded-lg p-4 border-l-4 border-red-500">
                             <h4 className="heading-md text-red-800 font-bold text-red-800 mb-2 flex items-center">
-                              <span className="mr-2">💬</span>
+                              <span className="mr-2" style={{textShadow: '0 0 1px #666'}}>💬</span>
                               Customer Says:
                             </h4>
                             <p className="text-standard italic">
@@ -249,9 +249,9 @@ const CustomerAcquisitionStall = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
-                            <h4 className="heading-md text-white font-bold text-orange-800 mb-2 flex items-center">
-                              <span className="mr-2">💭</span>
+                          <div className="bg-orange-50 rounded-lg p-4 border-l-4 border-orange-500">
+                            <h4 className="heading-md text-orange-800 font-bold text-orange-800 mb-2 flex items-center">
+                              <span className="mr-2" style={{textShadow: '0 0 1px #666'}}>💭</span>
                               Customer Thinks:
                             </h4>
                             <p className="text-standard">
@@ -262,7 +262,7 @@ const CustomerAcquisitionStall = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-yellow-500">
+                          <div className="bg-yellow-50 rounded-lg p-4 border-l-4 border-yellow-500">
                             <h4 className="heading-md text-yellow-800 font-bold text-yellow-800 mb-2 flex items-center">
                               <span className="mr-2">🔍</span>
                               Real Problem:
@@ -272,12 +272,12 @@ const CustomerAcquisitionStall = () => {
                             </p>
                           </div>
                           
-                          <div className="glass-card-solid rounded-lg p-4 border-l-4 border-green-500">
+                          <div className="bg-green-50 rounded-lg p-4 border-l-4 border-green-500">
                             <h4 className="heading-md text-green-800 font-bold text-green-800 mb-2 flex items-center">
                               <span className="mr-2">✅</span>
                               Solution:
                             </h4>
-                            <p className="text-gray-900">
+                            <p className="text-standard">
                               {scenario.solution}
                             </p>
                           </div>
@@ -285,12 +285,12 @@ const CustomerAcquisitionStall = () => {
                       </div>
                       
                       {/* Why It Works */}
-                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-blue-200">
+                      <div className="mt-6 bg-blue-50 rounded-lg p-4 border border-blue-200">
                         <h4 className="heading-md text-blue-800 font-bold text-blue-800 mb-2 flex items-center">
                           <span className="mr-2">🧠</span>
                           Why This Works:
                         </h4>
-                        <p className="text-gray-900 font-medium">
+                        <p className="text-standard font-medium">
                           {scenario.whyItWorks}
                         </p>
                       </div>
@@ -332,8 +332,8 @@ const CustomerAcquisitionStall = () => {
               </h2>
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-gray-900 text-xl font-bold text-gray-900 mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} className="hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors">
+                  <h3 className="heading-lg text-white text-xl font-bold text-white mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/growth-plateau-solutions/revenue-ceiling-breakthrough`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                       Revenue Ceiling Breakthrough →
                     </a>
                   </h3>
@@ -342,8 +342,8 @@ const CustomerAcquisitionStall = () => {
                   </p>
                 </div>
                 <div className="glass-card-light rounded-xl shadow-lg border border-white/20 p-6 hover:shadow-xl focus-visible:shadow-xl transition-shadow">
-                  <h3 className="heading-lg text-gray-900 text-xl font-bold text-gray-900 mb-3">
-                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-orange-accessible focus-visible:text-orange-accessible transition-colors">
+                  <h3 className="heading-lg text-white text-xl font-bold text-white mb-3">
+                    <a href={`${import.meta.env.MODE === 'development' ? '/reboot' : ''}/marketing-psychology`} className="hover:text-red-600 focus-visible:text-red-600 transition-colors">
                       Marketing Psychology Fundamentals →
                     </a>
                   </h3>

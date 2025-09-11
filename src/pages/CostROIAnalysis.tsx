@@ -242,10 +242,10 @@ const CostROIAnalysis = () => {
                     </tr>
                     <tr className="border-t-2 border-gray-200 glass-card-solid">
                       <td className="py-3 px-2 font-bold text-gray-900">TRUE ANNUAL COST</td>
-                      <td className="text-center py-3 px-2 font-bold text-green-700">$96-180K</td>
+                      <td className="text-center py-3 px-2 font-bold text-blue-700">$96-180K</td>
                       <td className="text-center py-3 px-2 font-bold text-orange-700">$84-300K</td>
-                      <td className="text-center py-3 px-2 font-bold text-red-700">$260-436K</td>
-                      <td className="text-center py-3 px-2 font-bold text-purple-700">$216-384K</td>
+                      <td className="text-center py-3 px-2 font-bold text-purple-700">$260-436K</td>
+                      <td className="text-center py-3 px-2 font-bold text-green-700">$216-384K</td>
                     </tr>
                   </tbody>
                 </table>
@@ -264,19 +264,19 @@ const CostROIAnalysis = () => {
                     <div className="space-y-3">
                       <div className="flex justify-between items-center p-3 glass-card-medium rounded-lg">
                         <span className="font-medium text-white">Fractional CMO</span>
-                        <span className="font-bold text-green-300">+42% growth</span>
+                        <span className="font-bold text-green-700">+42% growth</span>
                       </div>
                       <div className="flex justify-between items-center p-3 glass-card-medium rounded-lg">
                         <span className="font-medium text-white">Agency</span>
-                        <span className="font-bold text-orange-300">+23% growth</span>
+                        <span className="font-bold text-orange-700">+23% growth</span>
                       </div>
                       <div className="flex justify-between items-center p-3 glass-card-medium rounded-lg">
                         <span className="font-medium text-white">Consultant</span>
-                        <span className="font-bold text-purple-300">+12% growth</span>
+                        <span className="font-bold text-purple-700">+12% growth</span>
                       </div>
                       <div className="flex justify-between items-center p-3 glass-card-medium rounded-lg">
                         <span className="font-medium text-white">In-House</span>
-                        <span className="font-bold text-blue-300">+18% growth</span>
+                        <span className="font-bold text-blue-700">+18% growth</span>
                       </div>
                     </div>
                   </div>
@@ -336,22 +336,22 @@ const CostROIAnalysis = () => {
                         
                         {/* Company Says */}
                         <div className="space-y-6">
-                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-red-500">
+                          <div className="bg-red-50 border-l-4 border-red-500 rounded-lg p-4">
                             <h4 className="heading-md text-red-800 mb-2 flex items-center">
-                              <span className="mr-2">💬</span>
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">💬</span>
                               Company Says:
                             </h4>
-                            <p className="text-standard italic">
+                            <p className="text-red-900 italic">
                               "{scenario.companySays}"
                             </p>
                           </div>
                           
-                          <div className="glass-card-light rounded-lg p-4 border-l-4 border-green-500">
-                            <h4 className="heading-md text-green-800 mb-2 flex items-center">
-                              <span className="mr-2">💭</span>
+                          <div className="bg-orange-50 border-l-4 border-orange-500 rounded-lg p-4">
+                            <h4 className="heading-md text-orange-800 mb-2 flex items-center">
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">💭</span>
                               Company Thinks:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-orange-900">
                               {scenario.companyThinks}
                             </p>
                           </div>
@@ -359,22 +359,22 @@ const CostROIAnalysis = () => {
 
                         {/* Solutions */}
                         <div className="space-y-6">
-                          <div className="glass-card-orange rounded-lg p-4 border-l-4 border-orange-500">
-                            <h4 className="heading-md text-orange-800 mb-2 flex items-center">
-                              <span className="mr-2">🔍</span>
+                          <div className="bg-yellow-50 border-l-4 border-yellow-500 rounded-lg p-4">
+                            <h4 className="heading-md text-yellow-800 mb-2 flex items-center">
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">🔍</span>
                               Real Consideration:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-yellow-900">
                               {scenario.realConsideration}
                             </p>
                           </div>
                           
-                          <div className="glass-card-blue rounded-lg p-4 border-l-4 border-blue-500">
-                            <h4 className="heading-md text-blue-800 mb-2 flex items-center">
-                              <span className="mr-2">⚖️</span>
+                          <div className="bg-green-50 border-l-4 border-green-500 rounded-lg p-4">
+                            <h4 className="heading-md text-green-800 mb-2 flex items-center">
+                              <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">⚖️</span>
                               Evaluation Framework:
                             </h4>
-                            <p className="text-standard">
+                            <p className="text-green-900">
                               {scenario.evaluationFramework}
                             </p>
                           </div>
@@ -382,12 +382,12 @@ const CostROIAnalysis = () => {
                       </div>
                       
                       {/* Outcome */}
-                      <div className="mt-6 glass-card-solid rounded-lg p-4 border border-emerald-200">
-                        <h4 className="heading-md text-emerald-800 mb-2 flex items-center">
-                          <span className="mr-2">💰</span>
-                          Financial Reality:
+                      <div className="mt-6 bg-blue-50 border-l-4 border-blue-500 rounded-lg p-4">
+                        <h4 className="heading-md text-blue-800 mb-2 flex items-center">
+                          <span className="mr-2 border border-gray-300 rounded-full w-6 h-6 flex items-center justify-center text-sm">💰</span>
+                          Recommended Outcome:
                         </h4>
-                        <p className="text-black-standard font-medium">
+                        <p className="text-blue-900 font-medium">
                           {scenario.outcome}
                         </p>
                       </div>
