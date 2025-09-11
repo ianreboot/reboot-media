@@ -20,6 +20,11 @@
 
 ## 🚀 DEPLOYMENT PROTOCOL
 
+**⚠️ CRITICAL PATH CONFIGURATION**
+- **ALWAYS use `/home/projects/reboot/` as the source directory**
+- **NEVER use `/home/ian/projects/reboot/` (outdated path)**
+- **When user says "push to prod"**: Deploy from `/home/projects/reboot/`
+
 **Automated deployment scripts** - code changes require running deployment scripts.
 
 ### Development Deployment:
@@ -102,6 +107,6 @@ npm run test:coverage # Coverage report
 
 ---
 
-**Authority Hierarchy**: User explicit instruction > Project CLAUDE.md > Universal /home/CLAUDE.md > Default behavior
+**Authority Hierarchy**: User explicit instruction > Universal CLAUDE.md (base rules) > Project CLAUDE.md (additions only) > Default behavior
 
 **Core Principle**: This is a REAL BUSINESS website for Reboot Media marketing agency - treat with production-level care and professionalism.
