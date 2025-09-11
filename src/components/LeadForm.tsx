@@ -112,7 +112,7 @@ const LeadForm = () => {
           {/* Step 1: Marketing Anxiety Acknowledgment */}
           {formStep === 1 && (
             <div className="text-center" aria-current="step" aria-label="Step 1 of form">
-              <h3 className="text-2xl font-black replace-text-slate-900 mb-4">
+              <h3 className="text-2xl font-black text-slate-900 mb-4">
                 Is Your Marketing <span className="text-orange-500">Keeping You</span> Up at Night?
               </h3>
               <p className="text-gray-600 mb-8">
@@ -196,7 +196,7 @@ const LeadForm = () => {
               </button>
               
               <div className="bg-white rounded-2xl p-6 max-w-lg mx-auto shadow-2xl">
-                <h3 className="text-2xl font-black replace-text-slate-900 mb-4">
+                <h3 className="text-2xl font-black text-slate-900 mb-4">
                   I Feel You. Let's <span className="text-orange-500">Identify</span> Your Growth Stage
                 </h3>
                 <p className="text-gray-600 mb-6">
@@ -320,7 +320,7 @@ const LeadForm = () => {
               </button>
               
               <div className="max-w-2xl mx-auto">
-                <h3 className="text-2xl font-black replace-text-slate-900 mb-4 text-center">
+                <h3 className="text-2xl font-black text-slate-900 mb-4 text-center">
                   Perfect! Let's Get Your <span className="text-orange-500">Free Analysis</span>
                 </h3>
                 <p className="text-gray-600 mb-8 text-center">
@@ -353,7 +353,7 @@ const LeadForm = () => {
                     </h4>
                     <div className="grid md:grid-cols-2 gap-3">
                       <div>
-                        <label className="block text-xs font-bold replace-text-slate-700 mb-2">Your Name *</label>
+                        <label className="block text-xs font-bold text-slate-700 mb-2">Your Name *</label>
                         <input 
                           type="text" 
                           value={formData.name}
@@ -363,7 +363,7 @@ const LeadForm = () => {
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-bold replace-text-slate-700 mb-2">Company Name *</label>
+                        <label className="block text-xs font-bold text-slate-700 mb-2">Company Name *</label>
                         <input 
                           type="text" 
                           value={formData.company}
@@ -374,7 +374,7 @@ const LeadForm = () => {
                       </div>
                     </div>
                     <div>
-                      <label className="block text-xs font-bold replace-text-slate-700 mb-2">Business Email *</label>
+                      <label className="block text-xs font-bold text-slate-700 mb-2">Business Email *</label>
                       <input 
                         type="email" 
                         value={formData.email}
@@ -393,7 +393,7 @@ const LeadForm = () => {
                     </h4>
                     <div className="space-y-3">
                       <div>
-                        <label className="block text-xs font-bold replace-text-slate-700 mb-2">Website URL</label>
+                        <label className="block text-xs font-bold text-slate-700 mb-2">Website URL</label>
                         <input 
                           type="url" 
                           value={formData.website}
@@ -408,7 +408,7 @@ const LeadForm = () => {
                       </div>
                       <div className="grid grid-cols-2 gap-3">
                         <div>
-                          <label className="block text-xs font-bold replace-text-slate-700 mb-2">Industry</label>
+                          <label className="block text-xs font-bold text-slate-700 mb-2">Industry</label>
                           <select 
                             value={formData.industry}
                             onChange={(e) => setFormData({...formData, industry: e.target.value})}
@@ -425,7 +425,7 @@ const LeadForm = () => {
                           </select>
                         </div>
                         <div>
-                          <label className="block text-xs font-bold replace-text-slate-700 mb-2">Team Size</label>
+                          <label className="block text-xs font-bold text-slate-700 mb-2">Team Size</label>
                           <select 
                             value={formData.teamSize}
                             onChange={(e) => setFormData({...formData, teamSize: e.target.value})}
@@ -450,7 +450,7 @@ const LeadForm = () => {
                     </h4>
                     <div className="space-y-3">
                       <div>
-                        <label className="block text-xs font-bold replace-text-slate-700 mb-2">What's your biggest marketing pain right now? *</label>
+                        <label className="block text-xs font-bold text-slate-700 mb-2">What's your biggest marketing pain right now? *</label>
                         <textarea 
                           value={formData.specificIssue}
                           onChange={(e) => setFormData({...formData, specificIssue: e.target.value})}
@@ -460,7 +460,7 @@ const LeadForm = () => {
                         />
                       </div>
                       <div>
-                        <label className="block text-xs font-bold replace-text-slate-700 mb-2">What marketing are you currently doing?</label>
+                        <label className="block text-xs font-bold text-slate-700 mb-2">What marketing are you currently doing?</label>
                         <textarea 
                           value={formData.currentMarketing}
                           onChange={(e) => setFormData({...formData, currentMarketing: e.target.value})}
